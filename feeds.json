@@ -2,175 +2,221 @@
     {
         "url": "https://www.eurekastreet.com.au/eureka_street.xml",
         "tags": [
-            "news australia"
+            "news",
+            "australia"
         ]
     },
     {
         "url": "http://feeds.feedburner.com/com/rCTl?format=xml",
         "tags": [
-            "politics news australia"
+            "politics",
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://theaimn.com/feed/",
         "tags": [
-            "politics news australia"
+            "politics",
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://theconversation.com/au/articles.atom",
         "tags": [
-            "news australia"
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://www.theguardian.com/au/rss",
         "tags": [
-            "news australia"
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://insidestory.org.au/feed/",
         "tags": [
-            "news australia"
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://www.michaelwest.com.au/feed/",
         "tags": [
-            "news australia"
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://johnmenadue.com/feed/",
         "tags": [
-            "politics news australia"
+            "politics",
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://newmatilda.com/feed/",
         "tags": [
-            "news australia"
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://www.abc.net.au/news/feed/8055316/rss.xml",
         "tags": [
-            "sydney news australia"
+            "sydney",
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://www.abc.net.au/news/feed/8057136/rss.xml",
         "tags": [
-            "melbourne news australia"
+            "melbourne",
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://www.abc.net.au/news/feed/8053540/rss.xml",
         "tags": [
-            "brisbane news australia"
+            "brisbane",
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://www.abc.net.au/news/feed/8054562/rss.xml",
         "tags": [
-            "hobart news australia"
+            "hobart",
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://www.abc.net.au/news/feed/8057540/rss.xml",
         "tags": [
-            "adelaide news australia"
+            "adelaide",
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://www.abc.net.au/news/feed/8057648/rss.xml",
         "tags": [
-            "darwin news australia"
+            "darwin",
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://www.abc.net.au/news/feed/8057096/rss.xml",
         "tags": [
-            "perth news australia"
+            "perth",
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://www.abc.net.au/health/indexes/exclude-recipes/rss.xml",
         "tags": [
-            "health news australia"
+            "health",
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://www.abc.net.au/news/feed/51120/rss.xml",
         "tags": [
-            "news australia"
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://www.abc.net.au/news/feed/2942460/rss.xml",
         "tags": [
-            "sport news australia"
+            "sport",
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://indaily.com.au/feed/",
         "tags": [
-            "adelaide news australia"
+            "adelaide",
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://www.townsvillebulletin.com.au/news/rss",
         "tags": [
-            "queensland news australia"
+            "queensland",
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://www.ntnews.com.au/news/rss",
         "tags": [
-            "northern territory nt news australia"
+            "northern",
+            "territory",
+            "nt",
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://theconservative.com.au/feed/",
         "tags": [
-            "news australia"
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://ia.acs.org.au/articles.rss",
         "tags": [
-            "technology australia"
+            "technology",
+            "australia"
         ]
     },
     {
         "url": "https://www.crikey.com.au/feed",
         "tags": [
-            "news australia"
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://www.sbs.com.au/news/feed",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://www.sbs.com.au/news/topic/australia/feed",
         "tags": [
-            "news australia"
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://www.news.com.au/content-feeds/latest-news-national/",
         "tags": [
-            "news australia"
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://www.news.com.au/content-feeds/latest-news-world/",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
@@ -212,7 +258,8 @@
     {
         "url": "https://www.9news.com/feeds/syndication/rss/news",
         "tags": [
-            "news australia"
+            "news",
+            "australia"
         ]
     },
     {
@@ -230,43 +277,50 @@
     {
         "url": "https://aljazeera.com/xml/rss/all.xml",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://www.yahoo.com/news/rss/world/",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://www.rt.com/rss/",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://www.rt.com/rss/news/",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://www.rt.com/rss/russia/",
         "tags": [
-            "news russia"
+            "news",
+            "russia"
         ]
     },
     {
         "url": "https://www.rt.com/rss/business/",
         "tags": [
-            "news business"
+            "news",
+            "business"
         ]
     },
     {
@@ -278,7 +332,8 @@
     {
         "url": "https://www.rt.com/rss/pop-culture/",
         "tags": [
-            "entertainment culture"
+            "entertainment",
+            "culture"
         ]
     },
     {
@@ -290,199 +345,244 @@
     {
         "url": "https://www.rt.com/rss-feed/",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://www.dailytelegraph.com.au/news/breaking-news/rss",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://www.smh.com.au/rss/feed.xml",
         "tags": [
-            "news australia"
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://www.heraldsun.com.au/news/breaking-news/rss",
         "tags": [
-            "news australia"
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://www.abc.net.au/news/feed/1948/rss.xml",
         "tags": [
-            "news australia"
+            "news",
+            "australia"
         ]
     },
     {
         "url": "https://www.canberratimes.com.au/rss.xml",
         "tags": [
-            "news australia canberra"
+            "news",
+            "australia",
+            "canberra"
         ]
     },
     {
         "url": "https://www.themercury.com.au/rss",
         "tags": [
-            "news tasmania australia"
+            "news",
+            "tasmania",
+            "australia"
         ]
     },
     {
         "url": "http://rss.cnn.com/rss/cnn_topstories.rss",
         "tags": [
-            "news world usa"
+            "news",
+            "world",
+            "usa"
         ]
     },
     {
         "url": "http://feeds.feedburner.com/time/topstories",
         "tags": [
-            "news world usa"
+            "news",
+            "world",
+            "usa"
         ]
     },
     {
         "url": "http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
         "tags": [
-            "news ny new york usa"
+            "news",
+            "ny",
+            "new",
+            "york",
+            "usa"
         ]
     },
     {
         "url": "https://www.yahoo.com/news/rss/topstories",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "http://feeds.washingtonpost.com/rss/world",
         "tags": [
-            "news usa"
+            "news",
+            "usa"
         ]
     },
     {
         "url": "https://www.vox.com/rss/index.xml",
         "tags": [
-            "news usa"
+            "news",
+            "usa"
         ]
     },
     {
         "url": "http://feeds.bbci.co.uk/news/world/rss.xml",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://www.huffingtonpost.com/section/front-page/feed",
         "tags": [
-            "news usa"
+            "news",
+            "usa"
         ]
     },
     {
         "url": "http://rss.cnn.com/rss/cnn_world.rss",
         "tags": [
-            "news usa"
+            "news",
+            "usa"
         ]
     },
     {
         "url": "http://abcnews.go.com/abcnews/topstories",
         "tags": [
-            "news usa"
+            "news",
+            "usa"
         ]
     },
     {
         "url": "https://www.reutersagency.com/feed/?taxonomy=best-topics&post_type=best",
         "tags": [
-            "news usa"
+            "news",
+            "usa"
         ]
     },
     {
         "url": "http://www.marketwatch.com/rss/topstories/",
         "tags": [
-            "business usa"
+            "business",
+            "usa"
         ]
     },
     {
         "url": "https://www.salon.com/feed/",
         "tags": [
-            "news usa"
+            "news",
+            "usa"
         ]
     },
     {
         "url": "http://www.newyorker.com/services/rss/feeds/everything.xml",
         "tags": [
-            "news ny new york usa"
+            "news",
+            "ny",
+            "new york",
+            "usa"
         ]
     },
     {
         "url": "http://www.dailymail.co.uk/articles.rss",
         "tags": [
-            "news uk"
+            "news",
+            "uk"
         ]
     },
     {
         "url": "https://nypost.com/feed/",
         "tags": [
-            "news usa"
+            "news",
+            "usa"
         ]
     },
     {
         "url": "http://feeds.foxnews.com/foxnews/scitech",
         "tags": [
-            "news technology"
+            "news",
+            "technology"
         ]
     },
     {
         "url": "http://www.espn.com/espn/rss/news",
         "tags": [
-            "news sport"
+            "news",
+            "sport"
         ]
     },
     {
         "url": "https://sports.yahoo.com/rss",
         "tags": [
-            "news sport"
+            "news",
+            "sport"
         ]
     },
     {
         "url": "https://sports.yahoo.com/nba/rss",
         "tags": [
-            "sport basketball"
+            "sport",
+            "basketball"
         ]
     },
     {
         "url": "https://sports.yahoo.com/mlb/rss",
         "tags": [
-            "sport baseball"
+            "sport",
+            "baseball"
         ]
     },
     {
         "url": "https://sports.yahoo.com/nfl/rss",
         "tags": [
-            "sport nfl usa"
+            "sport",
+            "nfl",
+            "usa"
         ]
     },
     {
         "url": "https://sports.yahoo.com/ncaab/rss",
         "tags": [
-            "sport basketball"
+            "sport",
+            "basketball"
         ]
     },
     {
         "url": "https://sports.yahoo.com/nhl/rss",
         "tags": [
-            "sport hockey nhl usa"
+            "sport",
+            "hockey",
+            "nhl",
+            "usa"
         ]
     },
     {
         "url": "https://sports.yahoo.com/ufc/rss",
         "tags": [
-            "sport ufc"
+            "sport",
+            "ufc"
         ]
     },
     {
         "url": "http://newsrss.bbc.co.uk/rss/sportonline_world_edition/front_page/rss.xml",
         "tags": [
-            "sport uk"
+            "sport",
+            "uk"
         ]
     },
     {
@@ -686,121 +786,141 @@
     {
         "url": "http://www.slate.com/articles/news_and_politics/politics.teaser.all.10.rss/",
         "tags": [
-            "politics usa"
+            "politics",
+            "usa"
         ]
     },
     {
         "url": "http://feeds.foxnews.com/foxnews/politics",
         "tags": [
-            "politics usa"
+            "politics",
+            "usa"
         ]
     },
     {
         "url": "http://rss.cnn.com/rss/cnn_allpolitics.rss",
         "tags": [
-            "politics usa"
+            "politics",
+            "usa"
         ]
     },
     {
         "url": "http://www.washingtonexaminer.com/rss/politics",
         "tags": [
-            "politics usa"
+            "politics",
+            "usa"
         ]
     },
     {
         "url": "https://www.thenation.com/feed/?post_type=article",
         "tags": [
-            "politics usa"
+            "politics",
+            "usa"
         ]
     },
     {
         "url": "http://dailysignal.com/feed/",
         "tags": [
-            "politics usa"
+            "politics",
+            "usa"
         ]
     },
     {
         "url": "http://www.msnbc.com/feeds/latest",
         "tags": [
-            "news usa"
+            "news",
+            "usa"
         ]
     },
     {
         "url": "https://www.gamespot.com/feeds/mashup/",
         "tags": [
-            "technology gaming"
+            "technology",
+            "gaming"
         ]
     },
     {
         "url": "http://www.nintendolife.com/feeds/latest",
         "tags": [
-            "technology gaming"
+            "technology",
+            "gaming"
         ]
     },
     {
         "url": "http://www.indiegames.com/atom.xml",
         "tags": [
-            "technology gaming"
+            "technology",
+            "gaming"
         ]
     },
     {
         "url": "http://feeds.arstechnica.com/arstechnica/gaming/",
         "tags": [
-            "technology gaming"
+            "technology",
+            "gaming"
         ]
     },
     {
         "url": "https://www.polygon.com/rss/index.xml",
         "tags": [
-            "technology gaming"
+            "technology",
+            "gaming"
         ]
     },
     {
         "url": "http://news.xbox.com/feed",
         "tags": [
-            "technology gaming"
+            "technology",
+            "gaming"
         ]
     },
     {
         "url": "https://www.reddit.com/r/gamers/.rss",
         "tags": [
-            "technology gaming"
+            "technology",
+            "gaming"
         ]
     },
     {
         "url": "http://www.vg247.com/feed/",
         "tags": [
-            "technology gaming"
+            "technology",
+            "gaming"
         ]
     },
     {
         "url": "https://mynintendonews.com/feed",
         "tags": [
-            "technology gaming"
+            "technology",
+            "gaming"
         ]
     },
     {
         "url": "https://www.rockpapershotgun.com/feed",
         "tags": [
-            "technology gaming"
+            "technology",
+            "gaming"
         ]
     },
     {
         "url": "https://www.pcgamesn.com/rss",
         "tags": [
-            "technology gaming"
+            "technology",
+            "gaming"
         ]
     },
     {
         "url": "https://kotaku.com/rss",
         "tags": [
-            "technology gaming"
+            "technology",
+            "gaming"
         ]
     },
     {
         "url": "http://www.pushsquare.com/feeds/latest",
         "tags": [
-            "technology gaming"
+            "technology",
+            "gaming"
         ]
     },
     {
@@ -812,13 +932,16 @@
     {
         "url": "http://feeds.bbci.co.uk/news/world/rss.xml",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://news.ycombinator.com/rss",
         "tags": [
-            "technology startup programming"
+            "technology",
+            "startup",
+            "programming"
         ]
     },
     {
@@ -836,7 +959,8 @@
     {
         "url": "https://feeds.dzone.com/home",
         "tags": [
-            "technology programming"
+            "technology",
+            "programming"
         ]
     },
     {
@@ -846,19 +970,22 @@
     {
         "url": "http://www.aljazeera.com/xml/rss/all.xml",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://defence-blog.com/feed/",
         "tags": [
-            "defence news"
+            "defence",
+            "news"
         ]
     },
     {
         "url": "https://www.globalissues.org/news/feed",
         "tags": [
-            "politics news"
+            "politics",
+            "news"
         ]
     },
     {
@@ -870,7 +997,8 @@
     {
         "url": "https://www.yahoo.com/news/rss/world/",
         "tags": [
-            "world news"
+            "world",
+            "news"
         ]
     },
     {
@@ -882,19 +1010,22 @@
     {
         "url": "https://viralnow.uk/feed/",
         "tags": [
-            "news uk"
+            "news",
+            "uk"
         ]
     },
     {
         "url": "https://themessenger.com/rss/default.xml",
         "tags": [
-            "news usa"
+            "news",
+            "usa"
         ]
     },
     {
         "url": "https://timesofindia.indiatimes.com/rssfeeds/296589292.cms",
         "tags": [
-            "news india"
+            "news",
+            "india"
         ]
     },
     {
@@ -906,157 +1037,186 @@
     {
         "url": "https://feeds.washingtonpost.com/rss/world",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://www.rt.com/rss/news/",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://feeds.feedburner.com/ndtvnews-world-news",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "http://www.npr.org/rss/rss.php?id=1004",
         "tags": [
-            "news usa"
+            "news",
+            "usa"
         ]
     },
     {
         "url": "https://www.thesun.co.uk/news/worldnews/feed/",
         "tags": [
-            "news world uk"
+            "news",
+            "world",
+            "uk"
         ]
     },
     {
         "url": "http://feeds.skynews.com/feeds/rss/world.xml",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "http://feeds.feedburner.com/daily-express-world-news",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "http://www.cbc.ca/cmlink/rss-world",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://www.cbsnews.com/latest/rss/world",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "http://feeds.feedburner.com/time/world",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://time.com/feed/",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "http://www.smh.com.au/rssheadlines/world/article/rss.xml",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://www.france24.com/en/rss",
         "tags": [
-            "news world france"
+            "news",
+            "world",
+            "france"
         ]
     },
     {
         "url": "https://www.ctvnews.ca/rss/world/ctvnews-ca-world-public-rss-1.822289",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "http://www.channelnewsasia.com/rssfeeds/8395884",
         "tags": [
-            "news world asia"
+            "news",
+            "world",
+            "asia"
         ]
     },
     {
         "url": "http://feeds.news24.com/articles/news24/World/rss",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://globalnews.ca/world/feed/",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://www.rawstory.com/category/world/feed/",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://www.seattletimes.com/nation-world/world/feed/",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "http://www.washingtontimes.com/rss/headlines/news/world",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://www.dailytelegraph.com.au/news/world/rss",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "http://www1.cbn.com/cbnnews/world/feed",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://www.rand.org/topics/international-affairs.xml/feed",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://warontherocks.com/feed/",
         "tags": [
-            "news defence"
+            "news",
+            "defence"
         ]
     },
     {
         "url": "https://ifpnews.com/feed/",
         "tags": [
-            "news iran"
+            "news",
+            "iran"
         ]
     },
     {
         "url": "https://247newsaroundtheworld.com/feed/",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
@@ -1068,13 +1228,15 @@
     {
         "url": "https://wan-ifra.org/news/feed/",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://feeds.thelocal.com/rss/es",
         "tags": [
-            "news europe"
+            "news",
+            "europe"
         ]
     },
     {
@@ -1086,25 +1248,30 @@
     {
         "url": "https://smallwarsjournal.com/rss/blogs",
         "tags": [
-            "news politics"
+            "news",
+            "politics"
         ]
     },
     {
         "url": "https://www.easternherald.com/feed/",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
         "url": "https://www.watchdoguganda.com/feed",
         "tags": [
-            "news africa uganda"
+            "news",
+            "africa",
+            "uganda"
         ]
     },
     {
         "url": "https://www.headlinesoftoday.com/feed",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
@@ -1116,7 +1283,8 @@
     {
         "url": "https://worldnewsera.com/feed/",
         "tags": [
-            "news world"
+            "news",
+            "world"
         ]
     },
     {
@@ -1146,7 +1314,8 @@
     {
         "url": "https://www.theunionjournal.com/feed/",
         "tags": [
-            "news usa"
+            "news",
+            "usa"
         ]
     },
     {
@@ -1162,7 +1331,8 @@
     {
         "url": "https://radarr.africa/feed/",
         "tags": [
-            "news africa"
+            "news",
+            "africa"
         ]
     },
     {
@@ -1740,25 +1910,29 @@
     {
         "url": "https://www.reutersagency.com/feed/?best-sectors=equities&post_type=best",
         "tags": [
-            "news business"
+            "news",
+            "business"
         ]
     },
     {
         "url": "https://www.reutersagency.com/feed/?best-sectors=foreign-exchange-fixed-income&post_type=best",
         "tags": [
-            "news business"
+            "news",
+            "business"
         ]
     },
     {
         "url": "https://www.reutersagency.com/feed/?best-sectors=economy&post_type=best",
         "tags": [
-            "news business"
+            "news",
+            "business"
         ]
     },
     {
         "url": "https://www.reutersagency.com/feed/?best-sectors=commodities-energy&post_type=best",
         "tags": [
-            "news business"
+            "news",
+            "business"
         ]
     },
     {
@@ -1770,7 +1944,8 @@
     {
         "url": "https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best",
         "tags": [
-            "news business"
+            "news",
+            "business"
         ]
     },
     {
@@ -1782,25 +1957,29 @@
     {
         "url": "https://www.reutersagency.com/feed/?best-topics=political-general&post_type=best",
         "tags": [
-            "news politics"
+            "news",
+            "politics"
         ]
     },
     {
         "url": "https://www.reutersagency.com/feed/?best-topics=environment&post_type=best",
         "tags": [
-            "news environment"
+            "news",
+            "environment"
         ]
     },
     {
         "url": "https://www.reutersagency.com/feed/?best-topics=tech&post_type=best",
         "tags": [
-            "news technology"
+            "news",
+            "technology"
         ]
     },
     {
         "url": "https://www.reutersagency.com/feed/?best-topics=health&post_type=best",
         "tags": [
-            "news health"
+            "news",
+            "health"
         ]
     },
     {
@@ -1836,37 +2015,45 @@
     {
         "url": "https://www.reutersagency.com/feed/?best-regions=middle-east&post_type=best",
         "tags": [
-            "news middle east"
+            "news",
+            "middle",
+            "east"
         ]
     },
     {
         "url": "https://www.reutersagency.com/feed/?best-regions=africa&post_type=best",
         "tags": [
-            "news africa"
+            "news",
+            "africa"
         ]
     },
     {
         "url": "https://www.reutersagency.com/feed/?best-regions=europe&post_type=best",
         "tags": [
-            "news europe"
+            "news",
+            "europe"
         ]
     },
     {
         "url": "https://www.reutersagency.com/feed/?best-regions=north-america&post_type=best",
         "tags": [
-            "news usa"
+            "news",
+            "usa"
         ]
     },
     {
         "url": "https://www.reutersagency.com/feed/?best-regions=south-america&post_type=best",
         "tags": [
-            "news south america"
+            "news",
+            "south",
+            "america"
         ]
     },
     {
         "url": "https://www.reutersagency.com/feed/?best-regions=asia&post_type=best",
         "tags": [
-            "news asia"
+            "news",
+            "asia"
         ]
     },
     {
@@ -1876,7 +2063,8 @@
     {
         "url": "https://www.reutersagency.com/feed/?best-customer-impacts=market-impact&post_type=best",
         "tags": [
-            "news business"
+            "news",
+            "business"
         ]
     },
     {
