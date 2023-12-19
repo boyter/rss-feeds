@@ -1845,7 +1845,10 @@
     },
     {
         "url": "https://www.worldcelebritynews.com/feed/",
-        "tags": []
+        "tags": [
+            "entertainment",
+            "celebrity"
+        ]
     },
     {
         "url": "https://danielspost.news.blog/feed/",
@@ -1897,11 +1900,7 @@
     },
     {
         "url": "https://headlinecode.com/feed/",
-        "tags": []
-    },
-    {
-        "url": "https://armyyoutube.com/feeds/posts/default?alt=rss",
-        "tags": []
+        "tags": ["news"]
     },
     {
         "url": "https://www.reutersagency.com/feed/?taxonomy=best-sectors&post_type=best",
@@ -1911,7 +1910,8 @@
         "url": "https://www.reutersagency.com/feed/?best-sectors=equities&post_type=best",
         "tags": [
             "news",
-            "business"
+            "business",
+            "equities"
         ]
     },
     {
@@ -1925,14 +1925,16 @@
         "url": "https://www.reutersagency.com/feed/?best-sectors=economy&post_type=best",
         "tags": [
             "news",
-            "business"
+            "business",
+            "economy"
         ]
     },
     {
         "url": "https://www.reutersagency.com/feed/?best-sectors=commodities-energy&post_type=best",
         "tags": [
             "news",
-            "business"
+            "business",
+            "commodities"
         ]
     },
     {
@@ -1945,13 +1947,15 @@
         "url": "https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best",
         "tags": [
             "news",
-            "business"
+            "business",
+            "finance"
         ]
     },
     {
         "url": "https://www.reutersagency.com/feed/?best-topics=deals&post_type=best",
         "tags": [
-            "news"
+            "news",
+            "deals"
         ]
     },
     {
@@ -1991,7 +1995,8 @@
     {
         "url": "https://www.reutersagency.com/feed/?best-topics=lifestyle-entertainment&post_type=best",
         "tags": [
-            "lifestyle"
+            "lifestyle",
+            "entertainment"
         ]
     },
     {
@@ -2016,8 +2021,7 @@
         "url": "https://www.reutersagency.com/feed/?best-regions=middle-east&post_type=best",
         "tags": [
             "news",
-            "middle",
-            "east"
+            "middle east"
         ]
     },
     {
@@ -2038,15 +2042,14 @@
         "url": "https://www.reutersagency.com/feed/?best-regions=north-america&post_type=best",
         "tags": [
             "news",
-            "usa"
+            "north america"
         ]
     },
     {
         "url": "https://www.reutersagency.com/feed/?best-regions=south-america&post_type=best",
         "tags": [
             "news",
-            "south",
-            "america"
+            "south america"
         ]
     },
     {
