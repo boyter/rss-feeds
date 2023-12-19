@@ -2082,5 +2082,9 @@
     {
         "url": "https://www.reutersagency.com/feed/?best-types=reuters-news-first&post_type=best",
         "tags": []
+    },
+    {
+        "url": "https://www.wsj.com/xml/rss/3_7031.xml",
+        "tags": ["finance"]
     }
 ]
