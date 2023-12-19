@@ -2084,7 +2084,15 @@
         "tags": []
     },
     {
-        "url": "https://www.wsj.com/xml/rss/3_7031.xml",
-        "tags": ["finance"]
+        "url": "http://feeds.foxnews.com/foxnews/most-popular",
+        "tags": [
+            "news"
+        ]
+    },
+    {
+        "url": "https://www.techrepublic.com/rssfeeds/topic/technology/",
+        "tags": [
+            "technology"
+        ]
     }
 ]
