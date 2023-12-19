@@ -53,5 +53,5 @@ for x in json_data:
 json_dump = json.dumps(json_data)
 
 # save it out
-with open('feeds2.json', 'w') as file:
+with open('feeds.json', 'w') as file:
     file.write(json_dump)
