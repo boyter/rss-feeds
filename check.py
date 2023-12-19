@@ -38,6 +38,9 @@ for x in json_data:
         print(f"Duplicate {x}")
         continue
     found.append(x)
+
+    # todo if over 10 failures... lets not bother anymore
+
     if ping_url(x['url']):
         x['failCount'] = 0
     else:

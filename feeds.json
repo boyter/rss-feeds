@@ -945,6 +945,13 @@
         ]
     },
     {
+        "url": "https://lobste.rs/rss",
+        "tags": [
+            "technology",
+            "programming"
+        ]
+    },
+    {
         "url": "https://www.techrepublic.com/rssfeeds/articles/",
         "tags": [
             "technology"
@@ -977,7 +984,7 @@
     {
         "url": "https://defence-blog.com/feed/",
         "tags": [
-            "defence",
+            "defense",
             "news"
         ]
     },
@@ -1701,11 +1708,11 @@
     },
     {
         "url": "http://asiandefencenewschannel.blogspot.com/feeds/posts/default",
-        "tags": []
-    },
-    {
-        "url": "http://www.littynews.com/feed/",
-        "tags": []
+        "tags": [
+            "asia",
+            "defense",
+            "news"
+        ]
     },
     {
         "url": "https://thedetrend.com/feed/",
