@@ -1,0 +1,11 @@
+{"key": "allworldnews24hours6.blogspot.com", "reason": "content-farm: domain promises world news, serves republished wine articles"}
+{"key": "worldupdatedaily.blogspot.com", "reason": "content-farm: feed returns 200 with no items and no title"}
+{"key": "newslanes.com", "reason": "content-farm: feed title is the domain name, no items"}
+{"key": "cosmic-times.com", "reason": "seo-spam: 'SPACE FORCE' feed serving Czech and Dutch casino gambling pages"}
+{"key": "reddit.com/login/", "reason": "not-a-feed: the reddit login page was added as a feed"}
+{"key": "medium.com/feed/@steve.yegge", "reason": "seo-spam: Medium account renamed to '1v1 lol unblocked games', not Steve Yegge"}
+{"key": "feeds.feedburner.com/techcrunch", "reason": "name-squat: feedburner alias for TechCrunch now serves 'Crunch Hype', a digital marketing site"}
+{"key": "feeds.feedburner.com/warnewsupdates", "reason": "content-farm: feedburner alias with no title and no items"}
+{"key": "articleify.com", "reason": "seo-spam: 'ArticleIFY' serving wellness clinic advertorials under a news tag"}
+{"key": "quintdaily.com", "reason": "seo-spam: 'QuintDaily' serving Dubai lifestyle advertorials under a news tag"}
+{"key": "wowplus.net", "reason": "seo-spam: celebrity listicles under a news tag"}

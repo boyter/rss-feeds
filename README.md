@@ -6,6 +6,8 @@ There are a lot of websites out there with lists of "top 100 rss feeds" however 
 
 Thats where this repository fits in.
 
-See `feeds.json` for a collection of all the feeds. Feeds include a collection of tags to get categorize the content because not all feeds return this information. Everything else such as title is not included, because feeds should include this information for you.
+See `feeds.json` for a collection of all the feeds. Each entry has a `url`, a set of tags, and the `title` the feed itself reports. Tags are there because not all feeds return category information. The title is there because a list of two thousand bare URLs is hard to browse, and because it is harvested from the feed rather than typed by hand, it stays honest.
 
-If you want to add feeds submit a PR. The `check.py` script will be run every now and then in order to confirm feeds actually return something and otherwise track the errors, with the intention to remove the feed at some point if it remains broken.
+Tags are namespaced: `topic:` what it is about, `type:` what kind of source it is, `region:` editorial focus, `language:` when it isn't English. The vocabulary and the rules for adding to it are in `TAGS.md`. One feed per line, sorted by host, so a change to one feed shows up as one changed line.
+
+If you want to add feeds submit a PR. `harvest.py` fetches every feed and records its title, description, sample items and whether it actually serves a feed; `triage.py` turns that into keep / flag / remove, feeds that stay broken get dropped, and `REMOVED.md` lists what went and why.

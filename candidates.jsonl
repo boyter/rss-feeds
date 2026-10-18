@@ -1,0 +1,150 @@
+{"url": "https://www.quantamagazine.org/feed/", "tags": ["topic:science", "topic:mathematics", "type:publication", "region:usa"]}
+{"url": "https://www.nature.com/nature.rss", "tags": ["topic:science", "topic:medicine", "type:publication", "region:uk"]}
+{"url": "https://www.sciencedaily.com/rss/all", "tags": ["topic:science", "type:aggregator"]}
+{"url": "https://phys.org/rss-feed/", "tags": ["topic:science", "type:aggregator"]}
+{"url": "https://cosmosmagazine.com/feed/", "tags": ["topic:science", "type:publication", "region:australia"]}
+{"url": "https://nautil.us/feed/", "tags": ["topic:science", "type:publication"]}
+{"url": "https://aeon.co/feed.rss", "tags": ["topic:philosophy", "topic:science", "type:publication"]}
+{"url": "https://www.scientificamerican.com/feed/", "tags": ["topic:science", "type:publication", "region:usa"]}
+{"url": "https://www.newscientist.com/feed/", "tags": ["topic:science", "type:publication", "region:uk"]}
+{"url": "https://feeds.arstechnica.com/arstechnica/science", "tags": ["topic:science", "type:publication", "region:usa"]}
+{"url": "https://www.statnews.com/feed/", "tags": ["topic:medicine", "topic:health", "type:publication", "region:usa"]}
+{"url": "https://www.sciencebasedmedicine.org/feed/", "tags": ["topic:medicine", "topic:science", "type:community"]}
+{"url": "https://ourworldindata.org/feed.xml", "tags": ["topic:data", "topic:economics", "topic:science", "type:publication"]}
+{"url": "https://www.healthnewsreview.org/feed/", "tags": ["topic:health", "topic:medicine", "type:institution"]}
+{"url": "https://www.carbonbrief.org/feed/", "tags": ["topic:environment", "type:publication", "region:uk"]}
+{"url": "https://insideclimate.org/feed/", "tags": ["topic:environment", "type:publication", "region:usa"]}
+{"url": "https://grist.org/feed/", "tags": ["topic:environment", "topic:politics", "type:publication", "region:usa"]}
+{"url": "https://e360.yale.edu/feed/", "tags": ["topic:environment", "topic:science", "type:publication", "region:usa"]}
+{"url": "https://news.mongabay.com/feed/", "tags": ["topic:environment", "topic:science", "type:publication"]}
+{"url": "https://thehill.com/feed/", "tags": ["topic:politics", "topic:government", "type:publication", "region:usa"]}
+{"url": "https://www.politico.com/rss/politico.xml", "tags": ["topic:politics", "topic:government", "type:publication", "region:usa"]}
+{"url": "https://www.govexec.com/feed/all-news/", "tags": ["topic:government", "type:publication", "region:usa"]}
+{"url": "https://www.nextgov.com/rss/all", "tags": ["topic:government", "topic:infrastructure", "type:publication", "region:usa"]}
+{"url": "https://www.lawfareblog.com/feed", "tags": ["topic:government", "topic:politics", "type:publication", "region:usa"]}
+{"url": "https://www.project-syndicate.org/commentary/rss", "tags": ["topic:politics", "topic:economics", "type:publication", "region:world"]}
+{"url": "https://www.brookings.edu/feed/", "tags": ["topic:politics", "topic:economics", "type:institution", "region:usa"]}
+{"url": "https://www.gov.uk/government/organisations/government-digital-service.atom", "tags": ["topic:government", "topic:software-engineering", "type:institution", "region:uk"]}
+{"url": "https://www.smithsonianmag.com/rss/", "tags": ["topic:history", "topic:science", "type:publication", "region:usa"]}
+{"url": "https://www.lrb.co.uk/feed", "tags": ["topic:books", "topic:politics", "type:publication", "region:uk"]}
+{"url": "https://publicdomainreview.org/feed/", "tags": ["topic:history", "topic:art", "type:publication"]}
+{"url": "https://www.lithub.com/feed", "tags": ["topic:books", "type:publication"]}
+{"url": "https://www.openculture.com/feed", "tags": ["topic:art", "topic:books", "topic:education", "type:aggregator"]}
+{"url": "https://hyperallergic.com/feed/", "tags": ["topic:art", "type:publication", "region:usa"]}
+{"url": "https://www.theatlantic.com/feed/all/", "tags": ["topic:news", "topic:politics", "type:publication", "region:usa"]}
+{"url": "https://newrepublic.com/feed", "tags": ["topic:politics", "topic:news", "type:publication", "region:usa"]}
+{"url": "https://thequietus.com/feed/", "tags": ["topic:music", "topic:art", "type:publication", "region:uk"]}
+{"url": "https://www.thestrangeones.com/feed/", "tags": ["topic:music", "type:publication", "region:uk"]}
+{"url": "https://stereogum.com/feed", "tags": ["topic:music", "type:publication", "region:usa"]}
+{"url": "https://pitchfork.com/rss/reviews/albums/", "tags": ["topic:music", "type:publication", "region:usa"]}
+{"url": "https://dailynous.com/feed/", "tags": ["topic:philosophy", "type:aggregator"]}
+{"url": "https://www.philosophyetc.net/feed/", "tags": ["topic:philosophy", "type:personal-blog"]}
+{"url": "https://blog.crookedtimber.org/feed/", "tags": ["topic:politics", "topic:philosophy", "type:aggregator"]}
+{"url": "https://www.edsurge.com/news/feed", "tags": ["topic:education", "topic:tech-industry", "type:publication", "region:usa"]}
+{"url": "https://elpais.com/feed/", "tags": ["topic:news", "type:publication", "region:spain", "language:spanish"]}
+{"url": "https://brasilianafreepress.com/feed/", "tags": ["topic:journalism", "topic:news", "type:publication", "region:latin-america"]}
+{"url": "https://www.irishtimes.com/feed", "tags": ["topic:news", "type:publication", "region:ireland"]}
+{"url": "https://www.thejournal.ie/feed/", "tags": ["topic:news", "type:publication", "region:ireland"]}
+{"url": "https://eng.spectrumnews.org/feed/", "tags": ["topic:science", "topic:tech-industry", "type:publication", "region:south-korea"]}
+{"url": "https://www.koreaherald.com/rss/common", "tags": ["topic:news", "type:publication", "region:south-korea"]}
+{"url": "https://www.japantimes.co.jp/feed/", "tags": ["topic:news", "type:publication", "region:japan"]}
+{"url": "https://japantoday.com/feed", "tags": ["topic:news", "type:publication", "region:japan"]}
+{"url": "https://www3.nhk.or.jp/rss/news/cat0.xml", "tags": ["topic:news", "type:publication", "region:japan", "language:japanese"]}
+{"url": "https://chinadialogue.net/feed/", "tags": ["topic:environment", "topic:politics", "type:publication", "region:china"]}
+{"url": "https://theprint.in/feed/", "tags": ["topic:news", "type:publication", "region:india"]}
+{"url": "https://scroll.in/feed", "tags": ["topic:news", "type:publication", "region:india"]}
+{"url": "https://www.dailymaverick.co.za/feed/", "tags": ["topic:news", "topic:politics", "type:publication", "region:africa"]}
+{"url": "https://africanarguments.org/feed/", "tags": ["topic:politics", "topic:news", "type:publication", "region:africa"]}
+{"url": "https://theconversation.com/us/articles.atom", "tags": ["topic:news", "topic:science", "type:publication", "region:usa"]}
+{"url": "https://theconversation.com/uk/articles.atom", "tags": ["topic:news", "topic:science", "type:publication", "region:uk"]}
+{"url": "https://theconversation.com/africa/articles.atom", "tags": ["topic:news", "topic:science", "type:publication", "region:africa"]}
+{"url": "https://www.euronews.com/rss", "tags": ["topic:news", "type:publication", "region:europe"]}
+{"url": "https://www.lemonde.fr/rss/une.xml", "tags": ["topic:news", "type:publication", "region:france", "language:french"]}
+{"url": "https://rss.dw.com/rdf/rss-en-all", "tags": ["topic:news", "type:publication", "region:germany"]}
+{"url": "https://www.cbc.ca/webfeed/rss/rss-world", "tags": ["topic:news", "type:publication", "region:world", "region:canada"]}
+{"url": "https://r-bloggers.com/feed/", "tags": ["topic:programming:r", "topic:data", "type:aggregator"]}
+{"url": "https://blog.rust-lang.org/feed.xml", "tags": ["topic:programming:rust", "type:institution"]}
+{"url": "https://scala-lang.org/blog/feed.xml", "tags": ["topic:programming:scala", "type:institution"]}
+{"url": "https://blog.jetbrains.com/kotlin/feed/", "tags": ["topic:programming:kotlin", "type:vendor-blog"]}
+{"url": "https://dart.dev/feed.xml", "tags": ["topic:programming:dart", "type:vendor-blog"]}
+{"url": "https://andrewkelley.me/rss.xml", "tags": ["topic:programming:zig", "topic:systems", "type:personal-blog"]}
+{"url": "https://julialang.org/blog/feed.xml", "tags": ["topic:programming:julia", "topic:mathematics", "type:community"]}
+{"url": "https://ocaml.org/feed.xml", "tags": ["topic:programming:ocaml", "type:community"]}
+{"url": "https://blogs.perl.org/atom.xml", "tags": ["topic:programming:perl", "type:aggregator"]}
+{"url": "https://fsharpforfunandprofit.com/rss-feed/", "tags": ["topic:programming:fsharp", "topic:software-engineering", "type:personal-blog"]}
+{"url": "https://dlang.org/blog/feed/", "tags": ["topic:programming:d", "type:community"]}
+{"url": "https://www.ruby-lang.org/en/feeds/news.rss", "tags": ["topic:programming:ruby", "type:community"]}
+{"url": "https://www.php.net/rss/news.xml", "tags": ["topic:programming:php", "type:community"]}
+{"url": "https://nim-lang.org/blog/rss.xml", "tags": ["topic:programming:nim", "type:community"]}
+{"url": "https://www.crystal-lang.org/feed.xml", "tags": ["topic:programming:crystal", "type:community"]}
+{"url": "https://www.postgresweekly.com/feed", "tags": ["topic:data", "type:newsletter"]}
+{"url": "https://pythonweekly.com/feed", "tags": ["topic:programming:python", "type:newsletter"]}
+{"url": "https://console.dev/rss/", "tags": ["topic:infrastructure", "type:newsletter"]}
+{"url": "https://www.baeldung.com/feed", "tags": ["topic:programming:java", "type:vendor-blog"]}
+{"url": "https://www.infoq.com/feed/rss", "tags": ["topic:software-engineering", "topic:tech-industry", "type:publication"]}
+{"url": "https://queue.acm.org/rss.cfm", "tags": ["topic:software-engineering", "topic:systems", "type:institution"]}
+{"url": "https://lexfridman.com/feed/podcast/", "tags": ["topic:ai", "topic:science", "type:podcast"]}
+{"url": "https://changelog.com/feed", "tags": ["topic:software-engineering", "topic:open-source", "type:podcast"]}
+{"url": "https://syntax.fm/rss", "tags": ["topic:web-development", "type:podcast"]}
+{"url": "https://interconnects.buttondown.email/feed", "tags": ["topic:ai", "topic:politics", "type:newsletter"]}
+{"url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCYO_jab_esuFRV4b17AJtAw", "tags": ["topic:mathematics", "type:video"]}
+{"url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCsXVk37bltHxD1rDPwtNM8Q", "tags": ["topic:science", "type:video"]}
+{"url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC7_gcs09iXFV3TKXCDY4bqA", "tags": ["topic:science", "topic:tech-industry", "type:video"]}
+{"url": "https://www.fastspine.com/feed/", "tags": ["topic:sport", "topic:data", "type:publication", "region:usa"]}
+{"url": "https://www.scientificamerican.com/rss/latest.rdf", "tags": ["topic:science", "type:publication", "region:usa"]}
+{"url": "https://ourworldindata.org/rss.xml", "tags": ["topic:data", "topic:economics", "topic:science", "type:publication"]}
+{"url": "https://e360.yale.edu/rss.xml", "tags": ["topic:environment", "topic:science", "type:publication", "region:usa"]}
+{"url": "https://www.mongabay.com/feed/", "tags": ["topic:environment", "topic:science", "type:publication"]}
+{"url": "https://www.carbonbrief.org/feed", "tags": ["topic:environment", "type:publication", "region:uk"]}
+{"url": "https://www.govexec.com/rss/all/", "tags": ["topic:government", "type:publication", "region:usa"]}
+{"url": "https://www.lawfarereview.org/feed", "tags": ["topic:government", "topic:politics", "type:publication", "region:usa"]}
+{"url": "https://www.smithsonianmag.com/rss/all/", "tags": ["topic:history", "topic:science", "type:publication", "region:usa"]}
+{"url": "https://newrepublic.com/rss.xml", "tags": ["topic:politics", "topic:news", "type:publication", "region:usa"]}
+{"url": "https://www.edsurge.com/rss.xml", "tags": ["topic:education", "topic:tech-industry", "type:publication", "region:usa"]}
+{"url": "https://www.irishtimes.com/arc/outboundfeeds/rss/?outputType=xml", "tags": ["topic:news", "type:publication", "region:ireland"]}
+{"url": "https://spectrumnews.org/feed/", "tags": ["topic:science", "topic:tech-industry", "type:publication", "region:south-korea"]}
+{"url": "https://www.japantoday.com/feed", "tags": ["topic:news", "type:publication", "region:japan"]}
+{"url": "https://theprint.in/feed", "tags": ["topic:news", "type:publication", "region:india"]}
+{"url": "https://scroll.in/rss", "tags": ["topic:news", "type:publication", "region:india"]}
+{"url": "https://www.dailymaverick.co.za/feed", "tags": ["topic:news", "topic:politics", "type:publication", "region:africa"]}
+{"url": "https://dart.dev/blog/feed.xml", "tags": ["topic:programming:dart", "type:vendor-blog"]}
+{"url": "https://julialang.org/blog/index.xml", "tags": ["topic:programming:julia", "topic:mathematics", "type:community"]}
+{"url": "https://dlang.org/blog/atom.xml", "tags": ["topic:programming:d", "type:community"]}
+{"url": "https://www.php.net/rss/news", "tags": ["topic:programming:php", "type:community"]}
+{"url": "https://nim-lang.org/blog/feeds/all.atom.xml", "tags": ["topic:programming:nim", "type:community"]}
+{"url": "https://postgresweekly.com/feed", "tags": ["topic:data", "type:newsletter"]}
+{"url": "https://www.pythonweekly.com/feed", "tags": ["topic:programming:python", "type:newsletter"]}
+{"url": "https://console.dev/rss", "tags": ["topic:infrastructure", "type:newsletter"]}
+{"url": "https://feed.syntax.fm/rss", "tags": ["topic:web-development", "type:podcast"]}
+{"url": "https://www.theverge.com/rss/index.xml", "tags": ["topic:tech-industry", "topic:gadgets", "type:publication", "region:usa"]}
+{"url": "https://www.wired.com/feed/rss", "tags": ["topic:tech-industry", "topic:gadgets", "type:publication", "region:usa"]}
+{"url": "https://www.propublica.org/feed/", "tags": ["topic:journalism", "topic:politics", "type:publication", "region:usa"]}
+{"url": "https://www.theintercept.com/feed/", "tags": ["topic:journalism", "topic:politics", "type:publication", "region:usa"]}
+{"url": "https://www.niemanlab.org/feed/", "tags": ["topic:journalism", "topic:media", "type:institution", "region:usa"]}
+{"url": "https://www.poynter.org/feed/", "tags": ["topic:journalism", "topic:media", "type:institution", "region:usa"]}
+{"url": "https://www.theguardian.com/football/rss", "tags": ["topic:sport", "type:publication", "region:uk"]}
+{"url": "https://www.theguardian.com/environment/rss", "tags": ["topic:environment", "type:publication", "region:uk"]}
+{"url": "https://feeds.bbci.co.uk/news/health/rss.xml", "tags": ["topic:health", "type:publication", "region:uk", "region:world"]}
+{"url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml", "tags": ["topic:science", "topic:environment", "type:publication", "region:uk", "region:world"]}
+{"url": "https://feeds.bbci.co.uk/news/technology/rss.xml", "tags": ["topic:tech-industry", "type:publication", "region:uk", "region:world"]}
+{"url": "https://www.npr.org/rss/rss.php?id=1019", "tags": ["topic:tech-industry", "type:publication", "region:usa"]}
+{"url": "https://www.npr.org/rss/rss.php?id=1031", "tags": ["topic:health", "type:publication", "region:usa", "region:world"]}
+{"url": "https://www.pcgamer.com/rss/", "tags": ["topic:gaming", "type:publication", "region:uk"]}
+{"url": "https://www.rockpapershotgun.com/feed", "tags": ["topic:gaming", "type:publication", "region:uk"]}
+{"url": "https://www.eurogamer.net/feed", "tags": ["topic:gaming", "type:publication", "region:uk"]}
+{"url": "https://rss.arxiv.org/rss/cs.AI", "tags": ["topic:ai", "type:institution"]}
+{"url": "https://rss.arxiv.org/rss/cs.CR", "tags": ["topic:security", "type:institution"]}
+{"url": "https://hnrss.org/frontpage", "tags": ["topic:tech-industry", "type:aggregator"]}
+{"url": "https://www.importai.substack.com/feed", "tags": ["topic:ai", "type:newsletter"]}
+{"url": "https://www.thealgorithmicbridge.com/feed", "tags": ["topic:tech-industry", "topic:ai", "type:newsletter"]}
+{"url": "https://lobste.rs/rss", "tags": ["topic:programming", "type:aggregator"]}
+{"url": "https://www.astronomy.com/feed/", "tags": ["topic:science", "type:publication", "region:usa"]}
+{"url": "https://www.salon.com/feed", "tags": ["topic:news", "topic:politics", "type:publication", "region:usa"]}
+{"url": "https://slate.com/feed", "tags": ["topic:news", "topic:politics", "type:publication", "region:usa"]}
+{"url": "https://www.theparisreview.org/blog/feed/", "tags": ["topic:books", "topic:art", "type:publication", "region:usa"]}
+{"url": "https://www.londonreviewofbooks.com/feed", "tags": ["topic:books", "type:publication", "region:uk"]}
+{"url": "https://www.philosophyzone.com/feed", "tags": ["topic:philosophy", "type:aggregator"]}
+{"url": "https://www.theglobeandmail.com/rss/world/canada/cdn/ctimes/rss.xml", "tags": ["topic:news", "type:publication", "region:canada"]}
+{"url": "https://www.stuff.co.nz/rss", "tags": ["topic:news", "type:publication", "region:new-zealand"]}
+{"url": "https://www.rnz.co.nz/rss/national.xml", "tags": ["topic:news", "type:publication", "region:new-zealand"]}
+{"url": "https://www.sbs.com.au/news/topic/indigenous-australia/feed", "tags": ["topic:news", "type:publication", "region:australia"]}

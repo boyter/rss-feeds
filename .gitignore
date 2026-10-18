@@ -1,0 +1,6 @@
+__pycache__/
+*.log
+feeds.json.new
+draft.jsonl
+triage.jsonl
+NEEDS_REVIEW.md
