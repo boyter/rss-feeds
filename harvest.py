@@ -292,10 +292,18 @@ def read_body(resp, cap=MAX_BYTES):
                     note += " header lied about encoding"
                     continue
                 break
-        if dec is not None and dec.eof:
-            break
         if len(out) >= cap:
+            # Checked before the eof test, because one read can inflate past the
+            # cap and end the stream in the same call: a repetitive feed
+            # compressed 400:1 in a test, so a 4 KB response arrived as one chunk
+            # and became 1.7 MB with no note. The cap is the bound on what we
+            # hold, so it has to be applied to the bytes produced, not only
+            # inspected between chunks.
+            if len(out) > cap:
+                out = out[:cap]
             capped = True
+            break
+        if dec is not None and dec.eof:
             break
     if dec is not None and not out and raw and not looks_compressed(raw):
         # The stream ended on the chunk that failed to inflate.

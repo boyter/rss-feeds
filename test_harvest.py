@@ -90,6 +90,14 @@ class ReadBody(unittest.TestCase):
         self.assertFalse(harvest.looks_compressed(b"\x00\x00\x00\x00"))
         self.assertTrue(harvest.looks_compressed(gzip.compress(b"x")))
 
+    def test_a_0x78_lead_byte_with_a_bad_checksum_is_not_deflate(self):
+        # Without this case "is it deflate?" degrades to "does it start with
+        # 0x78": one byte of evidence, sending an identity body through an inflate
+        # that then fails - the exact shape of the lying-header bug.
+        for flg in (0x00, 0x02, 0x03, 0xff):
+            self.assertFalse(harvest.looks_compressed(bytes([0x78, flg]) + b"\x00" * 8),
+                             "0x78 0x%02x fails the header checksum" % flg)
+
 
 class DecodeText(unittest.TestCase):
     """Encoding is established in order of trust: mark, shape, utf-8, declared, cp1252."""
@@ -158,6 +166,21 @@ class DecodeText(unittest.TestCase):
         raw, enc, note = harvest.read_body(Resp(chunks_of(body)))
         self.assertLessEqual(len(raw), harvest.MAX_BYTES + 8192)
         self.assertIn("capped", note)
+
+    def test_the_cap_applies_to_decoded_bytes_not_compressed_ones(self):
+        # The original bug: resp.read(60000) cut a gzip stream mid-flight,
+        # gzip.decompress raised EOFError - which is not an OSError, so it
+        # escaped the handler - and ProPublica, The Intercept, PC Gamer, Salon
+        # and Lex Fridman were recorded as not feeds. A compressed-byte cap lets
+        # the whole inflated body through here, with no note at all.
+        big = b"<rss><channel>" + b"<item><title>x</title></item>" * 60000
+        compressed = gzip.compress(big)
+        self.assertLess(len(compressed), harvest.MAX_BYTES, "must fit under a compressed cap")
+        self.assertGreater(len(big), harvest.MAX_BYTES, "must overflow a decoded cap")
+        raw, enc, note = harvest.read_body(Resp(chunks_of(compressed), "gzip"))
+        self.assertLessEqual(len(raw), harvest.MAX_BYTES + 8192)
+        self.assertIn("capped", note)
+        self.assertTrue(raw.startswith(b"<rss"))
 
     def test_a_short_body_ending_on_a_high_byte_is_not_blamed_on_the_cap(self):
         # "tail cut" is only credible when the body reached the cap. Otherwise a
