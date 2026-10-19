@@ -2737,3 +2737,4 @@
 {"key": "https://www.manton.org/feed.xml", "tags": ["topic:software-engineering", "type:personal-blog"]}
 {"key": "https://www.rhyswynne.co.uk/feed/", "tags": ["topic:gaming", "type:personal-blog"]}
 {"key": "https://www.ruanyifeng.com/blog/atom.xml", "tags": ["language:chinese", "topic:software-engineering", "type:personal-blog"]}
+{"key": "https://boyter.org/index.xml", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}

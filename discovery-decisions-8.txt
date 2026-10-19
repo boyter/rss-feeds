@@ -1,0 +1,1 @@
+boyter.org    topic:software-engineering topic:ai type:personal-blog   # my own site: code tooling, search, LLM cost models; the wine and desktop posts are one-offs
