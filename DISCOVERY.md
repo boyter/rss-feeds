@@ -243,3 +243,51 @@ python3 tools/discover.py tag          # read the two reports it writes
 python3 tools/decide.py discovery-decisions.txt
 python3 tools/add.py merge data/candidates.tagged.jsonl   # then --apply
 ```
+
+## Rounds three and four: what the channels were worth
+
+| channel | offered | real | rate |
+|---|---|---|---|
+| links found on pages of already-trusted hosts (`leads`) | 556 | 524 | 94% |
+| curated lists, second batch (security feeds, newsboat dumps, country OPML) | 1,978 | 214 | 11% |
+| sibling feeds, widened to hosts carrying two feeds | 2,878 | 23 | 0.8% |
+
+The sibling pass is finished: past one feed per host it stops paying. `leads` is
+the channel worth running again — it costs nothing but a fetch of pages whose
+host is already vetted. The newsboat dumps are mostly 403s and JS-walled pages;
+they belong in `BLOCKED_CANDIDATES.md`, not in a probe queue.
+
+## What the lists get wrong
+
+`mrtouch93/awesome-security-feed` files National Review, the Washington
+Examiner, The Oatmeal, Megatokyo, Draplin, swissmiss, Signal v. Noise and
+Newsboat under security headings, and one of its categories is the literal
+string `http://127.0.0.1/rss.xml me`. 29 rules were rewritten from the feed's
+own title instead of the list's claim. A list's category is a lead about the
+topic, never the topic.
+
+Two feedburner aliases of techcrunch.com answer with a real feed titled "Crunch
+Hype": the alias was squatted. Parsing is not admission; `spam.jsonl` took them.
+So did `trustwave.com/en-us/rss/spiderlabs-blog/`, which the publisher itself
+titles "[DO NOT USE]".
+
+## decide.py's overwrite guard, and what it protects
+
+A host rule that sets `type:` over a site publishing two kinds of feed cannot
+preserve both — toucharcade.com has article feeds and a podcast feed, and the
+rule retypes one whichever way it is written. decide.py now refuses such a rule
+outright, and the rules for toucharcade, carscoops and jalopnik were deleted so
+the per-feed tags already in feeds.json stand.
+
+The guard compares against **HEAD**, not the working tree. It used to compare
+against the working tree and then refused a correction of its own rules from ten
+minutes earlier ("you would drop topic:security from the existing rule"), which
+is how a guard becomes noise. The invariant protects decisions that have
+shipped.
+
+## The queue
+
+4,762 feeds on 3,257 hosts. Six rows remain queued, three hosts held back
+because their titles decide nothing (`labs.cosmicbytez.ca`, `colinwalker.blog`,
+`lmika.org`) and their duplicates. A guessed topic is pinned forever, so an
+undecidable title stays in the queue rather than getting a coin flip.

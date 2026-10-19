@@ -1,0 +1,36 @@
+# Batch seven: the last of the queue, one URL rule per feed.
+# Chinese-language feeds carry language:chinese even though some originate in
+# English (the Economist digest is a translation, and TAGS.md says a translated
+# feed states its language). plink.anyfeeder.com is a mirror farm, so each path
+# is a different publisher and gets its own rule.
+# Held back, title decides nothing: colinwalker.blog, lmika.org,
+# discursive.adamprocter.co.uk.
+https://blog.jim-nielsen.com/feed.xml                     topic:web-development type:personal-blog
+https://blog.torproject.org/event/feed.xml                topic:security type:vendor-blog
+https://blog.torproject.org/feed.xml                      topic:security type:vendor-blog
+https://dataswamp.org/~solene/rss.xml                     topic:systems type:personal-blog
+https://gityuan.com/feed.xml                              topic:software-engineering region:china language:chinese type:personal-blog
+https://joeross.me/feed.xml                               topic:personal type:personal-blog
+https://josh.blog/feed                                    topic:software-engineering type:personal-blog
+https://my-rssh-gwb5d33jd-amicoyuan.vercel.app/hexo/fluid/atom.xml  topic:software-engineering language:chinese type:personal-blog
+https://philbowell.me/feed.xml                            topic:web-development type:personal-blog
+https://philwilson.org/blog/feed                          topic:security type:personal-blog
+https://plink.anyfeeder.com/bbc/cn                        topic:news region:world language:chinese type:publication
+https://plink.anyfeeder.com/jingjiribao                   topic:economics region:china language:chinese type:publication
+https://plink.anyfeeder.com/weixin/Economist_fans         topic:news language:chinese type:aggregator
+https://plink.anyfeeder.com/weixin/gh_10a6b96351a9        topic:software-engineering language:chinese type:aggregator
+https://plink.anyfeeder.com/weixin/mingqinghistory        topic:history language:chinese type:aggregator
+https://plink.anyfeeder.com/weixin/thepapernews           topic:news region:china language:chinese type:publication
+https://plink.anyfeeder.com/zaobao/realtime/world         topic:news region:asia language:chinese type:publication
+https://plink.anyfeeder.com/zhihu/daily                   topic:news region:china language:chinese type:aggregator
+rss.huxiu.com                                             topic:tech-industry region:china language:chinese type:publication
+https://samdavies.me/feed.xml                             topic:web-development type:personal-blog
+https://therealadam.com/feed.xml                          topic:software-engineering type:personal-blog
+https://ttntm.me/everything.xml                           topic:personal type:personal-blog
+https://visitmy.website/feed.xml                          topic:web-development type:personal-blog
+https://wirres.net/feed/                                  topic:design type:personal-blog
+https://www.chaincatcher.com/rss/clist                    topic:finance region:china language:chinese type:publication
+https://www.geekpark.net/rss                              topic:tech-industry region:china language:chinese type:publication
+https://www.manton.org/feed.xml                           topic:software-engineering type:personal-blog
+https://www.rhyswynne.co.uk/feed/                         topic:gaming type:personal-blog
+https://www.ruanyifeng.com/blog/atom.xml                  topic:software-engineering language:chinese type:personal-blog

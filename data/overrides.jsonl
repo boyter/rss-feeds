@@ -2708,3 +2708,32 @@
 {"key": "washingtonexaminer.com", "tags": ["region:usa", "topic:politics", "type:publication"]}
 {"key": "wiremask.eu", "tags": ["topic:security", "type:personal-blog"]}
 {"key": "zeltser.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "https://blog.jim-nielsen.com/feed.xml", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "https://blog.torproject.org/event/feed.xml", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "https://blog.torproject.org/feed.xml", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "https://dataswamp.org/~solene/rss.xml", "tags": ["topic:systems", "type:personal-blog"]}
+{"key": "https://gityuan.com/feed.xml", "tags": ["language:chinese", "region:china", "topic:software-engineering", "type:personal-blog"]}
+{"key": "https://joeross.me/feed.xml", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://josh.blog/feed", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://my-rssh-gwb5d33jd-amicoyuan.vercel.app/hexo/fluid/atom.xml", "tags": ["language:chinese", "topic:software-engineering", "type:personal-blog"]}
+{"key": "https://philbowell.me/feed.xml", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "https://philwilson.org/blog/feed", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "https://plink.anyfeeder.com/bbc/cn", "tags": ["language:chinese", "region:world", "topic:news", "type:publication"]}
+{"key": "https://plink.anyfeeder.com/jingjiribao", "tags": ["language:chinese", "region:china", "topic:economics", "type:publication"]}
+{"key": "https://plink.anyfeeder.com/weixin/Economist_fans", "tags": ["language:chinese", "topic:news", "type:aggregator"]}
+{"key": "https://plink.anyfeeder.com/weixin/gh_10a6b96351a9", "tags": ["language:chinese", "topic:software-engineering", "type:aggregator"]}
+{"key": "https://plink.anyfeeder.com/weixin/mingqinghistory", "tags": ["language:chinese", "topic:history", "type:aggregator"]}
+{"key": "https://plink.anyfeeder.com/weixin/thepapernews", "tags": ["language:chinese", "region:china", "topic:news", "type:publication"]}
+{"key": "https://plink.anyfeeder.com/zaobao/realtime/world", "tags": ["language:chinese", "region:asia", "topic:news", "type:publication"]}
+{"key": "https://plink.anyfeeder.com/zhihu/daily", "tags": ["language:chinese", "region:china", "topic:news", "type:aggregator"]}
+{"key": "rss.huxiu.com", "tags": ["language:chinese", "region:china", "topic:tech-industry", "type:publication"]}
+{"key": "https://samdavies.me/feed.xml", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "https://therealadam.com/feed.xml", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://ttntm.me/everything.xml", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://visitmy.website/feed.xml", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "https://wirres.net/feed/", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "https://www.chaincatcher.com/rss/clist", "tags": ["language:chinese", "region:china", "topic:finance", "type:publication"]}
+{"key": "https://www.geekpark.net/rss", "tags": ["language:chinese", "region:china", "topic:tech-industry", "type:publication"]}
+{"key": "https://www.manton.org/feed.xml", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://www.rhyswynne.co.uk/feed/", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "https://www.ruanyifeng.com/blog/atom.xml", "tags": ["language:chinese", "topic:software-engineering", "type:personal-blog"]}
