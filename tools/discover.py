@@ -57,6 +57,7 @@ RESULTS = paths.data("probe_results.jsonl")
 TAGGED = paths.data("candidates.tagged.jsonl")
 SIBLINGS = paths.data("candidates.siblings.jsonl")
 LEADS = paths.data("candidates.leads.jsonl")
+PAGES = paths.data("candidates.pages.jsonl")
 
 # A URL that cannot be a feed. Not a judgement about the site — about whether
 # this particular URL can ever answer with RSS. raw.githubusercontent.com is the
@@ -780,6 +781,43 @@ def cmd_leads(args):
     return 0
 
 
+def cmd_pages(args):
+    """Turn a named list of sites into probe targets, so they can be asked for feeds.
+
+    Guessing `/feed` and `/rss.xml` on sites nobody recommended measured 3,754
+    HTML pages against 23 real feeds, and a guessed path that 404s teaches
+    nothing about a site that serves its feed at `/blog/atom.xml`. A page answers
+    that question directly: harvest.probe records an HTML page's feed links in
+    altFeed without calling the page a feed, and `leads` turns those into
+    candidates. So this writes homepages, never feeds, and never fetches.
+    """
+    rows, stats = [], collections.Counter()
+    for line in open(args.sites, encoding="utf-8"):
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        if line.startswith("{"):
+            line = json.loads(line).get("url", "")
+        if not line.lower().startswith(("http://", "https://")):
+            stats["dropped:not a URL"] += 1
+            continue
+        p = urlparse(line)
+        home = f"{p.scheme}://{p.netloc}/"
+        if home in {r["url"] for r in rows}:
+            stats["dropped:duplicate"] += 1
+            continue
+        rows.append({"url": home, "tags": [], "source": "named-site",
+                     "category": "", "hintTopics": [], "hintType": None,
+                     "via": "named-site"})
+    with open(PAGES, "w", encoding="utf-8") as fh:
+        for r in rows:
+            fh.write(json.dumps(r, ensure_ascii=False) + "\n")
+    print(f"{len(rows)} sites to ask for their feeds -> {PAGES}")
+    for k, v in sorted(stats.items()):
+        print(f"  {k:30} {v}")
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -794,6 +832,8 @@ def main():
     s.add_argument("--max-per-host", type=int, default=1,
                    help="include hosts with up to N feeds in feeds.json")
     sub.add_parser("leads")
+    pg = sub.add_parser("pages")
+    pg.add_argument("sites", help="file of site URLs to ask for their feeds")
     args = ap.parse_args()
     if args.cmd == "fetch" and args.sources:
         # A path given on the command line is the user's path, not ours (see
@@ -802,7 +842,8 @@ def main():
         SOURCES = args.sources
     return {"fetch": cmd_fetch, "extract": cmd_extract,
             "paths": cmd_paths, "tag": cmd_tag,
-            "siblings": cmd_siblings, "leads": cmd_leads}[args.cmd](args)
+            "siblings": cmd_siblings, "leads": cmd_leads,
+            "pages": cmd_pages}[args.cmd](args)
 
 
 if __name__ == "__main__":

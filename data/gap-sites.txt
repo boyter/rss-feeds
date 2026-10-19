@@ -1,0 +1,30 @@
+# Sites the medicine/religion/military gaps need. Paths were guessed and 404ed;
+# this asks each site which feeds it actually has.
+https://www.bmj.com/
+https://www.nejm.org/
+https://www.thelancet.com/
+https://www.cdc.gov/
+https://www.drugs.com/
+https://www.medicalnewstoday.com/
+https://www.beckershospitalreview.com/
+https://www.fiercehealthcare.com/
+https://www.healthaffairs.org/
+https://www.medscape.com/
+https://www.aidsmap.com/
+https://www.modernhealthcare.com/
+https://www.statnews.com/
+https://cruxnow.com/
+https://www.religionnews.com/
+https://www.desiringgod.org/
+https://www.churchtimes.co.uk/
+https://www.catholicculture.org/
+https://www.tabletmagazine.com/
+https://www.catholic.org/
+https://www.chalcedon.edu/
+https://www.breakingdefense.com/
+https://www.stripes.com/
+https://www.armytimes.com/
+https://www.defensenews.com/
+https://lawfaremedia.org/
+https://www.janes.com/
+https://www.defenceconnect.com.au/

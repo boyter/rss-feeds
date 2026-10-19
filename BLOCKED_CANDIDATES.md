@@ -133,3 +133,17 @@ quicksprout.com, blog.nviso.eu, theravenfile.com. They now sit flagged in the ha
 The rest stay parked. Before adding any of them, use curl with `--compressed`; without it
 a good feed looks like binary and gets written off, which is how dieworkwear.com and
 thecyberwire.com were once deleted.
+
+## The medicine / religion / military gap, specifically
+
+Checked by hand on this pass, still blocked to the harvester: `bmj.com`,
+`nejm.org` (410), `thelancet.com` (410), `healthaffairs.org` (410), `cdc.gov`
+(403), `drugs.com` (403), `medscape.com`, `medicalnewstoday.com`,
+`modernhealthcare.com` (403), `aidsmap.com` (403), `cruxnow.com` (403),
+`religionnews.com` (403), `churchtimes.co.uk` (403), `breakingdefense.com`
+(403), `lawfaremedia.org` (403), `defensenews.com`, `janes.com` and
+`defenceconnect.com.au` (JS app, no feed link in the HTML we can read).
+
+Two of these are worth a browser check first: `bmj.com` and `breakingdefense.com`
+are the largest of their topic and both look like ordinary WordPress/Cloudflare
+setups rather than a paywalled feed.

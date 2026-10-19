@@ -291,3 +291,25 @@ shipped.
 because their titles decide nothing (`labs.cosmicbytez.ca`, `colinwalker.blog`,
 `lmika.org`) and their duplicates. A guessed topic is pinned forever, so an
 undecidable title stays in the queue rather than getting a coin flip.
+
+## Aiming at a gap: medicine, religion, military
+
+`discover.py pages <sites>` asks a named site which feeds it has, instead of
+guessing a path. It writes homepages only and never fetches; `add.py probe` does
+the fetching and `leads` turns the answers into candidates.
+
+The measurement, in order:
+
+- 52 named feed URLs → 19 serve a real feed (37%). The 33 failures are mostly
+  paths I invented: `/rss/bmj_recent.xml`, `/rss/all.xml`, `/feeds/rss/all`.
+- Those 19 took `topic:medicine` to 3, `topic:religion` to 11, `topic:military`
+  to 15.
+- Asking the 28 sites that failed instead: 2 of 28 named a feed link in their
+  HTML. One of the two was already in the list.
+
+So the thin topics are thin for a reason. NEJM and The Lancet answer 410, BMJ
+and Medscape and CDC 403, Jane's serves a JS app: the clinical and defence
+press is behind the same fingerprinting that blocks schneier.com, and it does
+not advertise feeds in the HTML we can read. Filling those topics means a
+browser check per site, one at a time, which is a human afternoon rather than a
+tool.

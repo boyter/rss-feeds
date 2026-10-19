@@ -1,0 +1,15 @@
+{"url": "https://www.who.int/rss-feeds/news-english.xml", "tags": ["region:world", "topic:health", "type:institution"]}
+{"url": "https://www.sciencedaily.com/rss/top/health.xml", "tags": ["topic:health", "type:aggregator"]}
+{"url": "https://khn.org/feed/", "tags": ["topic:health", "type:publication"]}
+{"url": "https://www.pewresearch.org/topic/health-policy/human-immunization-project/feed/", "tags": ["topic:health", "type:institution"]}
+{"url": "https://www.christianitytoday.com/feed/", "tags": ["topic:religion", "type:publication"]}
+{"url": "https://www.thegospelcoalition.org/feed/", "tags": ["topic:religion", "type:institution"]}
+{"url": "https://www.pewresearch.org/topic/religion/religion-news-service/feed/", "tags": ["topic:religion", "type:institution"]}
+{"url": "https://www.biblegateway.com/blog/feed/", "tags": ["topic:religion", "type:vendor-blog"]}
+{"url": "https://www.aleteia.org/en/feed/", "tags": ["topic:religion", "type:publication"]}
+{"url": "https://www.firstthings.com/rss", "tags": ["topic:politics", "topic:religion", "type:publication"]}
+{"url": "https://www.defenseone.com/rss/all/", "tags": ["topic:military", "type:publication"]}
+{"url": "https://taskandpurpose.com/feed/", "tags": ["topic:military", "type:publication"]}
+{"url": "https://news.usni.org/feed/", "tags": ["topic:military", "type:publication"]}
+{"url": "https://www.defence.gov.au/rss.xml", "tags": ["region:australia", "topic:military", "type:institution"]}
+{"url": "https://www.defence-blog.com/feed/", "tags": ["topic:military", "type:publication"]}

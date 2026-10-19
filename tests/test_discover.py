@@ -242,3 +242,45 @@ class TestTagCascade(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestNamedSites(unittest.TestCase):
+    """`pages` turns sites a human names into probe targets.
+
+    Pinned because the alternative is path guessing, which measured 3,754 HTML
+    pages against 23 real feeds: a site that serves its feed at /blog/atom.xml
+    404s on every guess and teaches nothing. Asking the page is the honest move,
+    and this is the step that writes the question - so it must write homepages
+    only, and must never fetch.
+    """
+
+    def run_pages(self, lines):
+        with tempfile.TemporaryDirectory() as d:
+            sites = os.path.join(d, "sites.txt")
+            out = os.path.join(d, "pages.jsonl")
+            with open(sites, "w", encoding="utf-8") as fh:
+                fh.write("\n".join(lines) + "\n")
+            saved = discover.PAGES
+            discover.PAGES = out
+            try:
+                discover.cmd_pages(type("A", (), {"sites": sites})())
+                rows = [json.loads(l) for l in open(out)]
+            finally:
+                discover.PAGES = saved
+        return rows
+
+    def test_a_named_feed_path_is_still_asked_as_a_homepage(self):
+        # The invariant: a homepage is a place to look, never a candidate feed.
+        # Naming /feed/ does not make it one - the answer comes back in altFeed.
+        rows = self.run_pages(["https://bmj.com/rss/bmj_recent.xml"])
+        self.assertEqual([r["url"] for r in rows], ["https://bmj.com/"])
+
+    def test_the_same_site_named_twice_asks_once(self):
+        rows = self.run_pages(["https://who.int/", "https://who.int",
+                               json.dumps({"url": "https://who.int/rss-feeds/news-english.xml"})])
+        self.assertEqual([r["url"] for r in rows], ["https://who.int/"])
+
+    def test_a_junk_line_is_counted_not_dropped_in_silence(self):
+        # Losing a line silently is how a list of 1,800 becomes 1,400 unnoticed.
+        rows = self.run_pages(["not a url", "ftp://example.com/x", "https://a.example/"])
+        self.assertEqual([r["url"] for r in rows], ["https://a.example/"])
