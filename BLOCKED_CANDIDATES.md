@@ -82,3 +82,54 @@ Worth another attempt with a real address found in a browser:
 so far), `topic:programming:ada`, `-apl` (only the Dyalog vendor blog),
 `-fortran`, `-lua`, `-nim`, `-d`, `-scala`, `-shell`, and `type:video`
 (YouTube channel ids are guesswork; two of three probes were wrong channels).
+
+## Candidate feed URLs the harvester is blocked from (rounds three and four)
+
+570 candidate URLs whose path looks like a feed answered 403/429/503 on 229 hosts. They stay out of `feeds.json`: our inability to read a body is not evidence the feed is dead, and it is not evidence it is alive either. Do not re-probe these with the harvester - it is the script they object to. The heaviest:
+
+- `reddit.com` (32 URLs)
+- `quicksprout.com` (11 URLs)
+- `venturebeat.com` (11 URLs)
+- `steveblank.com` (10 URLs)
+- `fs.blog` (10 URLs)
+- `convinceandconvert.com` (10 URLs)
+- `sharpbrains.com` (10 URLs)
+- `theravenfile.com` (9 URLs)
+- `thecyberexpress.com` (9 URLs)
+- `schneier.com` (9 URLs)
+- `securityledger.com` (9 URLs)
+- `blog.nviso.eu` (9 URLs)
+- `bfore.ai` (9 URLs)
+- `canarytrap.com` (9 URLs)
+- `aquasec.com` (9 URLs)
+- `fidelissecurity.com` (9 URLs)
+- `censys.com` (9 URLs)
+- `outpost24.com` (9 URLs)
+- `sublime.security` (9 URLs)
+- `blog.qualys.com` (9 URLs)
+- `zynap.com` (9 URLs)
+- `labs.greynoise.io` (9 URLs)
+- `seths.blog` (9 URLs)
+- `blog.developer.atlassian.com` (9 URLs)
+- `openai.com` (8 URLs)
+
+Dead end, measured: guessing common paths (`/feed`, `/rss.xml`, `/atom.xml`) on hosts nobody recommended returned 200 with HTML 3,754 times and a real feed 23 times. The path guessing channel is closed; `leads` (links found on pages of hosts already vetted) is the one that pays.
+
+## Why the harvester is blocked where a browser is not
+
+`https://www.schneier.com/blog/atom.xml` returns 403 to `harvest.probe()` and 200 with a
+real Atom feed to `curl` using a near-identical User-Agent. Adding `Accept-Encoding`,
+`Accept`, `Accept-Language`, `Connection` and `Upgrade-Insecure-Requests` to the urllib
+request changes nothing — the WAF is looking at the TLS handshake, not the headers. With
+the headers we can send, the standard library cannot get past it, and no new dependency
+is justified to.
+
+Seven of the ten blocked hosts tried by hand answered with a real feed and were added to
+`feeds.json` the way AGENTS.md allows for a hand-verified feed (URL, tags, and the title
+read off the response): schneier.com, fs.blog (Farnam Street), seths.blog, steveblank.com,
+quicksprout.com, blog.nviso.eu, theravenfile.com. They now sit flagged in the harvest as
+`blocked`, which is correct — the list keeps them, our harvester cannot see them.
+
+The rest stay parked. Before adding any of them, use curl with `--compressed`; without it
+a good feed looks like binary and gets written off, which is how dieworkwear.com and
+thecyberwire.com were once deleted.
