@@ -21,6 +21,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."
 import paths
 import decide
 import rebuild
+import removals
 import triage
 import vocab as vocab_mod
 
@@ -431,6 +432,23 @@ class TestNewRulesCannotSilentlyRetypeTheProduct(unittest.TestCase):
         feeds = [{"url": "https://example.com/feed/", "tags": ["type:publication"]}]
         self.assertEqual(self.problems("https://example.com/other/feed",
                                        ["topic:news", "type:personal-blog"], feeds), [])
+
+
+class TestRemovalsRecordSurvivesAnEmptyWindow(unittest.TestCase):
+    """REMOVED.md is provenance. A window in which nothing left the list must
+    not replace it: running removals.py --from HEAD right after a commit finds
+    zero removals by construction, and once turned 20 documented feeds into a
+    two-line file.
+    """
+
+    def test_an_empty_window_may_not_overwrite_an_existing_record(self):
+        self.assertFalse(removals.may_rewrite_removals([], True))
+
+    def test_a_window_with_removals_writes(self):
+        self.assertTrue(removals.may_rewrite_removals([("https://x.test/feed", "gone:404", "")], True))
+
+    def test_the_first_record_is_still_written(self):
+        self.assertTrue(removals.may_rewrite_removals([], False))
 
 
 if __name__ == "__main__":

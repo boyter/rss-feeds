@@ -13,6 +13,7 @@ Usage:
 import argparse
 import collections
 import json
+import os
 import re
 import subprocess
 import paths
@@ -66,6 +67,17 @@ def reason_for(url, rec, spam_rules=()):
     # It answered with a real feed and is still not in the list: it was a
     # duplicate of another entry, collapsed on the normalized key.
     return "duplicate of another entry"
+
+
+def may_rewrite_removals(gone, target_exists):
+    """May this run replace REMOVED.md?
+
+    Provenance, not a report. A window with nothing in it must not replace the
+    record of what left the list earlier: `removals.py --from HEAD --to WORKING`
+    run straight after a commit finds zero removals by construction, and did
+    exactly that - 20 documented feeds became a two-line file.
+    """
+    return bool(gone) or not target_exists
 
 
 def main():
@@ -125,7 +137,18 @@ def main():
             reason.split(" (")[0].split(",")[0]
         by_reason[head].append((url, reason, title))
 
-    with open(paths.root("REMOVED.md"), "w", encoding="utf-8") as fh:
+    target = paths.root("REMOVED.md")
+    if not may_rewrite_removals(gone, os.path.exists(target)):
+        # Provenance, not a report. A window with nothing in it must not replace
+        # the record of what left the list earlier: `removals.py --from HEAD
+        # --to WORKING` run straight after a commit finds zero removals by
+        # construction, and did exactly this - 20 documented feeds became a
+        # two-line file. Append a window instead of overwriting when it is empty.
+        print(f"{len(before)} -> {len(after)}; nothing left the list in this "
+              f"window, {target} left alone")
+        return 0
+
+    with open(target, "w", encoding="utf-8") as fh:
         fh.write(f"# Removed between {args.src} and {args.dst}\n\n")
         fh.write(f"{len(gone)} of {len(before)} feeds left the list. The previous "
                  "file is in git history; restore any of these by re-adding the line. "
