@@ -26,8 +26,9 @@ import os
 import sys
 
 import vocab as vocab_mod
+import paths
 
-OVERRIDES = "overrides.jsonl"
+OVERRIDES = paths.data("overrides.jsonl")
 
 
 def parse_line(line):

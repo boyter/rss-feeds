@@ -21,20 +21,13 @@ import collections
 import json
 import sys
 import vocab as vocab_mod
+import paths
 from urllib.parse import urlparse
 
 
 def host_path(url):
     p = urlparse(url)
     return (p.netloc.lower().removeprefix("www."), p.path.lower(), p.query.lower())
-
-
-def norm_key(url):
-    p = urlparse(url)
-    host = p.netloc.lower().removeprefix("www.")
-    if "feedburner" in host:
-        return host + p.path.lower() + "?" + p.query.lower()
-    return host + p.path.lower().rstrip("/")
 
 
 def pick_title(rec, old_title):
@@ -65,20 +58,20 @@ def main():
                          "by priority - use it where a silent tag loss must fail a build")
     args = ap.parse_args()
 
-    feeds = json.load(open("feeds.json", encoding="utf-8"))
+    feeds = json.load(open(paths.root("feeds.json"), encoding="utf-8"))
     harvest = {}
-    for line in open("harvest.jsonl", encoding="utf-8"):
+    for line in open(paths.data("harvest.jsonl"), encoding="utf-8"):
         try:
             r = json.loads(line)
             harvest[r["url"]] = r
         except json.JSONDecodeError:
             pass
     triage = {}
-    for line in open("triage.jsonl", encoding="utf-8"):
+    for line in open(paths.data("triage.jsonl"), encoding="utf-8"):
         r = json.loads(line)
         triage[r["url"]] = r
     draft = {}
-    for line in open("draft.jsonl", encoding="utf-8"):
+    for line in open(paths.data("draft.jsonl"), encoding="utf-8"):
         r = json.loads(line)
         draft[r["url"]] = r
 
@@ -88,7 +81,7 @@ def main():
     seen = {}
     for feed in feeds:
         url = feed["url"]
-        key = norm_key(url)
+        key = vocab_mod.norm_key(url)
         if key in seen:
             removed.append((url, "duplicate-of:" + seen[key]))
             continue
@@ -97,19 +90,16 @@ def main():
             removed.append((url, t.get("reason", "")))
             continue
         d = draft.get(url, {})
-        # Tags already in feeds.json are decisions; the rules add to them, they
-        # do not replace them. Rebuild used to overwrite, which silently erased
-        # every tag the previous pass had derived from the old flat vocabulary.
-        # The precedence itself lives in vocab.merge_tags, which classify.py calls
-        # too: if the two drifted apart the review queue would lie about what is
-        # still undecided, so there is one copy of the rule to get wrong.
+        # The precedence lives in vocab.merge_tags, which classify.py calls too:
+        # if the two drifted apart the review queue would lie about what is still
+        # undecided, so there is one copy of the rule to get wrong. The scope of
+        # the override travels through draft.jsonl, because a rule written for a
+        # whole host may not erase a tag a human gave to one feed on that host.
         override = d.get("final") or []
         tags, tag_problems = vocab_mod.merge_tags(
-            feed.get("tags") or [], override, d.get("suggested") or [], vocab)
+            feed.get("tags") or [], override, d.get("suggested") or [], vocab,
+            d.get("overrideScope") or "url")
         problems.extend((url, p) for p in tag_problems)
-        bad = [t for t in feed.get("tags") or [] if t not in vocab]
-        if bad:
-            problems.append((url, f"dropped tags not in TAGS.md: {bad}"))
         if not [x for x in tags if x.startswith("topic:")] or \
            not [x for x in tags if x.startswith("type:")]:
             # A live feed with no tags stays in the file. Dropping it would turn
@@ -133,8 +123,17 @@ def main():
     conflicts = [p for p in problems if p[1].startswith("conflicting")]
     bad_source = [p for p in problems if p[1].startswith("BAD SOURCE")]
     stripped = [p for p in problems if p[1].startswith("dropped tags")]
+    # A hand decision displacing another hand decision is its own fact. It is not
+    # an incomplete feed and not a malformed rule, and lumping it in with
+    # "kept but unclassified" made 2,141 normal feeds look like a defect.
+    displaced = [p for p in problems if p[1].startswith("override replaced")]
     missing = [p for p in problems
-               if not p[1].startswith(("conflicting", "BAD SOURCE", "dropped tags"))]
+               if not p[1].startswith(("conflicting", "BAD SOURCE", "dropped tags",
+                                       "override replaced"))]
+    if displaced:
+        print(f"override displaced tags already in feeds.json ({len(displaced)}):")
+        for url, p in displaced[:10]:
+            print(f"   {url} {p}")
     if bad_source:
         print(f"MALFORMED SOURCES ({len(bad_source)}) - fix the rule, not the output:")
         for url, p in bad_source[:10]:
@@ -152,7 +151,7 @@ def main():
         for url, p in missing[:20]:
             print(f"   {url} {p}")
     if missing or stripped:
-        with open("NEEDS_REVIEW.md", "w", encoding="utf-8") as fh:
+        with open(paths.data("NEEDS_REVIEW.md"), "w", encoding="utf-8") as fh:
             fh.write(f"# {len(missing)} feeds kept without a full tag set\n\n"
                      "These are live feeds whose topic or type has not been "
                      "decided yet. Most have no harvest data at all - the "
@@ -178,7 +177,7 @@ def main():
         print("\ndry run; pass --write for feeds.json.new, --apply to replace feeds.json")
         return 0
 
-    target = "feeds.json" if args.apply else "feeds.json.new"
+    target = paths.root("feeds.json") if args.apply else paths.root("feeds.json.new")
     with open(target, "w", encoding="utf-8") as fh:
         fh.write("[\n")
         for i, rec in enumerate(out):
@@ -187,7 +186,7 @@ def main():
         fh.write("]\n")
 
     if removed:
-        with open("REMOVED.md", "w", encoding="utf-8") as fh:
+        with open(paths.root("REMOVED.md"), "w", encoding="utf-8") as fh:
             fh.write(f"# Removed from feeds.json\n\n{len(removed)} feeds. "
                      "The previous file is in git history; restore any of these by "
                      "re-adding the line.\n")

@@ -1894,3 +1894,7 @@
 {"key": "web.eecs.utk.edu", "tags": ["topic:ai", "topic:education", "type:personal-blog"]}
 {"key": "westhesportsguy.com", "tags": ["topic:sport", "type:personal-blog"]}
 {"key": "https://medium.com/feed/bumble-tech", "tags": ["topic:software-engineering", "type:vendor-blog"]}
+{"key": "https://www.npr.org/rss/rss.php?id=1019", "tags": ["region:usa", "topic:news", "topic:tech-industry", "type:publication"]}
+{"key": "https://www.npr.org/rss/rss.php?id=1031", "tags": ["region:usa", "topic:health", "topic:news", "type:publication"]}
+{"key": "https://www.youtube.com/feeds/videos.xml?channel_id=UCsXVk37bltHxD1rDPwtNM8Q", "tags": ["topic:education", "topic:science", "type:video"]}
+{"key": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg", "tags": ["topic:ai", "topic:science", "type:video"]}

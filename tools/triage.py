@@ -20,12 +20,17 @@ import json
 import os
 import re
 import sys
+import paths
 
 # A 401/403/429 is the site objecting to a script, not evidence the feed is
 # gone. Those feeds stay, flagged, because a reader's feed client will be fine.
 BLOCKED = {401, 403, 429}
 # Permanent, and permanent in a way a retry will not fix.
 GONE = {404, 405, 410, 451}
+# This pass's report: proposed removals and flags, regenerated every run. It is
+# deliberately NOT REMOVED.md, which is the committed record of feeds that were
+# actually deleted, written by removals.py from git history.
+REPORT = paths.data("TRIAGE.md")
 DNS_MARKERS = ("Name or service not known", "nodename nor servname",
                "getaddrinfo", "No address associated with hostname")
 
@@ -48,7 +53,7 @@ def spam_hits(text, words):
     return sum(len(re.findall(r"\b%s\b" % re.escape(w), text, re.I)) for w in words)
 
 
-def load_spam(path="spam.jsonl"):
+def load_spam(path=paths.data("spam.jsonl")):
     """Hand-curated removals: {"key": host-or-url-substring, "reason": ...}."""
     rules = []
     if not os.path.exists(path):
@@ -128,10 +133,10 @@ def classify(rec, feed, spam_rules=()):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--harvest", default="harvest.jsonl")
+    ap.add_argument("--harvest", default=paths.data("harvest.jsonl"))
     args = ap.parse_args()
 
-    feeds = json.load(open("feeds.json", encoding="utf-8"))
+    feeds = json.load(open(paths.root("feeds.json"), encoding="utf-8"))
     spam_rules = load_spam()
     harvest = {}
     for line in open(args.harvest, encoding="utf-8"):
@@ -158,7 +163,7 @@ def main():
             "failCount": feed.get("failCount"),
         })
 
-    with open("triage.jsonl", "w", encoding="utf-8") as fh:
+    with open(paths.data("triage.jsonl"), "w", encoding="utf-8") as fh:
         for r in rows:
             fh.write(json.dumps(r, ensure_ascii=False) + "\n")
 
@@ -168,7 +173,12 @@ def main():
 
     removes = [r for r in rows if r["verdict"] == "remove"]
     flags = [r for r in rows if r["verdict"] == "flag"]
-    with open("REMOVED.md", "w", encoding="utf-8") as fh:
+    # Not REMOVED.md. That file is the record of feeds that were actually
+    # deleted, written by removals.py from git history, and it is committed
+    # because it is provenance. This report is a per-pass to-do list, regenerated
+    # every run and mostly flags: running triage.py must never be able to
+    # overwrite the record of what the last pass removed.
+    with open(REPORT, "w", encoding="utf-8") as fh:
         fh.write("# Proposed removals\n\n")
         fh.write(f"{len(removes)} feeds, from the harvest in harvest.jsonl. "
                  "Nothing has been deleted yet.\n")
@@ -189,7 +199,7 @@ def main():
             for r in sorted(items, key=lambda r: r["url"])[:40]:
                 title = r["title"][:60] if r["title"] else r["error"][:60]
                 fh.write(f"- `{r['url']}` — {r['reason']} — {title}\n")
-    print("wrote triage.jsonl and REMOVED.md")
+    print(f"wrote {paths.data('triage.jsonl')} and {REPORT}")
     return 0
 
 

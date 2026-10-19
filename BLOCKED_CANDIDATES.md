@@ -13,7 +13,7 @@ feeds. They are **not** in `feeds.json`, because this repo does not add a feed
 it has not seen answer with a feed.
 
 To add one, confirm the URL in a browser or a feed reader first, then add it to
-`candidates.jsonl` and re-run `python3 add.py probe`.
+a candidates file and re-run `python3 tools/add.py probe`.
 
 ## Blocked, but real
 

@@ -19,6 +19,7 @@ import os
 import re
 import sys
 import vocab as vocab_mod
+import paths
 from urllib.parse import urlparse
 
 # (regex over title+description+items, tags to add). Ordered; all matches apply.
@@ -264,18 +265,18 @@ def main():
     global VOCAB
     VOCAB = vocab_mod.load()
 
-    feeds = json.load(open("feeds.json", encoding="utf-8"))
+    feeds = json.load(open(paths.root("feeds.json"), encoding="utf-8"))
     harvest = {}
-    if os.path.exists("harvest.jsonl"):
-        for line in open("harvest.jsonl", encoding="utf-8"):
+    if os.path.exists(paths.data("harvest.jsonl")):
+        for line in open(paths.data("harvest.jsonl"), encoding="utf-8"):
             try:
                 r = json.loads(line)
                 harvest[r["url"]] = r
             except json.JSONDecodeError:
                 pass
     overrides = {"host": {}, "url": {}}
-    if os.path.exists("overrides.jsonl"):
-        for line in open("overrides.jsonl", encoding="utf-8"):
+    if os.path.exists(paths.data("overrides.jsonl")):
+        for line in open(paths.data("overrides.jsonl"), encoding="utf-8"):
             if not line.strip():
                 continue
             r = json.loads(line)
@@ -300,6 +301,7 @@ def main():
         # apply, plus any path rule that matches this particular feed, so a
         # site's category feeds inherit the site's topic and gain their own.
         final = overrides["url"].get(url.lower())
+        scope = "url"
         if final is None:
             # A stored key may omit a query string the live URL carries
             # (feedburner aliases: /com/rCTl?format=xml). Longest match wins.
@@ -309,6 +311,7 @@ def main():
                 final = overrides["url"][max(candidates, key=len)]
         if final is None and host in overrides["host"]:
             rule = overrides["host"][host]
+            scope = "host"
             final = list(rule.get("tags", []))
             for needle, extra in (rule.get("pathTags") or {}).items():
                 if needle in url.lower():
@@ -331,7 +334,8 @@ def main():
         # decided for the writer counts as decided for the reviewer, or the
         # review queue is full of feeds that are already tagged. The precedence
         # lives in one place, vocab.merge_tags, because two copies of it drift.
-        effective, _ = vocab_mod.merge_tags(old, final or [], suggested, VOCAB)
+        effective, _ = vocab_mod.merge_tags(old, final or [], suggested, VOCAB,
+                                            scope if final is not None else "url")
         topics = [t for t in effective if t.startswith("topic:")]
         types = [t for t in effective if t.startswith("type:")]
         needs = []
@@ -355,13 +359,14 @@ def main():
             "description": rec.get("description", "")[:160],
             "items": rec.get("items", [])[:3],
             "oldTags": old, "suggested": suggested, "why": why,
-            "final": final, "effective": effective, "needs": needs,
+            "final": final, "overrideScope": scope if final is not None else "",
+            "effective": effective, "needs": needs,
             "isFeed": rec.get("isFeed", False),
             "status": rec.get("status", 0),
             "error": rec.get("error", ""),
         })
 
-    with open("draft.jsonl", "w", encoding="utf-8") as fh:
+    with open(paths.data("draft.jsonl"), "w", encoding="utf-8") as fh:
         for r in out:
             fh.write(json.dumps(r, ensure_ascii=False) + "\n")
 

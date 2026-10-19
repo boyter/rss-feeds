@@ -9,9 +9,15 @@ Run:  python3 -m unittest
 """
 
 import gzip
+import os
+import sys
 import threading
 import unittest
 import zlib
+
+# The tools live in tools/; the tests sit beside the product, not in the
+# package, so the package stays a set of scripts you can read top to bottom.
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "tools"))
 
 import harvest
 

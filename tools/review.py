@@ -16,6 +16,7 @@ import json
 import os
 import sys
 from urllib.parse import urlparse
+import paths
 
 BATCH = 150
 
@@ -25,7 +26,7 @@ def host_of(url):
 
 
 def load_draft():
-    return [json.loads(l) for l in open("draft.jsonl", encoding="utf-8") if l.strip()]
+    return [json.loads(l) for l in open(paths.data("draft.jsonl"), encoding="utf-8") if l.strip()]
 
 
 def group(rows):

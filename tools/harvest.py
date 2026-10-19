@@ -42,10 +42,11 @@ import urllib.error
 import urllib.request
 import zlib
 from collections import defaultdict
+import paths
 from html import unescape
 from urllib.parse import urljoin, urlparse
 
-OUTFILE = "harvest.jsonl"
+OUTFILE = paths.data("harvest.jsonl")
 MAX_BYTES = 60_000
 TIMEOUT = 12
 LANES = 8
@@ -543,7 +544,7 @@ def main():
                          "this whenever a run replaces an existing file.")
     args = ap.parse_args()
 
-    with open("feeds.json", encoding="utf-8") as fh:
+    with open(paths.root("feeds.json"), encoding="utf-8") as fh:
         urls = [f["url"] for f in json.load(fh)]
     if args.limit:
         urls = urls[:args.limit]

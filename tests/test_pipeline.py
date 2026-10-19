@@ -6,13 +6,19 @@ human decided that specific change. Verdict precedence and tag precedence are
 where that invariant is actually implemented, so they are where a silent reorder
 does damage — and a reorder is exactly what an innocent-looking edit produces.
 
-Run:  python3 -m unittest
+Run:  python3 -m unittest discover -s tests -p "test_*.py"
 """
 
 import json
 import os
+import sys
 import unittest
 
+# The tools live in tools/; the tests sit beside the product, not in the
+# package, so the package stays a set of scripts you can read top to bottom.
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "tools"))
+
+import paths
 import rebuild
 import triage
 import vocab as vocab_mod
@@ -81,11 +87,15 @@ class TagPrecedence(unittest.TestCase):
     """vocab.merge_tags is the only copy of this rule; rebuild and classify share it."""
 
     def setUp(self):
-        self.vocab = {"topic:security", "topic:ai", "type:publication", "type:vendor-blog",
+        self.vocab = {"topic:security", "topic:ai", "topic:health", "topic:news",
+                      "type:publication", "type:vendor-blog",
                       "type:personal-blog", "region:uk", "language:fr"}
 
     def merge(self, keep, override, suggested):
         return vocab_mod.merge_tags(keep, override, suggested, self.vocab)[0]
+
+    def merge_host(self, keep, override, suggested):
+        return vocab_mod.merge_tags(keep, override, suggested, self.vocab, "host")[0]
 
     def test_a_hand_decision_is_the_whole_answer_for_the_facets_it_speaks_to(self):
         # One headline mentioning AI put topic:ai on 273 hand-decided feeds, and
@@ -121,9 +131,34 @@ class TagPrecedence(unittest.TestCase):
         self.assertTrue(any(p.startswith("conflicting type:") and "from tags in feeds.json" in p
                             for p in problems))
         # An override removes the conflict instead of resolving it: it speaks to
-        # the type facet, so the other candidate never reaches the merge.
+        # the type facet, so the other candidate never reaches the merge. The tag
+        # it displaced is still named - one hand decision overwriting another is a
+        # decision, not a detail, and it must be visible in the report.
         _, problems = vocab_mod.merge_tags(["type:vendor-blog"], ["type:publication"], [], self.vocab)
-        self.assertEqual(problems, [])
+        self.assertTrue(any(p.startswith("override replaced") and "type:vendor-blog" in p
+                            for p in problems), problems)
+
+    def test_a_host_rule_may_not_erase_a_tag_meant_for_one_feed(self):
+        # The npr.org host rule stripped topic:health from the Global Health
+        # section feed, and a youtube.com rule stripped topic:ai from a channel
+        # about AI research. A host rule generalizes over a whole site, so it may
+        # settle what kind of source the site publishes and nothing more.
+        got = self.merge_host(["topic:health", "topic:news", "type:publication"],
+                              ["topic:news", "type:publication"], ["topic:ai"])
+        self.assertIn("topic:health", got)
+        self.assertNotIn("topic:ai", got)          # the headline guess still loses
+
+    def test_a_host_rule_still_sets_the_type(self):
+        # Otherwise a site-wide decision ("every feed here is a publication")
+        # could never correct a stale type on one of its feeds.
+        got = self.merge_host(["type:vendor-blog"], ["type:publication"], [])
+        self.assertEqual([t for t in got if t.startswith("type:")], ["type:publication"])
+
+    def test_a_url_rule_is_still_the_whole_answer(self):
+        # It names this feed, so it replaces what the feed had.
+        got = self.merge(["topic:health", "type:publication"],
+                         ["topic:news", "type:publication"], [])
+        self.assertNotIn("topic:health", got)
 
     def test_a_malformed_source_is_named_not_absorbed(self):
         # A hand-written override with two types would otherwise have one picked
@@ -137,6 +172,15 @@ class TagPrecedence(unittest.TestCase):
         self.assertEqual(tags, [])
         self.assertEqual(vocab_mod.validate(["topic:not-in-tags-md"], self.vocab),
                          ["topic:not-in-tags-md"])
+
+    def test_a_dead_tag_in_a_hand_written_override_is_named_with_its_file(self):
+        # A tag removed from TAGS.md vanishes from the output. When it sits in
+        # overrides.jsonl that is a human decision being lost, and the writer used
+        # to check only feeds.json - so this path was silent.
+        _, problems = vocab_mod.merge_tags([], ["topic:retired-tag", "type:publication"],
+                                           [], self.vocab)
+        self.assertTrue(any("overrides.jsonl" in p and "topic:retired-tag" in p
+                            for p in problems), problems)
 
     def test_a_parent_region_is_dropped_when_a_child_is_present(self):
         v = self.vocab | {"region:australia", "region:australia-perth"}
@@ -182,7 +226,81 @@ class Vocabulary(unittest.TestCase):
             self.assertTrue(any(t.startswith(facet + ":") for t in v), facet)
 
 
-@unittest.skipUnless(os.path.exists("draft.jsonl") and os.path.exists("feeds.json"),
+class SameFeed(unittest.TestCase):
+    """What counts as the same feed, decided in one place.
+
+    The key used to drop the query string except for feedburner hosts, which
+    collapsed every YouTube channel feed into one line and every NPR section into
+    one feed: add.py refused verified additions as "already present", and a
+    rebuild would have deleted the rest. Three scripts each had their own copy of
+    the rule, which is how they could disagree.
+    """
+
+    def test_a_query_string_can_be_the_whole_identity_of_a_feed(self):
+        a = vocab_mod.norm_key("https://www.youtube.com/feeds/videos.xml?channel_id=UCYO")
+        b = vocab_mod.norm_key("https://www.youtube.com/feeds/videos.xml?channel_id=UCsX")
+        self.assertNotEqual(a, b)
+
+    def test_www_trailing_slash_and_scheme_are_ignored(self):
+        for u in ("http://Example.com/feed/", "https://www.example.com/feed",
+                  "https://example.com/feed"):
+            self.assertEqual(vocab_mod.norm_key(u), "example.com/feed", u)
+
+    def test_a_tracking_parameter_does_not_make_a_second_feed(self):
+        self.assertEqual(vocab_mod.norm_key("https://example.com/feed?utm_source=nl"),
+                         vocab_mod.norm_key("https://example.com/feed"))
+
+    def test_parameter_order_does_not_make_a_second_feed(self):
+        self.assertEqual(vocab_mod.norm_key("https://npr.org/rss/rss.php?id=1019&x=1"),
+                         vocab_mod.norm_key("https://npr.org/rss/rss.php?x=1&id=1019"))
+
+    def test_a_query_value_is_not_folded_to_lowercase(self):
+        # YouTube channel ids are case-sensitive. Folding the value, which the
+        # first version of this key did with query.lower(), could fuse two
+        # channels into one feed - and a fused feed is a deleted feed.
+        a = vocab_mod.norm_key("https://www.youtube.com/feeds/videos.xml?channel_id=UCsXvk37")
+        b = vocab_mod.norm_key("https://www.youtube.com/feeds/videos.xml?channel_id=UCsXVK37")
+        self.assertNotEqual(a, b)
+
+    def test_a_parameter_called_source_is_not_cut(self):
+        # The tracking list used to include source= and ref=. On an API host those
+        # name the feed, not the reader, and cutting them collapses distinct feeds.
+        a = vocab_mod.norm_key("https://api.example.com/rss?source=bbc")
+        b = vocab_mod.norm_key("https://api.example.com/rss?source=cnn")
+        self.assertNotEqual(a, b)
+        # Analytics parameters are still cut, which is why the list exists.
+        self.assertEqual(vocab_mod.norm_key("https://e.com/rss?utm_medium=email&x=1"),
+                         vocab_mod.norm_key("https://e.com/rss?x=1"))
+
+    def test_only_one_copy_of_the_rule_exists(self):
+        src = "".join(open(os.path.join(paths.ROOT, "tools", f), encoding="utf-8").read()
+                      for f in ("add.py", "rebuild.py", "removals.py"))
+        self.assertNotIn("def norm_key", src,
+                         "norm_key lives in vocab.py; a second copy can disagree")
+
+
+class ReportFiles(unittest.TestCase):
+    """The per-pass report and the committed provenance are different files.
+
+    triage.py used to write REMOVED.md, so a routine triage run replaced the
+    committed record of what had actually been deleted with a list of this
+    pass's flags - 432 lines of noise over 20 lines of provenance. Running a
+    report must not be able to rewrite history.
+    """
+
+    def test_triage_writes_its_report_inside_data(self):
+        self.assertEqual(triage.REPORT, paths.data("TRIAGE.md"))
+        self.assertTrue(triage.REPORT.startswith(paths.DATA + os.sep))
+
+    def test_triage_never_touches_the_provenance_file(self):
+        self.assertNotEqual(triage.REPORT, paths.root("REMOVED.md"))
+        src = open(os.path.join(paths.ROOT, "tools", "triage.py"), encoding="utf-8").read()
+        self.assertNotIn('paths.root("REMOVED.md")', src,
+                         "only removals.py may write REMOVED.md")
+
+
+@unittest.skipUnless(os.path.exists(paths.data("draft.jsonl"))
+                     and os.path.exists(paths.root("feeds.json")),
                      "run classify.py first")
 class ProductIsConsistent(unittest.TestCase):
     """feeds.json must be exactly what the tooling says it is.
@@ -194,12 +312,21 @@ class ProductIsConsistent(unittest.TestCase):
 
     def setUp(self):
         self.vocab = vocab_mod.load()
-        self.feeds = {f["url"]: f for f in json.load(open("feeds.json", encoding="utf-8"))}
+        self.feeds = {f["url"]: f for f in
+                      json.load(open(paths.root("feeds.json"), encoding="utf-8"))}
         self.draft = {}
-        with open("draft.jsonl", encoding="utf-8") as fh:
+        with open(paths.data("draft.jsonl"), encoding="utf-8") as fh:
             for line in fh:
                 r = json.loads(line)
                 self.draft[r["url"]] = r
+
+    def test_the_override_scope_travels_to_the_writer(self):
+        # classify.py knows whether the override named this URL or the whole host;
+        # rebuild.py only knows what draft.jsonl says. Without the scope the writer
+        # treats every host rule as a URL rule and erases per-feed tags.
+        missing = [r["url"] for r in self.draft.values()
+                   if r.get("final") and not r.get("overrideScope")]
+        self.assertEqual(missing, [], "draft.jsonl rows with an override need overrideScope")
 
     def test_every_written_feed_matches_the_merge(self):
         wrong = []
@@ -208,7 +335,8 @@ class ProductIsConsistent(unittest.TestCase):
             if d is None:
                 continue
             tags, _ = vocab_mod.merge_tags(feed.get("tags") or [], d.get("final") or [],
-                                           d.get("suggested") or [], self.vocab)
+                                           d.get("suggested") or [], self.vocab,
+                                           d.get("overrideScope") or "url")
             if tags != sorted(feed["tags"]):
                 wrong.append(url)
         self.assertEqual(wrong, [], f"{len(wrong)} feeds disagree with merge_tags")

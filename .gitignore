@@ -1,9 +1,15 @@
 __pycache__/
 *.log
+
+# The pending product: rebuild.py --write puts it here, --apply moves it over
+# feeds.json. Never committed, because you are meant to read it first.
 feeds.json.new
-draft.jsonl
-triage.jsonl
-NEEDS_REVIEW.md
-RESUME.md
-decisions.txt
-probe_results.jsonl
+
+# Working files the pipeline regenerates on every pass. The ones that are
+# committed (harvest.jsonl, overrides.jsonl, spam.jsonl, candidates.jsonl) are
+# evidence or human decisions; these are derived from them.
+data/draft.jsonl
+data/triage.jsonl
+data/probe_results.jsonl
+data/NEEDS_REVIEW.md
+data/TRIAGE.md

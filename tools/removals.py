@@ -15,6 +15,8 @@ import collections
 import json
 import re
 import subprocess
+import paths
+import vocab as vocab_mod
 from urllib.parse import urlparse
 
 
@@ -22,14 +24,6 @@ def load_rev(rev):
     out = subprocess.run(["git", "show", f"{rev}:feeds.json"],
                          capture_output=True, text=True, check=True).stdout
     return json.loads(out)
-
-
-def norm_key(url):
-    p = urlparse(url)
-    host = p.netloc.lower().removeprefix("www.")
-    if "feedburner" in host:
-        return host + p.path.lower() + "?" + p.query.lower()
-    return host + p.path.lower().rstrip("/")
 
 
 def loose_key(url):
@@ -40,7 +34,7 @@ def loose_key(url):
     has nothing to say about it and it would otherwise be filed under
     "duplicate", which is not what happened.
     """
-    return re.sub(r"/+", "/", norm_key(url))
+    return re.sub(r"/+", "/", vocab_mod.norm_key(url))
 
 
 def reason_for(url, rec, spam_rules=()):
@@ -84,14 +78,14 @@ def main():
     try:
         after = load_rev(args.dst)
     except subprocess.CalledProcessError:
-        after = json.load(open("feeds.json", encoding="utf-8"))
-    kept = {norm_key(f["url"]) for f in after}
+        after = json.load(open(paths.root("feeds.json"), encoding="utf-8"))
+    kept = {vocab_mod.norm_key(f["url"]) for f in after}
     moved_to = {}
     for f in after:
         moved_to.setdefault(loose_key(f["url"]), f["url"])
 
     harvest = {}
-    for line in open("harvest.jsonl", encoding="utf-8"):
+    for line in open(paths.data("harvest.jsonl"), encoding="utf-8"):
         try:
             r = json.loads(line)
             harvest[r["url"]] = r
@@ -100,7 +94,7 @@ def main():
 
     spam_rules = []
     try:
-        for line in open("spam.jsonl", encoding="utf-8"):
+        for line in open(paths.data("spam.jsonl"), encoding="utf-8"):
             if line.strip():
                 r = json.loads(line)
                 spam_rules.append((r["key"].lower(), r.get("reason", "")))
@@ -110,7 +104,7 @@ def main():
     gone = []
     seen = set()
     for f in before:
-        key = norm_key(f["url"])
+        key = vocab_mod.norm_key(f["url"])
         if key in kept:
             continue
         if key in seen:
@@ -131,7 +125,7 @@ def main():
             reason.split(" (")[0].split(",")[0]
         by_reason[head].append((url, reason, title))
 
-    with open("REMOVED.md", "w", encoding="utf-8") as fh:
+    with open(paths.root("REMOVED.md"), "w", encoding="utf-8") as fh:
         fh.write(f"# Removed between {args.src} and {args.dst}\n\n")
         fh.write(f"{len(gone)} of {len(before)} feeds left the list. The previous "
                  "file is in git history; restore any of these by re-adding the line. "

@@ -21,21 +21,14 @@ from urllib.parse import urlparse
 
 import harvest
 import vocab as vocab_mod
+import paths
 
-RESULTS = "probe_results.jsonl"
+RESULTS = paths.data("probe_results.jsonl")
 
 
 def host_path(url):
     p = urlparse(url)
     return (p.netloc.lower().removeprefix("www."), p.path.lower(), p.query.lower())
-
-
-def norm_key(url):
-    p = urlparse(url)
-    host = p.netloc.lower().removeprefix("www.")
-    if "feedburner" in host:
-        return host + p.path.lower() + "?" + p.query.lower()
-    return host + p.path.lower().rstrip("/")
 
 
 def read_jsonl(path):
@@ -89,14 +82,14 @@ def cmd_probe(args):
 def cmd_merge(args):
     cands = read_jsonl(args.candidates)
     probed = {r["url"]: r for r in read_jsonl(RESULTS)} if os.path.exists(RESULTS) else {}
-    feeds = json.load(open("feeds.json", encoding="utf-8"))
-    existing = {norm_key(f["url"]) for f in feeds}
+    feeds = json.load(open(paths.root("feeds.json"), encoding="utf-8"))
+    existing = {vocab_mod.norm_key(f["url"]) for f in feeds}
     voc = vocab_mod.load()
 
     added, skipped = [], []
     for c in cands:
         url = c["url"]
-        key = norm_key(url)
+        key = vocab_mod.norm_key(url)
         if key in existing:
             skipped.append((url, "already present"))
             continue
@@ -117,7 +110,7 @@ def cmd_merge(args):
         added.append(url)
 
     feeds.sort(key=lambda f: host_path(f["url"]))
-    target = "feeds.json" if args.apply else "feeds.json.new"
+    target = paths.root("feeds.json") if args.apply else paths.root("feeds.json.new")
     with open(target, "w", encoding="utf-8") as fh:
         fh.write("[\n")
         for i, f in enumerate(feeds):
