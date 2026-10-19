@@ -257,11 +257,12 @@ def read_body(resp, cap=MAX_BYTES):
     raw = bytearray()
     name, dec = None, None
     note = ""
-    while len(out) < cap:
+    capped = False
+    while True:
         try:
             part = resp.read1(8192)
         except AttributeError:            # a response without read1()
-            part = resp.read(cap - len(out))
+            part = resp.read(max(0, cap - len(out)))
         except Exception as e:            # truncated chunked body, connection reset
             if not out:
                 raise
@@ -293,9 +294,21 @@ def read_body(resp, cap=MAX_BYTES):
                 break
         if dec is not None and dec.eof:
             break
+        if len(out) >= cap:
+            capped = True
+            break
     if dec is not None and not out and raw and not looks_compressed(raw):
         # The stream ended on the chunk that failed to inflate.
         return bytes(raw), "identity", (note + " header lied about encoding").strip()
+    if capped:
+        # Nothing raises when a large feed is simply cut at the cap, compressed
+        # or not, so the record has to say that the title and itemCount below
+        # describe a head rather than the whole feed.
+        note = (note + " " + "body capped at %d bytes" % cap).strip()
+    elif dec is not None and not dec.eof:
+        # A deflate stream that inflates without error and still never reaches
+        # its end marker: the server sent less than it claimed.
+        note = (note + " inflate stream ended before its end marker").strip()
     return bytes(out), name or (enc or "identity"), note
 
 
@@ -448,6 +461,16 @@ def build_lanes(urls, lanes):
     return [b for b in buckets if b]
 
 
+def was_feed(rec):
+    """Did this record say the URL serves a feed?
+
+    A record already marked `regressed` counts as yes: it was a feed, and the
+    flag has to survive the next retry, or the second run forgets the feed ever
+    worked and the guard that keeps it off the removal list disappears.
+    """
+    return bool(rec.get("isFeed") or rec.get("regressed"))
+
+
 def run_lane(lane, write_lock, out, prior=None):
     results = []
     for url in lane:
@@ -504,10 +527,10 @@ def main():
     # A record already marked regressed counts as "was a feed": the flag has to
     # survive the next retry, or the second run forgets the feed ever worked and
     # the guard that keeps it off the removal list disappears.
-    prior = {u: bool(r.get("isFeed") or r.get("regressed")) for u, r in done.items()}
+    prior = {u: was_feed(r) for u, r in done.items()}
     if args.prior:
         for u, r in load_done(args.prior).items():
-            prior[u] = bool(r.get("isFeed") or r.get("regressed")) or prior.get(u, False)
+            prior[u] = was_feed(r) or prior.get(u, False)
     lanes = build_lanes(todo, LANES)
     start = time.time()
     with open(OUTFILE, "a", encoding="utf-8") as out:

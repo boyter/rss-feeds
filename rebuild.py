@@ -37,6 +37,23 @@ def norm_key(url):
     return host + p.path.lower().rstrip("/")
 
 
+def pick_title(rec, old_title):
+    """Choose the title to write. A worse fetch never erases a better one.
+
+    A title already in feeds.json was harvested once and then read by a human
+    going through the list. One timed-out fetch must not erase it: a re-harvest
+    lost 14 titles this way, every one to a timeout or a 403. A fresh title wins
+    otherwise, but not one carrying replacement characters, and not one from a
+    body the byte cap cut mid-character - that title is clean, replacement-free
+    and simply shorter than the truth.
+    """
+    fresh = rec.get("title") or ""
+    cut = "tail cut" in (rec.get("charset", "") + rec.get("truncated", ""))
+    if fresh and "\ufffd" not in fresh and not (cut and old_title):
+        return fresh
+    return old_title or fresh
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--write", action="store_true",
@@ -83,45 +100,13 @@ def main():
         # Tags already in feeds.json are decisions; the rules add to them, they
         # do not replace them. Rebuild used to overwrite, which silently erased
         # every tag the previous pass had derived from the old flat vocabulary.
+        # The precedence itself lives in vocab.merge_tags, which classify.py calls
+        # too: if the two drifted apart the review queue would lie about what is
+        # still undecided, so there is one copy of the rule to get wrong.
         override = d.get("final") or []
-        keep = [t for t in feed.get("tags") or [] if t in vocab]
-        suggested = [t for t in (d.get("suggested") or []) if t in vocab]
-        if override:
-            # A hand decision is the whole answer for the facets it speaks to. The
-            # rules read item headlines, and one headline mentioning AI was enough
-            # to put topic:ai on 273 hand-decided feeds; a re-harvest then moved
-            # the tags again because the headlines changed. But the exclusion is
-            # per facet: an override that only settles type: (reddit.com says
-            # "aggregator" and leaves the topics to pathTags) must not strip the
-            # topics off a feed that matches no pathTag.
-            decided = {t.split(":")[0] for t in override
-                       if t.split(":")[0] in ("topic", "type")}
-            keep = [t for t in keep if t.split(":")[0] not in decided]
-            suggested = [t for t in suggested if t.split(":")[0] not in decided]
-        tags = vocab_mod.normalize(
-            sorted(set(keep) | set(t for t in override if t in vocab) | set(suggested)))
-        # TAGS.md: exactly one type:. Unioning sources can produce two - a feed
-        # carrying type:vendor-blog from an old pass and suggested
-        # type:personal-blog from a rule. Pick by who said it, and say so.
-        types = [t for t in tags if t.startswith("type:")]
-        if len(types) > 1:
-            # Name every malformed source, not just the winner: a losing source
-            # holding two types is still a broken rule, and reporting only the
-            # winner makes the other one invisible.
-            for n, s in (("override", override), ("tags in feeds.json", keep),
-                         ("rule", suggested)):
-                st = sorted(t for t in s if t.startswith("type:"))
-                if len(st) > 1:
-                    problems.append((url, f"BAD SOURCE: the {n} carries {len(st)} types {st}"))
-            src_name, src = next(((n, s) for n, s in (("override", override),
-                                                      ("tag in feeds.json", keep),
-                                                      ("rule", suggested))
-                                  if any(t.startswith("type:") for t in s)),
-                                 ("nothing", []))
-            src_types = sorted(t for t in src if t.startswith("type:"))
-            chosen = src_types[0] if src_types else sorted(types)[0]
-            tags = [t for t in tags if not t.startswith("type:") or t == chosen]
-            problems.append((url, f"conflicting type: {types} -> kept {chosen} from {src_name}"))
+        tags, tag_problems = vocab_mod.merge_tags(
+            feed.get("tags") or [], override, d.get("suggested") or [], vocab)
+        problems.extend((url, p) for p in tag_problems)
         bad = [t for t in feed.get("tags") or [] if t not in vocab]
         if bad:
             problems.append((url, f"dropped tags not in TAGS.md: {bad}"))
@@ -131,21 +116,7 @@ def main():
             # a classification gap into data loss.
             problems.append((url, "missing topic or type"))
         rec = {"url": url, "tags": sorted(tags)}
-        # A title already in feeds.json was harvested once and then read by a
-        # human going through the list. One timed-out fetch must not erase it: a
-        # re-harvest lost 14 titles this way, every one to a timeout or a 403. A
-        # fresh title wins otherwise, but not one carrying replacement characters:
-        # a mis-decoded fetch must not overwrite a title that was read clean.
-        fresh = harvest.get(url, {}).get("title") or ""
-        old = feed.get("title") or ""
-        h = harvest.get(url, {})
-        # A fresh title wins unless it came back damaged. Replacement characters
-        # are one way; the other is subtler - a body the byte cap cut mid-character
-        # yields a clean, replacement-free but SHORT title, which would overwrite a
-        # complete one a human read.
-        cut = "tail cut" in (h.get("charset", "") + h.get("truncated", ""))
-        title = (fresh if fresh and "\ufffd" not in fresh and not (cut and old)
-                 else (old or fresh))
+        title = pick_title(harvest.get(url, {}), feed.get("title") or "")
         if title:
             rec["title"] = title
         seen[key] = url

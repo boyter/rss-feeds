@@ -329,17 +329,9 @@ def main():
         # What rebuild.py will actually write: it unions the tags already in
         # feeds.json with whatever is proposed here. Anything that counts as
         # decided for the writer counts as decided for the reviewer, or the
-        # review queue is full of feeds that are already tagged.
-        carried = [t for t in old if t in VOCAB]
-        if final is not None:
-            # Mirrors rebuild.py exactly: the hand decision excludes only the
-            # facets it speaks to. If this drifts from rebuild.py the review queue
-            # lies about what is still undecided.
-            decided = {t.split(":")[0] for t in final if t.split(":")[0] in ("topic", "type")}
-            carried = [t for t in carried if t.split(":")[0] not in decided]
-            effective = sorted(set(carried) | set(final))
-        else:
-            effective = sorted(set(carried) | set(suggested))
+        # review queue is full of feeds that are already tagged. The precedence
+        # lives in one place, vocab.merge_tags, because two copies of it drift.
+        effective, _ = vocab_mod.merge_tags(old, final or [], suggested, VOCAB)
         topics = [t for t in effective if t.startswith("topic:")]
         types = [t for t in effective if t.startswith("type:")]
         needs = []
