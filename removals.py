@@ -13,6 +13,7 @@ Usage:
 import argparse
 import collections
 import json
+import re
 import subprocess
 from urllib.parse import urlparse
 
@@ -31,11 +32,22 @@ def norm_key(url):
     return host + p.path.lower().rstrip("/")
 
 
+def loose_key(url):
+    """norm_key with runs of slashes collapsed.
+
+    Used to tell a deliberate re-point (//feed.xml -> /feed.xml) apart from a
+    removal: the old URL answered with a real feed, so the status-based reason
+    has nothing to say about it and it would otherwise be filed under
+    "duplicate", which is not what happened.
+    """
+    return re.sub(r"/+", "/", norm_key(url))
+
+
 def reason_for(url, rec, spam_rules=()):
     low = url.lower()
     for key, why in spam_rules:
         if key in low:
-            return f"removed as spam: {why}"
+            return f"removed by hand: {why}"
     if rec is None:
         return "no harvest record"
     # Status first. A 404 record has no isFeed field either, and checking the
@@ -74,6 +86,9 @@ def main():
     except subprocess.CalledProcessError:
         after = json.load(open("feeds.json", encoding="utf-8"))
     kept = {norm_key(f["url"]) for f in after}
+    moved_to = {}
+    for f in after:
+        moved_to.setdefault(loose_key(f["url"]), f["url"])
 
     harvest = {}
     for line in open("harvest.jsonl", encoding="utf-8"):
@@ -103,12 +118,18 @@ def main():
             continue
         seen.add(key)
         rec = harvest.get(f["url"])
+        moved = moved_to.get(loose_key(f["url"]))
+        if moved and moved != f["url"]:
+            gone.append((f["url"], f"moved to {moved}", (rec or {}).get("title", "")))
+            continue
         gone.append((f["url"], reason_for(f["url"], rec, spam_rules),
                      (rec or {}).get("title", "")))
 
     by_reason = collections.defaultdict(list)
     for url, reason, title in gone:
-        by_reason[reason.split(" (")[0].split(",")[0]].append((url, reason, title))
+        head = "moved" if reason.startswith("moved to ") else \
+            reason.split(" (")[0].split(",")[0]
+        by_reason[head].append((url, reason, title))
 
     with open("REMOVED.md", "w", encoding="utf-8") as fh:
         fh.write(f"# Removed between {args.src} and {args.dst}\n\n")

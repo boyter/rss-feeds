@@ -148,3 +148,72 @@
 {"url": "https://www.stuff.co.nz/rss", "tags": ["topic:news", "type:publication", "region:new-zealand"]}
 {"url": "https://www.rnz.co.nz/rss/national.xml", "tags": ["topic:news", "type:publication", "region:new-zealand"]}
 {"url": "https://www.sbs.com.au/news/topic/indigenous-australia/feed", "tags": ["topic:news", "type:publication", "region:australia"]}
+{"url": "https://susam.net/feed.xml", "tags": ["topic:programming", "type:personal-blog"]}
+{"url": "https://unixdigest.com/articles.xml", "tags": ["topic:systems", "topic:open-source", "type:personal-blog"]}
+{"url": "https://unixdigest.com/tutorials.xml", "tags": ["topic:systems", "topic:open-source", "type:personal-blog"]}
+{"url": "https://www.heise.de/rss/heise-atom.xml", "tags": ["topic:software-engineering", "topic:systems", "language:german", "region:germany", "type:publication"]}
+{"url": "https://www.golem.de/news/rss", "tags": ["topic:software-engineering", "language:german", "region:germany", "type:publication"]}
+{"url": "https://www.nu.nl/rss", "tags": ["topic:news", "language:dutch", "region:europe", "type:publication"]}
+{"url": "https://www.ilpost.it/feed/", "tags": ["topic:news", "topic:politics", "language:italian", "region:europe", "type:publication"]}
+{"url": "https://g1.globo.com/rss/g1/", "tags": ["topic:news", "language:portuguese", "region:latin-america", "type:publication"]}
+{"url": "https://www.pagina12.com.ar/rsses/sociedad/index.xml", "tags": ["topic:news", "topic:politics", "language:spanish", "region:latin-america", "type:publication"]}
+{"url": "https://www.yle.fi/uutiset/rss", "tags": ["topic:news", "language:finnish", "region:europe", "type:publication"]}
+{"url": "https://www.aljazeera.net/xml/rss/all.xml", "tags": ["topic:news", "language:arabic", "region:middle-east", "type:publication"]}
+{"url": "https://www.czechcrunch.cz/feed/", "tags": ["topic:news", "language:czech", "region:europe", "type:publication"]}
+{"url": "https://www.yonhapnewstv.co.kr/browse/feed/", "tags": ["topic:news", "language:korean", "region:south-korea", "type:publication"]}
+{"url": "https://www.nextinpact.com/feed", "tags": ["topic:security", "topic:politics", "language:french", "region:france", "type:publication"]}
+{"url": "https://www.standard.co.uk/feed", "tags": ["topic:news", "region:uk-london", "type:publication"]}
+{"url": "https://londonist.com/feed", "tags": ["topic:news", "topic:travel", "region:uk-london", "type:publication"]}
+{"url": "https://dcist.com/feed", "tags": ["topic:news", "region:us-dc", "type:publication"]}
+{"url": "https://www.texasmonthly.com/feed/", "tags": ["topic:news", "topic:politics", "region:us-texas", "type:publication"]}
+{"url": "https://blockclubchicago.org/feed/", "tags": ["topic:news", "region:us-chicago", "type:publication"]}
+{"url": "https://www.brisbanetimes.com.au/xml/rss/", "tags": ["topic:news", "region:australia-brisbane", "type:publication"]}
+{"url": "https://www.abc.net.au/news/rss/science", "tags": ["topic:science", "region:australia", "type:publication"]}
+{"url": "https://www.watoday.com.au/xml/rss/", "tags": ["topic:news", "region:australia-vic", "type:publication"]}
+{"url": "https://www.westaustralian.org.au/xml/rss/", "tags": ["topic:news", "region:australia-wa", "type:publication"]}
+{"url": "https://devblogs.microsoft.com/dotnet/feed/", "tags": ["topic:programming:csharp", "topic:software-engineering", "type:vendor-blog"]}
+{"url": "https://julialang.org/feed.xml", "tags": ["topic:programming:julia", "topic:programming", "type:community"]}
+{"url": "https://discourse.julialang.org/latest.rss", "tags": ["topic:programming:julia", "type:community"]}
+{"url": "https://fortran-lang.org/feed.xml", "tags": ["topic:programming:fortran", "topic:programming", "type:community"]}
+{"url": "https://dlang.org/blog/feed/", "tags": ["topic:programming:d", "topic:programming", "type:community"]}
+{"url": "https://ziglang.org/feeds/rss.xml", "tags": ["topic:programming:zig", "topic:programming", "type:community"]}
+{"url": "https://lisp-lang.org/feed.xml", "tags": ["topic:programming:lisp", "topic:programming", "type:community"]}
+{"url": "https://www.scala-lang.org/blog/feed.xml", "tags": ["topic:programming:scala", "topic:programming", "type:community"]}
+{"url": "https://www.perl.com/feed/", "tags": ["topic:programming:perl", "topic:programming", "type:community"]}
+{"url": "https://www.dyalog.com/blog/feed/", "tags": ["topic:programming:apl", "topic:programming", "type:vendor-blog"]}
+{"url": "https://cysh.dev/feed.xml", "tags": ["topic:programming:shell", "topic:systems", "type:personal-blog"]}
+{"url": "https://www.modernsql.dev/feed.xml", "tags": ["topic:data", "topic:programming:sql", "type:newsletter"]}
+{"url": "https://www.use-the-index-luke.com/blog/feed", "tags": ["topic:data", "topic:programming:sql", "type:personal-blog"]}
+{"url": "https://lua-users.org/rss.xml", "tags": ["topic:programming:lua", "topic:programming", "type:community"]}
+{"url": "https://www.ada-lang.io/feed.xml", "tags": ["topic:programming:ada", "topic:programming", "type:community"]}
+{"url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCVHF0qzwzgiSC0PeKqIRzHg", "tags": ["topic:science", "type:video"]}
+{"url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCsXVk37bltHxD1rDPwtNM8Q", "tags": ["topic:science", "type:video"]}
+{"url": "https://feeds.fireside.fm/rubyrogues/rss", "tags": ["topic:programming:ruby", "topic:software-engineering", "type:podcast"]}
+{"url": "https://changelog.com/podcast/feed", "tags": ["topic:software-engineering", "topic:open-source", "type:podcast"]}
+{"url": "https://feeds.megaphone.fm/GLT1832039091", "tags": ["topic:security", "type:podcast"]}
+{"url": "https://www.darknet.org.uk/feed/", "tags": ["topic:security", "region:uk", "type:personal-blog"]}
+{"url": "https://feeds.bbci.co.uk/arabic/rss.xml", "tags": ["topic:news", "language:arabic", "region:middle-east", "type:publication"]}
+{"url": "https://www.repubblica.it/rss/homepage/rss.xml", "tags": ["topic:news", "topic:politics", "language:italian", "region:europe", "type:publication"]}
+{"url": "https://www.20minutos.es/rss/ultimas/", "tags": ["topic:news", "language:spanish", "region:spain", "type:publication"]}
+{"url": "https://www.lavanguardia.com/rss/home.xml", "tags": ["topic:news", "language:spanish", "region:spain", "type:publication"]}
+{"url": "https://feeds.yle.fi/uutiset/v1/recent.rss", "tags": ["topic:news", "language:finnish", "region:europe", "type:publication"]}
+{"url": "https://washingtoncitypaper.com/feed/", "tags": ["topic:news", "region:us-dc", "type:publication"]}
+{"url": "https://chicago.suntimes.com/rss", "tags": ["topic:news", "region:us-chicago", "type:publication"]}
+{"url": "https://www.houstonpublicmedia.org/feed/", "tags": ["topic:news", "region:us-texas", "type:publication"]}
+{"url": "https://www.postgresql.org/news.rss", "tags": ["topic:data", "topic:programming:sql", "topic:open-source", "type:community"]}
+{"url": "https://unix.stackexchange.com/feeds", "tags": ["topic:systems", "type:community"]}
+{"url": "https://rss.art19.com/the-daily", "tags": ["topic:news", "topic:politics", "region:usa", "type:podcast"]}
+{"url": "https://scala-lang.org/blog/feed.xml", "tags": ["topic:programming:scala", "topic:programming", "type:community"]}
+{"url": "https://www.lua.org/feeds/news.rss", "tags": ["topic:programming:lua", "topic:programming", "type:community"]}
+{"url": "https://ziglang.org/blog/feed/", "tags": ["topic:programming:zig", "topic:programming", "type:community"]}
+{"url": "https://lispjournal.com/feed.xml", "tags": ["topic:programming:lisp", "topic:programming", "type:personal-blog"]}
+{"url": "https://compgroups.net/comp.lang.ada/rss", "tags": ["topic:programming:ada", "topic:programming", "type:community"]}
+{"url": "https://fortran-lang.org/blog/feed.xml", "tags": ["topic:programming:fortran", "topic:programming", "type:community"]}
+{"url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCsXVk37bltHxD1rDPwtNM8Q", "tags": ["topic:science", "type:video"]}
+{"url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg", "tags": ["topic:education", "topic:science", "type:video"]}
+{"url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCKy1dAqELo0zrOtPkf0eTMw", "tags": ["topic:gaming", "type:video"]}
+{"url": "https://feeds.npr.org/510311/podcast.xml", "tags": ["topic:news", "region:usa", "type:podcast"]}
+{"url": "https://feeds.simplecast.com/l2kMjAU6", "tags": ["topic:ai", "type:podcast"]}
+{"url": "https://dlang.org/blog/atom.xml", "tags": ["topic:programming:d", "topic:programming", "type:community"]}
+{"url": "https://www.abc.net.au/news/rss", "tags": ["topic:news", "region:australia", "type:publication"]}
+{"url": "https://www.abc.net.au/news/feed/5295740", "tags": ["topic:news", "region:australia", "type:publication"]}

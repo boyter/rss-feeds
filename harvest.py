@@ -64,8 +64,65 @@ def clean(text, limit=200):
     return " ".join(unescape(text).split())[:limit]
 
 
+def decompressor_for(enc, head):
+    """Pick an incremental decompressor from the header, or from the magic bytes.
+
+    Incremental matters: the whole body is never buffered before inflating, so
+    the MAX_BYTES cap can cut a gzip stream in half without making the result
+    undecodable. Returns None for encodings we cannot undo (brotli) and for
+    plain bodies.
+    """
+    enc = (enc or "").lower()
+    if enc == "br" or head[:1] == b"\x8b" and head[:2] != b"\x1f\x8b":
+        return "br", None
+    if enc in ("gzip", "x-gzip") or head[:2] == b"\x1f\x8b":
+        return "gzip", zlib.decompressobj(16 + zlib.MAX_WBITS)
+    if enc in ("deflate", "x-deflate") or head[:1] == b"\x78":
+        return "deflate", zlib.decompressobj()
+    return enc or "identity", None
+
+
+def read_body(resp, cap=MAX_BYTES):
+    """Read the response body, inflating as it arrives, capped on decoded bytes.
+
+    The cap used to be applied to the *compressed* bytes: `resp.read(60000)`
+    cut a gzip stream mid-flight, gzip.decompress then raised EOFError (which is
+    not an OSError, so it escaped the handler) and live feeds — ProPublica, The
+    Intercept, PC Gamer, Salon, Lex Fridman — were recorded as not feeds.
+    """
+    enc = (resp.headers.get("content-encoding") or "").lower()
+    out = bytearray()
+    name, dec = None, None
+    note = ""
+    while len(out) < cap:
+        try:
+            part = resp.read1(8192)
+        except AttributeError:            # a response without read1()
+            part = resp.read(cap - len(out))
+        except Exception as e:            # truncated chunked body, connection reset
+            if not out:
+                raise
+            note = f"{type(e).__name__}: {e}"
+            break
+        if not part:
+            break
+        if name is None:
+            name, dec = decompressor_for(enc, part)
+        if dec is None:
+            out += part
+        else:
+            try:
+                out += dec.decompress(part)
+            except zlib.error as e:
+                note = f"zlib: {e}"
+                break
+        if dec is not None and dec.eof:
+            break
+    return bytes(out), name or (enc or "identity"), note
+
+
 def decode(raw, content_encoding=""):
-    """Undo Content-Encoding, including when the server ignored our headers.
+    """Undo Content-Encoding for a body already in memory (fallback path).
 
     Several sites gzip or brotli regardless of Accept-Encoding; without this the
     body is binary and a perfectly good feed is written off as not-a-feed.
@@ -74,8 +131,12 @@ def decode(raw, content_encoding=""):
     if raw[:2] == b"\x1f\x8b":
         try:
             raw = gzip.decompress(raw)
-        except OSError:
-            pass
+        except (OSError, EOFError):
+            # Truncated stream: inflate what arrived rather than losing the feed.
+            try:
+                raw = zlib.decompressobj(16 + zlib.MAX_WBITS).decompress(raw)
+            except zlib.error:
+                pass
     elif raw[:1] == b"\x78":
         try:
             raw = zlib.decompress(raw)
@@ -100,7 +161,15 @@ def probe(url):
             rec["status"] = resp.getcode()
             rec["finalUrl"] = resp.geturl()
             rec["contentType"] = (resp.headers.get("content-type") or "").split(";")[0].strip()
-            body = decode(resp.read(MAX_BYTES), resp.headers.get("content-encoding", ""))
+            raw, enc, note = read_body(resp)
+            if note:
+                rec["truncated"] = note[:120]
+            if enc == "br":
+                body = f"[undecodable {enc} body]"
+            else:
+                body = raw.decode("utf-8", "replace")
+                if "\ufffd" in body[:200] and enc not in ("identity", ""):
+                    body = f"[undecodable {enc} body]"
     except urllib.error.HTTPError as e:
         rec["status"] = e.code
         rec["error"] = f"HTTPError {e.code}"
@@ -198,6 +267,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=0, help="only check the first N feeds")
     ap.add_argument("--restart", action="store_true", help="ignore harvest.jsonl progress")
+    ap.add_argument("--retry-failed", action="store_true",
+                    help="re-fetch only the URLs whose record is not a feed "
+                         "(dead, blocked, or mis-decoded). Resumable: a later "
+                         "record for the same URL wins over an earlier one.")
     args = ap.parse_args()
 
     with open("feeds.json", encoding="utf-8") as fh:
@@ -206,7 +279,10 @@ def main():
         urls = urls[:args.limit]
 
     done = {} if args.restart else load_done(OUTFILE)
-    todo = [u for u in urls if u not in done]
+    if args.retry_failed:
+        todo = [u for u in urls if not done.get(u, {}).get("isFeed")]
+    else:
+        todo = [u for u in urls if u not in done]
     print(f"{len(urls)} feeds, {len(done)} already harvested, {len(todo)} to fetch",
           flush=True)
     if not todo:

@@ -81,8 +81,20 @@ def main():
         # do not replace them. Rebuild used to overwrite, which silently erased
         # every tag the previous pass had derived from the old flat vocabulary.
         keep = [t for t in feed.get("tags") or [] if t in vocab]
-        proposed = d.get("final") or d.get("suggested") or []
-        tags = vocab_mod.normalize(sorted(set(keep) | set(t for t in proposed if t in vocab)))
+        override = d.get("final") or []
+        suggested = [t for t in (d.get("suggested") or []) if t in vocab]
+        tags = vocab_mod.normalize(
+            sorted(set(keep) | set(t for t in override if t in vocab) | set(suggested)))
+        # TAGS.md: exactly one type:. Unioning sources can produce two - a feed
+        # carrying type:vendor-blog from an old pass and suggested
+        # type:personal-blog from a rule. Pick by who said it, and say so.
+        types = [t for t in tags if t.startswith("type:")]
+        if len(types) > 1:
+            chosen = next((sorted([t for t in src if t.startswith("type:")])[0]
+                           for src in (override, keep, suggested)
+                           if any(t.startswith("type:") for t in src)), types[0])
+            tags = [t for t in tags if not t.startswith("type:") or t == chosen]
+            problems.append((url, f"conflicting type: {types} -> kept {chosen}"))
         bad = [t for t in feed.get("tags") or [] if t not in vocab]
         if bad:
             problems.append((url, f"dropped tags not in TAGS.md: {bad}"))
@@ -107,15 +119,25 @@ def main():
     for k, v in reasons.most_common():
         print(f"   {v:5d} {k}")
     if problems:
-        print(f"incomplete tags ({len(problems)}), kept but unclassified:")
-        with open("NEEDS_REVIEW.md", "w", encoding="utf-8") as fh:
-            fh.write(f"# {len(problems)} feeds kept without a full tag set\n\n"
-                     "These are live feeds whose topic or type has not been "
-                     "decided yet. Run `python3 review.py` to work through them.\n")
-            for url, p in problems:
-                fh.write(f"- `{url}`\n")
-        for url, p in problems[:20]:
-            print(f"   {url} {p}")
+        conflicts = [p for p in problems if p[1].startswith("conflicting")]
+        missing = [p for p in problems if not p[1].startswith("conflicting")]
+        if conflicts:
+            print(f"type conflicts resolved ({len(conflicts)}), by source priority:")
+            for url, p in conflicts[:10]:
+                print(f"   {url} {p}")
+        if missing:
+            print(f"incomplete tags ({len(missing)}), kept but unclassified:")
+            with open("NEEDS_REVIEW.md", "w", encoding="utf-8") as fh:
+                fh.write(f"# {len(missing)} feeds kept without a full tag set\n\n"
+                         "These are live feeds whose topic or type has not been "
+                         "decided yet. Most have no harvest data at all - the "
+                         "site 403s the harvester or does not answer - so there "
+                         "is nothing to judge them from. Run `python3 review.py` "
+                         "to work through the rest.\n")
+                for url, p in missing:
+                    fh.write(f"- `{url}`\n")
+            for url, p in missing[:20]:
+                print(f"   {url} {p}")
 
     if not args.write and not args.apply:
         print("\ndry run; pass --write for feeds.json.new, --apply to replace feeds.json")

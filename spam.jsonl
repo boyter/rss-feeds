@@ -9,3 +9,12 @@
 {"key": "articleify.com", "reason": "seo-spam: 'ArticleIFY' serving wellness clinic advertorials under a news tag"}
 {"key": "quintdaily.com", "reason": "seo-spam: 'QuintDaily' serving Dubai lifestyle advertorials under a news tag"}
 {"key": "wowplus.net", "reason": "seo-spam: celebrity listicles under a news tag"}
+{"key": "codewithstyle.info", "reason": "content-farm: English-looking URL, feed title and description are Vietnamese gambling spam (Nha Cai Uy Tin)"}
+{"key": "susam.in", "reason": "superseded: the feed announces it is discontinued and names https://susam.net/feed.xml as its replacement (verified live)"}
+{"key": "unixsheikh.com/feed.rss", "reason": "superseded: the feed says it is no longer maintained and points to https://unixdigest.com/articles.xml and /tutorials.xml (found in the site's own <link rel=alternate>)"}
+{"key": "localhost:4000", "reason": "junk: http://localhost:4000/feed.xml is somebody's development machine, not a feed anyone can subscribe to"}
+{"key": "35.178.45.141", "reason": "junk: an IP address with no reverse and no resolvable publisher, unreachable on two harvests"}
+{"key": "worldnewsera.com", "reason": "content-farm: title promises US and world news, the feed itself has no title and no items"}
+{"key": "worldunitednews.blogspot.com", "reason": "content-farm: name promises world news, feed answers 200 with no title and no items"}
+{"key": "bbcstoriesnews.blogspot.com", "reason": "content-farm: name impersonates the BBC, feed answers 200 with no title and no items"}
+{"key": "www.blogger.com/feeds/468623359017296874", "reason": "unattributable: a Blogger feed id with no blog host and no items - nothing identifies the publisher"}

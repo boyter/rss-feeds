@@ -88,6 +88,54 @@ PERSONAL_HOST_HINTS = re.compile(
     r"(github\.io|gitlab\.io|blogspot\.|wordpress\.com|readthedocs\.io|"
     r"substack\.com|write\.as|medium\.com/@|neocities\.org|news\.blog|"
     r"weebly\.com|wixsite\.com|tumblr\.com|hashnode\.dev|dev\.to/@)", re.I)
+
+# Host patterns whose *type* is not a judgement call: the platform says it. Kept
+# deliberately narrow — a wrong type is worse than no type, because unlike a
+# missing tag it never shows up as needing review.
+PLATFORM_TYPES = [
+    (r"\.(github|gitlab)\.io$", "type:personal-blog"),
+    (r"(blogspot\.[a-z.]{2,7}|write\.as|neocities\.org|bearblog\.dev|hashnode\.dev|"
+     r"weebly\.com|wixsite\.com|webflow\.io|jimdofree\.com|over-blog\.com|"
+     r"canalblog\.com|eklablog\.com|livejournal\.com|typepad\.com|tumblr\.com)$",
+     "type:personal-blog"),
+    (r"^[a-z0-9-]+\.wordpress\.com$", "type:personal-blog"),
+    (r"(substack\.com|buttondown\.email|beehiiv\.com|tinyletter\.com|mailchi\.mp)$",
+     "type:newsletter"),
+    (r"(libsyn\.com|buzzsprout\.com|simplecast\.com|omny\.fm|podbean\.com|"
+     r"podserve\.net|megaphone\.fm|art19\.com|spreaker\.com|anchor\.fm|"
+     r"acast\.com)$", "type:podcast"),
+    (r"\.(edu|ac\.[a-z]{2}|gov|gov\.[a-z]{2})$", "type:institution"),
+]
+
+# Official project/language sites: the host names the subject, so this is a
+# fact rather than a guess. Language names are never matched in titles —
+# "Swift" alone would tag every Taylor Swift blog as topic:programming:swift.
+HOST_TOPICS = [
+    (r"^blog\.rust-lang\.org$", ["topic:programming:rust", "topic:programming"]),
+    (r"^(www\.)?ocaml\.org$", ["topic:programming:ocaml", "topic:programming"]),
+    (r"^(www\.)?ruby-lang\.org$", ["topic:programming:ruby", "topic:programming"]),
+    (r"^dart\.dev$", ["topic:programming:dart", "topic:programming"]),
+    (r"^(www\.)?crystal-lang\.org$", ["topic:programming:crystal", "topic:programming"]),
+    (r"^blogs\.perl\.org$", ["topic:programming:perl", "topic:programming"]),
+    (r"^r-bloggers\.com$", ["topic:programming:r", "topic:data"]),
+    (r"^(www\.)?golang\.org$|^go\.dev$", ["topic:programming:go", "topic:programming"]),
+    (r"^(www\.)?python\.org$", ["topic:programming:python", "topic:programming"]),
+    (r"^rss\.arxiv\.org$", ["topic:science"]),
+]
+
+# A host whose *name* states its subject. Narrow on purpose: "security", "cyber"
+# and "crypto" as substrings of an ordinary word are rare, and the alternative is
+# 27 securityweek.com category feeds with no topic because the harvester was
+# blocked from reading them.
+HOST_NAME_TOPICS = [
+    (r"security|cyber|infosec|threat|forensik|malware|cryptograph|hackercombat", ["topic:security"]),
+    (r"^designernews\.co$", ["topic:design"]),
+    (r"^www\.w3\.org$", ["topic:web-development"]),
+]
+
+# Sub-domains that only a company runs. "blog." is deliberately absent: half the
+# personal blogs here live on blog.something.com.
+COMPANY_SUBDOMAINS = re.compile(r"^(engineering|tech|techblog|dev|developers|product|research|infra|platform)\.")
 VENDOR_HINTS = re.compile(r"/(blog|news|engineering|resources|insights|company)/", re.I)
 PODCAST_HINTS = re.compile(r"(podcast|\brss\b.*episode)", re.I)
 
@@ -160,16 +208,35 @@ def suggest(rec, old_tags):
     region = region_for(host)
     if region and region not in tags:
         tags.append(f"region:{region}")
-    if PERSONAL_HOST_HINTS.search(host) or PERSONAL_HOST_HINTS.search(rec["url"]):
-        tags.append("type:personal-blog")
-    elif PODCAST_HINTS.search(text) and "podcast" in rec["url"].lower():
-        tags.append("type:podcast")
-    elif VENDOR_HINTS.search(urlparse(rec["url"]).path):
-        tags.append("type:vendor-blog")
-    else:
-        inferred = infer_type(rec, host)
-        if inferred:
-            tags.append(inferred)
+    for pattern, added in HOST_TOPICS:
+        if re.search(pattern, host, re.I):
+            tags.extend(t for t in added if t not in tags)
+    for pattern, added in HOST_NAME_TOPICS:
+        if re.search(pattern, host, re.I):
+            tags.extend(t for t in added if t not in tags)
+    if COMPANY_SUBDOMAINS.search(host):
+        if not any(t.startswith("topic:") for t in tags):
+            tags.append("topic:software-engineering")
+        if not any(t.startswith("type:") for t in tags):
+            tags.append("type:vendor-blog")
+    typed = False
+    for pattern, ttype in PLATFORM_TYPES:
+        if re.search(pattern, host, re.I):
+            if not any(t.startswith("type:") for t in tags):
+                tags.append(ttype)
+            typed = True
+            break
+    if not typed and not any(t.startswith("type:") for t in tags):
+        if PERSONAL_HOST_HINTS.search(host) or PERSONAL_HOST_HINTS.search(rec["url"]):
+            tags.append("type:personal-blog")
+        elif PODCAST_HINTS.search(text) and "podcast" in rec["url"].lower():
+            tags.append("type:podcast")
+        elif VENDOR_HINTS.search(urlparse(rec["url"]).path):
+            tags.append("type:vendor-blog")
+        else:
+            inferred = infer_type(rec, host)
+            if inferred:
+                tags.append(inferred)
     # carry forward old flat tags that still mean something
     legacy = {"programming": "topic:software-engineering",
               "security": "topic:security", "gaming": "topic:gaming",
@@ -209,11 +276,13 @@ def main():
                 continue
             r = json.loads(line)
             # A key with a slash in it is a specific feed URL; without one it
-            # is a host, and applies to every feed on that host.
+            # is a host, and applies to every feed on that host. host_of()
+            # strips www., so a rule written as "www.example.com" would never
+            # match anything - normalize the key the same way.
             if "/" in r["key"]:
                 overrides["url"][r["key"].lower()] = r["tags"]
             else:
-                overrides["host"][r["key"].lower()] = r
+                overrides["host"][r["key"].lower().removeprefix("www.")] = r
 
     out, stats = [], collections.Counter()
     for feed in feeds:
@@ -244,8 +313,14 @@ def main():
             why.append("host-rule")
         if final is not None:
             final = vocab_mod.normalize(final)
-        topics = [t for t in (final or suggested) if t.startswith("topic:")]
-        types = [t for t in (final or suggested) if t.startswith("type:")]
+        # What rebuild.py will actually write: it unions the tags already in
+        # feeds.json with whatever is proposed here. Anything that counts as
+        # decided for the writer counts as decided for the reviewer, or the
+        # review queue is full of feeds that are already tagged.
+        carried = [t for t in old if t in VOCAB]
+        effective = sorted(set(carried) | set(final if final is not None else suggested))
+        topics = [t for t in effective if t.startswith("topic:")]
+        types = [t for t in effective if t.startswith("type:")]
         needs = []
         if final is not None:
             needs = ["override"]
@@ -267,7 +342,7 @@ def main():
             "description": rec.get("description", "")[:160],
             "items": rec.get("items", [])[:3],
             "oldTags": old, "suggested": suggested, "why": why,
-            "final": final, "needs": needs,
+            "final": final, "effective": effective, "needs": needs,
             "isFeed": rec.get("isFeed", False),
             "status": rec.get("status", 0),
             "error": rec.get("error", ""),

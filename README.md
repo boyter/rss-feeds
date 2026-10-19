@@ -11,3 +11,5 @@ See `feeds.json` for a collection of all the feeds. Each entry has a `url`, a se
 Tags are namespaced: `topic:` what it is about, `type:` what kind of source it is, `region:` editorial focus, `language:` when it isn't English. The vocabulary and the rules for adding to it are in `TAGS.md`. One feed per line, sorted by host, so a change to one feed shows up as one changed line.
 
 If you want to add feeds submit a PR. `harvest.py` fetches every feed and records its title, description, sample items and whether it actually serves a feed; `triage.py` turns that into keep / flag / remove, feeds that stay broken get dropped, and `REMOVED.md` lists what went and why.
+
+To add one feed, append a line to `feeds.json` with a `url` and tags from `TAGS.md` — the harvest fills in the title. For a batch, put them in `candidates.jsonl` and run `python3 add.py probe` then `add.py merge`: nothing joins the list until it has been seen answering with a real feed. Sites that refuse the harvester are parked in `BLOCKED_CANDIDATES.md` rather than guessed in.

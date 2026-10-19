@@ -99,7 +99,8 @@ Sub-national, only for feeds that are actually local:
 
 ## language: (only when not English, or for a translated feed)
 
-`language:arabic`, `language:chinese`, `language:english`, `language:dutch`, `language:finnish`,
+`language:arabic`, `language:chinese`, `language:czech`, `language:english`,
+`language:dutch`, `language:finnish`,
 `language:french`, `language:german`, `language:hindi`, `language:italian`, `language:japanese`,
 `language:korean`, `language:norwegian`, `language:portuguese`, `language:russian`, `language:spanish`
 

@@ -67,7 +67,9 @@ def classify(rec, feed, spam_rules=()):
     url = rec["url"].lower()
     for key, reason in spam_rules:
         if key in url:
-            return "remove", f"spam:{reason}"
+            # "hand:" not "spam:" - the file holds any hand-curated removal, a
+            # superseded or moved feed as much as a content farm.
+            return "remove", f"hand:{reason}"
 
     for name, words in SPAM_PATTERNS:
         if not words:

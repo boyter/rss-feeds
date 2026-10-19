@@ -4,3 +4,6 @@ feeds.json.new
 draft.jsonl
 triage.jsonl
 NEEDS_REVIEW.md
+RESUME.md
+decisions.txt
+probe_results.jsonl

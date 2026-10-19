@@ -35,12 +35,22 @@ def group(rows):
     return hosts
 
 
+def has_both(r):
+    """Does this feed end up with a topic: and a type: after rebuild?"""
+    tags = r.get("effective") or r["final"] or r["suggested"] or []
+    return any(t.startswith("topic:") for t in tags) and \
+        any(t.startswith("type:") for t in tags)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--batch", type=int, default=-1)
     ap.add_argument("--size", type=int, default=BATCH)
     ap.add_argument("--brief", action="store_true",
                     help="host, title, description only - for long batches")
+    ap.add_argument("--tsv", action="store_true",
+                    help="one line per host: host, title, description, first item. "
+                         "Cheapest way to read a batch of a thousand hosts.")
     ap.add_argument("--only", default="unclassified")
     ap.add_argument("--sort", default="host", choices=["host", "feeds"])
     args = ap.parse_args()
@@ -49,12 +59,7 @@ def main():
     hosts = group(rows)
     def settled(rs):
         """A host is done when every feed on it has a topic and a type."""
-        for r in rs:
-            tags = r["final"] or r["suggested"] or []
-            if not any(t.startswith("topic:") for t in tags) or \
-               not any(t.startswith("type:") for t in tags):
-                return False
-        return True
+        return all(has_both(r) for r in rs)
 
     done = {h for h, rs in hosts.items() if settled(rs)}
     # A host with no harvested title/items cannot be judged yet - it is either
@@ -81,9 +86,7 @@ def main():
     print(f"# batch {args.batch}: hosts {args.batch * args.size}-{args.batch * args.size + len(chunk) - 1} of {len(todo)}")
     for h in chunk:
         rs = hosts[h]
-        unsettled = [r for r in rs
-                     if not any(t.startswith("topic:") for t in (r["final"] or r["suggested"] or []))
-                     or not any(t.startswith("type:") for t in (r["final"] or r["suggested"] or []))]
+        unsettled = [r for r in rs if not has_both(r)]
         if not unsettled:
             continue
         rs = unsettled
@@ -92,6 +95,11 @@ def main():
         items = next((r["items"] for r in rs if r["items"]), [])
         old = sorted({t for r in rs for t in r["oldTags"]})
         paths = [urlparse(r["url"]).path for r in rs]
+        if args.tsv:
+            one = lambda s: " ".join((s or "").split())
+            print("\t".join([h, str(len(rs)), one(title)[:52], one(desc)[:78],
+                             one(items[0] if items else "")[:52]]))
+            continue
         print(f"\n### {h}  [{len(rs)} untagged]" if args.brief else f"\n### {h}  [{len(rs)} feed(s)]")
         print(f"    title: {title[:70]}")
         if desc:
