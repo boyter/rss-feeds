@@ -20,3 +20,5 @@
 {"key": "www.blogger.com/feeds/468623359017296874", "reason": "unattributable: a Blogger feed id with no blog host and no items - nothing identifies the publisher"}
 {"key": "techblog.badoo.com", "reason": "superseded: the blog became Bumble Tech on Medium; replaced by https://medium.com/feed/bumble-tech"}
 {"key": "trustwave.com/en-us/rss/spiderlabs-blog", "reason": "superseded: the publisher titles the feed '[DO NOT USE] SpiderLabs Blog'; SpiderLabs content now ships from levelblue.com"}
+{"key": "quicktrendnews.wordpress.com", "reason": "content-farm: the feed's title is the domain name, its description is 'The news above control', and item headlines are rewritten junk ('Forensic Audits is a necessity ens...', '15 Reported Cases of Convid 19 in ')"}
+{"key": "www.headlinesoftoday.com", "reason": "dead: /feed returns 404 with the body {\"error\":\"not_found\",\"path\":\"/feed\"} - the site no longer serves a feed at that path"}

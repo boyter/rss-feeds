@@ -313,3 +313,22 @@ press is behind the same fingerprinting that blocks schneier.com, and it does
 not advertise feeds in the HTML we can read. Filling those topics means a
 browser check per site, one at a time, which is a human afternoon rather than a
 tool.
+
+## Twelve feeds the product carries and cannot decide
+
+They answer 403 (ahilado.wordpress.com, danielspost.news.blog,
+developer.salesforce.com, hanszandbelt.wordpress.com, blowthetruth.com),
+5xx (abramov.io 503, giftegwuenu.com 522, globalreport.news 522), or their TLS
+is broken (programmingwithmosh.com serves a certificate for another host,
+thevividreader.com times out mid-handshake). None has a title, so nothing
+decides a topic, and a tag written into `feeds.json` is pinned forever.
+
+They stay in the list — a 403 is not evidence a feed is dead — and they stay
+untagged. `rebuild.py --strict` names them every run, which is the honest place
+for an undecided thing: visible, not guessed.
+
+Two of the fourteen that started this check were removed by hand, with the
+evidence quoted in `REMOVED.md`: `quicktrendnews.wordpress.com` (the feed's own
+title is its domain name, its description is "The news above control", and its
+item headlines are rewritten junk) and `www.headlinesoftoday.com` (`/feed`
+answers 404 with `{"error":"not_found","path":"/feed"}`).
