@@ -107,23 +107,33 @@ def encoding_shape(raw):
         return ""
     quads = len(head) // 4
     n32_le = sum(1 for i in range(0, len(head) - 3, 4)
-                 if head[i + 1] == head[i + 2] == head[i + 3] == 0)
+                 if head[i + 1] < 0x20 and head[i + 2] < 0x20 and head[i + 3] < 0x20)
     n32_be = sum(1 for i in range(0, len(head) - 3, 4)
-                 if head[i] == head[i + 1] == head[i + 2] == 0)
-    # 0.5, not 0.7: a Cyrillic feed in UTF-32 has a non-zero second byte in a
-    # third of its quads, and a UTF-32 body always satisfies the UTF-16 test
-    # perfectly, so losing here means being decoded as UTF-16 instead.
+                 if head[i] < 0x20 and head[i + 1] < 0x20 and head[i + 2] < 0x20)
+    # A UTF-32 body satisfies the UTF-16 test perfectly (three small bytes in four
+    # contains a small byte in every two), so it is tested first: losing here
+    # means being decoded as UTF-16, which yields NUL-stuffed text under a note
+    # that says the wrong thing.
     if quads >= 4 and n32_le >= quads * 0.5:
         return "utf-32-le"
     if quads >= 4 and n32_be >= quads * 0.5:
         return "utf-32-be"
     pairs = len(head) // 2
-    n_le = sum(1 for i in range(0, len(head) - 1, 2) if head[i + 1] == 0)
-    n_be = sum(1 for i in range(0, len(head) - 1, 2) if head[i] == 0)
+    # "below 0x20", not "== 0". An ASCII feed has NUL on the alternate byte; a
+    # Cyrillic, Greek, Hebrew or Arabic one has a constant small byte instead
+    # (0x04, 0x03, 0x05), and the old test only ever saw the ASCII case - a
+    # Cyrillic feed in UTF-16 with no mark decoded as UTF-8 mojibake and was
+    # recorded not-a-feed with nothing reported as wrong. Printable text never
+    # reaches this ratio by accident, because real characters are 0x20 and up.
+    n_le = sum(1 for i in range(0, len(head) - 1, 2) if head[i + 1] < 0x20)
+    n_be = sum(1 for i in range(0, len(head) - 1, 2) if head[i] < 0x20)
     if n_le >= pairs * 0.7:
         return "utf-16-le"
     if n_be >= pairs * 0.7:
         return "utf-16-be"
+    # Out of scope, deliberately: CJK and Hangul in UTF-16 with no mark (high
+    # byte 0x4E-0xD7) is invisible to this test. Such a body is also invalid XML -
+    # UTF-16 entities require a mark - so no feed client reads it either.
     return ""
 
 
@@ -271,13 +281,25 @@ def read_body(resp, cap=MAX_BYTES):
         if not part:
             break
         raw += part
+        if name is None and len(raw) < 4:
+            # Too few bytes to tell gzip from identity: the magic is two bytes
+            # and a zlib header is a checksum over two more. A server that
+            # flushes one byte first would otherwise have its compressed body
+            # recorded verbatim as identity - a live feed, read as garbage, with
+            # nothing reported as wrong.
+            continue
         if name is None:
-            name, dec = decompressor_for(enc, part)
+            # Sniffing late means the buffered prefix belongs to the decoder, not
+            # to `part`: handing it only the newest chunk loses the first bytes.
+            name, dec = decompressor_for(enc, raw)
+            chunk = bytes(raw)
+        else:
+            chunk = part
         if dec is None:
-            out += part
+            out += chunk
         else:
             try:
-                out += dec.decompress(part)
+                out += dec.decompress(chunk)
             except zlib.error as e:
                 note = f"zlib: {e}"
                 if not out and not looks_compressed(raw):
@@ -290,8 +312,8 @@ def read_body(resp, cap=MAX_BYTES):
                     out = bytearray(raw)
                     dec, name = None, "identity"
                     note += " header lied about encoding"
-                    continue
-                break
+                else:
+                    break
         if len(out) >= cap:
             # Checked before the eof test, because one read can inflate past the
             # cap and end the stream in the same call: a repetitive feed
@@ -305,6 +327,14 @@ def read_body(resp, cap=MAX_BYTES):
             break
         if dec is not None and dec.eof:
             break
+    if name is None and raw:
+        # The whole body arrived in fewer than four bytes; sniff it after all.
+        name, dec = decompressor_for(enc, bytes(raw))
+        if dec is not None:
+            try:
+                out = bytearray(dec.decompress(bytes(raw)))
+            except zlib.error:
+                out = bytearray()
     if dec is not None and not out and raw and not looks_compressed(raw):
         # The stream ended on the chunk that failed to inflate.
         return bytes(raw), "identity", (note + " header lied about encoding").strip()

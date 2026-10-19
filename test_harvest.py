@@ -81,6 +81,22 @@ class ReadBody(unittest.TestCase):
         self.assertNotEqual(enc, "identity")
         self.assertNotIn("lied", note)
 
+    def test_a_gzip_body_whose_first_chunk_is_one_byte_still_inflates(self):
+        # The magic is two bytes and a zlib header is a checksum over four. A
+        # server that flushes a single byte before the rest would have its
+        # compressed body recorded verbatim as identity: a live feed, read as
+        # garbage, with nothing reported as wrong.
+        body = gzip.compress(b"<rss><channel><title>Feed</title></channel></rss>")
+        for split in (1, 2, 3):
+            raw, enc, note = harvest.read_body(Resp([body[:split], body[split:]]))
+            self.assertTrue(raw.startswith(b"<rss"), f"split at {split}")
+            self.assertEqual(enc, "gzip", f"split at {split}")
+
+    def test_a_body_of_only_whitespace_is_not_a_feed_and_says_nothing_false(self):
+        text, note = harvest.decode_text(b"   \r\n  ", "")
+        self.assertEqual(text, "   \r\n  ")
+        self.assertEqual(note, "")
+
     def test_zlib_headers_are_checked_by_checksum_not_by_a_magic_list(self):
         # A list of two-byte magics once omitted 0x78 0x5e - default-level
         # deflate - and a real deflate body was written off as binary.
@@ -215,9 +231,24 @@ class DecodeText(unittest.TestCase):
         self.assertEqual(note, "")
 
     def test_a_honest_declared_charset_is_used(self):
-        text, note = self.dec("Café sécurité".encode("cp1252"), "text/xml; charset=windows-1252")
-        self.assertEqual(text, "Café sécurité")
-        self.assertIn("declared windows-1252", note)
+        # iso-8859-2, not cp1252: the two disagree on 0xEC ('ě' against 'ì'), so
+        # a fallback to cp1252 cannot satisfy this while looking like it passed.
+        text, note = self.dec("svět".encode("iso-8859-2"), "application/xml; charset=iso-8859-2")
+        self.assertEqual(text, "svět")
+        self.assertIn("declared iso-8859-2", note)
+
+    def test_a_cyrillic_feed_in_utf16_with_no_mark_still_decodes(self):
+        # The shape test used to look for NUL on the alternate byte, which is the
+        # ASCII case only. Cyrillic has a constant small byte (0x04) instead, so
+        # this body decoded as UTF-8 mojibake and was recorded not-a-feed with
+        # nothing reported as wrong.
+        cyr = ("<?xml version='1.0'?><rss><title>"
+               "Александр Токарев Безопасность Данные</title></rss>")
+        for enc in ("utf-16-le", "utf-16-be"):
+            text, note = self.dec(cyr.encode(enc), "")
+            self.assertTrue(is_prolog(text), enc)
+            self.assertIn("Александр Токарев", text, enc)
+            self.assertIn(enc, note)
 
     def test_empty_body_is_empty_and_says_nothing(self):
         text, note = self.dec(b"")

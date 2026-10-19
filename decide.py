@@ -60,6 +60,13 @@ def check(key, tags, path_tags, voc):
         bad = vocab_mod.validate(extra, voc)
         if bad:
             problems.append(f"pathTags[{needle}] not in TAGS.md: {bad}")
+    if "/" in key and "://" not in key:
+        # A key with a slash is a URL rule, and classify.py matches URL rules
+        # against the whole URL. A scheme-less key like "medium.com/feed/x"
+        # therefore matches nothing, silently, forever.
+        problems.append("URL rule needs a scheme: a key with a slash and no "
+                        ":// can never match a feed URL (use a host key, or the "
+                        "full https:// URL)")
     if "://" in key and "/" not in key.split("://", 1)[1].rstrip("/"):
         problems.append("URL rule with no path matches one exact URL; a host "
                         "rule (no slash) is usually what is meant")
