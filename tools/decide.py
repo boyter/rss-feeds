@@ -108,12 +108,15 @@ the replacement report caught none of it.
             for t in f.get("tags", []):
                 if t.startswith("type:"):
                     seen[t] = seen.get(t, 0) + 1
-        if seen and types[0] not in seen:
-            worst = max(seen.items(), key=lambda kv: kv[1])
+        if seen and any(t != types[0] for t in seen):
+            others = sorted(t for t in seen if t != types[0])
+            worst = max(((t, n) for t, n in seen.items() if t != types[0]),
+                        key=lambda kv: kv[1])
             problems.append(
-                f"would retype {sum(seen.values())} feed(s) already in feeds.json "
-                f"from {worst[0]} to {types[0]} - pass --allow-type-change if that "
-                f"is the decision")
+                f"would retype {worst[1]} feed(s) already in feeds.json from "
+                f"{worst[0]} to {types[0]}; this host publishes {others} as well, "
+                f"and one site-level type cannot settle both - pass "
+                f"--allow-type-change, or drop the rule and let the per-feed tags stand")
     if existing_rule:
         lost = [t for t in existing_rule.get("tags", []) if t not in tags]
         if lost:

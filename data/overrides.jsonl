@@ -2018,7 +2018,6 @@
 {"key": "canonrumors.com", "tags": ["topic:design", "type:publication"]}
 {"key": "caranddriver.com", "tags": ["topic:transport", "type:publication"]}
 {"key": "carbodydesign.com", "tags": ["topic:transport", "type:personal-blog"]}
-{"key": "carscoops.com", "tags": ["topic:transport", "type:personal-blog"]}
 {"key": "censor.net.ua", "tags": ["language:ukrainian", "region:ukraine", "topic:news", "type:publication"]}
 {"key": "centsationalstyle.com", "tags": ["topic:lifestyle", "type:personal-blog"]}
 {"key": "chaudronchromatique.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
@@ -2233,7 +2232,6 @@
 {"key": "isna.ir", "tags": ["region:middle-east", "topic:news", "type:publication"]}
 {"key": "iso.500px.com", "tags": ["topic:design", "type:personal-blog"]}
 {"key": "jagonews24.com", "tags": ["region:asia", "topic:news", "type:publication"]}
-{"key": "jalopnik.com", "tags": ["topic:transport", "type:publication"]}
 {"key": "jang.com.pk", "tags": ["language:urdu", "region:pakistan", "topic:news", "type:publication"]}
 {"key": "javascriptweekly.com", "tags": ["topic:web-development", "type:publication"]}
 {"key": "jerryboucher.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
@@ -2468,7 +2466,6 @@
 {"key": "tonite.abante.com.ph", "tags": ["region:philippines", "topic:news", "type:publication"]}
 {"key": "topgear.com.ph", "tags": ["region:philippines", "topic:news", "type:publication"]}
 {"key": "totmv2.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
-{"key": "toucharcade.com", "tags": ["topic:tech-industry", "type:publication"]}
 {"key": "towardsdatascience.com", "tags": ["topic:ai", "type:publication"]}
 {"key": "towerofthearchmage.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "traaa.sh", "tags": ["topic:personal", "type:personal-blog"]}
@@ -2544,3 +2541,4 @@
 {"key": "security.com", "tags": ["topic:security", "type:vendor-blog"]}
 {"key": "specterops.io", "tags": ["topic:security", "type:vendor-blog"]}
 {"key": "thejamesbrand.com", "tags": ["topic:gadgets", "type:vendor-blog"]}
+{"key": "https://www.toucharcade.com/feed/podcast/", "tags": ["topic:gaming", "type:podcast"]}

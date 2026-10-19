@@ -428,6 +428,16 @@ class TestNewRulesCannotSilentlyRetypeTheProduct(unittest.TestCase):
         self.assertTrue(got, "the old rule's topic:security vanished with no report")
         self.assertIn("topic:security", got[0])
 
+    def test_a_host_rule_is_refused_when_the_site_publishes_two_types(self):
+        # toucharcade.com publishes article feeds and a podcast feed. A site-level
+        # type settles one and silently retypes the other, whichever way it is
+        # written - so the answer is no rule, not a cleverer one.
+        feeds = [{"url": "https://toucharcade.com/feed/", "tags": ["type:publication"]},
+                 {"url": "https://toucharcade.com/feed/podcast/", "tags": ["type:podcast"]}]
+        for t in ("type:publication", "type:podcast"):
+            got = self.problems("toucharcade.com", ["topic:gaming", t], feeds)
+            self.assertTrue(got, f"{t} would have retyped the other kind of feed")
+
     def test_a_url_rule_does_not_retype_the_whole_host(self):
         feeds = [{"url": "https://example.com/feed/", "tags": ["type:publication"]}]
         self.assertEqual(self.problems("https://example.com/other/feed",
