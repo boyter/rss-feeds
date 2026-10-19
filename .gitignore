@@ -27,3 +27,7 @@ data/candidates.siblings.jsonl
 data/candidates.leads.jsonl
 data/candidates.tagged.jsonl
 data/DISCOVERY_UNTAGGED.jsonl
+# decide.py batch inputs: transient. data/overrides.jsonl is the record of a
+# hand decision; the batch file that produced it, and the reasons written in its
+# comments, stay in git history (see the commits that applied each batch).
+discovery-decisions*.txt

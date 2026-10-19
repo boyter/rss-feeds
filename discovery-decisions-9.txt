@@ -1,1 +1,0 @@
-https://boyter.org/index.xml  topic:software-engineering topic:ai type:personal-blog   # the host rule was not enough: rules had already written topic:food (one wine post) and topic:finance into the product, and only a URL rule replaces what a feed has

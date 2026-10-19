@@ -80,8 +80,8 @@ youtube.com, the feedburners, reddit.com and medium.com each name a different
 publisher per path. That is `AGGREGATOR_HOSTS`, and it is pinned by tests on
 both doors.
 
-51 hand host rules were written for the batch (`discovery-decisions.txt`,
-`discovery-decisions-2.txt`), and `TAGS.md` gained `region:italy`, `mexico`, 
+51 hand host rules were written for the batch (as a transient file of my own
+naming, fed to `decide.py`), and `TAGS.md` gained `region:italy`, `mexico`, 
 `pakistan`, `philippines`, `poland`, `ukraine` and `language:polish`,
 `ukrainian`, `urdu` — the coverage the list was thinnest on.
 
@@ -240,7 +240,7 @@ python3 tools/discover.py extract && python3 tools/discover.py paths
 python3 tools/add.py probe data/candidates.discovered.jsonl
 python3 tools/add.py probe data/candidates.paths.jsonl
 python3 tools/discover.py tag          # read the two reports it writes
-python3 tools/decide.py discovery-decisions.txt
+python3 tools/decide.py my-decisions.txt   # the batch file is yours to name
 python3 tools/add.py merge data/candidates.tagged.jsonl   # then --apply
 ```
 
