@@ -89,18 +89,35 @@ BOMS = ((b"\xff\xfe\x00\x00", "utf-32-le"), (b"\x00\x00\xfe\xff", "utf-32-be"),
         (b"\xff\xfe", "utf-16-le"), (b"\xfe\xff", "utf-16-be"))
 
 
-def utf16_without_mark(raw):
-    """Name a UTF-16 encoding if the body looks like one and carries no mark.
+def encoding_shape(raw):
+    """Name a UTF-16/UTF-32 encoding if the body looks like one and carries no mark.
 
     An ASCII feed written in UTF-16-LE is *also* valid UTF-8, because NUL is a
     legal UTF-8 byte. It therefore decodes "cleanly" into "<?\x00m\x00l\x00...",
     nothing reports an error, and the harvester records a live feed as
     not-a-feed. No validity check can catch that; only the shape of the bytes can.
+
+    UTF-32 is tested first because its bytes also satisfy the UTF-16 test - three
+    NULs in four contains a NUL in every two - and decoding UTF-32 as UTF-16
+    produces NUL-stuffed text that no longer parses, under a note that says the
+    wrong thing.
     """
     head = raw[:200]
-    pairs = len(head) // 2
-    if pairs < 8:
+    if len(head) < 16:
         return ""
+    quads = len(head) // 4
+    n32_le = sum(1 for i in range(0, len(head) - 3, 4)
+                 if head[i + 1] == head[i + 2] == head[i + 3] == 0)
+    n32_be = sum(1 for i in range(0, len(head) - 3, 4)
+                 if head[i] == head[i + 1] == head[i + 2] == 0)
+    # 0.5, not 0.7: a Cyrillic feed in UTF-32 has a non-zero second byte in a
+    # third of its quads, and a UTF-32 body always satisfies the UTF-16 test
+    # perfectly, so losing here means being decoded as UTF-16 instead.
+    if quads >= 4 and n32_le >= quads * 0.5:
+        return "utf-32-le"
+    if quads >= 4 and n32_be >= quads * 0.5:
+        return "utf-32-be"
+    pairs = len(head) // 2
     n_le = sum(1 for i in range(0, len(head) - 1, 2) if head[i + 1] == 0)
     n_be = sum(1 for i in range(0, len(head) - 1, 2) if head[i] == 0)
     if n_le >= pairs * 0.7:
@@ -137,7 +154,7 @@ def decode_text(raw, content_type):
                 return lead.decode(enc), f"decoded as {enc} (byte order mark)"
             except UnicodeDecodeError:
                 break
-    guess = utf16_without_mark(raw)
+    guess = encoding_shape(raw)
     if guess:
         try:
             return raw.decode(guess), f"decoded as {guess} (no byte order mark)"

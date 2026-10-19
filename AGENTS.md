@@ -146,6 +146,14 @@ If a hand-decided feed should carry another topic, put it in the override.
   cuts the head wherever it lands and can split a multi-byte character; that is
   our truncation, so the partial tail is dropped and the text kept. That is how a
   live Cyrillic podcast came to be flagged undecodable.
+- encoding is established in order of trust: the body's byte order mark, then the
+  **shape of its bytes**, then utf-8 (self-validating), then what it declared,
+  then cp1252. The shape check is not paranoia: an ASCII feed written in UTF-16
+  or UTF-32 is also *valid* UTF-8, because NUL is a legal UTF-8 byte. It decodes
+  with no error into `<?\x00m\x00l\x00…`, nothing is reported wrong, and the feed
+  is recorded as not-a-feed. No validity check can see that; only the byte pattern
+  can. UTF-32 is tested before UTF-16 because its bytes satisfy the UTF-16 test
+  perfectly.
 - `regressed` — set when a `--prior FILE` (or an existing `harvest.jsonl`) said
   this URL was a feed and it is not now. `triage.py` flags those for a human.
   Always pass `--prior` when a run replaces a file you already have.
