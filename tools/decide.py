@@ -22,6 +22,7 @@ Usage:
 
 import argparse
 import json
+import subprocess
 import os
 import sys
 
@@ -125,6 +126,30 @@ the replacement report caught none of it.
     return problems
 
 
+def shipped(name):
+    """The committed version of a working file, for the overwrite guard.
+
+    The guard protects decisions that have shipped. Comparing against the
+    working tree instead made it refuse a correction of a rule written ten
+    minutes earlier in the same pass - "you would drop topic:security from the
+    existing rule" - when the thing being dropped was that same bad rule. The
+    committed state is the state a reader has, and the only one worth defending.
+    """
+    try:
+        out = subprocess.run(["git", "show", f"HEAD:{name}"], capture_output=True,
+                             text=True, check=True).stdout
+        if name.endswith(".jsonl"):
+            return [json.loads(l) for l in out.splitlines() if l.strip()]
+        return json.loads(out)
+    except Exception:
+        # No git history (a fresh clone, a shallow checkout): fall back to what
+        # is on disk rather than skipping the check.
+        path = paths.root(name) if not name.startswith("data/") else paths.data(os.path.basename(name))
+        if name.endswith(".jsonl"):
+            return [json.loads(l) for l in open(path, encoding="utf-8") if l.strip()]
+        return json.load(open(path, encoding="utf-8"))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("source", help="file of decisions, or - for stdin")
@@ -157,14 +182,10 @@ def main():
             print("  " + e, file=sys.stderr)
         return 1
 
-    existing = []
-    if os.path.exists(OVERRIDES):
-        for line in open(OVERRIDES, encoding="utf-8"):
-            if line.strip():
-                existing.append(json.loads(line))
+    existing = shipped("data/overrides.jsonl")
     by_key = {r["key"].lower(): r for r in existing}
 
-    feeds = json.load(open(paths.root("feeds.json"), encoding="utf-8"))
+    feeds = shipped("feeds.json")
     for key, tags, path_tags in parsed:
         problems = overwrite_problems(key, tags, feeds, by_key.get(key.lower()))
         if problems and not args.allow_type_change:

@@ -1,0 +1,169 @@
+# Batch six: the security-feeds list. Every row here comes from a list whose
+# own categories are security sub-categories, so topic:security is the list's
+# claim and the feed's title decides the type. Read and corrected by hand.
+0x27.me                                                  topic:security type:personal-blog   #  | 0x27.me
+adepts.of0x.cc                                           topic:security type:personal-blog   # Pentest | Adepts of 0xCC
+adsecurity.org                                           topic:security type:vendor-blog   # Pentest | Active Directory & Azure AD/Entra 
+allthingslinguistic.com                                  topic:security type:personal-blog   # http://127.0.0.1/rss.xml me | All Things Linguistic
+andreadraghetti.it                                       topic:security type:personal-blog   #  | Andrea Draghetti
+andrewhay.ca                                             topic:security type:personal-blog   #  | Andrew Hay
+azeria-labs.com                                          topic:security type:vendor-blog   # Miscellaneous | Azeria Labs
+binaryforay.blogspot.com                                 topic:security type:personal-blog   # Miscellaneous | binary foray
+blackmoreops.com                                         topic:security type:personal-blog   # Pentest | blackMORE Ops
+blog.andlabs.org                                         topic:security type:personal-blog   #  | Attack and Defense Labs
+blog.derekgodin.com                                      topic:security type:personal-blog   # http://127.0.0.1/rss.xml me | Ahead on Differential
+blog.erratasec.com                                       topic:security type:personal-blog   #  | Errata Security
+blog.exploitlab.net                                      topic:security type:personal-blog   # Miscellaneous | The Exploit Laboratory
+blog.harmj0y.net                                         topic:security type:personal-blog   #  | harmj0y
+blog.kchung.co                                           topic:security type:personal-blog   # Miscellaneous | Kevin Chung
+blog.kotowicz.net                                        topic:security type:personal-blog   # Web Security | the world. according to koto
+blog.malwarebytes.org                                    topic:security type:vendor-blog   # Malware | Malwarebytes
+blog.malwaremustdie.org                                  topic:security type:personal-blog   # Malware | Malware Must Die!
+blog.mindedsecurity.com                                  topic:security type:personal-blog   # Web Security | IMQ Minded Security Blog
+blog.nibblesec.org                                       topic:security type:personal-blog   # Web Security | Nibble Security
+blog.outsider.ne.kr                                      topic:software-engineering type:personal-blog   # corrected: the source list misfiles this as security
+blog.panic.com                                           topic:software-engineering type:vendor-blog   # corrected: the source list misfiles this as security
+blog.rootshell.be                                        topic:security type:personal-blog   # Miscellaneous | /dev/random
+blog.securitybreached.org                                topic:security type:personal-blog   # Web Security | Security Breached
+blog.silentsignal.eu                                     topic:security type:personal-blog   # Pentest | Silent Signal Techblog
+blog.tint0.com                                           topic:security type:personal-blog   #  | An Trinh's past works
+blog.whitescope.io                                       topic:security type:personal-blog   # Miscellaneous | WhiteScope IO
+blog.yappare.com                                         topic:security type:personal-blog   #  | Random stuff by yappare
+blog.zsec.uk                                             topic:security type:personal-blog   # Miscellaneous | ZephrSec - Adventures In Informati
+bordergate.co.uk                                         topic:security type:vendor-blog   # Pentest | BorderGate
+boschko.ca                                               topic:security type:vendor-blog   # Pentest | Boschko Security Blog
+breakdev.org                                             topic:security type:personal-blog   # Miscellaneous | BREAKDEV
+buer.haus                                                topic:security type:personal-blog   # CTF | ziot
+bugbountypoc.com                                         topic:security type:personal-blog   # Web Security | Bug Bounty POC
+carnal0wnage.attackresearch.com                          topic:security type:personal-blog   # Pentest | Carnal0wnage Blog
+chenhuijing.com                                          topic:web-development type:personal-blog   # corrected: the source list misfiles this as security
+codecolor.ist                                            topic:security type:personal-blog   #  | CodeColorist
+codiceinsicuro.it                                        language:italian region:italy topic:security type:personal-blog   # Italiano | Codice Insicuro, blog di Cyber Sec
+corelan.be                                               topic:security type:vendor-blog   # Offensive Security | Corelan | Exploit Development & Vu
+ctfcrew.org                                              topic:security type:personal-blog   # CTF | BalalaikaCr3w
+cyberdivision.net                                        language:italian region:italy topic:security type:personal-blog   # Italiano | Cyber Division
+cybersecurity.it                                         topic:security type:personal-blog   #  | Cybersecurity
+d3lab.net                                                language:italian region:italy topic:security type:vendor-blog   # Italiano | D3Lab
+danielmiessler.com                                       topic:security type:personal-blog   # Miscellaneous | Daniel Miessler
+darkoperator.com                                         topic:security type:personal-blog   # Offensive Security | Shell is Only the Beginning
+decentsecurity.com                                       topic:security type:personal-blog   # Miscellaneous | Blog - Decent Security
+dicorinto.it                                             language:italian region:italy topic:security type:personal-blog   # Italiano | Arturo Di Corinto
+digi.ninja                                               topic:security type:personal-blog   # Miscellaneous | DigiNinja
+dirittodellinformatica.it                                language:italian region:italy topic:security type:vendor-blog   # Italiano | Diritto dell'Informatica
+domenic.me                                               topic:web-development type:personal-blog   # corrected: the source list misfiles this as security
+doomedraven.com                                          topic:security type:personal-blog   # Miscellaneous | @D00m3dr4v3n
+draplin.com                                              topic:design type:personal-blog   # corrected: the source list misfiles this as security
+drwho.virtadpt.net                                       topic:personal type:personal-blog   # corrected: the source list misfiles this as security
+elliotjaystocks.com                                      topic:design type:personal-blog   # corrected: the source list misfiles this as security
+ericconrad.com                                           topic:security type:personal-blog   # Miscellaneous | Eric Conrad
+fabionatalucci.it                                        topic:security type:personal-blog   #  | Fabio Natalucci Post
+feeds.trendmicro.com                                     topic:security type:vendor-blog   # Malware | Trend Micro - Security Advisories
+hackingarticles.in                                       topic:security type:personal-blog   # Pentest | Hacking Articles
+hacktips.it                                              language:italian region:italy topic:security type:personal-blog   # Italiano | Home on Hacktips - Guide di Sicure
+haveibeenpwned.com                                       topic:security type:personal-blog   #  | Have I Been Pwned latest breaches
+haxolot.com                                              topic:security type:personal-blog   # Offensive Security | Haxolot.com
+hecfblog.com                                             topic:security type:personal-blog   # Forensics | Hacking Exposed Computer Forensics
+highon.coffee                                            topic:security type:personal-blog   # Pentest | HighOn.Coffee
+http://feeds.feedburner.com/Anti-virusRants              topic:security type:publication   # Miscellaneous | anti-virus rants
+http://feeds.feedburner.com/ChintanGurjarsBlog           topic:security type:publication   # Miscellaneous | Cybersecurity Blog
+http://feeds.feedburner.com/FabioNatalucciPost           language:italian region:italy topic:security type:publication   # Italiano | Fabio Natalucci Post
+http://feeds.feedburner.com/FollowingTheWh1t3Rabbit      topic:security type:publication   # Miscellaneous | Down the Security Rabbithole Blog 
+http://feeds.feedburner.com/GynvaelColdwindEN            topic:security type:publication   # Miscellaneous | gynvael.coldwind//vx.log (en)
+http://feeds.feedburner.com/HaveIBeenPwnedLatestBreaches topic:security type:publication   # Miscellaneous | Have I Been Pwned latest breaches
+http://feeds.feedburner.com/J4vv4d                       topic:security type:publication   # Miscellaneous | Javvad Malik
+http://feeds.feedburner.com/LastknightDotCom             language:italian region:italy topic:security type:publication   # Italiano | LastKnight.com Feed
+http://feeds.feedburner.com/OpenMetalcast                topic:security type:publication   # http://127.0.0.1/rss.xml me | Open Metalcast
+http://feeds.feedburner.com/OverSecurity                 language:italian region:italy topic:security type:publication   # Italiano | Over Security
+http://feeds.feedburner.com/PentestTools                 topic:security type:publication   # Security Tools | KitPloit - PenTest Tools!
+http://feeds.feedburner.com/RaffysComputerSecurityBlog   topic:security type:publication   # Miscellaneous | Future of Tech and Security: Strat
+http://feeds.feedburner.com/SecurityAndRisk              topic:security type:publication   # Miscellaneous | Security and risk
+http://feeds.feedburner.com/SecurityOnTheEdge            topic:security type:publication   # Miscellaneous | Security on the edge
+http://feeds.feedburner.com/StopbadwareBlog              topic:security type:publication   # Malware | StopBadware blogs
+http://feeds.feedburner.com/andrewhayca                  topic:security type:publication   # Miscellaneous | Andrew Hay
+http://feeds.feedburner.com/blogmercatanti               language:italian region:italy topic:security type:publication   # Italiano | Luca Mercatanti
+http://feeds.feedburner.com/blogspot/Aohx                topic:security type:publication   # Offensive Security | Orange
+http://feeds.feedburner.com/carbodydesign-news           topic:security type:publication   #  | News – Car Body Design
+http://feeds.feedburner.com/carbodydesign-tutorials      topic:security type:publication   #  | Design Tutorials – Car Body Design
+http://feeds.feedburner.com/craigmaloney                 topic:security type:publication   # http://127.0.0.1/rss.xml me | Craig Maloney
+http://feeds.feedburner.com/openmetalcast/ogg            topic:security type:publication   # http://127.0.0.1/rss.xml me | Open Metalcast
+https://blog.carnal0wnage.com/feeds/posts/default        topic:security type:personal-blog   #  | Carnal0wnage Blog
+https://blog.carnal0wnage.com/feeds/posts/default?alt=rss topic:security type:personal-blog   #  | Carnal0wnage Blog
+https://feeds.feedburner.com/DavidLongenecker            topic:security type:publication   # Miscellaneous | Security for Real People
+https://feeds.feedburner.com/Disinformatico?format=xml   language:italian region:italy topic:security type:publication   # Italiano | Il Disinformatico
+hyperborea.org                                           topic:personal type:personal-blog   # corrected: the source list misfiles this as security
+ictsecuritymagazine.com                                  language:italian region:italy topic:security type:personal-blog   # Italiano | ICT Security Magazine
+iheanyi.com                                              topic:software-engineering type:personal-blog   # corrected: the source list misfiles this as security
+intercepter-ng.blogspot.com                              topic:security type:personal-blog   #  | Intercept the planet!
+isaw.nyu.edu                                             topic:history type:institution   # corrected: the source list misfiles this as security
+joel.is                                                  topic:tech-industry type:personal-blog   # corrected: the source list misfiles this as security
+jumpespjump.blogspot.com                                 topic:security type:personal-blog   # Miscellaneous | Jump ESP, jump!
+justi.cz                                                 topic:security type:personal-blog   # Offensive Security | Max Justicz
+kernelpicnic.net                                         topic:security type:personal-blog   # Miscellaneous | KernelPicnic
+labofapenetrationtester.com                              topic:security type:personal-blog   # Pentest | Lab of a Penetration Tester
+labs.cosmicbytez.ca                                      topic:security type:personal-blog   #  | CosmicBytez Labs
+labs.portcullis.co.uk                                    topic:security type:personal-blog   # Miscellaneous | Portcullis Labs
+labs.taszk.io                                            topic:security type:personal-blog   # Offensive Security | Taszk Labs on taszk.io labs
+logisek.com                                              topic:security type:personal-blog   #  | Logisek
+luca-mercatanti.com                                      topic:security type:personal-blog   #  | Luca Mercatanti
+malicious.link                                           topic:security type:personal-blog   # Miscellaneous | All Posts - Malicious Link - Blog 
+malwaretech.com                                          topic:security type:personal-blog   # Offensive Security | MalwareTech
+manifestsecurity.com                                     topic:security type:personal-blog   # Miscellaneous | Aditya Agrawal
+markitzeroday.com                                        topic:business type:publication   # corrected: the source list misfiles this as security
+martinvigo.com                                           topic:security type:personal-blog   # Miscellaneous | Martin Vigo
+maxkersten.nl                                            topic:security type:personal-blog   # Miscellaneous | Max Kersten
+mdhughes.tech                                            topic:security type:personal-blog   # http://127.0.0.1/rss.xml me | Mark writes
+mdsec.co.uk                                              topic:security type:vendor-blog   # Offensive Security | Penetration testing Archives - MDS
+media.ccc.de                                             topic:security type:vendor-blog   # Conferences & Video | Chaos Computer Club - last 100 eve
+megatokyo.com                                            topic:entertainment type:publication   # corrected: the source list misfiles this as security
+mgpf.it                                                  topic:security type:personal-blog   #  | Matteo Flora
+ms.now                                                   topic:security type:personal-blog   #  | MS NOW
+mwl.io                                                   topic:systems type:personal-blog   # corrected: the source list misfiles this as security
+naehrdine.blogspot.com                                   topic:security type:personal-blog   #  | cat /dev/brain
+nationalreview.com                                       region:usa topic:politics type:publication   # corrected: the source list misfiles this as security
+natmchugh.blogspot.com                                   topic:security type:personal-blog   #  | Nat McHugh
+netresec.com                                             topic:security type:vendor-blog   # Forensics | NETRESEC Network Security Blog
+netspi.com                                               topic:security type:personal-blog   # Miscellaneous | NetSPI
+news.hada.io                                             language:korean region:asia topic:tech-industry type:aggregator   # corrected: the source list misfiles this as security
+newsboat.org                                             topic:software-engineering type:institution   # corrected: the source list misfiles this as security
+noisespace.xyz                                           topic:security type:personal-blog   # http://127.0.0.1/rss.xml me | Stuck in the Middle With You – Noi
+noob.ninja                                               topic:security type:personal-blog   # Web Security | Noob Ninja!
+null-byte.wonderhowto.com                                topic:security type:personal-blog   # Miscellaneous | Null Byte
+opnsec.com                                               topic:security type:personal-blog   # Web Security | OpnSec
+osandamalith.com                                         topic:security type:personal-blog   # Pentest | 🔐Blog of Osanda
+paregorios.org                                           topic:personal type:personal-blog   # corrected: the source list misfiles this as security
+peppercarrot.com                                         topic:art type:personal-blog   # corrected: the source list misfiles this as security
+randywestergren.com                                      topic:security type:personal-blog   # Offensive Security | Randy Westergren
+rastamouse.me                                            topic:security type:personal-blog   # Pentest | Rasta Mouse
+runicdice.com                                            topic:personal type:personal-blog   # corrected: the source list misfiles this as security
+rys.io                                                   topic:security type:personal-blog   # http://127.0.0.1/rss.xml me | <span>Songs</span> on the Security
+satsuma.dreamwidth.org                                   topic:personal type:personal-blog   # corrected: the source list misfiles this as security
+scriptjunkie.us                                          topic:security type:personal-blog   # Miscellaneous | Thoughts on Security
+seclists.org                                             topic:security type:personal-blog   # Offensive Security | Full Disclosure
+securityblog.gr                                          topic:security type:personal-blog   # Pentest | Logisek
+securityforrealpeople.com                                topic:security type:personal-blog   #  | Security for Real People
+securityinfo.it                                          language:italian region:italy topic:security type:personal-blog   # Italiano | Securityinfo.it
+securitytut.com                                          topic:security type:personal-blog   # Miscellaneous | Security Training
+shelliscoming.com                                        topic:security type:personal-blog   # Pentest | Shell is coming ...
+shogunlab.com                                            topic:security type:personal-blog   # Offensive Security | Shogun Lab | 将軍ラボ
+signalvnoise.com                                         topic:business type:publication   # corrected: the source list misfiles this as security
+silendo.org                                              language:italian region:italy topic:security type:personal-blog   # Italiano | Silendo
+srcincite.io                                             topic:security type:personal-blog   # Offensive Security | Source Incite
+steflan-security.com                                     topic:security type:personal-blog   # Pentest | Steflan’s Security Blog
+swiss-miss.com                                           topic:design type:personal-blog   # corrected: the source list misfiles this as security
+synercomm.com                                            topic:security type:personal-blog   #  | SynerComm
+techvomit.net                                            topic:software-engineering type:personal-blog   # corrected: the source list misfiles this as security
+thegreycorner.com                                        topic:security type:personal-blog   # Miscellaneous | The Grey Corner
+thehackerblog.com                                        topic:security type:personal-blog   # Offensive Security | The Hacker Blog
+theoatmeal.com                                           topic:entertainment type:publication   # corrected: the source list misfiles this as security
+thestartupbible.com                                      topic:tech-industry type:personal-blog   # corrected: the source list misfiles this as security
+tiraniddo.dev                                            topic:security type:personal-blog   #  | Tyranid's Lair
+trendmicro.com                                           topic:security type:vendor-blog   # Malware | Trend Micro - Security Advisories
+uglyduck.ca                                              topic:design type:personal-blog   # corrected: the source list misfiles this as security
+underconsideration.com                                   topic:design type:personal-blog   # corrected: the source list misfiles this as security
+us9.campaign-archive.com                                 language:italian region:italy topic:security type:personal-blog   # Italiano | Yoroi Warning Archive Feed
+vickieli.dev                                             topic:security type:personal-blog   # Web Security | Vickie Li’s Security Blog
+vimeo.com                                                topic:security type:personal-blog   # Conferences & Video | Vimeo / OffSec’s videos
+vulnhub.com                                              topic:security type:vendor-blog   #  | VulnHub ~ Entries
+washingtonexaminer.com                                   region:usa topic:politics type:publication   # corrected: the source list misfiles this as security
+wiremask.eu                                              topic:security type:personal-blog   # Pentest | Wiremask's Feed
+zeltser.com                                              topic:security type:personal-blog   # Miscellaneous | Lenny Zeltser

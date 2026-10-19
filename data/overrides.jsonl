@@ -2542,3 +2542,169 @@
 {"key": "specterops.io", "tags": ["topic:security", "type:vendor-blog"]}
 {"key": "thejamesbrand.com", "tags": ["topic:gadgets", "type:vendor-blog"]}
 {"key": "https://www.toucharcade.com/feed/podcast/", "tags": ["topic:gaming", "type:podcast"]}
+{"key": "0x27.me", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "adepts.of0x.cc", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "adsecurity.org", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "allthingslinguistic.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "andreadraghetti.it", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "andrewhay.ca", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "azeria-labs.com", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "binaryforay.blogspot.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blackmoreops.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.andlabs.org", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.derekgodin.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.erratasec.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.exploitlab.net", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.harmj0y.net", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.kchung.co", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.kotowicz.net", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.malwarebytes.org", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "blog.malwaremustdie.org", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.mindedsecurity.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.nibblesec.org", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.outsider.ne.kr", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.panic.com", "tags": ["topic:software-engineering", "type:vendor-blog"]}
+{"key": "blog.rootshell.be", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.securitybreached.org", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.silentsignal.eu", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.tint0.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.whitescope.io", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.yappare.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.zsec.uk", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "bordergate.co.uk", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "boschko.ca", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "breakdev.org", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "buer.haus", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "bugbountypoc.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "carnal0wnage.attackresearch.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "chenhuijing.com", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "codecolor.ist", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "codiceinsicuro.it", "tags": ["language:italian", "region:italy", "topic:security", "type:personal-blog"]}
+{"key": "corelan.be", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "ctfcrew.org", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "cyberdivision.net", "tags": ["language:italian", "region:italy", "topic:security", "type:personal-blog"]}
+{"key": "cybersecurity.it", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "d3lab.net", "tags": ["language:italian", "region:italy", "topic:security", "type:vendor-blog"]}
+{"key": "danielmiessler.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "darkoperator.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "decentsecurity.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "dicorinto.it", "tags": ["language:italian", "region:italy", "topic:security", "type:personal-blog"]}
+{"key": "digi.ninja", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "dirittodellinformatica.it", "tags": ["language:italian", "region:italy", "topic:security", "type:vendor-blog"]}
+{"key": "domenic.me", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "doomedraven.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "draplin.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "drwho.virtadpt.net", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "elliotjaystocks.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "ericconrad.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "fabionatalucci.it", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "feeds.trendmicro.com", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "hackingarticles.in", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "hacktips.it", "tags": ["language:italian", "region:italy", "topic:security", "type:personal-blog"]}
+{"key": "haveibeenpwned.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "haxolot.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "hecfblog.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "highon.coffee", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "http://feeds.feedburner.com/Anti-virusRants", "tags": ["topic:security", "type:publication"]}
+{"key": "http://feeds.feedburner.com/ChintanGurjarsBlog", "tags": ["topic:security", "type:publication"]}
+{"key": "http://feeds.feedburner.com/FabioNatalucciPost", "tags": ["language:italian", "region:italy", "topic:security", "type:publication"]}
+{"key": "http://feeds.feedburner.com/FollowingTheWh1t3Rabbit", "tags": ["topic:security", "type:publication"]}
+{"key": "http://feeds.feedburner.com/GynvaelColdwindEN", "tags": ["topic:security", "type:publication"]}
+{"key": "http://feeds.feedburner.com/HaveIBeenPwnedLatestBreaches", "tags": ["topic:security", "type:publication"]}
+{"key": "http://feeds.feedburner.com/J4vv4d", "tags": ["topic:security", "type:publication"]}
+{"key": "http://feeds.feedburner.com/LastknightDotCom", "tags": ["language:italian", "region:italy", "topic:security", "type:publication"]}
+{"key": "http://feeds.feedburner.com/OpenMetalcast", "tags": ["topic:security", "type:publication"]}
+{"key": "http://feeds.feedburner.com/OverSecurity", "tags": ["language:italian", "region:italy", "topic:security", "type:publication"]}
+{"key": "http://feeds.feedburner.com/PentestTools", "tags": ["topic:security", "type:publication"]}
+{"key": "http://feeds.feedburner.com/RaffysComputerSecurityBlog", "tags": ["topic:security", "type:publication"]}
+{"key": "http://feeds.feedburner.com/SecurityAndRisk", "tags": ["topic:security", "type:publication"]}
+{"key": "http://feeds.feedburner.com/SecurityOnTheEdge", "tags": ["topic:security", "type:publication"]}
+{"key": "http://feeds.feedburner.com/StopbadwareBlog", "tags": ["topic:security", "type:publication"]}
+{"key": "http://feeds.feedburner.com/andrewhayca", "tags": ["topic:security", "type:publication"]}
+{"key": "http://feeds.feedburner.com/blogmercatanti", "tags": ["language:italian", "region:italy", "topic:security", "type:publication"]}
+{"key": "http://feeds.feedburner.com/blogspot/Aohx", "tags": ["topic:security", "type:publication"]}
+{"key": "http://feeds.feedburner.com/carbodydesign-news", "tags": ["topic:security", "type:publication"]}
+{"key": "http://feeds.feedburner.com/carbodydesign-tutorials", "tags": ["topic:security", "type:publication"]}
+{"key": "http://feeds.feedburner.com/craigmaloney", "tags": ["topic:security", "type:publication"]}
+{"key": "http://feeds.feedburner.com/openmetalcast/ogg", "tags": ["topic:security", "type:publication"]}
+{"key": "https://blog.carnal0wnage.com/feeds/posts/default", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "https://blog.carnal0wnage.com/feeds/posts/default?alt=rss", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "https://feeds.feedburner.com/DavidLongenecker", "tags": ["topic:security", "type:publication"]}
+{"key": "https://feeds.feedburner.com/Disinformatico?format=xml", "tags": ["language:italian", "region:italy", "topic:security", "type:publication"]}
+{"key": "hyperborea.org", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "ictsecuritymagazine.com", "tags": ["language:italian", "region:italy", "topic:security", "type:personal-blog"]}
+{"key": "iheanyi.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "intercepter-ng.blogspot.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "isaw.nyu.edu", "tags": ["topic:history", "type:institution"]}
+{"key": "joel.is", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "jumpespjump.blogspot.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "justi.cz", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "kernelpicnic.net", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "labofapenetrationtester.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "labs.cosmicbytez.ca", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "labs.portcullis.co.uk", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "labs.taszk.io", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "logisek.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "luca-mercatanti.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "malicious.link", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "malwaretech.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "manifestsecurity.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "markitzeroday.com", "tags": ["topic:business", "type:publication"]}
+{"key": "martinvigo.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "maxkersten.nl", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "mdhughes.tech", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "mdsec.co.uk", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "media.ccc.de", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "megatokyo.com", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "mgpf.it", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "ms.now", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "mwl.io", "tags": ["topic:systems", "type:personal-blog"]}
+{"key": "naehrdine.blogspot.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "nationalreview.com", "tags": ["region:usa", "topic:politics", "type:publication"]}
+{"key": "natmchugh.blogspot.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "netresec.com", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "netspi.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "news.hada.io", "tags": ["language:korean", "region:asia", "topic:tech-industry", "type:aggregator"]}
+{"key": "newsboat.org", "tags": ["topic:software-engineering", "type:institution"]}
+{"key": "noisespace.xyz", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "noob.ninja", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "null-byte.wonderhowto.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "opnsec.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "osandamalith.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "paregorios.org", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "peppercarrot.com", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "randywestergren.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "rastamouse.me", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "runicdice.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "rys.io", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "satsuma.dreamwidth.org", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "scriptjunkie.us", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "seclists.org", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "securityblog.gr", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "securityforrealpeople.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "securityinfo.it", "tags": ["language:italian", "region:italy", "topic:security", "type:personal-blog"]}
+{"key": "securitytut.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "shelliscoming.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "shogunlab.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "signalvnoise.com", "tags": ["topic:business", "type:publication"]}
+{"key": "silendo.org", "tags": ["language:italian", "region:italy", "topic:security", "type:personal-blog"]}
+{"key": "srcincite.io", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "steflan-security.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "swiss-miss.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "synercomm.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "techvomit.net", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "thegreycorner.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "thehackerblog.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "theoatmeal.com", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "thestartupbible.com", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "tiraniddo.dev", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "trendmicro.com", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "uglyduck.ca", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "underconsideration.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "us9.campaign-archive.com", "tags": ["language:italian", "region:italy", "topic:security", "type:personal-blog"]}
+{"key": "vickieli.dev", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "vimeo.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "vulnhub.com", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "washingtonexaminer.com", "tags": ["region:usa", "topic:politics", "type:publication"]}
+{"key": "wiremask.eu", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "zeltser.com", "tags": ["topic:security", "type:personal-blog"]}
