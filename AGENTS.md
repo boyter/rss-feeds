@@ -35,6 +35,11 @@ tests/         test_harvest.py  the byte layer: encodings, caps, decoding
 Run the tools from the repo root as `tools/x.py`; they find their files through
 `paths.py`, so cwd does not matter.
 
+What still needs a human is not in this file, it is a command:
+`python3 tools/review.py --sort feeds` prints the feeds that no rule and no
+override speaks to. Sites that refuse the harvester live in
+`BLOCKED_CANDIDATES.md` and stay out until someone checks them in a browser.
+
 ## The invariant
 
 **No code path may remove a feed, drop a tag a human decided, or erase a
@@ -171,7 +176,18 @@ comments on `encoding_shape`.
   same feed" means.
 
 When in doubt, flag rather than remove: a false removal is data loss, a false keep
-is one dead line.
+is one dead line. Before removing anything, check it by hand the way a reader's
+feed client would:
+
+```bash
+curl -sSL --compressed -A "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0" \
+     -o /tmp/f.out -w "http=%{http_code} type=%{content_type} size=%{size_download}\n" URL
+head -c 300 /tmp/f.out          # and read the <title>, that is how you know what it is
+```
+
+`--compressed` is not optional: without it a brotli or gzip site looks like binary
+and gets written off as not-a-feed, which is how `dieworkwear.com` and
+`thecyberwire.com` were deleted and had to be restored.
 
 Two files, deliberately apart:
 
@@ -235,7 +251,7 @@ exactly what `merge_tags` says it is, so a precedence change cannot silently
 disagree with the file that shipped.
 
 **A fix to the decoder, the verdict order, or the tag merge arrives with a test
-that fails before the fix.** Nine review passes found roughly two dozen defects
+that fails before the fix.** Ten review passes found roughly two dozen defects
 here; none of them stay found unless pinned. Each test names the bug it exists
 for in a comment. Verify a test by mutating the code on a copy — revert the fix
 and only that test should fail.
@@ -244,6 +260,55 @@ Rules that must not be duplicated live in one place: `vocab.merge_tags` (tag
 precedence), `vocab.norm_key` (the same-feed key), `rebuild.pick_title` (which
 title survives). Two copies of a precedence rule is how the review queue starts
 lying about what is still undecided.
+
+## Verifying a change did nothing to the product
+
+Any edit to the tooling — a refactor, a move, a precedence change — has to leave
+`feeds.json` byte-identical, unless a human explicitly decided a data change in the
+same commit:
+
+```bash
+python3 tools/classify.py && python3 tools/rebuild.py --write && cmp feeds.json feeds.json.new
+```
+
+That is the only honest proof a move is a move. It is also how three of the defects
+in this file were found: the diff was supposed to be empty and was not. The pass is
+idempotent — a second `classify` + `rebuild --write` produces the same bytes — so a
+difference means a rule is reading something that changes between runs (usually
+item headlines, which is a reason to pin the feed with an override).
+
+## Reviewing with a second model
+
+A reviewer on different weights is worth one thing: different blind spots. To get
+that rather than noise:
+
+- **State the invariant, not "review this."** "No path may drop a tag a human
+  decided" produced most of the findings; "review this" produces style notes.
+- **Inline the code it needs** — the changed function and its callers — instead of
+  letting it read the repo. 10 KB of brief is seconds of prefill; a whole package
+  is minutes, and the local servers run one task at a time.
+- **Numbered questions and a line cap**, and require it to quote the exact line as
+  proof or drop the finding. Roughly a third of what comes back is fabricated; the
+  quote requirement is what filters it.
+- **Two rounds.** Round two's job is "verify the fixes are complete and find what is
+  still wrong." It has found a defect in the previous round's own fix — a default
+  that guessed the destructive reading — which round one would have shipped.
+- What it cannot see: interactions across files it was not given, and anything only
+  running the program finds. A review pass never replaces executing the thing.
+
+## Decisions already taken, not to relitigate
+
+- **Standard library only, in Python.** A Go rewrite was proposed, costed and
+  rejected: no build step and no dependency install are worth more than the speed,
+  and the Unicode argument favours Python (Go's standard library has no charmap,
+  norm or collate, and byte-slicing can split a character).
+- **No new dependency for brotli.** Two feeds arrive brotli-compressed and stay
+  flagged, not removed.
+- `spam.jsonl` is a historical name: it holds every hand-curated removal, including
+  superseded feeds and junk, and `triage.py` treats a line there as a human
+  decision. Its label in the output is `hand:`, not `spam:`.
+- `failCount` / `lastCheckTime` are gone on purpose. The old `check.py` tested
+  `code >= 200 or code <= 299`, which is always true, so they measured nothing.
 
 ## Network etiquette
 
