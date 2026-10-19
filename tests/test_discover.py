@@ -123,15 +123,15 @@ class TestTagCascade(unittest.TestCase):
     never revisited.
     """
 
-    def run_tag(self, cands, probed, feeds=()):
+    def run_tag(self, cands, probed, feeds=(), overrides=()):
         with tempfile.TemporaryDirectory() as d:
             w = lambda n: os.path.join(d, n)
-            for name, rows in (("c.jsonl", cands), ("r.jsonl", probed)):
+            for name, rows in (("c.jsonl", cands), ("r.jsonl", probed),
+                               ("overrides.jsonl", overrides)):
                 with open(w(name), "w", encoding="utf-8") as fh:
                     for r in rows:
                         fh.write(json.dumps(r) + "\n")
             open(w("feeds.json"), "w").write(json.dumps(list(feeds)))
-            open(w("overrides.jsonl"), "w").write("")
             saved = (discover.CANDIDATES, discover.EXPANDED, discover.LEADS,
                      discover.RESULTS, discover.TAGGED,
                      discover.paths.root, discover.paths.data)
@@ -189,6 +189,47 @@ class TestTagCascade(unittest.TestCase):
         out = self.run_tag(cands, probed, feeds)
         self.assertEqual(len(out), 1, out)
         self.assertIn("topic:security", out[0]["tags"])
+
+    def test_a_host_rule_still_adds_a_topic_on_a_real_site(self):
+        # The additive side of the npr.org rule: a host rule may not REPLACE a
+        # topic a human gave one feed, but on a site its tags describe the site
+        # and so are evidence about a new feed it publishes.
+        cands = [{"url": "https://blog.virustotal.com/feed/", "tags": [],
+                  "hostTags": [], "hintTopics": [], "hintType": None, "category": ""}]
+        probed = [{"url": cands[0]["url"], "isFeed": True, "title": "VirusTotal Blog",
+                   "description": "", "items": []}]
+        out = self.run_tag(cands, probed, overrides=[
+            {"key": "blog.virustotal.com",
+             "tags": ["topic:security", "type:vendor-blog"]}])
+        self.assertEqual(len(out), 1, out)
+        self.assertIn("topic:security", out[0]["tags"])
+
+    def test_a_host_rule_never_adds_a_topic_on_an_aggregator(self):
+        cands = [{"url": "https://www.youtube.com/feeds/videos.xml?channel_id=NEW",
+                  "tags": [], "hostTags": [], "hintTopics": [], "hintType": None,
+                  "category": ""}]
+        probed = [{"url": cands[0]["url"], "isFeed": True, "title": "New Channel",
+                   "description": "", "items": []}]
+        out = self.run_tag(cands, probed, overrides=[
+            {"key": "youtube.com", "tags": ["topic:science", "type:video"]}])
+        for r in out:
+            self.assertNotIn("topic:science", r["tags"],
+                             "an aggregator host rule stamped its topic on a channel")
+
+    def test_a_url_rule_a_human_wrote_for_a_proxy_host_is_applied(self):
+        # feeds.feedburner.com names a different publisher in each path, so the
+        # only honest rule is per-feed - and a per-feed rule that is written and
+        # then never looked up leaves the feed stuck in the queue forever.
+        url = "http://feeds.feedburner.com/SmittenKitchen"
+        cands = [{"url": url, "tags": [], "hostTags": [], "hintTopics": [],
+                  "hintType": None, "category": "Food"}]
+        probed = [{"url": url, "isFeed": True, "title": "smitten kitchen",
+                   "description": "", "items": []}]
+        out = self.run_tag(cands, probed, overrides=[
+            {"key": url, "tags": ["topic:food", "type:publication"]}])
+        self.assertEqual(len(out), 1, out)
+        self.assertIn("topic:food", out[0]["tags"])
+        self.assertIn("type:publication", out[0]["tags"])
 
     def test_a_feed_no_rule_or_hint_can_tag_is_queued_not_merged(self):
         cands = [{"url": "https://quiet.example/feed", "tags": [], "hostTags": [],

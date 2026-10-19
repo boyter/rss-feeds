@@ -1947,3 +1947,600 @@
 {"key": "spring.org.uk", "tags": ["topic:health", "type:personal-blog"]}
 {"key": "tagesschau.de", "tags": ["language:german", "region:germany", "topic:news", "type:publication"]}
 {"key": "thegrowthshow.hubspot.libsynpro.com", "tags": ["topic:business", "type:podcast"]}
+{"key": "101cookbooks.com", "tags": ["topic:food", "type:personal-blog"]}
+{"key": "24-horas.mx", "tags": ["language:spanish", "region:mexico", "topic:news", "type:publication"]}
+{"key": "3toadstools.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "44bits.io", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "512pixels.net", "tags": ["topic:gadgets", "type:personal-blog"]}
+{"key": "6figuredev.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "8columnas.com.mx", "tags": ["language:spanish", "region:mexico", "topic:news", "type:publication"]}
+{"key": "9to5mac.com", "tags": ["topic:gadgets", "type:publication"]}
+{"key": "aaronstuyvenberg.com", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "abeautifulmess.com", "tags": ["topic:lifestyle", "type:personal-blog"]}
+{"key": "abominablefancy.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "acornafloat.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "advancedgaming-theory.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "aelf.work", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "aihero.dev", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "albertodebortoli.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "alexirpan.com", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "alifefullofadventure.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "all-about-psychology.com", "tags": ["topic:health", "type:personal-blog"]}
+{"key": "aloneinthelabyrinth.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "androidauthority.com", "tags": ["topic:gadgets", "type:publication"]}
+{"key": "anhvn.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "animatekratocracy.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "ansa.it", "tags": ["language:italian", "region:italy", "topic:news", "type:publication"]}
+{"key": "api.axios.com", "tags": ["region:africa", "topic:news", "type:publication"]}
+{"key": "apple.com", "tags": ["topic:gadgets", "type:publication"]}
+{"key": "appliedphantasticality.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "archadestower.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "architecturaldigest.com", "tags": ["topic:design", "type:publication"]}
+{"key": "archons-court.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "archpaper.com", "tags": ["topic:design", "type:publication"]}
+{"key": "askamanager.org", "tags": ["topic:business", "type:personal-blog"]}
+{"key": "asriran.com", "tags": ["region:middle-east", "topic:news", "type:publication"]}
+{"key": "atlasobscura.com", "tags": ["topic:travel", "type:publication"]}
+{"key": "atomicbird.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "attnam.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "autocar.co.uk", "tags": ["topic:transport", "type:publication"]}
+{"key": "avc.xyz", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "aws.amazon.com", "tags": ["topic:ai", "type:publication"]}
+{"key": "axianspice.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "basicappleguy.com", "tags": ["topic:gadgets", "type:personal-blog"]}
+{"key": "bastionland.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "bearded-devil.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "becominghuman.ai", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "ben-evans.com", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "benoitpasquier.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "beyondfomalhaut.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "bhaskar.com", "tags": ["region:india", "topic:news", "type:publication"]}
+{"key": "bikeexif.com", "tags": ["topic:transport", "type:personal-blog"]}
+{"key": "birchtree.me", "tags": ["topic:gadgets", "type:personal-blog"]}
+{"key": "blog.alfredapp.com", "tags": ["topic:gadgets", "type:vendor-blog"]}
+{"key": "blog.d4caltrops.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.shakirm.com", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "blog.trilemma.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "bogeymanscave.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "bookriot.com", "tags": ["topic:books", "type:publication"]}
+{"key": "borischerny.com", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "bostonglobe.com", "tags": ["topic:design", "type:publication"]}
+{"key": "bottomlesssarcophagus.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "brasilwire.com", "tags": ["language:portuguese", "region:latin-america", "topic:news", "type:publication"]}
+{"key": "breakrpg.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "brinehouse.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "bringatrailer.com", "tags": ["topic:transport", "type:publication"]}
+{"key": "brisbanetimes.com.au", "tags": ["region:australia", "topic:news", "type:publication"]}
+{"key": "business-standard.com", "tags": ["region:india", "topic:news", "type:publication"]}
+{"key": "bworldonline.com", "tags": ["region:philippines", "topic:news", "type:publication"]}
+{"key": "calv.info", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "cameronmoll.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "canonrumors.com", "tags": ["topic:design", "type:publication"]}
+{"key": "caranddriver.com", "tags": ["topic:transport", "type:publication"]}
+{"key": "carbodydesign.com", "tags": ["topic:transport", "type:personal-blog"]}
+{"key": "carscoops.com", "tags": ["topic:transport", "type:personal-blog"]}
+{"key": "censor.net.ua", "tags": ["language:ukrainian", "region:ukraine", "topic:news", "type:publication"]}
+{"key": "centsationalstyle.com", "tags": ["topic:lifestyle", "type:personal-blog"]}
+{"key": "chaudronchromatique.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "christianselig.com", "tags": ["topic:gadgets", "type:personal-blog"]}
+{"key": "chrynan.codes", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "chthonic-halls.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "citizen.co.za", "tags": ["region:africa", "topic:news", "type:publication"]}
+{"key": "cnz.to", "tags": ["topic:food", "type:personal-blog"]}
+{"key": "codewall.co.uk", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "consequenceofsound.net", "tags": ["topic:music", "type:personal-blog"]}
+{"key": "contentmarketinginstitute.com", "tags": ["topic:business", "type:personal-blog"]}
+{"key": "crabdungeon.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "crossplanes.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "cultofandroid.com", "tags": ["topic:gadgets", "type:personal-blog"]}
+{"key": "cultofmac.com", "tags": ["topic:gadgets", "type:publication"]}
+{"key": "cyanogenmods.org", "tags": ["topic:gadgets", "type:personal-blog"]}
+{"key": "dailypost.ng", "tags": ["region:nigeria", "topic:news", "type:publication"]}
+{"key": "daimon-games.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "darksunadventures.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "darkwormcolt.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "data.gmanews.tv", "tags": ["region:philippines", "topic:news", "type:publication"]}
+{"key": "davidlebovitz.com", "tags": ["topic:food", "type:personal-blog"]}
+{"key": "deadline.com", "tags": ["topic:entertainment", "type:personal-blog"]}
+{"key": "deathanddismemberment.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "decoist.com", "tags": ["topic:design", "type:publication"]}
+{"key": "decor8blog.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "deepdarkcti.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "deepsheep.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "devground.hanbit.co.kr", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "dezeen.com", "tags": ["topic:design", "type:publication"]}
+{"key": "diomedes-descent.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "dismastersden.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "divyabhaskar.co.in", "tags": ["region:india", "topic:news", "type:publication"]}
+{"key": "dndborderlands.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "dongjunlee.github.io", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "dreamsandfevers.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "dreamsofmythicfantasy.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "droid-life.com", "tags": ["topic:gadgets", "type:publication"]}
+{"key": "dungeonliar.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "dungeons-and-dragons-rpgs.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "dungeonsddx.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "dungeonsofklang.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "dwelleroftheforbiddencity.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "dyskinetic.net", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "e00-expansion.uecdn.es", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
+{"key": "eff.org", "tags": ["topic:tech-industry", "type:publication"]}
+{"key": "elderskull.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "eldiario.es", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
+{"key": "eldritchfields.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "elfinanciero.com.mx", "tags": ["language:spanish", "region:mexico", "topic:news", "type:publication"]}
+{"key": "elnorte.com", "tags": ["language:spanish", "region:mexico", "topic:news", "type:publication"]}
+{"key": "elsiglodetorreon.com.mx", "tags": ["language:spanish", "region:mexico", "topic:news", "type:publication"]}
+{"key": "esbueno.noahstokes.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "escapistmagazine.com", "tags": ["topic:gaming", "type:publication"]}
+{"key": "espreso.tv", "tags": ["language:ukrainian", "region:ukraine", "topic:news", "type:publication"]}
+{"key": "euroweeklynews.com", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
+{"key": "fabisevi.ch", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "failedmysave.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "failuretolerated.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "falsemachine.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "fashionbeans.com", "tags": ["topic:lifestyle", "type:personal-blog"]}
+{"key": "faz.net", "tags": ["region:germany", "topic:news", "type:publication"]}
+{"key": "feeds.a.dj.com", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "http://feeds.androidcentral.com/androidcentral", "tags": ["topic:gadgets", "type:personal-blog"]}
+{"key": "feeds.elpais.com", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
+{"key": "https://feeds.fireside.fm/sdt/rss", "tags": ["topic:software-engineering", "type:podcast"]}
+{"key": "feeds.folha.uol.com.br", "tags": ["language:portuguese", "region:latin-america", "topic:news", "type:publication"]}
+{"key": "feeds.hongkongnews.net", "tags": ["language:chinese", "region:asia", "topic:news", "type:publication"]}
+{"key": "feeds.howtogeek.com", "tags": ["topic:tech-industry", "type:publication"]}
+{"key": "http://feeds.ign.com/ign/all", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "feeds.nature.com", "tags": ["topic:science", "type:personal-blog"]}
+{"key": "feeds.npr.org", "tags": ["topic:news", "type:podcast"]}
+{"key": "feeds.thememorypalace.us", "tags": ["topic:history", "type:podcast"]}
+{"key": "https://feeds.transistor.fm/productivity-in-tech-podcast", "tags": ["topic:software-engineering", "type:podcast"]}
+{"key": "feeds.wired.com", "tags": ["topic:tech-industry", "type:publication"]}
+{"key": "feeds.wnyc.org", "tags": ["topic:science", "type:personal-blog"]}
+{"key": "feld.com", "tags": ["topic:tech-industry", "type:vendor-blog"]}
+{"key": "firstshowing.net", "tags": ["topic:entertainment", "type:personal-blog"]}
+{"key": "flowingdata.com", "tags": ["topic:design", "type:publication"]}
+{"key": "forbes.com", "tags": ["topic:business", "type:personal-blog"]}
+{"key": "forgotten-ny.com", "tags": ["topic:design", "type:publication"]}
+{"key": "francetvinfo.fr", "tags": ["language:french", "region:france", "topic:news", "type:publication"]}
+{"key": "frankchimero.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "freakonomics.blogs.nytimes.com", "tags": ["topic:health", "type:personal-blog"]}
+{"key": "furthestlands.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "furtivegoblingaming.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "gazeta.ru", "tags": ["language:russian", "region:russia", "topic:news", "type:publication"]}
+{"key": "geekechoes.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "glaucushauriant.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "gloomtrain.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "goatmansgoblet.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "goblinpunch.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "goodberrymonthly.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "gosink.in", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "gravenutterance.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "graverobbersguide.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "grodog.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "grognardia.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "gsmarena.com", "tags": ["topic:gadgets", "type:publication"]}
+{"key": "hackaday.com", "tags": ["topic:lifestyle", "type:publication"]}
+{"key": "handstandsam.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "headstartup.tistory.com", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "hillcantons.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "historyisnowmagazine.com", "tags": ["topic:history", "type:personal-blog"]}
+{"key": "historynet.com", "tags": ["topic:history", "type:personal-blog"]}
+{"key": "hket.com", "tags": ["language:chinese", "region:asia", "topic:news", "type:publication"]}
+{"key": "home-designing.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "homebrewhomunculus.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "homebusinessmag.com", "tags": ["topic:tech-industry", "type:publication"]}
+{"key": "hopefulweirdwonder.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "howsweeteats.com", "tags": ["topic:food", "type:personal-blog"]}
+{"key": "howtogeek.com", "tags": ["topic:lifestyle", "type:publication"]}
+{"key": "http://feeds.feedburner.com/AndroidNewsGoogleAndroidForums", "tags": ["topic:gadgets", "type:publication"]}
+{"key": "http://feeds.feedburner.com/Archdaily", "tags": ["topic:design", "type:publication"]}
+{"key": "http://feeds.feedburner.com/BothSidesOfTheTable", "tags": ["topic:tech-industry", "type:publication"]}
+{"key": "http://feeds.feedburner.com/CrackedRSS", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "http://feeds.feedburner.com/Explosm", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "http://feeds.feedburner.com/GDBcode", "tags": ["topic:software-engineering", "type:publication"]}
+{"key": "http://feeds.feedburner.com/IndependentAustralia", "tags": ["region:australia", "topic:news", "type:publication"]}
+{"key": "http://feeds.feedburner.com/OneBigPhoto", "tags": ["topic:design", "type:publication"]}
+{"key": "http://feeds.feedburner.com/ProgrammingThrowdown", "tags": ["topic:software-engineering", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/PsychologyBlog", "tags": ["topic:health", "type:publication"]}
+{"key": "http://feeds.feedburner.com/RockPaperShotgun", "tags": ["topic:gaming", "type:publication"]}
+{"key": "http://feeds.feedburner.com/ScrollinArticles.rss", "tags": ["region:india", "topic:news", "type:publication"]}
+{"key": "http://feeds.feedburner.com/SdJapan", "tags": ["language:japanese", "region:japan", "topic:news", "type:publication"]}
+{"key": "http://feeds.feedburner.com/Techpinas", "tags": ["region:philippines", "topic:news", "type:publication"]}
+{"key": "http://feeds.feedburner.com/TheAncientGamingNoob", "tags": ["topic:gaming", "type:publication"]}
+{"key": "http://feeds.feedburner.com/TheGreatDiscontent", "tags": ["topic:design", "type:publication"]}
+{"key": "http://feeds.feedburner.com/archidose", "tags": ["topic:design", "type:publication"]}
+{"key": "http://feeds.feedburner.com/autonews/AutomakerNews", "tags": ["topic:transport", "type:publication"]}
+{"key": "http://feeds.feedburner.com/autonews/EditorsPicks", "tags": ["topic:transport", "type:publication"]}
+{"key": "http://feeds.feedburner.com/baenefit/slXh", "tags": ["topic:tech-industry", "type:publication"]}
+{"key": "http://feeds.feedburner.com/blogspot/WOBq", "tags": ["topic:design", "type:publication"]}
+{"key": "http://feeds.feedburner.com/blogspot/ZBcZ", "tags": ["topic:design", "type:publication"]}
+{"key": "http://feeds.feedburner.com/blogspot/androiddevelopersbackstage", "tags": ["topic:software-engineering", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/blogspot/gJZg", "tags": ["topic:ai", "type:publication"]}
+{"key": "http://feeds.feedburner.com/blogspot/hsDu", "tags": ["topic:software-engineering", "type:publication"]}
+{"key": "http://feeds.feedburner.com/cantbowlcantthrow", "tags": ["topic:sport", "type:publication"]}
+{"key": "http://feeds.feedburner.com/core77/blog", "tags": ["topic:design", "type:publication"]}
+{"key": "http://feeds.feedburner.com/elliotjaystocks/", "tags": ["topic:design", "type:publication"]}
+{"key": "http://feeds.feedburner.com/entrepreneur/latest", "tags": ["topic:tech-industry", "type:publication"]}
+{"key": "http://feeds.feedburner.com/failblog", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "http://feeds.feedburner.com/food52-TheAandMBlog", "tags": ["topic:food", "type:publication"]}
+{"key": "http://feeds.feedburner.com/frmheadtotoe", "tags": ["topic:lifestyle", "type:publication"]}
+{"key": "http://feeds.feedburner.com/fubiz", "tags": ["topic:design", "type:publication"]}
+{"key": "http://feeds.feedburner.com/icanhascheezburger", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "http://feeds.feedburner.com/metalinjection", "tags": ["topic:music", "type:publication"]}
+{"key": "http://feeds.feedburner.com/nvidiablog", "tags": ["topic:ai", "type:publication"]}
+{"key": "http://feeds.feedburner.com/oatmealfeed", "tags": ["topic:design", "type:publication"]}
+{"key": "http://feeds.feedburner.com/osxdaily", "tags": ["topic:gadgets", "type:publication"]}
+{"key": "http://feeds.feedburner.com/playpc", "tags": ["topic:gadgets", "type:publication"]}
+{"key": "http://feeds.feedburner.com/psblog", "tags": ["topic:gaming", "type:publication"]}
+{"key": "http://feeds.feedburner.com/robweychert", "tags": ["topic:design", "type:publication"]}
+{"key": "http://feeds.feedburner.com/seomoz", "tags": ["topic:business", "type:publication"]}
+{"key": "http://feeds.feedburner.com/seriouseats/recipes", "tags": ["topic:food", "type:publication"]}
+{"key": "http://feeds.feedburner.com/shawnblanc", "tags": ["topic:tech-industry", "type:publication"]}
+{"key": "http://feeds.feedburner.com/smartpassiveincome", "tags": ["topic:tech-industry", "type:publication"]}
+{"key": "http://feeds.feedburner.com/smittenkitchen", "tags": ["topic:food", "type:publication"]}
+{"key": "http://feeds.feedburner.com/speedhunters", "tags": ["topic:transport", "type:publication"]}
+{"key": "http://feeds.feedburner.com/techgenyz", "tags": ["region:india", "topic:news", "type:publication"]}
+{"key": "http://feeds.feedburner.com/techorange", "tags": ["topic:gadgets", "type:publication"]}
+{"key": "http://feeds.feedburner.com/tedtalks_video", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/thetvaddict/AXob", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "http://feeds.feedburner.com/uxmovement", "tags": ["topic:design", "type:publication"]}
+{"key": "http://feeds.feedburner.com/wPolitycepl", "tags": ["language:polish", "region:poland", "topic:news", "type:publication"]}
+{"key": "http://feeds.feedburner.com/yankodesign", "tags": ["topic:design", "type:publication"]}
+{"key": "http://feeds.feedburner.com/zachholman", "tags": ["topic:tech-industry", "type:publication"]}
+{"key": "http://feeds2.feedburner.com/AndroidPhoneFans", "tags": ["topic:gadgets", "type:publication"]}
+{"key": "http://feeds2.feedburner.com/Swissmiss", "tags": ["topic:design", "type:publication"]}
+{"key": "http://feeds2.feedburner.com/rss_outsider_dev", "tags": ["topic:software-engineering", "type:publication"]}
+{"key": "http://feeds2.feedburner.com/unwirelife", "tags": ["topic:gadgets", "type:publication"]}
+{"key": "https://feeds.feedburner.com/BmwBlog", "tags": ["topic:transport", "type:publication"]}
+{"key": "https://feeds.feedburner.com/DigitalPhotographySchool", "tags": ["topic:design", "type:publication"]}
+{"key": "https://feeds.feedburner.com/IrishCentral", "tags": ["region:ireland", "topic:news", "type:publication"]}
+{"key": "https://feeds.feedburner.com/JustCreativeDesignBlog", "tags": ["topic:design", "type:publication"]}
+{"key": "https://feeds.feedburner.com/Mixergy-main-podcast", "tags": ["topic:business", "type:publication"]}
+{"key": "https://feeds.feedburner.com/TheSartorialist", "tags": ["topic:design", "type:publication"]}
+{"key": "https://feeds.feedburner.com/bigthink/main", "tags": ["topic:education", "type:publication"]}
+{"key": "https://feeds.feedburner.com/com/rCTl", "tags": ["region:australia", "topic:news", "type:publication"]}
+{"key": "https://feeds.feedburner.com/dancarlin/history?format=xml", "tags": ["topic:history", "type:podcast"]}
+{"key": "https://feeds.feedburner.com/ietopstories", "tags": ["region:ireland", "topic:news", "type:publication"]}
+{"key": "https://feeds.feedburner.com/inside-blog-taiwan", "tags": ["topic:gadgets", "type:publication"]}
+{"key": "https://feeds.feedburner.com/intothegloss/oqoU", "tags": ["topic:lifestyle", "type:publication"]}
+{"key": "https://feeds.feedburner.com/joelis", "tags": ["topic:business", "type:publication"]}
+{"key": "https://feeds.feedburner.com/opindia", "tags": ["region:india", "topic:news", "type:publication"]}
+{"key": "https://feeds.feedburner.com/scotthyoung/HAHx", "tags": ["topic:education", "type:publication"]}
+{"key": "https://feeds2.feedburner.com/SmallBusinessTrends", "tags": ["topic:tech-industry", "type:publication"]}
+{"key": "https://feeds2.feedburner.com/slashfilm", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "https://medium.com/feed/airbnb-engineering/tagged/android", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://medium.com/feed/androiddevelopers", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://medium.com/feed/better-programming", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://medium.com/feed/google-design", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "https://medium.com/feed/hackernoon", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://medium.com/feed/mindorks/tagged/android", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://medium.com/feed/the-black-box-of-product-management", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "huffingtonpost.es", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
+{"key": "huffingtonpost.fr", "tags": ["language:french", "region:france", "topic:news", "type:publication"]}
+{"key": "iamfran.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "icastlight.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "ikeahackers.net", "tags": ["topic:lifestyle", "type:personal-blog"]}
+{"key": "ilmattino.it", "tags": ["language:italian", "region:italy", "topic:news", "type:publication"]}
+{"key": "inc.com", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "indiatoday.in", "tags": ["region:india", "topic:news", "type:publication"]}
+{"key": "indiegamesplus.com", "tags": ["topic:gaming", "type:publication"]}
+{"key": "indiewire.com", "tags": ["topic:entertainment", "type:personal-blog"]}
+{"key": "inference.vc", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "informador.mx", "tags": ["language:spanish", "region:mexico", "topic:news", "type:publication"]}
+{"key": "inmyownstyle.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "interaction-design.org", "tags": ["topic:design", "type:publication"]}
+{"key": "interiordesign.net", "tags": ["topic:design", "type:publication"]}
+{"key": "iol.co.za", "tags": ["region:africa", "topic:news", "type:publication"]}
+{"key": "isna.ir", "tags": ["region:middle-east", "topic:news", "type:publication"]}
+{"key": "iso.500px.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "jagonews24.com", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "jalopnik.com", "tags": ["topic:transport", "type:publication"]}
+{"key": "jang.com.pk", "tags": ["language:urdu", "region:pakistan", "topic:news", "type:publication"]}
+{"key": "javascriptweekly.com", "tags": ["topic:web-development", "type:publication"]}
+{"key": "jerryboucher.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "jmlr.org", "tags": ["topic:ai", "type:publication"]}
+{"key": "joebirch.co", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "jornaldebrasilia.com.br", "tags": ["language:portuguese", "region:latin-america", "topic:news", "type:publication"]}
+{"key": "journeyintotheweird.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "k.img.com.ua", "tags": ["language:ukrainian", "region:ukraine", "topic:news", "type:publication"]}
+{"key": "katydecorah.com", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "kayserifserif.place", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "kellri.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "khabaronline.ir", "tags": ["region:middle-east", "topic:news", "type:publication"]}
+{"key": "killitwithfirerpg.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "killyourdungeonmaster.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "kirkusreviews.com", "tags": ["topic:books", "type:publication"]}
+{"key": "knightattheopera.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "kommersant.ru", "tags": ["language:russian", "region:russia", "topic:news", "type:publication"]}
+{"key": "ladepeche.fr", "tags": ["language:french", "region:france", "topic:news", "type:publication"]}
+{"key": "lairofmegagorgon.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "lapidaryossuary.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "lapresse.ca", "tags": ["region:canada", "topic:news", "type:publication"]}
+{"key": "lastgaspgrimoire.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "laughleviathan.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "layoffs.fyi", "tags": ["topic:business", "type:personal-blog"]}
+{"key": "legit.ng", "tags": ["region:nigeria", "topic:news", "type:publication"]}
+{"key": "lenta.ru", "tags": ["language:russian", "region:russia", "topic:news", "type:publication"]}
+{"key": "liberoquotidiano.it", "tags": ["language:italian", "region:italy", "topic:news", "type:publication"]}
+{"key": "licheslibram.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "lightstalking.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "lireo.com", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "lithyscaphe.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "livelifetravel.world", "tags": ["topic:travel", "type:personal-blog"]}
+{"key": "lizardmandiaries.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "lizmarieblog.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "lotbieth.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "loveandoliveoil.com", "tags": ["topic:food", "type:personal-blog"]}
+{"key": "luminescentlich.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "lux.camera", "tags": ["topic:gadgets", "type:personal-blog"]}
+{"key": "lynnandtonic.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "macchiatomaster.blot.im", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "machinelearningmastery.com", "tags": ["topic:ai", "type:vendor-blog"]}
+{"key": "macstories.net", "tags": ["topic:gadgets", "type:personal-blog"]}
+{"key": "macworld.com", "tags": ["topic:gadgets", "type:publication"]}
+{"key": "madewithreact.com", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "magenta.tensorflow.org", "tags": ["topic:ai", "type:vendor-blog"]}
+{"key": "mager.co", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "makeupandbeautyblog.com", "tags": ["topic:lifestyle", "type:publication"]}
+{"key": "makeuseof.com", "tags": ["topic:lifestyle", "type:publication"]}
+{"key": "mango.pdf.zone", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "matthiasott.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "maziriansgarden.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "mediapart.fr", "tags": ["language:french", "region:france", "topic:news", "type:publication"]}
+{"key": "meduza.io", "tags": ["language:russian", "region:russia", "topic:news", "type:publication"]}
+{"key": "mehrnews.com", "tags": ["region:middle-east", "topic:news", "type:publication"]}
+{"key": "melancholiesandmirth.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "methodsetmadness.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "mexiconewsdaily.com", "tags": ["language:spanish", "region:mexico", "topic:news", "type:publication"]}
+{"key": "microsoft.com", "tags": ["topic:ai", "type:vendor-blog"]}
+{"key": "migellito.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "milannews.it", "tags": ["language:italian", "region:italy", "topic:news", "type:publication"]}
+{"key": "mk.ru", "tags": ["language:russian", "region:russia", "topic:news", "type:publication"]}
+{"key": "mobilea11y.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "mockorangecairn.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "moneyweb.co.za", "tags": ["region:africa", "topic:news", "type:publication"]}
+{"key": "monstermanualsewnfrompants.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "monstersandmanuals.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "monstromanualis.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "murderhobo-rehab.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "musicbusinessworldwide.com", "tags": ["topic:music", "type:personal-blog"]}
+{"key": "myforevernotes.com", "tags": ["topic:gadgets", "type:personal-blog"]}
+{"key": "mythlands-erce.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "necropraxis.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "necrotic-gnome-productions.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "neilpatel.com", "tags": ["topic:business", "type:personal-blog"]}
+{"key": "neradia.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "nerdwerds.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "neuralarchive.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "newinbooks.com", "tags": ["topic:books", "type:personal-blog"]}
+{"key": "news.livedoor.com", "tags": ["language:japanese", "region:japan", "topic:news", "type:publication"]}
+{"key": "newsfeed.zeit.de", "tags": ["region:germany", "topic:news", "type:publication"]}
+{"key": "newsnblogs.com", "tags": ["language:urdu", "region:pakistan", "topic:news", "type:publication"]}
+{"key": "newsonjapan.com", "tags": ["language:japanese", "region:japan", "topic:news", "type:publication"]}
+{"key": "newsweek.pl", "tags": ["language:polish", "region:poland", "topic:news", "type:publication"]}
+{"key": "noisesanssignal.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "nomadicmatt.com", "tags": ["topic:travel", "type:personal-blog"]}
+{"key": "notlaura.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "nouvelobs.com", "tags": ["language:french", "region:france", "topic:news", "type:publication"]}
+{"key": "nv.ua", "tags": ["language:ukrainian", "region:ukraine", "topic:news", "type:publication"]}
+{"key": "oblidisideryptch.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "offconvex.org", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "ohhappyday.com", "tags": ["topic:lifestyle", "type:personal-blog"]}
+{"key": "ohsheglows.com", "tags": ["topic:food", "type:personal-blog"]}
+{"key": "okkotlin.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "omnycontent.com", "tags": ["topic:science", "type:personal-blog"]}
+{"key": "ongoingcampaign.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "openclaw.ai", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "originaldungeons-and-dragons.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "ottawacitizen.com", "tags": ["region:canada", "topic:news", "type:publication"]}
+{"key": "ouest-france.fr", "tags": ["language:french", "region:france", "topic:news", "type:publication"]}
+{"key": "owlbearhugs.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "pa.tedcdn.com", "tags": ["topic:science", "type:podcast"]}
+{"key": "panorama.it", "tags": ["language:italian", "region:italy", "topic:news", "type:publication"]}
+{"key": "parisstaronline.com", "tags": ["language:french", "region:france", "topic:news", "type:publication"]}
+{"key": "parker.micro.blog", "tags": ["topic:gadgets", "type:personal-blog"]}
+{"key": "penny-arcade.com", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "peoplethemwithmonsters.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "perfect-tennis.com", "tags": ["topic:sport", "type:personal-blog"]}
+{"key": "perthnow.com.au", "tags": ["region:australia", "topic:news", "type:publication"]}
+{"key": "petapixel.com", "tags": ["topic:design", "type:publication"]}
+{"key": "philnews.xyz", "tags": ["region:philippines", "topic:news", "type:publication"]}
+{"key": "pitsperilous.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "planetalgol.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "platformer.news", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "platum.kr", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "popit.kr", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "pravda.com.ua", "tags": ["language:ukrainian", "region:ukraine", "topic:news", "type:publication"]}
+{"key": "pravdareport.com", "tags": ["language:russian", "region:russia", "topic:news", "type:publication"]}
+{"key": "prismaticwasteland.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "proandroiddev.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "proceedings.mlr.press", "tags": ["topic:ai", "type:publication"]}
+{"key": "prod-qt-images.s3.amazonaws.com", "tags": ["region:india", "topic:news", "type:publication"]}
+{"key": "producthunt.com", "tags": ["topic:tech-industry", "type:publication"]}
+{"key": "prothomalo.com", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "publicobject.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "pytorch.org", "tags": ["topic:ai", "type:publication"]}
+{"key": "ravenousambience.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "react.statuscode.com", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "readwrite.com", "tags": ["topic:tech-industry", "type:publication"]}
+{"key": "reaganray.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "redbeardsravings.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "reforma.com", "tags": ["language:spanish", "region:mexico", "topic:news", "type:publication"]}
+{"key": "rememberdismove.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "repubblica.it", "tags": ["language:italian", "region:italy", "topic:news", "type:publication"]}
+{"key": "republika.co.id", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "retiredadventurer.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "revenant-quill.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "reverancepavane.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "rg.ru", "tags": ["language:russian", "region:russia", "topic:news", "type:publication"]}
+{"key": "rmf24.pl", "tags": ["language:polish", "region:poland", "topic:news", "type:publication"]}
+{"key": "robertheaton.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "roll1d12.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "roseandkingfisher.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "rottenpulp.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "rss.adnkronos.com", "tags": ["language:italian", "region:italy", "topic:news", "type:publication"]}
+{"key": "rss.asahi.com", "tags": ["language:japanese", "region:japan", "topic:news", "type:publication"]}
+{"key": "rss.dziennik.pl", "tags": ["language:polish", "region:poland", "topic:news", "type:publication"]}
+{"key": "rss.elconfidencial.com", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
+{"key": "rss.gazetaprawna.pl", "tags": ["language:polish", "region:poland", "topic:news", "type:publication"]}
+{"key": "rss.home.uol.com.br", "tags": ["language:portuguese", "region:latin-america", "topic:news", "type:publication"]}
+{"key": "rss.lilydjwg.me", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "rss.newsru.com", "tags": ["language:russian", "region:russia", "topic:news", "type:publication"]}
+{"key": "rss.politico.com", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "ruinsoffallenempires.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "russia-insider.com", "tags": ["language:russian", "region:russia", "topic:news", "type:publication"]}
+{"key": "saket.me", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "samwooe.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "santicore.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "saturdaynightsandbox.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "save.vs.totalpartykill.ca", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "savevsdragon.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "segmentfault.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "selfportraitasagiant.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "sevendeadlydungeons.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "sheepandsorcery.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "shutterbean.com", "tags": ["topic:food", "type:personal-blog"]}
+{"key": "shutteredroom.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "signsinthewilderness.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "simplebits.com", "tags": ["topic:design", "type:publication"]}
+{"key": "skinnytaste.com", "tags": ["topic:food", "type:personal-blog"]}
+{"key": "slack.design", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "slightadjustments.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "slimegrapple.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "smbc-comics.com", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "sneak.berlin", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "soccernews.com", "tags": ["topic:sport", "type:personal-blog"]}
+{"key": "socialpsychology.org", "tags": ["topic:health", "type:personal-blog"]}
+{"key": "songexploder.net", "tags": ["topic:music", "type:personal-blog"]}
+{"key": "sorcerersskull.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "space.com", "tags": ["topic:science", "type:publication"]}
+{"key": "sportskeeda.com", "tags": ["topic:sport", "type:personal-blog"]}
+{"key": "sproutedkitchen.com", "tags": ["topic:food", "type:personal-blog"]}
+{"key": "steipete.me", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "stephango.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "sudouest.fr", "tags": ["language:french", "region:france", "topic:news", "type:publication"]}
+{"key": "sunstar.com.ph", "tags": ["region:philippines", "topic:news", "type:publication"]}
+{"key": "swampofmonsters.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "swordplusone.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "swordsandstitchery.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "sycarion.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "syndication.thedailywtf.com", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "tabnak.ir", "tags": ["region:middle-east", "topic:news", "type:publication"]}
+{"key": "talesfromgurgula.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "tarsostheorem.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "tass.com", "tags": ["language:russian", "region:russia", "topic:news", "type:publication"]}
+{"key": "techcentral.co.za", "tags": ["region:africa", "topic:news", "type:publication"]}
+{"key": "techcrunch.com", "tags": ["topic:tech-industry", "type:publication"]}
+{"key": "techneedle.com", "tags": ["topic:tech-industry", "type:publication"]}
+{"key": "tenfootpole.org", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "tenfootpolemic.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "tenfootprecis.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "terriblesorcery.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "textgolem.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "the-one-true-game-odnd.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "the42.ie", "tags": ["region:ireland", "topic:news", "type:publication"]}
+{"key": "theage.com.au", "tags": ["region:australia", "topic:news", "type:publication"]}
+{"key": "thealexandrian.net", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "theamateurdungeoneers.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "thebeautylookbook.com", "tags": ["topic:lifestyle", "type:personal-blog"]}
+{"key": "thecircularuins.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "thecrazyprogrammer.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "thedailystar.net", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "theevildm.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "thegradient.pub", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "theinspiredroom.net", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "thekitchn.com", "tags": ["topic:food", "type:publication"]}
+{"key": "themansegaming.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "themetalearth.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "then-what-happens.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "thenextweb.com", "tags": ["topic:tech-industry", "type:publication"]}
+{"key": "theonion.com", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "theprovince.com", "tags": ["region:canada", "topic:news", "type:publication"]}
+{"key": "theroar.com.au", "tags": ["topic:sport", "type:publication"]}
+{"key": "thesouthafrican.com", "tags": ["region:africa", "topic:news", "type:publication"]}
+{"key": "thethingswedoforxp.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "thetotalityofygg.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "thetruthaboutcars.com", "tags": ["topic:transport", "type:personal-blog"]}
+{"key": "threewitchesrpg.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "tinyprojects.dev", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "tkim.co", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "todistantlands.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "tomboftedankhamen.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "tonite.abante.com.ph", "tags": ["region:philippines", "topic:news", "type:publication"]}
+{"key": "topgear.com.ph", "tags": ["region:philippines", "topic:news", "type:publication"]}
+{"key": "totmv2.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "toucharcade.com", "tags": ["topic:tech-industry", "type:publication"]}
+{"key": "towardsdatascience.com", "tags": ["topic:ai", "type:publication"]}
+{"key": "towerofthearchmage.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "traaa.sh", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "traipse.hexarcana.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "trendir.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "tribuneonlineng.com", "tags": ["region:nigeria", "topic:news", "type:publication"]}
+{"key": "tribunnews.com", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "triplesuns.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "trueheartblackraven.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "tsn.ua", "tags": ["language:ukrainian", "region:ukraine", "topic:news", "type:publication"]}
+{"key": "tumblr.mapsbynik.com", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "twogoblinsinatrenchcoat.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "unbox.ph", "tags": ["region:philippines", "topic:news", "type:publication"]}
+{"key": "undergroundadv.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "unite.ai", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "urdupoint.com", "tags": ["language:urdu", "region:pakistan", "topic:news", "type:publication"]}
+{"key": "usabilitygeek.com", "tags": ["topic:design", "type:publication"]}
+{"key": "usefulmac.com", "tags": ["topic:gadgets", "type:personal-blog"]}
+{"key": "usv.com", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "uxdesign.cc", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "uxmovement.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "uxplanet.org", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "valhead.com", "tags": ["topic:business", "type:personal-blog"]}
+{"key": "valleyofbluesnails.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "vanguardia.com.mx", "tags": ["language:spanish", "region:mexico", "topic:news", "type:publication"]}
+{"key": "vanishingtower.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "variety.com", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "verbum-ex-nihilo.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "waxy.org", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "wayspell.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "web3isgoinggreat.com", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "whatwouldconando.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "whowhatwear.com", "tags": ["topic:lifestyle", "type:personal-blog"]}
+{"key": "wirtualnemedia.pl", "tags": ["language:polish", "region:poland", "topic:news", "type:publication"]}
+{"key": "wizardshaw.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "wizzzargh.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "wonderhowto.com", "tags": ["topic:lifestyle", "type:personal-blog"]}
+{"key": "wondrousimaginings.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "worldoferadu.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "worldofortix.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "wyrdspeak.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "xizallian-s-dungeons-and-dragons.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "xkcd.com", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "yatzer.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "yjc.ir", "tags": ["region:middle-east", "topic:news", "type:publication"]}
+{"key": "younghouselove.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "https://www.youtube.com/feeds/videos.xml?user=ArchitecturalDigest", "tags": ["topic:design", "type:publication"]}
+{"key": "https://www.youtube.com/feeds/videos.xml?user=livingbigtinyhouse", "tags": ["topic:design", "type:publication"]}
+{"key": "zacsweers.dev", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "zarah.dev", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "zenopusarchives.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "zsmb.co", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "analogue.co", "tags": ["topic:gadgets", "type:vendor-blog"]}
+{"key": "arcticwolf.com", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "backstage.io", "tags": ["topic:software-engineering", "type:vendor-blog"]}
+{"key": "blog.hubspot.com", "tags": ["topic:business", "type:vendor-blog"]}
+{"key": "blog.xlab.qianxin.com", "tags": ["topic:security", "type:institution"]}
+{"key": "blogs.jpcert.or.jp", "tags": ["topic:security", "type:institution"]}
+{"key": "defend.network", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "diario.mx", "tags": ["language:spanish", "region:mexico", "topic:news", "type:publication"]}
+{"key": "https://gloria.social/@rizzi.rss", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://www.psychologytoday.com/au/front/feed", "tags": ["topic:health", "type:publication"]}
+{"key": "https://review.firstround.com/glossary/rss/", "tags": ["topic:tech-industry", "type:vendor-blog"]}
+{"key": "https://socket.dev/api/changelog/feed.atom", "tags": ["topic:security", "topic:software-engineering", "type:vendor-blog"]}
+{"key": "https://www.stheadline.com/rss", "tags": ["language:chinese", "region:asia", "topic:news", "type:publication"]}
+{"key": "ironscales.com", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "ixdf.org", "tags": ["topic:design", "type:institution"]}
+{"key": "jumpsec.com", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "magenta.withgoogle.com", "tags": ["topic:ai", "type:vendor-blog"]}
+{"key": "plex.tv", "tags": ["topic:entertainment", "type:vendor-blog"]}
+{"key": "rmondello.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "scotthyoung.com", "tags": ["topic:education", "type:personal-blog"]}
+{"key": "security.com", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "specterops.io", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "thejamesbrand.com", "tags": ["topic:gadgets", "type:vendor-blog"]}

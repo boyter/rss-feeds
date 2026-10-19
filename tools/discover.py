@@ -464,6 +464,23 @@ def override_for(url, rules):
     return rules.get(host_of(url))
 
 
+def load_url_overrides():
+    """The per-feed rules a human already made, keyed by norm_key.
+
+    discover.py writes these for proxy hosts (feeds.feedburner.com, medium.com),
+    where the path names a different publisher every time and no site-level rule
+    is true. Without this lookup those rules are written and then never applied:
+    the queue's last 116 rows were exactly that.
+    """
+    rules = {}
+    for r in read_jsonl(paths.data("overrides.jsonl")):
+        key = r["key"]
+        if "/" not in key or "://" not in key:
+            continue
+        rules[vocab_mod.norm_key(key)] = r
+    return rules
+
+
 def cmd_tag(args):
     """Tag probed candidates from what the feed itself said."""
     voc = vocab_mod.load()
@@ -476,6 +493,7 @@ def cmd_tag(args):
     rows, seen, stats = [], set(), collections.Counter()
     untagged = []
     rules = load_overrides()
+    url_rules = load_url_overrides()
     for c in cands:
         r = probed.get(c["url"])
         if not r:
@@ -499,7 +517,20 @@ def cmd_tag(args):
         topics = [t for t in rule_tags if t.startswith("topic:")]
         types = [t for t in rule_tags if t.startswith("type:")]
         origin = []
-        if aggregator_host(c["url"]) and c.get("hintTopics"):
+        exact = url_rules.get(vocab_mod.norm_key(c["url"]))
+        if exact:
+            # A human named this exact feed. That is the most specific decision
+            # there is - more specific than the feed's own title - and merge_tags
+            # treats a URL rule as the whole answer for the facets it names.
+            topics = [t for t in exact["tags"] if t.startswith("topic:")]
+            got = [t for t in exact["tags"] if t.startswith("type:")]
+            if got:
+                types = got[:1]
+            if topics:
+                origin.append("url rule")
+            if types:
+                origin.append("url rule")
+        if not topics and aggregator_host(c["url"]) and c.get("hintTopics"):
             # A human filed this channel under a heading; for an aggregator that
             # beats the channel's own recent headlines.
             topics = c["hintTopics"][:2]
@@ -523,6 +554,18 @@ def cmd_tag(args):
                 got = [t for t in (rule.get("tags") or []) if t.startswith("type:")]
                 if got:
                     types = got[:1]
+                    origin.append("host rule")
+            if not topics and not aggregator_host(c["url"]):
+                # A host rule's own tags describe the site, so on a site they are
+                # evidence about every feed it publishes. On an aggregator each
+                # path is a different publisher and they are nothing of the sort:
+                # youtube.com carries topic:science, which made Bon Appétit and
+                # Bloomberg Originals science channels. merge_tags keeps the
+                # stricter rule for feeds already in the list - a host rule may
+                # never *replace* a topic there - and this is the additive side.
+                got = [t for t in (rule.get("tags") or []) if t.startswith("topic:")]
+                if got:
+                    topics = got[:2]
                     origin.append("host rule")
             # A host rule's own tags may settle type: and nothing else. They
             # describe the site, and merge_tags already says a host rule must not
@@ -609,9 +652,15 @@ def write_hint_report(rows):
         fh.write("| origin | url | title | list category | tags |\n"
                  "|---|---|---|---|---|\n")
         for r in hinted:
-            fh.write(f"| {'+'.join(r['tagOrigin'])} | {r['url']} "
-                     f"| {r['title'][:60]} | {r['category']} "
+            fh.write(f"| {'+'.join(r['tagOrigin'])} | {cell(r['url'], 90)} "
+                     f"| {cell(r['title'], 60)} | {cell(r['category'], 24)} "
                      f"| {' '.join(r['tags'])} |\n")
+
+
+def cell(text, limit=70):
+    """One table cell. A title or description containing a pipe would otherwise
+    shift every later column, and the queue is read by a person."""
+    return (text or "").replace("|", "\\|").replace("\n", " ").strip()[:limit]
 
 
 def write_untagged_report(untagged):
@@ -621,6 +670,12 @@ def write_untagged_report(untagged):
     written with decide.py, which covers every feed on the site at once.
     """
     untagged.sort(key=lambda r: (host_of(r["url"]), r["url"]))
+    # The Markdown table is for a person; the JSONL is so the next pass does not
+    # have to parse a table whose cells can contain anything a feed's title
+    # contains.
+    with open(paths.data("DISCOVERY_UNTAGGED.jsonl"), "w", encoding="utf-8") as fh:
+        for r in untagged:
+            fh.write(json.dumps(r, ensure_ascii=False) + "\n")
     with open(paths.data("DISCOVERY_UNTAGGED.md"), "w", encoding="utf-8") as fh:
         fh.write("# Candidates that are feeds but have no decidable tags\n\n"
                  "Each of these answered with a real feed, so it is verified; "
@@ -631,8 +686,9 @@ def write_untagged_report(untagged):
                  "| host | url | title | description | list category | missing |\n"
                  "|---|---|---|---|---|---|\n")
         for r in untagged:
-            fh.write(f"| {host_of(r['url'])} | {r['url']} | {r['title'][:60]} "
-                     f"| {r['description'][:70]} | {r['category']} | {r['missing']} |\n")
+            fh.write(f"| {cell(host_of(r['url']), 40)} | {cell(r['url'], 90)} "
+                     f"| {cell(r['title'], 60)} | {cell(r['description'])} "
+                     f"| {cell(r['category'], 24)} | {r['missing']} |\n")
 
 
 def cmd_siblings(args):

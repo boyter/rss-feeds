@@ -19,6 +19,7 @@ import unittest
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "tools"))
 
 import paths
+import decide
 import rebuild
 import triage
 import vocab as vocab_mod
@@ -396,6 +397,40 @@ class ProductIsConsistent(unittest.TestCase):
         bad = [u for u, f in self.feeds.items()
                if f.get("title") and ("\ufffd" in f["title"] or "\x00" in f["title"])]
         self.assertEqual(bad, [])
+
+
+class TestNewRulesCannotSilentlyRetypeTheProduct(unittest.TestCase):
+    """decide.py replaces a rule wholesale, and a NEW host rule may settle
+    `type:` for feeds already in feeds.json. Both are legitimate in isolation and
+    both deleted decisions in the discovery pass: a drafted `techcrunch.com
+    type:personal-blog` retyped feeds filed as publication, and `feeds.npr.org
+    type:personal-blog` did it to NPR's podcast feeds. Neither showed up as a
+    replacement, because there was no previous rule to replace.
+    """
+
+    def problems(self, key, tags, feeds, existing=None):
+        return decide.overwrite_problems(key, tags, feeds, existing or {})
+
+    def test_a_new_host_rule_that_retypes_existing_feeds_is_refused(self):
+        feeds = [{"url": "https://techcrunch.com/feed/", "tags": ["type:publication"]}]
+        got = self.problems("techcrunch.com", ["topic:tech-industry", "type:personal-blog"], feeds)
+        self.assertTrue(got, "a new host rule retyped a feed already in the product")
+        self.assertIn("type:publication", got[0])
+
+    def test_a_host_rule_matching_what_the_host_already_publishes_is_fine(self):
+        feeds = [{"url": "https://techcrunch.com/feed/", "tags": ["type:publication"]}]
+        self.assertEqual(self.problems("techcrunch.com", ["topic:tech-industry", "type:publication"], feeds), [])
+
+    def test_a_rule_that_drops_a_tag_the_old_rule_had_is_refused(self):
+        old = {"tags": ["topic:software-engineering", "topic:security", "type:vendor-blog"]}
+        got = self.problems("github.blog", ["topic:software-engineering", "type:vendor-blog"], [], old)
+        self.assertTrue(got, "the old rule's topic:security vanished with no report")
+        self.assertIn("topic:security", got[0])
+
+    def test_a_url_rule_does_not_retype_the_whole_host(self):
+        feeds = [{"url": "https://example.com/feed/", "tags": ["type:publication"]}]
+        self.assertEqual(self.problems("https://example.com/other/feed",
+                                       ["topic:news", "type:personal-blog"], feeds), [])
 
 
 if __name__ == "__main__":

@@ -1,0 +1,578 @@
+# Batch three: drafted from the queue's curated category plus the feed's own
+# title, then read and corrected by hand. The comment is the evidence.
+101cookbooks.com                                     topic:food type:personal-blog   # Food | 101 Cookbooks
+24-horas.mx                                          language:spanish region:mexico topic:news type:publication   # 🇲🇽 Mexico | 24 Horas
+3toadstools.blogspot.com                             topic:personal type:personal-blog   # Blogs | The 3 Toadstools
+44bits.io                                            topic:tech-industry type:personal-blog   # Tech | 44BITS
+512pixels.net                                        topic:gadgets type:personal-blog   # Apple | 512 Pixels
+6figuredev.com                                       topic:software-engineering type:personal-blog   # Programming | The 6 Figure Developer
+8columnas.com.mx                                     language:spanish region:mexico topic:news type:publication   # 🇲🇽 Mexico | 8 Columnas
+9to5mac.com                                          topic:gadgets type:publication   # Apple | 9to5Mac
+aaronstuyvenberg.com                                 topic:tech-industry type:personal-blog   # Tech | AJ Stuyvenberg
+abeautifulmess.com                                   topic:lifestyle type:personal-blog   # DIY | A Beautiful Mess
+abominablefancy.blogspot.com                         topic:personal type:personal-blog   # Blogs | An Abominable Fancy
+acornafloat.blogspot.com                             topic:personal type:personal-blog   # Blogs | The Acorn Afloat
+advancedgaming-theory.blogspot.com                   topic:gaming type:personal-blog   # Blogs | Advanced Gaming &amp; Theory
+aelf.work                                            topic:personal type:personal-blog   # Blogs | aelf
+aihero.dev                                           topic:ai type:personal-blog   # AI | AI Hero RSS Feed
+albertodebortoli.com                                 topic:software-engineering type:personal-blog   # iOS Development | Alberto De Bortoli
+alexirpan.com                                        topic:ai type:personal-blog   # Machine Learning | Sorta Insightful
+alifefullofadventure.blogspot.com                    topic:personal type:personal-blog   # Blogs | A Life Full of Adventure
+all-about-psychology.com                             topic:health type:personal-blog   # Psychology | Psychology Blog
+aloneinthelabyrinth.blogspot.com                     topic:gaming type:personal-blog   # Blogs | Alone in the Labyrinth
+androidauthority.com                                 topic:gadgets type:publication   # Android | Android Authority
+anhvn.com                                            topic:design type:personal-blog   # Design | anhvn
+animatekratocracy.blogspot.com                       topic:personal type:personal-blog   # Blogs | Animate Kratocracy
+ansa.it                                              language:italian region:italy topic:news type:publication   # 🇮🇹 Italy | Primo piano ANSA - ANSA.it
+api.axios.com                                        region:africa topic:news type:publication   # 🇿🇦 South Africa | Axios
+apple.com                                            topic:gadgets type:publication   # Apple | Apple Newsroom
+appliedphantasticality.blogspot.com                  topic:personal type:personal-blog   # Blogs | Applied Phantasticality
+archadestower.blogspot.com                           topic:personal type:personal-blog   # Blogs | Archade's Tower
+architecturaldigest.com                              topic:design type:publication   # Architecture | Architectural Digest
+archons-court.blogspot.com                           topic:personal type:personal-blog   # Blogs | Archon's Court
+archpaper.com                                        topic:design type:publication   # Architecture | The Architect’s Newspaper
+askamanager.org                                      topic:business type:personal-blog   # Career | Ask a Manager
+asriran.com                                          region:middle-east topic:news type:publication   # 🇮🇷 Iran | عصر ایران
+atlasobscura.com                                     topic:travel type:publication   # Travel | Atlas Obscura - Latest Articles and Pl
+atomicbird.com                                       topic:software-engineering type:personal-blog   # iOS Development | The Atomic Birdhouse
+attnam.blogspot.com                                  topic:personal type:personal-blog   # Blogs | The Library of Attnam
+autocar.co.uk                                        topic:transport type:publication   # Cars | Autocar RSS Feed
+avc.xyz                                              topic:tech-industry type:personal-blog   # Tech | AVC
+aws.amazon.com                                       topic:ai type:publication   # type kept as this host already publishes it
+axianspice.blogspot.com                              topic:personal type:personal-blog   # Blogs | Axian Spice
+basicappleguy.com                                    topic:gadgets type:personal-blog   # Apple | Basic Apple Guy | Apple Wallpapers, Re
+bastionland.com                                      topic:personal type:personal-blog   # Blogs | BASTIONLAND
+bearded-devil.com                                    topic:gaming type:personal-blog   # Blogs | BEARDED DEVIL
+becominghuman.ai                                     topic:ai type:personal-blog   # Artificial Intelligence | Becoming Human: Artificial Intelligenc
+ben-evans.com                                        topic:tech-industry type:personal-blog   # Startup | Essays - Benedict Evans
+benoitpasquier.com                                   topic:software-engineering type:personal-blog   # iOS Development | Benoit Pasquier
+beyondfomalhaut.blogspot.com                         topic:personal type:personal-blog   # Blogs | Beyond Fomalhaut
+bhaskar.com                                          region:india topic:news type:publication   # 🇮🇳 India | देश | दैनिक भास्कर
+bikeexif.com                                         topic:transport type:personal-blog   # Cars | BikeEXIF
+birchtree.me                                         topic:gadgets type:personal-blog   # Apple | Birchtree
+blog.alfredapp.com                                   topic:gadgets type:vendor-blog   # Tech, Gadgets | Alfred Blog
+blog.d4caltrops.com                                  topic:personal type:personal-blog   # Blogs | d4 Caltrops
+blog.shakirm.com                                     topic:ai type:personal-blog   # Machine Learning | The Spectator
+blog.trilemma.com                                    topic:personal type:personal-blog   # Blogs | Trilemma Adventures
+bogeymanscave.blogspot.com                           topic:personal type:personal-blog   # Blogs | bogeymanscave
+bookriot.com                                         topic:books type:publication   # Books | BOOK RIOT
+borischerny.com                                      topic:ai type:personal-blog   # AI | Boris Cherny’s Blog
+bostonglobe.com                                      topic:design type:publication   # Photography | The Boston Globe
+bottomlesssarcophagus.blogspot.com                   topic:personal type:personal-blog   # Blogs | The Bottomless Sarcophagus
+brasilwire.com                                       language:portuguese region:latin-america topic:news type:publication   # 🇧🇷 Brazil | BRASILWIRE
+breakrpg.blogspot.com                                topic:gaming type:personal-blog   # Blogs | Break!!
+brinehouse.blogspot.com                              topic:personal type:personal-blog   # Blogs | BRINEHOUSE
+bringatrailer.com                                    topic:transport type:publication   # Cars | The best vintage and classic cars for 
+brisbanetimes.com.au                                 region:australia topic:news type:publication   # 🇦🇺 Australia | Brisbane Times - Latest News
+business-standard.com                                region:india topic:news type:publication   # 🇮🇳 India | Home Page
+bworldonline.com                                     region:philippines topic:news type:publication   # 🇵🇭 Philippines | BusinessWorld Online
+calv.info                                            topic:ai type:personal-blog   # AI | Calvin French-Owen
+cameronmoll.com                                      topic:design type:personal-blog   # Design | Cameron Moll
+canonrumors.com                                      topic:design type:publication   # Photography | Canon Rumors
+caranddriver.com                                     topic:transport type:publication   # Cars | Latest Content - Car and Driver
+carbodydesign.com                                    topic:transport type:personal-blog   # Cars | Car Body Design
+carscoops.com                                        topic:transport type:personal-blog   # Cars | CarScoops - The Inside Track to Automo
+censor.net.ua                                        language:ukrainian region:ukraine topic:news type:publication   # 🇺🇦 Ukraine | Цензор.НЕТ - Новости
+centsationalstyle.com                                topic:lifestyle type:personal-blog   # DIY | Centsational Style
+chaudronchromatique.blogspot.com                     topic:personal type:personal-blog   # Blogs | Le Chaudron Chromatique
+christianselig.com                                   topic:gadgets type:personal-blog   # Apple | Christian Selig
+chrynan.codes                                        topic:software-engineering type:personal-blog   # Android Development | Chris Keenan Codes
+chthonic-halls.blogspot.com                          topic:personal type:personal-blog   # Blogs | Down in the Chthonic Deeps
+citizen.co.za                                        region:africa topic:news type:publication   # 🇿🇦 South Africa | The Citizen
+cnz.to                                               topic:food type:personal-blog   # Food | Chocolate & Zucchini
+codewall.co.uk                                       topic:web-development type:personal-blog   # Web Development | Code Wall
+consequenceofsound.net                               topic:music type:personal-blog   # Music | Consequence
+contentmarketinginstitute.com                        topic:business type:personal-blog   # Marketing | contentmarketinginstitute
+crabdungeon.blogspot.com                             topic:gaming type:personal-blog   # Blogs | Crab Dungeon
+crossplanes.com                                      topic:personal type:personal-blog   # Blogs | CROSS PLANES
+cultofandroid.com                                    topic:gadgets type:personal-blog   # Android | Cult of Android
+cultofmac.com                                        topic:gadgets type:publication   # Apple | Cult of Mac
+cyanogenmods.org                                     topic:gadgets type:personal-blog   # Android | Cyanogen Mods
+dailypost.ng                                         region:nigeria topic:news type:publication   # 🇳🇬 Nigeria | Daily Post Nigeria
+daimon-games.blogspot.com                            topic:gaming type:personal-blog   # Blogs | daimon games
+darksunadventures.blogspot.com                       topic:personal type:personal-blog   # Blogs | Adventures under the Dark Sun
+darkwormcolt.blogspot.com                            topic:personal type:personal-blog   # Blogs | Darkworm Colt
+data.gmanews.tv                                      region:philippines topic:news type:publication   # 🇵🇭 Philippines | GMA News Online / News
+davidlebovitz.com                                    topic:food type:personal-blog   # Food | David Lebovitz
+deadline.com                                         topic:entertainment type:personal-blog   # Movies | Deadline
+deathanddismemberment.blogspot.com                   topic:personal type:personal-blog   # Blogs | Death &amp; Dismemberment
+decoist.com                                          topic:design type:publication   # Interior design | decoist
+decor8blog.com                                       topic:design type:personal-blog   # Interior design | Blog - decor8
+deepdarkcti.com                                      topic:personal type:personal-blog   # List of blogs | deepdarkCTI
+deepsheep.com                                        topic:personal type:personal-blog   # Blogs | Deep Sheep
+devground.hanbit.co.kr                               topic:software-engineering type:personal-blog   # Develop | DevGround
+dezeen.com                                           topic:design type:publication   # Interior design | Interior design | Dezeen
+diomedes-descent.blogspot.com                        topic:personal type:personal-blog   # Blogs | Diomedes' Descent
+dismastersden.blogspot.com                           topic:personal type:personal-blog   # Blogs | La Fumeria dei Pensieri Incompiuti
+divyabhaskar.co.in                                   region:india topic:news type:publication   # 🇮🇳 India | ઈન્ડિયા | દિવ્ય ભાસ્કર
+dndborderlands.blogspot.com                          topic:gaming type:personal-blog   # Blogs | The Borderlands
+dongjunlee.github.io                                 topic:personal type:personal-blog   # Blog | Dongjun Lee
+dreamsandfevers.blogspot.com                         topic:personal type:personal-blog   # Blogs | Dreams and Fevers
+dreamsofmythicfantasy.blogspot.com                   topic:personal type:personal-blog   # Blogs | Dreams of Mythic Fantasy
+droid-life.com                                       topic:gadgets type:publication   # Android | Droid Life
+dungeonliar.blogspot.com                             topic:gaming type:personal-blog   # Blogs | Dungeonliar
+dungeons-and-dragons-rpgs.blogspot.com               topic:gaming type:personal-blog   # Blogs | The Gray Wolf Prowls
+dungeonsddx.blogspot.com                             topic:gaming type:personal-blog   # Blogs | Dungeons &amp; Differentials
+dungeonsofklang.blogspot.com                         topic:gaming type:personal-blog   # Blogs | Dungeons of Klang
+dwelleroftheforbiddencity.blogspot.com               topic:personal type:personal-blog   # Blogs | Dweller of the Forbidden City
+dyskinetic.net                                       topic:design type:personal-blog   # Design | D Y S K I N E T I C
+e00-expansion.uecdn.es                               language:spanish region:spain topic:news type:publication   # 🇪🇸 Spain | Portada // expansion
+eff.org                                              topic:tech-industry type:publication   # Tech | Deeplinks
+elderskull.blogspot.com                              topic:personal type:personal-blog   # Blogs | The Elder Sküll
+eldiario.es                                          language:spanish region:spain topic:news type:publication   # 🇪🇸 Spain | elDiario.es - elDiario.es
+eldritchfields.blogspot.com                          topic:personal type:personal-blog   # Blogs | Eldritch Fields
+elfinanciero.com.mx                                  language:spanish region:mexico topic:news type:publication   # 🇲🇽 Mexico | El Financiero
+elnorte.com                                          language:spanish region:mexico topic:news type:publication   # 🇲🇽 Mexico | ElNorte
+elsiglodetorreon.com.mx                              language:spanish region:mexico topic:news type:publication   # 🇲🇽 Mexico | Portada, El Siglo de Torreón
+esbueno.noahstokes.com                               topic:design type:personal-blog   # Design | Es Bueno — Noah Stokes
+escapistmagazine.com                                 topic:gaming type:publication   # Gaming | The Escapist
+espreso.tv                                           language:ukrainian region:ukraine topic:news type:publication   # 🇺🇦 Ukraine | Український погляд: новини, відео, поя
+euroweeklynews.com                                   language:spanish region:spain topic:news type:publication   # 🇪🇸 Spain | Euro Weekly News
+fabisevi.ch                                          topic:software-engineering type:personal-blog   # iOS Development | The One And Only Blog Of Joe Fabisevic
+failedmysave.blogspot.com                            topic:personal type:personal-blog   # Blogs | I Failed My Save
+failuretolerated.com                                 topic:personal type:personal-blog   # Blogs | Failure Tolerated
+falsemachine.blogspot.com                            topic:personal type:personal-blog   # Blogs | False Machine
+fashionbeans.com                                     topic:lifestyle type:personal-blog   # Fashion | 
+faz.net                                              region:germany topic:news type:publication   # 🇩🇪 Germany | Aktuell - FAZ.NET
+feeds.a.dj.com                                       region:usa topic:news type:publication   # 🇺🇸 United States | WSJ.com: World News
+http://feeds.androidcentral.com/androidcentral       topic:gadgets type:personal-blog   # Android | Latest from Android Central
+feeds.elpais.com                                     language:spanish region:spain topic:news type:publication   # 🇪🇸 Spain | EL PAÍS: el periódico global
+https://feeds.fireside.fm/sdt/rss                    topic:software-engineering type:podcast   # Programming | Software Defined Talk
+feeds.folha.uol.com.br                               language:portuguese region:latin-america topic:news type:publication   # 🇧🇷 Brazil | Folha de S.Paulo - Em cima da hora - P
+feeds.hongkongnews.net                               language:chinese region:asia topic:news type:publication   # 🇭🇰 Hong Kong SAR China | www.hongkongnews.net latest rss headli
+feeds.howtogeek.com                                  topic:tech-industry type:publication   # RSS Feeds | How-To Geek
+http://feeds.ign.com/ign/all                         topic:gaming type:personal-blog   # Gaming | IGN Articles
+feeds.nature.com                                     topic:science type:personal-blog   # Science | Nature
+feeds.npr.org                                        topic:news type:podcast   # type kept as this host already publishes it
+feeds.thememorypalace.us                             topic:history type:podcast   # History | the memory palace
+https://feeds.transistor.fm/productivity-in-tech-podcast topic:software-engineering type:podcast   # Programming | The PIT Show: Reflections and Intervie
+feeds.wired.com                                      topic:tech-industry type:publication   # RSS Feeds | Feed: All Latest
+feeds.wnyc.org                                       topic:science type:personal-blog   # Science | Radiolab
+feld.com                                             topic:tech-industry type:vendor-blog   # type kept as this host already publishes it
+firstshowing.net                                     topic:entertainment type:personal-blog   # Movies | FirstShowing.net
+flowingdata.com                                      topic:design type:publication   # Design | FlowingData
+forbes.com                                           topic:business type:personal-blog   # Business & Economy | Forbes - Business
+forgotten-ny.com                                     topic:design type:publication   # Design | Forgotten New York
+francetvinfo.fr                                      language:french region:france topic:news type:publication   # 🇫🇷 France | franceinfo - Les Titres
+frankchimero.com                                     topic:design type:personal-blog   # Design | Frank Chimero
+freakonomics.blogs.nytimes.com                       topic:health type:personal-blog   # Psychology | Freakonomics
+furthestlands.com                                    topic:personal type:personal-blog   # Blogs | The Furthest Lands
+furtivegoblingaming.blogspot.com                     topic:gaming type:personal-blog   # Blogs | The Furtive Goblin's Burrow
+gazeta.ru                                            language:russian region:russia topic:news type:publication   # 🇷🇺 Russia | Газета.Ru - Первая полоса
+geekechoes.blogspot.com                              topic:personal type:personal-blog   # Blogs | Echoes from the Geekcave
+glaucushauriant.blogspot.com                         topic:personal type:personal-blog   # Blogs | Glaucus Hauriant
+gloomtrain.blogspot.com                              topic:gaming type:personal-blog   # Blogs | gloomtrain
+goatmansgoblet.com                                   topic:personal type:personal-blog   # Blogs | Goatman's Goblet
+goblinpunch.blogspot.com                             topic:personal type:personal-blog   # Blogs | Goblin Punch
+goodberrymonthly.blogspot.com                        topic:personal type:personal-blog   # Blogs | Goodberry Monthly
+gosink.in                                            topic:web-development type:personal-blog   # Web Development | Sink In - Tech Learnings
+gravenutterance.com                                  topic:personal type:personal-blog   # Blogs | Graven Utterance
+graverobbersguide.blogspot.com                       topic:personal type:personal-blog   # Blogs | The Graverobber's Guide
+grodog.blogspot.com                                  topic:personal type:personal-blog   # Blogs | From Kuroth&#39;s Quill - grodog&#39;s
+grognardia.blogspot.com                              topic:personal type:personal-blog   # Blogs | GROGNARDIA
+gsmarena.com                                         topic:gadgets type:publication   # Android | GSMArena.com - Latest articles
+hackaday.com                                         topic:lifestyle type:publication   # DIY | Blog – Hackaday
+handstandsam.com                                     topic:software-engineering type:personal-blog   # Android Development | Handstand Sam
+headstartup.tistory.com                              topic:tech-industry type:personal-blog   # Insight | Headstart Growth
+hillcantons.blogspot.com                             topic:personal type:personal-blog   # Blogs | Hill Cantons
+historyisnowmagazine.com                             topic:history type:personal-blog   # History | History in 28-minutes
+historynet.com                                       topic:history type:personal-blog   # History | HistoryNet
+hket.com                                             language:chinese region:asia topic:news type:publication   # 🇭🇰 Hong Kong SAR China | 香港新聞RSS - 香港經濟日報 hket.com
+home-designing.com                                   topic:design type:personal-blog   # Interior design | Interior Design Ideas
+homebrewhomunculus.blogspot.com                      topic:personal type:personal-blog   # Blogs | Homebrew Homunculus
+homebusinessmag.com                                  topic:tech-industry type:publication   # RSS Feeds | Home Business Magazine
+hopefulweirdwonder.blogspot.com                      topic:personal type:personal-blog   # Blogs | Weird Wonder
+howsweeteats.com                                     topic:food type:personal-blog   # Food | How Sweet Eats
+howtogeek.com                                        topic:lifestyle type:publication   # DIY | How-To Geek
+http://feeds.feedburner.com/AndroidNewsGoogleAndroidForums topic:gadgets type:publication   # Android | TalkAndroid
+http://feeds.feedburner.com/Archdaily                topic:design type:publication   # Architecture | ArchDaily Global
+http://feeds.feedburner.com/BothSidesOfTheTable      topic:tech-industry type:publication   # Startup | Both Sides of the Table - Medium
+http://feeds.feedburner.com/CrackedRSS               topic:entertainment type:publication   # Funny | Cracked: All Posts
+http://feeds.feedburner.com/Explosm                  topic:entertainment type:publication   # Funny | Explosm.net
+http://feeds.feedburner.com/GDBcode                  topic:software-engineering type:publication   # Programming | Google Developers Blog
+http://feeds.feedburner.com/IndependentAustralia     region:australia topic:news type:publication   # 🇦🇺 Australia | Independent Australia
+http://feeds.feedburner.com/OneBigPhoto              topic:design type:publication   # Photography | One Big Photo
+http://feeds.feedburner.com/ProgrammingThrowdown     topic:software-engineering type:podcast   # Programming | Programming Throwdown
+http://feeds.feedburner.com/PsychologyBlog           topic:health type:publication   # Psychology | PsyBlog
+http://feeds.feedburner.com/RockPaperShotgun         topic:gaming type:publication   # Gaming | Rock, Paper, Shotgun
+http://feeds.feedburner.com/ScrollinArticles.rss     region:india topic:news type:publication   # 🇮🇳 India | Scroll.in
+http://feeds.feedburner.com/SdJapan                  language:japanese region:japan topic:news type:publication   # 🇯🇵 Japan | BRIDGE（ブリッジ）
+http://feeds.feedburner.com/TechCrunch               topic:gadgets type:publication   # Tech, Gadgets | Crunch Hype
+http://feeds.feedburner.com/Techcrunch               topic:tech-industry type:publication   # RSS Feeds | Crunch Hype
+http://feeds.feedburner.com/Techpinas                region:philippines topic:news type:publication   # 🇵🇭 Philippines | 
+http://feeds.feedburner.com/TheAncientGamingNoob     topic:gaming type:publication   # Gaming | The Ancient Gaming Noob
+http://feeds.feedburner.com/TheGreatDiscontent       topic:design type:publication   # Design | The Great Discontent
+http://feeds.feedburner.com/archidose                topic:design type:publication   # Architecture | A Weekly Dose of Architecture Books
+http://feeds.feedburner.com/autonews/AutomakerNews   topic:transport type:publication   # Cars | 
+http://feeds.feedburner.com/autonews/EditorsPicks    topic:transport type:publication   # Cars | 
+http://feeds.feedburner.com/baenefit/slXh            topic:tech-industry type:publication   # Insight | THE STARTUP BIBLE
+http://feeds.feedburner.com/blogspot/WOBq            topic:design type:publication   # Photography | Strobist
+http://feeds.feedburner.com/blogspot/ZBcZ            topic:design type:publication   # Interior design | Thrifty Decor Chick | Thrifty DIY, Dec
+http://feeds.feedburner.com/blogspot/androiddevelopersbackstage topic:software-engineering type:podcast   # Android Development | Android Developers Backstage
+http://feeds.feedburner.com/blogspot/gJZg            topic:ai type:publication   # Artificial Intelligence | Google AI Blog
+http://feeds.feedburner.com/blogspot/hsDu            topic:software-engineering type:publication   # Android Development | Android Developers Blog
+http://feeds.feedburner.com/cantbowlcantthrow        topic:sport type:publication   # Cricket | Can't Bowl Can't Throw Cricket Show
+http://feeds.feedburner.com/core77/blog              topic:design type:publication   # Interior design | Core77
+http://feeds.feedburner.com/elliotjaystocks/         topic:design type:publication   # Design | Elliot Jay Stocks | Everything (blog +
+http://feeds.feedburner.com/entrepreneur/latest      topic:tech-industry type:publication   # Startups | Entrepreneur – Latest
+http://feeds.feedburner.com/failblog                 topic:entertainment type:publication   # Funny | FAIL Blog
+http://feeds.feedburner.com/food52-TheAandMBlog      topic:food type:publication   # Food | Food52
+http://feeds.feedburner.com/frmheadtotoe             topic:lifestyle type:publication   # Beauty | From Head To Toe
+http://feeds.feedburner.com/fubiz                    topic:design type:publication   # Interior design | Fubiz Media
+http://feeds.feedburner.com/icanhascheezburger       topic:entertainment type:publication   # Funny | I Can Has Cheezburger?
+http://feeds.feedburner.com/metalinjection           topic:music type:publication   # Music | Metal Injection
+http://feeds.feedburner.com/nvidiablog               topic:ai type:publication   # Artificial Intelligence | NVIDIA Blog
+http://feeds.feedburner.com/oatmealfeed              topic:design type:publication   # Design | The Oatmeal - Comics by Matthew Inman
+http://feeds.feedburner.com/osxdaily                 topic:gadgets type:publication   # Apple | OS X Daily
+http://feeds.feedburner.com/playpc                   topic:gadgets type:publication   # Tech, Gadgets | 電腦玩物
+http://feeds.feedburner.com/psblog                   topic:gaming type:publication   # Gaming | PlayStation.Blog
+http://feeds.feedburner.com/robweychert              topic:design type:publication   # Design | Rob Weychert
+http://feeds.feedburner.com/seomoz                   topic:business type:publication   # Marketing | moz (en-US)
+http://feeds.feedburner.com/seriouseats/recipes      topic:food type:publication   # Food | Serious Eats: Recipes
+http://feeds.feedburner.com/shawnblanc               topic:tech-industry type:publication   # Tech | Shawn Blanc
+http://feeds.feedburner.com/smartpassiveincome       topic:tech-industry type:publication   # Startups | Smart Passive Income
+http://feeds.feedburner.com/smittenkitchen           topic:food type:publication   # Food | smitten kitchen
+http://feeds.feedburner.com/speedhunters             topic:transport type:publication   # Cars | Speedhunters
+http://feeds.feedburner.com/techgenyz                region:india topic:news type:publication   # 🇮🇳 India | Techgenyz
+http://feeds.feedburner.com/techorange               topic:gadgets type:publication   # Tech, Gadgets | TechOrange 科技報橘
+http://feeds.feedburner.com/tedtalks_video           topic:entertainment type:podcast   # Others | TED Talks Daily (SD video)
+http://feeds.feedburner.com/thetvaddict/AXob         topic:entertainment type:publication   # Television | the TV addict
+http://feeds.feedburner.com/uxmovement               topic:design type:publication   # Design | UX Movement
+http://feeds.feedburner.com/wPolitycepl              language:polish region:poland topic:news type:publication   # 🇵🇱 Poland | Najnowsze na wPolityce.pl
+http://feeds.feedburner.com/yankodesign              topic:design type:publication   # Interior design | Yanko Design
+http://feeds.feedburner.com/zachholman               topic:tech-industry type:publication   # Tech | Zach Holman
+http://feeds2.feedburner.com/AndroidPhoneFans        topic:gadgets type:publication   # Android | Phandroid
+http://feeds2.feedburner.com/Swissmiss               topic:design type:publication   # Design | swissmiss
+http://feeds2.feedburner.com/rss_outsider_dev        topic:software-engineering type:publication   # Develop | Outsider's Dev Story
+http://feeds2.feedburner.com/unwirelife              topic:gadgets type:publication   # Tech, Gadgets | 香港 unwire.hk 玩生活．樂科技
+https://feeds.feedburner.com/BmwBlog                 topic:transport type:publication   # Cars | BMWBLOG
+https://feeds.feedburner.com/DigitalPhotographySchool topic:design type:publication   # Photography | Digital Photography School
+https://feeds.feedburner.com/IrishCentral            region:ireland topic:news type:publication   # 🇮🇪 Ireland | IrishCentral.com - Top Stories
+https://feeds.feedburner.com/JustCreativeDesignBlog  topic:design type:publication   # UI / UX | JUST™ Creative
+https://feeds.feedburner.com/Mixergy-main-podcast    topic:business type:publication   # Business & Economy | Startup Stories - Mixergy
+https://feeds.feedburner.com/TheSartorialist         topic:design type:publication   # Photography | The Sartorialist
+https://feeds.feedburner.com/bigthink/main           topic:education type:publication   # Learning | Big Think
+https://feeds.feedburner.com/com/rCTl                region:australia topic:news type:publication   # 🇦🇺 Australia | Crikey
+https://feeds.feedburner.com/dancarlin/history?format=xml topic:history type:podcast   # History | Dan Carlin's Hardcore History
+https://feeds.feedburner.com/ietopstories            region:ireland topic:news type:publication   # 🇮🇪 Ireland | IrishExaminer.com
+https://feeds.feedburner.com/inside-blog-taiwan      topic:gadgets type:publication   # Tech, Gadgets | INSIDE
+https://feeds.feedburner.com/intothegloss/oqoU       topic:lifestyle type:publication   # Beauty | Into The Gloss - Beauty Tips, Trends, 
+https://feeds.feedburner.com/joelis                  topic:business type:publication   # Career | Joel Gascoigne's blog
+https://feeds.feedburner.com/opindia                 region:india topic:news type:publication   # 🇮🇳 India | OpIndia
+https://feeds.feedburner.com/scotthyoung/HAHx        topic:education type:publication   # Learning | Scott H Young
+https://feeds2.feedburner.com/SmallBusinessTrends    topic:tech-industry type:publication   # Startups | Small Business Trends
+https://feeds2.feedburner.com/slashfilm              topic:entertainment type:publication   # Movies | /Film
+https://medium.com/feed/airbnb-engineering/tagged/android topic:software-engineering type:personal-blog   # Android Development | Android in The Airbnb Tech Blog on Med
+https://medium.com/feed/androiddevelopers            topic:software-engineering type:personal-blog   # Android Development | Android Developers - Medium
+https://medium.com/feed/better-programming           topic:software-engineering type:personal-blog   # Programming | Better Programming - Medium
+https://medium.com/feed/google-design                topic:design type:personal-blog   # Design | Google Design - Medium
+https://medium.com/feed/hackernoon                   topic:software-engineering type:personal-blog   # Programming | HackerNoon.com - Medium
+https://medium.com/feed/mindorks/tagged/android      topic:software-engineering type:personal-blog   # Android Development | Android in MindOrks on Medium
+https://medium.com/feed/the-black-box-of-product-management topic:tech-industry type:personal-blog   # Startup | The Black Box of Product Management - 
+huffingtonpost.es                                    language:spanish region:spain topic:news type:publication   # 🇪🇸 Spain | HuffPost Spain for Athena2
+huffingtonpost.fr                                    language:french region:france topic:news type:publication   # 🇫🇷 France | Le HuffPost : actualités et infos déca
+iamfran.com                                          topic:design type:personal-blog   # Design | Fran's Realm
+icastlight.blogspot.com                              topic:personal type:personal-blog   # Blogs | I Cast Light!
+ikeahackers.net                                      topic:lifestyle type:personal-blog   # DIY | IKEA Hackers
+ilmattino.it                                         language:italian region:italy topic:news type:publication   # 🇮🇹 Italy | Il Mattino -
+inc.com                                              topic:tech-industry type:personal-blog   # Startups | Inc.com
+indiatoday.in                                        region:india topic:news type:publication   # 🇮🇳 India | India Today | Latest Stories
+indiegamesplus.com                                   topic:gaming type:publication   # Gaming | Indie Games Plus
+indiewire.com                                        topic:entertainment type:personal-blog   # Movies | IndieWire
+inference.vc                                         topic:ai type:personal-blog   # Machine Learning | inFERENCe
+informador.mx                                        language:spanish region:mexico topic:news type:publication   # 🇲🇽 Mexico | El Informador :: Noticias de Jalisco, 
+inmyownstyle.com                                     topic:design type:personal-blog   # Interior design | In My Own Style
+interaction-design.org                               topic:design type:publication   # Design | UX Daily - User Experience Daily
+interiordesign.net                                   topic:design type:publication   # Interior design | Interior Design
+iol.co.za                                            region:africa topic:news type:publication   # 🇿🇦 South Africa | IOL
+isna.ir                                              region:middle-east topic:news type:publication   # 🇮🇷 Iran | خبرگزاری ایسنا | صفحه اصلی | ISNA News
+iso.500px.com                                        topic:design type:personal-blog   # Photography | 500px
+jagonews24.com                                       region:asia topic:news type:publication   # 🇧🇩 Bangladesh | জাগোনিউজ ২৪ - সর্বশেষ বাংলা সংবাদ
+jalopnik.com                                         topic:transport type:publication   # Cars | Jalopnik - Obsessed with the culture o
+jang.com.pk                                          language:urdu region:pakistan topic:news type:publication   # 🇵🇰 Pakistan | قومی خبریں
+javascriptweekly.com                                 topic:web-development type:publication   # Frontend Development | JavaScript Weekly
+jerryboucher.blogspot.com                            topic:personal type:personal-blog   # Blogs | Scribblings or Something
+jmlr.org                                             topic:ai type:publication   # Machine Learning | JMLR
+joebirch.co                                          topic:software-engineering type:personal-blog   # Android Development | Joe Birch
+jornaldebrasilia.com.br                              language:portuguese region:latin-america topic:news type:publication   # 🇧🇷 Brazil | Jornal de Brasília
+journeyintotheweird.blogspot.com                     topic:personal type:personal-blog   # Blogs | Through the Spyglass
+k.img.com.ua                                         language:ukrainian region:ukraine topic:news type:publication   # 🇺🇦 Ukraine | Последние новости на сайте korresponde
+katydecorah.com                                      topic:tech-industry type:personal-blog   # Tech | Katy DeCorah
+kayserifserif.place                                  topic:design type:personal-blog   # Design | Katherine Yang
+kellri.blogspot.com                                  topic:personal type:personal-blog   # Blogs | Kellri
+khabaronline.ir                                      region:middle-east topic:news type:publication   # 🇮🇷 Iran | خبرگزاری خبرآنلاین - آخرین اخبار ایران
+killitwithfirerpg.blogspot.com                       topic:gaming type:personal-blog   # Blogs | Kill It With Fire!
+killyourdungeonmaster.blogspot.com                   topic:gaming type:personal-blog   # Blogs | kill your dungeon master
+kirkusreviews.com                                    topic:books type:publication   # Books | Kirkus Reviews
+knightattheopera.blogspot.com                        topic:gaming type:personal-blog   # Blogs | A Knight at the Opera
+kommersant.ru                                        language:russian region:russia topic:news type:publication   # 🇷🇺 Russia | Газета "Коммерсантъ". Главное
+ladepeche.fr                                         language:french region:france topic:news type:publication   # 🇫🇷 France | La Dépêche du Midi : actualités et inf
+lairofmegagorgon.blogspot.com                        topic:personal type:personal-blog   # Blogs | AL0 Lair of the Megagorgon
+lapidaryossuary.blogspot.com                         topic:personal type:personal-blog   # Blogs | Lapidary Ossuary
+lapresse.ca                                          region:canada topic:news type:publication   # 🇨🇦 Canada | LaPresse.ca - Actualités
+lastgaspgrimoire.com                                 topic:personal type:personal-blog   # Blogs | Last Gasp
+laughleviathan.blogspot.com                          topic:personal type:personal-blog   # Blogs | Laughing Leviathan
+layoffs.fyi                                          topic:business type:personal-blog   # Career | Layoffs.fyi
+legit.ng                                             region:nigeria topic:news type:publication   # 🇳🇬 Nigeria | Legit.ng
+lenta.ru                                             language:russian region:russia topic:news type:publication   # 🇷🇺 Russia | Lenta.ru : Новости
+liberoquotidiano.it                                  language:italian region:italy topic:news type:publication   # 🇮🇹 Italy | Libero Quotidiano
+licheslibram.blogspot.com                            topic:personal type:personal-blog   # Blogs | Liche's Libram
+lightstalking.com                                    topic:design type:personal-blog   # Photography | Light Stalking
+lireo.com                                            topic:tech-industry type:personal-blog   # Tech | Lireo Designs
+lithyscaphe.blogspot.com                             topic:personal type:personal-blog   # Blogs | Lithyscaphe
+livelifetravel.world                                 topic:travel type:personal-blog   # Travel | Live Life Travel
+lizardmandiaries.blogspot.com                        topic:personal type:personal-blog   # Blogs | The Lizard Man Diaries
+lizmarieblog.com                                     topic:design type:personal-blog   # Interior design | Liz Marie Blog
+lotbieth.blogspot.com                                topic:personal type:personal-blog   # Blogs | Legacy of the Bieth
+loveandoliveoil.com                                  topic:food type:personal-blog   # Food | Love and Olive Oil
+luminescentlich.blogspot.com                         topic:personal type:personal-blog   # Blogs | The Luminescent Lich
+lux.camera                                           topic:gadgets type:personal-blog   # Apple | Lux — iPhone camera apps, camera revie
+lynnandtonic.com                                     topic:design type:personal-blog   # Design | Lynn Fisher
+macchiatomaster.blot.im                              topic:personal type:personal-blog   # Blogs | macchiato master
+machinelearningmastery.com                           topic:ai type:vendor-blog   # type kept as this host already publishes it
+macstories.net                                       topic:gadgets type:personal-blog   # Apple | MacStories
+macworld.com                                         topic:gadgets type:publication   # Apple | Macworld
+madewithreact.com                                    topic:web-development type:personal-blog   # Frontend Development | Made with React
+magenta.tensorflow.org                               topic:ai type:vendor-blog   # Machine Learning | Magenta
+mager.co                                             topic:ai type:personal-blog   # AI | mager.co
+makeupandbeautyblog.com                              topic:lifestyle type:publication   # Beauty | Makeup and Beauty Blog | Makeup Review
+makeuseof.com                                        topic:lifestyle type:publication   # DIY | MakeUseOf
+mango.pdf.zone                                       topic:tech-industry type:personal-blog   # Tech | mango.pdf.zone
+matthiasott.com                                      topic:design type:personal-blog   # Design | Matthias Ott
+maziriansgarden.blogspot.com                         topic:personal type:personal-blog   # Blogs | Mazirian's Garden
+mediapart.fr                                         language:french region:france topic:news type:publication   # 🇫🇷 France | Mediapart
+meduza.io                                            language:russian region:russia topic:news type:publication   # 🇷🇺 Russia | Meduza.io
+mehrnews.com                                         region:middle-east topic:news type:publication   # 🇮🇷 Iran | خبرگزاری مهر | اخبار ایران و جهان | Me
+melancholiesandmirth.blogspot.com                    topic:personal type:personal-blog   # Blogs | Melancholies and Mirth
+methodsetmadness.blogspot.com                        topic:personal type:personal-blog   # Blogs | Methods &amp; Madness
+mexiconewsdaily.com                                  language:spanish region:mexico topic:news type:publication   # 🇲🇽 Mexico | Mexico News Daily
+microsoft.com                                        topic:ai type:vendor-blog   # type kept as this host already publishes it
+migellito.blogspot.com                               topic:personal type:personal-blog   # Blogs | The Grumpy Old Troll
+milannews.it                                         language:italian region:italy topic:news type:publication   # 🇮🇹 Italy | Milan News
+mk.ru                                                language:russian region:russia topic:news type:publication   # 🇷🇺 Russia | Все материалы - Московский Комсомолец
+mobilea11y.com                                       topic:software-engineering type:personal-blog   # iOS Development | Mobile A11y
+mockorangecairn.blogspot.com                         topic:personal type:personal-blog   # Blogs | Mock Orange Cairn
+moneyweb.co.za                                       region:africa topic:news type:publication   # 🇿🇦 South Africa | Moneyweb
+monstermanualsewnfrompants.blogspot.com              topic:gaming type:personal-blog   # Blogs | Monster Manual Sewn From Pants
+monstersandmanuals.blogspot.com                      topic:gaming type:personal-blog   # Blogs | Monsters and Manuals
+monstromanualis.blogspot.com                         topic:personal type:personal-blog   # Blogs | Monstro Manualis
+murderhobo-rehab.blogspot.com                        topic:personal type:personal-blog   # Blogs | Murder Hobo Rehab
+musicbusinessworldwide.com                           topic:music type:personal-blog   # Music | Music Business Worldwide
+myforevernotes.com                                   topic:gadgets type:personal-blog   # Apple | Forever ✱ Notes
+mythlands-erce.blogspot.com                          topic:personal type:personal-blog   # Blogs | Mythlands: The Setting to End All Sett
+necropraxis.com                                      topic:personal type:personal-blog   # Blogs | Necropraxis
+necrotic-gnome-productions.blogspot.com              topic:personal type:personal-blog   # Blogs | Necrotic Gnome
+neilpatel.com                                        topic:business type:personal-blog   # Marketing | Neil Patel
+neradia.blogspot.com                                 topic:gaming type:personal-blog   # Blogs | Neradia: A Fantastic Game Blog
+nerdwerds.blogspot.com                               topic:personal type:personal-blog   # Blogs | nerdwerds
+neuralarchive.blogspot.com                           topic:personal type:personal-blog   # Blogs | Neural Archive
+newinbooks.com                                       topic:books type:personal-blog   # Books | NewInBooks
+news.livedoor.com                                    language:japanese region:japan topic:news type:publication   # 🇯🇵 Japan | ライブドアニュース - 主要トピックス
+newsfeed.zeit.de                                     region:germany topic:news type:publication   # 🇩🇪 Germany | DIE ZEIT | Nachrichten, News, Hintergr
+newsnblogs.com                                       language:urdu region:pakistan topic:news type:publication   # 🇵🇰 Pakistan | News Blog
+newsonjapan.com                                      language:japanese region:japan topic:news type:publication   # 🇯🇵 Japan | News On Japan
+newsweek.pl                                          language:polish region:poland topic:news type:publication   # 🇵🇱 Poland | Newsweek Polska
+noisesanssignal.blogspot.com                         topic:personal type:personal-blog   # Blogs | noise sans signal
+nomadicmatt.com                                      topic:travel type:personal-blog   # Travel | Travel Blog -
+notlaura.com                                         topic:design type:personal-blog   # Design | Lara (Schenck) Karki
+nouvelobs.com                                        language:french region:france topic:news type:publication   # 🇫🇷 France | Le Nouvel Obs
+nv.ua                                                language:ukrainian region:ukraine topic:news type:publication   # 🇺🇦 Ukraine | NV
+oblidisideryptch.blogspot.com                        topic:personal type:personal-blog   # Blogs | The Oblidisideryptch
+offconvex.org                                        topic:ai type:personal-blog   # Machine Learning | Off the convex path
+ohhappyday.com                                       topic:lifestyle type:personal-blog   # DIY | Oh Happy Day!
+ohsheglows.com                                       topic:food type:personal-blog   # Food | Oh She Glows
+okkotlin.com                                         topic:software-engineering type:personal-blog   # Android Development | OkKotlin
+omnycontent.com                                      topic:science type:personal-blog   # Science | Gastropod
+ongoingcampaign.blogspot.com                         topic:personal type:personal-blog   # Blogs | The Ongoing Campaign
+openclaw.ai                                          topic:ai type:personal-blog   # AI | OpenClaw Blog
+originaldungeons-and-dragons.blogspot.com            topic:gaming type:personal-blog   # Blogs | The Ruins of Murkhill™ - OEOEFASRPG™
+ottawacitizen.com                                    region:canada topic:news type:publication   # 🇨🇦 Canada | Ottawa Citizen
+ouest-france.fr                                      language:french region:france topic:news type:publication   # 🇫🇷 France | Ouest France.fr - L'actualité en direc
+owlbearhugs.blogspot.com                             topic:personal type:personal-blog   # Blogs | Owlbear Hugs
+pa.tedcdn.com                                        topic:science type:podcast   # Science | TED Talks Daily
+panorama.it                                          language:italian region:italy topic:news type:publication   # 🇮🇹 Italy | Panorama
+parisstaronline.com                                  language:french region:france topic:news type:publication   # 🇫🇷 France | Paris Star
+parker.micro.blog                                    topic:gadgets type:personal-blog   # Apple | Parker Ortolani
+penny-arcade.com                                     topic:entertainment type:publication   # Funny | Penny Arcade
+peoplethemwithmonsters.blogspot.com                  topic:gaming type:personal-blog   # Blogs | People them with Monsters
+perfect-tennis.com                                   topic:sport type:personal-blog   # Tennis | Perfect Tennis
+perthnow.com.au                                      region:australia topic:news type:publication   # 🇦🇺 Australia | PerthNow
+petapixel.com                                        topic:design type:publication   # Photography | PetaPixel
+philnews.xyz                                         region:philippines topic:news type:publication   # 🇵🇭 Philippines | 
+pitsperilous.blogspot.com                            topic:personal type:personal-blog   # Blogs | Pits Perilous
+planetalgol.blogspot.com                             topic:personal type:personal-blog   # Blogs | PLANET ALGOL
+platformer.news                                      topic:tech-industry type:personal-blog   # Tech | Platformer
+platum.kr                                            topic:tech-industry type:personal-blog   # StartUp | 플래텀
+popit.kr                                             topic:software-engineering type:personal-blog   # Develop | Popit
+pravda.com.ua                                        language:ukrainian region:ukraine topic:news type:publication   # 🇺🇦 Ukraine | Українська правда
+pravdareport.com                                     language:russian region:russia topic:news type:publication   # 🇷🇺 Russia | PravdaReport
+prismaticwasteland.com                               topic:personal type:personal-blog   # Blogs | Prismatic Wasteland
+proandroiddev.com                                    topic:software-engineering type:personal-blog   # Android Development | ProAndroidDev - Medium
+proceedings.mlr.press                                topic:ai type:publication   # Machine Learning | Proceedings of Machine Learning Resear
+prod-qt-images.s3.amazonaws.com                      region:india topic:news type:publication   # 🇮🇳 India | Swarajya
+producthunt.com                                      topic:tech-industry type:publication   # Products & Ideas | Product Hunt — The best new products, 
+prothomalo.com                                       region:asia topic:news type:publication   # 🇧🇩 Bangladesh | প্রথম আলো
+publicobject.com                                     topic:software-engineering type:personal-blog   # Android Development | Public Object
+pytorch.org                                          topic:ai type:publication   # Machine Learning | PyTorch
+ravenousambience.blogspot.com                        topic:personal type:personal-blog   # Blogs | Ravenous Ambience
+react.statuscode.com                                 topic:web-development type:personal-blog   # Frontend Development | React Status
+readwrite.com                                        topic:tech-industry type:publication   # Tech | ReadWrite
+reaganray.com                                        topic:design type:personal-blog   # Design | Reagan Ray
+redbeardsravings.blogspot.com                        topic:personal type:personal-blog   # Blogs | Redbeard's Ravings
+reforma.com                                          language:spanish region:mexico topic:news type:publication   # 🇲🇽 Mexico | Reforma
+rememberdismove.blogspot.com                         topic:personal type:personal-blog   # Blogs | I Don't Remember That Move
+repubblica.it                                        language:italian region:italy topic:news type:publication   # 🇮🇹 Italy | Repubblica.it
+republika.co.id                                      region:asia topic:news type:publication   # 🇮🇩 Indonesia | Republika Online RSS Feed
+retiredadventurer.blogspot.com                       topic:personal type:personal-blog   # Blogs | The Retired Adventurer
+revenant-quill.com                                   topic:personal type:personal-blog   # Blogs | Revenant's Quill
+reverancepavane.blogspot.com                         topic:gaming type:personal-blog   # Blogs | And He Built A Crooked Dungeon
+rg.ru                                                language:russian region:russia topic:news type:publication   # 🇷🇺 Russia | Российская газета
+rmf24.pl                                             language:polish region:poland topic:news type:publication   # 🇵🇱 Poland | Najnowsze wiadomości - RMF24.pl
+robertheaton.com                                     topic:software-engineering type:personal-blog   # Programming | Robert Heaton | Blog
+roll1d12.blogspot.com                                topic:gaming type:personal-blog   # Blogs | The Dungeon Dozen
+roseandkingfisher.blogspot.com                       topic:personal type:personal-blog   # Blogs | Rose &amp; Kingfisher
+rottenpulp.blogspot.com                              topic:personal type:personal-blog   # Blogs | Rotten Pulp
+rss.adnkronos.com                                    language:italian region:italy topic:news type:publication   # 🇮🇹 Italy | Adnkronos - ultimoratop
+rss.asahi.com                                        language:japanese region:japan topic:news type:publication   # 🇯🇵 Japan | 朝日新聞
+rss.dziennik.pl                                      language:polish region:poland topic:news type:publication   # 🇵🇱 Poland | www.dziennik.pl - dziennik.pl
+rss.elconfidencial.com                               language:spanish region:spain topic:news type:publication   # 🇪🇸 Spain | España
+rss.gazetaprawna.pl                                  language:polish region:poland topic:news type:publication   # 🇵🇱 Poland | gazetaprawna.pl
+rss.home.uol.com.br                                  language:portuguese region:latin-america topic:news type:publication   # 🇧🇷 Brazil | UOL - Seu universo online
+rss.lilydjwg.me                                      topic:web-development type:personal-blog   # Frontend Development | 前端外刊评论 - 知乎专栏
+rss.newsru.com                                       language:russian region:russia topic:news type:publication   # 🇷🇺 Russia | NEWSru.com :: Главные новости
+rss.politico.com                                     region:usa topic:news type:publication   # 🇺🇸 United States | Playbook
+ruinsoffallenempires.blogspot.com                    topic:personal type:personal-blog   # Blogs | Fallen Empires
+russia-insider.com                                   language:russian region:russia topic:news type:publication   # 🇷🇺 Russia | Russia Insider Daily Headlines
+saket.me                                             topic:software-engineering type:personal-blog   # Android Development | Saket Narayan
+samwooe.com                                          topic:design type:personal-blog   # Design | Samwoo E
+santicore.blogspot.com                               topic:personal type:personal-blog   # Blogs | Secret Santicore
+saturdaynightsandbox.blogspot.com                    topic:personal type:personal-blog   # Blogs | Saturday Night Sandbox
+save.vs.totalpartykill.ca                            topic:personal type:personal-blog   # Blogs | Save vs. Total Party Kill
+savevsdragon.blogspot.com                            topic:gaming type:personal-blog   # Blogs | Save Vs. Dragon
+segmentfault.com                                     topic:software-engineering type:personal-blog   # Software Engineering | SegmentFault 推荐的文章
+selfportraitasagiant.blogspot.com                    topic:personal type:personal-blog   # Blogs | Self Portrait as a Giant
+sevendeadlydungeons.blogspot.com                     topic:gaming type:personal-blog   # Blogs | The Seven Deadly Dungeons
+sheepandsorcery.blogspot.com                         topic:personal type:personal-blog   # Blogs | Sheep and Sorcery
+shutterbean.com                                      topic:food type:personal-blog   # Food | Shutterbean
+shutteredroom.blogspot.com                           topic:personal type:personal-blog   # Blogs | Shuttered Room
+signsinthewilderness.blogspot.com                    topic:personal type:personal-blog   # Blogs | Signs in the Wilderness
+simplebits.com                                       topic:design type:publication   # Design | SimpleBits®
+skinnytaste.com                                      topic:food type:personal-blog   # Food | Skinnytaste
+slack.design                                         topic:design type:personal-blog   # Design | Slack Design
+slightadjustments.blogspot.com                       topic:personal type:personal-blog   # Blogs | Slight Adjustments
+slimegrapple.blogspot.com                            topic:personal type:personal-blog   # Blogs | I Grapple The Slime
+smbc-comics.com                                      topic:entertainment type:publication   # Funny | Saturday Morning Breakfast Cereal
+sneak.berlin                                         topic:tech-industry type:personal-blog   # Tech | Jeffrey Paul
+soccernews.com                                       topic:sport type:personal-blog   # Football | SoccerNews
+socialpsychology.org                                 topic:health type:personal-blog   # Psychology | Psychology Headlines Around the World
+songexploder.net                                     topic:music type:personal-blog   # Music | Song Exploder
+sorcerersskull.blogspot.com                          topic:personal type:personal-blog   # Blogs | From the Sorcerer's Skull
+space.com                                            topic:science type:publication   # Space | Latest from Space.com
+sportskeeda.com                                      topic:sport type:personal-blog   # Sports | Sportskeeda
+sproutedkitchen.com                                  topic:food type:personal-blog   # Food | Sprouted Kitchen
+steipete.me                                          topic:ai type:personal-blog   # AI | Peter Steinberger
+stephango.com                                        topic:design type:personal-blog   # Design | Steph Ango
+sudouest.fr                                          language:french region:france topic:news type:publication   # 🇫🇷 France | L'essentiel
+sunstar.com.ph                                       region:philippines topic:news type:publication   # 🇵🇭 Philippines | sunstar
+swampofmonsters.blogspot.com                         topic:gaming type:personal-blog   # Blogs | Swamp of Monsters!
+swordplusone.blogspot.com                            topic:gaming type:personal-blog   # Blogs | Sword+1
+swordsandstitchery.blogspot.com                      topic:gaming type:personal-blog   # Blogs | 
+sycarion.com                                         topic:personal type:personal-blog   # Blogs | Sycarion Diversions
+syndication.thedailywtf.com                          topic:entertainment type:publication   # Funny | The Daily WTF
+tabnak.ir                                            region:middle-east topic:news type:publication   # 🇮🇷 Iran | تابناک | TABNAK
+talesfromgurgula.blogspot.com                        topic:personal type:personal-blog   # Blogs | Tales from Gurgula
+tarsostheorem.blogspot.com                           topic:personal type:personal-blog   # Blogs | Tarsos Theorem
+tass.com                                             language:russian region:russia topic:news type:publication   # 🇷🇺 Russia | TASS
+techcentral.co.za                                    region:africa topic:news type:publication   # 🇿🇦 South Africa | TechCentral
+techcrunch.com                                       topic:tech-industry type:publication   # type kept as this host already publishes it
+techneedle.com                                       topic:tech-industry type:publication   # Tech | techNeedle 테크니들
+tenfootpole.org                                      topic:gaming type:personal-blog   # Blogs | tenfootpole.org
+tenfootpolemic.blogspot.com                          topic:gaming type:personal-blog   # Blogs | Ten Foot Polemic
+tenfootprecis.blogspot.com                           topic:personal type:personal-blog   # Blogs | Ten Foot Précis
+terriblesorcery.blogspot.com                         topic:personal type:personal-blog   # Blogs | My Terrible Sorcery Is Without Equal I
+textgolem.blogspot.com                               topic:personal type:personal-blog   # Blogs | textgolem
+the-one-true-game-odnd.blogspot.com                  topic:gaming type:personal-blog   # Blogs | Crimhthan The Great&#39;s OD&amp;D Blo
+the42.ie                                             region:ireland topic:news type:publication   # 🇮🇪 Ireland | The 42
+theage.com.au                                        region:australia topic:news type:publication   # 🇦🇺 Australia | The Age - Latest News
+thealexandrian.net                                   topic:personal type:personal-blog   # Blogs | The Alexandrian
+theamateurdungeoneers.blogspot.com                   topic:gaming type:personal-blog   # Blogs | The Amateur Dungeoneers
+thebeautylookbook.com                                topic:lifestyle type:personal-blog   # Beauty | The Beauty Look Book
+thecircularuins.blogspot.com                         topic:personal type:personal-blog   # Blogs | The circular ruins
+thecrazyprogrammer.com                               topic:software-engineering type:personal-blog   # Programming | Programming Archives - The Crazy Progr
+thedailystar.net                                     region:asia topic:news type:publication   # 🇧🇩 Bangladesh | The Daily Star - Journalism without fe
+theevildm.com                                        topic:gaming type:personal-blog   # Blogs | The Evil Dungeon Master
+thegradient.pub                                      topic:ai type:personal-blog   # Machine Learning | The Gradient
+theinspiredroom.net                                  topic:design type:personal-blog   # Interior design | The Inspired Room
+thekitchn.com                                        topic:food type:publication   # Food | Kitchn | Inspiring cooks, nourishing h
+themansegaming.blogspot.com                          topic:gaming type:personal-blog   # Blogs | The Manse
+themetalearth.blogspot.com                           topic:personal type:personal-blog   # Blogs | Metal Earth
+then-what-happens.blogspot.com                       topic:personal type:personal-blog   # Blogs | ....and then what happens?
+thenextweb.com                                       topic:tech-industry type:publication   # Tech | The Next Web
+theonion.com                                         topic:entertainment type:publication   # Funny | The Onion
+theprovince.com                                      region:canada topic:news type:publication   # 🇨🇦 Canada | The Province
+theroar.com.au                                       topic:sport type:publication   # Cricket | Cricket – The Roar
+thesouthafrican.com                                  region:africa topic:news type:publication   # 🇿🇦 South Africa | The South African
+thethingswedoforxp.blogspot.com                      topic:personal type:personal-blog   # Blogs | The Things We Do for XP
+thetotalityofygg.blogspot.com                        topic:personal type:personal-blog   # Blogs | The Totality of Ygg
+thetruthaboutcars.com                                topic:transport type:personal-blog   # Cars | TheTruthAboutCars
+threewitchesrpg.blogspot.com                         topic:gaming type:personal-blog   # Blogs | Three Witches
+tinyprojects.dev                                     topic:tech-industry type:personal-blog   # Tech | Tiny Projects
+tkim.co                                              topic:tech-industry type:personal-blog   # Insight | 10x Lessons
+todistantlands.blogspot.com                          topic:personal type:personal-blog   # Blogs | To Distant Lands
+tomboftedankhamen.blogspot.com                       topic:gaming type:personal-blog   # Blogs | Tomb of Tedankhamen
+tonite.abante.com.ph                                 region:philippines topic:news type:publication   # 🇵🇭 Philippines | Tonite – Abante
+topgear.com.ph                                       region:philippines topic:news type:publication   # 🇵🇭 Philippines | Topgear.com.ph
+totmv2.blogspot.com                                  topic:gaming type:personal-blog   # Blogs | Tomb Of The Wandering Millennial
+toucharcade.com                                      topic:tech-industry type:publication   # RSS Feeds | TouchArcade
+towardsdatascience.com                               topic:ai type:publication   # Machine Learning | Towards Data Science
+towerofthearchmage.blogspot.com                      topic:personal type:personal-blog   # Blogs | Tower of the Archmage
+traaa.sh                                             topic:personal type:personal-blog   # Blogs | traaash
+traipse.hexarcana.com                                topic:personal type:personal-blog   # Blogs | TRAIPSE
+trendir.com                                          topic:design type:personal-blog   # Interior design | Trendir
+tribuneonlineng.com                                  region:nigeria topic:news type:publication   # 🇳🇬 Nigeria | Tribune Online
+tribunnews.com                                       region:asia topic:news type:publication   # 🇮🇩 Indonesia | Tribunnews.com
+triplesuns.blogspot.com                              topic:personal type:personal-blog   # Blogs | Triple Suns
+trueheartblackraven.blogspot.com                     topic:personal type:personal-blog   # Blogs | Here Lurks the True Heart of the Black
+tsn.ua                                               language:ukrainian region:ukraine topic:news type:publication   # 🇺🇦 Ukraine | Новини на tsn.ua
+tumblr.mapsbynik.com                                 topic:tech-industry type:personal-blog   # Tech | mapsbynik
+twogoblinsinatrenchcoat.blogspot.com                 topic:personal type:personal-blog   # Blogs | Two Goblins in a Trenchcoat
+unbox.ph                                             region:philippines topic:news type:publication   # 🇵🇭 Philippines | UNBOX PH
+undergroundadv.blogspot.com                          topic:personal type:personal-blog   # Blogs | Underground Adventures
+unite.ai                                             topic:ai type:personal-blog   # Machine Learning | Unite.AI
+urdupoint.com                                        language:urdu region:pakistan topic:news type:publication   # 🇵🇰 Pakistan | UrduPoint.com All Urdu News
+usabilitygeek.com                                    topic:design type:publication   # UI / UX | Usability Geek
+usefulmac.com                                        topic:gadgets type:personal-blog   # Apple | Useful Mac
+usv.com                                              topic:tech-industry type:personal-blog   # Tech | Union Square Ventures Writing
+uxdesign.cc                                          topic:design type:personal-blog   # Design | UX Collective - Medium
+uxmovement.com                                       topic:design type:personal-blog   # UI / UX | UX Movement
+uxplanet.org                                         topic:design type:personal-blog   # Design | UX Planet - Medium
+valhead.com                                          topic:business type:personal-blog   # Career | Val Head
+valleyofbluesnails.blogspot.com                      topic:personal type:personal-blog   # Blogs | Valley of Blue Snails
+vanguardia.com.mx                                    language:spanish region:mexico topic:news type:publication   # 🇲🇽 Mexico | Vanguardia
+vanishingtower.blogspot.com                          topic:personal type:personal-blog   # Blogs | The Vanishing Tower
+variety.com                                          topic:entertainment type:publication   # Movies | Variety
+verbum-ex-nihilo.blogspot.com                        topic:personal type:personal-blog   # Blogs | Verbum Ex Nihilo
+waxy.org                                             topic:tech-industry type:personal-blog   # Tech | Waxy.org
+wayspell.blogspot.com                                topic:gaming type:personal-blog   # Blogs | Wayspell
+web3isgoinggreat.com                                 topic:tech-industry type:personal-blog   # Tech | Web3 is Going Just Great
+whatwouldconando.blogspot.com                        topic:personal type:personal-blog   # Blogs | What Would Conan Do?
+whowhatwear.com                                      topic:lifestyle type:personal-blog   # Fashion | Latest from Who What Wear
+wirtualnemedia.pl                                    language:polish region:poland topic:news type:publication   # 🇵🇱 Poland | wirtualnemedia
+wizardshaw.blogspot.com                              topic:gaming type:personal-blog   # Blogs | wizardshaw
+wizzzargh.blogspot.com                               topic:personal type:personal-blog   # Blogs | DMiurgy
+wonderhowto.com                                      topic:lifestyle type:personal-blog   # DIY | WonderHowTo
+wondrousimaginings.blogspot.com                      topic:personal type:personal-blog   # Blogs | Joethelawyer's Wondrous Imaginings
+worldoferadu.blogspot.com                            topic:personal type:personal-blog   # Blogs | world of Eradu
+worldofortix.blogspot.com                            topic:personal type:personal-blog   # Blogs | World of Ortix
+wyrdspeak.blogspot.com                               topic:personal type:personal-blog   # Blogs | Wyrdspeak
+xizallian-s-dungeons-and-dragons.blogspot.com        topic:gaming type:personal-blog   # Blogs | Xizallian's Place
+xkcd.com                                             topic:entertainment type:publication   # Funny | xkcd.com
+yatzer.com                                           topic:design type:personal-blog   # Interior design | Yatzer | Live Beautifully. Explore End
+yjc.ir                                               region:middle-east topic:news type:publication   # 🇮🇷 Iran | باشگاه خبرنگاران جوان | آخرین اخبار ای
+younghouselove.com                                   topic:design type:personal-blog   # Interior design | Young House Love
+https://www.youtube.com/feeds/videos.xml?user=ArchitecturalDigest topic:design type:publication   # Architecture | Architectural Digest
+https://www.youtube.com/feeds/videos.xml?user=livingbigtinyhouse topic:design type:publication   # Architecture | Architectural Digest
+zacsweers.dev                                        topic:software-engineering type:personal-blog   # Android Development | Zac Sweers
+zarah.dev                                            topic:software-engineering type:personal-blog   # Android Development | Zarah Dominguez
+zenopusarchives.blogspot.com                         topic:personal type:personal-blog   # Blogs | ZENOPUS ARCHIVES
+zsmb.co                                              topic:software-engineering type:personal-blog   # Android Development | zsmb.co

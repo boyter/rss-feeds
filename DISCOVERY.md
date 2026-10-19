@@ -42,11 +42,43 @@ The 70% live rate from the earlier 30-URL pilot was optimistic: it sampled only
 URLs that already looked like feed URLs. Over a whole curated list it is 37–40%,
 and the lists are a decade old, so that is the honest number to plan on.
 
-Still open: **~650 verified feeds sit in `data/DISCOVERY_UNTAGGED.md`** because
-nothing decides their tags. They are not merged and not dropped. Most are on
-`feeds.feedburner.com` and `medium.com`, where the path names a different
-publisher every time, so no site-level rule is true and each feed needs its own
-line.
+Still open: **one feed** sits in `data/DISCOVERY_UNTAGGED.md` —
+`labs.cosmicbytez.ca`, whose title says nothing about what it publishes. A
+guessed topic is pinned forever, so it stays queued rather than joined.
+
+### Working the queue (same day)
+
+The 650 queued feeds became 647 merged feeds and one held-back row: **2,454 →
+4,109 feeds, 3,001 hosts** for the session. What it took:
+
+- 576 drafted host rules, generated from the queue's curated category plus the
+  feed's own title, then read and corrected: 40 RPG blogs misfiled as
+  `topic:personal` moved to `topic:gaming`, 12 personal-blog guesses that are
+  plainly publications corrected, and 6 aggregator keys (`youtube.com`,
+  `medium.com`, the feedburners) widened to URL rules — a `youtube.com` host
+  rule would have replaced the existing one and retyped ~30 feeds already in the
+  list.
+- Two rules in `discover.py`'s tag cascade were wrong in ways only the queue
+  exposed: a **host rule's topics** were refused everywhere, which left 240
+  feeds untagged whose only evidence was a human's own site rule, and **URL
+  rules were never looked up at all**, which is why the last 116 rows stayed
+  queued after their rules had been written.
+- `decide.py` now refuses a rule that would retype feeds already in
+  `feeds.json`, or that drops a tag the previous rule for the same key carried,
+  unless `--allow-type-change` says the change is the decision. Batch three
+  drafted `techcrunch.com ... type:personal-blog` and `feeds.npr.org ...
+  type:personal-blog`; applied, those would have silently retyped three
+  publications and NPR's podcast feeds. Nothing in `overrides.jsonl` was
+  "replaced", so the old replacement report caught none of it.
+- The pipeline caught one of the additions: `feeds.feedburner.com/TechCrunch`
+  is a name-squat already recorded in `spam.jsonl`, and the drafted rule
+  re-admitted it. `triage.py` removed it again and the rule was deleted.
+
+A feed that is a *sibling* of one already on an aggregator host gets no topic
+from its sibling, and a feed on an aggregator gets no topic from the host rule:
+youtube.com, the feedburners, reddit.com and medium.com each name a different
+publisher per path. That is `AGGREGATOR_HOSTS`, and it is pinned by tests on
+both doors.
 
 51 hand host rules were written for the batch (`discovery-decisions.txt`,
 `discovery-decisions-2.txt`), and `TAGS.md` gained `region:italy`, `mexico`, 

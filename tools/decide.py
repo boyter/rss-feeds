@@ -78,10 +78,56 @@ def check(key, tags, path_tags, voc):
     return problems
 
 
+def host_of(url):
+    from urllib.parse import urlparse
+    return urlparse(url).netloc.lower().removeprefix("www.")
+
+
+def overwrite_problems(key, tags, feeds, existing_rule):
+    """Would this rule silently undo something the product already says?
+
+    A host rule may settle `type:` - merge_tags allows it, because a site usually
+    publishes one kind of source. That permission is the hazard when the rule is
+    new: batch three of the discovery pass drafted `techcrunch.com ... type:
+personal-blog` from a list heading, and it silently retyped feeds that were
+already filed as `type:publication`; `feeds.npr.org ... type:personal-blog` did
+the same to NPR's podcast feeds. Nothing was "replaced" in overrides.jsonl, so
+the replacement report caught none of it.
+
+    A rule that drops a tag the previous rule for the same key carried is the
+    other half: decide.py replaces a rule wholesale, and one batch quietly
+    deleted github.blog's topic:security.
+    """
+    problems = []
+    types = [t for t in tags if t.startswith("type:")]
+    if "/" not in key and types:
+        seen = {}
+        for f in feeds:
+            if host_of(f["url"]) != key.lower().removeprefix("www."):
+                continue
+            for t in f.get("tags", []):
+                if t.startswith("type:"):
+                    seen[t] = seen.get(t, 0) + 1
+        if seen and types[0] not in seen:
+            worst = max(seen.items(), key=lambda kv: kv[1])
+            problems.append(
+                f"would retype {sum(seen.values())} feed(s) already in feeds.json "
+                f"from {worst[0]} to {types[0]} - pass --allow-type-change if that "
+                f"is the decision")
+    if existing_rule:
+        lost = [t for t in existing_rule.get("tags", []) if t not in tags]
+        if lost:
+            problems.append(f"would drop {lost} from the existing rule for this key "
+                            f"- include them, or the change is a deletion")
+    return problems
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("source", help="file of decisions, or - for stdin")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--allow-type-change", action="store_true",
+                    help="let a host rule retype feeds already in feeds.json")
     args = ap.parse_args()
 
     voc = vocab_mod.load()
@@ -114,6 +160,20 @@ def main():
             if line.strip():
                 existing.append(json.loads(line))
     by_key = {r["key"].lower(): r for r in existing}
+
+    feeds = json.load(open(paths.root("feeds.json"), encoding="utf-8"))
+    for key, tags, path_tags in parsed:
+        problems = overwrite_problems(key, tags, feeds, by_key.get(key.lower()))
+        if problems and not args.allow_type_change:
+            errors.extend(f"[{key}]: {p}" for p in problems)
+        elif problems:
+            print(f"  note: [{key}] {'; '.join(problems)}")
+
+    if errors:
+        print(f"REJECTED, nothing written ({len(errors)} bad line(s)):", file=sys.stderr)
+        for e in errors:
+            print("  " + e, file=sys.stderr)
+        return 1
 
     replaced = 0
     for key, tags, path_tags in parsed:

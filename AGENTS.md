@@ -92,7 +92,12 @@ Do not reintroduce catch-alls.
 
 Write them with `decide.py`, which refuses a tag outside TAGS.md, a missing
 `topic:`, two `type:`s, or a URL key with no scheme (such a key matches nothing,
-silently, forever), and writes nothing unless the whole batch is valid:
+silently, forever), and writes nothing unless the whole batch is valid. It also
+refuses a rule that would **retype feeds already in `feeds.json`**, or that drops
+a tag the previous rule for the same key carried, unless `--allow-type-change`
+says that change is the decision: a new host rule needs no previous rule to
+overwrite something, and a drafted `feeds.npr.org ... type:personal-blog` would
+have retyped NPR's podcast feeds with nothing logged as replaced.
 
 ```text
 bellingcat.com        topic:journalism topic:security type:publication
