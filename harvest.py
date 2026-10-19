@@ -89,6 +89,27 @@ BOMS = ((b"\xff\xfe\x00\x00", "utf-32-le"), (b"\x00\x00\xfe\xff", "utf-32-be"),
         (b"\xff\xfe", "utf-16-le"), (b"\xfe\xff", "utf-16-be"))
 
 
+def utf16_without_mark(raw):
+    """Name a UTF-16 encoding if the body looks like one and carries no mark.
+
+    An ASCII feed written in UTF-16-LE is *also* valid UTF-8, because NUL is a
+    legal UTF-8 byte. It therefore decodes "cleanly" into "<?\x00m\x00l\x00...",
+    nothing reports an error, and the harvester records a live feed as
+    not-a-feed. No validity check can catch that; only the shape of the bytes can.
+    """
+    head = raw[:200]
+    pairs = len(head) // 2
+    if pairs < 8:
+        return ""
+    n_le = sum(1 for i in range(0, len(head) - 1, 2) if head[i + 1] == 0)
+    n_be = sum(1 for i in range(0, len(head) - 1, 2) if head[i] == 0)
+    if n_le >= pairs * 0.7:
+        return "utf-16-le"
+    if n_be >= pairs * 0.7:
+        return "utf-16-be"
+    return ""
+
+
 def decode_text(raw, content_type):
     """Decode a body without silently rewriting bytes we cannot read.
 
@@ -109,13 +130,29 @@ def decode_text(raw, content_type):
     # guess and any absent header: the prolog of a UTF-16 feed is unreadable to a
     # byte regex, and decoding it as anything else fills the text with NULs and a
     # live feed stops parsing.
+    lead = raw.lstrip(b" \t\r\n")
     for bom, enc in BOMS:
-        if raw.startswith(bom):
+        if lead.startswith(bom):
             try:
-                return raw.decode(enc), f"decoded as {enc} (byte order mark)"
+                return lead.decode(enc), f"decoded as {enc} (byte order mark)"
             except UnicodeDecodeError:
                 break
-    # utf-8 is tried first because it is self-validating: a feed that misdeclares
+    guess = utf16_without_mark(raw)
+    if guess:
+        try:
+            return raw.decode(guess), f"decoded as {guess} (no byte order mark)"
+        except UnicodeDecodeError as e:
+            # A fixed-width body cut between the two bytes of one character. If
+            # this is not handled the body falls through to utf-8, which accepts
+            # every byte of UTF-16 and returns NULs interleaved with the text - a
+            # live feed recorded as not-a-feed with nothing reported as wrong.
+            if e.reason in ("truncated data", "unexpected end of data") and e.start >= len(raw) - 4:
+                why = ("tail cut by the byte cap" if len(raw) >= MAX_BYTES - 8
+                       else "dropped an odd trailing byte")
+                return raw[:e.start].decode(guess, "ignore"), \
+                       f"decoded as {guess} (no byte order mark), {why}"
+            pass
+    # utf-8 is tried before the declared charset because it is self-validating: a feed that misdeclares
     # a permissive charset still decodes cleanly, and a genuinely Latin-1 feed
     # falls through to what it declared.
     order = ["utf-8"] + ([cs] if cs and cs.lower().replace("-", "") != "utf8" else [])
@@ -129,7 +166,13 @@ def decode_text(raw, content_type):
             # multi-byte character. That is our truncation, not the feed's fault,
             # so the partial tail is dropped and the text kept. That is how a live
             # Cyrillic podcast came to be flagged undecodable.
-            if e.reason == "unexpected end of data" and e.start >= len(raw) - 4:
+            # A cut by the byte cap. "unexpected end of data" is a split UTF-8
+            # sequence; "truncated data" is what a fixed-width encoding reports
+            # when the cap lands between the two bytes of one character. Only
+            # credible when the body actually reached the cap - otherwise a short
+            # body that merely ends on a high byte gets blamed on us.
+            if (e.reason in ("unexpected end of data", "truncated data")
+                    and e.start >= len(raw) - 4 and len(raw) >= MAX_BYTES - 8):
                 return raw[:e.start].decode(enc, "ignore"), f"decoded as {enc}, tail cut by the byte cap"
     # The bad bytes are in the middle of the body. Choose the smaller lie. A
     # handful of corrupt bytes in an otherwise UTF-8 feed is not a licence to
@@ -137,7 +180,12 @@ def decode_text(raw, content_type):
     # Cyrillic character to paper over one byte. Replace the few, and count them.
     text = raw.decode("utf-8", "replace")
     bad = text.count("\ufffd")
-    if bad <= max(2, len(text) // 500):
+    high = sum(1 for b in raw if b >= 0x80)
+    # A few corrupt bytes among many that decode fine is damage inside a UTF-8
+    # body. But when most of the high bytes are themselves invalid the body is not
+    # UTF-8 at all: b"Title: caf\xe9" is one high byte and one invalid byte, and
+    # calling that UTF-8 rewrites é to U+FFFD and stores it as the feed's title.
+    if bad and bad * 2 <= high:
         return text, f"utf-8 with {bad} invalid byte(s) replaced"
     note = "decoded as cp1252" + (f", though it declared {cs}" if cs else ", charset undeclared")
     return raw.decode("cp1252", "replace"), note
