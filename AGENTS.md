@@ -22,6 +22,8 @@ add.py          propose new feeds, verify them by fetching, merge them in
 candidates.jsonl  proposed additions: {"url": ..., "tags": [...]}
 probe_results.jsonl  what add.py fetched (generated; folded into harvest.jsonl)
 BLOCKED_CANDIDATES.md  additions we could not verify, and dead ends not to retry
+test_harvest.py  the byte layer: encodings, Content-Encoding, the byte cap
+test_pipeline.py verdict and tag precedence, title choice, feeds.json consistency
 ```
 
 ## The pipeline
@@ -176,6 +178,28 @@ those, so the rule is the thing to narrow. A rule that keeps losing should be
 cut, not defended: the company-subdomain rule matched `dev.` (dev.to is a
 community, `dev.<user>.github.io` is a person) and matched personal blogs at
 `tech.*` that survived only because an override happened to exist for them.
+
+## Tests
+
+```bash
+python3 -m unittest          # or: python3 -m unittest discover -p "test_*.py"
+```
+
+Stdlib only, no build, no network — the tests feed `read_body` and `decode_text`
+synthetic bytes rather than visiting a URL. `test_pipeline.py` also reads the
+working files and asserts `feeds.json` is exactly what `merge_tags` says it is,
+so a precedence change cannot silently disagree with the file that shipped.
+
+**A fix to the decoder, the verdict order, or the tag merge comes with a test
+that fails before the fix.** Six review passes found roughly nineteen defects in
+this code and none of them stayed found, because nothing pinned the old ones.
+Each test names the bug it exists for in a comment; a test whose reason is not
+written down gets deleted by the next person who finds it inconvenient.
+
+Two rules live in one place so they can be tested at all: `vocab.merge_tags`
+(tag precedence, called by both `rebuild.py` and `classify.py`) and
+`rebuild.pick_title`. They were duplicated before, and two copies of a precedence
+rule is how the review queue starts lying about what is still undecided.
 
 ## Network etiquette
 
