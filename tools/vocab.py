@@ -37,16 +37,20 @@ def norm_key(url):
     """
     p = urlparse(url)
     host = p.netloc.lower().removeprefix("www.")
-    # Parameter names are folded to lowercase, values are not. YouTube channel ids
-    # are case-sensitive, so folding the value could fuse two channels into one
-    # feed. Percent-encoding is left alone: the key normalizes spelling, not
-    # encoding, and unquoting could fuse values a server keeps apart.
+    # Only the axes the protocol says are insensitive get folded: the host, and
+    # the order of the parameters. Path case and parameter-name case are left
+    # alone, because a server can distinguish them - folding query values once
+    # threatened to fuse two YouTube channels whose channel ids differ only in
+    # case, and the path is no different in kind. Folding too little shows up as a
+    # visible duplicate line; folding too much deletes a feed. Percent-encoding is
+    # left alone for the same reason: unquoting can fuse values the server keeps
+    # apart.
     def norm_param(kv):
         name, sep, value = kv.partition("=")
-        return name.lower() + (sep + value if sep else "")
+        return name + (sep + value if sep else "")
     q = "&".join(sorted(norm_param(kv) for kv in p.query.split("&")
                         if kv and not kv.split("=", 1)[0].lower().startswith(TRACKING_PARAMS)))
-    return host + p.path.lower().rstrip("/") + (("?" + q) if q else "")
+    return host + p.path.rstrip("/") + (("?" + q) if q else "")
 
 
 def load(path=paths.root("TAGS.md")):
@@ -90,13 +94,18 @@ def decided_facets(override):
     return {t.split(":", 1)[0] for t in override if t.split(":", 1)[0] in ("topic", "type")}
 
 
-def merge_tags(keep, override, suggested, vocab, scope="url"):
+def merge_tags(keep, override, suggested, vocab, scope="host"):
     """Resolve the three tag sources into what gets written, and what to report.
 
     keep       tags already in feeds.json
     override   the human decision from overrides.jsonl, empty if there is none
     suggested  what the rules propose
-    scope      "url" if the override names this feed, "host" if it covers a site
+    scope      "url" if the override names this feed, "host" if it covers a site.
+               The default is the less destructive reading: a caller that does not
+               know (a draft row written before overrideScope existed, a row
+               hand-edited since) must not silently delete a topic a human chose.
+               Guessing "host" can only keep one tag too many, and that is reported
+               as a type conflict; guessing "url" erases one in silence.
 
     A hand decision is the whole answer for the facets it speaks to. The rules
     read item headlines, and that is not a decision: one headline mentioning AI

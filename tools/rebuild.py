@@ -98,7 +98,7 @@ def main():
         override = d.get("final") or []
         tags, tag_problems = vocab_mod.merge_tags(
             feed.get("tags") or [], override, d.get("suggested") or [], vocab,
-            d.get("overrideScope") or "url")
+            d.get("overrideScope") or "host")
         problems.extend((url, p) for p in tag_problems)
         if not [x for x in tags if x.startswith("topic:")] or \
            not [x for x in tags if x.startswith("type:")]:

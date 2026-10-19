@@ -114,6 +114,9 @@ and `classify.py`:
   stripped `topic:health` from the NPR Global Health section feed.
 - With no override, a tag already in `feeds.json` outranks a rule's guess, and a
   type conflict names which source won.
+- When a caller does not know what kind of rule fired, the scope defaults to the
+  **less destructive** reading (`host`). Guessing `url` deletes a human's topic in
+  silence; guessing `host` can only keep one too many, and that is reported.
 
 `classify.py` records which kind of override fired (`overrideScope`) in
 `data/draft.jsonl`, because `rebuild.py` is the writer and must apply the same
@@ -157,11 +160,15 @@ comments on `encoding_shape`.
   cannot decode with the standard library. And **regressions**: a feed that
   answered as a feed before and does not now is flagged, never removed, because
   servers 404 for one request and come back.
-- Duplicates are collapsed on `vocab.norm_key`: scheme, `www.` and trailing slash
-  ignored, **query string kept** (41 feeds are identified by it — every YouTube
-  channel feed is the same path with a different `channel_id`), analytics
-  parameters cut. One copy of that key, because `add.py`, `rebuild.py` and
-  `removals.py` must agree about what "the same feed" means.
+- Duplicates are collapsed on `vocab.norm_key`, which folds only what the
+  protocols say is insensitive: the host, the scheme, a trailing slash, and the
+  order of query parameters. Path case, parameter-name case and query **values**
+  are kept — a case-sensitive server can serve two feeds at paths differing only in
+  case, and two YouTube channel ids once differed only in case. Folding too much
+  deletes a feed; folding too little shows a duplicate line. The query string is
+  kept (41 feeds are identified by it), analytics parameters cut. One copy of that
+  key, because `add.py`, `rebuild.py` and `removals.py` must agree about what "the
+  same feed" means.
 
 When in doubt, flag rather than remove: a false removal is data loss, a false keep
 is one dead line.

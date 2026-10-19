@@ -92,7 +92,7 @@ class TagPrecedence(unittest.TestCase):
                       "type:personal-blog", "region:uk", "language:fr"}
 
     def merge(self, keep, override, suggested):
-        return vocab_mod.merge_tags(keep, override, suggested, self.vocab)[0]
+        return vocab_mod.merge_tags(keep, override, suggested, self.vocab, "url")[0]
 
     def merge_host(self, keep, override, suggested):
         return vocab_mod.merge_tags(keep, override, suggested, self.vocab, "host")[0]
@@ -138,6 +138,14 @@ class TagPrecedence(unittest.TestCase):
         self.assertTrue(any(p.startswith("override replaced") and "type:vendor-blog" in p
                             for p in problems), problems)
 
+    def test_the_writer_never_guesses_the_destructive_scope(self):
+        # rebuild.py is the program that ships feeds.json. If it ever defaults a
+        # missing overrideScope to "url", a host rule erases human topics again and
+        # nothing in the data shows it.
+        src = open(os.path.join(paths.ROOT, "tools", "rebuild.py"), encoding="utf-8").read()
+        self.assertNotIn('overrideScope") or "url"', src,
+                         "a missing scope must default to the less destructive host reading")
+
     def test_a_host_rule_may_not_erase_a_tag_meant_for_one_feed(self):
         # The npr.org host rule stripped topic:health from the Global Health
         # section feed, and a youtube.com rule stripped topic:ai from a channel
@@ -159,6 +167,15 @@ class TagPrecedence(unittest.TestCase):
         got = self.merge(["topic:health", "type:publication"],
                          ["topic:news", "type:publication"], [])
         self.assertNotIn("topic:health", got)
+
+    def test_an_unknown_scope_defaults_to_the_less_destructive_reading(self):
+        # A draft row written before overrideScope existed, or hand-edited since,
+        # reaches the merge without a scope. Guessing "url" there deletes a topic a
+        # human chose, silently; guessing "host" can only keep one too many, and a
+        # kept-too-many shows up as a reported type conflict.
+        got = vocab_mod.merge_tags(["topic:health", "type:publication"],
+                                   ["topic:news", "type:publication"], [], self.vocab)[0]
+        self.assertIn("topic:health", got)
 
     def test_a_malformed_source_is_named_not_absorbed(self):
         # A hand-written override with two types would otherwise have one picked
@@ -272,6 +289,14 @@ class SameFeed(unittest.TestCase):
         self.assertEqual(vocab_mod.norm_key("https://e.com/rss?utm_medium=email&x=1"),
                          vocab_mod.norm_key("https://e.com/rss?x=1"))
 
+    def test_a_path_is_not_folded_to_lowercase(self):
+        # The host is case-insensitive by protocol; the path is not, and a
+        # case-sensitive server can serve two different feeds at paths that differ
+        # only in case. Folding too much deletes a feed; folding too little shows a
+        # duplicate line.
+        self.assertNotEqual(vocab_mod.norm_key("https://e.org/feeds/Science.xml"),
+                            vocab_mod.norm_key("https://e.org/feeds/science.xml"))
+
     def test_only_one_copy_of_the_rule_exists(self):
         src = "".join(open(os.path.join(paths.ROOT, "tools", f), encoding="utf-8").read()
                       for f in ("add.py", "rebuild.py", "removals.py"))
@@ -336,7 +361,7 @@ class ProductIsConsistent(unittest.TestCase):
                 continue
             tags, _ = vocab_mod.merge_tags(feed.get("tags") or [], d.get("final") or [],
                                            d.get("suggested") or [], self.vocab,
-                                           d.get("overrideScope") or "url")
+                                           d.get("overrideScope") or "host")
             if tags != sorted(feed["tags"]):
                 wrong.append(url)
         self.assertEqual(wrong, [], f"{len(wrong)} feeds disagree with merge_tags")

@@ -335,7 +335,7 @@ def main():
         # review queue is full of feeds that are already tagged. The precedence
         # lives in one place, vocab.merge_tags, because two copies of it drift.
         effective, _ = vocab_mod.merge_tags(old, final or [], suggested, VOCAB,
-                                            scope if final is not None else "url")
+                                            scope if final is not None else "host")
         topics = [t for t in effective if t.startswith("topic:")]
         types = [t for t in effective if t.startswith("type:")]
         needs = []
