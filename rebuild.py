@@ -87,18 +87,17 @@ def main():
         keep = [t for t in feed.get("tags") or [] if t in vocab]
         suggested = [t for t in (d.get("suggested") or []) if t in vocab]
         if override:
-            # Same rule as below: tags already in feeds.json are kept because
-            # they are decisions, but a topic/type sitting on a hand-decided feed
-            # without being in the decision is rule output from an earlier pass,
-            # not a human. Region and language are kept either way.
-            keep = [t for t in keep if t.startswith(("region:", "language:"))]
-            # A hand decision is the whole answer for topic: and type:. The rules
-            # read item headlines, and one headline mentioning AI was enough to
-            # put topic:ai on 273 hand-decided feeds; a re-harvest then moved the
-            # tags again because the headlines changed. Only the structural
-            # facets a human is unlikely to spell out per feed - region and
-            # language - may still be added by a rule.
-            suggested = [t for t in suggested if t.startswith(("region:", "language:"))]
+            # A hand decision is the whole answer for the facets it speaks to. The
+            # rules read item headlines, and one headline mentioning AI was enough
+            # to put topic:ai on 273 hand-decided feeds; a re-harvest then moved
+            # the tags again because the headlines changed. But the exclusion is
+            # per facet: an override that only settles type: (reddit.com says
+            # "aggregator" and leaves the topics to pathTags) must not strip the
+            # topics off a feed that matches no pathTag.
+            decided = {t.split(":")[0] for t in override
+                       if t.split(":")[0] in ("topic", "type")}
+            keep = [t for t in keep if t.split(":")[0] not in decided]
+            suggested = [t for t in suggested if t.split(":")[0] not in decided]
         tags = vocab_mod.normalize(
             sorted(set(keep) | set(t for t in override if t in vocab) | set(suggested)))
         # TAGS.md: exactly one type:. Unioning sources can produce two - a feed
@@ -134,8 +133,12 @@ def main():
         rec = {"url": url, "tags": sorted(tags)}
         # A title already in feeds.json was harvested once and then read by a
         # human going through the list. One timed-out fetch must not erase it: a
-        # re-harvest lost 14 titles this way, every one to a timeout or a 403.
-        title = harvest.get(url, {}).get("title") or feed.get("title") or ""
+        # re-harvest lost 14 titles this way, every one to a timeout or a 403. A
+        # fresh title wins otherwise, but not one carrying replacement characters:
+        # a mis-decoded fetch must not overwrite a title that was read clean.
+        fresh = harvest.get(url, {}).get("title") or ""
+        old = feed.get("title") or ""
+        title = fresh if fresh and "\ufffd" not in fresh else (old or fresh)
         if title:
             rec["title"] = title
         seen[key] = url

@@ -71,6 +71,19 @@ def classify(rec, feed, spam_rules=()):
             # superseded or moved feed as much as a content farm.
             return "remove", f"hand:{reason}"
 
+    if rec.get("regressed"):
+        # It answered as a feed when we last looked and does not now. Servers 404
+        # and 500 for a single request and come back: a YouTube channel feed did
+        # that twice while curl fetched a valid feed seconds later, and the
+        # verdict was about to be "remove". A false removal is data loss; a false
+        # keep is one dead line. A human decides these.
+        #
+        # This sits above the keyword patterns on purpose. A hand entry in
+        # spam.jsonl is a human decision and outranks it; a vocabulary hit is not,
+        # and letting it fire first would remove a formerly-live feed on a word
+        # while its own status says "this used to work".
+        return "flag", f"regressed:{status or 'no-response'}"
+
     for name, words in SPAM_PATTERNS:
         if not words:
             continue
@@ -86,13 +99,6 @@ def classify(rec, feed, spam_rules=()):
         # We could not decode the body (brotli, no stdlib support). That is our
         # limitation, not the feed's: a reader's client handles it fine.
         return "flag", f"undecodable:{rec['undecodable']}"
-    if rec.get("regressed"):
-        # It answered as a feed when we last looked and does not now. Servers 404
-        # and 500 for a single request and come back: a YouTube channel feed did
-        # that twice while curl fetched a valid feed seconds later, and the
-        # verdict was about to be "remove". A false removal is data loss; a false
-        # keep is one dead line. A human decides these.
-        return "flag", f"regressed:{status or 'no-response'}"
     if status in BLOCKED:
         return "flag", f"blocked:{status}"
     if status in GONE:
