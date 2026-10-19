@@ -12,6 +12,7 @@ Run:  python3 -m unittest discover -s tests -p "test_*.py"
 import json
 import os
 import sys
+import tempfile
 import unittest
 
 # The tools live in tools/; the tests sit beside the product, not in the
@@ -23,6 +24,7 @@ import decide
 import rebuild
 import removals
 import triage
+import add
 import vocab as vocab_mod
 
 
@@ -463,3 +465,47 @@ class TestRemovalsRecordSurvivesAnEmptyWindow(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestAMergeNeedsTheFetchForThatExactUrl(unittest.TestCase):
+    """The evidence must be for the URL we ship, not a near-equivalent one.
+
+    Pinned because norm_key is the key for "the same feed" and it folds the
+    scheme: a feed probed at http://feeds.bmj.com/bmjj/podcasts answers with a
+    real feed there, and says nothing at all about whether https:// does. The
+    dedupe uses norm_key and the gate deliberately does not - an equivalent URL
+    is the same feed, but it is not the same observation.
+    """
+
+    def merge(self, cands, probed, feeds=()):
+        with tempfile.TemporaryDirectory() as d:
+            cpath, rpath, fpath = (os.path.join(d, n) for n in
+                                   ("c.jsonl", "r.jsonl", "feeds.json"))
+            for path, rows in ((cpath, cands), (rpath, probed)):
+                with open(path, "w", encoding="utf-8") as fh:
+                    for r in rows:
+                        fh.write(json.dumps(r) + "\n")
+            open(fpath, "w").write(json.dumps(list(feeds)))
+            saved = (add.RESULTS, add.paths.root)
+            add.RESULTS = rpath
+            add.paths.root = lambda n: fpath if n == "feeds.json" else os.path.join(d, n)
+            try:
+                rc = add.cmd_merge(type("A", (), {"candidates": cpath, "apply": True})())
+                out = json.load(open(fpath, encoding="utf-8"))
+            finally:
+                add.RESULTS, add.paths.root = saved
+        return rc, [f["url"] for f in out]
+
+    def test_a_scheme_change_is_a_new_claim_needing_a_new_fetch(self):
+        probed = [{"url": "http://feeds.bmj.com/bmjj/podcasts", "isFeed": True,
+                   "status": 200, "title": "BMJ talk medicine"}]
+        _, urls = self.merge([{"url": "https://feeds.bmj.com/bmjj/podcasts",
+                               "tags": ["topic:medicine", "type:podcast"]}], probed)
+        self.assertEqual(urls, [])
+
+    def test_the_url_that_was_fetched_merges(self):
+        probed = [{"url": "http://feeds.bmj.com/bmjj/podcasts", "isFeed": True,
+                   "status": 200, "title": "BMJ talk medicine"}]
+        _, urls = self.merge([{"url": "http://feeds.bmj.com/bmjj/podcasts",
+                               "tags": ["topic:medicine", "type:podcast"]}], probed)
+        self.assertEqual(urls, ["http://feeds.bmj.com/bmjj/podcasts"])

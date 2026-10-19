@@ -2738,3 +2738,9 @@
 {"key": "https://www.rhyswynne.co.uk/feed/", "tags": ["topic:gaming", "type:personal-blog"]}
 {"key": "https://www.ruanyifeng.com/blog/atom.xml", "tags": ["language:chinese", "topic:software-engineering", "type:personal-blog"]}
 {"key": "https://boyter.org/index.xml", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "blogs.bmj.com", "tags": ["topic:medicine", "type:publication"]}
+{"key": "breakingdefense.com", "tags": ["topic:military", "type:publication"]}
+{"key": "https://feeds.bmj.com/bmj/recent", "tags": ["topic:medicine", "type:publication"]}
+{"key": "https://feeds.bmj.com/bmj/podcasts", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "https://feeds.bmj.com/bmjj/podcasts", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "https://blogs.bmj.com/bmj/category/us-health-care/feed/", "tags": ["region:usa", "topic:medicine", "type:publication"]}

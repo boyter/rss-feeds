@@ -332,3 +332,43 @@ evidence quoted in `REMOVED.md`: `quicktrendnews.wordpress.com` (the feed's own
 title is its domain name, its description is "The news above control", and its
 item headlines are rewritten junk) and `www.headlinesoftoday.com` (`/feed`
 answers 404 with `{"error":"not_found","path":"/feed"}`).
+
+## The oracle channel: ask a feed index about a host we already carry
+
+`discover.py oracle` queries feedsearch.dev (`GET /api/v1/search?url=<host>`,
+no key, no signup) for sites we already publish, and writes what it answers as
+**leads**. Answers are cached in `data/oracle.jsonl`, so a re-run does not
+re-ask, and `skip_crawl=true` by default: asking the index to crawl means a
+third party fetching a stranger's site on our behalf.
+
+Measured, first batch — 5 sites:
+
+| site | named | live |
+|---|---|---|
+| bmj.com | 14 | 13 |
+| breakingdefense.com | 7 | 3 |
+| xkcd.com | 2 | 2 |
+| www.schneier.com | **385** | **0** |
+
+The index invents feeds. All 385 schneier.com leads were
+`/blog/archives/2025/01/post.html/feed` — `/feed` appended to every page it
+crawled — and none served anything. `FEED_UNDER_A_PAGE` now drops a feed path
+hanging off an HTML page: 381 of those 410 claims. Deliberately html/htm only:
+WordPress serves real feeds at `/index.php/feed/`, and cutting `.php` would have
+deleted a live pattern to stop a dead one. Both cases pinned by tests.
+
+Measured, second batch — a random sample of **40 of our 2,373 single-feed
+hosts**: 26 of 40 have feeds we do not carry; 403 claims, 395 after filters;
+**331 of 395 live (84%)**, 314 new to the list.
+
+But those 314 sit on **16 hosts**, and one of them — `khabaronline.ir` — is 257
+of them. The channel is a power law: 9 hosts gave one feed each, one gave 257.
+Scaled naively over 2,373 hosts that is tens of thousands of lines, most of them
+section feeds of a handful of publishers. So this channel needs a per-host cap
+before it runs wide, and the cap is an editorial decision about what the list is
+for, not a bug to fix.
+
+What it is already good for, un-capped: the thin topics. This pass took
+`topic:medicine` from 3 to 15 (The BMJ's section and podcast feeds, which
+advertise themselves nowhere our harvester can read — the root `bmj.com/feed`
+403s us) and `topic:military` to 16.

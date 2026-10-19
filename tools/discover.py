@@ -37,6 +37,7 @@ import json
 import os
 import re
 import sys
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from urllib.parse import urlparse
@@ -58,6 +59,14 @@ TAGGED = paths.data("candidates.tagged.jsonl")
 SIBLINGS = paths.data("candidates.siblings.jsonl")
 LEADS = paths.data("candidates.leads.jsonl")
 PAGES = paths.data("candidates.pages.jsonl")
+ORACLE = paths.data("candidates.oracle.jsonl")
+ORACLE_CACHE = paths.data("oracle.jsonl")
+
+# feedsearch.dev keeps "the location and metadata of all crawled feeds" and
+# answers a GET with no key, no signup and no rate-limit dance. It is a per-site
+# oracle, not a keyword index: ask it about a host and it names that host's
+# feeds, including ones that advertise themselves nowhere we can read.
+ORACLE_URL = "https://origin.feedsearch.dev/api/v1/search"
 
 # A URL that cannot be a feed. Not a judgement about the site — about whether
 # this particular URL can ever answer with RSS. raw.githubusercontent.com is the
@@ -71,6 +80,15 @@ NON_FEED_HOSTS = re.compile(
 NON_FEED_PATH = re.compile(
     r"\.(opml|png|jpe?g|gif|svg|ico|css|js|pdf|zip|tar|gz|txt|json\.md|"
     r"md|html?|php|aspx?|jsp)(\?|$)", re.I)
+# A feed path that hangs off an HTML page: /blog/archives/2025/01/post.html/feed.
+# A feed index named 385 of these for schneier.com and every one of them 404s or
+# 403s - the index is appending /feed to every page it crawled. Measured 0/385,
+# which is why this is a rule and not a hunch: a real feed is never a child of a
+# page. NON_FEED_PATH cannot see it, because that only checks the last segment.
+# Deliberately html/htm only. WordPress serves real feeds at /index.php/feed/, so
+# a script name in the path is not evidence of anything, and cutting .php would
+# delete a live pattern to stop a dead one.
+FEED_UNDER_A_PAGE = re.compile(r"/[^/]*\.html?/", re.I)
 # A URL with no path is a homepage: it is a lead, not a feed. `paths` turns it
 # into the handful of locations a feed is usually at on that engine.
 HOMEPAGE_PATH = re.compile(r"^/?$")
@@ -232,6 +250,8 @@ def is_plausible_feed(url):
         return False, "host"
     if NON_FEED_PATH.search(p.path):
         return False, "path"
+    if FEED_UNDER_A_PAGE.search(p.path):
+        return False, "feed under a page"
     return True, ""
 
 
@@ -818,6 +838,128 @@ def cmd_pages(args):
     return 0
 
 
+def oracle_query(site, skip_crawl=True):
+    """Ask feedsearch.dev which feeds a site has. Returns (feeds, error).
+
+    skip_crawl defaults to True: the saved index answers the question we ask, and
+    asking it to crawl means a third party fetching a stranger's site on our
+    behalf, which is not our crawl to order.
+
+    The shared headers advertise gzip, so the index answers compressed and urllib
+    does not undo that - gzipped bytes are not JSON, which is the same trap as the
+    feed bodies, where a compressed answer used to look like an empty one.
+    """
+    q = urllib.parse.urlencode({"url": site, "info": "true", "favicon": "false",
+                                "skip_crawl": "true" if skip_crawl else "false"})
+    req = urllib.request.Request(ORACLE_URL + "?" + q, headers=harvest.HEADERS)
+    try:
+        with urllib.request.urlopen(req, timeout=40) as r:
+            raw = r.read(4_000_000)
+            ce = r.headers.get("Content-Encoding", "")
+        text = harvest.decode(raw, ce)
+        if text.startswith("[undecodable"):
+            return [], text
+        payload = json.loads(text)
+    except Exception as e:
+        return [], f"{type(e).__name__}: {e}"
+    if isinstance(payload, dict) and payload.get("error"):
+        return [], payload.get("message") or payload["error"]
+    rows = payload if isinstance(payload, list) else (payload.get("feeds") or [])
+    out = []
+    for x in rows:
+        if isinstance(x, dict) and x.get("url"):
+            out.append({"url": x["url"], "title": (x.get("title") or "")[:120]})
+    return out, ""
+
+
+def cmd_oracle(args):
+    """Ask a feed index what feeds a known site has, and write them as leads.
+
+    This is the repair channel: 3,273 hosts and 2,388 of them contribute exactly
+    one feed, and a site's section, category and archive feeds advertise
+    themselves in ways our harvester cannot see (JS-walled pages, a WAF that
+    reads the TLS handshake). The index is a *claim about* a feed, never a feed:
+    every line written here still has to be fetched by add.py probe before it can
+    reach feeds.json, and the title the index reports is kept as a hint, not as
+    the title, because the harvest is what reads a body.
+
+    Answers are cached in data/oracle.jsonl, so a re-run does not re-ask - both
+    politeness and the only way to tell "the index changed" from "we changed".
+    """
+    cache = {r.get("site"): r for r in read_jsonl(ORACLE_CACHE)}
+    rows, stats = [], collections.Counter()
+    with open(ORACLE_CACHE, "a", encoding="utf-8") as cachefh:
+        for site in oracle_sites(args):
+            if site in cache and not args.restart:
+                found, err = cache[site].get("feeds", []), cache[site].get("error", "")
+                stats["cached"] += 1
+            else:
+                found, err = oracle_query(site, skip_crawl=not args.crawl)
+                stats["queried"] += 1
+                cachefh.write(json.dumps({"site": site, "feeds": found,
+                                          "error": err}, ensure_ascii=False) + "\n")
+                cachefh.flush()
+            if err:
+                stats["oracle error"] += 1
+                print(f"  FAIL  {site[:44]:44} {err[:44]}")
+                continue
+            if not found:
+                stats["index knows none"] += 1
+                continue
+            for f in found:
+                lead = clean_url(f["url"])
+                ok, why = is_plausible_feed(lead)
+                if not ok:
+                    stats["dropped:" + why] += 1
+                    continue
+                ok, why = worth_carrying(lead)
+                if not ok:
+                    stats["dropped:" + why] += 1
+                    continue
+                rows.append({"url": lead, "tags": [], "source": "feedsearch",
+                             "category": "", "hintTopics": [], "hintType": None,
+                             "via": "oracle", "oracleTitle": f.get("title", ""),
+                             "aboutSite": site})
+            stats["feeds named"] += len(found)
+    # Deduplicate on the one key the project agrees about.
+    seen, out = set(), []
+    for r in rows:
+        k = vocab_mod.norm_key(r["url"])
+        if k in seen:
+            stats["dropped:duplicate in batch"] += 1
+            continue
+        seen.add(k)
+        out.append(r)
+    with open(ORACLE, "w", encoding="utf-8") as fh:
+        for r in out:
+            fh.write(json.dumps(r, ensure_ascii=False) + "\n")
+    print(f"{len(out)} feeds named by the index -> {ORACLE}")
+    for k, v in sorted(stats.items()):
+        print(f"  {k:30} {v}")
+    return 0
+
+
+def oracle_sites(args):
+    """The sites to ask: a named file, or our own hosts, biggest gap first."""
+    if args.sites:
+        for line in open(args.sites, encoding="utf-8"):
+            line = line.split("#")[0].strip()
+            if line.startswith("{"):
+                line = json.loads(line).get("url", "")
+            if line:
+                yield line
+        return
+    feeds = json.load(open(paths.root("feeds.json"), encoding="utf-8"))
+    by_host = collections.defaultdict(list)
+    for f in feeds:
+        by_host[host_of(f["url"])].append(f["url"])
+    # Single-feed hosts are where a site's other feeds are hiding.
+    for host in sorted(by_host, key=lambda h: (len(by_host[h]), h)):
+        if len(by_host[host]) > args.max_per_host:
+            continue
+        yield f"{host}"
+
+
 def main():
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -834,6 +976,14 @@ def main():
     sub.add_parser("leads")
     pg = sub.add_parser("pages")
     pg.add_argument("sites", help="file of site URLs to ask for their feeds")
+    o = sub.add_parser("oracle")
+    o.add_argument("sites", nargs="?",
+                   help="file of sites to ask; default is our own single-feed hosts")
+    o.add_argument("--max-per-host", type=int, default=1,
+                   help="with no sites file, ask hosts carrying at most N feeds")
+    o.add_argument("--crawl", action="store_true",
+                   help="let the index crawl the site instead of using its saved answer")
+    o.add_argument("--restart", action="store_true", help="ignore the cached answers")
     args = ap.parse_args()
     if args.cmd == "fetch" and args.sources:
         # A path given on the command line is the user's path, not ours (see
@@ -843,7 +993,8 @@ def main():
     return {"fetch": cmd_fetch, "extract": cmd_extract,
             "paths": cmd_paths, "tag": cmd_tag,
             "siblings": cmd_siblings, "leads": cmd_leads,
-            "pages": cmd_pages}[args.cmd](args)
+            "pages": cmd_pages,
+            "oracle": cmd_oracle}[args.cmd](args)
 
 
 if __name__ == "__main__":

@@ -244,6 +244,35 @@ if __name__ == "__main__":
     unittest.main()
 
 
+class TestOracleLeads(unittest.TestCase):
+    """A feed index's answer is a claim, and some of its claims are invented.
+
+    Pinned on the measured number: feedsearch.dev named 385 feeds for
+    schneier.com, all of them `/blog/archives/.../post.html/feed`, and 0 of 385
+    served anything. The same index named 14 for bmj.com and 13 were live. So the
+    oracle stays in the pipeline only because plausibility and probe stand in
+    front of it - never because the index said so.
+    """
+
+    def test_a_feed_hanging_off_an_article_page_is_not_a_lead(self):
+        ok, why = discover.is_plausible_feed(
+            "https://www.schneier.com/blog/archives/2025/01/shredos.html/feed")
+        self.assertFalse(ok)
+        self.assertEqual(why, "feed under a page")
+
+    def test_wordpresss_front_controller_feed_survives_that_rule(self):
+        # Cutting .php as well would have deleted a live pattern to stop a dead
+        # one: /index.php/feed/ is how WordPress without pretty permalinks
+        # publishes.
+        ok, _ = discover.is_plausible_feed("https://example.com/index.php/feed/")
+        self.assertTrue(ok)
+
+    def test_a_real_category_feed_of_a_journal_survives(self):
+        ok, _ = discover.is_plausible_feed(
+            "https://blogs.bmj.com/bmj/category/medical-ethics-2/feed/")
+        self.assertTrue(ok)
+
+
 class TestNamedSites(unittest.TestCase):
     """`pages` turns sites a human names into probe targets.
 
