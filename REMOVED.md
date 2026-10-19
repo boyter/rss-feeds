@@ -1,4 +1,4 @@
-# Removed between HEAD and WORKING
+# Removed between 39399a2 and WORKING
 
 17 of 2443 feeds left the list. The previous file is in git history; restore any of these by re-adding the line. Reasons come from harvest.jsonl, not from a guess.
 

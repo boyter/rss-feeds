@@ -60,8 +60,9 @@ def check(key, tags, path_tags, voc):
         bad = vocab_mod.validate(extra, voc)
         if bad:
             problems.append(f"pathTags[{needle}] not in TAGS.md: {bad}")
-    if "/" not in key and "://" in key:
-        problems.append("key looks like a URL but has no slash?")
+    if "://" in key and "/" not in key.split("://", 1)[1].rstrip("/"):
+        problems.append("URL rule with no path matches one exact URL; a host "
+                        "rule (no slash) is usually what is meant")
     if "/" not in key and key.lower().startswith("www."):
         # Not an error - classify.py normalizes it - but the bare host is the
         # form that matches every spelling of the site.

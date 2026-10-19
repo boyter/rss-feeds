@@ -133,9 +133,13 @@ HOST_NAME_TOPICS = [
     (r"^www\.w3\.org$", ["topic:web-development"]),
 ]
 
-# Sub-domains that only a company runs. "blog." is deliberately absent: half the
-# personal blogs here live on blog.something.com.
-COMPANY_SUBDOMAINS = re.compile(r"^(engineering|tech|techblog|dev|developers|product|research|infra|platform)\.")
+# Sub-domains that only a company runs. "blog." and "dev." are deliberately
+# absent: blog.something.com is half personal blogs, and "dev." matches dev.to
+# (a community) and dev.<user>.github.io (a person). Verified against the list:
+# tech.davis-hansson.com and tech.marksblogg.com are personal blogs that happen
+# to match; they survive because rebuild.py resolves the resulting type conflict
+# in favour of the hand override, and both hosts have one.
+COMPANY_SUBDOMAINS = re.compile(r"^(engineering|tech|techblog|developers|product|research|infra|platform)\.")
 VENDOR_HINTS = re.compile(r"/(blog|news|engineering|resources|insights|company)/", re.I)
 PODCAST_HINTS = re.compile(r"(podcast|\brss\b.*episode)", re.I)
 

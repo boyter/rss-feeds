@@ -92,6 +92,7 @@ def read_body(resp, cap=MAX_BYTES):
     """
     enc = (resp.headers.get("content-encoding") or "").lower()
     out = bytearray()
+    raw = bytearray()
     name, dec = None, None
     note = ""
     while len(out) < cap:
@@ -106,6 +107,7 @@ def read_body(resp, cap=MAX_BYTES):
             break
         if not part:
             break
+        raw += part
         if name is None:
             name, dec = decompressor_for(enc, part)
         if dec is None:
@@ -118,6 +120,14 @@ def read_body(resp, cap=MAX_BYTES):
                 break
         if dec is not None and dec.eof:
             break
+    if dec is not None and not out and raw and raw[:2] not in (b"\x1f\x8b", b"\x78\x9c", b"\x78\x01", b"\x78\xda"):
+        # The header claimed gzip/deflate and the body disagreed. Some servers
+        # and CDNs send an identity body under a gzip Content-Encoding. Trusting
+        # the header here returns an empty body and records a live feed as
+        # not-a-feed, so fall back to the bytes we were actually given. If the
+        # magic bytes do say gzip, the stream is merely broken and we leave the
+        # empty result plus the note alone - that is our truncation, not a lie.
+        return bytes(raw), "identity", (note + " " + "header lied about encoding").strip()
     return bytes(out), name or (enc or "identity"), note
 
 

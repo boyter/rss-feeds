@@ -90,11 +90,21 @@ def main():
         # type:personal-blog from a rule. Pick by who said it, and say so.
         types = [t for t in tags if t.startswith("type:")]
         if len(types) > 1:
-            chosen = next((sorted([t for t in src if t.startswith("type:")])[0]
-                           for src in (override, keep, suggested)
-                           if any(t.startswith("type:") for t in src)), types[0])
+            src_name, src = next(((n, s) for n, s in (("override", override),
+                                                      ("tag in feeds.json", keep),
+                                                      ("rule", suggested))
+                                  if any(t.startswith("type:") for t in s)),
+                                 ("nothing", []))
+            src_types = sorted(t for t in src if t.startswith("type:"))
+            chosen = src_types[0] if src_types else sorted(types)[0]
             tags = [t for t in tags if not t.startswith("type:") or t == chosen]
-            problems.append((url, f"conflicting type: {types} -> kept {chosen}"))
+            if len(src_types) > 1:
+                # The winner itself is malformed - a hand-written override with
+                # two types. Picking one alphabetically without saying so would
+                # quietly discard a human's decision, so name the source.
+                problems.append((url, f"BAD SOURCE: the {src_name} carries {len(src_types)} types {src_types}, kept {chosen}"))
+            else:
+                problems.append((url, f"conflicting type: {types} -> kept {chosen} from {src_name}"))
         bad = [t for t in feed.get("tags") or [] if t not in vocab]
         if bad:
             problems.append((url, f"dropped tags not in TAGS.md: {bad}"))
@@ -120,7 +130,18 @@ def main():
         print(f"   {v:5d} {k}")
     if problems:
         conflicts = [p for p in problems if p[1].startswith("conflicting")]
-        missing = [p for p in problems if not p[1].startswith("conflicting")]
+        bad_source = [p for p in problems if p[1].startswith("BAD SOURCE")]
+        stripped = [p for p in problems if p[1].startswith("dropped tags")]
+        missing = [p for p in problems
+                   if not p[1].startswith(("conflicting", "BAD SOURCE", "dropped tags"))]
+        if bad_source:
+            print(f"MALFORMED SOURCES ({len(bad_source)}) - fix the rule, not the output:")
+            for url, p in bad_source[:10]:
+                print(f"   {url} {p}")
+        if stripped:
+            print(f"tags outside TAGS.md stripped ({len(stripped)}):")
+            for url, p in stripped[:10]:
+                print(f"   {url} {p}")
         if conflicts:
             print(f"type conflicts resolved ({len(conflicts)}), by source priority:")
             for url, p in conflicts[:10]:
