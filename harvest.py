@@ -403,10 +403,13 @@ def main():
     write_lock = threading.Lock()
     # Which URLs were feeds before this run. Captured before fetching, so a
     # record written mid-run cannot overwrite the evidence of what came before.
-    prior = {u: bool(r.get("isFeed")) for u, r in done.items()}
+    # A record already marked regressed counts as "was a feed": the flag has to
+    # survive the next retry, or the second run forgets the feed ever worked and
+    # the guard that keeps it off the removal list disappears.
+    prior = {u: bool(r.get("isFeed") or r.get("regressed")) for u, r in done.items()}
     if args.prior:
         for u, r in load_done(args.prior).items():
-            prior[u] = bool(r.get("isFeed"))
+            prior[u] = bool(r.get("isFeed") or r.get("regressed")) or prior.get(u, False)
     lanes = build_lanes(todo, LANES)
     start = time.time()
     with open(OUTFILE, "a", encoding="utf-8") as out:
