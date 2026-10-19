@@ -84,6 +84,11 @@ def declared_charset(content_type, raw_head):
     return m.group(1).decode("ascii") if m else ""
 
 
+# Longest first: the UTF-16-LE mark is a prefix of the UTF-32-LE one.
+BOMS = ((b"\xff\xfe\x00\x00", "utf-32-le"), (b"\x00\x00\xfe\xff", "utf-32-be"),
+        (b"\xff\xfe", "utf-16-le"), (b"\xfe\xff", "utf-16-be"))
+
+
 def decode_text(raw, content_type):
     """Decode a body without silently rewriting bytes we cannot read.
 
@@ -100,6 +105,16 @@ def decode_text(raw, content_type):
     undecodable. That is how a live Cyrillic podcast got flagged dead.
     """
     cs = declared_charset(content_type, raw)
+    # A byte order mark is the body stating its own encoding, which beats any
+    # guess and any absent header: the prolog of a UTF-16 feed is unreadable to a
+    # byte regex, and decoding it as anything else fills the text with NULs and a
+    # live feed stops parsing.
+    for bom, enc in BOMS:
+        if raw.startswith(bom):
+            try:
+                return raw.decode(enc), f"decoded as {enc} (byte order mark)"
+            except UnicodeDecodeError:
+                break
     # utf-8 is tried first because it is self-validating: a feed that misdeclares
     # a permissive charset still decodes cleanly, and a genuinely Latin-1 feed
     # falls through to what it declared.
@@ -116,10 +131,14 @@ def decode_text(raw, content_type):
             # Cyrillic podcast came to be flagged undecodable.
             if e.reason == "unexpected end of data" and e.start >= len(raw) - 4:
                 return raw[:e.start].decode(enc, "ignore"), f"decoded as {enc}, tail cut by the byte cap"
-    # The bad bytes are in the middle of the body: this feed is not UTF-8 whatever
-    # it declared. cp1252 accepts every byte, so it maps them instead of dropping
-    # them - which is also why a blanket errors="ignore" is wrong: it silently
-    # deletes an accented character and reports a truncation that never happened.
+    # The bad bytes are in the middle of the body. Choose the smaller lie. A
+    # handful of corrupt bytes in an otherwise UTF-8 feed is not a licence to
+    # decode the whole thing as cp1252: that garbles every legitimate accented and
+    # Cyrillic character to paper over one byte. Replace the few, and count them.
+    text = raw.decode("utf-8", "replace")
+    bad = text.count("\ufffd")
+    if bad <= max(2, len(text) // 500):
+        return text, f"utf-8 with {bad} invalid byte(s) replaced"
     note = "decoded as cp1252" + (f", though it declared {cs}" if cs else ", charset undeclared")
     return raw.decode("cp1252", "replace"), note
 
@@ -264,6 +283,11 @@ def probe(url):
                 body, cs_note = decode_text(raw, rec.get("contentType", ""))
                 if cs_note:
                     rec["charset"] = cs_note
+                    if "tail cut" in cs_note:
+                        # The head was cut mid-character by the byte cap: the
+                        # title and item count below are of a shortened body, and
+                        # the record has to say so where truncation is read.
+                        rec["truncated"] = (rec.get("truncated", "") + " " + cs_note).strip()
                 if "\ufffd" in body[:200] and enc not in ("identity", ""):
                     body = f"[undecodable {enc} body]"
     except urllib.error.HTTPError as e:

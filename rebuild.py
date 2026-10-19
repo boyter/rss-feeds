@@ -138,7 +138,14 @@ def main():
         # a mis-decoded fetch must not overwrite a title that was read clean.
         fresh = harvest.get(url, {}).get("title") or ""
         old = feed.get("title") or ""
-        title = fresh if fresh and "\ufffd" not in fresh else (old or fresh)
+        h = harvest.get(url, {})
+        # A fresh title wins unless it came back damaged. Replacement characters
+        # are one way; the other is subtler - a body the byte cap cut mid-character
+        # yields a clean, replacement-free but SHORT title, which would overwrite a
+        # complete one a human read.
+        cut = "tail cut" in (h.get("charset", "") + h.get("truncated", ""))
+        title = (fresh if fresh and "\ufffd" not in fresh and not (cut and old)
+                 else (old or fresh))
         if title:
             rec["title"] = title
         seen[key] = url
