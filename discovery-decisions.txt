@@ -1,0 +1,32 @@
+# Host rules for the discovery batch. One line per host, so every feed on the
+# site is decided at once. Only hosts whose identity the feed's own title states;
+# medium.com and feeds.feedburner.com are deliberately absent - a proxy host's
+# path names a different publisher each time, so no site-level type is true.
+aitrends.com            topic:ai topic:tech-industry type:publication
+aiweirdness.com         topic:ai type:personal-blog
+andrewchen.co           topic:tech-industry topic:business type:personal-blog
+andrewchen.com          topic:tech-industry topic:business type:personal-blog
+arxiv.org               topic:science type:institution
+bigthink.com            topic:education topic:science type:publication
+bleedingcool.com        topic:entertainment type:publication
+blog.samaltman.com      topic:tech-industry type:personal-blog
+commoncog.com           topic:education type:publication
+davidstutz.de           topic:ai type:personal-blog
+design-milk.com         topic:design type:publication
+designboom.com          topic:design type:publication
+elle.com                topic:lifestyle type:publication
+fashionista.com         topic:lifestyle type:publication
+guykawasaki.com         topic:tech-industry topic:business type:personal-blog
+infoblox.com            topic:security topic:networking type:vendor-blog
+infostealers.com        topic:security type:personal-blog
+intelinsights.substack.com  topic:security topic:military type:newsletter
+jwegan.com              topic:business type:personal-blog
+mlinproduction.com      topic:ai topic:infrastructure type:personal-blog
+nlp.fast.ai             topic:ai type:institution
+popsugar.com            topic:lifestyle type:publication
+refinery29.com          topic:lifestyle type:publication
+rss.sciam.com           topic:science type:publication
+sciencealert.com        topic:science type:publication
+seqrite.com             topic:security type:vendor-blog
+socialmediaexaminer.com topic:business type:publication
+uxmatters.com           topic:design topic:software-engineering type:publication

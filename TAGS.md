@@ -85,9 +85,10 @@ used as a type instead.
 `region:world`, `region:africa`, `region:asia`, `region:australia`,
 `region:canada`, `region:caribbean`, `region:china`, `region:europe`,
 `region:france`, `region:germany`, `region:india`, `region:ireland`,
-`region:japan`, `region:latin-america`, `region:middle-east`,
-`region:new-zealand`, `region:nigeria`, `region:russia`, `region:south-korea`,
-`region:spain`, `region:uk`, `region:usa`
+`region:italy`, `region:japan`, `region:latin-america`, `region:middle-east`,
+`region:mexico`, `region:new-zealand`, `region:nigeria`, `region:pakistan`,
+`region:philippines`, `region:poland`, `region:russia`, `region:south-korea`,
+`region:spain`, `region:uk`, `region:ukraine`, `region:usa`
 
 Sub-national, only for feeds that are actually local:
 `region:australia-act`, `region:australia-adelaide`, `region:australia-brisbane`,
@@ -100,9 +101,10 @@ Sub-national, only for feeds that are actually local:
 ## language: (only when not English, or for a translated feed)
 
 `language:arabic`, `language:chinese`, `language:czech`, `language:english`,
-`language:dutch`, `language:finnish`,
-`language:french`, `language:german`, `language:hindi`, `language:italian`, `language:japanese`,
-`language:korean`, `language:norwegian`, `language:portuguese`, `language:russian`, `language:spanish`
+`language:dutch`, `language:finnish`, `language:french`, `language:german`,
+`language:hindi`, `language:italian`, `language:japanese`, `language:korean`,
+`language:norwegian`, `language:polish`, `language:portuguese`, `language:russian`,
+`language:spanish`, `language:ukrainian`, `language:urdu`
 
 `language:english` is normally omitted. The one exception is a feed that is a
 translation of a non-English site, where naming the language is what tells the

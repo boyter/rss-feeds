@@ -18,6 +18,8 @@ tools/         harvest.py  fetch every feed; records title/items/liveness
                decide.py   the only writer of overrides.jsonl, with validation
                rebuild.py  write feeds.json (dry run by default)
                add.py      propose new feeds, verify by fetching, merge them in
+               discover.py turn other people's curated lists into candidates
+                           (it never fetches a feed and never writes feeds.json)
                removals.py regenerate REMOVED.md from two git revisions
                vocab.py    TAGS.md, tag precedence, the same-feed key
                paths.py    every path in the project, resolved from the repo root
@@ -116,7 +118,10 @@ and `classify.py`:
   the feed had — and the displaced tags are reported.
 - A **host** rule generalizes over a whole site, so it may settle only `type:`.
   It may not erase a topic a human gave to one feed: the `npr.org` host rule once
-  stripped `topic:health` from the NPR Global Health section feed.
+  stripped `topic:health` from the NPR Global Health section feed. Read the other
+  way, the same limit stops a host rule from *giving* a topic it has no business
+  deciding: `youtube.com` carries `topic:science`, and letting host-rule topics
+  tag new feeds made Bon Appétit and Bloomberg Originals science channels.
 - With no override, a tag already in `feeds.json` outranks a rule's guess, and a
   type conflict names which source won.
 - When a caller does not know what kind of rule fired, the scope defaults to the
@@ -223,6 +228,14 @@ the titles `probe` prints before merging: the title is how you catch a wrong URL
 account renamed to a gaming spam phrase). A candidate already in the file becomes
 a line in `overrides.jsonl` instead, which is how a known feed finally gets its
 tags. Sites that 403 the harvester are parked in `BLOCKED_CANDIDATES.md`.
+
+Where candidates come from, and what each channel actually yielded, is in
+`DISCOVERY.md`. `tools/discover.py` writes the candidates file; its `tag` step
+also writes two reports that must be read before a merge:
+`data/DISCOVERY_REVIEW.md` (tags taken from a list heading, a host rule or a
+sibling feed rather than from the feed itself) and `data/DISCOVERY_UNTAGGED.md`
+(answered with a real feed, but nothing decides its tags — the fix is a host rule
+written with `decide.py`).
 
 Aim at the gaps:
 

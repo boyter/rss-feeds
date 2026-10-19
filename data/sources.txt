@@ -1,0 +1,15 @@
+# Curated lists that name feeds. One URL per line.
+# Fetched by discover.py fetch; nothing here is a feed itself.
+https://raw.githubusercontent.com/DongjunLee/awesome-feeds/HEAD/README.md
+https://raw.githubusercontent.com/funkaoshi/osr-opml/HEAD/osr.opml
+https://raw.githubusercontent.com/funkaoshi/osr-opml/HEAD/README.md
+https://raw.githubusercontent.com/ivan-ha/awesome-rss-feeds/HEAD/README.md
+https://raw.githubusercontent.com/jonchretien/awesome-feeds/HEAD/feeds.opml
+https://raw.githubusercontent.com/jonchretien/awesome-feeds/HEAD/README.md
+https://raw.githubusercontent.com/joshuawalcher/rssfeeds/HEAD/README.md
+https://raw.githubusercontent.com/muchdogesec/awesome_threat_intel_blogs/main/README.md
+https://raw.githubusercontent.com/pedrolopesme/tech-feeds/HEAD/README.md
+https://raw.githubusercontent.com/plenaryapp/awesome-rss-feeds/master/README.md
+https://raw.githubusercontent.com/shgysk8zer0/awesome-rss/master/README.md
+https://raw.githubusercontent.com/tuan3w/awesome-tech-rss/main/README.md
+https://raw.githubusercontent.com/vishalshar/awesome_ML_AI_RSS_feed/master/README.md

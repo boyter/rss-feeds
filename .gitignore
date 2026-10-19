@@ -13,3 +13,16 @@ data/triage.jsonl
 data/probe_results.jsonl
 data/NEEDS_REVIEW.md
 data/TRIAGE.md
+data/DISCOVERY_REVIEW.md
+data/DISCOVERY_UNTAGGED.md
+
+# Fetched copies of the curated lists in data/sources.txt - derived, re-fetchable.
+data/sources/
+
+# Candidate lists discover.py generates from data/sources.txt. Derived: the
+# sources, the fetched copies and probe_results.jsonl are the evidence.
+data/candidates.discovered.jsonl
+data/candidates.paths.jsonl
+data/candidates.siblings.jsonl
+data/candidates.leads.jsonl
+data/candidates.tagged.jsonl

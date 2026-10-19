@@ -76,6 +76,23 @@ class TriagePrecedence(unittest.TestCase):
         for code in (401, 403, 429):
             self.assertEqual(self.verdict({"status": code})[0], "flag", code)
 
+    def test_a_success_that_is_not_200_is_our_failure_not_the_feeds(self):
+        # blog.jetbrains.com/feed answered 202 with an HTML interstitial to the
+        # harvester, and clean RSS to curl --compressed. A 2xx that is not 200 is
+        # a server doing something unusual - a queue, a challenge, a partial - so
+        # "we could not read it" may only flag. Falling through to not-a-feed
+        # deleted two live feeds.
+        verdict, reason = self.verdict({"status": 202, "isFeed": False,
+                                        "contentType": "text/html"})
+        self.assertEqual(verdict, "flag", reason)
+
+    def test_a_plain_200_html_page_is_still_removed(self):
+        # The established rule, pinned so the fix above cannot widen into it: a
+        # homepage listed as a feed is not a feed.
+        verdict, reason = self.verdict({"status": 200, "isFeed": False,
+                                        "snippet": "<html><body>Home</body></html>"})
+        self.assertEqual((verdict, reason), ("remove", "not-a-feed"))
+
     def test_our_inability_to_decode_is_not_evidence_of_death(self):
         # dieworkwear.com and thecyberwire.com were both deleted by exactly this
         # mistake: brotli has no decoder in the standard library.

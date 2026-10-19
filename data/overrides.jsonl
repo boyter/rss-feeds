@@ -56,7 +56,7 @@
 {"key": "http://feeds2.feedburner.com/patshaughnessy", "tags": ["topic:programming", "topic:programming:clojure", "type:personal-blog"]}
 {"key": "flaviocopes.com", "tags": ["topic:software-engineering", "topic:web-development", "topic:tech-industry", "type:personal-blog"]}
 {"key": "gbhackers.com", "tags": ["topic:security", "type:publication"]}
-{"key": "github.blog", "tags": ["topic:software-engineering", "topic:security", "type:vendor-blog"]}
+{"key": "github.blog", "tags": ["topic:security", "topic:software-engineering", "topic:tech-industry", "type:vendor-blog"]}
 {"key": "googleprojectzero.blogspot.com", "tags": ["topic:security", "topic:programming", "type:vendor-blog"]}
 {"key": "grahamcluley.com", "tags": ["topic:security", "type:personal-blog"]}
 {"key": "hackernoon.com", "tags": ["topic:software-engineering", "type:publication"], "pathTags": {"/tagged/javascript": ["topic:programming:javascript"], "/tagged/css": ["topic:web-development"], "/tagged/react": ["topic:web-development"], "/tagged/coding": ["topic:programming"], "/tagged/programming": ["topic:programming"]}}
@@ -1898,3 +1898,52 @@
 {"key": "https://www.npr.org/rss/rss.php?id=1031", "tags": ["region:usa", "topic:health", "topic:news", "type:publication"]}
 {"key": "https://www.youtube.com/feeds/videos.xml?channel_id=UCsXVk37bltHxD1rDPwtNM8Q", "tags": ["topic:education", "topic:science", "type:video"]}
 {"key": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg", "tags": ["topic:ai", "topic:science", "type:video"]}
+{"key": "aitrends.com", "tags": ["topic:ai", "topic:tech-industry", "type:publication"]}
+{"key": "aiweirdness.com", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "andrewchen.co", "tags": ["topic:business", "topic:tech-industry", "type:personal-blog"]}
+{"key": "andrewchen.com", "tags": ["topic:business", "topic:tech-industry", "type:personal-blog"]}
+{"key": "arxiv.org", "tags": ["topic:science", "type:institution"]}
+{"key": "bigthink.com", "tags": ["topic:education", "topic:science", "type:publication"]}
+{"key": "bleedingcool.com", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "blog.samaltman.com", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "commoncog.com", "tags": ["topic:education", "type:publication"]}
+{"key": "davidstutz.de", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "design-milk.com", "tags": ["topic:design", "type:publication"]}
+{"key": "designboom.com", "tags": ["topic:design", "type:publication"]}
+{"key": "elle.com", "tags": ["topic:lifestyle", "type:publication"]}
+{"key": "fashionista.com", "tags": ["topic:lifestyle", "type:publication"]}
+{"key": "guykawasaki.com", "tags": ["topic:business", "topic:tech-industry", "type:personal-blog"]}
+{"key": "infoblox.com", "tags": ["topic:networking", "topic:security", "type:vendor-blog"]}
+{"key": "infostealers.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "intelinsights.substack.com", "tags": ["topic:military", "topic:security", "type:newsletter"]}
+{"key": "jwegan.com", "tags": ["topic:business", "type:personal-blog"]}
+{"key": "mlinproduction.com", "tags": ["topic:ai", "topic:infrastructure", "type:personal-blog"]}
+{"key": "nlp.fast.ai", "tags": ["topic:ai", "type:institution"]}
+{"key": "popsugar.com", "tags": ["topic:lifestyle", "type:publication"]}
+{"key": "refinery29.com", "tags": ["topic:lifestyle", "type:publication"]}
+{"key": "rss.sciam.com", "tags": ["topic:science", "type:publication"]}
+{"key": "sciencealert.com", "tags": ["topic:science", "type:publication"]}
+{"key": "seqrite.com", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "socialmediaexaminer.com", "tags": ["topic:business", "type:publication"]}
+{"key": "uxmatters.com", "tags": ["topic:design", "topic:software-engineering", "type:publication"]}
+{"key": "backlinko.com", "tags": ["topic:business", "type:publication"]}
+{"key": "blog.evjang.com", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "cert.pl", "tags": ["topic:security", "type:institution"]}
+{"key": "claroty.com", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "diariodelweb.it", "tags": ["language:italian", "region:italy", "topic:news", "type:publication"]}
+{"key": "elpais.com", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
+{"key": "elperiodico.com", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
+{"key": "evjang.com", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "express.pk", "tags": ["language:urdu", "region:pakistan", "topic:news", "type:publication"]}
+{"key": "internazionale.it", "tags": ["language:italian", "region:italy", "topic:news", "type:publication"]}
+{"key": "irishmirror.ie", "tags": ["region:ireland", "topic:news", "type:publication"]}
+{"key": "levelblue.com", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "moz.com", "tags": ["topic:business", "topic:web-development", "type:vendor-blog"]}
+{"key": "nation.com.pk", "tags": ["language:urdu", "region:pakistan", "topic:news", "type:publication"]}
+{"key": "onstartups.com", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "rp.pl", "tags": ["language:polish", "region:poland", "topic:news", "type:publication"]}
+{"key": "rss.unian.net", "tags": ["language:ukrainian", "region:ukraine", "topic:news", "type:publication"]}
+{"key": "singularityhub.com", "tags": ["topic:science", "type:publication"]}
+{"key": "spring.org.uk", "tags": ["topic:health", "type:personal-blog"]}
+{"key": "tagesschau.de", "tags": ["language:german", "region:germany", "topic:news", "type:publication"]}
+{"key": "thegrowthshow.hubspot.libsynpro.com", "tags": ["topic:business", "type:podcast"]}

@@ -25,6 +25,9 @@ import paths
 # A 401/403/429 is the site objecting to a script, not evidence the feed is
 # gone. Those feeds stay, flagged, because a reader's feed client will be fine.
 BLOCKED = {401, 403, 429}
+# 2xx codes that are not a plain 200. A feed server has no reason to pick one of
+# these, so when one shows up the body we got is not the body a reader gets.
+UNUSUAL_SUCCESS = {201, 202, 203, 204, 205, 206, 207, 208, 226}
 # Permanent, and permanent in a way a retry will not fix.
 GONE = {404, 405, 410, 451}
 # This pass's report: proposed removals and flags, regenerated every run. It is
@@ -115,6 +118,13 @@ def classify(rec, feed, spam_rules=()):
     if status and status >= 400:
         return "flag", f"http:{status}"
     if not rec.get("isFeed"):
+        # A success that is not 200 is a server doing something unusual - a queue,
+        # a challenge page, a partial response - so not reading a feed out of it is
+        # our failure, not evidence about the URL. blog.jetbrains.com/feed answers
+        # 202 with HTML to the harvester and clean RSS to curl --compressed, and
+        # falling through here deleted two live feeds.
+        if status in UNUSUAL_SUCCESS:
+            return "flag", f"challenge:{status}"
         snippet = (rec.get("snippet") or "").lower()
         # A bot challenge is the site refusing a script, not a dead feed: a
         # reader's feed client with cookies or JS gets through.
