@@ -1,22 +1,20 @@
 # Removed between 39399a2 and WORKING
 
-17 of 2443 feeds left the list. The previous file is in git history; restore any of these by re-adding the line. Reasons come from harvest.jsonl, not from a guess.
+19 of 2443 feeds left the list. The previous file is in git history; restore any of these by re-adding the line. Reasons come from harvest.jsonl, not from a guess.
+
+## no harvest record (5)
+
+- `https://engineering.mixpanel.com/feed/` — no harvest record
+- `https://pqina․nl/feed.xml` — no harvest record
+- `https://rreverser.com/rss/` — no harvest record
+- `https://toffelblog.xyz/tips/rss.xml` — no harvest record
+- `https://www.zillow.com/engineering/rss` — no harvest record
 
 ## moved (3)
 
-- `http://rush-nlp.com//feed.xml` — Rush NLP
-- `https://blog.jfo.click//feed.xml` — blog.jfo.click
-- `https://csvoss.com//feed.xml` — csvoss.com
-
-## served text/html where a feed should be (2)
-
-- `https://engineering.mixpanel.com/feed/` — served text/html where a feed should be
-- `https://www.zillow.com/engineering/rss` — served text/html where a feed should be
-
-## domain no longer resolves (2)
-
-- `https://rreverser.com/rss/` — domain no longer resolves
-- `https://toffelblog.xyz/tips/rss.xml` — domain no longer resolves
+- `http://rush-nlp.com//feed.xml` — moved to http://rush-nlp.com/feed.xml
+- `https://blog.jfo.click//feed.xml` — moved to https://blog.jfo.click/feed.xml
+- `https://csvoss.com//feed.xml` — moved to https://csvoss.com/feed.xml
 
 ## removed by hand: junk: an IP address with no reverse and no resolvable publisher (1)
 
@@ -32,27 +30,31 @@
 
 ## removed by hand: content-farm: English-looking URL (1)
 
-- `https://codewithstyle.info/feed/` — Nhà Cái Uy Tín
+- `https://codewithstyle.info/feed/` — removed by hand: content-farm: English-looking URL, feed title and description are Vietnamese gambling spam (Nha Cai Uy Tin)
+
+## gone (1)
+
+- `https://heapanalytics.com/blog/category/engineering/feed` — gone (404)
 
 ## removed by hand: junk: http://localhost:4000/feed.xml is somebody's development machine (1)
 
 - `http://localhost:4000/feed.xml` — removed by hand: junk: http://localhost:4000/feed.xml is somebody's development machine, not a feed anyone can subscribe to
 
-## unreachable (1)
+## domain no longer resolves (1)
 
-- `https://pqina․nl/feed.xml` — unreachable (UnicodeEncodeError: 'latin-1' codec can')
+- `https://oliverschmid.space/index.xml` — domain no longer resolves
 
 ## removed by hand: superseded: the feed announces it is discontinued and names https://susam.net/feed.xml as its replacement (1)
 
-- `https://susam.in/blog/rss.xml` — Susam Pal - Discontinued Feed
+- `https://susam.in/blog/rss.xml` — removed by hand: superseded: the feed announces it is discontinued and names https://susam.net/feed.xml as its replacement (verified live)
 
 ## removed by hand: superseded: the feed says it is no longer maintained and points to https://unixdigest.com/articles.xml and /tutorials.xml (1)
 
-- `https://www.unixsheikh.com/feed.rss` — unixdigest.com
+- `https://www.unixsheikh.com/feed.rss` — removed by hand: superseded: the feed says it is no longer maintained and points to https://unixdigest.com/articles.xml and /tutorials.xml (found in the site's own <link rel=alternate>)
 
 ## removed by hand: content-farm: title promises US and world news (1)
 
-- `https://worldnewsera.com/feed/` — Latest U.S & World News: Trusted Source – WorldNewsEra
+- `https://worldnewsera.com/feed/` — removed by hand: content-farm: title promises US and world news, the feed itself has no title and no items
 
 ## removed by hand: content-farm: name promises world news (1)
 

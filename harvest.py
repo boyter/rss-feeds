@@ -91,16 +91,26 @@ def decode_text(raw, content_type):
     harvest then stores a mangled title as if it were the feed's own. Try utf-8
     strictly, then whatever the feed declared, and only then guess cp1252 - and
     say which we did, so the record admits it guessed.
+
+    cp1252 goes last, and never before a declared charset, because it accepts
+    every byte: one half-cut character becomes a whole feed of replacement
+    characters. The byte cap cuts the head wherever it lands and can split a
+    multi-byte character; that is our truncation, not the feed's fault, so the
+    partial tail is dropped and the text kept instead of the feed written off as
+    undecodable. That is how a live Cyrillic podcast got flagged dead.
     """
-    try:
-        return raw.decode("utf-8"), ""
-    except UnicodeDecodeError:
-        pass
     cs = declared_charset(content_type, raw)
-    if cs:
+    strict = [(cs, f"decoded as declared {cs}")] if cs else []
+    strict.append(("utf-8", ""))
+    for enc, note in strict:
         try:
-            return raw.decode(cs), f"decoded as declared {cs}"
+            return raw.decode(enc), note
         except (LookupError, UnicodeDecodeError):
+            pass
+    for enc, note in strict:
+        try:
+            return raw.decode(enc, "ignore"), (note + " tail cut by the byte cap").strip()
+        except LookupError:
             pass
     return raw.decode("cp1252", "replace"), "charset undeclared, decoded as cp1252"
 
@@ -340,10 +350,17 @@ def build_lanes(urls, lanes):
     return [b for b in buckets if b]
 
 
-def run_lane(lane, write_lock, out):
+def run_lane(lane, write_lock, out, prior=None):
     results = []
     for url in lane:
         rec = probe(url)
+        # A URL that answered as a feed in an earlier pass and does not now is a
+        # regression, not a dead feed: mark it so triage flags it for a human
+        # instead of removing it. Only --retry-failed (or a re-harvest over an
+        # existing file) can know this, because it is the only run that sees both
+        # generations.
+        if prior and prior.get(url) and not rec.get("isFeed"):
+            rec["regressed"] = True
         results.append(rec)
         with write_lock:
             out.write(json.dumps(rec, ensure_ascii=False) + "\n")
@@ -360,6 +377,11 @@ def main():
                     help="re-fetch only the URLs whose record is not a feed "
                          "(dead, blocked, or mis-decoded). Resumable: a later "
                          "record for the same URL wins over an earlier one.")
+    ap.add_argument("--prior", metavar="FILE",
+                    help="a previous harvest.jsonl to compare against: a URL that "
+                         "was a feed there and is not now is marked regressed, so "
+                         "triage flags it for a human instead of removing it. Use "
+                         "this whenever a run replaces an existing file.")
     args = ap.parse_args()
 
     with open("feeds.json", encoding="utf-8") as fh:
@@ -379,11 +401,17 @@ def main():
 
     import threading
     write_lock = threading.Lock()
+    # Which URLs were feeds before this run. Captured before fetching, so a
+    # record written mid-run cannot overwrite the evidence of what came before.
+    prior = {u: bool(r.get("isFeed")) for u, r in done.items()}
+    if args.prior:
+        for u, r in load_done(args.prior).items():
+            prior[u] = bool(r.get("isFeed"))
     lanes = build_lanes(todo, LANES)
     start = time.time()
     with open(OUTFILE, "a", encoding="utf-8") as out:
         with futures.ThreadPoolExecutor(max_workers=len(lanes)) as ex:
-            for res in ex.map(lambda lane: run_lane(lane, write_lock, out), lanes):
+            for res in ex.map(lambda lane: run_lane(lane, write_lock, out, prior), lanes):
                 pass
         # progress is in the file; this is just the summary
         done = load_done(OUTFILE)
@@ -392,6 +420,13 @@ def main():
     dead = sum(1 for r in done.values() if not r.get("isFeed"))
     print(f"done in {time.time()-start:.0f}s: {len(done)} records, "
           f"{ok} look like feeds, {dead} do not", flush=True)
+    regressed = [u for u, r in done.items() if r.get("regressed")]
+    if regressed:
+        print(f"{len(regressed)} were feeds in the prior file and are not now - "
+              "flagged for a human, never removed automatically:")
+        for u in regressed[:20]:
+            r = done[u]
+            print(f"   {u[:72]} {r.get('error') or r.get('status') or ''}")
     return 0
 
 

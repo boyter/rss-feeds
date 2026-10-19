@@ -331,7 +331,15 @@ def main():
         # decided for the writer counts as decided for the reviewer, or the
         # review queue is full of feeds that are already tagged.
         carried = [t for t in old if t in VOCAB]
-        effective = sorted(set(carried) | set(final if final is not None else suggested))
+        if final is not None:
+            # Mirrors rebuild.py: a hand decision is the whole answer for
+            # topic:/type:, so a rule tag or an old rule-derived tag on such a
+            # feed is not part of what gets written. If this drifts from
+            # rebuild.py the review queue lies about what is still undecided.
+            carried = [t for t in carried if t.startswith(("region:", "language:"))]
+            effective = sorted(set(carried) | set(final))
+        else:
+            effective = sorted(set(carried) | set(suggested))
         topics = [t for t in effective if t.startswith("topic:")]
         types = [t for t in effective if t.startswith("type:")]
         needs = []

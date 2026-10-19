@@ -114,8 +114,19 @@ A key with a slash is one **URL** (matched case-insensitively; a stored key
 without a query string also matches a live URL that has one). URL rules win over
 host rules.
 
-Prefer host rules: 2,452 feeds sit on 2,052 hosts, and one decision on
+Prefer host rules: 2,450 feeds sit on 2,053 hosts, and one decision on
 `darknet.org.uk` covers 30 feeds.
+
+### A hand decision is the whole answer
+
+For a feed with an override, `rebuild.py` writes the override plus `pathTags`, and
+nothing else for `topic:`/`type:`. Rules may still add `region:` and `language:`.
+The rules read item headlines, and that is not a decision: one headline mentioning
+AI put `topic:ai` on 273 hand-decided feeds, and a re-harvest moved the tags again
+because the week's headlines were different. Lex Fridman carried `topic:food`,
+`topic:sport` and `topic:music`; the Canberra Times carried `topic:security`.
+Applying this rule removed 1,637 tags and cut type conflicts from 128 to 2.
+If a hand-decided feed should carry another topic, put it in the override.
 
 ## What a harvest record claims
 
@@ -129,7 +140,15 @@ Prefer host rules: 2,452 feeds sit on 2,052 hosts, and one decision on
   once recorded a 200-item feed as having 6. `itemsSampled` is the sample.
 - `charset` — set when the body was not valid UTF-8 and was decoded by declared
   charset, or cp1252 as a last resort. Decoding with `errors="replace"` would
-  have stored a mangled title as if the feed had written it that way.
+  have stored a mangled title as if the feed had written it that way. cp1252 goes
+  **last**, and never before a declared charset: it accepts every byte, so one
+  half-cut character turns a whole feed into replacement characters. The byte cap
+  cuts the head wherever it lands and can split a multi-byte character; that is
+  our truncation, so the partial tail is dropped and the text kept. That is how a
+  live Cyrillic podcast came to be flagged undecodable.
+- `regressed` — set when a `--prior FILE` (or an existing `harvest.jsonl`) said
+  this URL was a feed and it is not now. `triage.py` flags those for a human.
+  Always pass `--prior` when a run replaces a file you already have.
 - `truncated` — the stream ended early, or `Content-Encoding` lied about the body
   and the raw bytes were used instead.
 
@@ -169,7 +188,11 @@ that is not how to ask a stranger's web server for 3,000 things.
 - `remove` — domain does not resolve, permanent 4xx (404/410/451), the URL
   serves HTML rather than a feed, or it is in `spam.jsonl`.
 - `flag` (kept) — 401/403/429 and bot challenge pages: the site objects to a
-  script, not to readers. Timeouts. Feeds that answer but are empty.
+  script, not to readers. Timeouts. Feeds that answer but are empty. And
+  **regressions**: a feed that answered as a feed in a previous pass and does not
+  now is flagged, never removed, because servers 404 and 500 for one request and
+  come back. A YouTube channel feed did exactly that while `curl` fetched a valid
+  feed seconds later, and the verdict was about to be `remove`.
 - Duplicates are collapsed on a normalized key (scheme, `www.`, trailing slash
   ignored; feedburner query strings kept).
 

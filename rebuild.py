@@ -83,9 +83,22 @@ def main():
         # Tags already in feeds.json are decisions; the rules add to them, they
         # do not replace them. Rebuild used to overwrite, which silently erased
         # every tag the previous pass had derived from the old flat vocabulary.
-        keep = [t for t in feed.get("tags") or [] if t in vocab]
         override = d.get("final") or []
+        keep = [t for t in feed.get("tags") or [] if t in vocab]
         suggested = [t for t in (d.get("suggested") or []) if t in vocab]
+        if override:
+            # Same rule as below: tags already in feeds.json are kept because
+            # they are decisions, but a topic/type sitting on a hand-decided feed
+            # without being in the decision is rule output from an earlier pass,
+            # not a human. Region and language are kept either way.
+            keep = [t for t in keep if t.startswith(("region:", "language:"))]
+            # A hand decision is the whole answer for topic: and type:. The rules
+            # read item headlines, and one headline mentioning AI was enough to
+            # put topic:ai on 273 hand-decided feeds; a re-harvest then moved the
+            # tags again because the headlines changed. Only the structural
+            # facets a human is unlikely to spell out per feed - region and
+            # language - may still be added by a rule.
+            suggested = [t for t in suggested if t.startswith(("region:", "language:"))]
         tags = vocab_mod.normalize(
             sorted(set(keep) | set(t for t in override if t in vocab) | set(suggested)))
         # TAGS.md: exactly one type:. Unioning sources can produce two - a feed
@@ -119,7 +132,10 @@ def main():
             # a classification gap into data loss.
             problems.append((url, "missing topic or type"))
         rec = {"url": url, "tags": sorted(tags)}
-        title = harvest.get(url, {}).get("title") or ""
+        # A title already in feeds.json was harvested once and then read by a
+        # human going through the list. One timed-out fetch must not erase it: a
+        # re-harvest lost 14 titles this way, every one to a timeout or a 403.
+        title = harvest.get(url, {}).get("title") or feed.get("title") or ""
         if title:
             rec["title"] = title
         seen[key] = url
