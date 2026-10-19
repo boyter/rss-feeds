@@ -38,6 +38,8 @@ python3 decide.py decisions.txt   # append hand decisions, validated
 python3 rebuild.py                # report only
 python3 rebuild.py --write        # writes feeds.json.new; nothing else changes
 python3 rebuild.py --apply        # replaces feeds.json, after you have read the .new
+python3 rebuild.py --strict       # same as report, but exits 1 if any tag would be
+                                  # stripped or resolved by priority - a gate for CI
 ```
 
 Order matters: harvest before triage, triage before rebuild. `feeds.json` is the
@@ -114,6 +116,39 @@ host rules.
 
 Prefer host rules: 2,452 feeds sit on 2,052 hosts, and one decision on
 `darknet.org.uk` covers 30 feeds.
+
+## What a harvest record claims
+
+`harvest.jsonl` is evidence, so each field states what it actually saw:
+
+- `isFeed` — the body began with XML/RSS/Atom. An HTML page that names a feed
+  gets that link in `altFeed` and is still not a feed: swapping a URL in
+  `feeds.json` is a human decision, but the lead should not be thrown away.
+- `itemCount` — items in the fetched head (the head is capped at 60 KB). It is
+  **not** `len(items)`: `items` keeps six titles, and calling the sample a count
+  once recorded a 200-item feed as having 6. `itemsSampled` is the sample.
+- `charset` — set when the body was not valid UTF-8 and was decoded by declared
+  charset, or cp1252 as a last resort. Decoding with `errors="replace"` would
+  have stored a mangled title as if the feed had written it that way.
+- `truncated` — the stream ended early, or `Content-Encoding` lied about the body
+  and the raw bytes were used instead.
+
+A `Content-Encoding` header that disagrees with the body's own magic bytes is
+believed **last**: servers and CDNs do send an identity body under a gzip header,
+and trusting the header produces an empty body and a live feed recorded dead. If
+the magic bytes agree and the stream is merely broken, the empty result stands —
+that is our truncation, not a lie. Check the magic with the zlib header checksum,
+not a list of two-byte magics: a list once omitted `0x78 0x5e` and wrote off a
+real deflate body as binary.
+
+## Rules are heuristics; measure them
+
+`classify.py` prints, at the end of every run, the hosts where a rule's `type:`
+disagreed with a hand decision in `overrides.jsonl`. The human won every one of
+those, so the rule is the thing to narrow. A rule that keeps losing should be
+cut, not defended: the company-subdomain rule matched `dev.` (dev.to is a
+community, `dev.<user>.github.io` is a person) and matched personal blogs at
+`tech.*` that survived only because an override happened to exist for them.
 
 ## Network etiquette
 

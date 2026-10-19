@@ -289,6 +289,7 @@ def main():
                 overrides["host"][r["key"].lower().removeprefix("www.")] = r
 
     out, stats = [], collections.Counter()
+    clashes = []
     for feed in feeds:
         url = feed["url"]
         rec = harvest.get(url, {"url": url})
@@ -317,6 +318,14 @@ def main():
             why.append("host-rule")
         if final is not None:
             final = vocab_mod.normalize(final)
+            # Where a rule's type disagrees with a hand decision, the rule is the
+            # one that is wrong. Collected and printed below so a heuristic's
+            # precision is measurable instead of assumed: a rule that keeps
+            # losing to overrides should be narrowed or cut.
+            st = [t for t in suggested if t.startswith("type:")]
+            ft = [t for t in final if t.startswith("type:")]
+            if st and ft and st != ft:
+                clashes.append((host, ",".join(st), ",".join(ft)))
         # What rebuild.py will actually write: it unions the tags already in
         # feeds.json with whatever is proposed here. Anything that counts as
         # decided for the writer counts as decided for the reviewer, or the
@@ -359,6 +368,18 @@ def main():
     print(f"{len(out)} feeds -> draft.jsonl")
     for k, v in stats.most_common():
         print(f"  {v:5d} {k}")
+
+    # Where a rule's type disagrees with a hand decision, the rule is the one
+    # that is wrong. Printed so a heuristic's precision is measurable instead of
+    # assumed: a rule that keeps losing to overrides should be narrowed or cut.
+    if clashes:
+        clashes = list(dict.fromkeys(clashes))
+        print(f"\nrules disagreed with a human on {len(clashes)} hosts "
+              "(the human won; narrow the rule):")
+        for host, r, h in sorted(clashes)[:15]:
+            print(f"  {host:42s} rule={r:22s} human={h}")
+        if len(clashes) > 15:
+            print(f"  ... {len(clashes) - 15} more")
     if args.review:
         for r in out:
             if r["needs"] and "override" not in r["needs"]:

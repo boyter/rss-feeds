@@ -12,6 +12,21 @@ Gentle by construction:
 Usage:
     python3 harvest.py                 # full run, resumable
     python3 harvest.py --limit 50      # smoke test
+    python3 harvest.py --retry-failed  # re-fetch only records that are not feeds
+
+What a record holds, and what it does not claim:
+  * isFeed - the body began with XML/RSS/Atom. A page that is HTML but names a
+    feed gets that link recorded in altFeed, and is still not a feed: swapping a
+    URL in feeds.json is a human decision, but the lead should not be lost.
+  * itemCount - items found in the fetched head (the head is capped at 60 KB, so
+    a huge feed's count is of the head, not the whole feed). itemsSampled is how
+    many titles were kept in `items`, which is capped at six; conflating the two
+    once recorded a 200-item feed as having 6.
+  * charset - set when the body was not valid UTF-8 and had to be decoded by
+    declared charset or, failing that, cp1252. utf-8-with-replacement would have
+    stored a mangled title as if the feed wrote it that way.
+  * truncated - set when the stream ended early, or when Content-Encoding lied
+    about the body and the raw bytes were used instead.
 """
 
 import argparse
@@ -28,7 +43,7 @@ import urllib.request
 import zlib
 from collections import defaultdict
 from html import unescape
-from urllib.parse import urlparse
+from urllib.parse import urljoin, urlparse
 
 OUTFILE = "harvest.jsonl"
 MAX_BYTES = 60_000
@@ -56,6 +71,38 @@ DESC_RE = re.compile(
     re.S | re.I)
 ITEM_RE = re.compile(r"<(?:item|entry)[\s>].*?</(?:item|entry)>", re.S | re.I)
 CDATA_RE = re.compile(r"<!\[CDATA\[(.*?)\]\]>", re.S)
+ALT_FEED_RE = re.compile(
+    r"""<link[^>]+rel=["']alternate["'][^>]*type=["']application/(?:rss|atom)\+xml"""
+    r"""[^>]*href=["']([^"']+)""", re.I)
+
+
+def declared_charset(content_type, raw_head):
+    m = re.search(r"charset=([A-Za-z0-9_.:-]+)", content_type or "", re.I)
+    if m:
+        return m.group(1)
+    m = re.search(rb"""encoding=["']?([A-Za-z0-9_.:-]+)""", raw_head[:200])
+    return m.group(1).decode("ascii") if m else ""
+
+
+def decode_text(raw, content_type):
+    """Decode a body without silently rewriting bytes we cannot read.
+
+    utf-8 with errors="replace" turns a Latin-1 feed title into U+FFFD and the
+    harvest then stores a mangled title as if it were the feed's own. Try utf-8
+    strictly, then whatever the feed declared, and only then guess cp1252 - and
+    say which we did, so the record admits it guessed.
+    """
+    try:
+        return raw.decode("utf-8"), ""
+    except UnicodeDecodeError:
+        pass
+    cs = declared_charset(content_type, raw)
+    if cs:
+        try:
+            return raw.decode(cs), f"decoded as declared {cs}"
+        except (LookupError, UnicodeDecodeError):
+            pass
+    return raw.decode("cp1252", "replace"), "charset undeclared, decoded as cp1252"
 
 
 def clean(text, limit=200):
@@ -80,6 +127,18 @@ def decompressor_for(enc, head):
     if enc in ("deflate", "x-deflate") or head[:1] == b"\x78":
         return "deflate", zlib.decompressobj()
     return enc or "identity", None
+
+
+def looks_compressed(b):
+    """True if the bytes carry a gzip or *valid* zlib header.
+
+    The zlib check is the header checksum, not a list of magic pairs: a list
+    once omitted 0x78 0x5e (default-level deflate) and treated a real deflate
+    body as binary.
+    """
+    if b[:2] == b"\x1f\x8b":
+        return True
+    return len(b) >= 2 and b[0] == 0x78 and ((b[0] << 8) | b[1]) % 31 == 0
 
 
 def read_body(resp, cap=MAX_BYTES):
@@ -117,17 +176,23 @@ def read_body(resp, cap=MAX_BYTES):
                 out += dec.decompress(part)
             except zlib.error as e:
                 note = f"zlib: {e}"
+                if not out and not looks_compressed(raw):
+                    # The header claimed gzip/deflate, the bytes disagree, and
+                    # nothing has been produced yet. Some servers and CDNs send
+                    # an identity body under a gzip Content-Encoding. Switch to
+                    # identity and keep reading: breaking here would leave a
+                    # body truncated to the first chunk, which still loses the
+                    # tail of a live feed.
+                    out = bytearray(raw)
+                    dec, name = None, "identity"
+                    note += " header lied about encoding"
+                    continue
                 break
         if dec is not None and dec.eof:
             break
-    if dec is not None and not out and raw and raw[:2] not in (b"\x1f\x8b", b"\x78\x9c", b"\x78\x01", b"\x78\xda"):
-        # The header claimed gzip/deflate and the body disagreed. Some servers
-        # and CDNs send an identity body under a gzip Content-Encoding. Trusting
-        # the header here returns an empty body and records a live feed as
-        # not-a-feed, so fall back to the bytes we were actually given. If the
-        # magic bytes do say gzip, the stream is merely broken and we leave the
-        # empty result plus the note alone - that is our truncation, not a lie.
-        return bytes(raw), "identity", (note + " " + "header lied about encoding").strip()
+    if dec is not None and not out and raw and not looks_compressed(raw):
+        # The stream ended on the chunk that failed to inflate.
+        return bytes(raw), "identity", (note + " header lied about encoding").strip()
     return bytes(out), name or (enc or "identity"), note
 
 
@@ -177,7 +242,9 @@ def probe(url):
             if enc == "br":
                 body = f"[undecodable {enc} body]"
             else:
-                body = raw.decode("utf-8", "replace")
+                body, cs_note = decode_text(raw, rec.get("contentType", ""))
+                if cs_note:
+                    rec["charset"] = cs_note
                 if "\ufffd" in body[:200] and enc not in ("identity", ""):
                     body = f"[undecodable {enc} body]"
     except urllib.error.HTTPError as e:
@@ -209,10 +276,21 @@ def probe(url):
             rec["title"] = json_unescape(m.group(1)) if m else ""
             rec["items"] = [json_unescape(t) for t in
                             re.findall(r'"title"\s*:\s*"((?:[^"\\]|\\.)*)"', body)[1:7]]
-            rec["itemCount"] = len(rec["items"])
+            rec["itemsSampled"] = len(rec["items"])
+            # itemCount is how many items were in the fetched head, not how many
+            # were kept: items is capped at six, and calling the sample a count
+            # recorded a 200-item feed as having 6.
+            rec["itemCount"] = max(0, body.count('"title"') - 1)
             return rec
     if not rec["isFeed"]:
         rec["snippet"] = " ".join(body.split())[:160]
+        # A page that is not itself a feed but names one. Recorded, never
+        # followed: swapping a URL in feeds.json is a human decision, but the
+        # lead should not be thrown away.
+        alt = ALT_FEED_RE.findall(body)
+        if alt:
+            rec["altFeed"] = [urljoin(rec.get("finalUrl", url), a)
+                              for a in dict.fromkeys(alt)][:3]
         return rec
 
     m = TITLE_RE.search(body)
@@ -222,7 +300,8 @@ def probe(url):
     rec["items"] = [clean(t.group(1), 160)
                     for item in ITEM_RE.findall(body)[:6]
                     if (t := TITLE_RE.search(item))]
-    rec["itemCount"] = len(rec["items"])
+    rec["itemsSampled"] = len(rec["items"])
+    rec["itemCount"] = len(ITEM_RE.findall(body))
     return rec
 
 
