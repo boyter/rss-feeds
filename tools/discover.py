@@ -569,6 +569,7 @@ def cmd_tag(args):
         types = [t for t in rule_tags if t.startswith("type:")]
         origin = []
         exact = url_rules.get(vocab_mod.norm_key(c["url"]))
+        exact_facets = []
         if exact:
             # A human named this exact feed. That is the most specific decision
             # there is - more specific than the feed's own title - and merge_tags
@@ -577,6 +578,12 @@ def cmd_tag(args):
             got = [t for t in exact["tags"] if t.startswith("type:")]
             if got:
                 types = got[:1]
+            # The rule's region:/language: are the human's decision for those
+            # facets too. Dropping them here lost language:french on the whole
+            # 2026-10 batch of queue rules: decide.py wrote it, merge would have
+            # kept it, and the candidate row carried only topic and type.
+            exact_facets = [t for t in exact["tags"]
+                            if t.startswith(("region:", "language:"))]
             if topics:
                 origin.append("url rule")
             if types:
@@ -647,8 +654,15 @@ def cmd_tag(args):
         if not types and c.get("hintType"):
             types = [c["hintType"]]
             origin.append("category")
-        tags = [t for t in rule_tags if not t.startswith(("topic:", "type:"))]
-        tags = topics + types + tags
+        extra = [t for t in rule_tags if not t.startswith(("topic:", "type:"))]
+        if exact_facets:
+            # The URL rule speaks region and/or language, so it outranks the
+            # keyword guess for the same facet; a facet the rule does not name
+            # keeps the guess.
+            named = {t.split(":")[0] for t in exact_facets}
+            extra = exact_facets + [t for t in extra
+                                    if t.split(":")[0] not in named]
+        tags = topics + types + extra
         bad = vocab_mod.validate(tags, voc)
         if bad:
             stats["bad tags"] += 1

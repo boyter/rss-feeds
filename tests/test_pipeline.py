@@ -509,3 +509,73 @@ class TestAMergeNeedsTheFetchForThatExactUrl(unittest.TestCase):
         _, urls = self.merge([{"url": "http://feeds.bmj.com/bmjj/podcasts",
                                "tags": ["topic:medicine", "type:podcast"]}], probed)
         self.assertEqual(urls, ["http://feeds.bmj.com/bmjj/podcasts"])
+
+
+class URLRuleFacetsReachTheCandidate(unittest.TestCase):
+    """A URL rule's region:/language: must reach the tagged candidate row.
+
+    Bug (2026-10): cmd_tag's URL-rule branch copied only topic: and type: from
+    the rule. decide.py had written language:french and region:latin-america on
+    ~800 queue rules; the merge pinned feeds without them. Revert the
+    exact_facets block in discover.cmd_tag and only this test fails.
+    """
+
+    URL = "https://01net.example.com/actualites/politique-droits/feed/"
+
+    def tag(self, rule_tags):
+        import discover
+        with tempfile.TemporaryDirectory() as d:
+            def w(name, rows):
+                with open(os.path.join(d, name), "w", encoding="utf-8") as fh:
+                    for r in rows:
+                        fh.write(json.dumps(r, ensure_ascii=False) + "\n")
+            w("candidates.amp.jsonl", [{"url": self.URL}])
+            for n in ("candidates.discovered.jsonl", "candidates.paths.jsonl",
+                      "candidates.leads.jsonl", "candidates.oracle.jsonl"):
+                w(n, [])
+            w("probe_results.jsonl", [{"url": self.URL, "isFeed": True,
+                                       "status": 200,
+                                       "title": "Politique & Droits",
+                                       "description": "Actualité tech",
+                                       "items": []}])
+            w("overrides.jsonl", [{"key": self.URL, "tags": rule_tags}])
+            open(os.path.join(d, "feeds.json"), "w").write("[]")
+
+            class StubPaths:
+                def data(self, name): return os.path.join(d, name)
+                def root(self, name): return os.path.join(d, name)
+
+            saved = (discover.paths, discover.CANDIDATES, discover.EXPANDED,
+                     discover.LEADS, discover.ORACLE, discover.AMP,
+                     discover.RESULTS, discover.TAGGED)
+            discover.paths = StubPaths()
+            for name in ("CANDIDATES", "EXPANDED", "LEADS", "ORACLE"):
+                setattr(discover, name, os.path.join(d, f"candidates.{name}.jsonl"))
+            discover.AMP = os.path.join(d, "candidates.amp.jsonl")
+            discover.RESULTS = os.path.join(d, "probe_results.jsonl")
+            discover.TAGGED = os.path.join(d, "tagged.jsonl")
+            try:
+                discover.cmd_tag(None)
+                rows = [json.loads(l) for l in
+                        open(discover.TAGGED, encoding="utf-8")]
+            finally:
+                (discover.paths, discover.CANDIDATES, discover.EXPANDED,
+                 discover.LEADS, discover.ORACLE, discover.AMP,
+                 discover.RESULTS, discover.TAGGED) = saved
+            return rows
+
+    def test_the_rule_language_and_region_survive_tagging(self):
+        rows = self.tag(["topic:politics", "type:publication",
+                         "language:french", "region:france"])
+        self.assertEqual(len(rows), 1)
+        tags = rows[0]["tags"]
+        self.assertIn("topic:politics", tags)
+        self.assertIn("type:publication", tags)
+        self.assertIn("language:french", tags)
+        self.assertIn("region:france", tags)
+
+    def test_a_rule_that_names_no_facet_keeps_the_keyword_guess(self):
+        rows = self.tag(["topic:gadgets", "type:publication"])
+        self.assertEqual(len(rows), 1)
+        self.assertIn("topic:gadgets", rows[0]["tags"])
+        self.assertNotIn("language:french", rows[0]["tags"])

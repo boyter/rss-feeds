@@ -481,3 +481,41 @@ nothing here. The binding constraint is tagging, not discovery: each tranche
 produces ~1,400 verified feeds of which ~360 get tags a reader can defend from
 the feed's own name, and ~1,080 sit queued. Discovery at this rate is a solved
 problem; deciding what 1,000 feeds named "Bone to Pick Podcast" are about is not.
+
+## Clearing the untagged queue by hand (2026-10-20)
+
+The queue, not discovery, was the binding constraint: 1,059 verified-but-untagged
+rows sat in `data/DISCOVERY_UNTAGGED.jsonl`. Every row was read against its own
+title and description (never the channel's say-so) and decided as a URL rule
+with `decide.py`. Delegation was tried first and failed four times: worker
+subagents on the local 27B never got past generating the decision list (output
+cap killed each attempt); reading 22 rows at a time inline, ~2 decisions/minute,
+was the working mode.
+
+| | |
+|---|---|
+| queue rows read | 1,059 of 1,059 |
+| URL rules written (`decide.py`, one batch) | 798 |
+| rows deliberately skipped (undecidable, hijacked, blank) | 261 |
+| merged | 799 (798 + the one previously-tagged trustwave row) |
+| removed by a standing hand decision | 1 (trustwave SpiderLabs, `[DO NOT USE]` in its own title, `spam.jsonl` decided it) |
+| product | 6,228 → 7,026 feeds, 4,498 → 5,218 hosts, 6,710 titled |
+
+Two defects this pass found, both pinned by tests:
+
+- **`cmd_tag` dropped a URL rule's `region:`/`language:`.** decide.py had
+  written `language:french` on ~800 rules; the tag step copied only topic and
+  type onto the candidate, so the merge would have pinned feeds without the
+  language their human decided. Fixed in `discover.cmd_tag` (the rule's facet
+  tags outrank the keyword guess for the same facet); test
+  `URLRuleFacetsReachTheCandidate` fails without the fix.
+- **`decide.py` reads existing rules from HEAD** (landmine #7, hit for real):
+  three separate `decide.py` runs each rebuilt `overrides.jsonl` from HEAD plus
+  that batch, silently dropping the previous batch's 260 rules. The fix is
+  procedural — one `decide.py` run carrying the whole session's decisions — and
+  `git diff --stat` on overrides.jsonl (798 insertions, 0 deletions) is the
+  check that proves it.
+
+A hijack caught by reading titles, per the add.py rule: `feeds.feedburner.com`
+alias `Crunch Hype` squatting the TechCrunch name with a digital-marketing-farm
+description. Left in the queue, not merged.
