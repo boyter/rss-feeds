@@ -3830,3 +3830,60 @@
 {"key": "519magazine.com", "tags": ["region:canada", "topic:entertainment", "type:podcast"]}
 {"key": "7days.ru", "tags": ["language:russian", "topic:entertainment", "type:publication"], "pathTags": {"/rss/section/lifestyle": ["topic:lifestyle"]}}
 {"key": "902.gr", "tags": ["region:world", "topic:news", "type:publication"]}
+{"key": "https://academic.oup.com/rss/site_5423/3284.xml?type=rss&feedtype=current&journal=ahr", "tags": ["topic:history", "type:institution"]}
+{"key": "https://academic.oup.com/rss/site_6198/4022.xml", "tags": ["topic:medicine", "type:institution"]}
+{"key": "https://access.acast.com/rss/62cff2d9d455860013698a7f", "tags": ["region:china", "topic:politics", "type:podcast"]}
+{"key": "https://access.acast.com/rss/633ebf6dfc7f5a0012acdc97", "tags": ["region:china", "topic:politics", "type:podcast"]}
+{"key": "https://ad.robotstart.jp/api/v1/feeds/354f0481/get-feeds/podcast", "tags": ["region:japan", "topic:news", "type:podcast"]}
+{"key": "https://ad.robotstart.jp/api/v1/feeds/355b047a/get-feeds/podcast", "tags": ["region:japan", "topic:travel", "type:podcast"]}
+{"key": "https://adafruit-podcasts.s3.amazonaws.com/main_feed/podcast.xml", "tags": ["topic:hardware", "type:podcast"]}
+{"key": "https://adafruit-podcasts.s3.amazonaws.com/show_and_tell/podcast.xml", "tags": ["topic:hardware", "type:podcast"]}
+{"key": "https://aezfm.meldingcloud.com/rss/program/3", "tags": ["topic:education", "type:podcast"]}
+{"key": "https://aezfm.meldingcloud.com/rss/program/4", "tags": ["language:chinese", "topic:education", "type:podcast"]}
+{"key": "https://afr.net/api/v2/podcast/podcastsbyidrss/?id=1226&platform=ApplePodcasts", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://afr.net/api/v2/podcast/podcastsbyidrss/?id=1229", "tags": ["topic:politics", "type:podcast"]}
+{"key": "https://africa.thegospelcoalition.org/podcasts/sermon-podcast/feed?feed=podcast", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://alaskapublic-rss.streamguys1.com/addressingalaskans/addressing-alaskans-archives-alaska-public-media.xml", "tags": ["region:usa", "topic:politics", "type:podcast"]}
+{"key": "https://alaskapublic-rss.streamguys1.com/alaskaeconomicreport/alaska-economic-report-apple-podcasts.xml", "tags": ["region:usa", "topic:economics", "type:podcast"]}
+{"key": "https://anchor.fm/s/1cb13444/podcast/rss", "tags": ["topic:sport", "type:podcast"]}
+{"key": "https://anchor.fm/s/4f50cd4c/podcast/rss", "tags": ["topic:tech-industry", "type:podcast"]}
+{"key": "https://api.paragraph.com/blogs/rss/@avc", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "https://api.paragraph.com/blogs/rss/@usv", "tags": ["topic:tech-industry", "type:vendor-blog"]}
+{"key": "http://blogsontape.paperspencils.com/feed/", "tags": ["topic:gaming", "type:podcast"]}
+{"key": "https://abnormalmapping.squarespace.com/the-safe-room?format=rss", "tags": ["topic:gaming", "type:podcast"]}
+{"key": "https://abnormalmapping.squarespace.com/your-uncles-beach-house?format=rss", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://ahgz.de/news/feed/green/", "tags": ["language:german", "topic:food", "type:publication"]}
+{"key": "https://ahgz.de/news/feed/hoteldesign/", "tags": ["language:german", "topic:food", "type:publication"]}
+{"key": "aaptanews.com", "tags": ["region:india", "topic:news", "type:publication"]}
+{"key": "abcbourse.com", "tags": ["language:french", "topic:finance", "type:publication"]}
+{"key": "abcnews.com", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "adhddnd.com", "tags": ["topic:gaming", "type:podcast"]}
+{"key": "adventurehermit.com", "tags": ["topic:travel", "type:personal-blog"]}
+{"key": "afamily.vn", "tags": ["topic:lifestyle", "type:publication"]}
+{"key": "africa.thegospelcoalition.org", "tags": ["topic:religion", "type:podcast"]}
+{"key": "aftabnews.ir", "tags": ["region:world", "topic:news", "type:publication"]}
+{"key": "agenciabrasil.ebc.com.br", "tags": ["language:portuguese", "region:latin-america", "topic:news", "type:publication"], "pathTags": {"/rss/educacao/": ["topic:education"], "/rss/esportes/": ["topic:sport"]}}
+{"key": "agenciagov.ebc.com.br", "tags": ["language:portuguese", "region:latin-america", "topic:government", "type:institution"]}
+{"key": "agenciasinc.es", "tags": ["language:spanish", "topic:science", "type:publication"]}
+{"key": "agi.it", "tags": ["language:italian", "region:world", "topic:news", "type:publication"], "pathTags": {"/economia/": ["topic:economics"]}}
+{"key": "agilenoir.biz", "tags": ["topic:software-engineering", "type:podcast"]}
+{"key": "agos.com.tr", "tags": ["region:world", "topic:news", "type:publication"]}
+{"key": "agrodiario.com", "tags": ["language:spanish", "topic:business", "type:publication"]}
+{"key": "ahora.cu", "tags": ["language:spanish", "region:latin-america", "topic:news", "type:publication"]}
+{"key": "akademie.liferadio.at", "tags": ["region:world", "topic:entertainment", "type:podcast"]}
+{"key": "akkartik.name", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "akschaefer.com", "tags": ["topic:hardware", "type:personal-blog"]}
+{"key": "aksubayevo.ru", "tags": ["language:russian", "region:russia", "topic:news", "type:publication"]}
+{"key": "aktobetimes.kz", "tags": ["language:russian", "region:world", "topic:news", "type:publication"]}
+{"key": "aktualne.cz", "tags": ["topic:news", "type:publication"], "pathTags": {"/rss/aktualne-pro-byznys": ["topic:business"], "/rss/architektura": ["topic:design"]}}
+{"key": "akyazihaber.com", "tags": ["region:world", "topic:news", "type:podcast"]}
+{"key": "al24news.dz", "tags": ["region:world", "topic:news", "type:publication"], "pathTags": {"/en/feed": ["language:english"]}}
+{"key": "alacatihaber.com", "tags": ["region:world", "topic:news", "type:publication"]}
+{"key": "alalam.ma", "tags": ["region:world", "topic:news", "type:publication"]}
+{"key": "alamanaweb.ma", "tags": ["language:arabic", "region:world", "topic:science", "type:institution"]}
+{"key": "albertmohler.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "albumism.com", "tags": ["topic:music", "type:publication"]}
+{"key": "alexandre.storelli.fr", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "alexwlchan.net", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "api.sportskeeda.com", "tags": ["topic:sport", "type:aggregator"]}
+{"key": "ashfurrow.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
