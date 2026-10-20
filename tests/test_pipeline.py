@@ -602,3 +602,96 @@ class UnacceptableTagsReachTheHumanQueue(unittest.TestCase):
         self.assertEqual(rows, [])
         self.assertEqual(len(unrows), 1)
         self.assertIn("esperanto", unrows[0]["missing"])
+
+
+class TestOracle429RetriedAndErrorRowsNeverCached(unittest.TestCase):
+    """A 429 from the free index says "not yet", never "no".
+
+    Bug (2026-10): the index answered 429 under load and 16 sites were lost,
+    and the failed row was cached and treated as the final answer, so those
+    sites were never re-asked. Revert the retry or the error-row cache check
+    in cmd_oracle and only this test fails.
+    """
+
+    FEEDS = [{"url": "https://goodsite.example.com/feed", "title": "Good feed"}]
+    ERR_429 = "HTTPError: HTTP Error 429: Too Many Requests"
+
+    def run_cmd_oracle(self, sites, oracle_query, cache_rows=(),
+                       sleep=lambda s: None):
+        """Run cmd_oracle against a stubbed index and temp data files."""
+        import discover
+        import types
+        with tempfile.TemporaryDirectory() as d:
+            cache_path = os.path.join(d, "oracle.jsonl")
+            sites_path = os.path.join(d, "sites.txt")
+            with open(sites_path, "w", encoding="utf-8") as fh:
+                for s in sites:
+                    fh.write(s + "\n")
+            with open(cache_path, "w", encoding="utf-8") as fh:
+                for row in cache_rows:
+                    fh.write(json.dumps(row, ensure_ascii=False) + "\n")
+            args = types.SimpleNamespace(sites=sites_path, crawl=False,
+                                         restart=False, max_leads_per_site=6,
+                                         pause=0.0)
+            saved = (discover.oracle_query, discover.time.sleep,
+                     discover.ORACLE_CACHE, discover.ORACLE)
+            discover.oracle_query, discover.time.sleep = oracle_query, sleep
+            discover.ORACLE_CACHE = cache_path
+            discover.ORACLE = os.path.join(d, "candidates.oracle.jsonl")
+            try:
+                discover.cmd_oracle(args)
+                cache = [json.loads(l) for l in open(cache_path, encoding="utf-8")]
+                leads_path = discover.ORACLE
+                leads = ([json.loads(l) for l in open(leads_path, encoding="utf-8")]
+                         if os.path.exists(leads_path) else [])
+            finally:
+                (discover.oracle_query, discover.time.sleep,
+                 discover.ORACLE_CACHE, discover.ORACLE) = saved
+            return cache, leads
+
+    def test_a_429_then_success_site_is_retried_and_caches_only_the_answer(self):
+        calls, sleeps = [], []
+        def oracle_query(site, skip_crawl=True):
+            calls.append(site)
+            if len(calls) < 3:
+                return [], self.ERR_429
+            return [dict(f) for f in self.FEEDS], ""
+        sites = ["goodsite.example.com"]
+        cache, leads = self.run_cmd_oracle(sites, oracle_query,
+                                           sleep=sleeps.append)
+        # Asked three times: once, after 30s, after another 60s. (The 0.0
+        # entry is the per-site pause, not a 429 backoff.)
+        self.assertEqual(calls, sites * 3)
+        self.assertEqual([s for s in sleeps if s], [30, 60])
+        # The good answer is the lead and the only row in the cache.
+        self.assertEqual([r["url"] for r in leads],
+                         [f["url"] for f in self.FEEDS])
+        self.assertEqual(cache, [{"site": sites[0], "feeds": self.FEEDS,
+                                  "error": ""}])
+
+    def test_a_site_that_is_429_every_time_writes_no_cache_row(self):
+        calls = []
+        def oracle_query(site, skip_crawl=True):
+            calls.append(site)
+            return [], self.ERR_429
+        sites = ["badsite.example.com"]
+        cache, leads = self.run_cmd_oracle(sites, oracle_query)
+        # Three asks, then it gives up with the error - and writes nothing,
+        # so the next run may ask again.
+        self.assertEqual(len(calls), 3)
+        self.assertEqual(cache, [])
+        self.assertEqual(leads, [])
+
+    def test_a_cached_good_row_is_not_asked_again(self):
+        def oracle_query(site, skip_crawl=True):
+            raise AssertionError("a cached answer with no error is final; "
+                                 "the index must not be re-asked")
+        sites = ["goodsite.example.com"]
+        cache_rows = [{"site": sites[0], "feeds": [dict(f) for f in self.FEEDS],
+                       "error": ""}]
+        cache, leads = self.run_cmd_oracle(sites, oracle_query,
+                                           cache_rows=cache_rows)
+        self.assertEqual(len(cache), 1)
+        self.assertEqual(cache[0]["error"], "")
+        self.assertEqual([r["url"] for r in leads],
+                         [f["url"] for f in self.FEEDS])

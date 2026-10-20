@@ -923,6 +923,24 @@ def oracle_query(site, skip_crawl=True):
     return out, ""
 
 
+def oracle_query_retry(site, skip_crawl, stats, sleep=time.sleep):
+    """Ask the index, sleeping through a 429 and asking again.
+
+    The free index answers HTTP 429 under load (16 lost sites in the
+    2026-10 pass); a 429 says "not yet", never "no". Wait 30s and ask
+    again, then 60s and once more, then give up with the error. oracle_
+    query reports a 429 as the string "HTTPError: HTTP Error 429: ..."
+    (it never raises), so the retry matches on that string; every other
+    error answer is final.
+    """
+    for backoff in (30, 60, None):
+        found, err = oracle_query(site, skip_crawl)
+        if not err or "429" not in err or backoff is None:
+            return found, err
+        stats["429 retry"] += 1
+        sleep(backoff)
+
+
 def cmd_oracle(args):
     """Ask a feed index what feeds a known site has, and write them as leads.
 
@@ -951,15 +969,19 @@ def cmd_oracle(args):
     rows, stats = [], collections.Counter()
     with open(ORACLE_CACHE, "a", encoding="utf-8") as cachefh:
         for site in oracle_sites(args):
-            if site in cache and not args.restart:
+            # A stored error is not a final answer: the index answered 429,
+            # not "no", so only a row with an empty error may be a cache hit.
+            if site in cache and not cache[site].get("error") and not args.restart:
                 found, err = cache[site].get("feeds", []), cache[site].get("error", "")
                 stats["cached"] += 1
             else:
-                found, err = oracle_query(site, skip_crawl=not args.crawl)
+                found, err = oracle_query_retry(site, skip_crawl=not args.crawl,
+                                                stats=stats, sleep=time.sleep)
                 stats["queried"] += 1
-                cachefh.write(json.dumps({"site": site, "feeds": found,
-                                          "error": err}, ensure_ascii=False) + "\n")
-                cachefh.flush()
+                if not err:
+                    cachefh.write(json.dumps({"site": site, "feeds": found,
+                                              "error": err}, ensure_ascii=False) + "\n")
+                    cachefh.flush()
             if err:
                 stats["oracle error"] += 1
                 print(f"  FAIL  {site[:44]:44} {err[:44]}")
