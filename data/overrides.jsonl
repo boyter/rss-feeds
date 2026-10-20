@@ -3729,4 +3729,53 @@
 {"key": "josh.blog", "tags": ["topic:web-development", "type:personal-blog"], "pathTags": {"/category/design/feed": ["topic:design"]}}
 {"key": "kevquirk.com", "tags": ["topic:personal", "type:personal-blog"], "pathTags": {"/feed/books": ["topic:books"]}}
 {"key": "nu.nl", "tags": ["language:dutch", "topic:news", "type:publication"], "pathTags": {"/rss/Economie": ["topic:economics"], "/rss/Sport": ["topic:sport"]}}
-{"key": "taskandpurpose.com", "tags": ["topic:military", "type:publication"]}
+{"key": "taskandpurpose.com", "tags": ["topic:military", "type:publication"], "pathTags": {"/category/iran/": ["region:middle-east"], "/category/middle-east/": ["region:middle-east"]}}
+{"key": "https://112.ua/de/rss.xml", "tags": ["language:german", "region:ukraine", "topic:news", "type:publication"]}
+{"key": "https://112.ua/en/rss.xml", "tags": ["language:english", "region:ukraine", "topic:news", "type:publication"]}
+{"key": "https://112.ua/pl/rss.xml", "tags": ["language:polish", "region:ukraine", "topic:news", "type:publication"]}
+{"key": "https://112.ua/rss.xml", "tags": ["language:ukrainian", "region:ukraine", "topic:news", "type:publication"]}
+{"key": "https://feeds.transistor.fm/acquired", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://feeds.transistor.fm/appstories", "tags": ["topic:gadgets", "type:podcast"]}
+{"key": "https://feeds.transistor.fm/macstories-unwind", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://feeds.transistor.fm/npc-next-portable-console", "tags": ["topic:gadgets", "type:podcast"]}
+{"key": "https://golem.ph.utexas.edu/~distler/blog/atom10.xml", "tags": ["topic:science", "type:personal-blog"]}
+{"key": "https://golem.ph.utexas.edu/~distler/blog/index.rdf", "tags": ["topic:science", "type:personal-blog"]}
+{"key": "https://golem.ph.utexas.edu/~distler/blog/rss2.xml", "tags": ["topic:science", "type:personal-blog"]}
+{"key": "https://jsomers.net/blog/feed/atom", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "http://africapresse.com/?feed=comments-rss2", "tags": ["language:french", "region:africa", "topic:news", "type:publication"]}
+{"key": "http://africapresse.com/?feed=rss2", "tags": ["language:french", "region:africa", "topic:news", "type:publication"]}
+{"key": "https://africapresse.com/podcast-category/apercu-de-l-actualites/feed/", "tags": ["language:french", "region:africa", "topic:news", "type:podcast"]}
+{"key": "https://africapresse.com/podcast-category/environnement/feed/", "tags": ["language:french", "region:africa", "topic:environment", "type:podcast"]}
+{"key": "https://in.mashable.com/apps-and-software.xml", "tags": ["region:india", "topic:gadgets", "type:publication"]}
+{"key": "https://in.mashable.com/culture.xml", "tags": ["region:india", "topic:entertainment", "type:publication"]}
+{"key": "https://in.mashable.com/entertainment.xml", "tags": ["region:india", "topic:entertainment", "type:publication"]}
+{"key": "https://in.mashable.com/feed.xml", "tags": ["region:india", "topic:entertainment", "type:publication"]}
+{"key": "https://mjtsai.com/blog/tag/animation/feed/", "tags": ["topic:entertainment", "type:personal-blog"]}
+{"key": "https://mjtsai.com/blog/tag/antenna/feed/", "tags": ["topic:gadgets", "type:personal-blog"]}
+{"key": "https://mjtsai.com/blog/tag/aol-instant-messenger-aim/feed/", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "https://mjtsai.com/blog/tag/aperture-exporter/feed/", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://seekingalpha.com/author/c-jessen.xml", "tags": ["topic:finance", "type:personal-blog"]}
+{"key": "https://seekingalpha.com/author/cestrian-capital-research.xml", "tags": ["topic:finance", "type:personal-blog"]}
+{"key": "https://seekingalpha.com/author/clem-chambers.xml", "tags": ["topic:finance", "type:personal-blog"]}
+{"key": "https://seekingalpha.com/feed.xml", "tags": ["topic:finance", "type:aggregator"]}
+{"key": "https://torontosun.com/category/news/feed.xml", "tags": ["region:canada", "topic:news", "type:publication"]}
+{"key": "https://torontosun.com/category/opinion/feed.xml", "tags": ["region:canada", "topic:news", "type:publication"]}
+{"key": "https://torontosun.com/category/travel/feed.xml", "tags": ["region:canada", "topic:travel", "type:publication"]}
+{"key": "https://torontosun.com/feed", "tags": ["region:canada", "topic:news", "type:publication"]}
+{"key": "https://torontosun.com/feed/atom", "tags": ["region:canada", "topic:news", "type:publication"]}
+{"key": "thenews.com.pk", "tags": ["region:pakistan", "topic:news", "type:publication"], "pathTags": {"/rss/1/10": ["topic:entertainment"], "/rss/1/11": ["topic:science"], "/rss/1/12": ["topic:health"], "/rss/1/3": ["topic:sport"]}}
+{"key": "yonhapnewstv.co.kr", "tags": ["language:korean", "topic:news", "type:publication"], "pathTags": {"/category/news/bizn/": ["topic:business"], "/category/news/economy/": ["topic:economics"], "/category/news/culture/": ["topic:entertainment"]}}
+{"key": "adfam.org.uk", "tags": ["topic:health", "type:institution"]}
+{"key": "adweek.com", "tags": ["topic:media", "type:publication"]}
+{"key": "agroinfo.kz", "tags": ["language:russian", "topic:business", "type:publication"]}
+{"key": "aintitcool.com", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "blog.adblockplus.org", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "blog.rootsofprogress.org", "tags": ["topic:philosophy", "topic:science", "type:personal-blog"]}
+{"key": "cyberciti.com", "tags": ["topic:systems", "type:publication"]}
+{"key": "digitalocean.com", "tags": ["topic:infrastructure", "type:vendor-blog"]}
+{"key": "elastic.co", "tags": ["topic:data", "type:vendor-blog"], "pathTags": {"/cn/blog/": ["language:chinese"], "/de/blog/": ["language:german"], "/jp/blog/": ["language:japanese"], "/pt/blog/": ["language:portuguese"]}}
+{"key": "g1.globo.com", "tags": ["language:portuguese", "region:latin-america", "topic:news", "type:publication"], "pathTags": {"/rss/g1/educacao/": ["topic:education"], "/rss/g1/politica/": ["topic:politics"], "/rss/g1/tecnologia/": ["topic:tech-industry"]}}
+{"key": "hostinger.com", "tags": ["topic:infrastructure", "type:vendor-blog"]}
+{"key": "patheos.com", "tags": ["topic:religion", "type:personal-blog"]}
+{"key": "rss.focus.de", "tags": ["language:german", "topic:news", "type:publication"], "pathTags": {"/auto/": ["topic:transport"], "/finanzen/": ["topic:finance"], "/gesundheit/": ["topic:health"]}}
+{"key": "stanislas.blog", "tags": ["topic:personal", "type:personal-blog"]}
