@@ -93,10 +93,11 @@ def cmd_merge(args):
         url = c["url"]
         key = vocab_mod.norm_key(url)
         banned = triage.spam_hit(url, spam_rules)
-        if banned:
+        if banned is not None:
             # spam.jsonl is a human decision; a stale candidates file must not
             # re-admit what a human removed. Without this, every settle pass
             # re-added the hand-removed feeds and rebuild deleted them again.
+            # "is not None": an empty reason is still a decision.
             skipped.append((url, f"banned by spam.jsonl: {banned}"))
             continue
         if key in existing:

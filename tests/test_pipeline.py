@@ -557,6 +557,39 @@ class TestMergeRespectsTheHandSpamList(unittest.TestCase):
         got = self.merge(cands, probed, [("banned.test/feed", "content farm")])
         self.assertEqual(got, [])
 
+    def test_an_empty_reason_is_still_a_ban(self):
+        # Bug: `if banned:` after the refactor. A rule {"reason": ""} is a
+        # truthy-free string, the pre-refactor loop returned on the MATCH, and
+        # a truthy gate let that candidate merge and rebuild keep it.
+        probed = [{"url": "https://bare.test/feed", "isFeed": True, "status": 200}]
+        cands = [{"url": "https://bare.test/feed",
+                  "tags": ["topic:news", "type:publication"]}]
+        got = self.merge(cands, probed, [("bare.test", "")])
+        self.assertEqual(got, [])
+
+    def test_an_empty_key_bans_nothing_and_says_so(self):
+        # "" is a substring of every URL: one typo in spam.jsonl would remove
+        # the whole list. load_spam refuses the line instead.
+        import contextlib
+        import io
+        with tempfile.TemporaryDirectory() as d:
+            p = os.path.join(d, "spam.jsonl")
+            with open(p, "w", encoding="utf-8") as fh:
+                fh.write(json.dumps({"key": "", "reason": "typo"}) + "\n")
+            err = io.StringIO()
+            with contextlib.redirect_stderr(err):
+                rules = triage.load_spam(p)
+        self.assertEqual(rules, [])
+        self.assertIn("empty key", err.getvalue())
+        self.assertIsNone(triage.spam_hit("https://anything.test/feed", rules))
+
+    def test_triage_still_removes_on_a_rule_with_an_empty_reason(self):
+        # classify's gate must match the merge gate: not None, not truthy.
+        verdict, why = triage.classify(
+            {"url": "http://b.test/x", "status": 200, "isFeed": True},
+            {}, [("b.test", "")])
+        self.assertEqual((verdict, why), ("remove", "hand:"))
+
 
 class URLRuleFacetsReachTheCandidate(unittest.TestCase):
     """A URL rule's region:/language: must reach the tagged candidate row.

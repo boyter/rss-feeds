@@ -64,7 +64,14 @@ def load_spam(path=paths.data("spam.jsonl")):
     for line in open(path, encoding="utf-8"):
         if line.strip():
             r = json.loads(line)
-            rules.append((r["key"].lower(), r.get("reason", "spam")))
+            key = r["key"].strip()
+            if not key:
+                # An empty key is a substring of every URL: one stray "key": ""
+                # line would ban the whole list. Refuse the line, say so.
+                print(f"spam.jsonl: ignored a rule with an empty key: {r}",
+                      file=sys.stderr)
+                continue
+            rules.append((key.lower(), r.get("reason", "spam")))
     return rules
 
 
@@ -92,7 +99,9 @@ def classify(rec, feed, spam_rules=()):
     err = rec.get("error", "")
 
     reason = spam_hit(rec["url"], spam_rules)
-    if reason:
+    if reason is not None:
+        # "is not None", not truthy: an empty reason is still a human
+        # decision, and the pre-refactor loop returned on the match itself.
         # "hand:" not "spam:" - the file holds any hand-curated removal, a
         # superseded or moved feed as much as a content farm.
         return "remove", f"hand:{reason}"
