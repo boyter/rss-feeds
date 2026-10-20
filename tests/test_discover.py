@@ -24,6 +24,41 @@ def urls_of(pairs):
     return [u for u, _ in pairs]
 
 
+import tempfile
+
+
+def run_tag_on(cands, probed, feeds=(), overrides=()):
+    """Isolate cmd_tag's files in a temp dir. Shared by both tag-cascade tests."""
+    with tempfile.TemporaryDirectory() as _TMPCTX:
+        return _run_tag_on(cands, probed, feeds, overrides, _TMPCTX)
+
+
+def _run_tag_on(cands, probed, feeds, overrides, tmp):
+    _TMP.__setattr__ if False else None
+    w = lambda n: os.path.join(tmp, n)
+    for name, rows in (("c.jsonl", cands), ("r.jsonl", probed), ("overrides.jsonl", overrides)):
+        with open(w(name), "w", encoding="utf-8") as fh:
+            for r in rows:
+                fh.write(json.dumps(r) + "\n")
+    open(w("feeds.json"), "w").write(json.dumps(list(feeds)))
+    saved = (discover.CANDIDATES, discover.EXPANDED, discover.LEADS, discover.ORACLE,
+             discover.RESULTS, discover.TAGGED, discover.paths.root, discover.paths.data)
+    discover.CANDIDATES, discover.EXPANDED, discover.LEADS = w("c.jsonl"), w("e.jsonl"), w("l.jsonl")
+    discover.ORACLE = w("oracle.jsonl")
+    discover.RESULTS, discover.TAGGED = w("r.jsonl"), w("t.jsonl")
+    discover.paths.root = lambda n: w("feeds.json") if n == "feeds.json" else None
+    discover.paths.data = lambda n: (w("overrides.jsonl") if n == "overrides.jsonl" else w(n))
+    try:
+        discover.cmd_tag(type("A", (), {})())
+        return [json.loads(l) for l in open(w("t.jsonl"))]
+    finally:
+        (discover.CANDIDATES, discover.EXPANDED, discover.LEADS, discover.ORACLE,
+         discover.RESULTS, discover.TAGGED,
+         discover.paths.root, discover.paths.data) = saved
+
+
+
+
 class TestListParsing(unittest.TestCase):
     def test_bare_url_on_a_line_with_a_markdown_link_is_not_lost(self):
         # The first version gated bare-URL scanning on the line containing no
@@ -271,6 +306,50 @@ class TestOracleLeads(unittest.TestCase):
         ok, _ = discover.is_plausible_feed(
             "https://blogs.bmj.com/bmj/category/medical-ethics-2/feed/")
         self.assertTrue(ok)
+
+
+class TestACandidatesTopicsComeFromItsOwnName(unittest.TestCase):
+    """A candidate's topics may not be inferred from its recent headlines.
+
+    Pinned on two real rows: Defense News' /land channel picked
+    topic:software-engineering because six recent stories mentioned software
+    procurement, and WSJ Markets picked topic:food. Both would have been pinned
+    forever the moment they merged. A feed's own title and description decide a
+    topic; a headline is evidence about an article, not about a feed.
+    """
+
+    def tag_one(self, title, description, items, url=None):
+        c = {"url": url or "http://feeds.feedburner.com/defense-news/land", "tags": [],
+             "source": "feedsearch", "category": "", "hintTopics": [],
+             "hintType": "type:publication", "via": "oracle", "aboutSite": "defensenews.com"}
+        probe = {"url": c["url"], "status": 200, "isFeed": True, "title": title,
+                 "description": description, "items": items}
+        rows = run_tag_on([c], [probe])
+        return rows[0]["tags"] if rows else []
+
+    def test_a_software_headline_does_not_make_a_land_warfare_feed_software(self):
+        tags = self.tag_one(
+            "Defense News: Land", "Defense and security programs, Pentagon budgets",
+            ["The contractor will refactor the legacy software architecture",
+             "Congress debates the FY26 defense budget",
+             "A cyber campaign targets logistics tooling",
+             "Marines test an unmanned ground vehicle",
+             "Pentagon asks for a code review of the readiness system",
+             "Ground vehicle requirements are being rewritten"])
+        # The row must be tagged at all, or a vacuous assertNotIn proves nothing.
+        self.assertIn("topic:security", tags)
+        self.assertNotIn("topic:software-engineering", tags)
+        self.assertNotIn("topic:science", tags)
+
+    def test_a_food_headline_does_not_make_a_markets_feed_food(self):
+        tags = self.tag_one("WSJ.com: Markets", "Markets, bonds and commodities",
+                            ["Coffee futures slip on a bigger Brazilian harvest",
+                             "Bond yields rise as the Fed holds",
+                             "Chip stocks drag the index lower"],
+            url="http://feeds.a.dj.com/rss/RSSMarketsMain.xml")
+        self.assertIn("topic:finance", tags)
+        self.assertLessEqual(sum(1 for t in tags if t.startswith("topic:")), 2)
+        self.assertNotIn("topic:food", tags)
 
 
 class TestNamedSites(unittest.TestCase):

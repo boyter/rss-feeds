@@ -37,6 +37,7 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -506,7 +507,10 @@ def cmd_tag(args):
     """Tag probed candidates from what the feed itself said."""
     voc = vocab_mod.load()
     classify.VOCAB = voc
-    cands = read_jsonl(CANDIDATES) + read_jsonl(EXPANDED) + read_jsonl(LEADS)
+    cands = (read_jsonl(CANDIDATES) + read_jsonl(EXPANDED) + read_jsonl(LEADS)
+             # Oracle leads, not the pages they were asked about: PAGES and
+             # SIBLINGS hold homepages, and a homepage is never a candidate feed.
+             + read_jsonl(ORACLE))
     probed = {r["url"]: r for r in read_jsonl(RESULTS)}
     feeds = json.load(open(paths.root("feeds.json"), encoding="utf-8"))
     have = {vocab_mod.norm_key(f["url"]) for f in feeds}
@@ -535,7 +539,16 @@ def cmd_tag(args):
         rec = {k: r.get(k) for k in ("url", "title", "description", "items")}
         rec["url"] = c["url"]
         rule_tags, why = classify.suggest(rec, [])
-        topics = [t for t in rule_tags if t.startswith("topic:")]
+        # A candidate is about to be pinned forever, so the only text allowed to
+        # decide its topics is the feed's own name and description. classify's
+        # haystack also holds six recent headlines, and that is what put
+        # topic:software-engineering on Defense News' Land feed and topic:food on
+        # WSJ Markets - one headline mentioning a thing is not what a feed is
+        # about. Types, region and language still read the full haystack: a
+        # Cyrillic headline is evidence of language in a way a headline is not
+        # evidence of topic.
+        name_tags, _ = classify.suggest({**rec, "items": []}, [])
+        topics = [t for t in name_tags if t.startswith("topic:")][:2]
         types = [t for t in rule_tags if t.startswith("type:")]
         origin = []
         exact = url_rules.get(vocab_mod.norm_key(c["url"]))
@@ -885,6 +898,16 @@ def cmd_oracle(args):
 
     Answers are cached in data/oracle.jsonl, so a re-run does not re-ask - both
     politeness and the only way to tell "the index changed" from "we changed".
+
+    Queries are one-at-a-time with a pause. This is someone's free service, not an
+    elastic backend, and nothing here is urgent.
+
+    --max-leads-per-site is the editorial cap, and it is in the tool rather than
+    in a spreadsheet because the measured shape demands it: a random sample of 40
+    of our own single-feed hosts gave 314 new live feeds sitting on 16 hosts, 257
+    of them one Iranian newspaper's desks. Kept per site: shallowest path first,
+    because /feed and /category/tech/feed are the feeds a reader wants and
+    /category/a/b/c/d/feed is the index being exhaustive on our behalf.
     """
     cache = {r.get("site"): r for r in read_jsonl(ORACLE_CACHE)}
     rows, stats = [], collections.Counter()
@@ -921,19 +944,32 @@ def cmd_oracle(args):
                              "via": "oracle", "oracleTitle": f.get("title", ""),
                              "aboutSite": site})
             stats["feeds named"] += len(found)
-    # Deduplicate on the one key the project agrees about.
-    seen, out = set(), []
-    for r in rows:
-        k = vocab_mod.norm_key(r["url"])
-        if k in seen:
-            stats["dropped:duplicate in batch"] += 1
-            continue
-        seen.add(k)
-        out.append(r)
-    with open(ORACLE, "w", encoding="utf-8") as fh:
+            time.sleep(args.pause)
+        # Deduplicate on the one key the project agrees about.
+        seen, out = set(), []
+        for r in rows:
+            k = vocab_mod.norm_key(r["url"])
+            if k in seen:
+                stats["dropped:duplicate in batch"] += 1
+                continue
+            seen.add(k)
+            out.append(r)
+        # The editorial cap, applied after dedup so what survives is chosen rather
+        # than whatever the index happened to answer first.
+        by_site = collections.defaultdict(list)
         for r in out:
+            by_site[r["aboutSite"]].append(r)
+        kept = []
+        for site, rs in by_site.items():
+            rs.sort(key=lambda r: (r["url"].count("/"), r["url"]))
+            if len(rs) > args.max_leads_per_site:
+                stats["dropped:per-site cap"] += len(rs) - args.max_leads_per_site
+            kept.extend(rs[:args.max_leads_per_site])
+        kept.sort(key=lambda r: r["url"])
+    with open(ORACLE, "w", encoding="utf-8") as fh:
+        for r in kept:
             fh.write(json.dumps(r, ensure_ascii=False) + "\n")
-    print(f"{len(out)} feeds named by the index -> {ORACLE}")
+    print(f"{len(kept)} feeds named by the index -> {ORACLE}")
     for k, v in sorted(stats.items()):
         print(f"  {k:30} {v}")
     return 0
@@ -984,6 +1020,11 @@ def main():
     o.add_argument("--crawl", action="store_true",
                    help="let the index crawl the site instead of using its saved answer")
     o.add_argument("--restart", action="store_true", help="ignore the cached answers")
+    o.add_argument("--max-leads-per-site", type=int, default=6,
+                   help="editorial cap: shallowest feeds first, so one publisher's "
+                        "257 desk feeds do not become our list's shape")
+    o.add_argument("--pause", type=float, default=1.0,
+                   help="seconds between queries to someone else's free service")
     args = ap.parse_args()
     if args.cmd == "fetch" and args.sources:
         # A path given on the command line is the user's path, not ours (see

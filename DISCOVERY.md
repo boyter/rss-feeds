@@ -372,3 +372,39 @@ What it is already good for, un-capped: the thin topics. This pass took
 `topic:medicine` from 3 to 15 (The BMJ's section and podcast feeds, which
 advertise themselves nowhere our harvester can read — the root `bmj.com/feed`
 403s us) and `topic:military` to 16.
+
+## Gentle oracle, and the pile-up arriving at the gate
+
+`discover.py oracle` is throttled and capped, because the measured shape says it
+must be: one query at a time with a `--pause` (default 1s) against someone else's
+free service, answers cached, and `--max-leads-per-site` (default 6) applied
+after dedup, keeping the **shallowest paths** — `/feed` and `/category/tech/feed`
+before `/category/a/b/c/d/feed`. In the run below the cap dropped 3,049 of 3,422
+claims.
+
+A second life for the dead lists: 610 hosts appear in the lists we already have
+and our harvester never read a feed from them. A random 150 of them:
+
+- 94 have feeds the index knows; 3,422 claims → 329 leads after filters and cap
+- **176 of 329 live (53%)**, 166 of them new to the list, on 53 hosts
+- 31 merged, 140 left for a human
+
+### The pile-up, caught before it merged
+
+Of the 53 oracle leads the tagger first said were feed-backed, 15 were aggregator
+hosts carrying two or more topics that came from **item headlines**:
+
+- `feeds.feedburner.com/defense-news/land` → `topic:software-engineering`
+- `feeds.a.dj.com/rss/RSSMarketsMain.xml` (WSJ Markets) → `topic:food`
+- `rss.sciam.com/observations/feed` → `topic:mathematics`
+
+`classify.haystack` is title + description + six recent headlines, and for a
+candidate about to be pinned forever that last term is not evidence. cmd_tag now
+takes **topics only from title and description**, capped at two, while type,
+region and language still read the full haystack — a Cyrillic headline is
+evidence of language in a way a headline is not evidence of topic. Two tests pin
+both directions; each fails with the fix reverted, and one of them was vacuous
+until it was made to require a tag as well as forbid the wrong one.
+
+After the fix: 30 of the 53 tagged, none with more than two topics, WSJ Markets
+`topic:finance` alone. The other 140 are queued rather than guessed.
