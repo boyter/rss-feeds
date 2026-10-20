@@ -519,3 +519,11 @@ Two defects this pass found, both pinned by tests:
 A hijack caught by reading titles, per the add.py rule: `feeds.feedburner.com`
 alias `Crunch Hype` squatting the TechCrunch name with a digital-marketing-farm
 description. Left in the queue, not merged.
+
+## Tranche 4 (2026-10-20, later run)
+
+`amp --all --limit 1500 --max-per-host 2`: 1,500 leads, **1,372 live (91%)**;
+372 auto-tagged by existing host/URL rules and merged, 999 queued for reading.
+6,228 → 7,397 feeds, 5,577 hosts. The oracle widening over never-asked
+single-feed hosts was launched the same afternoon (see *Open work* in RESUME
+for the re-derive command); its numbers land here when it completes.
