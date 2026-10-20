@@ -25,6 +25,9 @@ data/candidates.discovered.jsonl
 data/candidates.paths.jsonl
 data/candidates.siblings.jsonl
 data/candidates.leads.jsonl
+data/candidates.amp.jsonl
+data/candidates.oracle.jsonl
+data/candidates.pages.jsonl
 data/candidates.tagged.jsonl
 data/DISCOVERY_UNTAGGED.jsonl
 # decide.py batch inputs: transient. data/overrides.jsonl is the record of a

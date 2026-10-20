@@ -34,6 +34,11 @@ tests/         test_harvest.py  the byte layer: encodings, caps, decoding
                test_pipeline.py verdict and tag precedence, file consistency
 ```
 
+**Picking this work up mid-stream? Read `RESUME.md` first** — it records the
+current state, the measured yield of every discovery channel, and the landmines
+(each one cost a defect). It is a snapshot, so re-derive its numbers with the
+commands it gives you rather than trusting them.
+
 Run the tools from the repo root as `tools/x.py`; they find their files through
 `paths.py`, so cwd does not matter.
 
