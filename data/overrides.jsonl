@@ -4711,3 +4711,4 @@
 {"key": "https://zimmcast.libsyn.com/rss", "tags": ["region:usa", "topic:business", "type:podcast"]}
 {"key": "rss.blogs.elconfidencial.com", "tags": ["language:spanish", "region:spain", "topic:news", "type:aggregator"]}
 {"key": "showfeed.rubenerd.com", "tags": ["region:asia", "topic:entertainment", "topic:politics", "type:podcast"]}
+{"key": "https://tyma.com/feed.xml", "tags": ["topic:science", "topic:tech-industry", "type:personal-blog"]}

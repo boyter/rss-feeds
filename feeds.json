@@ -9599,6 +9599,7 @@
 {"url": "http://twogoblinsinatrenchcoat.blogspot.com/feeds/posts/default", "tags": ["topic:personal", "type:personal-blog"], "title": "Two Goblins in a Trenchcoat"},
 {"url": "http://twogoblinsinatrenchcoat.blogspot.com/feeds/posts/default?alt=rss", "tags": ["topic:personal", "type:personal-blog"], "title": "Two Goblins in a Trenchcoat"},
 {"url": "https://tylergaw.com/rss.xml", "tags": ["topic:ai", "topic:music", "topic:web-development", "type:personal-blog"], "title": "Tyler Gaw's blog"},
+{"url": "https://tyma.com/feed.xml", "tags": ["topic:science", "topic:tech-industry", "type:personal-blog"], "title": "Paul Tyma’s Blog"},
 {"url": "https://tympanus.net/codrops/collective/feed/", "tags": ["topic:design", "topic:web-development", "type:publication"]},
 {"url": "https://tympanus.net/codrops/feed/", "tags": ["topic:design", "topic:web-development", "type:publication"]},
 {"url": "https://tympanus.net/codrops/rss", "tags": ["topic:design", "topic:web-development", "type:publication"]},
