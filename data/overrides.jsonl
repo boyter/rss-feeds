@@ -3887,3 +3887,33 @@
 {"key": "alexwlchan.net", "tags": ["topic:programming", "type:personal-blog"]}
 {"key": "api.sportskeeda.com", "tags": ["topic:sport", "type:aggregator"]}
 {"key": "ashfurrow.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "http://blogsontape.paperspencils.com/feed/podcast/", "tags": ["topic:gaming", "type:podcast"]}
+{"key": "http://feeds.foxnewsradio.com/ThePositivePopulist", "tags": ["region:usa", "topic:politics", "type:podcast"]}
+{"key": "http://feeds.foxnewsradio.com/bnj", "tags": ["region:usa", "topic:news", "type:podcast"]}
+{"key": "https://feeds.libsyn.com/311174/rss", "tags": ["topic:gaming", "type:podcast"]}
+{"key": "https://feeds.libsyn.com/506208/rss", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "http://feeds.socialpsychology.org/job-forum", "tags": ["topic:science", "type:aggregator"]}
+{"key": "http://feeds.socialpsychology.org/psychology-headlines", "tags": ["topic:science", "type:aggregator"]}
+{"key": "http://feeds2.feedburner.com/Command-line-fu", "tags": ["topic:systems", "type:community"]}
+{"key": "http://feeds2.feedburner.com/PetrMitrichev", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "https://glog.glennf.com/tiny-type-blog?category=podcast&format=rss", "tags": ["topic:tech-industry", "type:podcast"]}
+{"key": "https://www.huffpost.com/topic/drag-queens/feed", "tags": ["region:usa", "topic:entertainment", "type:aggregator"]}
+{"key": "https://www.huffpost.com/topic/weight-loss/feed", "tags": ["region:usa", "topic:health", "type:aggregator"]}
+{"key": "https://feed.songexploder.net/SongExploder", "tags": ["topic:music", "type:podcast"]}
+{"key": "https://www.manton.org/feed.json", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://www.manton.org/podcast.json", "tags": ["topic:software-engineering", "type:podcast"]}
+{"key": "chaski.huffpost.com", "tags": ["region:usa", "topic:news", "type:aggregator"], "pathTags": {"/topic/drag-queens": ["topic:entertainment"], "/topic/weight-loss": ["topic:health"]}}
+{"key": "comingsoon.net", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "commandlinefu.com", "tags": ["topic:systems", "type:community"]}
+{"key": "cowboychurch.tv", "tags": ["topic:religion", "type:podcast"]}
+{"key": "devcenter.heroku.com", "tags": ["topic:infrastructure", "type:vendor-blog"]}
+{"key": "dialogue.earth", "tags": ["topic:environment", "type:publication"], "pathTags": {"/pt-br/": ["language:portuguese"], "/zh/": ["language:chinese"]}}
+{"key": "djharper.dev", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "english.pravda.ru", "tags": ["language:english", "region:russia", "topic:news", "type:publication"]}
+{"key": "fedmentor.dev", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "feeds.addedbytes.com", "tags": ["topic:software-engineering", "type:vendor-blog"]}
+{"key": "glog.glennf.com", "tags": ["topic:tech-industry", "type:vendor-blog"]}
+{"key": "henry.codes", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "labs.iximiuz.com", "tags": ["topic:systems", "type:personal-blog"]}
+{"key": "meh.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "feed.songexploder.net", "tags": ["topic:music", "type:podcast"]}
