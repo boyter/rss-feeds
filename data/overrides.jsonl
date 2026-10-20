@@ -3542,3 +3542,191 @@
 {"key": "https://www.twilio.com/en-us/blog.feed.xml", "tags": ["topic:web-development", "type:vendor-blog"]}
 {"key": "https://www.twilio.com/en-us/blog.feed.xml?locale=en", "tags": ["topic:web-development", "type:vendor-blog"]}
 {"key": "https://www.twilio.com/en-us/changelog.feed.xml", "tags": ["topic:web-development", "type:vendor-blog"]}
+{"key": "http://feeds.feedburner.com/avc", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "http://feeds.feedburner.com/AdvancedPersistentSecurity", "tags": ["topic:security", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/Agwired", "tags": ["topic:business", "type:publication"]}
+{"key": "http://feeds.feedburner.com/AlexanderVanElsassWeblogOnNewMediaTechnologiesAndTheirEffectOnSocialBehavior", "tags": ["topic:media", "type:personal-blog"]}
+{"key": "http://feeds.feedburner.com/AtlanticFood", "tags": ["topic:health", "type:publication"]}
+{"key": "http://feeds.feedburner.com/AtlanticPoliticsChannel", "tags": ["topic:politics", "type:publication"]}
+{"key": "http://feeds.feedburner.com/BibleGatewayBlog", "tags": ["topic:religion", "type:vendor-blog"]}
+{"key": "http://feeds.feedburner.com/BigHeadLabs", "tags": ["topic:tech-industry", "type:vendor-blog"]}
+{"key": "http://feeds.feedburner.com/BreakingDefense/", "tags": ["topic:military", "type:publication"]}
+{"key": "http://feeds.feedburner.com/CarBodyDesign-DesignJobs", "tags": ["topic:design", "type:publication"]}
+{"key": "http://feeds.feedburner.com/Corvida", "tags": ["topic:gadgets", "type:publication"]}
+{"key": "http://feeds.feedburner.com/DumbLittleMan", "tags": ["topic:lifestyle", "type:publication"]}
+{"key": "http://feeds.feedburner.com/FarmCityNewsday", "tags": ["region:us-california", "topic:business", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/Irishcalvinistcom", "tags": ["topic:religion", "type:personal-blog"]}
+{"key": "http://feeds.feedburner.com/Kilianvalkhofcom", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "http://feeds.feedburner.com/MediaBuzzmeter", "tags": ["topic:media", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/MyBadHabits/", "tags": ["topic:lifestyle", "type:personal-blog"]}
+{"key": "http://feeds.feedburner.com/ScottySmith", "tags": ["topic:religion", "type:personal-blog"]}
+{"key": "http://feeds.feedburner.com/Selected-Shorts", "tags": ["topic:books", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/SlashdotSitenews", "tags": ["topic:tech-industry", "type:aggregator"]}
+{"key": "http://feeds.feedburner.com/TedtalksHD", "tags": ["topic:entertainment", "type:video"]}
+{"key": "http://feeds.feedburner.com/TheAtlantic", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "http://feeds.feedburner.com/TheOneGreg", "tags": ["topic:politics", "type:video"]}
+{"key": "http://feeds.feedburner.com/UXPassion", "tags": ["topic:design", "type:vendor-blog"]}
+{"key": "http://feeds.feedburner.com/UxMyths", "tags": ["topic:design", "type:aggregator"]}
+{"key": "http://feeds.feedburner.com/afropop/podcast", "tags": ["topic:music", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/amazingsuperpowers", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "http://feeds.feedburner.com/between2worlds", "tags": ["topic:religion", "type:personal-blog"]}
+{"key": "http://feeds.feedburner.com/blogspot/FcTgv", "tags": ["topic:education", "type:personal-blog"]}
+{"key": "http://feeds.feedburner.com/carbodydesign-publications", "tags": ["topic:design", "type:publication"]}
+{"key": "http://feeds.feedburner.com/fortinet/blogs", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "http://feeds.feedburner.com/fortinet/events", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "http://feeds.feedburner.com/geeknews-blog", "tags": ["language:korean", "topic:tech-industry", "type:aggregator"]}
+{"key": "http://feeds.feedburner.com/guybensonshow", "tags": ["topic:politics", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/joretegdotcom", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "http://feeds.feedburner.com/kburke", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "http://feeds.feedburner.com/londonist/sBMe", "tags": ["region:uk-london", "topic:lifestyle", "type:publication"]}
+{"key": "http://feeds.feedburner.com/mobilenations", "tags": ["topic:philosophy", "type:personal-blog"]}
+{"key": "http://feeds.feedburner.com/rtwilson/blog", "tags": ["topic:science", "type:personal-blog"]}
+{"key": "http://feeds.feedburner.com/tm-security-blog", "tags": ["language:japanese", "topic:security", "type:vendor-blog"]}
+{"key": "http://feeds.feedburner.com/usabilitypost", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "https://feeds.feedburner.com/AffordAnythingFeed", "tags": ["topic:finance", "type:podcast"]}
+{"key": "https://feeds.feedburner.com/PetaPixel", "tags": ["topic:art", "type:publication"]}
+{"key": "https://feeds.feedburner.com/TheDailyWtf", "tags": ["topic:software-engineering", "type:publication"]}
+{"key": "https://feeds.feedburner.com/TheParisReviewBlog", "tags": ["topic:books", "type:publication"]}
+{"key": "https://feeds.feedburner.com/WhenCanIUse", "tags": ["topic:web-development", "type:vendor-blog"]}
+{"key": "https://feeds.feedburner.com/com/Yeor", "tags": ["region:pakistan", "topic:entertainment", "type:publication"]}
+{"key": "https://feeds.feedburner.com/peRFect-tennis", "tags": ["topic:sport", "type:personal-blog"]}
+{"key": "http://feeds.megaphone.fm/CHRTDY4335196340", "tags": ["topic:religion", "type:podcast"]}
+{"key": "http://feeds.megaphone.fm/CHRTDY4526201714", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://feeds.megaphone.fm/CBS1672130867", "tags": ["topic:history", "type:podcast"]}
+{"key": "https://feeds.megaphone.fm/CBS2753513555", "tags": ["topic:politics", "type:podcast"]}
+{"key": "https://feeds.megaphone.fm/CBS5518920044", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://feeds.megaphone.fm/CBS8186808081", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://feeds.megaphone.fm/CCBNC2014656978", "tags": ["topic:politics", "type:podcast"]}
+{"key": "https://feeds.megaphone.fm/GNL8140061955", "tags": ["topic:gaming", "type:podcast"]}
+{"key": "https://feeds.megaphone.fm/OUAOS2600460627", "tags": ["region:new-zealand", "topic:journalism", "topic:politics", "type:podcast"]}
+{"key": "https://feeds.captivate.fm/a-dictionary-of-emotions/", "tags": ["topic:books", "type:podcast"]}
+{"key": "https://feeds.captivate.fm/back-to-the-roots/", "tags": ["language:ukrainian", "topic:art", "type:podcast"]}
+{"key": "https://feeds.captivate.fm/culture-of-everything/", "tags": ["language:ukrainian", "topic:art", "type:podcast"]}
+{"key": "https://feeds.captivate.fm/epravda/", "tags": ["language:ukrainian", "topic:economics", "type:podcast"]}
+{"key": "https://feeds.megaphone.fm/OUAOS4347787120", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://feeds.megaphone.fm/SLT1859464427", "tags": ["topic:lifestyle", "type:podcast"]}
+{"key": "https://feeds.megaphone.fm/SLT2638050842", "tags": ["topic:lifestyle", "type:podcast"]}
+{"key": "https://feeds.megaphone.fm/atlanticgoodonpaper", "tags": ["topic:philosophy", "type:podcast"]}
+{"key": "https://feeds.megaphone.fm/gamescoop", "tags": ["topic:gaming", "type:podcast"]}
+{"key": "https://medium.com/feed/@presse_libre", "tags": ["language:french", "topic:news", "type:aggregator"]}
+{"key": "https://medium.com/feed/bitsrc/tagged/web-development", "tags": ["topic:web-development", "type:aggregator"]}
+{"key": "https://medium.com/feed/blog/tagged/technology", "tags": ["topic:tech-industry", "type:vendor-blog"]}
+{"key": "https://medium.com/feed/bouncin-and-behavin-blogs", "tags": ["topic:politics", "type:aggregator"]}
+{"key": "https://medium.com/feed/building-panorama-education", "tags": ["topic:software-engineering", "type:vendor-blog"]}
+{"key": "https://medium.com/feed/driven-by-code", "tags": ["topic:programming", "type:aggregator"]}
+{"key": "https://medium.com/feed/groupon-eng", "tags": ["topic:software-engineering", "type:vendor-blog"]}
+{"key": "https://medium.com/feed/hootsuite-engineering", "tags": ["topic:software-engineering", "type:vendor-blog"]}
+{"key": "https://medium.com/feed/https-prolificpulse-blog", "tags": ["topic:art", "type:aggregator"]}
+{"key": "https://medium.com/feed/sidebar/tagged/business", "tags": ["topic:business", "type:publication"]}
+{"key": "https://medium.com/feed/sidebar/tagged/case-study", "tags": ["topic:design", "type:publication"]}
+{"key": "https://medium.com/feed/sidebar/tagged/design", "tags": ["topic:design", "type:publication"]}
+{"key": "https://medium.com/feed/vngrs", "tags": ["topic:ai", "type:vendor-blog"]}
+{"key": "https://adamcaudill.com/blog/index.xml", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "https://adamcaudill.com/essays/index.xml", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "https://adamcaudill.com/index.xml", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "https://adamcaudill.com/photo/index.xml", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "https://adamcaudill.com/research/index.xml", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "https://feeds.captivate.fm/golovna-observatoria/", "tags": ["language:ukrainian", "topic:science", "type:podcast"]}
+{"key": "https://feeds.captivate.fm/ontheagenda/", "tags": ["topic:politics", "type:vendor-blog"]}
+{"key": "https://feeds.captivate.fm/the-college-investor/", "tags": ["topic:finance", "type:podcast"]}
+{"key": "https://feeds.simplecast.com/54nAGcIl", "tags": ["region:usa", "topic:news", "type:podcast"]}
+{"key": "https://feeds.simplecast.com/7aaAp0Bb", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://feeds.simplecast.com/B9KgArY4", "tags": ["topic:politics", "type:podcast"]}
+{"key": "https://feeds.simplecast.com/TL_Rhe_x", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://feeds.simplecast.com/_gE9XRnO", "tags": ["region:australia", "topic:finance", "type:podcast"]}
+{"key": "https://feeds.simplecast.com/kyG_uojt", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://feeds.simplecast.com/lp8XMM9O", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://mastodon.social/@TimnitGebru.rss", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "https://mastodon.social/@campuscodi.rss", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "https://adamcaudill.com/writing/index.xml", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "https://blog.aboutamazon.com/amazon-prime.rss", "tags": ["topic:entertainment", "type:vendor-blog"]}
+{"key": "https://blog.aboutamazon.com/entertainment.rss", "tags": ["topic:entertainment", "type:vendor-blog"]}
+{"key": "https://blog.aboutamazon.com/policy.rss", "tags": ["topic:politics", "type:vendor-blog"]}
+{"key": "https://blog.aboutamazon.com/shopping.rss", "tags": ["topic:business", "type:vendor-blog"]}
+{"key": "https://blog.aboutamazon.com/transportation.rss", "tags": ["topic:transport", "type:vendor-blog"]}
+{"key": "https://blog.aboutamazon.com/veterans.rss", "tags": ["topic:business", "type:vendor-blog"]}
+{"key": "https://blogs.lavanguardia.com/beirut/feed", "tags": ["language:spanish", "region:middle-east", "topic:politics", "type:personal-blog"]}
+{"key": "https://blogs.lavanguardia.com/buenos-aires/feed", "tags": ["language:spanish", "region:latin-america", "topic:politics", "type:personal-blog"]}
+{"key": "https://blogs.lavanguardia.com/cat14x8000/feed", "tags": ["language:spanish", "topic:sport", "type:personal-blog"]}
+{"key": "https://blogs.lavanguardia.com/desafectados/feed", "tags": ["language:spanish", "topic:politics", "type:personal-blog"]}
+{"key": "https://blogs.lavanguardia.com/diario-de-futuro/feed", "tags": ["language:spanish", "topic:politics", "type:personal-blog"]}
+{"key": "https://feed.pod.co/deadly-departed", "tags": ["topic:philosophy", "type:podcast"]}
+{"key": "https://feed.pod.co/fabulous-folklore-with-icy", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://feed.pod.co/just-branding", "tags": ["topic:design", "type:podcast"]}
+{"key": "https://adaymagazine.com/category/podcast/eargasm/feed/", "tags": ["topic:design", "type:podcast"]}
+{"key": "https://feed.pod.co/marketing-guides-for-small-businesses", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://feed.pod.co/motorsport-radio", "tags": ["topic:sport", "type:podcast"]}
+{"key": "https://feed.pod.co/tech-for-good-live", "tags": ["topic:tech-industry", "type:podcast"]}
+{"key": "https://news.google.com/atom?hl=en-GB&gl=GB&ceid=GB:en&oc=11", "tags": ["region:uk", "topic:news", "type:aggregator"]}
+{"key": "https://news.google.com/atom?hl=en-US&gl=US&ceid=US:en&oc=11", "tags": ["region:usa", "topic:news", "type:aggregator"]}
+{"key": "https://news.google.com/atom?hl=fr&gl=FR&ceid=FR:fr", "tags": ["language:french", "region:france", "topic:news", "type:aggregator"]}
+{"key": "https://news.google.com/rss?hl=en-GB&gl=GB&ceid=GB:en&oc=11", "tags": ["region:uk", "topic:news", "type:aggregator"]}
+{"key": "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en", "tags": ["region:india", "topic:news", "type:aggregator"]}
+{"key": "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en", "tags": ["region:usa", "topic:news", "type:aggregator"]}
+{"key": "https://adaymagazine.com/category/podcast/homeroom/feed/", "tags": ["topic:design", "type:podcast"]}
+{"key": "https://adaymagazine.com/category/podcast/human-of-stories/feed/", "tags": ["topic:design", "type:podcast"]}
+{"key": "https://adaymagazine.com/category/podcast/humanrideradio/feed/", "tags": ["topic:design", "type:podcast"]}
+{"key": "https://adaymagazine.com/category/podcast/side-dish/feed/", "tags": ["topic:design", "type:podcast"]}
+{"key": "https://www.blogger.com/feeds/1729822519392175009/posts/default", "tags": ["topic:programming:java", "type:personal-blog"]}
+{"key": "https://www.blogger.com/feeds/21247748/posts/default", "tags": ["topic:medicine", "type:personal-blog"]}
+{"key": "https://www.blogger.com/feeds/2837782493454697354/posts/default", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "https://www.blogger.com/feeds/381129527146258002/posts/default", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://www.blogger.com/feeds/4684505729187083516/posts/default", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://buttondown.com/cassidoo/rss", "tags": ["topic:web-development", "type:newsletter"]}
+{"key": "https://buttondown.com/grugq/rss", "tags": ["topic:security", "type:newsletter"]}
+{"key": "https://buttondown.com/hillelwayne/rss", "tags": ["topic:software-engineering", "type:newsletter"]}
+{"key": "https://buttondown.com/jaffray/rss", "tags": ["topic:data", "type:newsletter"]}
+{"key": "https://buttondown.com/nelhage/rss", "tags": ["topic:systems", "type:newsletter"]}
+{"key": "http://ep00.epimg.net/rss/cat/portada.xml", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
+{"key": "http://ep00.epimg.net/rss/ccaa/andalucia.xml", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
+{"key": "http://ep00.epimg.net/rss/ccaa/galicia.xml", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
+{"key": "http://ep00.epimg.net/rss/ccaa/paisvasco.xml", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
+{"key": "http://ep00.epimg.net/rss/ccaa/valencia.xml", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
+{"key": "https://feed.desiringgod.org/articles-by-desiring-god.rss", "tags": ["topic:religion", "type:publication"]}
+{"key": "https://feed.desiringgod.org/ask-pastor-john.rss", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://feed.desiringgod.org/authors-on-the-line.rss", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://feed.desiringgod.org/here-we-stand.rss", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://feed.desiringgod.org/light-and-truth.rss", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://feeds.redcircle.com/0ac8ccd2-73b5-4132-8308-860dcf16f253", "tags": ["topic:music", "type:podcast"]}
+{"key": "https://feeds.redcircle.com/176362f3-e75b-45bb-9182-c2b5f6b5e567", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://feeds.redcircle.com/214fd110-1997-482a-beb0-505f3f709200", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://feeds.redcircle.com/2fc8977d-ad79-4244-9dbb-6133ecf0ed95", "tags": ["topic:music", "type:podcast"]}
+{"key": "https://feeds.redcircle.com/b35643be-cb5c-466c-a1df-6b6c0844cc3c", "tags": ["topic:history", "topic:music", "type:podcast"]}
+{"key": "https://www.biblegateway.com/blog/author/aaron/feed/", "tags": ["topic:religion", "type:vendor-blog"]}
+{"key": "https://www.biblegateway.com/learn/feed/", "tags": ["topic:religion", "type:vendor-blog"]}
+{"key": "https://www.biblegateway.com/reading-plans/chronological/feed/bg-reading.xml?version=NIV", "tags": ["topic:religion", "type:vendor-blog"]}
+{"key": "https://www.biblegateway.com/reading-plans/old-new-testament/feed/bg-reading.xml?version=NIV", "tags": ["topic:religion", "type:vendor-blog"]}
+{"key": "https://www.biblegateway.com/votd/get/?format=atom", "tags": ["topic:religion", "type:vendor-blog"]}
+{"key": "http://conal.net/blog/posts/deriving-parallel-tree-scans/feed", "tags": ["topic:programming:haskell", "type:personal-blog"]}
+{"key": "http://conal.net/blog/posts/optimizing-cccs/feed", "tags": ["topic:programming:haskell", "type:personal-blog"]}
+{"key": "http://conal.net/blog/posts/pajama/feed", "tags": ["topic:programming:haskell", "type:personal-blog"]}
+{"key": "http://conal.net/blog/posts/tangible-functional-programming-a-modern-marriage-of-usability-and-composability/feed", "tags": ["topic:programming:haskell", "type:personal-blog"]}
+{"key": "http://conal.net/blog/tag/composability/feed", "tags": ["topic:programming:haskell", "type:personal-blog"]}
+{"key": "http://conal.net/blog/tag/interactive-programming/feed", "tags": ["topic:programming:haskell", "type:personal-blog"]}
+{"key": "https://www.cyber.gc.ca/api/cccs/atom/v1/get?feed=alerts_advisories&lang=en", "tags": ["region:canada", "topic:security", "type:publication"]}
+{"key": "https://www.cyber.gc.ca/api/cccs/atom/v1/get?feed=alerts_advisories&lang=fr", "tags": ["language:french", "region:canada", "topic:security", "type:publication"]}
+{"key": "https://www.cyber.gc.ca/api/cccs/atom/v1/get?feed=news_events_guidance&lang=fr", "tags": ["language:french", "region:canada", "topic:security", "type:publication"]}
+{"key": "https://www.cyber.gc.ca/api/cccs/rss/v1/get?feed=alerts_advisories&lang=en", "tags": ["region:canada", "topic:security", "type:publication"]}
+{"key": "https://www.cyber.gc.ca/api/cccs/rss/v1/get?feed=alerts_advisories&lang=fr", "tags": ["language:french", "region:canada", "topic:security", "type:publication"]}
+{"key": "https://www.govtech.com/artificial-intelligence.rss", "tags": ["topic:ai", "topic:government", "type:publication"]}
+{"key": "https://www.govtech.com/education.rss", "tags": ["topic:education", "topic:government", "type:publication"]}
+{"key": "https://www.govtech.com/em.rss", "tags": ["topic:government", "type:publication"]}
+{"key": "https://www.govtech.com/icymi.rss", "tags": ["topic:government", "type:publication"]}
+{"key": "https://www.govtech.com/index.rss", "tags": ["topic:government", "type:publication"]}
+{"key": "parkerortolani.blog", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "techinasia.com", "tags": ["topic:tech-industry", "type:publication"], "pathTags": {"/tag/china": ["region:china"], "/tag/indonesia": ["region:india"], "/tag/japan": ["region:japan"]}}
+{"key": "adaymagazine.com", "tags": ["topic:design", "type:publication"]}
+{"key": "aeromorning.com", "tags": ["language:french", "topic:transport", "type:publication"], "pathTags": {"/blog/defense-2/": ["topic:military"]}}
+{"key": "afloat.ie", "tags": ["region:ireland", "topic:sport", "type:publication"]}
+{"key": "ahaber.com.tr", "tags": ["topic:news", "type:publication"], "pathTags": {"/rss/ankaragucu": ["topic:sport"], "/rss/antalyaspor": ["topic:sport"], "/rss/basaksehir": ["topic:sport"]}}
+{"key": "au.lifehacker.com", "tags": ["region:australia", "topic:lifestyle", "type:publication"], "pathTags": {"/apple.xml": ["topic:gadgets"], "/apps.xml": ["topic:gadgets"]}}
+{"key": "blogs.infoblox.com", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "cn.investing.com", "tags": ["language:chinese", "topic:finance", "type:publication"]}
+{"key": "dunglas.dev", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "dyalog.com", "tags": ["topic:programming:apl", "type:vendor-blog"]}
+{"key": "engineyard.com", "tags": ["topic:infrastructure", "type:vendor-blog"], "pathTags": {"/category/ruby-on-rails/": ["topic:programming:ruby"]}}
+{"key": "feeds.crikey.com.au", "tags": ["region:australia", "topic:news", "type:publication"], "pathTags": {"/CrikeyBusiness": ["topic:business"], "/CrikeyEnvironment": ["topic:environment"], "/CrikeyLife": ["topic:entertainment"], "/CrikeyMedia": ["topic:media"], "/CrikeyPolitics": ["topic:politics"]}}
+{"key": "josh.blog", "tags": ["topic:web-development", "type:personal-blog"], "pathTags": {"/category/design/feed": ["topic:design"]}}
+{"key": "kevquirk.com", "tags": ["topic:personal", "type:personal-blog"], "pathTags": {"/feed/books": ["topic:books"]}}
+{"key": "nu.nl", "tags": ["language:dutch", "topic:news", "type:publication"], "pathTags": {"/rss/Economie": ["topic:economics"], "/rss/Sport": ["topic:sport"]}}
+{"key": "taskandpurpose.com", "tags": ["topic:military", "type:publication"]}
