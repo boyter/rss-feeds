@@ -408,3 +408,59 @@ until it was made to require a tag as well as forbid the wrong one.
 
 After the fix: 30 of the 53 tagged, none with more than two topics, WSJ Markets
 `topic:finance` alone. The other 140 are queued rather than guessed.
+
+## The seam: what a keyword-search source would have to provide
+
+Everything below `probe` already works for a source that searches by topic
+instead of by host. The pipeline does not care where a URL came from; it cares
+that someone fetched it. So a search source is one function:
+
+```
+query("nursing", language=None, limit=50) -> [{"url": ..., "title": ...}]
+```
+
+plus three things it must not do:
+
+- **it may not decide a tag.** A search index files a feed under a heading, and
+  headings are the source's claim, not ours: the security list carried The
+  Oatmeal and the Washington Examiner. Topics come from the feed's own name, or
+  from a human.
+- **it may not skip the probe.** Its index is a snapshot; feeds move, die and get
+  name-squatted between its crawl and ours. `feeds.feedburner.com/TechCrunch`
+  answering "Crunch Hype" is what a stale index looks like.
+- **it may not be the only key.** Candidates enter deduplicated on
+  `vocab.norm_key` and land in `data/candidates.*.jsonl` like any other channel,
+  so a second source cannot add a line for a feed we already carry.
+
+`discover.py oracle` is the working example of that shape: it queries a third
+party, caches the answers, filters for plausibility, caps per publisher, and
+still makes `add.py probe` decide. Swapping the per-host endpoint for a keyword
+endpoint is the whole change.
+
+## The directory that searches: rssamplifier.com
+
+Found by the user. `robots.txt` and `skill.md` name the entry points and say
+reading them is preferred to crawling the HTML: `/api/search?q=`,
+`/api/feeds?limit=&offset=&kind=`, `/topics/{kw}.json`, and `/opml` — the whole
+directory, 44 MB, or one subject with `/opml?topic=`. ~199k blog feeds, 311k
+podcasts. `discover.py amp` uses the last one: a file of subjects in, leads out,
+one subject at a time with a pause, answers cached in `data/amp.jsonl`.
+
+Measured on 26 subjects the list is thin on (medicine, nursing, theology,
+military, hindi, poland, africa, nigeria, pakistan, ukraine…):
+
+- the directory named **8,731 feeds**; `--max-per-query 25` kept 617, deduped to 579
+- **543 of 579 live (94%)**, 540 new to the list, on **380 hosts**
+- the largest single contributor was `anchor.fm` with 90 — an aggregator, capped by
+  the same rule as everywhere else
+
+**543 live from 26 queries.** Nothing else measured this session is close: the
+per-host oracle gave 84% but only ~15 leads per host, curated lists 11–40%, path
+guessing 0.6%. This is the channel to run wide, subject by subject, because it is
+the only one that reaches hosts we have never heard of.
+
+What it did not do: close the topic gaps. `topic:medicine` is still 15, because a
+subject heading is a hint and never a tag — the nursing and palliative-care
+podcasts merged as `topic:health`/`topic:media`, which the feed's own name
+supports. 311 directory leads are queued undecidably rather than tagged on the
+directory's say-so.

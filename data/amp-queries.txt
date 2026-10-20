@@ -1,0 +1,27 @@
+# Subjects the list is thin on. The directory's heading is a hint, never a tag.
+nursing
+medicine
+hospital
+health
+religion
+theology
+church
+military
+defense
+navy
+army
+veteran
+finland
+finnish
+dutch
+netherlands
+india
+hindi
+poland
+polish
+ukraine
+africa
+nigeria
+philippines
+urdu
+pakistan

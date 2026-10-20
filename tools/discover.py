@@ -69,6 +69,14 @@ ORACLE_CACHE = paths.data("oracle.jsonl")
 # feeds, including ones that advertise themselves nowhere we can read.
 ORACLE_URL = "https://origin.feedsearch.dev/api/v1/search"
 
+# rssamplifier.com is an open directory (~200k blog feeds, 311k podcasts) whose
+# robots.txt and skill.md name the entry points and prefer them to HTML crawling.
+# /opml?topic=<subject> answers one subject as a subscription list, which is the
+# shape the pipeline already eats: URLs, no claims about tags.
+AMP_URL = "https://rssamplifier.com/opml"
+AMP = paths.data("candidates.amp.jsonl")
+AMP_CACHE = paths.data("amp.jsonl")
+
 # A URL that cannot be a feed. Not a judgement about the site — about whether
 # this particular URL can ever answer with RSS. raw.githubusercontent.com is the
 # one that bit in the pilot: a curated README linked its own OPML files, and an
@@ -510,7 +518,7 @@ def cmd_tag(args):
     cands = (read_jsonl(CANDIDATES) + read_jsonl(EXPANDED) + read_jsonl(LEADS)
              # Oracle leads, not the pages they were asked about: PAGES and
              # SIBLINGS hold homepages, and a homepage is never a candidate feed.
-             + read_jsonl(ORACLE))
+             + read_jsonl(ORACLE) + read_jsonl(AMP))
     probed = {r["url"]: r for r in read_jsonl(RESULTS)}
     feeds = json.load(open(paths.root("feeds.json"), encoding="utf-8"))
     have = {vocab_mod.norm_key(f["url"]) for f in feeds}
@@ -996,6 +1004,91 @@ def oracle_sites(args):
         yield f"{host}"
 
 
+def cmd_amp(args):
+    """Ask a public blog directory for the feeds on a subject.
+
+    This is the channel the oracle cannot be: it searches by topic, so it reaches
+    hosts we have never heard of, which is the only breadth left. The directory's
+    subject heading is kept as `category`, which the tagger treats as a hint and
+    never as a tag - the security list that carried The Oatmeal is why.
+
+    Gentle by construction: one subject at a time, a pause, answers cached in
+    data/amp.jsonl so a re-run does not re-ask, and a per-subject cap, because a
+    directory this deep will name 400 feeds for "nursing" and 400 near-clones of
+    one publisher is not what a reader browses.
+    """
+    cache = {r.get("query"): r for r in read_jsonl(AMP_CACHE)}
+    rows, stats = [], collections.Counter()
+    with open(AMP_CACHE, "a", encoding="utf-8") as cachefh:
+        for q in read_queries(args.queries):
+            if q in cache and not args.restart:
+                found = cache[q].get("feeds", [])
+                stats["cached"] += 1
+            else:
+                found = amp_topic(q)
+                stats["queried"] += 1
+                cachefh.write(json.dumps({"query": q, "feeds": found},
+                                         ensure_ascii=False) + "\n")
+                cachefh.flush()
+                time.sleep(args.pause)
+            if not found:
+                stats["directory knows none"] += 1
+                continue
+            found.sort(key=lambda f: (urlparse(f["url"]).netloc.lower(), f["url"]))
+            if len(found) > args.max_per_query:
+                stats["dropped:per-query cap"] += len(found) - args.max_per_query
+            for f in found[:args.max_per_query]:
+                lead = clean_url(f["url"])
+                ok, why = is_plausible_feed(lead)
+                if not ok:
+                    stats["dropped:" + why] += 1
+                    continue
+                ok, why = worth_carrying(lead)
+                if not ok:
+                    stats["dropped:" + why] += 1
+                    continue
+                rows.append({"url": lead, "tags": [], "source": "rssamplifier",
+                             "category": q, "hintTopics": [], "hintType": None,
+                             "via": "directory",
+                             "directoryCat": f.get("cat", "")})
+            stats["feeds named"] += len(found)
+    seen, out = set(), []
+    for r in rows:
+        k = vocab_mod.norm_key(r["url"])
+        if k in seen:
+            stats["dropped:duplicate in batch"] += 1
+            continue
+        seen.add(k)
+        out.append(r)
+    with open(AMP, "w", encoding="utf-8") as fh:
+        for r in out:
+            fh.write(json.dumps(r, ensure_ascii=False) + "\n")
+    print(f"{len(out)} feeds named by the directory -> {AMP}")
+    for k, v in sorted(stats.items()):
+        print(f"  {k:30} {v}")
+    return 0
+
+
+def amp_topic(subject):
+    q = urllib.parse.urlencode({"topic": subject})
+    req = urllib.request.Request(AMP_URL + "?" + q, headers=harvest.HEADERS)
+    try:
+        with urllib.request.urlopen(req, timeout=40) as r:
+            raw = r.read(8_000_000)
+            ce = r.headers.get("Content-Encoding", "")
+        text = harvest.decode(raw, ce)
+    except Exception:
+        return []
+    return [{"url": u, "cat": c} for u, c in iter_opml(text)]
+
+
+def read_queries(path):
+    for line in open(path, encoding="utf-8"):
+        line = line.split("#")[0].strip()
+        if line:
+            yield line
+
+
 def main():
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -1025,6 +1118,13 @@ def main():
                         "257 desk feeds do not become our list's shape")
     o.add_argument("--pause", type=float, default=1.0,
                    help="seconds between queries to someone else's free service")
+    a = sub.add_parser("amp")
+    a.add_argument("queries", help="file of subjects to ask the directory about")
+    a.add_argument("--max-per-query", type=int, default=25,
+                   help="a directory this deep names hundreds of feeds for one subject")
+    a.add_argument("--restart", action="store_true", help="ignore the cached answers")
+    a.add_argument("--pause", type=float, default=1.0,
+                   help="seconds between queries to someone else's free service")
     args = ap.parse_args()
     if args.cmd == "fetch" and args.sources:
         # A path given on the command line is the user's path, not ours (see
@@ -1035,7 +1135,8 @@ def main():
             "paths": cmd_paths, "tag": cmd_tag,
             "siblings": cmd_siblings, "leads": cmd_leads,
             "pages": cmd_pages,
-            "oracle": cmd_oracle}[args.cmd](args)
+            "oracle": cmd_oracle,
+            "amp": cmd_amp}[args.cmd](args)
 
 
 if __name__ == "__main__":
