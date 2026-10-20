@@ -24,3 +24,4 @@
 {"key": "www.headlinesoftoday.com", "reason": "dead: /feed returns 404 with the body {\"error\":\"not_found\",\"path\":\"/feed\"} - the site no longer serves a feed at that path"}
 {"key": "https://susam.net/blog/feed.xml", "reason": "superseded: the feed says it is discontinued and points at susam.net/feed.xml, which is in the list"}
 {"key": "https://susam.net/obsolete.xml", "reason": "superseded: the feed says it is discontinued and points at susam.net/feed.xml, which is in the list"}
+{"key": "aihausanovels.com.ng", "reason": "download-farm: offers 'hausa novel audio mp3 download' pirated content"}
