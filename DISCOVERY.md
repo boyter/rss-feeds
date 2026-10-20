@@ -527,3 +527,22 @@ description. Left in the queue, not merged.
 6,228 → 7,397 feeds, 5,577 hosts. The oracle widening over never-asked
 single-feed hosts was launched the same afternoon (see *Open work* in RESUME
 for the re-derive command); its numbers land here when it completes.
+
+## The per-host oracle run wide (2026-10-20)
+
+Every never-asked single-feed host, one batch: **4,088 hosts asked, 19,039
+feeds named by the index, 2,238 hosts it knows nothing about**, 12,872 leads
+cut by the per-site cap of 6 (the cap carried its weight again), 400 dropped
+by the feed-under-a-page filter. After probe: **3,664 live leads (84%, the
+measured rate)**, of which **1,236 were taggable from existing human rules**
+(475 host rule + host rule, 412 from the feed's own name, 345 one host rule)
+and merged; **1,784 joined the human queue**. 7,397 → 8,632 feeds, 5,646 hosts.
+
+The run lost 16 sites to HTTP 429 from the free index, and the cached error
+row made the loss permanent - fixed in ccdc4cc (retry 30s/60s keyed on the
+error *string*, since the query helper never raises; failed sites no longer
+cache), so a re-run re-asks exactly those. Two things this channel is now
+measured to be: excellent for **section and category feeds of hosts we
+already vetted** (that is what the index knows and our rules can decide -
+84% live, 34% auto-decidable), and exhausted for breadth: 55% of asked
+single-feed hosts have no second feed at all.
