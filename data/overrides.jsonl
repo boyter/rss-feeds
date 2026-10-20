@@ -4628,3 +4628,39 @@
 {"key": "http://feeds.101cookbooks.com/101cookbooks", "tags": ["topic:food", "type:personal-blog"]}
 {"key": "https://feeds.feedblitz.com/marginalrevolution&x=1", "tags": ["topic:economics", "type:personal-blog"]}
 {"key": "feed.androidauthority.com", "tags": ["topic:gadgets", "type:publication"]}
+{"key": "http://feeds.feedburner.com/gasi/rtfm", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "http://feeds.feedburner.com/opensearch.xml", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "https://feeds.fireside.fm/stovol/rss", "tags": ["language:chinese", "region:china", "topic:entertainment", "type:podcast"]}
+{"key": "https://feeds.theincomparable.com/pants", "tags": ["topic:media", "topic:politics", "type:podcast"]}
+{"key": "https://fitzgen.com/feed.xml", "tags": ["topic:programming:rust", "topic:web-development", "type:personal-blog"]}
+{"key": "https://www.focus.de/rss", "tags": ["language:german", "topic:news", "type:publication"]}
+{"key": "https://fr.euronews.com/rss?level=program&name=dans-la-tete-des-hommes", "tags": ["language:french", "region:world", "topic:news", "type:publication"]}
+{"key": "https://fr.legacy.reactjs.org/feed.xml", "tags": ["language:french", "topic:programming:javascript", "type:vendor-blog"]}
+{"key": "https://fr.react.dev/rss.xml", "tags": ["language:french", "topic:programming:javascript", "type:vendor-blog"]}
+{"key": "https://fr.reactjs.org/feed.xml", "tags": ["language:french", "topic:programming:javascript", "type:vendor-blog"]}
+{"key": "http://freitas-magalhaes.blogspot.com/feeds/posts/default", "tags": ["topic:science", "type:personal-blog"]}
+{"key": "https://geohot.github.io//blog/feed.xml", "tags": ["topic:programming", "topic:tech-industry", "type:personal-blog"]}
+{"key": "https://www.getrichslowly.org/articles/feed/", "tags": ["region:usa", "topic:finance", "type:publication"]}
+{"key": "https://ghost.orkpiraten.de/rss/", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://www.group-ib.com/feed/blogfeed/", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "https://haacked.com/atom.xml", "tags": ["topic:open-source", "topic:software-engineering", "type:personal-blog"]}
+{"key": "https://www.hanselman.com/blog/feed/rss", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://heiseshow.podigee.io/feed/mp3", "tags": ["language:german", "region:world", "topic:tech-industry", "type:podcast"]}
+{"key": "https://www.heroku.com/podcasts/codeish.rss", "tags": ["topic:infrastructure", "topic:software-engineering", "type:podcast"]}
+{"key": "https://www.hubspot.com/careers-blog/rss.xml", "tags": ["topic:business", "type:vendor-blog"]}
+{"key": "https://ilya.grigorik.com/essays/rss/", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://in-the-troll-pit.pages.dev/podcast.xml", "tags": ["topic:hardware", "type:podcast"]}
+{"key": "https://internal-apic.sportskeeda.com/en/v3/feeds/630", "tags": ["topic:sport", "type:aggregator"]}
+{"key": "https://ja.vite.dev/blog.rss", "tags": ["language:japanese", "topic:web-development", "type:vendor-blog"]}
+{"key": "https://journal.mackuba.eu/feed.xml", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "https://jp.engineering.indeedblog.com/feed/", "tags": ["topic:software-engineering", "type:vendor-blog"]}
+{"key": "https://www.kenklippenstein.com/feed", "tags": ["region:usa", "topic:military", "topic:politics", "type:newsletter"]}
+{"key": "https://ko.vite.dev/blog.rss", "tags": ["language:korean", "topic:web-development", "type:vendor-blog"]}
+{"key": "https://kokorobot.ca/links/img.xml", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "https://lambda.blinkit.com/feed", "tags": ["region:india", "topic:software-engineering", "type:vendor-blog"]}
+{"key": "https://laravel-news.com/feed/json", "tags": ["topic:programming:php", "topic:web-development", "type:publication"]}
+{"key": "https://leimao.github.io/atom.xml", "tags": ["topic:ai", "topic:systems", "type:personal-blog"]}
+{"key": "https://lepture.com/feed.xml", "tags": ["topic:books", "topic:programming", "type:personal-blog"]}
+{"key": "https://londonist.com/category/food-and-drink/feed", "tags": ["region:uk-london", "topic:food", "type:publication"]}
+{"key": "https://marius.ink/feed.atom", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "latest-edition.feed.theworld.org", "tags": ["region:world", "topic:news", "topic:politics", "type:podcast"]}
