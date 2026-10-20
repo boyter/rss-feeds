@@ -4383,3 +4383,41 @@
 {"key": "https://alex-charlton.com/rss.xml", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "https://alex-evers.bearblog.dev/feed", "tags": ["topic:systems", "type:personal-blog"]}
 {"key": "https://alex-hhh.github.io/feeds/all.atom.xml", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "https://alex-ionescu.com/atom", "tags": ["topic:security", "topic:systems", "type:personal-blog"]}
+{"key": "https://alex-theakston.squarespace.com/whywebleep?format=rss", "tags": ["topic:music", "type:podcast"]}
+{"key": "http://alex-verkhovsky.blogspot.com/feeds/posts/default", "tags": ["topic:programming:ruby", "type:personal-blog"]}
+{"key": "https://alex.merose.com/rss.xml", "tags": ["topic:mathematics", "type:personal-blog"]}
+{"key": "https://alex.nisnevich.com/blog/atom.xml", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "https://alex.pearwin.com/atom.xml", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://alex.smola.org/blog.xml", "tags": ["topic:ai", "topic:systems", "type:personal-blog"]}
+{"key": "https://alex000kim.com/index.xml", "tags": ["topic:ai", "topic:infrastructure", "type:personal-blog"]}
+{"key": "https://alex1701c.github.io/feed.xml", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "https://alex220.substack.com/feed", "tags": ["region:australia", "topic:art", "type:newsletter"]}
+{"key": "https://alexahire.in/feed/", "tags": ["region:india", "topic:business", "type:publication"]}
+{"key": "https://alexaitken.nz/feed/", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://alexand.ro/feed.xml", "tags": ["region:world", "topic:tech-industry", "type:personal-blog"]}
+{"key": "https://alexander-raffeiner.podigee.io/feed/mp3", "tags": ["language:german", "region:world", "topic:entertainment", "type:podcast"]}
+{"key": "https://alexander-wagandt.de/feed/mp3/", "tags": ["language:german", "region:world", "topic:entertainment", "type:podcast"]}
+{"key": "https://alexander.sieradzki.dev/blog.xml", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://alexander.whillas.com/feeds/atom.xml", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "https://alexanderbjoy.com/feed", "tags": ["region:usa", "topic:books", "type:personal-blog"]}
+{"key": "https://alexanderchukovski.com/rss", "tags": ["topic:ai", "topic:business", "type:personal-blog"]}
+{"key": "https://alexanderglavan.substack.com/feed", "tags": ["topic:religion", "type:newsletter"]}
+{"key": "https://alexanderhoughton.co.uk/feed/", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "https://alexanderisora.substack.com/feed", "tags": ["topic:tech-industry", "type:newsletter"]}
+{"key": "https://alexanderle.com/feed.xml", "tags": ["region:usa", "topic:software-engineering", "type:personal-blog"]}
+{"key": "https://alexanderlking.com/feed/", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://alexandermeddings.com/atom", "tags": ["region:world", "topic:history", "type:personal-blog"]}
+{"key": "https://alexandermigdal.com/atom", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "https://alexandersandberg.com/feed.xml", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://alexandershalomjoseph.substack.com/feed", "tags": ["topic:art", "topic:news", "type:newsletter"]}
+{"key": "https://alexandersnitker.substack.com/feed", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://alexanderstandardpod.podbean.com/feed.xml", "tags": ["topic:history", "type:podcast"]}
+{"key": "https://alexanderwales.com/feed", "tags": ["topic:books", "type:personal-blog"]}
+{"key": "https://alexanderwales.substack.com/feed", "tags": ["topic:books", "type:personal-blog"]}
+{"key": "https://alexanderweiss.dev/blog/rss.xml", "tags": ["topic:programming:swift", "type:personal-blog"]}
+{"key": "https://alexanderzeitler.com/feed.xml", "tags": ["topic:infrastructure", "type:personal-blog"]}
+{"key": "https://alexandra-molina.podigee.io/feed/mp3", "tags": ["language:german", "region:world", "topic:health", "type:podcast"]}
+{"key": "https://alexandrablanck.substack.com/feed", "tags": ["topic:books", "type:newsletter"]}
+{"key": "https://alexandraiff.substack.com/feed", "tags": ["topic:books", "type:newsletter"]}
+{"key": "https://alexandrakiley.substack.com/feed", "tags": ["topic:books", "type:newsletter"]}
