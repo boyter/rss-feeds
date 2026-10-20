@@ -4548,3 +4548,43 @@
 {"key": "https://alexsegura.substack.com/feed", "tags": ["region:usa", "topic:art", "topic:books", "type:newsletter"]}
 {"key": "https://alexsinelnikov.blog/rss.xml", "tags": ["region:world", "topic:software-engineering", "type:personal-blog"]}
 {"key": "https://alexskra.com/blog/feed", "tags": ["topic:tech-industry", "topic:web-development", "type:personal-blog"]}
+{"key": "https://alexsteinherr.substack.com/feed", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "https://alexstrick.com/personal.xml", "tags": ["topic:politics", "topic:systems", "type:personal-blog"]}
+{"key": "https://alexsys.substack.com/feed", "tags": ["topic:philosophy", "type:newsletter"]}
+{"key": "https://alextheward.com/feed.xml", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "https://alextome.substack.com/feed", "tags": ["language:portuguese", "region:latin-america", "topic:health", "type:newsletter"]}
+{"key": "https://alextoussaint.com/feed.xml", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "https://alexunderwood.net/rss", "tags": ["topic:hardware", "topic:systems", "type:personal-blog"]}
+{"key": "https://alexustinov.com/feed.xml", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "https://alexwang.ai/index.xml", "tags": ["region:usa", "topic:ai", "type:personal-blog"]}
+{"key": "https://alexwilson.tech/feed.xml", "tags": ["topic:software-engineering", "topic:tech-industry", "type:personal-blog"]}
+{"key": "https://alexwood.codes/feed.xml", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://alexworradandrews.com/rss", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://alexyancey.com/atom", "tags": ["region:usa", "topic:software-engineering", "type:personal-blog"]}
+{"key": "https://alexzeecomedy.com/atom.xml", "tags": ["topic:entertainment", "type:personal-blog"]}
+{"key": "https://alexzh.com/rss/", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "https://alexzoltan.substack.com/feed", "tags": ["region:canada", "topic:politics", "type:newsletter"]}
+{"key": "https://aleyan.com/rss.xml", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://alf.bearblog.dev/feed", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://alfa.mk/feed/", "tags": ["region:world", "topic:news", "type:publication"]}
+{"key": "https://am.agenciasebrae.com.br/feed/", "tags": ["language:portuguese", "region:latin-america", "topic:business", "type:publication"]}
+{"key": "https://www.amarujala.com/rss/ajmer.xml", "tags": ["language:hindi", "region:india", "topic:news", "type:publication"]}
+{"key": "http://andysouth.github.io/feed.xml", "tags": ["region:uk", "topic:data", "topic:programming:r", "type:personal-blog"]}
+{"key": "https://ap.agenciasebrae.com.br/feed/", "tags": ["language:portuguese", "region:latin-america", "topic:business", "type:publication"]}
+{"key": "https://aphascience.blog.gov.uk/feed/", "tags": ["region:uk", "topic:health", "topic:science", "type:institution"]}
+{"key": "https://api.checkiday.com/rss", "tags": ["topic:lifestyle", "type:aggregator"]}
+{"key": "https://api.octopus.saooti.com/rss/emission/471", "tags": ["language:french", "region:france", "topic:news", "type:podcast"]}
+{"key": "https://ar.reactjs.org/feed.xml", "tags": ["language:arabic", "topic:programming:javascript", "type:vendor-blog"]}
+{"key": "https://www.ardanlabs.com/index.xml", "tags": ["region:usa", "topic:programming:go", "topic:software-engineering", "type:vendor-blog"]}
+{"key": "https://az.reactjs.org/feed.xml", "tags": ["topic:programming:javascript", "type:vendor-blog"]}
+{"key": "https://ba.agenciasebrae.com.br/feed/", "tags": ["language:portuguese", "region:latin-america", "topic:business", "type:publication"]}
+{"key": "https://babeljs.io/blog/rss.xml", "tags": ["topic:programming:javascript", "type:vendor-blog"]}
+{"key": "https://base-art.net/Articles/atom.xml", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "https://baturin.org/blog/atom-ocaml.xml", "tags": ["topic:programming:ocaml", "type:personal-blog"]}
+{"key": "https://beccais.online/rss.xml", "tags": ["topic:programming:swift", "type:personal-blog"]}
+{"key": "https://beisdigital.blog.gov.uk/feed/", "tags": ["region:uk", "topic:government", "topic:software-engineering", "type:institution"]}
+{"key": "https://www.bitdefender.com/blog/api/rss/hotforsecurity/threats", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "https://www.bitdefender.com.au/blog/api/rss/labs/", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "https://blog.glyph.im/feeds/all.atom.xml", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "https://blog.ipfs.io/index.xml", "tags": ["topic:open-source", "topic:systems", "type:vendor-blog"]}
+{"key": "https://blog.jim-nielsen.com/feed.json", "tags": ["topic:web-development", "type:personal-blog"]}
