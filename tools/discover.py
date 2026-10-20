@@ -665,7 +665,14 @@ def cmd_tag(args):
         tags = topics + types + extra
         bad = vocab_mod.validate(tags, voc)
         if bad:
+            # A candidate no vocabulary accepts - usually a rule written before
+            # a tag left TAGS.md. It must still reach a human: silently adding
+            # one to a stats counter loses a feed a human already decided.
             stats["bad tags"] += 1
+            untagged.append({"url": c["url"], "title": r.get("title", ""),
+                             "description": r.get("description", ""),
+                             "category": c.get("category", ""),
+                             "missing": "invalid tags: " + ",".join(bad)})
             continue
         if not topics or not types:
             stats["still untagged (needs a human)"] += 1

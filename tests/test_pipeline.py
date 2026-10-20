@@ -554,18 +554,21 @@ class URLRuleFacetsReachTheCandidate(unittest.TestCase):
             discover.AMP = os.path.join(d, "candidates.amp.jsonl")
             discover.RESULTS = os.path.join(d, "probe_results.jsonl")
             discover.TAGGED = os.path.join(d, "tagged.jsonl")
+            untagged_path = os.path.join(d, "DISCOVERY_UNTAGGED.jsonl")
             try:
                 discover.cmd_tag(None)
                 rows = [json.loads(l) for l in
                         open(discover.TAGGED, encoding="utf-8")]
+                unrows = [json.loads(l) for l in open(untagged_path,
+                            encoding="utf-8")] if os.path.exists(untagged_path) else []
             finally:
                 (discover.paths, discover.CANDIDATES, discover.EXPANDED,
                  discover.LEADS, discover.ORACLE, discover.AMP,
                  discover.RESULTS, discover.TAGGED) = saved
-            return rows
+            return rows, unrows
 
     def test_the_rule_language_and_region_survive_tagging(self):
-        rows = self.tag(["topic:politics", "type:publication",
+        rows, _ = self.tag(["topic:politics", "type:publication",
                          "language:french", "region:france"])
         self.assertEqual(len(rows), 1)
         tags = rows[0]["tags"]
@@ -575,7 +578,27 @@ class URLRuleFacetsReachTheCandidate(unittest.TestCase):
         self.assertIn("region:france", tags)
 
     def test_a_rule_that_names_no_facet_keeps_the_keyword_guess(self):
-        rows = self.tag(["topic:gadgets", "type:publication"])
+        rows, _ = self.tag(["topic:gadgets", "type:publication"])
         self.assertEqual(len(rows), 1)
         self.assertIn("topic:gadgets", rows[0]["tags"])
         self.assertNotIn("language:french", rows[0]["tags"])
+
+
+class UnacceptableTagsReachTheHumanQueue(unittest.TestCase):
+    """A candidate the vocabulary rejects must reach the untagged queue.
+
+    Bug (2026-10, found by review): cmd_tag's `if bad: continue` counted the
+    row in a stats counter only, so a feed whose rule carried a tag that later
+    left TAGS.md vanished - a human had decided it, and no queue listed it.
+    Revert the untagged.append in the bad branch and only this test fails.
+    """
+
+    def test_a_vocabulary_rejection_lands_in_the_queue(self):
+        import test_pipeline
+        tp = test_pipeline  # reuse the same harness layout
+        case = test_pipeline.URLRuleFacetsReachTheCandidate()
+        rows, unrows = case.tag(["topic:politics", "type:publication",
+                                 "language:esperanto"])
+        self.assertEqual(rows, [])
+        self.assertEqual(len(unrows), 1)
+        self.assertIn("esperanto", unrows[0]["missing"])
