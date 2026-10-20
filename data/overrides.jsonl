@@ -3542,9 +3542,9 @@
 {"key": "https://www.twilio.com/en-us/blog.feed.xml", "tags": ["topic:web-development", "type:vendor-blog"]}
 {"key": "https://www.twilio.com/en-us/blog.feed.xml?locale=en", "tags": ["topic:web-development", "type:vendor-blog"]}
 {"key": "https://www.twilio.com/en-us/changelog.feed.xml", "tags": ["topic:web-development", "type:vendor-blog"]}
-{"key": "http://feeds.feedburner.com/avc", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "http://feeds.feedburner.com/AVc", "tags": ["topic:tech-industry", "type:personal-blog"]}
 {"key": "http://feeds.feedburner.com/AdvancedPersistentSecurity", "tags": ["topic:security", "type:podcast"]}
-{"key": "http://feeds.feedburner.com/Agwired", "tags": ["topic:business", "type:publication"]}
+{"key": "http://feeds.feedburner.com/AgWired", "tags": ["region:usa", "topic:business", "type:publication"]}
 {"key": "http://feeds.feedburner.com/AlexanderVanElsassWeblogOnNewMediaTechnologiesAndTheirEffectOnSocialBehavior", "tags": ["topic:media", "type:personal-blog"]}
 {"key": "http://feeds.feedburner.com/AtlanticFood", "tags": ["topic:health", "type:publication"]}
 {"key": "http://feeds.feedburner.com/AtlanticPoliticsChannel", "tags": ["topic:politics", "type:publication"]}
@@ -4588,3 +4588,43 @@
 {"key": "https://blog.glyph.im/feeds/all.atom.xml", "tags": ["topic:tech-industry", "type:personal-blog"]}
 {"key": "https://blog.ipfs.io/index.xml", "tags": ["topic:open-source", "topic:systems", "type:vendor-blog"]}
 {"key": "https://blog.jim-nielsen.com/feed.json", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "https://blog.pcora.eu/posts_feed", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://blog.sekoia.io//feed/", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "https://blog.staysaasy.com/feed", "tags": ["topic:business", "topic:software-engineering", "type:personal-blog"]}
+{"key": "https://brianjdevries.com/feed.xml", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://bsky.social/about/rss.xml", "tags": ["topic:tech-industry", "type:vendor-blog"]}
+{"key": "https://buyingforschools.blog.gov.uk/feed/", "tags": ["region:uk", "topic:education", "type:institution"]}
+{"key": "https://byorgey.github.io/blog/rss.xml", "tags": ["topic:mathematics", "topic:programming:haskell", "type:personal-blog"]}
+{"key": "https://www.canva.dev/blog/developers/feed.xml", "tags": ["topic:software-engineering", "topic:web-development", "type:vendor-blog"]}
+{"key": "https://chrisburnell.com/feed.xml", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "https://civilservice.blog.gov.uk/feed/", "tags": ["region:uk", "topic:government", "type:institution"]}
+{"key": "https://cms.babbel.news/feed/", "tags": ["topic:education", "type:publication"]}
+{"key": "https://cn.vite.dev/blog.rss", "tags": ["language:chinese", "topic:web-development", "type:vendor-blog"]}
+{"key": "https://cordcuttersnews.com/category/blog/feed/", "tags": ["region:usa", "topic:entertainment", "topic:gadgets", "type:publication"]}
+{"key": "https://cprimozic.b-cdn.net/rss.xml", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "https://cprss.s3.amazonaws.com/javascriptweekly.com.xml", "tags": ["topic:programming:javascript", "type:newsletter"]}
+{"key": "https://www.crowdstrike.com/en-us/blog/feed", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "https://culturedcode.com/things/blog/feed/", "tags": ["topic:software-engineering", "type:vendor-blog"]}
+{"key": "https://danielcwilson.com/feed/feed.json", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "https://dataarchitecture.blog.gov.uk/feed/", "tags": ["region:uk", "topic:data", "topic:government", "type:institution"]}
+{"key": "https://databait.github.io/atom.xml", "tags": ["topic:mathematics", "type:personal-blog"]}
+{"key": "http://davidbarrkirtley.com/feed/", "tags": ["region:usa", "topic:books", "type:personal-blog"]}
+{"key": "https://de.vite.dev/blog.rss", "tags": ["language:german", "topic:web-development", "type:vendor-blog"]}
+{"key": "http://decisions-and-info-gaps.blogspot.com/feeds/posts/default", "tags": ["topic:mathematics", "type:personal-blog"]}
+{"key": "https://www.defenseone.com/rss/technology/", "tags": ["region:usa", "topic:military", "topic:tech-industry", "type:publication"]}
+{"key": "https://den.dev/blog/index.xml", "tags": ["topic:security", "topic:tech-industry", "type:personal-blog"]}
+{"key": "https://duswnchl.github.io/feed-igalia-planet.xml", "tags": ["topic:open-source", "type:aggregator"]}
+{"key": "https://www.eigentales.com/feed.xml", "tags": ["topic:mathematics", "topic:science", "type:personal-blog"]}
+{"key": "https://www.ellyloel.com/feed.rss", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "https://emersion.fr/blog/rss.xml", "tags": ["topic:open-source", "topic:systems", "type:personal-blog"]}
+{"key": "http://engineering-kyua.blogspot.com/feeds/posts/default", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://ericnormand.me/rss.xml", "tags": ["topic:programming:clojure", "type:personal-blog"]}
+{"key": "https://ericwbailey.website/feed/feed.json", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "https://es.legacy.reactjs.org/feed.xml", "tags": ["language:spanish", "topic:programming:javascript", "type:vendor-blog"]}
+{"key": "https://es.reactjs.org/feed.xml", "tags": ["language:spanish", "topic:programming:javascript", "type:vendor-blog"]}
+{"key": "https://es.vite.dev/blog.rss", "tags": ["language:spanish", "topic:web-development", "type:vendor-blog"]}
+{"key": "https://fa.vite.dev/blog.rss", "tags": ["topic:web-development", "type:vendor-blog"]}
+{"key": "https://feed.podbean.com/carexpert/feed.xml", "tags": ["region:australia", "topic:transport", "type:publication"]}
+{"key": "http://feeds.101cookbooks.com/101cookbooks", "tags": ["topic:food", "type:personal-blog"]}
+{"key": "https://feeds.feedblitz.com/marginalrevolution&x=1", "tags": ["topic:economics", "type:personal-blog"]}
+{"key": "feed.androidauthority.com", "tags": ["topic:gadgets", "type:publication"]}

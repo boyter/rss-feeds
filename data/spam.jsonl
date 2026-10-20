@@ -26,3 +26,5 @@
 {"key": "https://susam.net/obsolete.xml", "reason": "superseded: the feed says it is discontinued and points at susam.net/feed.xml, which is in the list"}
 {"key": "aihausanovels.com.ng", "reason": "download-farm: offers 'hausa novel audio mp3 download' pirated content"}
 {"key": "akirasm.livedoor.blog", "reason": "spam: feed advertises paid sexual services"}
+{"key": "feeds.feedburner.com/OpenWebPodcast", "reason": "hijacked: feedburner name OpenWebPodcast now serves the title 'Celebrity Foot Fashion'"}
+{"key": "feedbin.com/starred/630a51376f6236f1db65212704980f4f", "reason": "personal artifact: someone's starred-articles export, not a publication"}
