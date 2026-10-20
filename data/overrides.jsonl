@@ -4664,3 +4664,50 @@
 {"key": "https://londonist.com/category/food-and-drink/feed", "tags": ["region:uk-london", "topic:food", "type:publication"]}
 {"key": "https://marius.ink/feed.atom", "tags": ["topic:tech-industry", "type:personal-blog"]}
 {"key": "latest-edition.feed.theworld.org", "tags": ["region:world", "topic:news", "topic:politics", "type:podcast"]}
+{"key": "https://mastodon.social/@Popehat.rss", "tags": ["region:usa", "topic:journalism", "topic:politics", "type:personal-blog"]}
+{"key": "https://meganesulli.com/rss.xml", "tags": ["topic:education", "topic:software-engineering", "type:personal-blog"]}
+{"key": "https://microsaas.substack.com/feed", "tags": ["language:portuguese", "region:latin-america", "topic:tech-industry", "type:newsletter"]}
+{"key": "https://movieweb.com/feed/", "tags": ["region:usa", "topic:entertainment", "type:publication"]}
+{"key": "http://moxie.foxnews.com/google-publisher/world.xml?_gl=1*1b8a85r*_ga*MWVYVEtrR2pqa0g5VDhHejRrVF9LVy0tTXl4TEdJTzZBMjljQ21JeHZaNmZOdERVeFFMMjN1Y3k3eXJCeEhlUA..*_ga_RH94J2NTVM*MTc2NTgzNTU3Ni45LjEuMTc2NTgzNTU3Ni4wLjAuMA", "tags": ["region:usa", "topic:news", "type:aggregator"]}
+{"key": "https://www.muellershewrote.com/feed", "tags": ["region:usa", "topic:politics", "type:personal-blog"]}
+{"key": "https://muxup.com/feed.xml", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "https://mwitkow.me/index.xml", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://my-rssh-gwb5d33jd-amicoyuan.vercel.app/hexo/fluid/xingyuanjie.top", "tags": ["language:chinese", "topic:programming", "type:personal-blog"]}
+{"key": "https://nadia.xyz/feed.xml", "tags": ["topic:science", "topic:tech-industry", "type:personal-blog"]}
+{"key": "https://nationalpost.com/feed/atom", "tags": ["region:canada", "topic:news", "type:publication"]}
+{"key": "https://obryant.dev/feed.xml", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "https://openai.com/blog/rss.xml", "tags": ["topic:ai", "type:vendor-blog"]}
+{"key": "http://ouzor.github.io/feed.xml", "tags": ["topic:data", "type:personal-blog"]}
+{"key": "https://philbowell.me/feed.json", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "https://philpep.org/blog/index.xml", "tags": ["language:french", "region:france", "topic:open-source", "topic:systems", "type:personal-blog"]}
+{"key": "https://photography.tutsplus.com/posts.atom", "tags": ["topic:art", "type:publication"]}
+{"key": "https://photos.darekkay.com/atom.xml", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "https://planet.igalia.com/rss10.xml", "tags": ["topic:open-source", "type:aggregator"]}
+{"key": "https://pogowasright.org/feed/", "tags": ["region:usa", "topic:security", "type:publication"]}
+{"key": "https://www.proofpoint.com/us/threat-insight-blog.xml", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "https://publicfeeds.net/f/307/feed-rss.xml", "tags": ["region:usa", "topic:entertainment", "type:podcast"]}
+{"key": "https://www.reddit.com/.rss", "tags": ["region:world", "topic:news", "type:aggregator"]}
+{"key": "https://review.firstround.com/articles/rss/", "tags": ["region:usa", "topic:business", "topic:tech-industry", "type:newsletter"]}
+{"key": "https://rg3.name/igalia.rss", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "https://rhinosecuritylabs.com/feed/", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "https://rmurphey.com/feed/feed.json", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "https://roadtolarissa.com/atom.xml", "tags": ["topic:data", "type:personal-blog"]}
+{"key": "https://www.rogerebert.com/feed", "tags": ["region:usa", "topic:entertainment", "type:publication"]}
+{"key": "https://rss-feed-api.aws.jyllands-posten.dk/advokatwatch.dk/latest", "tags": ["region:world", "topic:politics", "type:aggregator"]}
+{"key": "https://screenrant.com/feed/", "tags": ["region:usa", "topic:entertainment", "type:publication"]}
+{"key": "https://sea.ign.com/feed.xml", "tags": ["region:asia", "topic:gaming", "type:publication"]}
+{"key": "https://www.sei.cmu.edu/blog/feeds/latest/rss/", "tags": ["topic:security", "type:institution"]}
+{"key": "https://sive.rs/en.atom", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://www.thehindu.com/news/national/?service=rss", "tags": ["region:india", "topic:news", "type:publication"]}
+{"key": "https://thepcgamingweekspot.libsyn.com/rss", "tags": ["topic:gaming", "type:podcast"]}
+{"key": "https://therealadam.com/feed.json", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://www.thezdi.com/blog?format=RSS", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "https://tilde.club/~passthejoe/hugo/index.xml", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://tonsky.me/atom.xml", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "https://tv.bingeworthy.org/rss.xml", "tags": ["topic:entertainment", "type:aggregator"]}
+{"key": "https://unicornclub.dev/feed.xml", "tags": ["topic:design", "topic:software-engineering", "type:newsletter"]}
+{"key": "https://www.ycombinator.com/blog/feed", "tags": ["topic:business", "topic:tech-industry", "type:vendor-blog"]}
+{"key": "https://yihui.org/index.xml", "tags": ["topic:data", "type:personal-blog"]}
+{"key": "https://zimmcast.libsyn.com/rss", "tags": ["region:usa", "topic:business", "type:podcast"]}
+{"key": "rss.blogs.elconfidencial.com", "tags": ["language:spanish", "region:spain", "topic:news", "type:aggregator"]}
+{"key": "showfeed.rubenerd.com", "tags": ["region:asia", "topic:entertainment", "topic:politics", "type:podcast"]}
