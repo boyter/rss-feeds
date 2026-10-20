@@ -546,3 +546,23 @@ measured to be: excellent for **section and category feeds of hosts we
 already vetted** (that is what the index knows and our rules can decide -
 84% live, 34% auto-decidable), and exhausted for breadth: 55% of asked
 single-feed hosts have no second feed at all.
+
+## Working the 1,784-row human queue (2026-10-21)
+
+The whole queue was read by hand, multi-host entries first (one host rule
+covers a site: `feeds.crikey.com.au`, `nu.nl`, `techinasia.com` with pathTags
+for the sections), then the ~950 single-host rows 22 at a time. Measured:
+
+- 1,392 rows decided (≈78%); 392 deliberately skipped — blank or undecidable
+  title+description, `Comments on:` feeds, stale mirrors, hijacked feedburner
+  names (3 more spam.jsonl entries: `Crunch Hype` alias, `OpenWebPodcast`,
+  plus a pirated-download farm and a personal feedbin export).
+- Two settle rounds merged **+622 and +772 feeds: 8,632 → 10,024**, 6,421 hosts.
+  Harvest resumed cleanly (771 fetches), 116 tests green, product idempotent.
+- The retype guard earned its keep again: ~15 drafted host rules collided with
+  feeds already shipped under a different type; each was aligned to the shipped
+  type or demoted to per-feed URL rules. One mis-copied index was caught by
+  grepping the batch file back against the rows — write decisions through the
+  row index, never transcribed URLs.
+- Next: the queue only refills from new discovery (amp tranche 5, or
+  gap-directed amp for thin facets: medicine, mathematics, transport).
