@@ -3935,3 +3935,10 @@
 {"key": "oneindia.com", "tags": ["region:india", "topic:news", "type:publication"]}
 {"key": "plasmasturm.org", "tags": ["topic:systems", "type:personal-blog"]}
 {"key": "portswigger.net", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "https://www.spectrumnews.org/feed/podcast/", "tags": ["topic:science", "type:podcast"]}
+{"key": "https://www.spectrumnews.org/feed/synaptic/", "tags": ["topic:science", "type:podcast"]}
+{"key": "simonhearne.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "thehindubusinessline.com", "tags": ["region:india", "topic:business", "type:publication"]}
+{"key": "thetransmitter.org", "tags": ["topic:science", "type:publication"]}
+{"key": "ttntm.me", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "vinted.engineering", "tags": ["topic:software-engineering", "type:vendor-blog"]}
