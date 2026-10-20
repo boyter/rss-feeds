@@ -68,16 +68,34 @@ def load_spam(path=paths.data("spam.jsonl")):
     return rules
 
 
+def spam_hit(url, spam_rules):
+    """Is this URL covered by a hand-curated removal? One matcher, shared.
+
+    add.py, rebuild.py and triage.py must agree about what "banned" means or a
+    feed hand-removed in one pass re-enters through another door: add.py merge
+    never consulted spam.jsonl, so trustwave SpiderLabs was re-added by every
+    settle pass and deleted again by rebuild, forever.
+
+    The key is a lowercased substring of the URL: scheme, www. and junk query
+    parameters must not let the same feed back in, and a feedburner name can be
+    reused by whoever inherits the alias.
+    """
+    url_l = url.lower()
+    for key, reason in spam_rules:
+        if key in url_l:
+            return reason
+    return None
+
+
 def classify(rec, feed, spam_rules=()):
     status = rec.get("status", 0)
     err = rec.get("error", "")
 
-    url = rec["url"].lower()
-    for key, reason in spam_rules:
-        if key in url:
-            # "hand:" not "spam:" - the file holds any hand-curated removal, a
-            # superseded or moved feed as much as a content farm.
-            return "remove", f"hand:{reason}"
+    reason = spam_hit(rec["url"], spam_rules)
+    if reason:
+        # "hand:" not "spam:" - the file holds any hand-curated removal, a
+        # superseded or moved feed as much as a content farm.
+        return "remove", f"hand:{reason}"
 
     if rec.get("regressed"):
         # It answered as a feed when we last looked and does not now. Servers 404

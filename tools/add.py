@@ -20,6 +20,7 @@ import sys
 from urllib.parse import urlparse
 
 import harvest
+import triage
 import vocab as vocab_mod
 import paths
 
@@ -85,11 +86,19 @@ def cmd_merge(args):
     feeds = json.load(open(paths.root("feeds.json"), encoding="utf-8"))
     existing = {vocab_mod.norm_key(f["url"]) for f in feeds}
     voc = vocab_mod.load()
+    spam_rules = triage.load_spam()
 
     added, skipped = [], []
     for c in cands:
         url = c["url"]
         key = vocab_mod.norm_key(url)
+        banned = triage.spam_hit(url, spam_rules)
+        if banned:
+            # spam.jsonl is a human decision; a stale candidates file must not
+            # re-admit what a human removed. Without this, every settle pass
+            # re-added the hand-removed feeds and rebuild deleted them again.
+            skipped.append((url, f"banned by spam.jsonl: {banned}"))
+            continue
         if key in existing:
             skipped.append((url, "already present"))
             continue

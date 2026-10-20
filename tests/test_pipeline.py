@@ -511,6 +511,53 @@ class TestAMergeNeedsTheFetchForThatExactUrl(unittest.TestCase):
         self.assertEqual(urls, ["http://feeds.bmj.com/bmjj/podcasts"])
 
 
+class TestMergeRespectsTheHandSpamList(unittest.TestCase):
+    """A feed a human banned never re-enters through a stale candidates file.
+
+    Pinned because add.py merge never consulted spam.jsonl: trustwave
+    SpiderLabs, hand-removed, was re-added by every settle pass from old
+    candidate files and deleted again by rebuild.py - an eternal loop where
+    the two writers disagreed.
+    """
+
+    def merge(self, cands, probed, spam):
+        with tempfile.TemporaryDirectory() as d:
+            cpath, rpath, fpath = (os.path.join(d, n) for n in
+                                   ("c.jsonl", "r.jsonl", "feeds.json"))
+            for path, rows in ((cpath, cands), (rpath, probed)):
+                with open(path, "w", encoding="utf-8") as fh:
+                    for r in rows:
+                        fh.write(json.dumps(r) + "\n")
+            open(fpath, "w").write("[]")
+            saved = (add.RESULTS, add.paths.root, add.triage.load_spam)
+            add.RESULTS = rpath
+            add.paths.root = lambda n: fpath if n == "feeds.json" else os.path.join(d, n)
+            add.triage.load_spam = lambda *a, **k: list(spam)
+            try:
+                add.cmd_merge(type("A", (), {"candidates": cpath, "apply": True})())
+                out = json.load(open(fpath, encoding="utf-8"))
+            finally:
+                add.RESULTS, add.paths.root, add.triage.load_spam = saved
+        return [f["url"] for f in out]
+
+    def test_a_banned_url_is_skipped_even_when_it_answers_as_a_feed(self):
+        probed = [{"url": "https://banned.test/feed", "isFeed": True, "status": 200},
+                  {"url": "https://fine.test/feed", "isFeed": True, "status": 200}]
+        cands = [{"url": u, "tags": ["topic:news", "type:publication"]}
+                 for u in ("https://banned.test/feed", "https://fine.test/feed")]
+        got = self.merge(cands, probed, [("banned.test", "content farm")])
+        self.assertEqual(got, ["https://fine.test/feed"])
+
+    def test_the_match_folds_scheme_and_case_the_way_triage_does(self):
+        # The same matcher (triage.spam_hit) must decide both tools, or one
+        # door lets the feed back in with a scheme or www. variation.
+        probed = [{"url": "http://www.Banned.test/feed", "isFeed": True, "status": 200}]
+        cands = [{"url": "http://www.Banned.test/feed",
+                  "tags": ["topic:news", "type:publication"]}]
+        got = self.merge(cands, probed, [("banned.test/feed", "content farm")])
+        self.assertEqual(got, [])
+
+
 class URLRuleFacetsReachTheCandidate(unittest.TestCase):
     """A URL rule's region:/language: must reach the tagged candidate row.
 
