@@ -3779,3 +3779,54 @@
 {"key": "patheos.com", "tags": ["topic:religion", "type:personal-blog"]}
 {"key": "rss.focus.de", "tags": ["language:german", "topic:news", "type:publication"], "pathTags": {"/auto/": ["topic:transport"], "/finanzen/": ["topic:finance"], "/gesundheit/": ["topic:health"]}}
 {"key": "stanislas.blog", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://www.aerotelegraph.com/category/podcast/feed", "tags": ["language:german", "topic:transport", "type:podcast"]}
+{"key": "https://www.aerotelegraph.com/podcast.feed", "tags": ["language:german", "topic:transport", "type:podcast"]}
+{"key": "https://feeds.buzzsprout.com/1026877.rss", "tags": ["topic:science", "topic:travel", "type:podcast"]}
+{"key": "https://feeds.buzzsprout.com/1033393.rss", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://feeds.buzzsprout.com/1046059.rss", "tags": ["topic:sport", "type:podcast"]}
+{"key": "https://feeds.podcastmirror.com/constitutionally-speaking", "tags": ["topic:politics", "type:podcast"]}
+{"key": "https://feeds.podcastmirror.com/editors", "tags": ["topic:media", "topic:politics", "type:podcast"]}
+{"key": "https://feeds.podcastmirror.com/mccarthy-report", "tags": ["topic:politics", "type:podcast"]}
+{"key": "https://360magazine.nl/longreads/feed/", "tags": ["language:dutch", "topic:news", "type:publication"]}
+{"key": "https://360magazine.nl/magazine-257/feed/", "tags": ["language:dutch", "topic:news", "type:publication"]}
+{"key": "https://robertovitillo.com/blog/data-analysis/rss.xml", "tags": ["topic:data", "type:personal-blog"]}
+{"key": "https://robertovitillo.com/blog/distributed-systems/rss.xml", "tags": ["topic:systems", "type:personal-blog"]}
+{"key": "https://robertovitillo.com/blog/rss.xml", "tags": ["topic:data", "type:personal-blog"]}
+{"key": "https://store.steampowered.com/feeds/newreleases.xml", "tags": ["topic:gaming", "type:aggregator"]}
+{"key": "https://store.steampowered.com/feeds/news/app/1086940/?cc=US&l=english&snr=1_2108_9__2107", "tags": ["topic:gaming", "type:vendor-blog"]}
+{"key": "https://store.steampowered.com/feeds/weeklytopsellers.xml", "tags": ["topic:gaming", "type:aggregator"]}
+{"key": "https://unix.stackexchange.com/feeds/month", "tags": ["topic:systems", "type:community"]}
+{"key": "https://unix.stackexchange.com/feeds/question/684957", "tags": ["topic:systems", "type:community"]}
+{"key": "https://unix.stackexchange.com/feeds/tag/ubuntu", "tags": ["topic:systems", "type:community"]}
+{"key": "admpravd.ru", "tags": ["language:russian", "region:russia", "topic:news", "type:institution"]}
+{"key": "advalvas.vu.nl", "tags": ["language:dutch", "topic:education", "type:publication"], "pathTags": {"/en/feed": ["language:english"]}}
+{"key": "aerotelegraph.com", "tags": ["language:german", "topic:transport", "type:publication"]}
+{"key": "agora-web.jp", "tags": ["topic:politics", "type:publication"], "pathTags": {"/category/business/": ["topic:business"]}}
+{"key": "agronigeria.ng", "tags": ["region:nigeria", "topic:business", "type:publication"]}
+{"key": "androidcentral.com", "tags": ["topic:gadgets", "type:publication"]}
+{"key": "blog.carlana.net", "tags": ["topic:software-engineering", "type:podcast"]}
+{"key": "cbssports.com", "tags": ["topic:sport", "type:publication"]}
+{"key": "cloudblogs.microsoft.com", "tags": ["topic:infrastructure", "type:vendor-blog"], "pathTags": {"/quantum/": ["topic:science"], "/powerplatform/": ["topic:software-engineering"]}}
+{"key": "davidrevoy.com", "tags": ["topic:art", "type:personal-blog"], "pathTags": {"/feed/en/": ["language:english"]}}
+{"key": "developer.apple.com", "tags": ["topic:software-engineering", "type:vendor-blog"], "pathTags": {"/cn/news/": ["language:chinese"], "/jp/news/": ["language:japanese"], "/kr/news/": ["language:korean"]}}
+{"key": "franceinfo.fr", "tags": ["language:french", "topic:news", "type:publication"], "pathTags": {"/culture.rss": ["topic:entertainment"]}}
+{"key": "freek.dev", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "geoffgraham.wpengine.com", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "honeybadger.io", "tags": ["topic:software-engineering", "type:vendor-blog"], "pathTags": {"/blog/elixir/": ["topic:programming:elixir"], "/blog/go/": ["topic:programming:go"], "/blog/python/": ["topic:programming:python"]}}
+{"key": "insights.sei.cmu.edu", "tags": ["topic:security", "type:institution"]}
+{"key": "outflux.net", "tags": ["topic:security", "type:vendor-blog"], "pathTags": {"/category/vehicles/": ["topic:transport"]}}
+{"key": "pk.ign.com", "tags": ["region:pakistan", "topic:gaming", "type:publication"]}
+{"key": "pravda.ru", "tags": ["language:russian", "region:russia", "topic:news", "type:publication"]}
+{"key": "rss.alimente.elconfidencial.com", "tags": ["language:spanish", "topic:food", "type:publication"], "pathTags": {"/bienestar/": ["topic:health"], "/consumo/": ["topic:business"]}}
+{"key": "static.crates.io", "tags": ["topic:programming:rust", "type:aggregator"]}
+{"key": "www3.asahi.com", "tags": ["language:japanese", "topic:news", "type:publication"], "pathTags": {"/rss/olympics.rdf": ["topic:sport"], "/rss/worldcup.rdf": ["topic:sport"]}}
+{"key": "01net.com", "tags": ["language:french", "topic:gadgets", "type:publication"]}
+{"key": "0264noticias.com.ar", "tags": ["language:spanish", "region:latin-america", "topic:news", "type:publication"]}
+{"key": "100komma7.lu", "tags": ["topic:entertainment", "type:podcast"], "pathTags": {"/show/20623035/": ["topic:gaming"]}}
+{"key": "12bingolgazetesi.com.tr", "tags": ["topic:news", "type:publication"]}
+{"key": "2021.radio1.ch", "tags": ["topic:entertainment", "type:podcast"], "pathTags": {"/die_gruene_minute/": ["topic:environment"]}}
+{"key": "24.kg", "tags": ["language:russian", "region:world", "topic:news", "type:publication"], "pathTags": {"/sport/rss/": ["topic:sport"]}}
+{"key": "250andcounting.com", "tags": ["region:usa", "topic:history", "type:publication"]}
+{"key": "519magazine.com", "tags": ["region:canada", "topic:entertainment", "type:podcast"]}
+{"key": "7days.ru", "tags": ["language:russian", "topic:entertainment", "type:publication"], "pathTags": {"/rss/section/lifestyle": ["topic:lifestyle"]}}
+{"key": "902.gr", "tags": ["region:world", "topic:news", "type:publication"]}
