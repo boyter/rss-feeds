@@ -464,3 +464,20 @@ subject heading is a hint and never a tag — the nursing and palliative-care
 podcasts merged as `topic:health`/`topic:media`, which the feed's own name
 supports. 311 directory leads are queued undecidably rather than tagged on the
 directory's say-so.
+
+## Running the whole directory through, in tranches
+
+`discover.py amp --all` downloads `/opml` once (106 MB, **546,502 entries**,
+cached under the gitignored `data/sources/`) and emits a bounded tranche:
+`--max-per-host 2` and `--limit 1500`, ordered by host then url, skipping
+anything already probed — so the next run resumes rather than repeats.
+
+Two tranches measured here: 1,498 + 1,498 leads, **1,417 and 1,402 live (95%,
+94%)**, 747 merged after tagging. 4,824 → 5,857 feeds, 4,143 hosts.
+
+The whole-directory OPML carries **no categories** (1,498 of 1,498 rows have an
+empty outline path), so the heading-as-hint path that curated lists use yields
+nothing here. The binding constraint is tagging, not discovery: each tranche
+produces ~1,400 verified feeds of which ~360 get tags a reader can defend from
+the feed's own name, and ~1,080 sit queued. Discovery at this rate is a solved
+problem; deciding what 1,000 feeds named "Bone to Pick Podcast" are about is not.

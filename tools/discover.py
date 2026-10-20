@@ -74,6 +74,7 @@ ORACLE_URL = "https://origin.feedsearch.dev/api/v1/search"
 # /opml?topic=<subject> answers one subject as a subscription list, which is the
 # shape the pipeline already eats: URLs, no claims about tags.
 AMP_URL = "https://rssamplifier.com/opml"
+AMP_ALL = paths.data("sources/rssamplifier.opml")
 AMP = paths.data("candidates.amp.jsonl")
 AMP_CACHE = paths.data("amp.jsonl")
 
@@ -544,6 +545,14 @@ def cmd_tag(args):
             stats["dropped: " + why] += 1
             continue
         seen.add(key)
+        # A channel that found the URL under a heading carries that heading in
+        # `category`. Reading it here, in one place, keeps a curated list, a
+        # subject query and the whole directory on the same rule instead of three
+        # slightly different ones - and the aggregator gate further down still
+        # refuses to inherit a topic onto youtube/feedburner/medium paths, because
+        # there the heading belongs to whoever made the list, not to the publisher.
+        if not c.get("hintTopics") and c.get("category"):
+            c["hintTopics"], c["hintType"] = category_tags(c["category"], voc)
         rec = {k: r.get(k) for k in ("url", "title", "description", "items")}
         rec["url"] = c["url"]
         rule_tags, why = classify.suggest(rec, [])
@@ -1019,6 +1028,23 @@ def cmd_amp(args):
     """
     cache = {r.get("query"): r for r in read_jsonl(AMP_CACHE)}
     rows, stats = [], collections.Counter()
+    if args.all:
+        rows, stats = amp_all(args.limit, args.max_per_host)
+        seen, out2 = set(), []
+        for r in rows:
+            k = vocab_mod.norm_key(r["url"])
+            if k in seen:
+                stats["dropped:duplicate in batch"] += 1
+                continue
+            seen.add(k)
+            out2.append(r)
+        with open(AMP, "w", encoding="utf-8") as fh:
+            for r in out2:
+                fh.write(json.dumps(r, ensure_ascii=False) + "\n")
+        print(f"{len(out2)} feeds named by the directory -> {AMP}")
+        for k, v in sorted(stats.items()):
+            print(f"  {k:32} {v}")
+        return 0
     with open(AMP_CACHE, "a", encoding="utf-8") as cachefh:
         for q in read_queries(args.queries):
             if q in cache and not args.restart:
@@ -1089,6 +1115,61 @@ def read_queries(path):
             yield line
 
 
+def amp_all(limit_per_run, max_per_host):
+    """The whole directory as candidates, bounded and resumable.
+
+    One 44 MB fetch instead of tens of thousands of queries is what the site
+    itself asks for ("reading them is preferred to crawling the HTML", and robots.txt
+    names this endpoint), so the download is cached under data/sources/.
+
+    The directory is bigger than the probe budget, so the written list is bounded
+    twice: per host, because 400 feeds from one publisher is not a directory a
+    reader browses; and per run, because a probe pass has to finish inside a
+    sitting. Ordered by host then url and skipping anything already probed, so the
+    next run picks up where this one stopped instead of repeating it.
+    """
+    if not os.path.exists(AMP_ALL):
+        req = urllib.request.Request(AMP_URL, headers=harvest.HEADERS)
+        with urllib.request.urlopen(req, timeout=300) as r:
+            raw = r.read(120_000_000)
+            ce = r.headers.get("Content-Encoding", "")
+        os.makedirs(os.path.dirname(AMP_ALL), exist_ok=True)
+        with open(AMP_ALL, "wb") as fh:
+            fh.write(raw if not ce else harvest.decode(raw, ce).encode("utf-8"))
+        print(f"directory downloaded -> {AMP_ALL} ({os.path.getsize(AMP_ALL)} bytes)")
+    text = open(AMP_ALL, encoding="utf-8", errors="replace").read()
+    found = [{"url": u, "cat": c} for u, c in iter_opml(text)]
+    probed = {r["url"] for r in read_jsonl(RESULTS)}
+    by_host, out = collections.Counter(), []
+    stats = collections.Counter()
+    stats["directory entries"] = len(found)
+    for f in sorted(found, key=lambda x: (urlparse(x["url"]).netloc.lower(), x["url"])):
+        lead = clean_url(f["url"])
+        ok, why = is_plausible_feed(lead)
+        if not ok:
+            stats["dropped:" + why] += 1
+            continue
+        ok, why = worth_carrying(lead)
+        if not ok:
+            stats["dropped:" + why] += 1
+            continue
+        if lead in probed:
+            stats["dropped:already probed"] += 1
+            continue
+        host = urlparse(lead).netloc.lower()
+        if by_host[host] >= max_per_host:
+            stats["dropped:per-host cap"] += 1
+            continue
+        by_host[host] += 1
+        out.append({"url": lead, "tags": [], "source": "rssamplifier",
+                    "category": f.get("cat", ""), "hintTopics": [], "hintType": None,
+                    "via": "directory-all"})
+        if limit_per_run and len(out) >= limit_per_run:
+            stats["truncated at the run limit"] += 1
+            break
+    return out, stats
+
+
 def main():
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -1119,9 +1200,16 @@ def main():
     o.add_argument("--pause", type=float, default=1.0,
                    help="seconds between queries to someone else's free service")
     a = sub.add_parser("amp")
-    a.add_argument("queries", help="file of subjects to ask the directory about")
+    a.add_argument("queries", nargs="?",
+                   help="file of subjects to ask the directory about (omit with --all)")
     a.add_argument("--max-per-query", type=int, default=25,
                    help="a directory this deep names hundreds of feeds for one subject")
+    a.add_argument("--all", action="store_true",
+                   help="the whole directory in one download, bounded and resumable")
+    a.add_argument("--limit", type=int, default=1500,
+                   help="with --all: candidates to emit this run, so a probe pass fits in a sitting")
+    a.add_argument("--max-per-host", type=int, default=2,
+                   help="with --all: feeds per host, the deepest directory on earth is still not a reason for 400 lines from one publisher")
     a.add_argument("--restart", action="store_true", help="ignore the cached answers")
     a.add_argument("--pause", type=float, default=1.0,
                    help="seconds between queries to someone else's free service")
