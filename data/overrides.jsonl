@@ -3917,3 +3917,21 @@
 {"key": "labs.iximiuz.com", "tags": ["topic:systems", "type:personal-blog"]}
 {"key": "meh.com", "tags": ["topic:business", "type:newsletter"]}
 {"key": "feed.songexploder.net", "tags": ["topic:music", "type:podcast"]}
+{"key": "https://relay.fm/blog/feed", "tags": ["topic:tech-industry", "type:vendor-blog"]}
+{"key": "https://relay.fm/conduit/feed", "tags": ["topic:tech-industry", "type:podcast"]}
+{"key": "https://rss.art19.com/headlong-surviving-y2k", "tags": ["topic:history", "type:podcast"]}
+{"key": "https://rss.art19.com/inside-intercom", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://rss.libsyn.com/shows/35408/destinations/88459.xml", "tags": ["topic:science", "type:podcast"]}
+{"key": "https://rss.libsyn.com/shows/88719/destinations/436327.xml", "tags": ["topic:science", "type:podcast"]}
+{"key": "https://on.substack.com/feed?sectionId=2474", "tags": ["topic:media", "type:vendor-blog"]}
+{"key": "https://on.substack.com/feed?sectionId=22019", "tags": ["topic:software-engineering", "type:newsletter"]}
+{"key": "https://www.postgresql.org/events.rss", "tags": ["topic:data", "type:institution"]}
+{"key": "https://www.postgresql.org/versions.rss", "tags": ["topic:data", "type:institution"]}
+{"key": "https://www.quirksmode.org/blog/index.rdf", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "https://www.quirksmode.org/quirksblog/rss.xml", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "http://scripting.com/drummer/blog/rss.xml", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "http://scripting.com/rssNightly.xml", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "mtlynch.io", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "oneindia.com", "tags": ["region:india", "topic:news", "type:publication"]}
+{"key": "plasmasturm.org", "tags": ["topic:systems", "type:personal-blog"]}
+{"key": "portswigger.net", "tags": ["topic:security", "type:vendor-blog"]}
