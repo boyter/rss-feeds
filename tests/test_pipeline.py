@@ -580,7 +580,7 @@ class TestMergeRespectsTheHandSpamList(unittest.TestCase):
             with contextlib.redirect_stderr(err):
                 rules = triage.load_spam(p)
         self.assertEqual(rules, [])
-        self.assertIn("empty key", err.getvalue())
+        self.assertIn("no usable key", err.getvalue())
         self.assertIsNone(triage.spam_hit("https://anything.test/feed", rules))
 
     def test_triage_still_removes_on_a_rule_with_an_empty_reason(self):
@@ -589,6 +589,52 @@ class TestMergeRespectsTheHandSpamList(unittest.TestCase):
             {"url": "http://b.test/x", "status": 200, "isFeed": True},
             {}, [("b.test", "")])
         self.assertEqual((verdict, why), ("remove", "hand:"))
+
+    def loaded(self, lines):
+        import contextlib
+        import io
+        with tempfile.TemporaryDirectory() as d:
+            p = os.path.join(d, "spam.jsonl")
+            with open(p, "w", encoding="utf-8") as fh:
+                for row in lines:
+                    fh.write(json.dumps(row) + "\n")
+            err = io.StringIO()
+            with contextlib.redirect_stderr(err):
+                rules = triage.load_spam(p)
+        return rules, err.getvalue()
+
+    def test_a_null_reason_still_bans_instead_of_disabling_the_rule(self):
+        # Bug: {"reason": null} -> spam_hit returned None, identical to "no
+        # rule matched", silently unbanning at both doors. load_spam must
+        # never emit a None reason.
+        rules, err = self.loaded([{"key": "nulls.test/feed", "reason": None}])
+        self.assertEqual(rules, [("nulls.test/feed", "spam")])
+        self.assertIn("non-string reason", err)
+        verdict, why = triage.classify(
+            {"url": "https://nulls.test/feed", "status": 200, "isFeed": True},
+            {}, rules)
+        self.assertEqual(verdict, "remove")
+
+    def test_a_key_too_short_to_name_a_host_is_ignored(self):
+        # Substring matching: one line {"key": "s"} would remove every feed
+        # whose URL contains s - rebuild.py would rewrite feeds.json without
+        # them. A real key carries a host/path marker and length.
+        rules, err = self.loaded([{"key": "s", "reason": "typo"},
+                                  {"key": "/", "reason": "typo"},
+                                  {"key": "t.co", "reason": "shortlink farm"},
+                                  {"key": "localhost:4000", "reason": "dev"},
+                                  {"key": "susam.net/feed.xml", "reason": "superseded"}])
+        self.assertEqual([k for k, _ in rules],
+                         ["t.co", "localhost:4000", "susam.net/feed.xml"])
+        self.assertIn("ignored key", err)
+
+    def test_a_non_string_key_is_ignored_and_the_file_still_loads(self):
+        # One {"key": 5} line must not crash triage.py and add.py merge.
+        rules, err = self.loaded([{"key": 5, "reason": "typo"},
+                                  {"reason": "no key at all"},
+                                  {"key": "good.test/feed", "reason": "farm"}])
+        self.assertEqual(rules, [("good.test/feed", "farm")])
+        self.assertIn("no usable key", err)
 
 
 class URLRuleFacetsReachTheCandidate(unittest.TestCase):

@@ -64,14 +64,33 @@ def load_spam(path=paths.data("spam.jsonl")):
     for line in open(path, encoding="utf-8"):
         if line.strip():
             r = json.loads(line)
-            key = r["key"].strip()
-            if not key:
-                # An empty key is a substring of every URL: one stray "key": ""
-                # line would ban the whole list. Refuse the line, say so.
-                print(f"spam.jsonl: ignored a rule with an empty key: {r}",
+            key = r.get("key")
+            if not isinstance(key, str) or not key.strip():
+                # An empty key is a substring of every URL, and a non-string
+                # one would crash every caller of load_spam - one typo line
+                # must not take down triage.py and add.py merge with it.
+                print(f"spam.jsonl: ignored a rule with no usable key: {r}",
                       file=sys.stderr)
                 continue
-            rules.append((key.lower(), r.get("reason", "spam")))
+            key = key.strip()
+            if len(key) < 4 or not any(c in key for c in "./:"):
+                # Substring matching means a key of "s" or "/" bans the whole
+                # product. A real key names at least a host (a dot, or a
+                # colon for host:port) or a path; require that shape.
+                print(f"spam.jsonl: ignored key {key!r}: shorter than 4 chars "
+                      f"or contains no host/path marker (/, :, .)",
+                      file=sys.stderr)
+                continue
+            reason = r.get("reason", "spam")
+            if not isinstance(reason, str):
+                # {"reason": null} made spam_hit return None, which is
+                # indistinguishable from "no rule matched": the ban was
+                # silently disabled at both doors. A non-string reason is a
+                # typo, not a decision to unban - fall back, but say so.
+                print(f"spam.jsonl: rule {key!r} has a non-string reason; "
+                      f"using 'spam'", file=sys.stderr)
+                reason = "spam"
+            rules.append((key.lower(), reason))
     return rules
 
 
