@@ -606,3 +606,23 @@ hand decision excludes the rules for the facets it speaks to - cmd_tag was a
 second, disagreeing copy of that law. Fixed in 9d0f8b0 with two pinned tests
 (host rule beats the heading; a URL rule still beats the host rule), each
 mutation-verified in both directions.
+
+## Queue part 2: the amp/rssamplifier survivors (2026-10-21)
+
+3,031 rows left after the first queue pass, ~96% single-host. Processed in 12
+batches. Rows 0-191 read by hand inline; rows 192-3030 (2,839) delegated to
+same-model subagents with a compact rulebook (/tmp-style, two files only: the
+rulebook + a numbered dump of exactly that batch), each batch returned through
+`decide.py` here — the gate caught what the rulebook could not: invented
+vocabulary (blocked), host keys written with a scheme (134 lines, fixed by
+stripping), and two retype collisions (trustedsec, affirminggender - demoted
+to URL rules matching the shipped type). One reported SPAM line turned out
+never to have been written to disk: the human file was checked and the entry
+added by hand, never trusted from a report.
+
+Measured: ~1,830 rules written, 2,393 candidates merged, **10,834 -> 13,223
+feeds, 8,835 hosts**. Skips ran ~20-25% of rows (blank Substack boilerplate,
+unknown-person microblogs, comments feeds). 4 removals all hand-verified:
+`abnormalreturns.com` was a FALSE not-a-feed (curl proves a real RSS body;
+`harvest.py --retry-failed` rescued it) - the other three (dead DNS, 404 x2)
+confirmed in a browser-equivalent fetch before merge of the removal.
