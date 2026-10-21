@@ -74,7 +74,7 @@
 {"key": "alexdebrie.com", "tags": ["topic:data", "topic:infrastructure", "type:newsletter"]}
 {"key": "aljazeera.com", "tags": ["topic:news", "type:publication", "region:world"]}
 {"key": "allendowney.com", "tags": ["topic:ai", "topic:mathematics", "type:personal-blog"]}
-{"key": "amasad.me", "tags": ["topic:tech-industry", "topic:software-engineering", "type:personal-blog"]}
+{"key": "amasad.me", "tags": ["topic:personal", "topic:software-engineering", "topic:tech-industry", "type:personal-blog"]}
 {"key": "anandology.com", "tags": ["topic:programming", "topic:programming:python", "topic:open-source", "type:personal-blog", "region:india"]}
 {"key": "andrealeopardi.com", "tags": ["topic:programming", "topic:programming:elixir", "type:personal-blog"]}
 {"key": "andrestc.com", "tags": ["topic:systems", "topic:infrastructure", "type:personal-blog"]}
@@ -526,7 +526,7 @@
 {"key": "alhassy.github.io", "tags": ["topic:mathematics", "topic:programming", "type:personal-blog"]}
 {"key": "alvaro-videla.com", "tags": ["topic:programming", "type:personal-blog"]}
 {"key": "alyssa.is", "tags": ["topic:systems", "topic:security", "type:personal-blog"]}
-{"key": "amattn.com", "tags": ["topic:software-engineering", "topic:tech-industry", "type:personal-blog"]}
+{"key": "amattn.com", "tags": ["topic:programming", "topic:software-engineering", "topic:tech-industry", "type:personal-blog"]}
 {"key": "amazon.science", "tags": ["topic:ai", "type:institution"]}
 {"key": "amberwilson.co.uk", "tags": ["topic:software-engineering", "topic:personal", "type:personal-blog", "region:uk"]}
 {"key": "amitmerchant.com", "tags": ["topic:programming:php", "topic:web-development", "type:personal-blog"]}
@@ -8797,3 +8797,246 @@
 {"key": "amandaripley.substack.com", "tags": ["topic:journalism", "topic:politics", "type:newsletter"]}
 {"key": "amandasmildtakes.substack.com", "tags": ["topic:history", "topic:politics", "type:newsletter"]}
 {"key": "amandasuecreasey.substack.com", "tags": ["topic:books", "topic:personal", "type:newsletter"]}
+{"key": "amandathacker.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "amandavisconti.github.io", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "amandavshane.substack.com", "tags": ["topic:books", "type:personal-blog"]}
+{"key": "amandawarfield.com", "tags": ["topic:business", "type:podcast"]}
+{"key": "amandawatersauthor.substack.com", "tags": ["topic:art", "topic:books", "type:newsletter"]}
+{"key": "amandayatesgarcia.substack.com", "tags": ["topic:philosophy", "topic:religion", "type:newsletter"]}
+{"key": "amandeepsp.github.io", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "amandhavollmer.substack.com", "tags": ["topic:medicine", "type:personal-blog"]}
+{"key": "amandineazran.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "amandinebart.substack.com", "tags": ["language:french", "topic:business", "type:newsletter"]}
+{"key": "amanecer.pe", "tags": ["language:spanish", "region:latin-america", "topic:news", "type:publication"]}
+{"key": "amangoel.ai", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "amangoyal.hashnode.dev", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "amanhimself.dev", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "amanijonespr.substack.com", "tags": ["topic:business", "topic:sport", "type:newsletter"]}
+{"key": "amanikiruga.github.io", "tags": ["topic:mathematics", "topic:science", "type:personal-blog"]}
+{"key": "amann.dev", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "amano.games", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "amanshantinews.com", "tags": ["language:hindi", "region:india", "topic:news", "type:publication"]}
+{"key": "amansmind.substack.com", "tags": ["topic:lifestyle", "type:personal-blog"]}
+{"key": "amantha.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "amantonio1.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "amantulsyan.substack.com", "tags": ["topic:programming", "topic:science", "type:personal-blog"]}
+{"key": "amanvibe.kz", "tags": ["language:russian", "region:asia", "topic:sport", "type:publication"]}
+{"key": "amanvir.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "amapresse.ma", "tags": ["language:arabic", "region:africa", "topic:news", "type:publication"]}
+{"key": "amarajinoticia.com.br", "tags": ["language:portuguese", "region:latin-america", "topic:news", "type:publication"]}
+{"key": "amarantemagazine.sapo.pt", "tags": ["language:portuguese", "region:europe", "topic:lifestyle", "topic:news", "type:publication"]}
+{"key": "https://amaravati.org/category/teachings/audio/guided-meditation/feed/", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://amaravati.org/speakers/ajahn-amaro/feed/", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://amaravati.org/speakers/ajahn-sumedho/feed/", "tags": ["topic:religion", "type:podcast"]}
+{"key": "amarioguy.github.io", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "amarmedia.co.id", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "amarnews.com.bd", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "amarpandey.me", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "amartins.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "amartya.in", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "amarujala.com", "tags": ["language:hindi", "region:india", "topic:news", "type:publication"]}
+{"key": "amarysia.gr", "tags": ["region:europe", "topic:news", "type:publication"]}
+{"key": "amass.jp", "tags": ["language:japanese", "region:japan", "topic:news", "type:publication"]}
+{"key": "amateurfunkpodcast.de", "tags": ["language:german", "region:germany", "topic:hardware", "type:podcast"]}
+{"key": "amateurgods.substack.com", "tags": ["topic:science", "type:newsletter"]}
+{"key": "amateurgourmet.substack.com", "tags": ["topic:food", "type:personal-blog"]}
+{"key": "amateurnerds.podbean.com", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://amateurplayer.libsyn.com/rss", "tags": ["language:chinese", "topic:entertainment", "topic:tech-industry", "type:podcast"]}
+{"key": "amateurradiolab.com", "tags": ["topic:hardware", "type:personal-blog"]}
+{"key": "amateurrugbypodcast.libsyn.com", "tags": ["topic:sport", "type:podcast"]}
+{"key": "amatria.in", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "amatterofbrand.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "amatzia.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "amauteur.substack.com", "tags": ["topic:entertainment", "topic:music", "type:institution"]}
+{"key": "amayaascunce.substack.com", "tags": ["language:spanish", "topic:books", "type:personal-blog"]}
+{"key": "amayarourke.substack.com", "tags": ["topic:art", "type:newsletter"]}
+{"key": "amayavillanueva.substack.com", "tags": ["language:spanish", "topic:personal", "type:personal-blog"]}
+{"key": "amazee.io", "tags": ["topic:software-engineering", "type:vendor-blog"]}
+{"key": "amazinavenue.com", "tags": ["region:usa", "topic:sport", "type:publication"]}
+{"key": "amazing-development.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "amazingcities.libsyn.com", "tags": ["topic:infrastructure", "type:podcast"]}
+{"key": "amazingnewsusa.com", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "amazingspider.substack.com", "tags": ["topic:entertainment", "type:newsletter"]}
+{"key": "https://amazingspidertalk.com/category/podcasts/amazing-spider-talk-podcasts/feed/", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://amazingspidertalk.com/category/podcasts/feed/", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://amazingspidertalk.com/feed/podcast/", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "amazingtamilnadu.in", "tags": ["region:india", "topic:news", "type:publication"]}
+{"key": "amazon-klug-steuern.podigee.io", "tags": ["language:german", "region:germany", "topic:business", "type:podcast"]}
+{"key": "amazon.podigee.io", "tags": ["language:german", "region:germany", "topic:business", "type:podcast"]}
+{"key": "amazonanne.substack.com", "tags": ["topic:lifestyle", "type:personal-blog"]}
+{"key": "amazonasatual.com.br", "tags": ["language:portuguese", "region:latin-america", "topic:news", "type:publication"]}
+{"key": "amazonica.pe", "tags": ["language:spanish", "region:latin-america", "topic:news", "type:publication"]}
+{"key": "amazonwatch.org", "tags": ["topic:environment", "type:institution"]}
+{"key": "ambagale.substack.com", "tags": ["topic:religion", "type:personal-blog"]}
+{"key": "ambardclecaire.cd", "tags": ["language:french", "region:africa", "topic:government", "topic:politics", "type:institution"]}
+{"key": "ambardcrussie.ru", "tags": ["language:french", "region:africa", "topic:government", "topic:politics", "type:institution"]}
+{"key": "ambassadorfwbc.sermon.net", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "ambassadorslive.libsyn.com", "tags": ["region:usa", "topic:politics", "type:podcast"]}
+{"key": "ambatlarge.substack.com", "tags": ["topic:politics", "type:newsletter"]}
+{"key": "ambato.gob.ec", "tags": ["language:spanish", "region:latin-america", "topic:government", "type:institution"]}
+{"key": "ambbleich.substack.com", "tags": ["region:usa", "topic:politics", "type:personal-blog"]}
+{"key": "ambcrypto.com", "tags": ["topic:finance", "type:publication"]}
+{"key": "ambedkar.in", "tags": ["region:india", "topic:politics", "type:institution"]}
+{"key": "amber.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "amberdaulton.com", "tags": ["topic:books", "type:personal-blog"]}
+{"key": "ambergristoday.com", "tags": ["region:latin-america", "topic:news", "type:publication"]}
+{"key": "amberhuntwrites.blogspot.com", "tags": ["topic:books", "type:personal-blog"]}
+{"key": "amberleitz.libsyn.com", "tags": ["topic:lifestyle", "type:podcast"]}
+{"key": "amberljc.github.io", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "ambermccue.libsyn.com", "tags": ["topic:business", "type:podcast"]}
+{"key": "ambermemorydoll.substack.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "ambermoggie.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "ambermusic.substack.com", "tags": ["topic:music", "type:personal-blog"]}
+{"key": "ambertamblyn.substack.com", "tags": ["topic:art", "topic:politics", "type:newsletter"]}
+{"key": "ambertherambler.bearblog.dev", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "amberweitzer.libsyn.com", "tags": ["topic:business", "type:podcast"]}
+{"key": "amberwilliams.io", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "ambience.sk", "tags": ["region:europe", "topic:tech-industry", "type:personal-blog"]}
+{"key": "ambiens.substack.com", "tags": ["language:italian", "topic:tech-industry", "type:newsletter"]}
+{"key": "ambient-daily-the-latest-ambient-releases.lepodcast.fr", "tags": ["topic:music", "type:podcast"]}
+{"key": "ambienta.uy", "tags": ["language:spanish", "region:latin-america", "topic:environment", "type:publication"]}
+{"key": "ambientepreparado.substack.com", "tags": ["language:portuguese", "topic:lifestyle", "type:newsletter"]}
+{"key": "ambiguous.name", "tags": ["topic:mathematics", "topic:programming", "type:personal-blog"]}
+{"key": "ambiso.github.io", "tags": ["topic:mathematics", "topic:security", "type:personal-blog"]}
+{"key": "ambitchious.podbean.com", "tags": ["topic:lifestyle", "type:podcast"]}
+{"key": "ambitenergypodcast.podbean.com", "tags": ["topic:business", "type:podcast"]}
+{"key": "ambitiousdads.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "ambitiousdesigner.substack.com", "tags": ["topic:design", "type:newsletter"]}
+{"key": "ambitiousentrepreneurnetwork.com", "tags": ["topic:business", "type:podcast"]}
+{"key": "ambitiuosaddicts.libsyn.com", "tags": ["topic:health", "type:podcast"]}
+{"key": "amblackmere.substack.com", "tags": ["topic:books", "topic:history", "type:personal-blog"]}
+{"key": "amble.blog", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "amboss.podigee.io", "tags": ["language:german", "region:germany", "topic:medicine", "type:podcast"]}
+{"key": "ambou.edu.et", "tags": ["region:africa", "topic:education", "type:institution"]}
+{"key": "ambreciel.substack.com", "tags": ["topic:music", "type:personal-blog"]}
+{"key": "ambrustovishazi.substack.com", "tags": ["topic:music", "type:personal-blog"]}
+{"key": "ambulo.bearblog.dev", "tags": ["topic:art", "topic:gaming", "type:personal-blog"]}
+{"key": "amc.hkust.edu.hk", "tags": ["region:asia", "topic:ai", "topic:art", "type:institution"]}
+{"key": "amckaywrites.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "amcnews.co.id", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "amconrightnow.libsyn.com", "tags": ["region:usa", "topic:politics", "type:podcast"]}
+{"key": "amcsupport.org", "tags": ["topic:health", "type:institution"]}
+{"key": "amd-ansicht-podcast.podigee.io", "tags": ["language:german", "region:germany", "topic:health", "topic:medicine", "type:podcast"]}
+{"key": "amd.gov.af", "tags": ["region:middle-east", "topic:government", "topic:science", "type:institution"]}
+{"key": "amdatalakehouse.substack.com", "tags": ["topic:ai", "topic:data", "type:newsletter"]}
+{"key": "amdg.substack.com", "tags": ["topic:religion", "type:personal-blog"]}
+{"key": "amdson.github.io", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "ame.gob.ec", "tags": ["language:spanish", "region:latin-america", "topic:government", "type:institution"]}
+{"key": "amedee.be", "tags": ["topic:networking", "type:personal-blog"]}
+{"key": "amedee.me", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "amediocretime.libsyn.com", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "amediocretimemembers.libsyn.com", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "ameemabackwards.substack.com", "tags": ["topic:books", "topic:entertainment", "type:newsletter"]}
+{"key": "ameflix.substack.com", "tags": ["topic:entertainment", "type:newsletter"]}
+{"key": "amegandjiakouetonam.substack.com", "tags": ["language:french", "topic:business", "type:newsletter"]}
+{"key": "ameikpe.substack.com", "tags": ["topic:ai", "topic:data", "type:newsletter"]}
+{"key": "amelaclub.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "amelia.how", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "ameliaandersdotter.eu", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "amelialake125573.substack.com", "tags": ["topic:books", "type:personal-blog"]}
+{"key": "ameliaoon.substack.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "ameliarampe.substack.com", "tags": ["topic:food", "type:newsletter"]}
+{"key": "ameliaroseillustration.substack.com", "tags": ["topic:art", "type:newsletter"]}
+{"key": "ameliawilson.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "ameliepans.be", "tags": ["language:french", "region:europe", "topic:politics", "type:personal-blog"]}
+{"key": "ameliorate.app", "tags": ["topic:software-engineering", "type:vendor-blog"]}
+{"key": "amelioro.substack.com", "tags": ["topic:software-engineering", "type:newsletter"]}
+{"key": "amenager-son-jardin.com", "tags": ["language:french", "topic:lifestyle", "type:podcast"]}
+{"key": "amenpodcast.substack.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "amentum.substack.com", "tags": ["topic:finance", "type:newsletter"]}
+{"key": "amercader.net", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "amerex.substack.com", "tags": ["region:usa", "topic:history", "topic:politics", "type:newsletter"]}
+{"key": "amergrgic.com", "tags": ["topic:business", "topic:tech-industry", "type:personal-blog"]}
+{"key": "america.dulichvietnam.com.vn", "tags": ["topic:travel", "type:publication"]}
+{"key": "america2.news", "tags": ["region:usa", "topic:politics", "type:newsletter"]}
+{"key": "americaadapts.libsyn.com", "tags": ["region:usa", "topic:environment", "type:podcast"]}
+{"key": "americaatwarpodcast.libsyn.com", "tags": ["region:usa", "topic:history", "topic:military", "type:podcast"]}
+{"key": "americaknow.libsyn.com", "tags": ["language:korean", "topic:politics", "type:podcast"]}
+{"key": "americana-uk.com", "tags": ["region:uk", "topic:music", "type:publication"]}
+{"key": "americanacademy.ac.cy", "tags": ["region:europe", "topic:education", "type:institution"]}
+{"key": "americanadversaries.podbean.com", "tags": ["topic:politics", "type:podcast"]}
+{"key": "americanagefashion.com", "tags": ["topic:history", "topic:lifestyle", "type:personal-blog"]}
+{"key": "americanalchemymagazine.substack.com", "tags": ["topic:news", "topic:politics", "type:publication"]}
+{"key": "americanantiquarian.org", "tags": ["region:usa", "topic:history", "type:institution"]}
+{"key": "americanartcollective.libsyn.com", "tags": ["topic:art", "type:podcast"]}
+{"key": "americanbalneomedicineinstitute.org", "tags": ["region:usa", "topic:health", "topic:military", "type:podcast"]}
+{"key": "americanbanker.libsyn.com", "tags": ["region:usa", "topic:finance", "type:podcast"]}
+{"key": "americanbluestheater.com", "tags": ["region:usa", "topic:art", "topic:entertainment", "type:institution"]}
+{"key": "americanchecklist.libsyn.com", "tags": ["region:usa", "topic:politics", "type:podcast"]}
+{"key": "americancolossus.substack.com", "tags": ["region:usa", "topic:art", "type:institution"]}
+{"key": "americancommunitymedia.org", "tags": ["region:usa", "topic:media", "topic:news", "type:institution"]}
+{"key": "americanconnectionshow.podomatic.com", "tags": ["region:uk", "topic:music", "type:podcast"]}
+{"key": "americanconsiderations.substack.com", "tags": ["region:usa", "topic:politics", "type:newsletter"]}
+{"key": "americanconstitutionist.substack.com", "tags": ["region:usa", "topic:politics", "type:publication"]}
+{"key": "americancountess.co.uk", "tags": ["region:uk", "topic:history", "topic:lifestyle", "type:personal-blog"]}
+{"key": "americancountryside.com", "tags": ["region:usa", "topic:travel", "type:publication"]}
+{"key": "americandemocracyminute.podomatic.com", "tags": ["region:usa", "topic:politics", "type:podcast"]}
+{"key": "americandiplomat.libsyn.com", "tags": ["region:usa", "topic:politics", "type:podcast"]}
+{"key": "americandreaming.substack.com", "tags": ["region:usa", "topic:philosophy", "topic:politics", "type:newsletter"]}
+{"key": "americanempasse.substack.com", "tags": ["region:usa", "topic:politics", "type:newsletter"]}
+{"key": "americanescapee.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "americanexception.substack.com", "tags": ["region:usa", "topic:politics", "type:personal-blog"]}
+{"key": "americanfreakshow.news", "tags": ["region:usa", "topic:politics", "type:newsletter"]}
+{"key": "americangeo.substack.com", "tags": ["region:usa", "topic:science", "type:institution"]}
+{"key": "americangirlingreece.substack.com", "tags": ["topic:lifestyle", "topic:travel", "type:newsletter"]}
+{"key": "americangold.substack.com", "tags": ["topic:entertainment", "type:personal-blog"]}
+{"key": "americangreedfactory.libsyn.com", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "americanheretic.substack.com", "tags": ["topic:health", "type:personal-blog"]}
+{"key": "americanheritage.com", "tags": ["region:usa", "topic:history", "topic:travel", "type:publication"]}
+{"key": "https://americanheritagecu-8162494.hs-sites.com/podcasts/195823747411/rss.xml", "tags": ["region:usa", "topic:finance", "type:podcast"]}
+{"key": "americanhunter.org", "tags": ["region:usa", "topic:sport", "type:publication"]}
+{"key": "americaninequality.substack.com", "tags": ["region:usa", "topic:economics", "type:newsletter"]}
+{"key": "americanisraelite.com", "tags": ["region:usa", "topic:news", "topic:religion", "type:publication"]}
+{"key": "https://americanjournal.us/index.php/american/gateway/plugin/AnnouncementFeedGatewayPlugin/atom", "tags": ["region:usa", "topic:history", "topic:politics", "type:institution"]}
+{"key": "americanjournaldaily.com", "tags": ["region:usa", "topic:news", "topic:politics", "type:publication"]}
+{"key": "americanjournalnews.com", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "americankahani.com", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "americanleviathan.com", "tags": ["region:usa", "topic:politics", "type:publication"]}
+{"key": "americanliberty.news", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "americanlife4989.podbean.com", "tags": ["language:japanese", "topic:lifestyle", "type:podcast"]}
+{"key": "https://americanmachinist.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22home%22%7D", "tags": ["region:usa", "topic:hardware", "type:publication"]}
+{"key": "americanmadenewsletter.substack.com", "tags": ["region:usa", "topic:business", "topic:education", "type:newsletter"]}
+{"key": "https://americanmahayana.blob.core.windows.net/podcast/podcast.rss", "tags": ["language:chinese", "topic:religion", "type:podcast"]}
+{"key": "americanmandate.substack.com", "tags": ["region:usa", "topic:politics", "type:personal-blog"]}
+{"key": "americanmonetaryassociation.libsyn.com", "tags": ["region:usa", "topic:economics", "type:podcast"]}
+{"key": "https://americanmonk.org/index.xml", "tags": ["topic:religion", "type:personal-blog"]}
+{"key": "https://americanmonk.org/podcast.xml", "tags": ["topic:religion", "type:podcast"]}
+{"key": "americanmuckrakers.com", "tags": ["region:usa", "topic:journalism", "topic:politics", "type:publication"]}
+{"key": "americanmuckrakers.substack.com", "tags": ["region:usa", "topic:journalism", "topic:politics", "type:publication"]}
+{"key": "americanmuslimproject.substack.com", "tags": ["topic:entertainment", "topic:religion", "type:publication"]}
+{"key": "americannaturecomics.substack.com", "tags": ["topic:art", "topic:entertainment", "type:publication"]}
+{"key": "americannotes.substack.com", "tags": ["topic:philosophy", "topic:politics", "type:newsletter"]}
+{"key": "americanornithologistsunion.org", "tags": ["region:usa", "topic:science", "type:institution"]}
+{"key": "americanpatriotdaily.com", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "americanpress.com", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "americanpromise.net", "tags": ["region:usa", "topic:politics", "type:institution"]}
+{"key": "americanrecycler.com", "tags": ["region:usa", "topic:business", "topic:environment", "type:publication"]}
+{"key": "americanrefugees.substack.com", "tags": ["topic:books", "topic:entertainment", "type:personal-blog"]}
+{"key": "americanrifleman.org", "tags": ["region:usa", "topic:sport", "type:publication"]}
+{"key": "americanroulette.typlog.io", "tags": ["language:chinese", "topic:politics", "type:podcast"]}
+{"key": "americanshortfiction.org", "tags": ["region:usa", "topic:books", "type:publication"]}
+{"key": "americansongwriter.com", "tags": ["region:usa", "topic:music", "type:publication"]}
+{"key": "americanspirit1776.substack.com", "tags": ["region:usa", "topic:politics", "topic:religion", "type:newsletter"]}
+{"key": "americanstudier.blogspot.com", "tags": ["topic:history", "topic:politics", "type:personal-blog"]}
+{"key": "americanstudier.substack.com", "tags": ["topic:books", "topic:education", "type:newsletter"]}
+{"key": "americansunlight.substack.com", "tags": ["region:usa", "topic:journalism", "topic:politics", "type:institution"]}
+{"key": "americantalk.live", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "americanwarriorradio.com", "tags": ["region:usa", "topic:military", "type:podcast"]}
+{"key": "americanwarriorshow.libsyn.com", "tags": ["region:usa", "topic:military", "type:podcast"]}
+{"key": "americanweekender.substack.com", "tags": ["region:usa", "topic:food", "topic:travel", "type:newsletter"]}
+{"key": "americanwirenews.com", "tags": ["region:usa", "topic:news", "topic:politics", "type:publication"]}
+{"key": "americaoutdoors.podbean.com", "tags": ["region:usa", "topic:environment", "topic:sport", "type:podcast"]}
+{"key": "americareformed.substack.com", "tags": ["region:usa", "topic:politics", "type:personal-blog"]}
+{"key": "americaretail-malls.com", "tags": ["language:spanish", "region:latin-america", "topic:business", "type:publication"]}
+{"key": "https://americas.georgetown.edu/series/y-esto-no-es-todo-podcast/feed.rss", "tags": ["language:spanish", "region:latin-america", "topic:politics", "type:podcast"]}
+{"key": "americasfuture.org", "tags": ["region:usa", "topic:politics", "type:institution"]}
+{"key": "americasnewsbrief.com", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "https://americasocialista.org/feed/podcast/el-fantasma-del-comunismo/", "tags": ["language:spanish", "topic:politics", "type:podcast"]}
+{"key": "americaspopculturetriviashow.libsyn.com", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://americasquarterly.org/tag/aq-podcast/feed/", "tags": ["region:latin-america", "topic:politics", "type:podcast"]}
+{"key": "americasvoicecnn.substack.com", "tags": ["region:usa", "topic:politics", "type:newsletter"]}
+{"key": "americaswargame.substack.com", "tags": ["region:usa", "topic:sport", "type:newsletter"]}
+{"key": "americathepossible.substack.com", "tags": ["region:usa", "topic:education", "topic:politics", "type:newsletter"]}
+{"key": "americatrendspodcast.blubrry.net", "tags": ["region:usa", "topic:politics", "type:podcast"]}
+{"key": "https://americatv.com.pe/feed", "tags": ["language:spanish", "region:latin-america", "topic:entertainment", "type:publication"]}
+{"key": "americatv.com.py", "tags": ["language:spanish", "region:latin-america", "topic:news", "type:publication"]}
