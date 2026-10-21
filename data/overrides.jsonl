@@ -5056,3 +5056,28 @@
 {"key": "https://8vivgjpkaf.execute-api.us-east-1.amazonaws.com/prod/cnbcnewsfeed?feedfor=NN&serviceFor=audiofeed&feedName=MARKETS_NOW", "tags": ["region:usa", "topic:finance", "type:podcast"]}
 {"key": "https://8vivgjpkaf.execute-api.us-east-1.amazonaws.com/prod/cnbcnewsfeed?feedfor=NN&serviceFor=audiofeed&feedName=TECH_CHECK", "tags": ["region:usa", "topic:tech-industry", "type:podcast"]}
 {"key": "https://9to5.cc/category/9to5-entertainment-system-montreal-podcast/feed/", "tags": ["region:canada", "topic:gadgets", "topic:gaming", "type:podcast"]}
+{"key": "a1news.co.id", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "abaraya204.com", "tags": ["language:japanese", "topic:personal", "type:podcast"]}
+{"key": "abc11.com", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "abc13.com", "tags": ["region:us-texas", "topic:news", "type:publication"]}
+{"key": "abc30.com", "tags": ["region:us-california", "topic:news", "type:publication"]}
+{"key": "abc7.com", "tags": ["region:us-california", "topic:news", "type:publication"]}
+{"key": "abc7chicago.com", "tags": ["region:us-chicago", "topic:news", "type:publication"]}
+{"key": "abc7news.com", "tags": ["region:us-california", "topic:news", "type:publication"]}
+{"key": "abc7ny.com", "tags": ["region:us-new-york", "topic:news", "type:publication"]}
+{"key": "https://abendschein.ch/feed/podcast/io2oi/", "tags": ["language:german", "topic:tech-industry", "type:podcast"]}
+{"key": "https://abenteuer-denken.de/feed/episoden/", "tags": ["language:german", "topic:philosophy", "type:podcast"]}
+{"key": "https://abenteuer-denken.de/feed/history/", "tags": ["language:german", "topic:history", "type:podcast"]}
+{"key": "abhinavsarkar.net", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "abireg.ru", "tags": ["language:russian", "region:russia", "topic:business", "topic:news", "type:publication"]}
+{"key": "https://abnormalmapping.squarespace.com/around-the-long-fire?format=rss", "tags": ["topic:gaming", "type:podcast"]}
+{"key": "https://abnormalmapping.squarespace.com/fate-moon-archive?format=rss", "tags": ["topic:gaming", "type:podcast"]}
+{"key": "abo.fi", "tags": ["region:europe", "topic:education", "type:institution"]}
+{"key": "https://accendoreliability.com/feed/podcast/arw/", "tags": ["topic:systems", "type:podcast"]}
+{"key": "https://accendoreliability.com/feed/podcast/sor/", "tags": ["topic:systems", "type:podcast"]}
+{"key": "accidentalwoodworker.blogspot.com", "tags": ["topic:lifestyle", "type:personal-blog"]}
+{"key": "ace.mu.nu", "tags": ["region:usa", "topic:politics", "type:publication"]}
+{"key": "achenbach.feg.de", "tags": ["language:german", "topic:religion", "type:podcast"]}
+{"key": "acmilan.com.pl", "tags": ["region:poland", "topic:sport", "type:publication"]}
+{"key": "actacommercii.co.za", "tags": ["region:africa", "topic:business", "type:institution"]}
+{"key": "https://9to5.cc/category/go-plug-yourself-montreal-podcast/feed/", "tags": ["region:canada", "topic:gadgets", "type:podcast"]}
