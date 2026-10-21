@@ -5023,3 +5023,17 @@
 {"key": "https://addedbytes.com/blog/tag/apollopad/feed/", "tags": ["topic:software-engineering", "type:personal-blog"]}
 {"key": "https://addedbytes.com/blog/tag/cheatography/feed/", "tags": ["topic:software-engineering", "type:personal-blog"]}
 {"key": "https://addedbytes.com/blog/tag/culture/feed/", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "adelante.cu", "tags": ["region:latin-america", "topic:news", "type:publication"]}
+{"key": "https://www.adelante.cu/index.php/en/?format=feed&type=atom", "tags": ["language:english", "region:latin-america", "topic:news", "type:publication"]}
+{"key": "https://www.adelante.cu/index.php/en/?format=feed&type=rss", "tags": ["language:english", "region:latin-america", "topic:news", "type:publication"]}
+{"key": "absolutetrash.jkbulmer.me", "tags": ["region:usa", "topic:entertainment", "type:podcast"]}
+{"key": "acbart.github.io", "tags": ["topic:education", "topic:programming", "type:personal-blog"]}
+{"key": "https://09im6z8q7f.execute-api.us-east-1.amazonaws.com/prod/cnbcnewsfeed?feedfor=NN", "tags": ["region:usa", "topic:finance", "topic:news", "type:aggregator"]}
+{"key": "https://09im6z8q7f.execute-api.us-east-1.amazonaws.com/prod/cnbcnewsfeed?feedfor=SBN", "tags": ["region:usa", "topic:finance", "type:aggregator"]}
+{"key": "1000awesomethings.com", "tags": ["region:canada", "topic:personal", "type:personal-blog"]}
+{"key": "112press.hu", "tags": ["region:europe", "topic:news", "type:publication"]}
+{"key": "https://1320wils.com/podcasts/916/feed.xml", "tags": ["region:usa", "topic:politics", "type:podcast"]}
+{"key": "https://1320wils.com/podcasts/926/feed.xml", "tags": ["region:usa", "topic:lifestyle", "type:podcast"]}
+{"key": "1894.latech.edu", "tags": ["region:usa", "topic:education", "type:podcast"]}
+{"key": "24-ore.com", "tags": ["region:europe", "topic:news", "type:publication"]}
+{"key": "24media.az", "tags": ["region:asia", "topic:news", "type:publication"]}
