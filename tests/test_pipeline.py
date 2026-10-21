@@ -710,6 +710,89 @@ class URLRuleFacetsReachTheCandidate(unittest.TestCase):
         self.assertNotIn("language:french", rows[0]["tags"])
 
 
+class HostRuleTypeOutranksTheGuess(unittest.TestCase):
+    """A human host rule settles type: over the rule engine's guess.
+
+    Bug (2026-10-21): cmd_tag consulted the host rule for type: only when the
+    feed's own title/description had produced nothing, so "blog" in the
+    description of reproducible-builds.org gave type:vendor-blog and the
+    human's type:institution was ignored - add.py merge then shipped the
+    guessed type into the product. merge_tags precedence (a hand decision
+    excludes the rules for the facets it speaks to) is the law for every
+    reader of overrides.jsonl; revert the `if got and not exact` block in
+    cmd_tag and only this test fails.
+    """
+
+    URL = "https://reproducible-builds.example.org/blog/index.rss"
+
+    def tag(self, rules):
+        import discover
+        with tempfile.TemporaryDirectory() as d:
+            with open(os.path.join(d, "candidates.amp.jsonl"), "w") as fh:
+                fh.write(json.dumps({"url": self.URL,
+                                     "category": "Vendor Blogs"}) + "\n")
+            for n in ("candidates.discovered.jsonl", "candidates.paths.jsonl",
+                      "candidates.leads.jsonl", "candidates.oracle.jsonl"):
+                open(os.path.join(d, n), "w").close()
+            with open(os.path.join(d, "probe_results.jsonl"), "w") as fh:
+                fh.write(json.dumps({"url": self.URL, "isFeed": True,
+                                     "status": 200,
+                                     "title": "The Reproducible Builds blog",
+                                     "description": "Reproducible builds",
+                                     "items": []}) + "\n")
+            with open(os.path.join(d, "overrides.jsonl"), "w") as fh:
+                for key, rule_tags in rules:
+                    fh.write(json.dumps({"key": key, "tags": rule_tags}) + "\n")
+            open(os.path.join(d, "feeds.json"), "w").write("[]")
+
+            class StubPaths:
+                def data(self, name): return os.path.join(d, name)
+                def root(self, name): return os.path.join(d, name)
+
+            saved = (discover.paths, discover.CANDIDATES, discover.EXPANDED,
+                     discover.LEADS, discover.ORACLE, discover.AMP,
+                     discover.RESULTS, discover.TAGGED)
+            discover.paths = StubPaths()
+            for name in ("CANDIDATES", "EXPANDED", "LEADS", "ORACLE"):
+                setattr(discover, name, os.path.join(d, f"candidates.{name}.jsonl"))
+            discover.AMP = os.path.join(d, "candidates.amp.jsonl")
+            discover.RESULTS = os.path.join(d, "probe_results.jsonl")
+            discover.TAGGED = os.path.join(d, "tagged.jsonl")
+            try:
+                discover.cmd_tag(None)
+                rows = [json.loads(l) for l in
+                        open(discover.TAGGED, encoding="utf-8")]
+            finally:
+                (discover.paths, discover.CANDIDATES, discover.EXPANDED,
+                 discover.LEADS, discover.ORACLE, discover.AMP,
+                 discover.RESULTS, discover.TAGGED) = saved
+            return rows
+
+    # The candidate carries the list heading "Vendor Blogs" (hintType
+    # personal-blog), which is how the real defect arrived: the heading's
+    # type was consulted and the human's host rule second, so the product
+    # shipped a heading's guess instead of the decision.
+    def test_the_host_rule_type_wins_over_the_word_blog(self):
+        rows = self.tag([("reproducible-builds.example.org",
+                          ["topic:security", "type:institution"])])
+        self.assertEqual(len(rows), 1)
+        self.assertIn("type:institution", rows[0]["tags"])
+        self.assertNotIn("type:vendor-blog", rows[0]["tags"])
+
+    def test_a_url_rule_still_beats_the_host_rule(self):
+        # The host rule may not retype what a human answered per-feed: exact
+        # URL rules keep priority (merge_tags: the URL rule is the whole
+        # answer for the facets it names). Remove the `and not exact` guard
+        # in cmd_tag and this is the test that fails.
+        rows = self.tag([("reproducible-builds.example.org",
+                          ["type:vendor-blog"]),
+                         (self.URL, ["topic:software-engineering",
+                          "type:publication"])])
+        self.assertEqual(len(rows), 1)
+        self.assertIn("type:publication", rows[0]["tags"])
+        self.assertNotIn("type:vendor-blog", rows[0]["tags"])
+
+
 class UnacceptableTagsReachTheHumanQueue(unittest.TestCase):
     """A candidate the vocabulary rejects must reach the untagged queue.
 

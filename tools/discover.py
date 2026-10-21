@@ -608,11 +608,18 @@ def cmd_tag(args):
                     if not topics and extra:
                         topics = extra[:2]
                         origin.append("host pathTags")
-            if not types:
-                got = [t for t in (rule.get("tags") or []) if t.startswith("type:")]
-                if got:
-                    types = got[:1]
-                    origin.append("host rule")
+            got = [t for t in (rule.get("tags") or []) if t.startswith("type:")]
+            if got and not exact:
+                # A human host rule SETTLES type:, over the rule engine's
+                # guess too. merge_tags precedence says a hand decision
+                # excludes the rules for the facets it speaks to; cmd_tag
+                # used to consult the host rule only when nothing else had
+                # produced a type, so the word "blog" in a description beat
+                # type:institution on reproducible-builds.org, and add.py
+                # merge shipped the guessed type into the product.
+                types = got[:1]
+                types = got[:1]
+                origin.append("host rule")
             if not topics and not aggregator_host(c["url"]):
                 # A host rule's own tags describe the site, so on a site they are
                 # evidence about every feed it publishes. On an aggregator each
