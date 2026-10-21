@@ -4979,3 +4979,13 @@
 {"key": "https://anchor.fm/s/8b6e8e4/podcast/rss", "tags": ["region:usa", "topic:health", "type:podcast"]}
 {"key": "https://anchor.fm/s/930b87c/podcast/rss", "tags": ["region:usa", "topic:religion", "type:podcast"]}
 {"key": "https://anchor.fm/s/fcbe1fc/podcast/rss", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/MinnesotaMilitaryRadio", "tags": ["region:usa", "topic:military", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/WocncbCertificationInspiration", "tags": ["region:usa", "topic:health", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/historypod", "tags": ["topic:history", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/vietnamveterannews", "tags": ["region:usa", "topic:military", "topic:news", "type:podcast"]}
+{"key": "https://feeds.feedburner.com/ruanyifeng", "tags": ["language:chinese", "topic:tech-industry", "type:newsletter"]}
+{"key": "svenska.yle.fi", "tags": ["region:europe", "topic:news", "type:publication"]}
+{"key": "24newshd.tv", "tags": ["region:pakistan", "topic:news", "type:publication"], "pathTags": {"/rss/athletics": ["topic:sport"], "/rss/crime": ["topic:politics"]}}
+{"key": "https://360magazine.nl/afrika/feed/", "tags": ["language:dutch", "region:europe", "topic:news", "type:publication"]}
+{"key": "https://360magazine.nl/audio/feed/", "tags": ["language:dutch", "region:europe", "topic:news", "type:publication"]}
+{"key": "https://360magazine.nl/azie/feed/", "tags": ["language:dutch", "region:europe", "topic:news", "type:publication"]}
