@@ -5005,3 +5005,9 @@
 {"key": "newnigerianpolitics.com", "tags": ["region:nigeria", "topic:politics", "type:publication"], "pathTags": {"/armed-forces": ["topic:military"], "/nollywood": ["topic:entertainment"]}}
 {"key": "philippineexaminer.com", "tags": ["region:philippines", "topic:news", "type:publication"], "pathTags": {"/dining": ["topic:food"]}}
 {"key": "tribune.com.pk", "tags": ["region:pakistan", "topic:news", "type:publication"], "pathTags": {"/feed/advice": ["topic:lifestyle"], "/feed/analysis": ["topic:politics"], "/feed/article": ["topic:politics"]}}
+{"key": "adevarul.ro", "tags": ["region:europe", "topic:news", "type:publication"]}
+{"key": "168chasa.bg", "tags": ["region:europe", "topic:news", "type:publication"]}
+{"key": "24.hu", "tags": ["region:europe", "topic:news", "type:publication"], "pathTags": {"/tag/egeszsegugy": ["topic:health"], "/tag/munkaeropiac": ["topic:business"]}}
+{"key": "24tv.ua", "tags": ["region:ukraine", "topic:news", "type:publication"]}
+{"key": "8sidor.se", "tags": ["region:europe", "topic:news", "type:publication"]}
+{"key": "https://24tv.ua/rss/en.xml", "tags": ["language:english", "region:ukraine", "topic:news", "type:publication"]}
