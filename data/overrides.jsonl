@@ -8124,3 +8124,6 @@
 {"key": "https://aliontherun.substack.com/feed", "tags": ["topic:sport", "type:newsletter"]}
 {"key": "https://alioss.gcores.com/feeds/apple_podcast_v1.xml", "tags": ["language:chinese", "region:asia", "topic:gaming", "type:podcast"]}
 {"key": "https://alioss.gcores.com/feeds/gadio_life.xml", "tags": ["language:chinese", "region:asia", "topic:lifestyle", "type:podcast"]}
+{"key": "https://ahgz.de/news/feed/hotellerie/", "tags": ["language:german", "region:germany", "topic:business", "type:publication"]}
+{"key": "https://ahgz.de/news/feed/immobilien/", "tags": ["language:german", "region:germany", "topic:business", "type:publication"]}
+{"key": "https://ahgz.de/news/feed/karriere/", "tags": ["language:german", "region:germany", "topic:business", "type:publication"]}
