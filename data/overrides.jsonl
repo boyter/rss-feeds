@@ -4712,3 +4712,12 @@
 {"key": "rss.blogs.elconfidencial.com", "tags": ["language:spanish", "region:spain", "topic:news", "type:aggregator"]}
 {"key": "showfeed.rubenerd.com", "tags": ["region:asia", "topic:entertainment", "topic:politics", "type:podcast"]}
 {"key": "https://tyma.com/feed.xml", "tags": ["topic:science", "topic:tech-industry", "type:personal-blog"]}
+{"key": "https://planet.debian.org/rss20.xml", "tags": ["topic:open-source", "type:aggregator"]}
+{"key": "https://planet.gnome.org/rss20.xml", "tags": ["topic:open-source", "type:aggregator"]}
+{"key": "https://planet.freedesktop.org/rss20.xml", "tags": ["topic:open-source", "type:aggregator"]}
+{"key": "https://planet.kde.org/rss20.xml", "tags": ["topic:open-source", "type:aggregator"]}
+{"key": "https://planet.gnu.org/rss20.xml", "tags": ["topic:open-source", "type:aggregator"]}
+{"key": "https://planet.wordpress.org/feed/", "tags": ["topic:web-development", "type:aggregator"]}
+{"key": "https://planet.mozilla.org/rss20.xml", "tags": ["topic:open-source", "type:aggregator"]}
+{"key": "https://planetpython.org/rss20.xml", "tags": ["topic:programming:python", "type:aggregator"]}
+{"key": "https://planet.ubuntu.com/feed", "tags": ["topic:open-source", "type:aggregator"]}

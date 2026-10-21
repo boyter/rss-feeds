@@ -566,3 +566,25 @@ for the sections), then the ~950 single-host rows 22 at a time. Measured:
   row index, never transcribed URLs.
 - Next: the queue only refills from new discovery (amp tranche 5, or
   gap-directed amp for thin facets: medicine, mathematics, transport).
+
+## Planets (2026-10-21)
+
+PlanetSoftware aggregators publish member feeds right in their index HTML.
+Ten planet indexes appended to `sources.txt` (debian gnome freedesktop kde
+gnu wordpress openstreetmap ubuntu mozilla planetpython; eclipse/libreoffice
+unreachable, wikimedia moved to a wiki page). **9 serve their own aggregate
+feed and joined as `type:aggregator`** (OSM's /rss feeds are data-dump
+notices, not articles; planet.ubuntu.com serves `/feed`, not `rss20.xml`).
+
+Members: the index hrefs were mined with the FEEDISH path filter (557
+unique member-feed leads -> `data/candidates.planets.jsonl`), probed at a
+**64% live rate (359 feeds)**. Members of a vetted planet are human-curated
+by the planet operators, so they are the highest-quality leads the project
+has after the sibling pass. Two traps:
+
+- Do **not** let the planet pages through `extract`: their item bodies
+  contain every URL the members cite (one 967 KB page = tens of thousands
+  of leads). The page files live in `data/sources/planets/`, which extract
+  skips, and are mined with the targeted href pass instead.
+- `cmd_tag` ignores tags already present on a candidate row - hand-tagged
+  files merge directly with `add.py merge`, they do not round-trip `tag`.
