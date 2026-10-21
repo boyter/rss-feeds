@@ -337,7 +337,7 @@
 {"key": "newsblaze.com", "tags": ["topic:news", "type:aggregator"]}
 {"key": "feeds.skynews.com", "tags": ["topic:news", "type:publication", "region:world", "region:uk"]}
 {"key": "wan-ifra.org", "tags": ["topic:media", "topic:journalism", "type:community", "region:world"]}
-{"key": "warontherocks.com", "tags": ["topic:military", "topic:politics", "type:publication", "region:usa"]}
+{"key": "warontherocks.com", "tags": ["region:usa", "topic:military", "topic:politics", "type:publication"]}
 {"key": "worldweeklynews.com", "tags": ["topic:news", "type:aggregator"]}
 {"key": "feeds.arstechnica.com", "tags": ["topic:tech-industry", "type:publication", "region:usa"], "pathTags": {"/gaming": ["topic:gaming"]}}
 {"key": "theunionjournal.com", "tags": ["topic:news", "type:aggregator"]}
@@ -3377,7 +3377,7 @@
 {"key": "https://agora.ctxt.es/feed/", "tags": ["language:spanish", "topic:politics", "type:publication"]}
 {"key": "https://agoraid.com/index.xml", "tags": ["topic:security", "type:vendor-blog"]}
 {"key": "https://agoranovale.com.br/feed/", "tags": ["language:portuguese", "topic:news", "type:publication"]}
-{"key": "https://agorapublications.substack.com/feed", "tags": ["topic:philosophy", "type:newsletter"]}
+{"key": "https://agorapublications.substack.com/feed", "tags": ["topic:history", "topic:philosophy", "type:newsletter"]}
 {"key": "https://agos.com.tr/rss/tr", "tags": ["topic:news", "type:publication"]}
 {"key": "https://agourlay.github.io/atom.xml", "tags": ["topic:programming", "type:personal-blog"]}
 {"key": "https://agpgabon.ga/feed/", "tags": ["language:french", "region:africa", "topic:news", "type:publication"]}
@@ -5002,7 +5002,7 @@
 {"key": "https://feeds.captivate.fm/the-rapp-report/", "tags": ["topic:religion", "type:podcast"]}
 {"key": "https://feeds.captivate.fm/theology-on-mission/", "tags": ["topic:religion", "type:podcast"]}
 {"key": "https://feeds.captivate.fm/theology-throw-down/", "tags": ["topic:religion", "type:podcast"]}
-{"key": "newnigerianpolitics.com", "tags": ["region:nigeria", "topic:politics", "type:publication"], "pathTags": {"/armed-forces": ["topic:military"], "/nollywood": ["topic:entertainment"]}}
+{"key": "newnigerianpolitics.com", "tags": ["region:nigeria", "topic:news", "topic:politics", "type:publication"]}
 {"key": "philippineexaminer.com", "tags": ["region:philippines", "topic:news", "type:publication"], "pathTags": {"/dining": ["topic:food"]}}
 {"key": "tribune.com.pk", "tags": ["region:pakistan", "topic:news", "type:publication"], "pathTags": {"/feed/advice": ["topic:lifestyle"], "/feed/analysis": ["topic:politics"], "/feed/article": ["topic:politics"]}}
 {"key": "adevarul.ro", "tags": ["region:europe", "topic:news", "type:publication"]}
@@ -7495,3 +7495,193 @@
 {"key": "https://www.nytimes.com/services/xml/rss/nyt/Health.xml", "tags": ["region:usa", "topic:health", "type:publication"]}
 {"key": "https://www.omnycontent.com/d/playlist/0d2f442e-125e-4a95-9e25-aabd01618751/7415a69a-125b-4d75-afeb-aabe01348187/96a50e82-8316-4028-8520-aabe01364b80/podcast.rss", "tags": ["topic:medicine", "type:podcast"]}
 {"key": "parentprojectmd.org", "tags": ["topic:medicine", "type:institution"]}
+{"key": "https://anchor.fm/s/111953adc/podcast/rss", "tags": ["topic:transport", "type:podcast"]}
+{"key": "https://annabelport.substack.com/feed", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://fabricofparis.com/feed.xml", "tags": ["region:france", "topic:history", "topic:transport", "type:personal-blog"]}
+{"key": "https://feeds.soundcloud.com/users/soundcloud:users:592281870/sounds.rss", "tags": ["topic:infrastructure", "topic:transport", "type:podcast"]}
+{"key": "https://gerjon.substack.com/feed", "tags": ["topic:transport", "type:personal-blog"]}
+{"key": "https://hamiltonurbanblog.substack.com/feed", "tags": ["region:canada", "topic:infrastructure", "topic:transport", "type:personal-blog"]}
+{"key": "https://ilusr.com/rss.xml", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "ilyabirman.net", "tags": ["topic:design", "topic:personal", "type:personal-blog"]}
+{"key": "https://mobilitymatters.substack.com/feed", "tags": ["topic:economics", "topic:politics", "topic:transport", "type:newsletter"]}
+{"key": "n17knockcollooney.ie", "tags": ["region:ireland", "topic:infrastructure", "topic:transport", "type:institution"]}
+{"key": "nakuru.go.ke", "tags": ["region:africa", "topic:government", "type:institution"]}
+{"key": "newatlas.com", "tags": ["topic:science", "topic:tech-industry", "type:publication"]}
+{"key": "https://newatlas.com/transport/index.rss", "tags": ["topic:transport", "type:publication"]}
+{"key": "https://news.gov.hk/en/categories/infrastructure/html/articlelist.rss.xml", "tags": ["topic:government", "topic:infrastructure", "type:institution"]}
+{"key": "nitt.gov.ng", "tags": ["region:nigeria", "topic:education", "topic:transport", "type:institution"]}
+{"key": "nordischepost.de", "tags": ["language:german", "region:germany", "topic:news", "type:publication"]}
+{"key": "olino.org", "tags": ["language:dutch", "topic:environment", "type:institution"]}
+{"key": "ouvrirlhorizon.fr", "tags": ["language:french", "region:france", "topic:art", "topic:media", "type:publication"]}
+{"key": "petertribble.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://podaci.dzs.hr/hr/dzs-rss/rss-transport/", "tags": ["region:europe", "topic:transport", "type:institution"]}
+{"key": "polva.ee", "tags": ["region:europe", "topic:government", "type:institution"]}
+{"key": "portodiolbia.it", "tags": ["language:italian", "region:italy", "topic:transport", "topic:travel", "type:institution"]}
+{"key": "alvinintheroom.com", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "https://podcast.uctv.tv/uctv_publicaffairs.rss", "tags": ["region:usa", "topic:government", "topic:politics", "type:podcast"]}
+{"key": "scojjac.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://signedbritt.substack.com/feed", "tags": ["topic:transport", "type:newsletter"]}
+{"key": "kisumu.go.ke", "tags": ["region:africa", "topic:government", "type:institution"]}
+{"key": "https://canadianbranchline.substack.com/feed", "tags": ["region:canada", "topic:history", "topic:transport", "type:personal-blog"]}
+{"key": "https://feeds.acast.com/public/shows/66d6dcd7e6ce13e59fad80e9", "tags": ["region:uk", "topic:transport", "type:podcast"]}
+{"key": "https://feeds.soundcloud.com/users/soundcloud:users:731395489/sounds.rss", "tags": ["topic:transport", "type:podcast"]}
+{"key": "gregkogan.com", "tags": ["topic:travel", "type:personal-blog"]}
+{"key": "liberalengland.blogspot.com", "tags": ["region:uk", "topic:politics", "type:personal-blog"]}
+{"key": "https://lovetransit.substack.com/feed", "tags": ["topic:transport", "type:newsletter"]}
+{"key": "navalants.blogspot.com", "tags": ["language:chinese", "topic:personal", "type:personal-blog"]}
+{"key": "nnrailway.blogspot.com", "tags": ["topic:transport", "type:personal-blog"]}
+{"key": "https://nomadicnotes.substack.com/feed", "tags": ["topic:travel", "type:newsletter"]}
+{"key": "https://prod-qt-images.s3.amazonaws.com/production/swarajya/feed.xml", "tags": ["region:india", "topic:news", "topic:politics", "type:publication"]}
+{"key": "railnews.co.uk", "tags": ["region:uk", "topic:transport", "type:publication"]}
+{"key": "railuk.com", "tags": ["region:uk", "topic:transport", "type:publication"]}
+{"key": "https://springbett.substack.com/feed", "tags": ["region:uk", "topic:infrastructure", "topic:politics", "type:personal-blog"]}
+{"key": "https://www.blogger.com/feeds/6606798/posts/default", "tags": ["region:uk", "topic:politics", "type:personal-blog"]}
+{"key": "edutips.in", "tags": ["region:india", "topic:business", "topic:education", "type:aggregator"]}
+{"key": "eurogunzel.com", "tags": ["topic:transport", "type:personal-blog"]}
+{"key": "khabarabhitak.com", "tags": ["region:india", "topic:news", "type:publication"]}
+{"key": "networkrailmediacentre.co.uk", "tags": ["region:uk", "topic:infrastructure", "topic:transport", "type:institution"]}
+{"key": "railway-technology.com", "tags": ["topic:transport", "type:publication"]}
+{"key": "thaitrainguide.com", "tags": ["region:asia", "topic:transport", "type:personal-blog"]}
+{"key": "https://21five.libsyn.com/rss", "tags": ["topic:transport", "type:podcast"]}
+{"key": "https://airlinepilotguy.com/feed/pt/", "tags": ["language:portuguese", "topic:transport", "type:publication"]}
+{"key": "akaashnanda.com", "tags": ["topic:personal", "topic:travel", "type:newsletter"]}
+{"key": "https://anchor.fm/s/10367918/podcast/rss", "tags": ["topic:transport", "type:podcast"]}
+{"key": "https://anchor.fm/s/ec03d30/podcast/rss", "tags": ["topic:transport", "type:podcast"]}
+{"key": "andysylvester.com", "tags": ["topic:music", "topic:software-engineering", "topic:web-development", "type:personal-blog"]}
+{"key": "https://bryanair.libsyn.com/rss", "tags": ["topic:transport", "type:podcast"]}
+{"key": "capnaux.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://cyviation.substack.com/feed", "tags": ["topic:security", "topic:transport", "type:newsletter"]}
+{"key": "https://fearoflanding.com/feed", "tags": ["topic:transport", "type:publication"]}
+{"key": "http://feeds.airandspace.si.edu/airspacepodcast", "tags": ["region:usa", "topic:science", "topic:transport", "type:podcast"]}
+{"key": "https://feeds.captivate.fm/studentpilotcast/", "tags": ["topic:transport", "type:podcast"]}
+{"key": "https://feeds.podcastmirror.com/ftru", "tags": ["topic:transport", "type:podcast"]}
+{"key": "https://gaacoalition.substack.com/feed", "tags": ["topic:politics", "topic:transport", "type:institution"]}
+{"key": "heavymeta.org", "tags": ["topic:ai", "topic:infrastructure", "topic:security", "type:personal-blog"]}
+{"key": "ianservin.com", "tags": ["topic:transport", "type:personal-blog"]}
+{"key": "lospino.so", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://milestogo.libsyn.com/rss", "tags": ["topic:transport", "type:podcast"]}
+{"key": "https://mronetwork.libsyn.com/rss", "tags": ["topic:business", "topic:transport", "type:podcast"]}
+{"key": "nairametrics.com", "tags": ["region:nigeria", "topic:business", "topic:news", "type:publication"]}
+{"key": "newenglandaviationhistory.com", "tags": ["region:usa", "topic:history", "topic:transport", "type:personal-blog"]}
+{"key": "https://newnigerianpolitics.com/category/aviation-2/feed/", "tags": ["region:nigeria", "topic:politics", "topic:transport", "type:publication"]}
+{"key": "https://newnigerianpolitics.com/category/headlines/feed/", "tags": ["region:nigeria", "topic:news", "topic:politics", "type:publication"]}
+{"key": "nigerianfranknewsng.com", "tags": ["region:nigeria", "topic:news", "type:publication"]}
+{"key": "nknews.org", "tags": ["region:asia", "topic:news", "topic:politics", "type:publication"]}
+{"key": "nsia.no", "tags": ["region:europe", "topic:government", "topic:transport", "type:institution"]}
+{"key": "orientalnewsng.com", "tags": ["region:nigeria", "topic:news", "type:publication"]}
+{"key": "penangtoday.my", "tags": ["region:asia", "topic:news", "topic:travel", "type:publication"]}
+{"key": "phandroid.com", "tags": ["topic:gadgets", "topic:software-engineering", "type:publication"]}
+{"key": "https://anchor.fm/s/1d3d2670/podcast/rss", "tags": ["topic:business", "topic:transport", "type:podcast"]}
+{"key": "arif.sh", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "https://bigtimstiles.substack.com/feed", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.skorulis.com", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "https://buidlguidl.substack.com/feed", "tags": ["topic:software-engineering", "type:institution"]}
+{"key": "dangrafham.com", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "https://feeds.soundcloud.com/users/soundcloud:users:435085245/sounds.rss", "tags": ["topic:business", "topic:transport", "type:podcast"]}
+{"key": "https://helleborezine.substack.com/feed", "tags": ["region:uk", "topic:art", "topic:books", "type:institution"]}
+{"key": "https://intodesignsystems.substack.com/feed", "tags": ["topic:ai", "topic:design", "topic:web-development", "type:newsletter"]}
+{"key": "https://jessplusthemess.substack.com/feed", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://liquidtime.substack.com/feed", "tags": ["topic:finance", "topic:transport", "type:newsletter"]}
+{"key": "logisticsedge.co.uk", "tags": ["region:uk", "topic:business", "topic:transport", "type:publication"]}
+{"key": "https://marginalcarbon.substack.com/feed", "tags": ["topic:environment", "type:newsletter"]}
+{"key": "markdotto.com", "tags": ["topic:design", "topic:web-development", "type:personal-blog"]}
+{"key": "https://news.travelling.gr/category/news-in-english/feed", "tags": ["topic:travel", "type:publication"]}
+{"key": "https://nocodeexits.substack.com/feed", "tags": ["topic:ai", "topic:business", "type:newsletter"]}
+{"key": "ritualdust.com", "tags": ["topic:art", "topic:books", "type:personal-blog"]}
+{"key": "https://rss.libsyn.com/shows/489077/destinations/4172786.xml", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://seanews.co.uk/rss", "tags": ["region:uk", "topic:transport", "type:publication"]}
+{"key": "https://shippingpodcast.libsyn.com/rss", "tags": ["topic:business", "topic:transport", "type:podcast"]}
+{"key": "shippingtelegraph.com", "tags": ["topic:news", "topic:transport", "type:publication"]}
+{"key": "sl24.com.ar", "tags": ["language:spanish", "region:latin-america", "topic:news", "type:publication"]}
+{"key": "theliquidgrid.com", "tags": ["topic:environment", "topic:transport", "type:personal-blog"]}
+{"key": "thelochsidepress.com", "tags": ["region:uk", "topic:news", "type:publication"]}
+{"key": "thenewstoday.com.pk", "tags": ["region:pakistan", "topic:news", "type:publication"]}
+{"key": "theshippinglawblog.com", "tags": ["topic:transport", "type:vendor-blog"]}
+{"key": "https://anchor.fm/s/267dd478/podcast/rss", "tags": ["topic:environment", "topic:transport", "type:podcast"]}
+{"key": "https://blog.roboflow.com/rss/", "tags": ["topic:ai", "type:vendor-blog"]}
+{"key": "https://feed.pippa.io/public/shows/5d6996ad156201903067e8c4", "tags": ["topic:business", "topic:tech-industry", "type:podcast"]}
+{"key": "https://feed.podbean.com/mitsupplychainfrontiers/feed.xml", "tags": ["region:usa", "topic:transport", "type:podcast"]}
+{"key": "https://feed.podbean.com/realassetinsight/feed.xml", "tags": ["topic:business", "topic:finance", "type:podcast"]}
+{"key": "https://feeds.acast.com/public/shows/68632a61db315037b7937d60", "tags": ["region:australia", "topic:sport", "type:podcast"]}
+{"key": "https://feeds.megaphone.fm/roadsigns", "tags": ["region:usa", "topic:transport", "type:podcast"]}
+{"key": "https://inboundlogisticspodcast.libsyn.com/rss", "tags": ["topic:business", "topic:transport", "type:podcast"]}
+{"key": "johnberry.us", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "https://nilimesh.substack.com/feed", "tags": ["topic:data", "type:newsletter"]}
+{"key": "https://oncologytruth.substack.com/feed", "tags": ["topic:health", "type:newsletter"]}
+{"key": "postandparcel.info", "tags": ["topic:business", "topic:transport", "type:publication"]}
+{"key": "qfz.gov.qa", "tags": ["region:middle-east", "topic:business", "topic:government", "type:institution"]}
+{"key": "robotnik.eu", "tags": ["topic:ai", "topic:hardware", "type:vendor-blog"]}
+{"key": "https://rss.buzzsprout.com/713097.rss", "tags": ["region:uk", "topic:education", "type:podcast"]}
+{"key": "https://rss.buzzsprout.com/881569.rss", "tags": ["topic:business", "topic:tech-industry", "type:podcast"]}
+{"key": "https://rss.buzzsprout.com/946129.rss", "tags": ["region:usa", "topic:transport", "type:podcast"]}
+{"key": "https://rss.buzzsprout.com/979744.rss", "tags": ["topic:business", "topic:transport", "type:podcast"]}
+{"key": "srome.github.io", "tags": ["topic:ai", "topic:mathematics", "type:personal-blog"]}
+{"key": "teachyourselfsystems.com", "tags": ["topic:systems", "type:institution"]}
+{"key": "thelaziestprogrammer.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "thephilbiznews.com", "tags": ["region:philippines", "topic:business", "topic:politics", "type:publication"]}
+{"key": "topics.amcham.com.tw", "tags": ["region:asia", "topic:business", "type:publication"]}
+{"key": "https://trajectoryafrica.substack.com/feed", "tags": ["region:africa", "topic:business", "topic:finance", "type:newsletter"]}
+{"key": "warehousenews.co.uk", "tags": ["region:uk", "topic:business", "topic:transport", "type:publication"]}
+{"key": "eurisko.us", "tags": ["topic:education", "topic:programming", "type:personal-blog"]}
+{"key": "https://www.globaltrademag.com/feed/podcast/", "tags": ["topic:business", "type:podcast"]}
+{"key": "hgwdavie.com", "tags": ["topic:history", "topic:military", "topic:transport", "type:personal-blog"]}
+{"key": "https://adamtooze.substack.com/feed", "tags": ["topic:economics", "topic:history", "topic:politics", "type:newsletter"]}
+{"key": "https://aearesearchhighlights.libsyn.com/rss", "tags": ["region:usa", "topic:economics", "type:podcast"]}
+{"key": "https://alanfreeman874769.substack.com/feed", "tags": ["topic:politics", "type:personal-blog"]}
+{"key": "https://aleximas.substack.com/feed", "tags": ["topic:ai", "topic:economics", "type:newsletter"]}
+{"key": "https://anchor.fm/s/8b578ec/podcast/rss", "tags": ["topic:economics", "type:podcast"]}
+{"key": "https://andresintheory.substack.com/feed", "tags": ["topic:economics", "topic:philosophy", "topic:politics", "type:personal-blog"]}
+{"key": "anthonyjevans.com", "tags": ["topic:economics", "type:personal-blog"]}
+{"key": "https://anupmalani.substack.com/feed", "tags": ["topic:economics", "topic:health", "type:newsletter"]}
+{"key": "https://arnoldkling.substack.com/feed", "tags": ["topic:economics", "topic:philosophy", "type:personal-blog"]}
+{"key": "atticusli.com", "tags": ["topic:data", "type:personal-blog"]}
+{"key": "https://audioboom.com/channels/4966228.rss", "tags": ["topic:economics", "type:podcast"]}
+{"key": "https://bitcoin.clarkmoody.com/rss", "tags": ["topic:finance", "topic:hardware", "type:vendor-blog"]}
+{"key": "https://bizmodelmastery.substack.com/feed", "tags": ["topic:business", "topic:finance", "type:newsletter"]}
+{"key": "blog.jcx.au", "tags": ["topic:ai", "topic:data", "topic:economics", "type:personal-blog"]}
+{"key": "blog.thoughtinvest.com", "tags": ["topic:finance", "type:personal-blog"]}
+{"key": "https://bryanmoir.substack.com/feed", "tags": ["topic:economics", "topic:personal", "topic:politics", "type:personal-blog"]}
+{"key": "c4sif.org", "tags": ["topic:politics", "topic:tech-industry", "type:institution"]}
+{"key": "catalini.com", "tags": ["topic:business", "topic:economics", "type:personal-blog"]}
+{"key": "codegood.co", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://danybahar.substack.com/feed", "tags": ["topic:economics", "type:newsletter"]}
+{"key": "https://depaulespodcast.libsyn.com/rss", "tags": ["region:usa", "topic:economics", "type:podcast"]}
+{"key": "deryugina.com", "tags": ["topic:finance", "type:personal-blog"]}
+{"key": "https://dheplab.substack.com/feed", "tags": ["region:usa", "topic:economics", "topic:health", "type:institution"]}
+{"key": "https://drjohnrutledge.substack.com/feed", "tags": ["topic:economics", "topic:finance", "type:newsletter"]}
+{"key": "dubovik.eu", "tags": ["topic:economics", "topic:programming", "type:personal-blog"]}
+{"key": "https://dwmackenzie.substack.com/feed", "tags": ["topic:economics", "topic:history", "topic:politics", "type:personal-blog"]}
+{"key": "https://denislomov.substack.com/feed", "tags": ["topic:environment", "topic:politics", "type:personal-blog"]}
+{"key": "https://feeds.captivate.fm/political-economy-with/", "tags": ["region:usa", "topic:economics", "topic:politics", "type:podcast"]}
+{"key": "https://made-not-found-by-danah-boyd.ghost.io/rss/", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://misaligned.markets/rss", "tags": ["topic:business", "topic:economics", "type:personal-blog"]}
+{"key": "mrzepczynski.blogspot.com", "tags": ["topic:economics", "topic:finance", "type:personal-blog"]}
+{"key": "https://reasonandmeaning.substack.com/feed", "tags": ["topic:philosophy", "topic:politics", "type:publication"]}
+{"key": "sanhati.com", "tags": ["region:india", "topic:economics", "topic:politics", "type:publication"]}
+{"key": "https://thepriceofpower.substack.com/feed", "tags": ["topic:finance", "topic:politics", "type:newsletter"]}
+{"key": "https://triconpoliticaleconomy.substack.com/feed", "tags": ["topic:economics", "topic:politics", "type:institution"]}
+{"key": "africanistperspective.com", "tags": ["region:africa", "topic:economics", "topic:politics", "type:personal-blog"]}
+{"key": "https://2079.substack.com/feed", "tags": ["topic:philosophy", "topic:tech-industry", "type:personal-blog"]}
+{"key": "https://agapesophia.substack.com/feed", "tags": ["topic:philosophy", "topic:religion", "type:personal-blog"]}
+{"key": "akshatjiwannotes.blogspot.com", "tags": ["topic:networking", "topic:science", "type:personal-blog"]}
+{"key": "https://alexanderdugin.substack.com/feed", "tags": ["region:russia", "topic:philosophy", "topic:politics", "type:personal-blog"]}
+{"key": "allanatrix.bearblog.dev", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "https://anchor.fm/s/1fdd8d98/podcast/rss", "tags": ["topic:philosophy", "topic:politics", "type:podcast"]}
+{"key": "https://anchor.fm/s/5621380/podcast/rss", "tags": ["topic:philosophy", "topic:sport", "type:podcast"]}
+{"key": "https://andymight.substack.com/feed", "tags": ["topic:entertainment", "topic:media", "type:personal-blog"]}
+{"key": "https://anro865554.substack.com/feed", "tags": ["topic:philosophy", "type:personal-blog"]}
+{"key": "https://api.riverside.com/hosting/VfcWJMV0.rss", "tags": ["topic:religion", "type:podcast"]}
+{"key": "arunmani.in", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://athenians.substack.com/feed", "tags": ["topic:history", "topic:philosophy", "topic:politics", "type:personal-blog"]}
+{"key": "https://axdouglas.substack.com/feed", "tags": ["topic:philosophy", "type:personal-blog"]}
+{"key": "https://beingnbecoming.substack.com/feed", "tags": ["topic:philosophy", "type:newsletter"]}
+{"key": "https://benburgis.substack.com/feed", "tags": ["topic:philosophy", "type:personal-blog"]}
+{"key": "https://beyondaquinas.substack.com/feed", "tags": ["topic:philosophy", "topic:religion", "type:personal-blog"]}
+{"key": "https://bifocalbunny.substack.com/feed", "tags": ["topic:art", "topic:philosophy", "type:personal-blog"]}
+{"key": "https://bigifftrue.substack.com/feed", "tags": ["topic:economics", "topic:philosophy", "topic:politics", "type:personal-blog"]}
+{"key": "blakecrosley.com", "tags": ["topic:design", "topic:web-development", "type:personal-blog"]}
+{"key": "blog.kwanxhen.me", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "brennan.day", "tags": ["topic:art", "topic:personal", "type:personal-blog"]}
+{"key": "https://alexanderrusso.substack.com/feed", "tags": ["topic:journalism", "topic:media", "type:publication"]}
+{"key": "https://anchor.fm/s/188e0f4/podcast/rss", "tags": ["topic:books", "topic:journalism", "type:podcast"]}
+{"key": "https://artistlike.substack.com/feed", "tags": ["topic:art", "topic:politics", "type:publication"]}
