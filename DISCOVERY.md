@@ -642,3 +642,31 @@ Two hand-verified spam removals (NYT-lookalike scraper, market-report mill).
 probe snapshot says alive: actuprepa and addisababamajlis re-entered from stale
 candidates and were deleted again by rebuild - the trustwave loop replayed for
 non-banned feeds. Pinned by TestMergeRefusesDeadHarvestEvidence (mutation-checked).
+
+## Tranche 5 + gap queries + sibling re-pass (2026-10-22)
+
+Three wells in one stretch, 13,509 -> **15,541 feeds, 10,381 hosts**:
+
+- gap-directed amp queries (transport/economics/philosophy/journalism/military/
+  networking/hardware/government...): 618 named, 542 live (88%), 434 rules.
+  The thin facets moved: transport and government visibly up.
+- amp tranche 5: 1,498 leads, 1,362 live (91%), ~1,160 rules in 6 delegated
+  batches (batch 6 was 13 tail rows, done inline).
+- sibling re-pass over the grown host list: 8,525 single-feed homepages probed,
+  5,293 declare feed links, 540 new after dropping 6,409 already carried,
+  482 live (89%), **439 auto-tagged by existing host rules** - zero new human
+  decisions needed. The host-rule investment pays out here.
+
+Removals this stretch, all evidence-backed: luigifreitas.me (personal site now
+redirects to a casino affiliate - sold/hijacked) and alternativestheatrales.be
+(valid RSS, but all six items are Italian casino spam: compromised site - the
+item-counting rule caught what a title check and a curl of the feed head both
+passed). altavoz.pe was a harvester false-negative, rescued by --retry-failed,
+same as abnormalreturns before it. Two false negatives in one day says
+remove:always-hand-verify is still earning its keep.
+
+Delegation protocol held across 8 more batches: rulebook + one numbered batch
+file, output gated by decide.py, /tmp/repair.py loop for retype/drop collisions
+(auto facet-merge, align shipped types). Two rulebook gaps surfaced: `region:norway`
+and `topic:culture` do not exist - the vocab gate catches them, the rulebook
+should list the facet values verbatim.
