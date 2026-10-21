@@ -2,10 +2,10 @@
 
 2 feeds. The previous file is in git history; restore any of these by re-adding the line.
 
-## gone (1)
+## spam (1)
 
-- `https://actuprepa.substack.com/feed` — gone:404
+- `https://alternativestheatrales.be/feed/` — spam:casino-seo:6-item-hits
 
-## not-a-feed (1)
+## hand (1)
 
-- `https://addisababamajlis.org.et/feed/` — not-a-feed
+- `https://luigifreitas.me/feed.xml` — hand:personal site hijacked/sold: now redirects to a Canadian online-casino affiliate site
