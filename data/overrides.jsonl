@@ -5011,3 +5011,15 @@
 {"key": "24tv.ua", "tags": ["region:ukraine", "topic:news", "type:publication"]}
 {"key": "8sidor.se", "tags": ["region:europe", "topic:news", "type:publication"]}
 {"key": "https://24tv.ua/rss/en.xml", "tags": ["language:english", "region:ukraine", "topic:news", "type:publication"]}
+{"key": "ab-renens.ch", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://ab-renens.ch/rss/RSS_Linear_1YearPlan_Segond21.xml", "tags": ["language:french", "topic:religion", "type:podcast"]}
+{"key": "https://ab-renens.ch/rss/s21_oldtestament1_rss.xml", "tags": ["language:french", "topic:religion", "type:podcast"]}
+{"key": "https://ad.robotstart.jp/api/v1/feeds/3475046c/get-feeds/podcast", "tags": ["language:japanese", "topic:music", "type:podcast"]}
+{"key": "https://ad.robotstart.jp/api/v1/feeds/34be046b/get-feeds/podcast", "tags": ["language:japanese", "topic:science", "type:publication"]}
+{"key": "https://ad.robotstart.jp/api/v1/feeds/35dc047e/get-feeds/podcast", "tags": ["language:japanese", "topic:sport", "type:publication"]}
+{"key": "agendamalvinas.com.ar", "tags": ["language:spanish", "region:latin-america", "topic:history", "topic:politics", "type:publication"]}
+{"key": "agenticjobs.work", "tags": ["topic:ai", "type:aggregator"]}
+{"key": "elabuga-rt.ru", "tags": ["language:russian", "region:russia", "topic:news", "type:publication"]}
+{"key": "https://addedbytes.com/blog/tag/apollopad/feed/", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://addedbytes.com/blog/tag/cheatography/feed/", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://addedbytes.com/blog/tag/culture/feed/", "tags": ["topic:software-engineering", "type:personal-blog"]}
