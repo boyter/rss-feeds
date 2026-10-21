@@ -5002,3 +5002,5 @@
 {"key": "https://feeds.captivate.fm/the-rapp-report/", "tags": ["topic:religion", "type:podcast"]}
 {"key": "https://feeds.captivate.fm/theology-on-mission/", "tags": ["topic:religion", "type:podcast"]}
 {"key": "https://feeds.captivate.fm/theology-throw-down/", "tags": ["topic:religion", "type:podcast"]}
+{"key": "newnigerianpolitics.com", "tags": ["region:nigeria", "topic:politics", "type:publication"], "pathTags": {"/armed-forces": ["topic:military"], "/nollywood": ["topic:entertainment"]}}
+{"key": "philippineexaminer.com", "tags": ["region:philippines", "topic:news", "type:publication"], "pathTags": {"/dining": ["topic:food"]}}
