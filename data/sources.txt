@@ -27,3 +27,18 @@ https://raw.githubusercontent.com/robalexdev/rss-blogroll-network/main/seeds.opm
 https://raw.githubusercontent.com/shgysk8zer0/awesome-rss/master/README.md
 https://raw.githubusercontent.com/tuan3w/awesome-tech-rss/main/README.md
 https://raw.githubusercontent.com/vishalshar/awesome_ML_AI_RSS_feed/master/README.md
+
+# Planet aggregators: their index pages name member feeds (PlanetSoftware).
+# 2026-10-21 check: debian gnome freedesktop kde gnu wordpress openstreetmap
+# ubuntu mozilla live; eclipse/libreoffice unreachable; wikimedia moved to a
+# wiki page (dead as a page); planet.python.org redirects to planetpython.org.
+https://planet.debian.org/
+https://planet.gnome.org/
+https://planet.freedesktop.org/
+https://planet.kde.org/
+https://planet.gnu.org/
+https://planet.wordpress.org/
+https://planet.openstreetmap.org/
+https://planet.ubuntu.com/
+https://planet.mozilla.org/
+https://planetpython.org/
