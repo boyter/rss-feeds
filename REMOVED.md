@@ -1,7 +1,16 @@
 # Removed from feeds.json
 
-1 feeds. The previous file is in git history; restore any of these by re-adding the line.
+4 feeds. The previous file is in git history; restore any of these by re-adding the line.
 
-## hand (1)
+## gone (2)
 
-- `https://www.trustwave.com/en-us/rss/spiderlabs-blog/` — hand:superseded: the publisher titles the feed '[DO NOT USE] SpiderLabs Blog'; SpiderLabs content now ships from levelblue.com
+- `https://actuprepa.substack.com/feed` — gone:404
+- `https://eon.codes/feed.xml` — gone:404
+
+## not-a-feed (1)
+
+- `https://addisababamajlis.org.et/feed/` — not-a-feed
+
+## dead-domain (1)
+
+- `https://bsago.me/feed.atom` — dead-domain
