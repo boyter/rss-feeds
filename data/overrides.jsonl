@@ -4721,3 +4721,23 @@
 {"key": "https://planet.mozilla.org/rss20.xml", "tags": ["topic:open-source", "type:aggregator"]}
 {"key": "https://planetpython.org/rss20.xml", "tags": ["topic:programming:python", "type:aggregator"]}
 {"key": "https://planet.ubuntu.com/feed", "tags": ["topic:open-source", "type:aggregator"]}
+{"key": "benj.me", "tags": ["topic:open-source", "topic:programming", "type:personal-blog"]}
+{"key": "beuc.net", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "brlink.eu", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "blog.daionet.gr.jp", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "blog.daniel-baumann.ch", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "blog.dogguy.org", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "blog.einval.com", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "blog.fai-project.org", "tags": ["topic:systems", "type:publication"]}
+{"key": "blog.freesources.org", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "blog.harterrt.com", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "blog.humphd.org", "tags": ["topic:education", "topic:web-development", "type:personal-blog"]}
+{"key": "blog.johnford.org", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "blog.josefsson.org", "tags": ["topic:networking", "topic:open-source", "type:personal-blog"]}
+{"key": "blog.koipond.org.uk", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "blog.legoktm.com", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "blog.lmorchard.com", "tags": ["topic:infrastructure", "topic:tech-industry", "type:personal-blog"]}
+{"key": "blog.lordsutch.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.manty.net", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "blog.mycre.ws", "tags": ["topic:open-source", "topic:systems", "type:personal-blog"]}
+{"key": "blog.odyx.org", "tags": ["topic:open-source", "topic:systems", "type:personal-blog"]}
