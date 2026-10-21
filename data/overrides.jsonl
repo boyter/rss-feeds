@@ -4989,3 +4989,16 @@
 {"key": "https://360magazine.nl/afrika/feed/", "tags": ["language:dutch", "region:europe", "topic:news", "type:publication"]}
 {"key": "https://360magazine.nl/audio/feed/", "tags": ["language:dutch", "region:europe", "topic:news", "type:publication"]}
 {"key": "https://360magazine.nl/azie/feed/", "tags": ["language:dutch", "region:europe", "topic:news", "type:publication"]}
+{"key": "https://360magazine.nl/cultuur/feed/", "tags": ["language:dutch", "region:europe", "topic:news", "type:publication"]}
+{"key": "4news.mk", "tags": ["region:europe", "topic:news", "type:publication"], "pathTags": {"/category/biznis": ["topic:business"]}}
+{"key": "7horns.ai", "tags": ["topic:finance", "type:podcast"]}
+{"key": "https://7horns.ai/api/podcast/7horns-daily-briefing-es/feed.xml", "tags": ["language:spanish", "topic:finance", "type:podcast"]}
+{"key": "https://7horns.ai/api/podcast/7horns-daily-briefing-ja/feed.xml", "tags": ["language:japanese", "topic:finance", "type:podcast"]}
+{"key": "https://7horns.ai/api/podcast/7horns-daily-briefing-yue/feed.xml", "tags": ["language:chinese", "topic:finance", "type:podcast"]}
+{"key": "https://7horns.ai/api/podcast/7horns-daily-briefing-zh/feed.xml", "tags": ["language:chinese", "topic:finance", "type:podcast"]}
+{"key": "accradio.com", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "data.gmanetwork.com", "tags": ["region:philippines", "topic:news", "type:publication"], "pathTags": {"/money": ["topic:finance"], "/lifestyle": ["topic:lifestyle"]}}
+{"key": "https://feeds.captivate.fm/religionish/", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://feeds.captivate.fm/the-rapp-report/", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://feeds.captivate.fm/theology-on-mission/", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://feeds.captivate.fm/theology-throw-down/", "tags": ["topic:religion", "type:podcast"]}
