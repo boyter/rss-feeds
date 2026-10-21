@@ -588,3 +588,21 @@ has after the sibling pass. Two traps:
   skips, and are mined with the targeted href pass instead.
 - `cmd_tag` ignores tags already present on a candidate row - hand-tagged
   files merge directly with `add.py merge`, they do not round-trip `tag`.
+
+## Planet members (2026-10-21, continued)
+
+The 308 live-enough member rows were read in 14 sittings: 244 decisions
+(nearly all host rules - a planet member is one author, and their tag/subsite
+feeds all inherit), ~64 deliberate skips (LiveJournal personal pages, dead
+GSoC archives, blank blogs). **239 merged: 10,595 → 10,834 feeds, 6,691
+hosts.** The channel is measured: 10 planets live -> 9 aggregate feeds + 557
+member leads + 64% probe rate + 79% decidable-by-reading.
+
+The pass exposed a precedence defect in `discover.cmd_tag`: a list heading's
+type (or any rule-engine guess) was consulted **before** a human's host rule,
+so reproducible-builds.org reached the candidate file as `type:vendor-blog`
+while the human rule said `type:institution`. merge_tags has always said a
+hand decision excludes the rules for the facets it speaks to - cmd_tag was a
+second, disagreeing copy of that law. Fixed in 9d0f8b0 with two pinned tests
+(host rule beats the heading; a URL rule still beats the host rule), each
+mutation-verified in both directions.
