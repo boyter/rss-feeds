@@ -537,7 +537,7 @@
 {"key": "andreyorst.gitlab.io", "tags": ["topic:programming:lisp", "type:personal-blog"]}
 {"key": "android-developers.googleblog.com", "tags": ["topic:programming:kotlin", "topic:software-engineering", "type:vendor-blog"]}
 {"key": "angristan.xyz", "tags": ["topic:software-engineering", "topic:infrastructure", "type:personal-blog"]}
-{"key": "anishathalye.com", "tags": ["topic:mathematics", "topic:systems", "topic:security", "type:personal-blog"]}
+{"key": "anishathalye.com", "tags": ["topic:mathematics", "topic:programming", "topic:security", "topic:systems", "type:personal-blog"]}
 {"key": "annevankesteren.nl", "tags": ["topic:web-development", "type:personal-blog"]}
 {"key": "annoying.technology", "tags": ["topic:gadgets", "topic:tech-industry", "type:personal-blog"]}
 {"key": "anshumani.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
@@ -769,7 +769,7 @@
 {"key": "blog.ethereum.org", "tags": ["topic:finance", "topic:software-engineering", "type:institution"]}
 {"key": "blog.eventide-project.org", "tags": ["topic:programming:ruby", "topic:software-engineering", "type:vendor-blog"]}
 {"key": "blog.felipe.rs", "tags": ["topic:software-engineering", "type:personal-blog"]}
-{"key": "blog.fikesfarm.com", "tags": ["topic:programming:clojure", "topic:programming:swift", "type:personal-blog"]}
+{"key": "blog.fikesfarm.com", "tags": ["topic:programming", "topic:programming:clojure", "topic:programming:swift", "type:personal-blog"]}
 {"key": "blog.functorial.com", "tags": ["topic:mathematics", "topic:programming", "type:personal-blog"]}
 {"key": "blog.goeswhere.com", "tags": ["topic:systems", "type:personal-blog"]}
 {"key": "blog.gov.uk", "tags": ["region:uk", "topic:government", "topic:software-engineering", "type:institution"]}
@@ -823,7 +823,7 @@
 {"key": "blog.sensible.io", "tags": ["topic:infrastructure", "topic:security", "type:vendor-blog"]}
 {"key": "blog.sigfpe.com", "tags": ["topic:mathematics", "topic:programming", "type:personal-blog"]}
 {"key": "blog.statechannels.org", "tags": ["topic:finance", "topic:programming", "type:community"]}
-{"key": "blog.stephenmarz.com", "tags": ["topic:hardware", "topic:systems", "type:personal-blog"]}
+{"key": "blog.stephenmarz.com", "tags": ["topic:hardware", "topic:programming", "topic:systems", "type:personal-blog"]}
 {"key": "blog.sulami.xyz", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
 {"key": "blog.tensorflow.org", "tags": ["topic:ai", "type:vendor-blog"]}
 {"key": "cliffle.com", "tags": ["topic:programming", "topic:systems", "type:personal-blog"]}
@@ -936,7 +936,7 @@
 {"key": "ikyle.me", "tags": ["topic:graphics", "topic:programming:swift", "type:personal-blog"]}
 {"key": "illiteracyhasdownsides.com", "tags": ["topic:gaming", "type:personal-blog"]}
 {"key": "ilovesymposia.com", "tags": ["topic:education", "topic:science", "type:personal-blog"]}
-{"key": "ilya.puchka.me", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "ilya.puchka.me", "tags": ["topic:personal", "topic:web-development", "type:personal-blog"]}
 {"key": "imgeself.github.io", "tags": ["topic:gaming", "topic:graphics", "type:personal-blog"]}
 {"key": "imois.in", "tags": ["topic:mathematics", "topic:programming", "type:personal-blog"]}
 {"key": "imperialviolet.org", "tags": ["topic:programming", "topic:security", "type:personal-blog"]}
@@ -1274,7 +1274,7 @@
 {"key": "diogocastro.com", "tags": ["topic:web-development", "type:personal-blog"]}
 {"key": "distill.pub", "tags": ["topic:ai", "topic:design", "type:publication"]}
 {"key": "divan.dev", "tags": ["topic:data", "type:personal-blog"]}
-{"key": "dmitrysoshnikov.com", "tags": ["topic:programming", "topic:web-development", "type:personal-blog"]}
+{"key": "dmitrysoshnikov.com", "tags": ["topic:education", "topic:programming", "topic:web-development", "type:personal-blog"]}
 {"key": "doisinkidney.com", "tags": ["topic:programming", "type:personal-blog"]}
 {"key": "domchristie.co.uk", "tags": ["region:uk", "topic:programming:ruby", "topic:web-development", "type:personal-blog"]}
 {"key": "domenicoluciani.com", "tags": ["topic:infrastructure", "topic:software-engineering", "type:personal-blog"]}
@@ -3675,7 +3675,7 @@
 {"key": "https://buttondown.com/cassidoo/rss", "tags": ["topic:web-development", "type:newsletter"]}
 {"key": "https://buttondown.com/grugq/rss", "tags": ["topic:security", "type:newsletter"]}
 {"key": "https://buttondown.com/hillelwayne/rss", "tags": ["topic:software-engineering", "type:newsletter"]}
-{"key": "https://buttondown.com/jaffray/rss", "tags": ["topic:data", "type:newsletter"]}
+{"key": "https://buttondown.com/jaffray/rss", "tags": ["topic:data", "topic:programming", "type:newsletter"]}
 {"key": "https://buttondown.com/nelhage/rss", "tags": ["topic:systems", "type:newsletter"]}
 {"key": "http://ep00.epimg.net/rss/cat/portada.xml", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
 {"key": "http://ep00.epimg.net/rss/ccaa/andalucia.xml", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
@@ -5068,7 +5068,7 @@
 {"key": "https://abendschein.ch/feed/podcast/io2oi/", "tags": ["language:german", "topic:tech-industry", "type:podcast"]}
 {"key": "https://abenteuer-denken.de/feed/episoden/", "tags": ["language:german", "topic:philosophy", "type:podcast"]}
 {"key": "https://abenteuer-denken.de/feed/history/", "tags": ["language:german", "topic:history", "type:podcast"]}
-{"key": "abhinavsarkar.net", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "abhinavsarkar.net", "tags": ["topic:art", "topic:programming", "type:personal-blog"]}
 {"key": "abireg.ru", "tags": ["language:russian", "region:russia", "topic:business", "topic:news", "type:publication"]}
 {"key": "https://abnormalmapping.squarespace.com/around-the-long-fire?format=rss", "tags": ["topic:gaming", "type:podcast"]}
 {"key": "https://abnormalmapping.squarespace.com/fate-moon-archive?format=rss", "tags": ["topic:gaming", "type:podcast"]}
@@ -5085,7 +5085,7 @@
 {"key": "afranca.com.br", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "https://audioboom.com/channels/4951767.rss", "tags": ["topic:health", "topic:medicine", "topic:tech-industry", "type:podcast"]}
 {"key": "https://audioboom.com/channels/5074880.rss", "tags": ["topic:medicine", "type:podcast"]}
-{"key": "https://feeds.castos.com/w480", "tags": ["topic:history", "topic:military", "type:podcast"]}
+{"key": "https://feeds.castos.com/w480", "tags": ["region:usa", "topic:history", "topic:military", "type:podcast"]}
 {"key": "https://feeds.castos.com/zngq", "tags": ["topic:entertainment", "type:podcast"]}
 {"key": "https://feeds.megaphone.fm/ISP1112733809", "tags": ["topic:music", "type:podcast"]}
 {"key": "https://feeds.megaphone.fm/WWO3543350987", "tags": ["topic:lifestyle", "topic:military", "type:podcast"]}
@@ -7263,7 +7263,7 @@
 {"key": "https://anchor.fm/s/106cde630/podcast/rss", "tags": ["topic:health", "type:podcast"]}
 {"key": "https://anchor.fm/s/108b30b10/podcast/rss", "tags": ["topic:entertainment", "topic:health", "type:podcast"]}
 {"key": "alixmayer.substack.com", "tags": ["topic:health", "topic:politics", "type:newsletter"]}
-{"key": "amothersanthem.substack.com", "tags": ["topic:medicine", "type:newsletter"]}
+{"key": "amothersanthem.substack.com", "tags": ["topic:health", "topic:medicine", "type:newsletter"]}
 {"key": "https://anchor.fm/s/10ee9070/podcast/rss", "tags": ["topic:medicine", "type:podcast"]}
 {"key": "https://anchor.fm/s/1b0f33ac/podcast/rss", "tags": ["topic:health", "type:podcast"]}
 {"key": "https://anchor.fm/s/1c640674/podcast/rss", "tags": ["region:usa", "topic:medicine", "type:podcast"]}
@@ -7685,3 +7685,213 @@
 {"key": "https://alexanderrusso.substack.com/feed", "tags": ["topic:journalism", "topic:media", "type:publication"]}
 {"key": "https://anchor.fm/s/188e0f4/podcast/rss", "tags": ["topic:books", "topic:journalism", "type:podcast"]}
 {"key": "https://artistlike.substack.com/feed", "tags": ["topic:art", "topic:politics", "type:publication"]}
+{"key": "beingliberal.substack.com", "tags": ["topic:politics", "type:personal-blog"]}
+{"key": "blog.digidave.org", "tags": ["topic:journalism", "type:personal-blog"]}
+{"key": "boilerroom.substack.com", "tags": ["topic:journalism", "topic:music", "type:personal-blog"]}
+{"key": "businessjournalism.podomatic.com", "tags": ["topic:business", "topic:journalism", "type:podcast"]}
+{"key": "davidmbarnett.substack.com", "tags": ["topic:books", "topic:journalism", "type:personal-blog"]}
+{"key": "dicktofel.substack.com", "tags": ["topic:journalism", "type:personal-blog"]}
+{"key": "editorandpublisher.libsyn.com", "tags": ["topic:journalism", "type:podcast"]}
+{"key": "edwalker.substack.com", "tags": ["topic:journalism", "type:personal-blog"]}
+{"key": "https://feed.podbean.com/mediavoices/feed.xml", "tags": ["topic:journalism", "type:podcast"]}
+{"key": "https://feeds.captivate.fm/freelancing-for-journalists/", "tags": ["topic:business", "topic:journalism", "type:podcast"]}
+{"key": "https://feeds.megaphone.fm/EFRMF6053448231", "tags": ["topic:journalism", "type:podcast"]}
+{"key": "gjalliance.substack.com", "tags": ["topic:journalism", "type:newsletter"]}
+{"key": "hackshackersbne.substack.com", "tags": ["region:australia", "topic:journalism", "type:community"]}
+{"key": "happywarrior.substack.com", "tags": ["topic:journalism", "type:personal-blog"]}
+{"key": "illustratedjournalism.com", "tags": ["topic:journalism", "type:personal-blog"]}
+{"key": "inoldnews.substack.com", "tags": ["topic:journalism", "type:newsletter"]}
+{"key": "insidethenewsroom.substack.com", "tags": ["topic:business", "topic:journalism", "type:newsletter"]}
+{"key": "jflanagan.substack.com", "tags": ["topic:journalism", "type:personal-blog"]}
+{"key": "johnemcintyre.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "johnpilger.com", "tags": ["topic:journalism", "type:personal-blog"]}
+{"key": "johntedesco.net", "tags": ["region:usa", "topic:journalism", "type:personal-blog"]}
+{"key": "journaliststoolbox.substack.com", "tags": ["topic:ai", "topic:journalism", "type:newsletter"]}
+{"key": "journojobs.substack.com", "tags": ["topic:business", "topic:journalism", "type:newsletter"]}
+{"key": "kiesow.net", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "linguasinica.substack.com", "tags": ["topic:journalism", "topic:media", "type:newsletter"]}
+{"key": "manytoomany.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "aaroncarnes.substack.com", "tags": ["topic:entertainment", "topic:music", "type:newsletter"]}
+{"key": "aghuff.substack.com", "tags": ["topic:health", "topic:security", "type:newsletter"]}
+{"key": "https://anchor.fm/s/3f3219c/podcast/rss", "tags": ["region:usa", "topic:sport", "type:podcast"]}
+{"key": "https://anchor.fm/s/ab2e5fbc/podcast/rss", "tags": ["region:usa", "topic:sport", "type:podcast"]}
+{"key": "https://anchor.fm/s/df1a038/podcast/rss", "tags": ["region:usa", "topic:sport", "type:podcast"]}
+{"key": "https://api.riverside.fm/hosting/P1Vvsgva.rss", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "appseccouncil.substack.com", "tags": ["topic:security", "type:institution"]}
+{"key": "aquicktimeout.substack.com", "tags": ["topic:sport", "type:newsletter"]}
+{"key": "https://audioboom.com/channels/5001260.rss", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "bonniekristian.substack.com", "tags": ["topic:politics", "topic:religion", "type:personal-blog"]}
+{"key": "briangeisinger.substack.com", "tags": ["topic:sport", "type:newsletter"]}
+{"key": "charlieschalkboard.substack.com", "tags": ["region:usa", "topic:sport", "type:newsletter"]}
+{"key": "coachkoufootball.substack.com", "tags": ["topic:sport", "type:newsletter"]}
+{"key": "danrafael.substack.com", "tags": ["topic:sport", "type:newsletter"]}
+{"key": "defconalerts.com", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "defenseoneradio.libsyn.com", "tags": ["region:usa", "topic:military", "type:podcast"]}
+{"key": "diie.substack.com", "tags": ["topic:military", "topic:tech-industry", "type:newsletter"]}
+{"key": "elizabethjohnston.substack.com", "tags": ["topic:politics", "topic:religion", "type:personal-blog"]}
+{"key": "https://feed.podbean.com/titlerunsports/feed.xml", "tags": ["region:usa", "topic:sport", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/WestOfEverestAnOklahomaFootballPodcast", "tags": ["region:usa", "topic:sport", "type:podcast"]}
+{"key": "https://feeds.megaphone.fm/OCVOL4390657134", "tags": ["region:usa", "topic:sport", "type:podcast"]}
+{"key": "https://feeds.simplecast.com/Sac_h67J", "tags": ["region:usa", "topic:government", "topic:politics", "type:podcast"]}
+{"key": "https://feeds.simplecast.com/_011BktN", "tags": ["region:usa", "topic:politics", "type:podcast"]}
+{"key": "https://feeds.simplecast.com/cZ_GUU6u", "tags": ["region:usa", "topic:sport", "type:podcast"]}
+{"key": "https://feeds.simplecast.com/f6CBcmwn", "tags": ["region:usa", "topic:sport", "type:podcast"]}
+{"key": "https://feeds.simplecast.com/psq7p3Ar", "tags": ["region:usa", "topic:sport", "type:podcast"]}
+{"key": "https://anchor.fm/s/114017ec/podcast/rss", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://anchor.fm/s/13c09910/podcast/rss", "tags": ["topic:business", "type:podcast"]}
+{"key": "anniecoaching.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "arvindgaba.com", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "askubuntu.com", "tags": ["topic:open-source", "type:aggregator"]}
+{"key": "au.pcmag.com", "tags": ["region:australia", "topic:gadgets", "topic:hardware", "type:publication"]}
+{"key": "benchtobeyond.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "betterposters.blogspot.com", "tags": ["topic:education", "type:personal-blog"]}
+{"key": "blog.briancmoses.com", "tags": ["topic:hardware", "type:personal-blog"]}
+{"key": "blog.jenningsga.com", "tags": ["topic:open-source", "topic:software-engineering", "type:personal-blog"]}
+{"key": "bubble.ro", "tags": ["topic:science", "topic:tech-industry", "type:personal-blog"]}
+{"key": "chrisdooks.com", "tags": ["topic:networking", "type:personal-blog"]}
+{"key": "colinmcnamara.com", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "dave.recoil.org", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "feeds.packetpushers.net", "tags": ["topic:networking", "type:podcast"]}
+{"key": "iptechsa.substack.com", "tags": ["topic:networking", "topic:transport", "type:newsletter"]}
+{"key": "lmfnetwork.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "madcompiler.blogspot.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "mentorinlaw.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "mindchasers.com", "tags": ["topic:hardware", "topic:networking", "type:vendor-blog"]}
+{"key": "modernbeyondmidlife.substack.com", "tags": ["topic:lifestyle", "type:personal-blog"]}
+{"key": "billbennett.co.nz", "tags": ["region:new-zealand", "topic:networking", "type:personal-blog"]}
+{"key": "blog.idorobots.org", "tags": ["topic:embedded", "type:personal-blog"]}
+{"key": "openfalklands.org.fk", "tags": ["topic:networking", "type:personal-blog"]}
+{"key": "tech-ish.com", "tags": ["topic:tech-industry", "type:publication"]}
+{"key": "technews.com.na", "tags": ["region:africa", "topic:gadgets", "topic:tech-industry", "type:publication"]}
+{"key": "techoman.om", "tags": ["region:middle-east", "topic:tech-industry", "type:publication"]}
+{"key": "whatech.com", "tags": ["topic:tech-industry", "type:publication"]}
+{"key": "fiscalnepal.com", "tags": ["region:asia", "topic:business", "topic:economics", "type:publication"]}
+{"key": "https://www.nation.com.pk/rss/technology", "tags": ["region:pakistan", "topic:tech-industry", "type:publication"]}
+{"key": "adrelien.com", "tags": ["topic:hardware", "topic:networking", "type:personal-blog"]}
+{"key": "alexdelorenzo.dev", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "amitshah.net", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "aquova.net", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "artemis.sh", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "asepbagja.substack.com", "tags": ["topic:hardware", "topic:music", "type:personal-blog"]}
+{"key": "astralvx.com", "tags": ["topic:hardware", "topic:systems", "type:personal-blog"]}
+{"key": "athenaalpha.substack.com", "tags": ["topic:finance", "type:newsletter"]}
+{"key": "ayetv.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "baltazarstudios.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "beambots.dev", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "bethdecarbo.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "https://bitcoin-takeover.com/audio/feed.xml", "tags": ["topic:finance", "type:podcast"]}
+{"key": "blog.backslasher.net", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.casa.io", "tags": ["topic:finance", "topic:security", "type:vendor-blog"]}
+{"key": "blog.cyrusroshan.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.dan.drown.org", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.fluxcoil.net", "tags": ["region:japan", "topic:open-source", "topic:tech-industry", "type:personal-blog"]}
+{"key": "blog.geeky-boy.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.jgc.org", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "amphetaminesulphate.substack.com", "tags": ["topic:books", "type:personal-blog"]}
+{"key": "eejournal.com", "tags": ["topic:embedded", "topic:hardware", "type:publication"]}
+{"key": "180podcast.libsyn.com", "tags": ["topic:business", "type:podcast"]}
+{"key": "adamthompsonmp.substack.com", "tags": ["region:uk", "topic:politics", "type:personal-blog"]}
+{"key": "aaronpercival.substack.com", "tags": ["topic:government", "type:personal-blog"]}
+{"key": "aaronsiri.substack.com", "tags": ["topic:politics", "type:newsletter"]}
+{"key": "aashlesha.substack.com", "tags": ["topic:news", "type:newsletter"]}
+{"key": "acadiafacts.substack.com", "tags": ["region:usa", "topic:history", "topic:travel", "type:newsletter"]}
+{"key": "https://access.acast.com/rss/6105626053204f0019234612", "tags": ["topic:politics", "topic:tech-industry", "type:podcast"]}
+{"key": "advancingamericanfreedom.substack.com", "tags": ["region:usa", "topic:politics", "type:newsletter"]}
+{"key": "ajustquincy.substack.com", "tags": ["region:usa", "topic:politics", "type:personal-blog"]}
+{"key": "akingump.libsyn.com", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://allthingsprotest.podbean.com/feed.xml", "tags": ["topic:business", "topic:government", "type:podcast"]}
+{"key": "alongthelines.libsyn.com", "tags": ["region:usa", "topic:transport", "type:podcast"]}
+{"key": "americanhistoryageslavery.substack.com", "tags": ["region:usa", "topic:history", "type:newsletter"]}
+{"key": "americanlibertyreport.substack.com", "tags": ["region:usa", "topic:politics", "type:newsletter"]}
+{"key": "https://anchor.fm/s/10204e7c/podcast/rss", "tags": ["language:portuguese", "region:latin-america", "topic:government", "type:podcast"]}
+{"key": "https://anchor.fm/s/10f3f5b0/podcast/rss", "tags": ["region:usa", "topic:government", "type:podcast"]}
+{"key": "https://anchor.fm/s/120fa778/podcast/rss", "tags": ["region:usa", "topic:politics", "type:podcast"]}
+{"key": "https://anchor.fm/s/1217a270/podcast/rss", "tags": ["region:canada", "topic:news", "topic:politics", "type:podcast"]}
+{"key": "https://anchor.fm/s/135cf8c4/podcast/rss", "tags": ["language:portuguese", "region:latin-america", "topic:government", "type:podcast"]}
+{"key": "https://anchor.fm/s/13d1c58c/podcast/rss", "tags": ["language:portuguese", "region:latin-america", "topic:government", "topic:politics", "type:podcast"]}
+{"key": "https://anchor.fm/s/159d2078/podcast/rss", "tags": ["region:usa", "topic:food", "topic:politics", "type:podcast"]}
+{"key": "https://anchor.fm/s/17267da4/podcast/rss", "tags": ["region:asia", "topic:government", "type:podcast"]}
+{"key": "https://anchor.fm/s/1a9b8858/podcast/rss", "tags": ["language:portuguese", "region:latin-america", "topic:government", "type:podcast"]}
+{"key": "https://anchor.fm/s/1d49ab20/podcast/rss", "tags": ["region:usa", "topic:military", "topic:security", "type:podcast"]}
+{"key": "https://anchor.fm/s/1dee76a0/podcast/rss", "tags": ["region:usa", "topic:politics", "type:podcast"]}
+{"key": "https://anchor.fm/s/1e137298/podcast/rss", "tags": ["language:portuguese", "region:latin-america", "topic:health", "type:podcast"]}
+{"key": "https://anchor.fm/s/1f5107c4/podcast/rss", "tags": ["region:usa", "topic:politics", "type:podcast"]}
+{"key": "https://anchor.fm/s/202f383c/podcast/rss", "tags": ["region:usa", "topic:government", "topic:tech-industry", "type:podcast"]}
+{"key": "https://anchor.fm/s/24d8dc80/podcast/rss", "tags": ["language:portuguese", "region:latin-america", "topic:government", "type:podcast"]}
+{"key": "https://anchor.fm/s/25bfbba0/podcast/rss", "tags": ["region:usa", "topic:government", "type:podcast"]}
+{"key": "https://anchor.fm/s/260e0da0/podcast/rss", "tags": ["region:usa", "topic:politics", "type:podcast"]}
+{"key": "https://anchor.fm/s/289e6aec/podcast/rss", "tags": ["language:portuguese", "region:latin-america", "topic:government", "type:podcast"]}
+{"key": "https://anchor.fm/s/12b580e4/podcast/rss", "tags": ["region:usa", "topic:politics", "type:podcast"]}
+{"key": "https://anchor.fm/s/15ef2364/podcast/rss", "tags": ["topic:politics", "type:podcast"]}
+{"key": "https://anchor.fm/s/f4c5dde4/podcast/rss", "tags": ["topic:politics", "topic:tech-industry", "type:podcast"]}
+{"key": "biophilic.blogspot.com", "tags": ["topic:environment", "type:personal-blog"]}
+{"key": "brucefnesmith.blogspot.com", "tags": ["topic:politics", "type:personal-blog"]}
+{"key": "orrick.libsyn.com", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://podcast.uctv.tv/UCTV_campus_UCSB_audio.rss", "tags": ["region:usa", "topic:education", "type:aggregator"]}
+{"key": "https://podcast.uctv.tv/uctv_climatechange.rss", "tags": ["region:usa", "topic:environment", "type:aggregator"]}
+{"key": "https://podcast.uctv.tv/uctv_energy.rss", "tags": ["region:usa", "topic:environment", "topic:infrastructure", "type:aggregator"]}
+{"key": "https://podcast.uctv.tv/uctv_science.rss", "tags": ["region:usa", "topic:science", "type:aggregator"]}
+{"key": "https://podcast.uctv.tv/uctv_video_energy.rss", "tags": ["region:usa", "topic:environment", "topic:infrastructure", "type:aggregator"]}
+{"key": "https://podcast.uctv.tv/uctv_video_science.rss", "tags": ["region:usa", "topic:science", "type:aggregator"]}
+{"key": "rahulporuri.blogspot.com", "tags": ["topic:finance", "topic:politics", "topic:programming", "type:personal-blog"]}
+{"key": "richardgingras.substack.com", "tags": ["topic:journalism", "topic:media", "type:newsletter"]}
+{"key": "sks.bearblog.dev", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "thepoliticalquarterly.substack.com", "tags": ["topic:politics", "type:publication"]}
+{"key": "tomwestgarth.substack.com", "tags": ["topic:politics", "type:newsletter"]}
+{"key": "wikimediafoundation.org", "tags": ["topic:open-source", "topic:tech-industry", "type:institution"]}
+{"key": "bennettinstitute.cam.ac.uk", "tags": ["region:uk", "topic:politics", "type:institution"]}
+{"key": "psychotherapynotes.com", "tags": ["topic:health", "type:personal-blog"]}
+{"key": "sanjayparekh.com", "tags": ["topic:finance", "topic:politics", "topic:security", "type:personal-blog"]}
+{"key": "sophe.org", "tags": ["topic:health", "type:institution"]}
+{"key": "tellusventure.com", "tags": ["region:usa", "topic:networking", "type:personal-blog"]}
+{"key": "adam-mcdaniel.github.io", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "andrewshitov.com", "tags": ["topic:hardware", "topic:programming", "type:personal-blog"]}
+{"key": "avishek.net", "tags": ["topic:art", "topic:tech-industry", "type:personal-blog"]}
+{"key": "badumbatish.github.io", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "banteg.xyz", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "benhoyt.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "bernsteinbear.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.ar-ms.me", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "briancallahan.net", "tags": ["topic:education", "topic:programming", "type:vendor-blog"]}
+{"key": "brrt-to-the-future.blogspot.com", "tags": ["topic:programming", "topic:systems", "type:personal-blog"]}
+{"key": "btorpey.github.io", "tags": ["topic:finance", "topic:programming", "type:personal-blog"]}
+{"key": "chisophugis.github.io", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "chsasank.com", "tags": ["topic:books", "topic:programming", "type:personal-blog"]}
+{"key": "https://cubefreecoder.com/categories/code/index.xml", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "darksi.de", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "dbp.io", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "degenerateconic.com", "tags": ["topic:programming", "topic:science", "type:personal-blog"]}
+{"key": "dfa1.github.io", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "donsz.nl", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "eavan.blog", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "effectivetypescript.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "egbert.net", "tags": ["topic:networking", "type:personal-blog"]}
+{"key": "https://fractalfir.github.io/generated_html/rss.xml", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "gilmi.me", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "alex-ionescu.com", "tags": ["topic:security", "topic:systems", "type:personal-blog"]}
+{"key": "alfonsosiciliano.gitlab.io", "tags": ["topic:open-source", "topic:programming", "type:personal-blog"]}
+{"key": "blog.henrygressmann.de", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.lastinfirstout.net", "tags": ["topic:travel", "type:personal-blog"]}
+{"key": "blog.lenot.re", "tags": ["topic:programming", "topic:systems", "type:personal-blog"]}
+{"key": "blog.nishant.lol", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "bogdan.nimblex.net", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "brieaneolson.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "businessandbuild.substack.com", "tags": ["topic:business", "topic:software-engineering", "type:newsletter"]}
+{"key": "c65gs.blogspot.com", "tags": ["topic:hardware", "type:personal-blog"]}
+{"key": "cdd.dev", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "ceayo.neocities.org", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "cialu.net", "tags": ["topic:mathematics", "type:personal-blog"]}
+{"key": "cstrivia.com", "tags": ["topic:education", "topic:programming", "type:personal-blog"]}
+{"key": "digitalflashlight.substack.com", "tags": ["topic:business", "topic:music", "type:newsletter"]}
+{"key": "disruptiveplay.substack.com", "tags": ["topic:media", "topic:sport", "type:newsletter"]}
+{"key": "dz0ny.dev", "tags": ["topic:networking", "type:personal-blog"]}
+{"key": "felipe.rs", "tags": ["region:latin-america", "topic:software-engineering", "type:personal-blog"]}
+{"key": "freebsd.uw.cz", "tags": ["topic:open-source", "topic:systems", "type:aggregator"]}
+{"key": "garyodernichts.blogspot.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "humanosmanual.substack.com", "tags": ["topic:health", "type:personal-blog"]}
+{"key": "ideas.everywhere.vc", "tags": ["topic:business", "topic:finance", "type:vendor-blog"]}
+{"key": "john-millikin.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "josef.cn", "tags": ["region:europe", "topic:business", "topic:hardware", "type:personal-blog"]}
+{"key": "koen.vervloesem.eu", "tags": ["topic:journalism", "topic:open-source", "type:personal-blog"]}
+{"key": "ktoperatornotes.substack.com", "tags": ["topic:ai", "topic:business", "type:newsletter"]}
+{"key": "kurtmueller.substack.com", "tags": ["topic:business", "type:newsletter"]}
