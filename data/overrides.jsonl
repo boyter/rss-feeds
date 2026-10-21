@@ -4963,13 +4963,13 @@
 {"key": "https://anchor.fm/s/100c7e38/podcast/rss", "tags": ["topic:religion", "type:podcast"]}
 {"key": "https://anchor.fm/s/10f9b1a8/podcast/rss", "tags": ["region:usa", "topic:military", "topic:politics", "type:podcast"]}
 {"key": "https://anchor.fm/s/1129b830/podcast/rss", "tags": ["topic:health", "type:podcast"]}
-{"key": "https://anchor.fm/s/11311ad0/podcast/rss", "tags": ["region:usa", "topic:politics", "type:podcast"]}
+{"key": "https://anchor.fm/s/11311ad0/podcast/rss", "tags": ["region:usa", "topic:medicine", "topic:politics", "type:podcast"]}
 {"key": "https://anchor.fm/s/1264a034/podcast/rss", "tags": ["topic:religion", "type:podcast"]}
 {"key": "https://anchor.fm/s/12bc6a6c/podcast/rss", "tags": ["language:spanish", "topic:health", "type:podcast"]}
 {"key": "https://anchor.fm/s/13c9fb04/podcast/rss", "tags": ["region:usa", "topic:sport", "type:podcast"]}
 {"key": "https://anchor.fm/s/1e9678c8/podcast/rss", "tags": ["region:africa", "topic:history", "type:podcast"]}
 {"key": "https://anchor.fm/s/2004a0b8/podcast/rss", "tags": ["region:usa", "topic:sport", "type:podcast"]}
-{"key": "https://anchor.fm/s/22bda638/podcast/rss", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://anchor.fm/s/22bda638/podcast/rss", "tags": ["topic:health", "topic:medicine", "type:podcast"]}
 {"key": "https://anchor.fm/s/22c8f4c0/podcast/rss", "tags": ["region:usa", "topic:entertainment", "type:podcast"]}
 {"key": "https://anchor.fm/s/24c512e0/podcast/rss", "tags": ["region:philippines", "topic:environment", "topic:news", "type:podcast"]}
 {"key": "https://anchor.fm/s/2d906208/podcast/rss", "tags": ["region:india", "topic:lifestyle", "type:podcast"]}
@@ -5083,7 +5083,7 @@
 {"key": "https://9to5.cc/category/go-plug-yourself-montreal-podcast/feed/", "tags": ["region:canada", "topic:gadgets", "type:podcast"]}
 {"key": "adamapples.blogspot.com", "tags": ["topic:food", "type:personal-blog"]}
 {"key": "afranca.com.br", "tags": ["topic:personal", "type:personal-blog"]}
-{"key": "https://audioboom.com/channels/4951767.rss", "tags": ["topic:health", "topic:tech-industry", "type:podcast"]}
+{"key": "https://audioboom.com/channels/4951767.rss", "tags": ["topic:health", "topic:medicine", "topic:tech-industry", "type:podcast"]}
 {"key": "https://audioboom.com/channels/5074880.rss", "tags": ["topic:medicine", "type:podcast"]}
 {"key": "https://feeds.castos.com/w480", "tags": ["topic:history", "topic:military", "type:podcast"]}
 {"key": "https://feeds.castos.com/zngq", "tags": ["topic:entertainment", "type:podcast"]}
@@ -7041,7 +7041,7 @@
 {"key": "classic.technology", "tags": ["topic:hardware", "topic:history", "type:personal-blog"]}
 {"key": "https://clevelandmarkblakemore.substack.com/feed", "tags": ["topic:military", "type:personal-blog"]}
 {"key": "https://comicscene.substack.com/feed", "tags": ["topic:art", "topic:entertainment", "type:publication"]}
-{"key": "dannoyes.com", "tags": ["topic:ai", "topic:health", "type:vendor-blog"]}
+{"key": "dannoyes.com", "tags": ["topic:ai", "topic:health", "topic:medicine", "type:vendor-blog"]}
 {"key": "https://darimulut.substack.com/feed", "tags": ["region:asia", "topic:news", "topic:politics", "type:publication"]}
 {"key": "https://dataphyte.substack.com/feed", "tags": ["region:nigeria", "topic:data", "topic:economics", "topic:news", "type:publication"]}
 {"key": "davisshaver.com", "tags": ["region:usa", "topic:journalism", "topic:programming", "type:personal-blog"]}
@@ -7173,3 +7173,166 @@
 {"key": "https://zawieja.tumblr.com/rss", "tags": ["topic:art", "type:personal-blog"]}
 {"key": "zgrimshell.github.io", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "https://trustedsec.com/feed.rss", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "a4mredefiningmedicine.libsyn.com", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "aaox2.substack.com", "tags": ["topic:medicine", "type:newsletter"]}
+{"key": "acdw.substack.com", "tags": ["topic:medicine", "type:newsletter"]}
+{"key": "alexandrajohnsonmd.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "alexdavidson.substack.com", "tags": ["topic:ai", "topic:medicine", "type:newsletter"]}
+{"key": "ancestrabykossma.substack.com", "tags": ["topic:health", "type:publication"]}
+{"key": "https://anchor.fm/s/100cc67c0/podcast/rss", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://anchor.fm/s/1017a671c/podcast/rss", "tags": ["topic:science", "type:podcast"]}
+{"key": "https://anchor.fm/s/103e91ad4/podcast/rss", "tags": ["region:australia", "topic:medicine", "type:podcast"]}
+{"key": "https://anchor.fm/s/1134b12c0/podcast/rss", "tags": ["region:usa", "topic:medicine", "type:podcast"]}
+{"key": "https://anchor.fm/s/13dc02a4/podcast/rss", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "https://anchor.fm/s/197f67a0/podcast/rss", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://anchor.fm/s/22325ccc/podcast/rss", "tags": ["region:ireland", "topic:medicine", "type:podcast"]}
+{"key": "https://anchor.fm/s/734ead4/podcast/rss", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "https://anchor.fm/s/791970c/podcast/rss", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "https://anchor.fm/s/7c76236c/podcast/rss", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "https://anchor.fm/s/7f7dabc/podcast/rss", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://anchor.fm/s/8570410/podcast/rss", "tags": ["topic:science", "type:podcast"]}
+{"key": "https://anchor.fm/s/988f780/podcast/rss", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://anchor.fm/s/9913f08/podcast/rss", "tags": ["region:usa", "topic:science", "type:podcast"]}
+{"key": "https://anchor.fm/s/a28fe4c/podcast/rss", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://anchor.fm/s/c44f974/podcast/rss", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://anchor.fm/s/d40b534/podcast/rss", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://anchor.fm/s/d8ca958/podcast/rss", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://anchor.fm/s/ddd52068/podcast/rss", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://anchor.fm/s/e189be8/podcast/rss", "tags": ["topic:health", "type:podcast"]}
+{"key": "andreanakayama.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "andrewjfoy.substack.com", "tags": ["topic:medicine", "type:personal-blog"]}
+{"key": "anherbaldiary.libsyn.com", "tags": ["topic:health", "type:podcast"]}
+{"key": "anishkoka.substack.com", "tags": ["topic:medicine", "type:newsletter"]}
+{"key": "anishkokamd.substack.com", "tags": ["topic:medicine", "type:newsletter"]}
+{"key": "https://api.riverside.fm/hosting/ZccNOblD.rss", "tags": ["language:spanish", "topic:health", "type:podcast"]}
+{"key": "https://api.riverside.fm/hosting/oZ8GiGbT.rss", "tags": ["region:usa", "topic:health", "type:podcast"]}
+{"key": "https://api.substack.com/feed/podcast/3499067.rss", "tags": ["topic:health", "type:podcast"]}
+{"key": "apothecarysgarden.com", "tags": ["topic:health", "type:vendor-blog"]}
+{"key": "aprilpride.substack.com", "tags": ["topic:health", "type:personal-blog"]}
+{"key": "https://audioboom.com/channels/5008292.rss", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "avneeshkhare.substack.com", "tags": ["topic:ai", "topic:medicine", "type:newsletter"]}
+{"key": "awesomehealthpodcast.libsyn.com", "tags": ["topic:health", "type:podcast"]}
+{"key": "barbaracharis.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "benryan.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "bertiebregmanmd.substack.com", "tags": ["topic:medicine", "type:newsletter"]}
+{"key": "beyondapprovalpharma.substack.com", "tags": ["topic:business", "topic:medicine", "type:newsletter"]}
+{"key": "beyondthelab.libsyn.com", "tags": ["region:usa", "topic:science", "type:podcast"]}
+{"key": "blog.billiondollarblindspot.com", "tags": ["topic:business", "topic:health", "type:publication"]}
+{"key": "blog.everydayscientist.com", "tags": ["topic:science", "type:personal-blog"]}
+{"key": "blueberylpodcast.substack.com", "tags": ["topic:health", "topic:religion", "type:podcast"]}
+{"key": "1000hoursoutside.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "100healthywomen.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "2hats1mike.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "5second.libsyn.com", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "6figurehealth.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "aarpwa.libsyn.com", "tags": ["region:usa", "topic:health", "type:podcast"]}
+{"key": "https://abcnews.com/abcnews/topstories", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "abeautifulrenewal.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "acertivo.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "adriandavidson.substack.com", "tags": ["topic:health", "topic:politics", "type:personal-blog"]}
+{"key": "adrienne433.substack.com", "tags": ["topic:health", "type:personal-blog"]}
+{"key": "adversereaction.substack.com", "tags": ["topic:health", "topic:politics", "type:newsletter"]}
+{"key": "adviceigivemyfriends.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "afitnesstoday.substack.com", "tags": ["region:asia", "topic:health", "type:newsletter"]}
+{"key": "agestrongyoga.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "ahsituationreport.substack.com", "tags": ["region:usa", "topic:health", "type:newsletter"]}
+{"key": "aimeepughbernard.substack.com", "tags": ["topic:science", "type:newsletter"]}
+{"key": "ajpresidentsjournal.libsyn.com", "tags": ["region:usa", "topic:medicine", "type:podcast"]}
+{"key": "ajw3477.substack.com", "tags": ["topic:medicine", "type:personal-blog"]}
+{"key": "albertapolitics.substack.com", "tags": ["region:canada", "topic:politics", "type:newsletter"]}
+{"key": "albertogalca.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "alexcaza.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "alexdewey.github.io", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "alexhenryfoster.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "alicerothchild.substack.com", "tags": ["topic:politics", "type:personal-blog"]}
+{"key": "allaboutpsychology.substack.com", "tags": ["topic:science", "type:newsletter"]}
+{"key": "allietheauthor.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "allpeopleshealthcollective.substack.com", "tags": ["topic:health", "topic:politics", "type:newsletter"]}
+{"key": "ambmarkgreen1.substack.com", "tags": ["region:usa", "topic:politics", "type:newsletter"]}
+{"key": "amenclinics.libsyn.com", "tags": ["topic:health", "type:podcast"]}
+{"key": "americanpsychoanalyst.substack.com", "tags": ["topic:health", "type:publication"]}
+{"key": "americasnaturaldoctor.podomatic.com", "tags": ["topic:health", "type:podcast"]}
+{"key": "amitp.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "amomentinhealth.substack.com", "tags": ["region:usa", "topic:health", "type:newsletter"]}
+{"key": "amyhollenkamprd.substack.com", "tags": ["topic:health", "type:personal-blog"]}
+{"key": "https://anchor.fm/s/100c5854/podcast/rss", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://anchor.fm/s/10139dae4/podcast/rss", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://anchor.fm/s/1033d1554/podcast/rss", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://anchor.fm/s/105c5d630/podcast/rss", "tags": ["region:uk", "topic:health", "type:podcast"]}
+{"key": "https://anchor.fm/s/10618cf34/podcast/rss", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "https://anchor.fm/s/106cde630/podcast/rss", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://anchor.fm/s/108b30b10/podcast/rss", "tags": ["topic:entertainment", "topic:health", "type:podcast"]}
+{"key": "alixmayer.substack.com", "tags": ["topic:health", "topic:politics", "type:newsletter"]}
+{"key": "amothersanthem.substack.com", "tags": ["topic:medicine", "type:newsletter"]}
+{"key": "https://anchor.fm/s/10ee9070/podcast/rss", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "https://anchor.fm/s/1b0f33ac/podcast/rss", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://anchor.fm/s/1c640674/podcast/rss", "tags": ["region:usa", "topic:medicine", "type:podcast"]}
+{"key": "https://anchor.fm/s/1e555244/podcast/rss", "tags": ["topic:business", "topic:medicine", "type:podcast"]}
+{"key": "https://anchor.fm/s/3a789a8/podcast/rss", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "https://anchor.fm/s/a3c9a830/podcast/rss", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "https://anchor.fm/s/ccb7530/podcast/rss", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "https://anchor.fm/s/e79b6e4/podcast/rss", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "https://anchor.fm/s/fe409044/podcast/rss", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "andrawatkins.substack.com", "tags": ["region:usa", "topic:politics", "type:newsletter"]}
+{"key": "andrewomalley.substack.com", "tags": ["topic:ai", "topic:medicine", "type:newsletter"]}
+{"key": "anitakpatelmd.substack.com", "tags": ["topic:medicine", "type:newsletter"]}
+{"key": "arlenmeyersmdmba.substack.com", "tags": ["topic:business", "topic:medicine", "type:newsletter"]}
+{"key": "blackliszt.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.jacobtrefethen.com", "tags": ["topic:science", "type:personal-blog"]}
+{"key": "brokentruth.tv", "tags": ["region:canada", "topic:journalism", "type:publication"]}
+{"key": "brookemillermd.substack.com", "tags": ["topic:medicine", "topic:politics", "type:newsletter"]}
+{"key": "bsfreemd.substack.com", "tags": ["topic:medicine", "type:newsletter"]}
+{"key": "cambiahealth.libsyn.com", "tags": ["topic:health", "type:podcast"]}
+{"key": "carmedpub.substack.com", "tags": ["topic:medicine", "type:newsletter"]}
+{"key": "cassiecraunferguson.substack.com", "tags": ["topic:medicine", "type:personal-blog"]}
+{"key": "cliniborg.com", "tags": ["topic:medicine", "type:personal-blog"]}
+{"key": "collegedebttocareercash.libsyn.com", "tags": ["topic:business", "type:podcast"]}
+{"key": "criticallevels.libsyn.com", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "devorahgoldman.substack.com", "tags": ["topic:medicine", "type:newsletter"]}
+{"key": "disabledginger.com", "tags": ["topic:health", "topic:politics", "type:personal-blog"]}
+{"key": "dralysia.substack.com", "tags": ["topic:health", "type:personal-blog"]}
+{"key": "drgator.substack.com", "tags": ["topic:medicine", "type:newsletter"]}
+{"key": "drmaryclairehaver.substack.com", "tags": ["topic:medicine", "type:newsletter"]}
+{"key": "dutytodissent.substack.com", "tags": ["topic:medicine", "topic:politics", "type:newsletter"]}
+{"key": "elizabethhart.substack.com", "tags": ["topic:health", "topic:politics", "type:newsletter"]}
+{"key": "elizabethreedaden.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "erictopol.substack.com", "tags": ["topic:medicine", "type:newsletter"]}
+{"key": "benjaminrush1776.substack.com", "tags": ["topic:medicine", "type:institution"]}
+{"key": "birthhour.libsyn.com", "tags": ["topic:health", "type:podcast"]}
+{"key": "depthofanesthesia.libsyn.com", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "https://feed.podbean.com/podcast.myhappyhomebirth.com/feed.xml", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://feed.podbean.com/universityhospitals/feed.xml", "tags": ["region:usa", "topic:health", "type:podcast"]}
+{"key": "https://feeds.bbci.co.uk/news/scotland/rss.xml", "tags": ["region:uk", "topic:news", "type:publication"]}
+{"key": "https://feeds.blubrry.com/feeds/beckershealthcarepodcast.xml", "tags": ["region:usa", "topic:medicine", "type:podcast"]}
+{"key": "https://feeds.blubrry.com/feeds/pediatricleadershippodcast.xml", "tags": ["region:usa", "topic:medicine", "type:podcast"]}
+{"key": "https://feeds.cohostpodcasting.com/onPi98zv", "tags": ["topic:health", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/CricoRmf/MedicalMalpracticehighRiskCaseStudies", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/CricoRmf/PatientSafetyUpdatesMedicalAndLegalPerspectives", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/HelloHealthy", "tags": ["region:usa", "topic:health", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/carle", "tags": ["region:usa", "topic:medicine", "type:podcast"]}
+{"key": "https://feeds.redcircle.com/27d2ad67-38c4-4e6e-a1ac-a3ef04ca72fc", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://feeds.redcircle.com/3afc5caf-efbb-4dc3-ae69-fb7f23cceb66", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "https://feeds.simplecast.com/bF_2s_7n", "tags": ["region:usa", "topic:history", "type:podcast"]}
+{"key": "https://feeds.simplecast.com/r1Gct_vE", "tags": ["region:usa", "topic:health", "type:podcast"]}
+{"key": "https://feeds.soundcloud.com/users/soundcloud:users:212678370/sounds.rss", "tags": ["topic:medicine", "type:podcast"]}
+{"key": "https://feeds.soundcloud.com/users/soundcloud:users:231193217/sounds.rss", "tags": ["region:usa", "topic:medicine", "type:podcast"]}
+{"key": "https://feeds.transistor.fm/340b-health-insights", "tags": ["region:usa", "topic:medicine", "type:podcast"]}
+{"key": "https://feeds.transistor.fm/hospitals-in-focus", "tags": ["region:usa", "topic:medicine", "type:podcast"]}
+{"key": "https://feeds.zencastr.com/f/2zBoZulc.rss", "tags": ["region:usa", "topic:health", "type:podcast"]}
+{"key": "gabrielweston.substack.com", "tags": ["topic:medicine", "type:personal-blog"]}
+{"key": "ghsnark.substack.com", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "gooznews.substack.com", "tags": ["topic:health", "topic:politics", "type:newsletter"]}
+{"key": "gottwals.substack.com", "tags": ["topic:health", "topic:personal", "type:personal-blog"]}
+{"key": "hadassahoncall.libsyn.com", "tags": ["region:middle-east", "topic:medicine", "type:podcast"]}
+{"key": "healthcareexecutive.libsyn.com", "tags": ["topic:business", "type:podcast"]}
+{"key": "healthtechofftherecord.substack.com", "tags": ["region:europe", "topic:business", "topic:medicine", "type:newsletter"]}
+{"key": "hokkaidowilds.org", "tags": ["region:japan", "topic:travel", "type:community"]}
+{"key": "jlord.computer", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "kaufmanken.substack.com", "tags": ["topic:medicine", "type:newsletter"]}
+{"key": "kffhealthnews.org", "tags": ["region:usa", "topic:health", "type:publication"]}
+{"key": "mazelitscorner.substack.com", "tags": ["topic:politics", "type:personal-blog"]}
+{"key": "medeastmids.podomatic.com", "tags": ["region:uk", "topic:medicine", "type:podcast"]}
+{"key": "https://newnigerianpolitics.com/category/health/feed/", "tags": ["region:nigeria", "topic:health", "topic:politics", "type:publication"]}
+{"key": "https://newnigerianpolitics.com/category/health/medical-professionals/feed/", "tags": ["region:nigeria", "topic:medicine", "topic:politics", "type:publication"]}
+{"key": "newsroom.heart.org", "tags": ["topic:health", "type:institution"]}
+{"key": "https://newswise.com/legacy/rss/biznews.rss", "tags": ["topic:business", "topic:science", "type:aggregator"]}
