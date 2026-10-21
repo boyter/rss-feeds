@@ -5037,3 +5037,22 @@
 {"key": "1894.latech.edu", "tags": ["region:usa", "topic:education", "type:podcast"]}
 {"key": "24-ore.com", "tags": ["region:europe", "topic:news", "type:publication"]}
 {"key": "24media.az", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "26.ru", "tags": ["language:russian", "region:russia", "topic:news", "type:publication"]}
+{"key": "260journey.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "2arm.net.au", "tags": ["region:australia", "topic:news", "type:podcast"]}
+{"key": "https://2axxur.podcaster.de/lobbyversum.rss", "tags": ["language:german", "topic:politics", "type:podcast"]}
+{"key": "https://2axxur.podcaster.de/rheingehaeckt.rss", "tags": ["language:german", "topic:security", "type:podcast"]}
+{"key": "2d6pluscool.ovh", "tags": ["language:french", "topic:gaming", "type:podcast"]}
+{"key": "37disneystreet.co.uk", "tags": ["region:uk", "topic:entertainment", "type:podcast"]}
+{"key": "3reate.com", "tags": ["topic:design", "type:podcast"]}
+{"key": "47news.ru", "tags": ["language:russian", "region:russia", "topic:news", "type:publication"]}
+{"key": "4health.se", "tags": ["region:europe", "topic:health", "type:podcast"]}
+{"key": "6abc.com", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "https://6qzhwp.podcaster.de/Short-Take.rss", "tags": ["language:german", "topic:entertainment", "type:podcast"]}
+{"key": "https://6qzhwp.podcaster.de/deep-dive-genre.rss", "tags": ["language:german", "topic:entertainment", "type:podcast"]}
+{"key": "https://870815.us31.myftpupload.com/feed/podcast/", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "https://870815.us31.myftpupload.com/feed/womens/", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "8deynews.com", "tags": ["region:middle-east", "topic:news", "type:publication"]}
+{"key": "https://8vivgjpkaf.execute-api.us-east-1.amazonaws.com/prod/cnbcnewsfeed?feedfor=NN&serviceFor=audiofeed&feedName=MARKETS_NOW", "tags": ["region:usa", "topic:finance", "type:podcast"]}
+{"key": "https://8vivgjpkaf.execute-api.us-east-1.amazonaws.com/prod/cnbcnewsfeed?feedfor=NN&serviceFor=audiofeed&feedName=TECH_CHECK", "tags": ["region:usa", "topic:tech-industry", "type:podcast"]}
+{"key": "https://9to5.cc/category/9to5-entertainment-system-montreal-podcast/feed/", "tags": ["region:canada", "topic:gadgets", "topic:gaming", "type:podcast"]}
