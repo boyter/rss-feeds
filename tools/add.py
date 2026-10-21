@@ -87,6 +87,16 @@ def cmd_merge(args):
     existing = {vocab_mod.norm_key(f["url"]) for f in feeds}
     voc = vocab_mod.load()
     spam_rules = triage.load_spam()
+    # harvest.jsonl is evidence of what the URL is NOW; probe_results is a
+    # snapshot that goes stale. A feed that died after being probed was
+    # re-merged from an old candidates file and deleted again by rebuild -
+    # the same ping-pong as spam, one layer up. Latest record per URL wins.
+    hpath = paths.data("harvest.jsonl")
+    harvested = {}
+    if os.path.exists(hpath):
+        for r in read_jsonl(hpath):
+            if r.get("url"):
+                harvested[vocab_mod.norm_key(r["url"])] = r
 
     added, skipped = [], []
     for c in cands:
@@ -106,6 +116,11 @@ def cmd_merge(args):
         r = probed.get(url, {})
         if not r.get("isFeed"):
             skipped.append((url, f"not a feed ({r.get('status', 'not probed')})"))
+            continue
+        h = harvested.get(key)
+        if h is not None and not h.get("isFeed"):
+            skipped.append((url, f"dead in harvest.jsonl ({h.get('status', '?')}), "
+                                 "newer than the probe"))
             continue
         bad = vocab_mod.validate(c["tags"], voc)
         if bad:

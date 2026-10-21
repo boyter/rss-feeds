@@ -511,6 +511,62 @@ class TestAMergeNeedsTheFetchForThatExactUrl(unittest.TestCase):
         self.assertEqual(urls, ["http://feeds.bmj.com/bmjj/podcasts"])
 
 
+class TestMergeRefusesDeadHarvestEvidence(unittest.TestCase):
+    """A URL the harvest last saw NOT serving a feed must not re-enter.
+
+    Pinned because add.py merge trusted probe_results.jsonl alone: a feed
+    probed alive months ago, since 404ed, was re-added from a stale
+    candidates file every settle and deleted again by rebuild - the
+    trustwave ping-pong replayed for dead (not banned) feeds.
+    """
+
+    def merge(self, cands, probed, harvest_rows):
+        with tempfile.TemporaryDirectory() as d:
+            cpath, rpath, fpath = (os.path.join(d, n) for n in
+                                   ("c.jsonl", "r.jsonl", "feeds.json"))
+            for path, rows in ((cpath, cands), (rpath, probed)):
+                with open(path, "w", encoding="utf-8") as fh:
+                    for r in rows:
+                        fh.write(json.dumps(r) + "\n")
+            open(fpath, "w").write("[]")
+            saved = (add.RESULTS, add.paths.root, add.paths.DATA,
+                     add.triage.load_spam)
+            add.RESULTS = rpath
+            add.paths.root = lambda n: fpath if n == "feeds.json" else os.path.join(d, n)
+            add.paths.DATA = d
+            add.triage.load_spam = lambda *a, **k: []
+            try:
+                with open(os.path.join(d, "harvest.jsonl"), "w", encoding="utf-8") as fh:
+                    for r in harvest_rows:
+                        fh.write(json.dumps(r) + "\n")
+                add.cmd_merge(type("A", (), {"candidates": cpath, "apply": True})())
+                out = json.load(open(fpath, encoding="utf-8"))
+            finally:
+                add.RESULTS, add.paths.root, add.paths.DATA, add.triage.load_spam = saved
+        return [f["url"] for f in out]
+
+    def test_a_probe_that_outranks_stale_proof_of_life(self):
+        urls = ("https://deadnow.test/feed", "https://alive.test/feed",
+                "https://neverharvested.test/feed")
+        probed = [{"url": u, "isFeed": True, "status": 200} for u in urls]
+        harvest_rows = [
+            {"url": urls[0], "isFeed": False, "status": 404},
+            {"url": urls[1], "isFeed": True, "status": 200},
+        ]
+        cands = [{"url": u, "tags": ["topic:news", "type:publication"]} for u in urls]
+        got = self.merge(cands, probed, harvest_rows)
+        self.assertEqual(got, [urls[1], urls[2]])
+
+    def test_the_latest_harvest_record_wins(self):
+        # two records, feed then dead: last-write-wins file, so the merge
+        # must read the last, not the first line that matched.
+        probed = [{"url": "https://flaky.test/feed", "isFeed": True, "status": 200}]
+        harvest_rows = [{"url": "https://flaky.test/feed", "isFeed": True, "status": 200},
+                        {"url": "https://flaky.test/feed", "isFeed": False, "status": 410}]
+        cands = [{"url": "https://flaky.test/feed", "tags": ["topic:news", "type:publication"]}]
+        self.assertEqual(self.merge(cands, probed, harvest_rows), [])
+
+
 class TestMergeRespectsTheHandSpamList(unittest.TestCase):
     """A feed a human banned never re-enters through a stale candidates file.
 

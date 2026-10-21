@@ -626,3 +626,19 @@ unknown-person microblogs, comments feeds). 4 removals all hand-verified:
 `abnormalreturns.com` was a FALSE not-a-feed (curl proves a real RSS body;
 `harvest.py --retry-failed` rescued it) - the other three (dead DNS, 404 x2)
 confirmed in a browser-equivalent fetch before merge of the removal.
+
+## Medicine tranche via the amp directory (2026-10-21)
+
+`GitRSS` turned out to be a plan item with no referent: gitrss.com (and .io/.dev/.net,
+and gitrss.bradeon.com.au) are NXDOMAIN at the TLD root and have zero Wayback
+snapshots. Unrecorded channels cost a detour; record channels when you measure them.
+
+Substituted `discover.py amp` with 12 medicine/health subjects: 495 candidates,
+406 live (82%), 335 rules through two delegated batches (medicine-vs-health split
+per the brief), 288 merged: **13,223 -> 13,509 feeds; topic:medicine 65 -> 175**.
+Two hand-verified spam removals (NYT-lookalike scraper, market-report mill).
+
+`add.py merge` now refuses candidates the harvest last saw dead, even when the
+probe snapshot says alive: actuprepa and addisababamajlis re-entered from stale
+candidates and were deleted again by rebuild - the trustwave loop replayed for
+non-banned feeds. Pinned by TestMergeRefusesDeadHarvestEvidence (mutation-checked).
