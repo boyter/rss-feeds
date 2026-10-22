@@ -533,9 +533,9 @@
 {"key": "amydyer.art", "tags": ["topic:art", "type:personal-blog"]}
 {"key": "andregarzia.com", "tags": ["topic:art", "topic:personal", "topic:software-engineering", "topic:tech-industry", "type:personal-blog"]}
 {"key": "andrew-best.com", "tags": ["topic:software-engineering", "topic:ai", "type:personal-blog"]}
-{"key": "andrewbrookins.com", "tags": ["topic:software-engineering", "topic:personal", "type:personal-blog"]}
-{"key": "andreyorst.gitlab.io", "tags": ["topic:programming:lisp", "type:personal-blog"]}
-{"key": "android-developers.googleblog.com", "tags": ["topic:programming:kotlin", "topic:software-engineering", "type:vendor-blog"]}
+{"key": "andrewbrookins.com", "tags": ["topic:personal", "topic:software-engineering", "type:personal-blog"]}
+{"key": "andreyorst.gitlab.io", "tags": ["topic:programming", "topic:programming:lisp", "type:personal-blog"]}
+{"key": "android-developers.googleblog.com", "tags": ["topic:programming", "topic:programming:kotlin", "topic:software-engineering", "type:vendor-blog"]}
 {"key": "angristan.xyz", "tags": ["topic:software-engineering", "topic:infrastructure", "type:personal-blog"]}
 {"key": "anishathalye.com", "tags": ["topic:mathematics", "topic:programming", "topic:security", "topic:systems", "type:personal-blog"]}
 {"key": "annevankesteren.nl", "tags": ["topic:web-development", "type:personal-blog"]}
@@ -10231,3 +10231,231 @@
 {"key": "andreizgirvaci.com", "tags": ["topic:programming", "type:personal-blog"]}
 {"key": "andrej.sh", "tags": ["topic:open-source", "topic:programming", "type:personal-blog"]}
 {"key": "andrej.xyz", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "andrejgajdos.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "andrejradovic.com", "tags": ["topic:infrastructure", "type:personal-blog"]}
+{"key": "andreklein.net", "tags": ["topic:personal", "topic:programming", "type:personal-blog"]}
+{"key": "andrelandgraf.dev", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "andreldm.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "andrelona.substack.com", "tags": ["language:portuguese", "region:latin-america", "topic:business", "type:newsletter"]}
+{"key": "andrena-entwickelt.podigee.io", "tags": ["language:german", "region:germany", "topic:ai", "topic:software-engineering", "type:podcast"]}
+{"key": "andrenordlohne.podigee.io", "tags": ["language:german", "region:germany", "topic:ai", "topic:business", "type:podcast"]}
+{"key": "andrepitz.de", "tags": ["language:german", "region:germany", "topic:entertainment", "topic:media", "type:personal-blog"]}
+{"key": "andreracicot.ca", "tags": ["language:french", "region:canada", "topic:education", "type:personal-blog"]}
+{"key": "andreruffert.com", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "andresanz.com", "tags": ["topic:art", "topic:travel", "type:personal-blog"]}
+{"key": "andresbravo.libsyn.com", "tags": ["language:spanish", "region:latin-america", "topic:health", "topic:lifestyle", "type:podcast"]}
+{"key": "andresc.bearblog.dev", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "andresfelipearias.substack.com", "tags": ["language:spanish", "region:latin-america", "topic:ai", "topic:finance", "type:newsletter"]}
+{"key": "andresmax.com", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "andresmax.substack.com", "tags": ["topic:ai", "topic:business", "type:newsletter"]}
+{"key": "andresteffens.podomatic.com", "tags": ["topic:music", "type:podcast"]}
+{"key": "andresvidal.substack.com", "tags": ["topic:data", "type:newsletter"]}
+{"key": "andrevandelft.substack.com", "tags": ["language:dutch", "topic:art", "topic:personal", "type:newsletter"]}
+{"key": "andrevanos.podomatic.com", "tags": ["topic:music", "type:podcast"]}
+{"key": "andrevidela.com", "tags": ["topic:programming", "topic:travel", "type:personal-blog"]}
+{"key": "andrew-jones.com", "tags": ["topic:data", "type:personal-blog"]}
+{"key": "andrew-quinn.me", "tags": ["topic:personal", "topic:politics", "type:personal-blog"]}
+{"key": "andrew-wommack-ministries-de.podigee.io", "tags": ["language:german", "topic:religion", "type:podcast"]}
+{"key": "andrew.carterlunn.co.uk", "tags": ["region:uk", "topic:programming", "topic:science", "type:personal-blog"]}
+{"key": "andrew.ghost.io", "tags": ["topic:music", "type:newsletter"]}
+{"key": "andrew.gr", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "andrewgrahamyooll.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "andrew.marcuse.info", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "andrew.nerdnetworks.org", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "andrew.yurisich.com", "tags": ["topic:books", "topic:programming", "type:personal-blog"]}
+{"key": "andrew857.substack.com", "tags": ["topic:books", "topic:news", "type:newsletter"]}
+{"key": "andrewagrenoble.bearblog.dev", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "andrewalliance.substack.com", "tags": ["topic:gaming", "topic:tech-industry", "type:newsletter"]}
+{"key": "andrewaltenburg.substack.com", "tags": ["topic:art", "topic:personal", "type:newsletter"]}
+{"key": "andrewantes.com", "tags": ["topic:ai", "topic:education", "type:personal-blog"]}
+{"key": "andrewaskins.com", "tags": ["topic:business", "topic:personal", "type:personal-blog"]}
+{"key": "andrewaxelrod.substack.com", "tags": ["topic:finance", "type:newsletter"]}
+{"key": "andrewbaker.ninja", "tags": ["topic:ai", "topic:programming", "topic:security", "type:personal-blog"]}
+{"key": "andrewballnotes.substack.com", "tags": ["topic:business", "topic:sport", "type:newsletter"]}
+{"key": "andrewbarban.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "andrewbeaton.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "andrewberls.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "andrewbirdmusic.substack.com", "tags": ["topic:music", "type:newsletter"]}
+{"key": "andrewblevins.substack.com", "tags": ["topic:philosophy", "topic:religion", "type:newsletter"]}
+{"key": "andrewboni.com", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "andrewbridges.org", "tags": ["topic:art", "topic:travel", "type:personal-blog"]}
+{"key": "andrewcarringtonhitchcock.com", "tags": ["topic:politics", "topic:religion", "type:personal-blog"]}
+{"key": "andrewchen.substack.com", "tags": ["topic:ai", "topic:business", "type:newsletter"]}
+{"key": "andrewchilds.com", "tags": ["topic:ai", "topic:design", "topic:health", "type:personal-blog"]}
+{"key": "andrewconl.in", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "andrewconner.com", "tags": ["topic:ai", "topic:personal", "type:personal-blog"]}
+{"key": "andrewdavidbarker.substack.com", "tags": ["region:uk", "topic:entertainment", "type:newsletter"]}
+{"key": "andrewditton.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "andrewdoering.org", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "andrewdoran.uk", "tags": ["region:uk", "topic:personal", "type:personal-blog"]}
+{"key": "andrewdotooo.substack.com", "tags": ["topic:ai", "type:newsletter"]}
+{"key": "andrewdoyle.org", "tags": ["region:uk", "topic:art", "topic:politics", "type:personal-blog"]}
+{"key": "andrewedstrom.substack.com", "tags": ["topic:gaming", "topic:software-engineering", "type:newsletter"]}
+{"key": "andrewgeesonloosewatercolours.substack.com", "tags": ["topic:art", "type:newsletter"]}
+{"key": "andrewggibson.com", "tags": ["topic:books", "topic:entertainment", "type:personal-blog"]}
+{"key": "andrewgilliland.dev", "tags": ["topic:programming", "topic:web-development", "type:personal-blog"]}
+{"key": "andrewgillsmith.substack.com", "tags": ["topic:personal", "topic:politics", "type:newsletter"]}
+{"key": "andrewginn.fun", "tags": ["topic:media", "topic:politics", "type:personal-blog"]}
+{"key": "andrewgoldheretics.com", "tags": ["region:uk", "topic:media", "topic:politics", "type:podcast"]}
+{"key": "andrewgordontax.substack.com", "tags": ["region:usa", "topic:finance", "topic:politics", "type:newsletter"]}
+{"key": "andrewgough.co.uk", "tags": ["region:uk", "topic:art", "type:personal-blog"]}
+{"key": "andrewgoutman.com", "tags": ["topic:music", "topic:politics", "type:personal-blog"]}
+{"key": "andrewgreig.com", "tags": ["topic:design", "topic:web-development", "type:personal-blog"]}
+{"key": "andrewgriffithsonline.com", "tags": ["region:uk", "topic:software-engineering", "type:personal-blog"]}
+{"key": "andrewgruel.substack.com", "tags": ["topic:food", "type:newsletter"]}
+{"key": "andrewgunn.substack.com", "tags": ["region:new-zealand", "topic:politics", "type:newsletter"]}
+{"key": "andrewhart.me", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "andrewhathaway.net", "tags": ["topic:hardware", "topic:software-engineering", "type:personal-blog"]}
+{"key": "andrewhclu.substack.com", "tags": ["topic:finance", "topic:hardware", "type:newsletter"]}
+{"key": "andrewshuth.substack.com", "tags": ["topic:web-development", "type:newsletter"]}
+{"key": "andrewingram.net", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "andrewkjennings.com", "tags": ["topic:business", "topic:finance", "type:personal-blog"]}
+{"key": "andrewknapp.substack.com", "tags": ["topic:art", "topic:books", "type:newsletter"]}
+{"key": "andrewknighton.com", "tags": ["topic:books", "type:personal-blog"]}
+{"key": "andrewknott.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "andrewlacivita.libsyn.com", "tags": ["topic:business", "type:podcast"]}
+{"key": "andrewlakepodcast.podbean.com", "tags": ["topic:philosophy", "type:podcast"]}
+{"key": "andrewlambrecht.substack.com", "tags": ["topic:politics", "type:newsletter"]}
+{"key": "andrewlawton.substack.com", "tags": ["region:canada", "topic:news", "topic:politics", "type:newsletter"]}
+{"key": "andrewliptak.substack.com", "tags": ["topic:books", "topic:entertainment", "type:newsletter"]}
+{"key": "andrewlivecchi.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "andrewljohnson.com", "tags": ["region:usa", "topic:travel", "type:personal-blog"]}
+{"key": "andrewlock.net", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "andrewlownie.substack.com", "tags": ["region:uk", "topic:news", "type:newsletter"]}
+{"key": "andrewmarchand.com", "tags": ["topic:media", "topic:sport", "type:podcast"]}
+{"key": "andrewmarcinek.substack.com", "tags": ["topic:education", "type:newsletter"]}
+{"key": "andrewmarder.net", "tags": ["topic:data", "topic:economics", "type:personal-blog"]}
+{"key": "andrewmarkowitz.substack.com", "tags": ["topic:religion", "type:newsletter"]}
+{"key": "andrewmayne.com", "tags": ["topic:ai", "topic:art", "type:personal-blog"]}
+{"key": "andrewmayne.substack.com", "tags": ["topic:ai", "topic:books", "type:newsletter"]}
+{"key": "andrewmccluskey.com", "tags": ["topic:business", "topic:programming", "type:personal-blog"]}
+{"key": "andrewmcwhae.ca", "tags": ["topic:art", "topic:data", "type:personal-blog"]}
+{"key": "andrewmdhutchinson.podomatic.com", "tags": ["region:canada", "topic:gaming", "type:podcast"]}
+{"key": "andrewmohawk.com", "tags": ["topic:hardware", "topic:security", "type:personal-blog"]}
+{"key": "andrewmoore.ca", "tags": ["region:canada", "topic:security", "topic:tech-industry", "type:personal-blog"]}
+{"key": "andrewmorrisoli.substack.com", "tags": ["topic:education", "topic:personal", "type:newsletter"]}
+{"key": "andrewmunsell.com", "tags": ["region:usa", "topic:programming", "type:personal-blog"]}
+{"key": "andrewmurphy.io", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "andrewnc.github.io", "tags": ["topic:data", "topic:programming", "type:personal-blog"]}
+{"key": "andrewnette.substack.com", "tags": ["topic:books", "topic:entertainment", "type:newsletter"]}
+{"key": "andrewnile.co.uk", "tags": ["region:uk", "topic:gadgets", "topic:hardware", "type:personal-blog"]}
+{"key": "https://andrewnolan.dev/rss.xml", "tags": ["topic:art", "type:podcast"]}
+{"key": "andrewodendaal.com", "tags": ["topic:infrastructure", "topic:programming", "type:personal-blog"]}
+{"key": "andrewold.substack.com", "tags": ["region:uk", "topic:education", "type:newsletter"]}
+{"key": "andrewoneverything.com", "tags": ["topic:philosophy", "topic:politics", "type:personal-blog"]}
+{"key": "andrewosenga.substack.com", "tags": ["topic:music", "topic:religion", "type:newsletter"]}
+{"key": "andrewpakhomov.com", "tags": ["topic:software-engineering", "topic:systems", "type:personal-blog"]}
+{"key": "andrewperlot.substack.com", "tags": ["topic:philosophy", "type:newsletter"]}
+{"key": "andrewrayel.podbean.com", "tags": ["topic:music", "type:podcast"]}
+{"key": "andrewreinhart.substack.com", "tags": ["topic:health", "topic:religion", "type:newsletter"]}
+{"key": "andrewreiter.substack.com", "tags": ["topic:environment", "type:newsletter"]}
+{"key": "andrewrumbach.substack.com", "tags": ["topic:environment", "topic:politics", "type:newsletter"]}
+{"key": "andrewryce.substack.com", "tags": ["topic:music", "type:newsletter"]}
+{"key": "andrewsabai.substack.com", "tags": ["topic:environment", "type:newsletter"]}
+{"key": "andrewsacher.substack.com", "tags": ["topic:music", "type:newsletter"]}
+{"key": "andrewschurch.org", "tags": ["topic:religion", "type:podcast"]}
+{"key": "andrewshanahan.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "andrewshaw.nl", "tags": ["topic:personal", "topic:web-development", "type:personal-blog"]}
+{"key": "andrewshay.me", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "andrewshell.org", "tags": ["topic:personal", "topic:programming", "type:personal-blog"]}
+{"key": "andrewsiah.substack.com", "tags": ["topic:business", "topic:tech-industry", "type:newsletter"]}
+{"key": "andrewsilva.com.br", "tags": ["language:portuguese", "region:latin-america", "topic:business", "type:vendor-blog"]}
+{"key": "andrewsimmons.substack.com", "tags": ["topic:education", "type:newsletter"]}
+{"key": "andrewsinger.substack.com", "tags": ["region:asia", "topic:politics", "type:newsletter"]}
+{"key": "andrewspreviews.substack.com", "tags": ["region:uk", "topic:politics", "type:newsletter"]}
+{"key": "andrewsteele.co.uk", "tags": ["region:uk", "topic:health", "topic:science", "type:personal-blog"]}
+{"key": "andrewstewartcameron.substack.com", "tags": ["topic:business", "topic:food", "type:newsletter"]}
+{"key": "andrewswinston.substack.com", "tags": ["topic:business", "topic:environment", "type:newsletter"]}
+{"key": "andrewswritersblock.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "andrewtalpash.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "andrewtanjobs.substack.com", "tags": ["topic:business", "type:aggregator"]}
+{"key": "andrewterry.substack.com", "tags": ["topic:books", "topic:personal", "type:newsletter"]}
+{"key": "andrewthorntonnorris.substack.com", "tags": ["topic:art", "type:newsletter"]}
+{"key": "andrewtimberlake.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "andrewtimothyobrien.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "andrewtnelson.substack.com", "tags": ["topic:travel", "type:newsletter"]}
+{"key": "andrewturriff.substack.com", "tags": ["topic:design", "type:newsletter"]}
+{"key": "andrewvarsanyi.com", "tags": ["topic:history", "topic:politics", "type:personal-blog"]}
+{"key": "andreww.xyz", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "andrewwalpole.com", "tags": ["topic:software-engineering", "topic:web-development", "type:personal-blog"]}
+{"key": "andrewwhipple.com", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "andrewwhitman.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "andrewwippler.com", "tags": ["topic:personal", "topic:programming", "type:personal-blog"]}
+{"key": "andrewwongandmuktadas.substack.com", "tags": ["topic:food", "type:newsletter"]}
+{"key": "andrewxhill.com", "tags": ["topic:ai", "topic:personal", "type:personal-blog"]}
+{"key": "andrewzah.com", "tags": ["topic:gadgets", "topic:programming", "type:personal-blog"]}
+{"key": "andrewzimmern.substack.com", "tags": ["topic:food", "topic:travel", "type:newsletter"]}
+{"key": "andrey.substack.com", "tags": ["topic:journalism", "topic:media", "type:newsletter"]}
+{"key": "andreypopp.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "andrezadoroznyprints.com", "tags": ["topic:art", "type:podcast"]}
+{"key": "andri.dk", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "andri.yngvason.is", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "andriakipress.gr", "tags": ["region:europe", "topic:news", "type:publication"]}
+{"key": "andrijaa.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "andrio.ru", "tags": ["language:russian", "region:russia", "topic:science", "type:publication"]}
+{"key": "andritz-spectrum.podigee.io", "tags": ["topic:business", "type:podcast"]}
+{"key": "andro4all.com", "tags": ["language:spanish", "region:spain", "topic:gadgets", "topic:news", "type:publication"]}
+{"key": "androbin.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "android-mt.ouest-france.fr", "tags": ["language:french", "region:france", "topic:gadgets", "topic:news", "type:publication"]}
+{"key": "androidengineers.substack.com", "tags": ["topic:programming", "type:newsletter"]}
+{"key": "androidessence.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "androidkenya.com", "tags": ["region:africa", "topic:gadgets", "topic:news", "type:publication"]}
+{"key": "androidpc.es", "tags": ["language:spanish", "region:spain", "topic:gadgets", "topic:news", "type:publication"]}
+{"key": "androidstudio.googleblog.com", "tags": ["topic:programming", "type:vendor-blog"]}
+{"key": "androidworld.nl", "tags": ["language:dutch", "topic:gadgets", "topic:news", "type:publication"]}
+{"key": "andruballota.podomatic.com", "tags": ["topic:music", "type:podcast"]}
+{"key": "andruvolinsky.substack.com", "tags": ["topic:politics", "type:newsletter"]}
+{"key": "andsa.md", "tags": ["region:europe", "topic:government", "topic:infrastructure", "type:institution"]}
+{"key": "andsmi.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "andso.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "andthevalleyshook.com", "tags": ["region:usa", "topic:sport", "type:publication"]}
+{"key": "andwass.github.io", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "andwati.com", "tags": ["topic:programming", "topic:security", "type:personal-blog"]}
+{"key": "andwbcp.libsyn.com", "tags": ["topic:books", "topic:entertainment", "type:podcast"]}
+{"key": "andy-bell.co.uk", "tags": ["region:uk", "topic:web-development", "type:personal-blog"]}
+{"key": "andy.hammerhartes.de", "tags": ["topic:programming", "topic:security", "type:personal-blog"]}
+{"key": "andy.kitchen", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "andy.terrel.us", "tags": ["topic:open-source", "topic:programming", "type:personal-blog"]}
+{"key": "andyatkinson.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "andybarilla.substack.com", "tags": ["topic:ai", "topic:programming", "type:newsletter"]}
+{"key": "andybarrandy.substack.com", "tags": ["topic:music", "topic:personal", "type:newsletter"]}
+{"key": "andybeta.substack.com", "tags": ["topic:music", "type:newsletter"]}
+{"key": "andybromberg.com", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "andybrown.me.uk", "tags": ["topic:embedded", "topic:hardware", "type:personal-blog"]}
+{"key": "andycallaghan.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "andycroll.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "andydeep.podomatic.com", "tags": ["topic:music", "type:podcast"]}
+{"key": "andydglenn.substack.com", "tags": ["topic:design", "topic:lifestyle", "type:newsletter"]}
+{"key": "andydiggle.substack.com", "tags": ["topic:entertainment", "topic:politics", "topic:security", "type:newsletter"]}
+{"key": "andydoesart.substack.com", "tags": ["region:uk", "topic:art", "type:newsletter"]}
+{"key": "andydote.co.uk", "tags": ["region:uk", "topic:programming", "type:personal-blog"]}
+{"key": "andydyer.org", "tags": ["topic:music", "type:personal-blog"]}
+{"key": "andyemurphy.substack.com", "tags": ["topic:philosophy", "topic:religion", "type:newsletter"]}
+{"key": "andyfeatherston.substack.com", "tags": ["topic:art", "type:newsletter"]}
+{"key": "andyfelong.com", "tags": ["topic:hardware", "topic:programming", "type:personal-blog"]}
+{"key": "andygibson.net", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "andygiger.substack.com", "tags": ["topic:art", "type:newsletter"]}
+{"key": "andygoetz.org", "tags": ["topic:environment", "type:personal-blog"]}
+{"key": "andygrunwald.com", "tags": ["topic:open-source", "topic:software-engineering", "type:personal-blog"]}
+{"key": "andyholmes.ca", "tags": ["region:canada", "topic:open-source", "topic:software-engineering", "type:personal-blog"]}
+{"key": "andyisonline.bearblog.dev", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "andyjam.website", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "andyjohnson.uk", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "andyjpizza.substack.com", "tags": ["topic:design", "type:newsletter"]}
+{"key": "andykjcragg.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "andykong.org", "tags": ["topic:embedded", "topic:hardware", "type:personal-blog"]}
+{"key": "andykonwinski.com", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "andyleonard.blog", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "andylothian.podomatic.com", "tags": ["topic:music", "type:podcast"]}
+{"key": "andymaleh.blogspot.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "andymasley.com", "tags": ["topic:philosophy", "type:personal-blog"]}
+{"key": "andymatuschak.org", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "andymcnally.substack.com", "tags": ["topic:art", "type:newsletter"]}
+{"key": "andymonaghan.substack.com", "tags": ["topic:art", "topic:lifestyle", "type:newsletter"]}
+{"key": "andymyersonline.substack.com", "tags": ["topic:religion", "type:newsletter"]}
+{"key": "andynartist.substack.com", "tags": ["topic:art", "topic:music", "type:newsletter"]}
+{"key": "andypatrick.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "andypbrowne.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "andypi.co.uk", "tags": ["region:uk", "topic:programming", "type:personal-blog"]}
+{"key": "andyrush.fedihost.io", "tags": ["topic:lifestyle", "type:personal-blog"]}
+{"key": "andys.page", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
