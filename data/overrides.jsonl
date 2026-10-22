@@ -76,7 +76,7 @@
 {"key": "allendowney.com", "tags": ["topic:ai", "topic:mathematics", "type:personal-blog"]}
 {"key": "amasad.me", "tags": ["topic:personal", "topic:software-engineering", "topic:tech-industry", "type:personal-blog"]}
 {"key": "anandology.com", "tags": ["region:india", "topic:open-source", "topic:programming", "topic:programming:python", "type:personal-blog"]}
-{"key": "andrealeopardi.com", "tags": ["topic:programming", "topic:programming:elixir", "type:personal-blog"]}
+{"key": "andrealeopardi.com", "tags": ["topic:programming", "topic:programming:elixir", "topic:systems", "type:personal-blog"]}
 {"key": "andrestc.com", "tags": ["topic:systems", "topic:infrastructure", "type:personal-blog"]}
 {"key": "andyljones.com", "tags": ["topic:ai", "topic:mathematics", "type:personal-blog"]}
 {"key": "any.run", "tags": ["topic:security", "type:vendor-blog"]}
@@ -531,7 +531,7 @@
 {"key": "amberwilson.co.uk", "tags": ["topic:software-engineering", "topic:personal", "type:personal-blog", "region:uk"]}
 {"key": "amitmerchant.com", "tags": ["topic:programming:php", "topic:web-development", "type:personal-blog"]}
 {"key": "amydyer.art", "tags": ["topic:art", "type:personal-blog"]}
-{"key": "andregarzia.com", "tags": ["topic:personal", "topic:software-engineering", "type:personal-blog"]}
+{"key": "andregarzia.com", "tags": ["topic:art", "topic:personal", "topic:software-engineering", "topic:tech-industry", "type:personal-blog"]}
 {"key": "andrew-best.com", "tags": ["topic:software-engineering", "topic:ai", "type:personal-blog"]}
 {"key": "andrewbrookins.com", "tags": ["topic:software-engineering", "topic:personal", "type:personal-blog"]}
 {"key": "andreyorst.gitlab.io", "tags": ["topic:programming:lisp", "type:personal-blog"]}
@@ -9999,3 +9999,235 @@
 {"key": "anastasiakrogh.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "anastasiaprokhorova.substack.com", "tags": ["topic:design", "type:newsletter"]}
 {"key": "anastasiaprotopapa.substack.com", "tags": ["topic:software-engineering", "type:newsletter"]}
+{"key": "https://anastasiaumrik.podigee.io/feed/mp3", "tags": ["language:german", "topic:personal", "type:podcast"]}
+{"key": "anastasiya-voskresenskaya.ru", "tags": ["language:russian", "region:russia", "topic:personal", "type:podcast"]}
+{"key": "https://anasteiner.substack.com/feed", "tags": ["topic:art", "topic:personal", "type:personal-blog"]}
+{"key": "anat.sn", "tags": ["language:french", "region:france", "topic:government", "topic:infrastructure", "type:institution"]}
+{"key": "anativeson.org", "tags": ["topic:news", "topic:politics", "type:publication"]}
+{"key": "anatole.fyi", "tags": ["topic:ai", "type:vendor-blog"]}
+{"key": "anatoliikmt.me", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "anatolika24.gr", "tags": ["region:europe", "topic:news", "type:publication"]}
+{"key": "anatolinicolae.com", "tags": ["topic:programming", "topic:systems", "type:personal-blog"]}
+{"key": "anatoliyruss.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://anatomyofahealthybuilding.substack.com/feed", "tags": ["topic:environment", "topic:health", "type:personal-blog"]}
+{"key": "https://anatomyofsuccess.libsyn.com/rss", "tags": ["topic:health", "topic:personal", "type:podcast"]}
+{"key": "anaulin.org", "tags": ["topic:books", "topic:lifestyle", "type:personal-blog"]}
+{"key": "https://anauthorsnotes.substack.com/feed", "tags": ["topic:books", "type:newsletter"]}
+{"key": "https://anba.com.br/en/feed/", "tags": ["region:latin-america", "topic:business", "topic:news", "type:publication"]}
+{"key": "https://anba.com.br/feed/", "tags": ["language:portuguese", "region:latin-america", "topic:business", "topic:news", "type:publication"]}
+{"key": "anbaaexpress.ma", "tags": ["language:arabic", "region:africa", "topic:news", "topic:politics", "type:publication"]}
+{"key": "anbar.iq", "tags": ["language:arabic", "region:middle-east", "topic:government", "topic:news", "type:institution"]}
+{"key": "https://anbariloche.com.ar/rss/ciencia-y-salud", "tags": ["language:spanish", "region:latin-america", "topic:health", "topic:science", "type:publication"]}
+{"key": "https://anbariloche.com.ar/rss/clasificados", "tags": ["language:spanish", "region:latin-america", "topic:news", "type:aggregator"]}
+{"key": "https://anbariloche.com.ar/rss/columnas", "tags": ["language:spanish", "region:latin-america", "topic:politics", "type:publication"]}
+{"key": "anbilarabi.com", "tags": ["language:arabic", "topic:business", "topic:programming", "type:podcast"]}
+{"key": "anbpunjab.in", "tags": ["region:india", "topic:news", "topic:sport", "type:publication"]}
+{"key": "https://anbu7m.podcaster.de/ampulsderzeit.rss", "tags": ["language:german", "region:germany", "topic:ai", "topic:transport", "type:podcast"]}
+{"key": "https://ancasandu.substack.com/feed", "tags": ["topic:design", "topic:politics", "type:personal-blog"]}
+{"key": "ancashnoticias.com", "tags": ["language:spanish", "region:latin-america", "topic:news", "type:publication"]}
+{"key": "ancaslifestyle.co.uk", "tags": ["region:uk", "topic:lifestyle", "topic:travel", "type:personal-blog"]}
+{"key": "https://anccarletonplace.libsyn.com/rss", "tags": ["region:canada", "topic:religion", "type:podcast"]}
+{"key": "https://anccom.sociales.uba.ar/feed/", "tags": ["language:spanish", "region:latin-america", "topic:journalism", "topic:media", "type:institution"]}
+{"key": "https://ancestory.substack.com/feed", "tags": ["topic:history", "topic:personal", "type:vendor-blog"]}
+{"key": "ancestral.games", "tags": ["language:spanish", "topic:gaming", "type:publication"]}
+{"key": "https://ancestralknowledge.libsyn.com/rss", "tags": ["topic:personal", "topic:religion", "type:podcast"]}
+{"key": "ancestrals.com.ng", "tags": ["region:nigeria", "topic:history", "topic:news", "type:publication"]}
+{"key": "https://ancestralwhispers.substack.com/feed", "tags": ["topic:history", "topic:religion", "type:personal-blog"]}
+{"key": "ancf.com.au", "tags": ["region:australia", "topic:religion", "type:podcast"]}
+{"key": "anchetaonline.ro", "tags": ["region:europe", "topic:news", "type:publication"]}
+{"key": "https://anchor-point.podomatic.com/rss2.xml", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://anchor.fm/s/100005c98/podcast/rss", "tags": ["topic:gaming", "topic:sport", "type:podcast"]}
+{"key": "https://anchor.fm/s/10000f6e4/podcast/rss", "tags": ["language:spanish", "topic:entertainment", "topic:personal", "type:podcast"]}
+{"key": "https://anchor.fm/s/100013ff0/podcast/rss", "tags": ["topic:sport", "type:podcast"]}
+{"key": "https://anchoragecrossandanchorchurch.podbean.com/feed.xml", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "https://anchorberlin.substack.com/feed", "tags": ["region:germany", "topic:history", "topic:personal", "type:personal-blog"]}
+{"key": "https://anchorchange.substack.com/feed", "tags": ["region:usa", "topic:ai", "topic:politics", "type:newsletter"]}
+{"key": "anchore.com", "tags": ["topic:security", "topic:software-engineering", "type:vendor-blog"]}
+{"key": "https://anchoredandalive.com/podcasts/75-Anchored-Alive-with-Blaze.rss", "tags": ["topic:personal", "type:podcast"]}
+{"key": "https://anchoredinthelord.libsyn.com/rss", "tags": ["topic:religion", "type:podcast"]}
+{"key": "anchoredintheword.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://anchorednarratives.substack.com/feed", "tags": ["topic:politics", "topic:security", "type:newsletter"]}
+{"key": "https://anchorradio.podomatic.com/rss2.xml", "tags": ["topic:music", "type:podcast"]}
+{"key": "https://ancientandnew.podbean.com/feed.xml", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://ancientblogger.libsyn.com/rss", "tags": ["topic:history", "type:podcast"]}
+{"key": "ancientcivilization.net", "tags": ["language:japanese", "topic:history", "type:personal-blog"]}
+{"key": "ancientcontent.com", "tags": ["topic:history", "type:publication"]}
+{"key": "https://ancientfutures.substack.com/feed", "tags": ["topic:philosophy", "topic:religion", "type:newsletter"]}
+{"key": "https://ancienthealingwayswithpip.substack.com/feed", "tags": ["topic:health", "topic:religion", "type:personal-blog"]}
+{"key": "https://ancientlovelover.substack.com/feed", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://ancientneareasttoday.substack.com/feed", "tags": ["region:middle-east", "topic:history", "type:newsletter"]}
+{"key": "https://ancientnow.substack.com/feed", "tags": ["topic:history", "type:personal-blog"]}
+{"key": "https://ancientnumis.substack.com/feed", "tags": ["topic:history", "type:personal-blog"]}
+{"key": "https://ancientproblemz.substack.com/feed", "tags": ["topic:philosophy", "type:podcast"]}
+{"key": "https://ancientriffs.substack.com/feed", "tags": ["topic:religion", "type:personal-blog"]}
+{"key": "ancientscience.in", "tags": ["region:india", "topic:religion", "topic:science", "type:personal-blog"]}
+{"key": "ancientshell.com", "tags": ["topic:gaming", "type:podcast"]}
+{"key": "https://ancientwarfare.libsyn.com/rss", "tags": ["topic:history", "topic:military", "type:podcast"]}
+{"key": "https://ancientwisdomofthefeminine.podbean.com/feed.xml", "tags": ["topic:personal", "topic:religion", "type:podcast"]}
+{"key": "https://ancientwords.podbean.com/feed.xml", "tags": ["topic:religion", "type:podcast"]}
+{"key": "ancnews.com.kh", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "https://ancolie.substack.com/feed", "tags": ["topic:business", "type:newsletter"]}
+{"key": "https://anconarivistaacolori.substack.com/feed", "tags": ["language:italian", "region:italy", "topic:art", "topic:news", "type:publication"]}
+{"key": "https://ancorleans.libsyn.com/rss", "tags": ["region:canada", "topic:religion", "type:podcast"]}
+{"key": "https://ancrypt.substack.com/feed", "tags": ["topic:programming", "topic:security", "type:vendor-blog"]}
+{"key": "ancy.gouv.tg", "tags": ["language:french", "region:africa", "topic:government", "topic:security", "type:institution"]}
+{"key": "https://andachtscast.podigee.io/feed/mp3", "tags": ["language:german", "topic:religion", "type:podcast"]}
+{"key": "andadinosaur.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "andalannews.com", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "https://andalas.rakyatpos.id/feed", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "https://andalitebandits.libsyn.com/rss", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://andalucia.ebiblio.es/resource_feeds/recent_feed.atom", "tags": ["language:spanish", "region:spain", "topic:news", "type:aggregator"]}
+{"key": "andaluciaeconomica.com", "tags": ["language:spanish", "region:spain", "topic:business", "topic:economics", "type:publication"]}
+{"key": "https://andaluciagame.andaluciainformacion.es/rss/", "tags": ["language:spanish", "region:spain", "topic:news", "topic:sport", "type:publication"]}
+{"key": "https://andaluciagame.andaluciainformacion.es/rss/a-curarse-en-salud/", "tags": ["language:spanish", "region:spain", "topic:health", "type:publication"]}
+{"key": "https://andaluciagame.andaluciainformacion.es/rss/album/", "tags": ["language:spanish", "region:spain", "topic:news", "type:aggregator"]}
+{"key": "https://andaluciainformacion.es/rss/a-curarse-en-salud/", "tags": ["language:spanish", "region:spain", "topic:health", "type:publication"]}
+{"key": "https://andaluciainformacion.es/rss/aemprendiendo/", "tags": ["language:spanish", "region:spain", "topic:business", "topic:economics", "type:publication"]}
+{"key": "https://andaluciainformacion.es/rss/album/", "tags": ["language:spanish", "region:spain", "topic:news", "type:aggregator"]}
+{"key": "andamanchronicle.net", "tags": ["region:india", "topic:news", "type:publication"]}
+{"key": "andamookaobservatory.com.au", "tags": ["region:australia", "topic:science", "topic:travel", "type:institution"]}
+{"key": "https://andanafoto.com/feed/podcast/eresaquelloquemiras/", "tags": ["language:spanish", "topic:art", "topic:personal", "type:podcast"]}
+{"key": "https://andandstudio.substack.com/feed", "tags": ["topic:design", "type:vendor-blog"]}
+{"key": "https://andarian.substack.com/feed", "tags": ["topic:books", "topic:gaming", "type:personal-blog"]}
+{"key": "https://andataeritornopodcast.substack.com/feed", "tags": ["language:italian", "region:italy", "topic:history", "topic:travel", "type:podcast"]}
+{"key": "andeers.com", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "andelaproducts.com", "tags": ["region:usa", "topic:environment", "type:vendor-blog"]}
+{"key": "andenviro.ca", "tags": ["region:canada", "topic:environment", "type:vendor-blog"]}
+{"key": "anderegg.ca", "tags": ["region:canada", "topic:personal", "topic:programming", "type:personal-blog"]}
+{"key": "anders.conbere.org", "tags": ["topic:art", "topic:personal", "type:personal-blog"]}
+{"key": "anders.logg.org", "tags": ["region:europe", "topic:education", "topic:mathematics", "type:personal-blog"]}
+{"key": "https://andersbeten.podcaster.de/andersbeten.rss", "tags": ["language:german", "topic:personal", "type:podcast"]}
+{"key": "andersekstrom.ax", "tags": ["region:europe", "topic:politics", "type:personal-blog"]}
+{"key": "andershusa.com", "tags": ["topic:food", "topic:travel", "type:personal-blog"]}
+{"key": "https://andersindset.substack.com/feed", "tags": ["topic:philosophy", "type:personal-blog"]}
+{"key": "https://andersmacher-podcast.podigee.io/feed/mp3", "tags": ["language:german", "topic:personal", "type:podcast"]}
+{"key": "https://andersmithund.podigee.io/feed/mp3", "tags": ["language:german", "topic:lifestyle", "type:podcast"]}
+{"key": "andersmurphy.com", "tags": ["topic:programming:clojure", "type:personal-blog"]}
+{"key": "https://anderson.bearblog.dev/feed/?type=rss", "tags": ["topic:hardware", "topic:programming", "type:personal-blog"]}
+{"key": "https://andersonadvisors.podbean.com/feed.xml", "tags": ["topic:business", "topic:finance", "type:podcast"]}
+{"key": "https://andersonalerts.substack.com/feed", "tags": ["region:usa", "topic:politics", "type:newsletter"]}
+{"key": "https://andersonbkk.substack.com/feed", "tags": ["topic:ai", "topic:media", "type:newsletter"]}
+{"key": "https://andersonleite.hashnode.dev/rss.xml", "tags": ["topic:ai", "topic:web-development", "type:personal-blog"]}
+{"key": "https://andersonshooting.libsyn.com/rss", "tags": ["topic:sport", "type:podcast"]}
+{"key": "https://andersonumcvideo.podomatic.com/rss2.xml", "tags": ["topic:religion", "type:podcast"]}
+{"key": "anderspoirel.net", "tags": ["topic:data", "topic:programming", "type:personal-blog"]}
+{"key": "anderstrier.dk", "tags": ["topic:hardware", "topic:networking", "type:personal-blog"]}
+{"key": "https://anderswo-podcast.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:environment", "topic:travel", "type:podcast"]}
+{"key": "https://andeverygoodpath.substack.com/feed", "tags": ["topic:food", "topic:lifestyle", "type:personal-blog"]}
+{"key": "https://andeverythingnice.substack.com/feed", "tags": ["region:usa", "topic:lifestyle", "topic:travel", "type:personal-blog"]}
+{"key": "andhrapatrika.in", "tags": ["region:india", "topic:news", "topic:politics", "type:publication"]}
+{"key": "andi-zimmerer.com", "tags": ["topic:programming", "topic:systems", "type:personal-blog"]}
+{"key": "andi.grasserisen.de", "tags": ["region:germany", "topic:networking", "topic:programming", "type:personal-blog"]}
+{"key": "https://andibartz.substack.com/feed", "tags": ["topic:books", "type:newsletter"]}
+{"key": "https://andie.bearblog.dev/feed/", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://andigetdressed.substack.com/feed", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "https://andiinbloom.substack.com/feed", "tags": ["topic:food", "topic:lifestyle", "type:newsletter"]}
+{"key": "https://andileeman.substack.com/feed", "tags": ["topic:media", "type:newsletter"]}
+{"key": "andinfinity.eu", "tags": ["topic:personal", "topic:tech-industry", "type:personal-blog"]}
+{"key": "andiroberts.com", "tags": ["topic:business", "type:vendor-blog"]}
+{"key": "https://anditeran.substack.com/feed", "tags": ["topic:entertainment", "type:personal-blog"]}
+{"key": "https://anditsjustme.substack.com/feed", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://andjelicaaa.substack.com/feed", "tags": ["topic:business", "type:newsletter"]}
+{"key": "andlukyane.com", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "https://andmagazine.substack.com/feed", "tags": ["region:usa", "topic:politics", "type:publication"]}
+{"key": "https://andmakingand.bearblog.dev/feed/", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "ando.life", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "andolana.in", "tags": ["region:india", "topic:news", "type:publication"]}
+{"key": "https://andolfatto.blogspot.com/feeds/posts/default", "tags": ["topic:economics", "topic:politics", "type:personal-blog"]}
+{"key": "http://andonethingmore.blogspot.com/feeds/posts/default", "tags": ["topic:politics", "topic:sport", "type:personal-blog"]}
+{"key": "andorraara.com", "tags": ["region:europe", "topic:media", "topic:news", "type:publication"]}
+{"key": "andorraesjove.ad", "tags": ["region:europe", "topic:art", "topic:entertainment", "type:publication"]}
+{"key": "andoverchristiancenter.org", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "andpalmier.com", "tags": ["topic:programming", "topic:security", "type:personal-blog"]}
+{"key": "andpremium.jp", "tags": ["language:japanese", "region:japan", "topic:art", "topic:lifestyle", "type:publication"]}
+{"key": "https://andpurpose.substack.com/feed", "tags": ["topic:business", "topic:environment", "type:newsletter"]}
+{"key": "https://andrack-neu.podcaster.de/about-schmidt-show.rss", "tags": ["language:german", "region:germany", "topic:entertainment", "type:podcast"]}
+{"key": "andraskindler.com", "tags": ["topic:business", "topic:programming", "type:personal-blog"]}
+{"key": "andraskora.com", "tags": ["topic:ai", "topic:tech-industry", "type:personal-blog"]}
+{"key": "https://andre-mampft.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:food", "type:podcast"]}
+{"key": "https://andre.arko.net/atom.xml", "tags": ["topic:programming:ruby", "type:personal-blog"]}
+{"key": "https://andre.lackmann.net/index.xml", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "http://andre.torrez.org/notes.rss", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "https://andrea-brandt-podcast.podigee.io/feed/mp3", "tags": ["language:german", "topic:personal", "type:podcast"]}
+{"key": "https://andrea.corbellini.name/feed.atom", "tags": ["topic:programming:python", "type:personal-blog"]}
+{"key": "https://andrea.podigee.io/feed/mp3", "tags": ["language:german", "topic:personal", "type:podcast"]}
+{"key": "andrea4burlington.ca", "tags": ["region:canada", "topic:politics", "type:institution"]}
+{"key": "https://andreaafirth.substack.com/feed", "tags": ["topic:books", "type:newsletter"]}
+{"key": "https://andreaandnik.substack.com/feed", "tags": ["topic:education", "type:newsletter"]}
+{"key": "https://andreaaskowitz.substack.com/feed", "tags": ["topic:books", "type:newsletter"]}
+{"key": "andreabaccega.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "https://andreabariselli.substack.com/feed", "tags": ["language:italian", "region:italy", "topic:science", "type:newsletter"]}
+{"key": "andreabergia.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "andreabertoncini.com", "tags": ["topic:science", "type:podcast"]}
+{"key": "https://andreabritton.substack.com/feed", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "https://andreacagan.substack.com/feed", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://andreachiarelli.substack.com/feed", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "https://andreaferrario1.substack.com/feed", "tags": ["language:italian", "region:italy", "topic:news", "topic:politics", "type:newsletter"]}
+{"key": "andreacorinti.com", "tags": ["language:italian", "region:italy", "topic:gaming", "topic:music", "type:personal-blog"]}
+{"key": "https://andreaelani.substack.com/feed", "tags": ["topic:art", "topic:personal", "type:personal-blog"]}
+{"key": "https://andreafeucht.com/feed", "tags": ["topic:health", "topic:sport", "type:personal-blog"]}
+{"key": "https://andreafiorino.podomatic.com/rss2.xml", "tags": ["topic:music", "type:podcast"]}
+{"key": "andreafortuna.org", "tags": ["topic:programming", "topic:security", "type:personal-blog"]}
+{"key": "https://andreafrey.substack.com/feed", "tags": ["topic:health", "topic:religion", "type:newsletter"]}
+{"key": "andreagao.com", "tags": ["topic:ai", "topic:business", "type:personal-blog"]}
+{"key": "https://andreagibson.substack.com/feed", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "https://andreagilliam.substack.com/feed", "tags": ["topic:business", "type:personal-blog"]}
+{"key": "https://andreajenelle.substack.com/feed", "tags": ["topic:books", "type:newsletter"]}
+{"key": "https://andrealinett.substack.com/feed", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "https://andrealism.substack.com/feed", "tags": ["topic:art", "topic:personal", "type:personal-blog"]}
+{"key": "andrealmeid.com", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "https://andreamaiwrites.substack.com/feed", "tags": ["topic:personal", "topic:religion", "type:personal-blog"]}
+{"key": "andreamann.com", "tags": ["region:uk", "topic:books", "type:personal-blog"]}
+{"key": "https://andreanguyen.substack.com/feed", "tags": ["topic:food", "type:newsletter"]}
+{"key": "https://andreanourse.substack.com/feed", "tags": ["topic:books", "topic:lifestyle", "type:personal-blog"]}
+{"key": "https://andreapatrick.com/feed/podcast/ceomindset/", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://andreapetkovic.substack.com/feed", "tags": ["topic:sport", "type:newsletter"]}
+{"key": "andreapivetta.com", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "andrearaponi.it", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "https://andrearodolfonadia.substack.com/feed", "tags": ["language:italian", "region:italy", "topic:personal", "topic:politics", "type:newsletter"]}
+{"key": "https://andrearomoli.substack.com/feed", "tags": ["language:italian", "region:italy", "topic:business", "topic:design", "type:newsletter"]}
+{"key": "https://andreas-ebert.podbean.com/feed.xml", "tags": ["language:german", "region:germany", "topic:personal", "type:podcast"]}
+{"key": "andreas-mausch.de", "tags": ["region:germany", "topic:networking", "topic:programming", "type:personal-blog"]}
+{"key": "andreas.heigl.org", "tags": ["topic:programming:php", "type:personal-blog"]}
+{"key": "andreas.scherbaum.la", "tags": ["region:germany", "topic:history", "topic:programming", "type:personal-blog"]}
+{"key": "andreas.welcomes-you.com", "tags": ["topic:embedded", "topic:systems", "type:personal-blog"]}
+{"key": "https://andreasaidit.substack.com/feed", "tags": ["topic:business", "type:newsletter"]}
+{"key": "https://andreascher.substack.com/feed", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "https://andreasfertig.blog/feed.xml", "tags": ["topic:programming:cpp", "type:personal-blog"]}
+{"key": "https://andreasfertig.com/feed.xml", "tags": ["topic:programming:cpp", "type:personal-blog"]}
+{"key": "andreasflakstad.no", "tags": ["topic:programming", "topic:security", "type:personal-blog"]}
+{"key": "andreasfragner.com", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "andreasimonecosta.dev", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "https://andreasjhkarlsson.github.io/feed.xml", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://andreasklippe.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:business", "type:podcast"]}
+{"key": "https://andreaskossiski.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:journalism", "type:podcast"]}
+{"key": "https://andreasmueller.substack.com/feed", "tags": ["topic:finance", "type:newsletter"]}
+{"key": "https://andreasolbes.substack.com/feed", "tags": ["language:spanish", "topic:business", "topic:design", "type:newsletter"]}
+{"key": "andreasschrade.com", "tags": ["topic:ai", "type:vendor-blog"]}
+{"key": "https://andreastrienbacher.libsyn.com/rss", "tags": ["language:german", "region:germany", "topic:health", "topic:sport", "type:podcast"]}
+{"key": "https://andreastrong.substack.com/feed", "tags": ["region:usa", "topic:food", "type:newsletter"]}
+{"key": "https://andreasusenbenz.substack.com/feed", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "https://andreaswoltemath.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:health", "type:podcast"]}
+{"key": "andreatedwards.com", "tags": ["topic:business", "type:personal-blog"]}
+{"key": "https://andreavalencia.substack.com/feed", "tags": ["topic:design", "topic:personal", "type:personal-blog"]}
+{"key": "https://andreawex.substack.com/feed", "tags": ["region:usa", "topic:politics", "type:personal-blog"]}
+{"key": "https://andreawightwick.substack.com/feed", "tags": ["topic:business", "topic:lifestyle", "type:newsletter"]}
+{"key": "https://andrecardoso.substack.com/feed", "tags": ["topic:finance", "type:newsletter"]}
+{"key": "andrecasal.com", "tags": ["topic:data", "topic:programming", "type:personal-blog"]}
+{"key": "andrechaperon.com", "tags": ["topic:personal", "topic:web-development", "type:personal-blog"]}
+{"key": "https://andrechoquet.substack.com/feed", "tags": ["topic:religion", "type:newsletter"]}
+{"key": "https://andreeadalialazar.substack.com/feed", "tags": ["topic:design", "type:newsletter"]}
+{"key": "https://andreeahalikias.substack.com/feed", "tags": ["topic:books", "topic:business", "type:newsletter"]}
+{"key": "https://andreearosca.substack.com/feed", "tags": ["topic:business", "type:newsletter"]}
+{"key": "andrei-calazans.com", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "andrei.xyz", "tags": ["topic:music", "type:personal-blog"]}
+{"key": "andreicioara.com", "tags": ["topic:programming", "topic:web-development", "type:personal-blog"]}
+{"key": "https://andreigogiu.substack.com/feed", "tags": ["topic:ai", "topic:security", "type:newsletter"]}
+{"key": "andreiluca.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "andreimaxim.com", "tags": ["topic:programming:ruby", "topic:web-development", "type:personal-blog"]}
+{"key": "andreinc.net", "tags": ["topic:personal", "topic:programming", "type:personal-blog"]}
+{"key": "andreinicholson.com", "tags": ["topic:networking", "topic:systems", "type:personal-blog"]}
+{"key": "andreioros.com", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "andreizgirvaci.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "andrej.sh", "tags": ["topic:open-source", "topic:programming", "type:personal-blog"]}
+{"key": "andrej.xyz", "tags": ["topic:ai", "type:personal-blog"]}
