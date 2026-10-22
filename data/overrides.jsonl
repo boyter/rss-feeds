@@ -9924,7 +9924,7 @@
 {"key": "analog-antiquarian.net", "tags": ["topic:history", "type:personal-blog"]}
 {"key": "analog-gaming.de", "tags": ["topic:gaming", "type:personal-blog"]}
 {"key": "analog.borderlands.cc", "tags": ["topic:sport", "type:publication"]}
-{"key": "analogbit.com", "tags": ["topic:gadgets", "type:personal-blog"]}
+{"key": "analogbit.com", "tags": ["topic:gadgets", "topic:hardware", "type:personal-blog"]}
 {"key": "analogdreams.zip", "tags": ["topic:tech-industry", "type:personal-blog"]}
 {"key": "analogdungeon.com", "tags": ["topic:gaming", "type:podcast"]}
 {"key": "analogexplorer.substack.com", "tags": ["topic:art", "type:newsletter"]}
@@ -10797,3 +10797,243 @@
 {"key": "annagarssen.substack.com", "tags": ["language:dutch", "topic:education", "type:newsletter"]}
 {"key": "annagaudencio.substack.com", "tags": ["language:portuguese", "topic:business", "type:newsletter"]}
 {"key": "annagoodman.substack.com", "tags": ["topic:software-engineering", "type:newsletter"]}
+{"key": "https://01net.com/actualites/securite/feed/", "tags": ["language:french", "region:france", "topic:security", "type:publication"]}
+{"key": "https://01net.com/actualites/technos/feed/", "tags": ["language:french", "region:france", "topic:gadgets", "topic:tech-industry", "type:publication"]}
+{"key": "https://01net.com/tests/feed/", "tags": ["language:french", "region:france", "topic:gadgets", "type:publication"]}
+{"key": "https://100komma7.lu/show/570/rss", "tags": ["region:europe", "topic:music", "type:podcast"]}
+{"key": "https://100komma7.lu/show/595/rss", "tags": ["region:europe", "topic:entertainment", "type:podcast"]}
+{"key": "https://100komma7.lu/show/658/rss", "tags": ["region:europe", "topic:music", "type:podcast"]}
+{"key": "http://12bingolgazetesi.com.tr/rss-spor-5.xml", "tags": ["topic:sport", "type:publication"]}
+{"key": "http://12bingolgazetesi.com.tr/rss-teknoloji-4.xml", "tags": ["topic:tech-industry", "type:publication"]}
+{"key": "http://12bingolgazetesi.com.tr/rss-turizm-21.xml", "tags": ["topic:travel", "type:publication"]}
+{"key": "https://2021.radio1.ch/stream/applepodcasts/home-sweet-home/feed.xml", "tags": ["language:german", "region:europe", "topic:design", "type:podcast"]}
+{"key": "https://2021.radio1.ch/stream/applepodcasts/immobilienwerkstatt/feed.xml", "tags": ["language:german", "region:europe", "topic:finance", "type:podcast"]}
+{"key": "https://2021.radio1.ch/stream/applepodcasts/invinoveritas/feed.xml", "tags": ["language:german", "region:europe", "topic:food", "type:podcast"]}
+{"key": "https://24newshd.tv/rss/hockey", "tags": ["region:pakistan", "topic:sport", "type:publication"]}
+{"key": "https://24newshd.tv/rss/latest", "tags": ["region:pakistan", "topic:news", "type:publication"]}
+{"key": "https://24newshd.tv/rss/lifestyle", "tags": ["region:pakistan", "topic:lifestyle", "type:publication"]}
+{"key": "https://250andcounting.com/category/us-history/american-revolution/feed/", "tags": ["region:usa", "topic:history", "type:publication"]}
+{"key": "https://250andcounting.com/category/us-history/feed/", "tags": ["region:usa", "topic:history", "type:publication"]}
+{"key": "https://250andcounting.com/feed/podcast/", "tags": ["region:usa", "topic:history", "type:podcast"]}
+{"key": "https://3speak.tv/rss/caithlyn.xml", "tags": ["topic:music", "type:podcast"]}
+{"key": "https://3speak.tv/rss/cesarsj5.xml", "tags": ["topic:music", "type:podcast"]}
+{"key": "https://3speak.tv/rss/cindynancy.xml", "tags": ["topic:food", "type:podcast"]}
+{"key": "https://902.gr/feed/42228", "tags": ["topic:politics", "type:publication"]}
+{"key": "https://902.gr/feed/42230", "tags": ["topic:politics", "type:publication"]}
+{"key": "https://902.gr/feed/42232", "tags": ["topic:politics", "type:publication"]}
+{"key": "https://aaptanews.com/rss/category/%E0%B2%B0%E0%B2%BE%E0%B2%9C%E0%B2%95%E0%B3%80%E0%B2%AF", "tags": ["region:india", "topic:politics", "type:publication"]}
+{"key": "https://aaptanews.com/rss/category/%E0%B2%B0%E0%B2%BE%E0%B2%9C%E0%B3%8D%E0%B2%AF", "tags": ["region:india", "topic:news", "type:publication"]}
+{"key": "https://aaptanews.com/rss/category/%E0%B2%B9%E0%B2%BE%E0%B2%B5%E0%B3%87%E0%B2%B0%E0%B2%BF", "tags": ["region:india", "topic:news", "type:publication"]}
+{"key": "https://access.acast.com/rss/6177c48df62eb80013741032/default", "tags": ["region:uk", "topic:environment", "type:podcast"]}
+{"key": "https://access.acast.com/rss/62065b88f850df0012335061", "tags": ["region:france", "topic:books", "type:podcast"]}
+{"key": "https://access.acast.com/rss/6215faef4b795a5d1ffd3b62", "tags": ["topic:history", "type:podcast"]}
+{"key": "https://ad.robotstart.jp/api/v1/feeds/35a10478/get-feeds/podcast", "tags": ["language:japanese", "region:japan", "topic:finance", "type:podcast"]}
+{"key": "https://ad.robotstart.jp/api/v1/feeds/35c3047c/get-feeds/podcast", "tags": ["region:japan", "topic:sport", "type:aggregator"]}
+{"key": "https://ad.robotstart.jp/api/v1/feeds/35c60484/get-feeds/podcast", "tags": ["language:japanese", "region:japan", "topic:gadgets", "type:aggregator"]}
+{"key": "https://adnkronos.com/RSS_TuttiIVideo.xml", "tags": ["language:italian", "region:italy", "topic:news", "type:publication"]}
+{"key": "https://adnkronos.com/RSS_Video.xml", "tags": ["language:italian", "region:italy", "topic:news", "type:publication"]}
+{"key": "https://afr.net/api/v2/podcast/podcastsbyidrss/?id=14609&platform=ApplePodcasts", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "https://afr.net/api/v2/podcast/podcastsbyidrss/?id=17929", "tags": ["region:middle-east", "topic:politics", "type:podcast"]}
+{"key": "https://afr.net/api/v2/podcast/podcastsbyidrss/?id=30321&platform=ApplePodcasts", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "https://aftabnews.ir/fa/rss/29", "tags": ["region:middle-east", "topic:news", "type:publication"]}
+{"key": "https://aftabnews.ir/fa/rss/3", "tags": ["region:middle-east", "topic:entertainment", "type:publication"]}
+{"key": "https://aftabnews.ir/fa/rss/31", "tags": ["region:middle-east", "topic:news", "type:publication"]}
+{"key": "https://agenciabrasil.ebc.com.br/radioagencia-nacional/rss/cultura/feed.xml", "tags": ["language:portuguese", "region:latin-america", "topic:art", "type:publication"]}
+{"key": "https://agenciabrasil.ebc.com.br/radioagencia-nacional/rss/direitos-humanos/feed.xml", "tags": ["language:portuguese", "region:latin-america", "topic:politics", "type:publication"]}
+{"key": "https://agenciabrasil.ebc.com.br/radioagencia-nacional/rss/internacional/feed.xml", "tags": ["language:portuguese", "region:world", "topic:news", "type:publication"]}
+{"key": "https://agenciasinc.es/feed/Visual", "tags": ["language:spanish", "region:spain", "topic:science", "type:publication"]}
+{"key": "https://agi.it/sport/rss.xml", "tags": ["language:italian", "region:italy", "topic:sport", "type:publication"]}
+{"key": "https://agrodiario.com/rss/el-mundo-del-vino/", "tags": ["language:spanish", "region:spain", "topic:food", "type:publication"]}
+{"key": "https://agrodiario.com/rss/espana/", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
+{"key": "https://agrodiario.com/rss/especias-y-condimentos/", "tags": ["language:spanish", "region:spain", "topic:food", "type:publication"]}
+{"key": "https://ahaber.com.tr/rss/galeri/anasayfa.xml", "tags": ["topic:news", "type:publication"]}
+{"key": "https://ahaber.com.tr/rss/galeri/dunya.xml", "tags": ["topic:news", "type:publication"]}
+{"key": "https://ahaber.com.tr/rss/galeri/ekonomi.xml", "tags": ["topic:economics", "type:publication"]}
+{"key": "https://aktualne.cz/rss/ceska-ekonomika", "tags": ["language:czech", "region:europe", "topic:economics", "type:publication"]}
+{"key": "https://aktualne.cz/rss/ceska-liga", "tags": ["language:czech", "region:europe", "topic:sport", "type:publication"]}
+{"key": "https://aktualne.cz/rss/cestovani", "tags": ["language:czech", "region:europe", "topic:travel", "type:publication"]}
+{"key": "https://aliancaintergalactica.com.br/category/na-proxima-eu-passo/npp-podcast/feed/", "tags": ["language:portuguese", "region:latin-america", "topic:entertainment", "type:podcast"]}
+{"key": "https://aliancaintergalactica.com.br/category/podcast/feed/", "tags": ["language:portuguese", "region:latin-america", "topic:entertainment", "type:podcast"]}
+{"key": "https://aliancaintergalactica.com.br/feed/podcast", "tags": ["language:portuguese", "region:latin-america", "topic:entertainment", "type:podcast"]}
+{"key": "https://alimarket.es/media/rss/nonfood.xml", "tags": ["language:spanish", "region:spain", "topic:business", "type:publication"]}
+{"key": "https://alimarket.es/media/rss/restauracion.xml", "tags": ["language:spanish", "region:spain", "topic:business", "topic:food", "type:publication"]}
+{"key": "https://alimarket.es/media/rss/sanidad.xml", "tags": ["language:spanish", "region:spain", "topic:business", "topic:health", "type:publication"]}
+{"key": "https://alresalah.news/rss/category/2", "tags": ["language:arabic", "region:middle-east", "topic:news", "type:publication"]}
+{"key": "https://alresalah.news/rss/category/3", "tags": ["language:arabic", "region:middle-east", "topic:politics", "type:publication"]}
+{"key": "https://alresalah.news/rss/category/4", "tags": ["language:arabic", "region:middle-east", "topic:sport", "type:publication"]}
+{"key": "https://alresalah.ps/rss/category/5", "tags": ["language:arabic", "region:middle-east", "topic:economics", "type:publication"]}
+{"key": "https://alresalah.ps/rss/category/6", "tags": ["language:arabic", "region:middle-east", "topic:politics", "type:publication"]}
+{"key": "https://alresalah.ps/rss/category/all", "tags": ["language:arabic", "region:middle-east", "topic:news", "type:publication"]}
+{"key": "https://alsumaria.tv/Rss/Episodes/678/%D9%84%D9%82%D8%B7%D8%A7%D8%AA", "tags": ["language:arabic", "region:middle-east", "topic:news", "type:podcast"]}
+{"key": "https://alsumaria.tv/Rss/Episodes/732/%D8%A8%D8%A7%D9%84-90", "tags": ["language:arabic", "region:middle-east", "topic:sport", "type:podcast"]}
+{"key": "https://alsumaria.tv/Rss/Episodes/745/%D8%B9%D9%84%D9%86%D8%A7%D9%8B", "tags": ["language:arabic", "region:middle-east", "topic:politics", "type:podcast"]}
+{"key": "https://altruaglobalsolutions.com/podcast/KeepWakullaCountyBeautiful.xml", "tags": ["region:usa", "topic:environment", "type:podcast"]}
+{"key": "https://altruaglobalsolutions.com/podcast/KingTalkShow.xml", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "https://altruaglobalsolutions.com/podcast/KingdomConnection.xml", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "https://am1160.atl.org/podcasts/recordings/the_morning_quest_interviews.xml", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "https://am1160.atl.org/podcasts/recordings/the_morning_quest_saints.xml", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "https://amarmedia.co.id/rss/category/opini", "tags": ["region:asia", "topic:politics", "type:publication"]}
+{"key": "https://amarmedia.co.id/rss/category/parlementaria", "tags": ["region:asia", "topic:politics", "type:publication"]}
+{"key": "https://amarmedia.co.id/rss/category/pemerintahan", "tags": ["region:asia", "topic:politics", "type:publication"]}
+{"key": "https://amarujala.com/rss/almora.xml", "tags": ["language:hindi", "region:india", "topic:news", "type:publication"]}
+{"key": "https://amarujala.com/rss/alwar.xml", "tags": ["language:hindi", "region:india", "topic:news", "type:publication"]}
+{"key": "https://amarujala.com/rss/ambala.xml", "tags": ["language:hindi", "region:india", "topic:news", "type:publication"]}
+{"key": "https://ams.pleier.ee/rss/shows/digitund", "tags": ["region:europe", "topic:gadgets", "type:podcast"]}
+{"key": "https://ams.pleier.ee/rss/shows/enntsuklopeedia", "tags": ["region:europe", "topic:history", "type:podcast"]}
+{"key": "https://ams.pleier.ee/rss/shows/ettevotlusminutid", "tags": ["region:europe", "topic:business", "type:podcast"]}
+{"key": "https://ams.postimees.ee/rss/shows/corner-1", "tags": ["region:europe", "topic:sport", "type:podcast"]}
+{"key": "https://ams.postimees.ee/rss/shows/eesti-lugude-edetabel", "tags": ["region:europe", "topic:music", "type:podcast"]}
+{"key": "https://ams.postimees.ee/rss/shows/elmar-lugu-laulust/", "tags": ["region:europe", "topic:music", "type:podcast"]}
+{"key": "https://amurmedia.ru/export/new/newsByRubric_77_29.rss", "tags": ["language:russian", "region:russia", "topic:politics", "type:publication"]}
+{"key": "https://amurmedia.ru/export/new/newsByRubric_77_30.rss", "tags": ["language:russian", "region:russia", "topic:business", "type:publication"]}
+{"key": "https://amurmedia.ru/export/new/newsByRubric_77_31.rss", "tags": ["language:russian", "region:russia", "topic:news", "type:publication"]}
+{"key": "https://analytik.news/links/rss.xml", "tags": ["language:german", "topic:science", "type:aggregator"]}
+{"key": "https://analytik.news/messen/lab-supply-berlin/programm/rss.xml", "tags": ["language:german", "topic:science", "type:aggregator"]}
+{"key": "https://analytik.news/messen/lab-supply-den-haag/programm/rss.xml", "tags": ["language:german", "topic:science", "type:aggregator"]}
+{"key": "https://anbariloche.com.ar/rss/cultura", "tags": ["language:spanish", "region:latin-america", "topic:art", "type:publication"]}
+{"key": "https://anbariloche.com.ar/rss/deportes", "tags": ["language:spanish", "region:latin-america", "topic:sport", "type:publication"]}
+{"key": "https://anbariloche.com.ar/rss/economia", "tags": ["language:spanish", "region:latin-america", "topic:economics", "type:publication"]}
+{"key": "https://anchor.fm/s/100015828/podcast/rss", "tags": ["topic:gaming", "type:podcast"]}
+{"key": "https://anchor.fm/s/100016a84/podcast/rss", "tags": ["language:spanish", "topic:lifestyle", "type:podcast"]}
+{"key": "https://anchor.fm/s/100019194/podcast/rss", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "https://andaluciagame.andaluciainformacion.es/rss/album/aljarafe/", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
+{"key": "https://andaluciagame.andaluciainformacion.es/rss/album/andalucia-game/", "tags": ["language:spanish", "region:spain", "topic:entertainment", "type:publication"]}
+{"key": "https://andaluciagame.andaluciainformacion.es/rss/album/andalucia/", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
+{"key": "https://andaluciainformacion.es/rss/album/aljarafe/", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
+{"key": "https://andaluciainformacion.es/rss/album/andalucia-game/", "tags": ["language:spanish", "region:spain", "topic:entertainment", "type:publication"]}
+{"key": "https://andaluciainformacion.es/rss/album/andalucia/", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
+{"key": "annahamilton.art", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "annahar-news.com", "tags": ["language:arabic", "region:middle-east", "topic:news", "type:publication"]}
+{"key": "annahar.com", "tags": ["language:arabic", "region:middle-east", "topic:news", "type:publication"]}
+{"key": "annahar.com.lb", "tags": ["language:arabic", "region:middle-east", "topic:news", "type:publication"]}
+{"key": "annaimagination.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "annajeller.podigee.io", "tags": ["language:german", "topic:books", "type:podcast"]}
+{"key": "annajonesfood.substack.com", "tags": ["topic:food", "type:newsletter"]}
+{"key": "annajrollins.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "annakeating.substack.com", "tags": ["topic:politics", "type:newsletter"]}
+{"key": "annaken.github.io", "tags": ["topic:infrastructure", "topic:programming", "type:personal-blog"]}
+{"key": "annakloots.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "annakschaffner.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "annalenavaniersel.substack.com", "tags": ["topic:art", "topic:food", "type:newsletter"]}
+{"key": "annaliesegodderz.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "annalindthomas.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "annalisafranzke.de", "tags": ["language:german", "topic:music", "type:podcast"]}
+{"key": "annaluciawrites.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "annalunaraven.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "annamackstack.substack.com", "tags": ["topic:business", "topic:finance", "type:newsletter"]}
+{"key": "annamariajung.substack.com", "tags": ["topic:art", "type:newsletter"]}
+{"key": "annamarieswan.substack.com", "tags": ["topic:environment", "type:newsletter"]}
+{"key": "annamathur.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "annamblake.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "annamilaeva.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "annamills.substack.com", "tags": ["topic:ai", "topic:education", "type:newsletter"]}
+{"key": "annamorgenstern.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "annanay.dev", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "annandalechurch.org", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "annanews.com", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "annanewton.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "annanimm.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "annapekkapodcast.libsyn.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "annaporte.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "annapulley.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "annaraskind.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "annarborvineyard.libsyn.com", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "annarmatson.substack.com", "tags": ["topic:politics", "type:newsletter"]}
+{"key": "annasale.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "annasansom.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "annasayburnlane.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "annasbreath.art", "tags": ["topic:religion", "type:personal-blog"]}
+{"key": "annaschroederwrites.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "annasgarden.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "annaternheim.substack.com", "tags": ["topic:music", "type:newsletter"]}
+{"key": "annavaus.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "annaveronica.substack.com", "tags": ["topic:religion", "type:newsletter"]}
+{"key": "annavocino.substack.com", "tags": ["topic:food", "type:newsletter"]}
+{"key": "annawegrzyn.com", "tags": ["language:polish", "region:poland", "topic:health", "type:podcast"]}
+{"key": "annawharton.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "annazgray.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "annazhelnina.substack.com", "tags": ["topic:education", "type:newsletter"]}
+{"key": "annbabiarz.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "annbmiller.substack.com", "tags": ["topic:art", "type:newsletter"]}
+{"key": "annbraithwaite.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "anncathrin.substack.com", "tags": ["language:german", "topic:politics", "topic:tech-industry", "type:newsletter"]}
+{"key": "annchristy.com", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "anncoulter.substack.com", "tags": ["topic:politics", "type:newsletter"]}
+{"key": "anndalehaven.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "anndecraemer.substack.com", "tags": ["language:dutch", "topic:books", "type:newsletter"]}
+{"key": "anndiamond.substack.com", "tags": ["topic:music", "type:newsletter"]}
+{"key": "anndz.dz", "tags": ["language:arabic", "region:africa", "topic:news", "type:publication"]}
+{"key": "anneapplebaum.substack.com", "tags": ["topic:politics", "type:newsletter"]}
+{"key": "anneayerskoch.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "annebeall.substack.com", "tags": ["topic:history", "type:newsletter"]}
+{"key": "anneboydrioux.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "annebrooke.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "annebutera.substack.com", "tags": ["topic:art", "type:newsletter"]}
+{"key": "annebyrn.substack.com", "tags": ["topic:food", "type:newsletter"]}
+{"key": "annecantstandit.substack.com", "tags": ["topic:art", "topic:politics", "type:newsletter"]}
+{"key": "annedachel.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "anneelrodwhitney.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "anneerickson.libsyn.com", "tags": ["region:usa", "topic:music", "type:podcast"]}
+{"key": "annefretz.blogspot.com", "tags": ["topic:food", "type:personal-blog"]}
+{"key": "annefrontlmft.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "https://annegoncalves.com/podcast-rovolutionen?format=rss", "tags": ["topic:personal", "type:podcast"]}
+{"key": "annehelen.substack.com", "tags": ["topic:media", "type:newsletter"]}
+{"key": "annehgiles.substack.com", "tags": ["language:chinese", "topic:books", "type:newsletter"]}
+{"key": "annejasuvi.substack.com", "tags": ["language:finnish", "topic:lifestyle", "type:newsletter"]}
+{"key": "annekennedy.substack.com", "tags": ["topic:politics", "topic:religion", "type:newsletter"]}
+{"key": "annelamott.substack.com", "tags": ["topic:politics", "topic:religion", "type:newsletter"]}
+{"key": "anneleeneygenraam.substack.com", "tags": ["language:dutch", "topic:personal", "type:newsletter"]}
+{"key": "anneles.podomatic.com", "tags": ["topic:music", "type:podcast"]}
+{"key": "annelieseabbott.substack.com", "tags": ["topic:environment", "topic:food", "type:newsletter"]}
+{"key": "anneliesericci.substack.com", "tags": ["language:portuguese", "topic:books", "type:newsletter"]}
+{"key": "anneliesetoumey.com", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "anneliseriles.substack.com", "tags": ["topic:politics", "type:newsletter"]}
+{"key": "annema.me", "tags": ["topic:networking", "topic:programming", "type:personal-blog"]}
+{"key": "annemalt-kante-bre.it", "tags": ["language:german", "topic:food", "type:podcast"]}
+{"key": "annemariechaker.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "annemarieward.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "annemccrady.substack.com", "tags": ["topic:news", "type:newsletter"]}
+{"key": "annemiekeverhoeff.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "annemklint.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "annephillipshhl.substack.com", "tags": ["topic:books", "topic:education", "type:newsletter"]}
+{"key": "annepmitchell.substack.com", "tags": ["topic:politics", "type:newsletter"]}
+{"key": "annerallen.com", "tags": ["topic:books", "type:personal-blog"]}
+{"key": "annesbalconygarden.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "annesophienogaret.substack.com", "tags": ["language:french", "region:france", "topic:politics", "type:newsletter"]}
+{"key": "annestobart.substack.com", "tags": ["topic:environment", "topic:health", "type:newsletter"]}
+{"key": "annethepassiveaggressivepoet.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "annettejoseph.substack.com", "tags": ["region:italy", "topic:travel", "type:newsletter"]}
+{"key": "annettejwick.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "annettelaing.substack.com", "tags": ["topic:history", "type:newsletter"]}
+{"key": "annettemargaret.substack.com", "tags": ["topic:education", "type:newsletter"]}
+{"key": "annettemeng.podigee.io", "tags": ["language:german", "topic:religion", "type:podcast"]}
+{"key": "annettenaber.substack.com", "tags": ["topic:environment", "type:newsletter"]}
+{"key": "annettewhipple.substack.com", "tags": ["topic:books", "topic:education", "type:newsletter"]}
+{"key": "annewareham.substack.com", "tags": ["region:uk", "topic:lifestyle", "type:newsletter"]}
+{"key": "annews.co.in", "tags": ["region:india", "topic:news", "type:publication"]}
+{"key": "anngauger.substack.com", "tags": ["topic:religion", "type:newsletter"]}
+{"key": "annieandrewsmd.substack.com", "tags": ["region:usa", "topic:politics", "type:newsletter"]}
+{"key": "anniedance.substack.com", "tags": ["region:usa", "topic:politics", "type:newsletter"]}
+{"key": "anniefdowns.substack.com", "tags": ["topic:religion", "type:newsletter"]}
+{"key": "anniefinch.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "anniehatke.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "anniehendrixwrites.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "annieholmquist.substack.com", "tags": ["topic:education", "topic:history", "type:newsletter"]}
+{"key": "anniejacksonbooks.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "anniemacmanus.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "anniemoberg.substack.com", "tags": ["topic:food", "type:newsletter"]}
+{"key": "annieokay.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "annieportelli.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "annieridout.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "anniesden.dev", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "annievella.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "anniewilson.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "annika.podigee.io", "tags": ["language:german", "topic:personal", "type:podcast"]}
+{"key": "annikahansteenizora.substack.com", "tags": ["topic:design", "topic:personal", "type:newsletter"]}
+{"key": "https://annipowellmusic.com/wp-content/MusicSideProject/Beauty%20Master%20and%20Album%20Cover/BeautyRSS.xml", "tags": ["topic:music", "type:personal-blog"]}
+{"key": "https://annipowellmusic.com/wp-content/MusicSideProject/Beyond%20the%20Hills%20MP3%20Master%20and%20Album%20Cover/Beyond%20the%20Hills%20RSS%20FEED/beyond%20the%20hills%20RSS%20FEED.xml", "tags": ["topic:music", "type:personal-blog"]}
+{"key": "https://annipowellmusic.com/wp-content/MusicSideProject/Lingo%20Master%20and%20Album%20Cover/lingoRSS.xml", "tags": ["topic:music", "type:personal-blog"]}
+{"key": "annisirvio.substack.com", "tags": ["language:finnish", "topic:health", "type:newsletter"]}
+{"key": "annjose.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "annlandi.substack.com", "tags": ["topic:art", "type:newsletter"]}
+{"key": "annledbetter.substack.com", "tags": ["topic:health", "type:newsletter"]}
