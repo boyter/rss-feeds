@@ -670,3 +670,25 @@ file, output gated by decide.py, /tmp/repair.py loop for retype/drop collisions
 (auto facet-merge, align shipped types). Two rulebook gaps surfaced: `region:norway`
 and `topic:culture` do not exist - the vocab gate catches them, the rulebook
 should list the facet values verbatim.
+
+## Queue pt3 (second pass with item evidence) + tranche 6 (2026-10-22)
+
+The 1,028 queue rows every earlier pass skipped, re-dumped WITH up to four of
+each feed's own item titles from the harvest. A fresh delegate pass over richer
+evidence decided ~720 of them - a skip is not a verdict when the evidence grew.
+Still skipped (~500): blank everywhere, comment feeds, placeholders. Those stay
+queued; guessing an undecidable title is pinned forever.
+
+Tranche 6 of the directory: 1,498 leads, 1,363 live (91%), ~1,260 rules in six
+delegated batches. Together: **15,541 -> 17,417 feeds, 12,100 hosts**.
+
+Spam this stretch (~12, each with quoted evidence in spam.jsonl): SEO
+linkbuilding and bought-followers services, price-list and biography farms,
+cracked-APK mills, gambling affiliates, and the feedburner name-squatters
+(TechCrunch aliases) - the last now refused at `add.py merge` by the spam gate,
+not after re-entry.
+
+Rulebook lesson: its topic list must be verbatim from TAGS.md. Half-listed
+vocabularies invent near-misses (`topic:tech`, `region:new-zeeland`,
+"no hardware topic" when hardware exists); the decide.py gate catches every one,
+but each catch is a wasted pass. The rulebook now carries all 45 topics verbatim.
