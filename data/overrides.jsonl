@@ -9769,3 +9769,5 @@
 {"key": "https://xerakko.livejournal.com/data/rss", "tags": ["topic:open-source", "type:personal-blog"]}
 {"key": "https://www.zachocean.com/index.xml", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "http://zinosat.blogspot.com/atom.xml", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "https://ahgz.de/news/feed/zulieferer/", "tags": ["language:german", "region:germany", "topic:business", "type:publication"]}
+{"key": "https://ahgz.de/service/rss/", "tags": ["language:german", "region:germany", "topic:business", "type:publication"]}
