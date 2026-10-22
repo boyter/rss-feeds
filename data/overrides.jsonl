@@ -9625,4 +9625,147 @@
 {"key": "blog.genericwhite.com", "tags": ["topic:politics", "type:personal-blog"]}
 {"key": "blog.jorgenschaefer.de", "tags": ["topic:software-engineering", "type:personal-blog"]}
 {"key": "blog.nkb.fr", "tags": ["topic:journalism", "type:personal-blog"]}
-{"key": "blog.pypi.org", "tags": ["topic:open-source", "type:institution"]}
+{"key": "blog.pypi.org", "tags": ["topic:open-source", "topic:programming", "type:institution"]}
+{"key": "blog.python.org", "tags": ["topic:programming", "type:institution"]}
+{"key": "blog.sanguineroyal.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.scottlowe.org", "tags": ["topic:networking", "type:personal-blog"]}
+{"key": "https://blog.stgolabs.net/atom.xml", "tags": ["topic:programming", "topic:systems", "type:personal-blog"]}
+{"key": "blog.sylver.dev", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "http://blog.vmchale.com/atom", "tags": ["topic:mathematics", "topic:programming", "type:personal-blog"]}
+{"key": "http://blog.wooyd.org/index.rss", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://blog.zachwf.com/index.xml", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://blogfarts.blogspot.com/feeds/posts/default", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "https://www.blogger.com/feeds/564396784419613484/posts/default", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "bradmiller10.substack.com", "tags": ["topic:education", "topic:history", "type:newsletter"]}
+{"key": "bradschaeffer.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "https://bruce-heard.blogspot.com/feeds/posts/default", "tags": ["topic:entertainment", "type:personal-blog"]}
+{"key": "https://careerplan.commons.gc.cuny.edu/feed/podcast/", "tags": ["region:usa", "topic:education", "type:podcast"]}
+{"key": "http://cateee.blogspot.com/feeds/posts/default", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "childprotectionresource.online", "tags": ["topic:health", "type:publication"]}
+{"key": "chrismanbrown.gitlab.io", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "codecut.ai", "tags": ["topic:ai", "topic:programming", "type:vendor-blog"]}
+{"key": "colinwalker.blog", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "cosmicqbit.dev", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "csperkins.org", "tags": ["topic:networking", "type:personal-blog"]}
+{"key": "danielbowen.com", "tags": ["topic:transport", "type:personal-blog"]}
+{"key": "danielroelfs.com", "tags": ["topic:data", "type:personal-blog"]}
+{"key": "davearonberg.substack.com", "tags": ["region:usa", "topic:politics", "type:newsletter"]}
+{"key": "daveril.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://deadboarder.bearblog.dev/feed/", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "deoluakinyemi.com", "tags": ["region:nigeria", "topic:politics", "type:personal-blog"]}
+{"key": "dereksmart.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "dgood.win", "tags": ["topic:networking", "type:personal-blog"]}
+{"key": "dharmaseed.org", "tags": ["topic:religion", "type:podcast"]}
+{"key": "dieterhelm.co.uk", "tags": ["region:uk", "topic:economics", "topic:environment", "type:personal-blog"]}
+{"key": "dischord.org", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "divingintogeneticsandgenomics.com", "tags": ["topic:science", "type:newsletter"]}
+{"key": "dusty.phillips.codes", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "dzautner.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "ebuchman.github.io", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "eevans.co", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "eliaslumen.substack.com", "tags": ["topic:religion", "type:newsletter"]}
+{"key": "emceeaich.dreamwidth.org", "tags": ["topic:politics", "type:personal-blog"]}
+{"key": "entrust-he.eu", "tags": ["region:europe", "topic:health", "topic:security", "type:institution"]}
+{"key": "federicocarrone.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://feed.jamit.app/lisk-0x52ada8739B2C215ff878DDEbbcc1f06C1D1b1c88/rss", "tags": ["topic:music", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/BeyondEverythingRadio", "tags": ["topic:religion", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/HandgunRadio", "tags": ["topic:lifestyle", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/HeroesDontDoPaperworkPodcavern", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/OpenWebPodcast", "tags": ["topic:lifestyle", "type:podcast"]}
+{"key": "http://feeds.feedburner.com/Tabadlabpodcasts", "tags": ["region:middle-east", "topic:politics", "type:podcast"]}
+{"key": "https://feeds.feedburner.com/Blogamborcom", "tags": ["topic:gadgets", "type:personal-blog"]}
+{"key": "https://feeds.feedburner.com/NewswiseMednews", "tags": ["region:usa", "topic:medicine", "type:publication"]}
+{"key": "https://feeds.feedburner.com/NewswiseScinews", "tags": ["region:usa", "topic:science", "type:publication"]}
+{"key": "fox5ny.com", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "gea21.com", "tags": ["language:spanish", "topic:art", "topic:politics", "type:institution"]}
+{"key": "gitpi.us", "tags": ["topic:open-source", "topic:programming", "type:personal-blog"]}
+{"key": "https://gravityboy.livejournal.com/data/rss", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "hasinaakbari.substack.com", "tags": ["topic:politics", "type:newsletter"]}
+{"key": "https://heshamelmatary.blogspot.com/feeds/posts/default", "tags": ["language:arabic", "topic:personal", "type:personal-blog"]}
+{"key": "http://home-sorina.blogspot.com/feeds/posts/default/-/Debian", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "hyperplane.substack.com", "tags": ["topic:tech-industry", "type:newsletter"]}
+{"key": "ihaque.org", "tags": ["topic:embedded", "type:personal-blog"]}
+{"key": "irenezhang.net", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "https://jackyf.livejournal.com/data/rss?tag=debian-en", "tags": ["region:europe", "topic:open-source", "type:personal-blog"]}
+{"key": "https://jasonblair.net/?feed=rss2", "tags": ["topic:transport", "type:personal-blog"]}
+{"key": "joshualoong.com", "tags": ["topic:books", "type:personal-blog"]}
+{"key": "kalifi.org", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "https://www.keithbradnam.com/blog?format=rss", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "https://kentcdodds-old.netlify.app/blog/rss.xml", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "https://kentcdodds-old.netlify.app/writing/blog%2Frss.xml", "tags": ["topic:books", "type:personal-blog"]}
+{"key": "https://kentcdodds-old.netlify.app/writing/blog/rss.xml", "tags": ["topic:books", "type:personal-blog"]}
+{"key": "kidl.at", "tags": ["region:philippines", "topic:news", "type:publication"]}
+{"key": "koenvangilst.nl", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "kokkomaki.com", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "koleenbp.substack.com", "tags": ["topic:ai", "topic:health", "type:newsletter"]}
+{"key": "krabf.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "lilianabounegru.org", "tags": ["topic:data", "topic:journalism", "type:personal-blog"]}
+{"key": "losp.net", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "lucaswoltmann.de", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "mariawirth.com", "tags": ["topic:religion", "type:personal-blog"]}
+{"key": "markessien.com", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "https://matthieu.io/blog/feed/rss.xml", "tags": ["topic:entertainment", "type:personal-blog"]}
+{"key": "mattshlosberg.substack.com", "tags": ["topic:ai", "type:newsletter"]}
+{"key": "maurycyz.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "https://mavridutt.bearblog.dev/atom.xml", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://medium.com/@david_bryant/feed", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "https://medium.com/@gajbhiyedeepanshu/feed", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "https://medium.com/@mmayo/feed", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "https://medium.com/@vershwal/feed", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "http://mesutcaneng.blogspot.com/feeds/posts/default", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "michaelcullen.name", "tags": ["topic:hardware", "type:personal-blog"]}
+{"key": "https://migracja.dreamwidth.org/data/atom", "tags": ["language:polish", "region:germany", "topic:personal", "type:personal-blog"]}
+{"key": "https://www.mikechatzidakis.com/posts?format=rss", "tags": ["topic:science", "type:personal-blog"]}
+{"key": "mineforeman.com", "tags": ["topic:finance", "type:personal-blog"]}
+{"key": "http://mlalic.blogspot.com/feeds/posts/default?alt=rss", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "https://mones.livejournal.com/data/rss?tag=debian", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "http://moock.org/blog/index.xml", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "https://morayallan.livejournal.com/data/rss", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "my-space.io", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "nadeemulhaque.substack.com", "tags": ["region:pakistan", "topic:politics", "type:newsletter"]}
+{"key": "https://www.nca.gov.ss/blog-feed.xml", "tags": ["region:africa", "topic:government", "type:institution"]}
+{"key": "netherlandsnewslive.com", "tags": ["region:europe", "topic:news", "type:publication"]}
+{"key": "https://newbusiness.co.uk/feed/latestarticles", "tags": ["region:uk", "topic:business", "type:publication"]}
+{"key": "https://nickclifton.livejournal.com/data/rss", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "nico.dorfbrunnen.eu", "tags": ["topic:open-source", "topic:security", "type:personal-blog"]}
+{"key": "notes.partlark.com", "tags": ["topic:travel", "type:personal-blog"]}
+{"key": "https://np237.livejournal.com/data/rss", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "nytimespost.com", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "https://openteams.com/engineering-blog/rss.xml", "tags": ["topic:data", "topic:programming", "type:vendor-blog"]}
+{"key": "palmistankur.com", "tags": ["topic:religion", "type:personal-blog"]}
+{"key": "https://pansylair.tumblr.com/rss", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "percolator.substack.com", "tags": ["topic:tech-industry", "type:newsletter"]}
+{"key": "https://pixelfed.social/users/marcush.atom", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "politik.md", "tags": ["region:europe", "topic:politics", "type:publication"]}
+{"key": "prismmediawire.com", "tags": ["topic:business", "type:aggregator"]}
+{"key": "https://publish.tribuneindia.com/newscategory/health/feed/", "tags": ["region:india", "topic:health", "topic:news", "type:publication"]}
+{"key": "pypy.org", "tags": ["topic:open-source", "topic:programming", "type:institution"]}
+{"key": "pythonbytes.fm", "tags": ["topic:programming", "type:podcast"]}
+{"key": "researchrebel.substack.com", "tags": ["topic:health", "topic:science", "type:newsletter"]}
+{"key": "sergiocipriano.com", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "sethmlarson.dev", "tags": ["topic:programming", "topic:security", "type:personal-blog"]}
+{"key": "https://sfllaw.livejournal.com/data/rss?tag=p.d.o", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "shipexlogistics.com", "tags": ["topic:business", "topic:transport", "type:vendor-blog"]}
+{"key": "https://www.simoncox.com/feed.xml", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "http://slackydeb.blogspot.com/feeds/posts/default/-/gsoc", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "soff.es", "tags": ["topic:personal", "topic:software-engineering", "topic:travel", "type:vendor-blog"]}
+{"key": "stemlounge.com", "tags": ["topic:education", "type:personal-blog"]}
+{"key": "https://www.steptoe.com/feed-BlogPostsFeed.rss", "tags": ["region:usa", "topic:politics", "type:institution"]}
+{"key": "https://www.steptoe.com/feed-EventFeed.rss", "tags": ["region:usa", "topic:politics", "type:institution"]}
+{"key": "https://www.steptoe.com/feed-NewsFeed.rss", "tags": ["region:usa", "topic:politics", "type:institution"]}
+{"key": "https://www.steptoe.com/feed-PublicationsFeed.rss", "tags": ["region:usa", "topic:politics", "type:institution"]}
+{"key": "symbolicforest.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://teejeejee.livejournal.com/data/rss?tag=debian", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "https://theppitak.livejournal.com/data/rss", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "tianheg.co", "tags": ["language:chinese", "topic:personal", "type:personal-blog"]}
+{"key": "https://tillett.info/atom", "tags": ["topic:science", "type:personal-blog"]}
+{"key": "https://troxell.livejournal.com/data/rss", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "https://www.tillett.info/feed", "tags": ["topic:science", "type:personal-blog"]}
+{"key": "https://vgrass.de/feed/atom", "tags": ["language:german", "region:germany", "topic:politics", "type:personal-blog"]}
+{"key": "visitmy.website", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://web.itu.edu.tr/celikd/feed/", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "https://wiki.hands.com/chezfil/index.rss", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://wiki.xxiivv.com/links/img.xml", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "https://xerakko.livejournal.com/data/rss", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "https://www.zachocean.com/index.xml", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "http://zinosat.blogspot.com/atom.xml", "tags": ["topic:programming", "type:personal-blog"]}
