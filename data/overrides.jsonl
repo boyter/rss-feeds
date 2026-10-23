@@ -11707,3 +11707,232 @@
 {"key": "http://api2.rtve.es/api/programas/119312/audios.rss", "tags": ["language:spanish", "region:spain", "topic:news", "type:podcast"]}
 {"key": "https://api2.rtve.es/api/adapter/programas/1000578/audios.rss", "tags": ["language:spanish", "region:spain", "topic:history", "type:podcast"]}
 {"key": "https://api2.rtve.es/api/adapter/programas/1000581/audios.rss", "tags": ["language:spanish", "region:spain", "topic:finance", "type:podcast"]}
+{"key": "https://api2.wondercraft.ai/feeds/podcasts/62cf26bd-c1e1-4d65-ab16-054bfbecce15.rss", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://api2.wondercraft.ai/feeds/podcasts/9d2ab782-aff2-4aca-b4f8-081ab7b27c67.rss", "tags": ["region:latin-america", "topic:environment", "topic:tech-industry", "type:podcast"]}
+{"key": "https://api3.propheticguidance.online/v1/podcast/1", "tags": ["topic:religion", "type:podcast"]}
+{"key": "apiaf.bearblog.dev", "tags": ["language:italian", "topic:personal", "type:personal-blog"]}
+{"key": "https://apianlearning.com/feed/ichingcafe/", "tags": ["topic:philosophy", "type:personal-blog"]}
+{"key": "apiboficial.org", "tags": ["language:portuguese", "region:latin-america", "topic:environment", "topic:politics", "type:institution"]}
+{"key": "https://apicdn.mixlr.com/rss-feeds/10732", "tags": ["language:german", "region:germany", "topic:politics", "type:podcast"]}
+{"key": "https://apicdn.mixlr.com/rss-feeds/12461", "tags": ["topic:music", "type:podcast"]}
+{"key": "https://apicdn.mixlr.com/rss-feeds/1254", "tags": ["region:uk", "topic:religion", "type:podcast"]}
+{"key": "apichangelog.substack.com", "tags": ["topic:software-engineering", "type:newsletter"]}
+{"key": "apicko.cz", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "https://apiculturaymiel.substack.com/feed", "tags": ["language:spanish", "topic:environment", "topic:food", "type:newsletter"]}
+{"key": "https://apidesignmatters.substack.com/feed", "tags": ["topic:software-engineering", "type:newsletter"]}
+{"key": "https://apiededato.substack.com/feed", "tags": ["language:spanish", "region:spain", "topic:data", "type:newsletter"]}
+{"key": "apiercey.github.io", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "apievangelist.com", "tags": ["topic:software-engineering", "topic:tech-industry", "type:personal-blog"]}
+{"key": "apihandyman.io", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "apihtawikosisan.com", "tags": ["region:canada", "topic:politics", "type:personal-blog"]}
+{"key": "apim.gov.mr", "tags": ["region:africa", "topic:business", "type:institution"]}
+{"key": "apimagesblog.com", "tags": ["topic:art", "topic:journalism", "type:publication"]}
+{"key": "https://apimamabiyori.substack.com/feed", "tags": ["language:japanese", "topic:personal", "type:newsletter"]}
+{"key": "apip.gov.gn", "tags": ["language:french", "region:africa", "topic:business", "type:institution"]}
+{"key": "apiprevmet3.inmet.gov.br", "tags": ["language:portuguese", "region:latin-america", "topic:environment", "type:institution"]}
+{"key": "apiratelifefor.me", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://apis.fle.rfi.fr/products/get_product/fle_getpodcast_by_nid?token_application=applepodcast_fle&program.entrepriseId=WBMZ110-FLE-FR-20220802", "tags": ["language:french", "region:france", "topic:education", "type:podcast"]}
+{"key": "https://apis.fle.rfi.fr/products/get_product/fle_getpodcast_by_nid?token_application=applepodcast_fle&program.entrepriseId=WBMZ79378-FLE-FR-20260511", "tags": ["language:french", "region:france", "topic:journalism", "topic:media", "type:podcast"]}
+{"key": "https://apis.fle.rfi.fr/products/get_product/fle_getpodcast_by_nid?token_application=applepodcast_fle&program.entrepriseId=WBMZ80029-FLE-FR-20260519", "tags": ["language:french", "region:france", "topic:education", "topic:travel", "type:podcast"]}
+{"key": "https://apis.france24.com/products/get_product/f24_getpodcast_audio_by_nid?token_application=33d60288-7e20-11e9-884b-005056a9c687&program.entrepriseId=WB4125825-F24-FR-20091008", "tags": ["language:french", "region:france", "topic:entertainment", "type:podcast"]}
+{"key": "https://apis.france24.com/products/get_product/f24_getpodcast_audio_by_nid?token_application=33d60288-7e20-11e9-884b-005056a9c687&program.entrepriseId=WB4897007-F24-EN-20091009", "tags": ["region:world", "topic:news", "topic:politics", "type:podcast"]}
+{"key": "https://apis.france24.com/products/get_product/f24_getpodcast_audio_by_nid?token_application=33d60288-7e20-11e9-884b-005056a9c687&program.entrepriseId=WB4909973-F24-EN-20091026", "tags": ["region:world", "topic:news", "topic:politics", "type:podcast"]}
+{"key": "https://apis.mc-doualiya.com/products/get_product/mcd_getpodcast_by_nid?token_application=2ecc8b76-7e21-11e9-9f79-005056bf586f&program.entrepriseId=WB411f995b1a009f7d9016154788739d17d8e67b86-MCD-AR-20211101", "tags": ["language:arabic", "region:middle-east", "topic:security", "topic:tech-industry", "type:podcast"]}
+{"key": "https://apis.mc-doualiya.com/products/get_product/mcd_getpodcast_by_nid?token_application=2ecc8b76-7e21-11e9-9f79-005056bf586f&program.entrepriseId=WB566087-MCD-AR-20100316", "tags": ["language:arabic", "region:middle-east", "topic:journalism", "topic:news", "type:podcast"]}
+{"key": "https://apis.mc-doualiya.com/products/get_product/mcd_getpodcast_by_nid?token_application=2ecc8b76-7e21-11e9-9f79-005056bf586f&program.entrepriseId=WB630746-MCD-AR-20101119", "tags": ["language:arabic", "region:middle-east", "topic:books", "type:podcast"]}
+{"key": "http://apis.rfi.fr/products/get_product/rfi_getpodcast_by_nid?token_application=975d23b8-7a07-11e8-9f62-005056a90194&program.entrepriseId=WB150795-RFI-RU-20171113", "tags": ["language:russian", "topic:education", "topic:media", "type:podcast"]}
+{"key": "https://apis.rfi.fr/products/get_product/fov-rfi-br-get-journaux-podcast-v2?token_application=975d23b8-7a07-11e8-9f62-005056a90194", "tags": ["language:portuguese", "region:latin-america", "topic:news", "type:podcast"]}
+{"key": "https://apis.rfi.fr/products/get_product/fov-rfi-cn-get-journaux-podcast-v2?token_application=975d23b8-7a07-11e8-9f62-005056a90194", "tags": ["language:chinese", "topic:news", "type:podcast"]}
+{"key": "https://apisec.substack.com/feed", "tags": ["topic:security", "type:newsletter"]}
+{"key": "https://apisod.com/api/rss/podcast_04c12f6a-0837-49ed-9cfc-192959ef9ebd.xml", "tags": ["topic:tech-industry", "type:podcast"]}
+{"key": "https://apisod.com/api/rss/podcast_062d6308-f801-411d-9e6f-2c7248d87106.xml", "tags": ["region:india", "topic:sport", "type:podcast"]}
+{"key": "https://apisod.com/api/rss/podcast_2dbf8f76-1ba7-4067-bed8-e9ba4b3cd7a6.xml", "tags": ["region:world", "topic:sport", "type:podcast"]}
+{"key": "apiv03.avaz.ba", "tags": ["region:europe", "topic:news", "type:publication"]}
+{"key": "https://apiv2.fluro.io/content/_query/5645db157671ac6967b1eb65?noCache=true&template=5645da117671ac6967b1e43d&access_token=$2a$10$4JAn0zM..Z8lXPAm8aSkEejnfRuqDLXbGITPKipH3gVW/TLp46WiS", "tags": ["region:australia", "topic:religion", "type:podcast"]}
+{"key": "apkmagic.com.ar", "tags": ["region:latin-america", "topic:gadgets", "type:aggregator"]}
+{"key": "aplaceforyou.libsyn.com", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "aplaceofgrace.libsyn.com", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "aplaceofmyown.bearblog.dev", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "aplaceofrefugechurch.podbean.com", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "aplacetocallhome.podomatic.com", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "https://aplacewherenoonecanfindme.substack.com/feed", "tags": ["topic:music", "topic:personal", "type:personal-blog"]}
+{"key": "https://aplasindhudurg.in/?feed=rss2", "tags": ["region:india", "topic:news", "type:publication"]}
+{"key": "aplayonnerds.squarespace.com", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://aplicacionesai.substack.com/feed", "tags": ["language:spanish", "topic:ai", "type:newsletter"]}
+{"key": "aplicacoop.com", "tags": ["topic:health", "type:institution"]}
+{"key": "apllpulse1.libsyn.com", "tags": ["topic:business", "type:podcast"]}
+{"key": "aplus.rs", "tags": ["topic:programming:swift", "type:personal-blog"]}
+{"key": "aplusme.me", "tags": ["region:europe", "topic:news", "type:publication"]}
+{"key": "apmath.spbu.ru", "tags": ["language:russian", "region:russia", "topic:education", "topic:mathematics", "type:institution"]}
+{"key": "apn.ru", "tags": ["language:russian", "region:russia", "topic:news", "topic:politics", "type:publication"]}
+{"key": "https://apnades.in/feed/", "tags": ["region:india", "topic:religion", "type:publication"]}
+{"key": "https://apnews.in/feed/", "tags": ["topic:news", "type:aggregator"]}
+{"key": "https://apnikhabartv.in/?feed=rss2", "tags": ["region:india", "topic:news", "type:publication"]}
+{"key": "apnpodcast.libsyn.com", "tags": ["region:africa", "topic:politics", "type:podcast"]}
+{"key": "https://apo-spritz.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:medicine", "type:podcast"]}
+{"key": "https://apocalypsechildcomic.com/comic/rss", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "https://apocalypsetimes.substack.com/feed", "tags": ["topic:religion", "type:newsletter"]}
+{"key": "https://apocalypticyoga.substack.com/feed", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://apocolarry.ca/feed/podcast/", "tags": ["region:canada", "topic:religion", "type:podcast"]}
+{"key": "https://apodcastaboutsurvivor.podbean.com/feed.xml", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "apodcastandamovie.libsyn.com", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://apofika-presseklub.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:politics", "type:podcast"]}
+{"key": "apogliaghi.com", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "https://apokalypse-und-filterkaffee.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:news", "topic:politics", "type:podcast"]}
+{"key": "https://apoetlimedya.blogspot.com/feeds/posts/default", "tags": ["topic:media", "type:personal-blog"]}
+{"key": "https://apollo-news.net/feed/", "tags": ["language:german", "region:germany", "topic:politics", "type:publication"]}
+{"key": "https://apollo.substack.com/feed", "tags": ["topic:finance", "type:vendor-blog"]}
+{"key": "https://apollomindset.substack.com/feed", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://apolloniangerm.substack.com/feed", "tags": ["topic:philosophy", "topic:politics", "type:personal-blog"]}
+{"key": "https://apolloreeves.bearblog.dev/feed/", "tags": ["topic:philosophy", "type:personal-blog"]}
+{"key": "apologue.ca", "tags": ["region:canada", "topic:entertainment", "type:podcast"]}
+{"key": "https://aponet-in-3.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:medicine", "type:podcast"]}
+{"key": "https://aponnewsbd.com/feed", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "https://aponte.sapo.pt/feed/", "tags": ["language:portuguese", "region:europe", "topic:news", "type:publication"]}
+{"key": "https://apoorv03.com/feed", "tags": ["topic:business", "topic:tech-industry", "type:personal-blog"]}
+{"key": "https://apoorvaadeshpande.substack.com/feed", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "https://apoorvaj.io/rss.xml", "tags": ["topic:graphics", "topic:programming", "type:personal-blog"]}
+{"key": "https://apoorvajadhav.substack.com/feed", "tags": ["topic:data", "type:newsletter"]}
+{"key": "https://apoorvalal.github.io/lalgorithms/index.xml", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "https://apoorvtyagi.tech/rss.xml", "tags": ["topic:programming:java", "topic:software-engineering", "type:personal-blog"]}
+{"key": "apopo.org", "tags": ["region:africa", "topic:science", "type:institution"]}
+{"key": "https://aportrendsetters.podbean.com/feed.xml", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "https://apostelkirken.podbean.com/feed.xml", "tags": ["region:europe", "topic:religion", "type:podcast"]}
+{"key": "https://apostillelondon.com/feed/", "tags": ["region:uk", "topic:business", "type:vendor-blog"]}
+{"key": "https://apostle.world/feeds/AfOsnqg5vLPSJNrUrIoF.xml", "tags": ["topic:entertainment", "topic:religion", "type:podcast"]}
+{"key": "https://apostledevin.podomatic.com/rss2.xml", "tags": ["topic:music", "type:podcast"]}
+{"key": "https://apostleseasternshore.podbean.com/feed.xml", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "http://apostlewilliams.sermon.net/rss/main", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://apostolicchildrensministry.podbean.com/feed.xml", "tags": ["topic:religion", "type:podcast"]}
+{"key": "apostolicchristiancounseling.libsyn.com", "tags": ["topic:health", "topic:religion", "type:podcast"]}
+{"key": "https://apostolicnlr.podbean.com/feed.xml", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "https://apothek.substack.com/feed", "tags": ["topic:environment", "topic:health", "type:newsletter"]}
+{"key": "https://apotheke-adhoc.de/nachrichten/e-health/rss.xml", "tags": ["language:german", "region:germany", "topic:infrastructure", "topic:medicine", "type:publication"]}
+{"key": "https://apotheke-adhoc.de/nachrichten/markt/rss.xml", "tags": ["language:german", "region:germany", "topic:business", "topic:medicine", "type:publication"]}
+{"key": "https://apotheke-adhoc.de/nachrichten/panorama/rss.xml", "tags": ["language:german", "region:germany", "topic:health", "topic:medicine", "type:publication"]}
+{"key": "https://apotheora.substack.com/feed", "tags": ["topic:books", "type:newsletter"]}
+{"key": "https://app-directus.pas.cr/directus-extension-church-api/podcast/feed/1", "tags": ["language:spanish", "region:latin-america", "topic:religion", "type:podcast"]}
+{"key": "ancientfaith.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://app.bahnwelt-tv.de/Bahnwelt-TVpod.xml", "tags": ["language:german", "region:germany", "topic:transport", "type:podcast"]}
+{"key": "https://app.branchcast.com/north-wake-church/podcasts/north-wake-church-sermons.xml", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "https://app.churchsocial.com/public/church/0538b7dba0ca6b17ef8ca27d15c158f4/sermons/podcast", "tags": ["region:canada", "topic:religion", "type:podcast"]}
+{"key": "https://app.churchsocial.com/public/church/0e3caa43db49cc8729a8bfa91f177bf6/sermons/podcast", "tags": ["region:canada", "topic:religion", "type:podcast"]}
+{"key": "https://app.churchsocial.com/public/church/202abfa27259d128d4112ef0cc5a79ac/sermons/podcast", "tags": ["region:canada", "topic:religion", "type:podcast"]}
+{"key": "https://app.clientstream.io/siteguard-feed.xml", "tags": ["region:australia", "topic:business", "topic:web-development", "type:vendor-blog"]}
+{"key": "https://app.contentflow365.com/api/public/podcast/f2e1f4d3-8836-4828-9322-ea6347f030d4/feed.xml", "tags": ["language:spanish", "topic:finance", "type:podcast"]}
+{"key": "app.daf-yomi.net", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "https://app.dropwave.io/feed/account/64cb6318-903f-4389-a085-55cdd57b93a9", "tags": ["topic:politics", "topic:religion", "type:podcast"]}
+{"key": "https://app.dropwave.io/feed/network/flf-canada", "tags": ["region:canada", "topic:politics", "topic:religion", "type:podcast"]}
+{"key": "https://app.dropwave.io/feed/show/business300", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://app.fusebox.fm/data/show/2rkoBnO3mW/feed", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://app.fusebox.fm/data/show/3oQ6ddegM9/feed", "tags": ["language:french", "topic:religion", "type:podcast"]}
+{"key": "https://app.fusebox.fm/data/show/KQ2Vn0K2zp/feed", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://app.heylefty.com/w/markets/podcast.xml", "tags": ["topic:finance", "type:podcast"]}
+{"key": "https://app.heylefty.com/w/news/podcast.xml", "tags": ["topic:news", "type:podcast"]}
+{"key": "https://app.humankind.center/api/podcasts/the-up-vibe/rss", "tags": ["region:usa", "topic:lifestyle", "type:podcast"]}
+{"key": "https://app.kajabi.com/podcasts/2147484104/feed", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://app.kajabi.com/podcasts/2147484146/feed", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://app.kajabi.com/podcasts/2147484224/feed", "tags": ["topic:personal", "type:podcast"]}
+{"key": "https://app.leg.wa.gov/billsummary/Home/Rss/1183/2025/House/False", "tags": ["region:usa", "topic:government", "topic:politics", "type:institution"]}
+{"key": "https://app.mysoundwise.com/rss/1568826443744s", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://app.mysoundwise.com/rss/1577485940543s", "tags": ["topic:finance", "type:podcast"]}
+{"key": "https://app.mysoundwise.com/rss/1585623547584s", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "https://app.nxt.do/podcast.xml", "tags": ["topic:personal", "type:podcast"]}
+{"key": "https://app.onlinevents.co.uk/api/podcasts/soul-portals-exploring-psychospiritual-horizons/feed.xml", "tags": ["region:uk", "topic:religion", "type:podcast"]}
+{"key": "https://app.rodeo/index.xml", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "https://app.springcast.fm/podcast-xml/10664/", "tags": ["language:dutch", "topic:history", "type:podcast"]}
+{"key": "https://app.springcast.fm/podcast-xml/11358/", "tags": ["language:dutch", "region:africa", "topic:environment", "topic:travel", "type:podcast"]}
+{"key": "https://app.springcast.fm/podcast-xml/12694/", "tags": ["language:dutch", "topic:business", "topic:web-development", "type:podcast"]}
+{"key": "app.syndicast.co.uk", "tags": ["region:uk", "topic:music", "type:podcast"]}
+{"key": "https://app.talkshoe.com/rss-9-18-08-the-heavy-metal-mayhem-radio-show.xml", "tags": ["topic:music", "type:podcast"]}
+{"key": "https://app.talkshoe.com/rss-animal-reiki-talk.xml", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://app.talkshoe.com/rss-attack-of-the-50ft-nerds.xml", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://app.ustudio.com/studios/OHsQiclm1q7E/destinations/DtVQWT5VocgV/feed.xml", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "https://app.ustudio.com/studios/OQ5isRBBPfSm/destinations/Da6E0giGY4ct/feed.xml", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://app.ustudio.com/studios/Oay2H2wQGylQ/destinations/DtsjLHnRhIyZ/feed.xml", "tags": ["topic:business", "topic:food", "type:podcast"]}
+{"key": "app.videonest.co", "tags": ["region:usa", "topic:sport", "type:podcast"]}
+{"key": "https://appaddict.app/feed.atom", "tags": ["topic:gadgets", "type:personal-blog"]}
+{"key": "https://appahead.studio/feed-news.xml", "tags": ["topic:design", "topic:software-engineering", "type:vendor-blog"]}
+{"key": "https://appalachiangenealogy.substack.com/feed", "tags": ["region:usa", "topic:history", "type:newsletter"]}
+{"key": "https://appalachianhistory.net/atom", "tags": ["region:usa", "topic:history", "type:publication"]}
+{"key": "https://apparatus.si/oddaja/cvkm/feed/", "tags": ["topic:lifestyle", "type:podcast"]}
+{"key": "https://apparatus.si/oddaja/dvokorak/feed/", "tags": ["topic:sport", "type:podcast"]}
+{"key": "https://appdevelopermagazine.com/RSS", "tags": ["topic:software-engineering", "topic:web-development", "type:publication"]}
+{"key": "https://appealbase.substack.com/feed", "tags": ["region:uk", "topic:government", "topic:politics", "type:newsletter"]}
+{"key": "https://appellationbeer.com/blog/feed", "tags": ["topic:food", "type:personal-blog"]}
+{"key": "https://appelsiini.net/index.xml", "tags": ["topic:programming", "topic:security", "type:personal-blog"]}
+{"key": "https://appenzell24.ch/feed/", "tags": ["language:german", "region:europe", "topic:news", "type:publication"]}
+{"key": "https://apperceptive.substack.com/feed", "tags": ["topic:ai", "topic:politics", "type:newsletter"]}
+{"key": "https://appetitomagazine.com/feed", "tags": ["topic:food", "topic:travel", "type:publication"]}
+{"key": "https://appetrosyan.github.io/index.xml", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "https://appfair.org/blog/rss.xml", "tags": ["topic:politics", "topic:tech-industry", "type:institution"]}
+{"key": "https://appknoxhq.substack.com/feed", "tags": ["topic:security", "type:newsletter"]}
+{"key": "https://apple.gadgethacks.com/rss.xml", "tags": ["topic:gadgets", "type:publication"]}
+{"key": "https://apple.news/podcast/apple_news_in_conversation", "tags": ["region:usa", "topic:journalism", "topic:news", "type:podcast"]}
+{"key": "https://appleactus.lepodcast.fr/rss", "tags": ["language:french", "topic:gadgets", "topic:tech-industry", "type:podcast"]}
+{"key": "https://appleanbooks.substack.com/feed", "tags": ["topic:books", "type:newsletter"]}
+{"key": "https://appleboy.tech/feed.xml", "tags": ["topic:programming:swift", "topic:software-engineering", "type:personal-blog"]}
+{"key": "https://applech2.com/feed", "tags": ["language:japanese", "region:japan", "topic:gadgets", "topic:tech-industry", "type:publication"]}
+{"key": "https://appleciders.bearblog.dev/feed/", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://applehosted.podcasts.apple.com/apple_keynotes/apple_keynotes.xml", "tags": ["region:usa", "topic:tech-industry", "type:podcast"]}
+{"key": "https://appleinsider.ru/feed", "tags": ["language:russian", "region:russia", "topic:gadgets", "topic:tech-industry", "type:publication"]}
+{"key": "https://appleintelligence.substack.com/feed", "tags": ["topic:ai", "type:newsletter"]}
+{"key": "https://applejim.substack.com/feed", "tags": ["topic:books", "topic:entertainment", "type:newsletter"]}
+{"key": "https://applemagazine.com/feed/", "tags": ["topic:gadgets", "topic:tech-industry", "type:publication"]}
+{"key": "https://applenovinky.cz/feed/", "tags": ["language:czech", "region:europe", "topic:gadgets", "topic:tech-industry", "type:publication"]}
+{"key": "https://appleparkfilmclub.substack.com/feed", "tags": ["topic:entertainment", "type:newsletter"]}
+{"key": "https://applerankings.com/feed", "tags": ["topic:food", "type:personal-blog"]}
+{"key": "appletongospel.com", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "https://appletreats.github.io/podcast.rss", "tags": ["topic:software-engineering", "type:podcast"]}
+{"key": "https://appletrees.tw/feed", "tags": ["language:chinese", "region:asia", "topic:food", "topic:travel", "type:personal-blog"]}
+{"key": "https://appleturnover.substack.com/feed", "tags": ["topic:art", "type:newsletter"]}
+{"key": "http://applevault.com/rss.xml", "tags": ["topic:history", "topic:tech-industry", "type:institution"]}
+{"key": "https://applewatchtech.es/feed/", "tags": ["language:spanish", "region:spain", "topic:gadgets", "type:publication"]}
+{"key": "https://applewoodschool.in/feed/", "tags": ["region:india", "topic:education", "type:institution"]}
+{"key": "https://appleworld.pl/feed/", "tags": ["language:polish", "region:poland", "topic:gadgets", "topic:tech-industry", "type:publication"]}
+{"key": "https://appleworld.today/feed/", "tags": ["topic:gadgets", "topic:tech-industry", "type:publication"]}
+{"key": "https://appli.io/feed/", "tags": ["topic:web-development", "type:vendor-blog"]}
+{"key": "https://applicationformat.in/feed/", "tags": ["language:hindi", "region:india", "topic:education", "type:publication"]}
+{"key": "https://applied-langua.ge/posts/feed.rss", "tags": ["topic:programming:lisp", "topic:systems", "type:personal-blog"]}
+{"key": "https://appliedcraft.blog/feed", "tags": ["topic:ai", "topic:design", "type:personal-blog"]}
+{"key": "https://appliedeconjobs.substack.com/feed", "tags": ["topic:business", "topic:economics", "type:aggregator"]}
+{"key": "https://appliedgo.net/index.xml", "tags": ["topic:programming:go", "type:personal-blog"]}
+{"key": "appliedleadership.libsyn.com", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://appliedmethods.substack.com/feed", "tags": ["topic:sport", "type:personal-blog"]}
+{"key": "https://appliedpolicebriefings.com/index.php/APB/gateway/plugin/WebFeedGatewayPlugin/atom", "tags": ["topic:politics", "type:publication"]}
+{"key": "https://appliedscala.com/feed.xml", "tags": ["topic:programming:scala", "type:personal-blog"]}
+{"key": "https://appliedscience.substack.com/feed", "tags": ["topic:business", "topic:music", "type:personal-blog"]}
+{"key": "https://apply.stou.ac.th/feed/", "tags": ["region:asia", "topic:education", "type:institution"]}
+{"key": "https://applyaito.substack.com/feed", "tags": ["topic:ai", "topic:software-engineering", "type:newsletter"]}
+{"key": "https://applydubaijob.com/feed/", "tags": ["region:middle-east", "topic:business", "type:aggregator"]}
+{"key": "https://applyfirstprinciples.substack.com/feed", "tags": ["topic:philosophy", "topic:politics", "type:personal-blog"]}
+{"key": "https://appmaster.io/feed.xml", "tags": ["topic:software-engineering", "type:vendor-blog"]}
+{"key": "https://appojax.com/rss", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "https://appolica.substack.com/feed", "tags": ["topic:business", "topic:software-engineering", "type:vendor-blog"]}
+{"key": "apprendrelaccordeon.com", "tags": ["language:french", "topic:education", "topic:music", "type:vendor-blog"]}
+{"key": "apprenticeinstitute.org", "tags": ["topic:religion", "type:podcast"]}
+{"key": "http://appropriateomnivore.com/podcasts/appomnivore.xml", "tags": ["region:usa", "topic:environment", "topic:food", "type:podcast"]}
+{"key": "http://approximateknowledge.net/feed.xml", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://apps.aaem.org/rss/itunes", "tags": ["region:usa", "topic:medicine", "type:podcast"]}
+{"key": "https://apps.focus-wtv.be/podcast/middagupdate_rss.xml", "tags": ["language:dutch", "region:europe", "topic:news", "type:podcast"]}
+{"key": "https://apps.focus-wtv.be/podcast/stavaza_rss.xml", "tags": ["language:dutch", "region:europe", "topic:business", "topic:news", "type:podcast"]}
+{"key": "http://apps.kcnr1460.com/podcast/free_fire_radio", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "https://apps.vcsu.edu/access/api/tostnjam/tostnjampodcast.xml", "tags": ["region:usa", "topic:news", "type:podcast"]}
+{"key": "https://appsec.space/index.xml", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "https://appsindicato.substack.com/feed", "tags": ["language:portuguese", "region:latin-america", "topic:education", "topic:politics", "type:newsletter"]}
+{"key": "appstore-tagebuch.de", "tags": ["language:german", "region:germany", "topic:software-engineering", "type:podcast"]}
+{"key": "https://appunti.substack.com/feed", "tags": ["language:italian", "region:italy", "topic:economics", "topic:politics", "type:personal-blog"]}
+{"key": "https://appuntidaltavolinodiunbar.substack.com/feed", "tags": ["topic:art", "topic:entertainment", "type:newsletter"]}
+{"key": "https://appuntisullacina.substack.com/feed", "tags": ["language:italian", "region:asia", "topic:politics", "type:newsletter"]}
+{"key": "https://appventuretime.blog/rss.xml", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://appvoices.org/feed/", "tags": ["region:usa", "topic:environment", "topic:politics", "type:institution"]}
+{"key": "https://apr-news.fr/feed/", "tags": ["language:french", "topic:news", "type:publication"]}
+{"key": "https://aprahanvarta.in/feed/", "tags": ["language:hindi", "region:india", "topic:news", "type:publication"]}
+{"key": "https://aprairiehomecompanion.substack.com/feed", "tags": ["region:usa", "topic:entertainment", "type:newsletter"]}
+{"key": "https://aprd.ir/index.xml", "tags": ["topic:books", "topic:personal", "type:personal-blog"]}
+{"key": "https://aprendeia.substack.com/feed", "tags": ["language:spanish", "topic:ai", "type:newsletter"]}
+{"key": "https://aprendizajeinfinito.com/feed", "tags": ["language:spanish", "topic:books", "topic:personal", "type:personal-blog"]}
+{"key": "https://apresskipodcast.podigee.io/feed/mp3", "tags": ["language:german", "topic:sport", "type:podcast"]}
+{"key": "https://apricotart.bearblog.dev/feed", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://apricotcookies.net/rss", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "https://apricusliterary.substack.com/feed", "tags": ["topic:art", "topic:books", "type:publication"]}
