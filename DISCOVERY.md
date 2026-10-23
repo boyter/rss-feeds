@@ -692,3 +692,18 @@ Rulebook lesson: its topic list must be verbatim from TAGS.md. Half-listed
 vocabularies invent near-misses (`topic:tech`, `region:new-zeeland`,
 "no hardware topic" when hardware exists); the decide.py gate catches every one,
 but each catch is a wasted pass. The rulebook now carries all 45 topics verbatim.
+
+## Tranche 7 + sibling leads #2 (2026-10-23)
+
+Tranche 7: 1,499 leads, 1,386 live (93%), ~1,270 rules in six delegated batches.
+Sibling leads #2 over the 12k-host list: 606 new links after dropping 1,600
+comment feeds and the already-carried, 531 live (88%), all but 12 auto-tagged
+from host rules; the 12 done inline. **17,417 -> 19,268 feeds, 13,183 hosts.**
+
+The alternativestheatrales ping-pong, finally closed properly: it answered with
+valid RSS (isFeed=true) so the dead-evidence merge gate waved it in, while
+triage removed it for 6/6 casino items - so every settle re-added it and every
+rebuild deleted it. A human entry in spam.jsonl is the only gate that stops a
+hijacked-but-valid feed; added after a third hand-check (Zimbabwe betting +
+Woospin under a theatre title). Lesson: feeds removed by *pattern* rules need a
+spam.jsonl entry too, or the two honest writers keep disagreeing forever.
