@@ -67,3 +67,5 @@
 {"key": "apploidnews.com", "reason": "Russian SEO content farm, accounting/construction/medical adverts under a \"\u041d\u043e\u0432\u043e\u0441\u0442\u0438 Apple\" title"}
 {"key": "aptnews.ug", "reason": "domain serves casino affiliate spam (casino mirror sites, betting links) in place of news items"}
 {"key": "alternativestheatrales.be", "reason": "compromised site: valid RSS under a real theatre title, but all items are casino affiliate spam (Woospin, Zimbabwe betting) - hand-verified twice"}
+{"key": "arctic-online.ru", "reason": "SEO content farm: \"\u041d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0441\u0442\u044c\" feed mixing furniture ads, premium kitchens, wedding styling and web-studio pitches, no consistent subject"}
+{"key": "ardihouse.com.ua", "reason": "untitled \"Info News\" SEO content farm: medical furniture sales copy, online doctor ads, odd smoking-law listicles and solar-panel sales, no consistent subject"}
