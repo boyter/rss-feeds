@@ -707,3 +707,19 @@ rebuild deleted it. A human entry in spam.jsonl is the only gate that stops a
 hijacked-but-valid feed; added after a third hand-check (Zimbabwe betting +
 Woospin under a theatre title). Lesson: feeds removed by *pattern* rules need a
 spam.jsonl entry too, or the two honest writers keep disagreeing forever.
+
+## Tranche 8 (2026-10-23)
+
+1,499 leads, 1,250 live (83%), 1,174 rules in five delegated batches:
+**19,268 -> 20,471 feeds, 14,092 hosts.**
+
+Removals hand-verified: asdr.gov.uz (HTML page), azh/blog feed 404 (Andy
+Hertz's blog moved), designernews atom (serves HTML). arts.uoi.gr rescued by
+--retry-failed - third harvester false-negative on a Greek/UTF-8 site.
+
+Delegation drift this stretch: the w5 batch wrote 196 per-URL keys WITHOUT the
+scheme; the guard caught every one, and the batch file made the repair
+mechanical (match the key against the batch's real URLs - two turned out to
+have different paths than the delegate remembered: index.xml vs rss.xml).
+Rulebook note added: topic:programming:LANG is valid and should be used when
+the feed is about one named language.
