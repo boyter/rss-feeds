@@ -23324,6 +23324,7 @@
 {"url": "https://mackuba.eu/feed.xml", "tags": ["topic:programming:swift", "topic:web-development", "type:personal-blog"], "title": "MacKuba.eu"},
 {"url": "http://macournoyer.com/feed.xml", "tags": ["topic:programming:cpp", "type:personal-blog"], "title": "Marc-André Cournoyer"},
 {"url": "http://www.macrumors.com/macrumors.xml", "tags": ["topic:gadgets", "type:publication"], "title": "MacRumors: Mac News and Rumors - Front Page"},
+{"url": "https://www.macsparky.com/feed/", "tags": ["topic:gadgets", "topic:systems", "type:personal-blog"], "title": "MacSparky"},
 {"url": "https://www.macstories.net/feed/", "tags": ["topic:ai", "topic:gadgets", "type:personal-blog"], "title": "MacStories"},
 {"url": "https://www.macworld.com/feed", "tags": ["topic:gadgets", "type:publication"], "title": "Macworld"},
 {"url": "https://www.macworld.com/index.rss", "tags": ["topic:gadgets", "type:publication"], "title": "Macworld"},
