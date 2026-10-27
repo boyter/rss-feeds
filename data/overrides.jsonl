@@ -1985,7 +1985,7 @@
 {"key": "attnam.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "autocar.co.uk", "tags": ["topic:transport", "type:publication"]}
 {"key": "avc.xyz", "tags": ["topic:tech-industry", "type:personal-blog"]}
-{"key": "aws.amazon.com", "tags": ["topic:ai", "type:publication"]}
+{"key": "aws.amazon.com", "tags": ["topic:ai", "topic:tech-industry", "type:publication"]}
 {"key": "axianspice.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "basicappleguy.com", "tags": ["topic:gadgets", "type:personal-blog"]}
 {"key": "bastionland.com", "tags": ["topic:personal", "type:personal-blog"]}
@@ -14824,3 +14824,307 @@
 {"key": "https://avmello.substack.com/feed", "tags": ["language:portuguese", "region:latin-america", "topic:education", "type:newsletter"]}
 {"key": "https://avmu.mk/feed/", "tags": ["region:europe", "topic:media", "type:institution"]}
 {"key": "avn.com", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "avneeshk.me", "tags": ["topic:ai", "topic:security", "type:personal-blog"]}
+{"key": "avnews.in", "tags": ["language:hindi", "region:india", "topic:news", "type:publication"]}
+{"key": "avo-magazine.com", "tags": ["region:japan", "topic:entertainment", "topic:music", "type:publication"]}
+{"key": "avocadotoast.typlog.io", "tags": ["language:chinese", "topic:ai", "topic:tech-industry", "type:podcast"]}
+{"key": "avondalehospitality.substack.com", "tags": ["region:usa", "topic:food", "topic:travel", "type:newsletter"]}
+{"key": "avonindianagov.podbean.com", "tags": ["region:usa", "topic:government", "type:podcast"]}
+{"key": "avonnalovesgenres.com", "tags": ["topic:books", "type:personal-blog"]}
+{"key": "avosidade.podcastmais.com.br", "tags": ["language:portuguese", "region:latin-america", "topic:health", "topic:science", "type:podcast"]}
+{"key": "avozdoxingu.com.br", "tags": ["language:portuguese", "region:latin-america", "topic:news", "type:publication"]}
+{"key": "avraam.dev", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "avrahome.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "avris.it", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "avrumburg.substack.com", "tags": ["region:middle-east", "topic:politics", "type:personal-blog"]}
+{"key": "avrupagazete.co.uk", "tags": ["region:uk", "topic:news", "type:publication"]}
+{"key": "avtech.substack.com", "tags": ["topic:business", "topic:finance", "type:newsletter"]}
+{"key": "avto-magazin.metropolitan.si", "tags": ["region:europe", "topic:transport", "type:publication"]}
+{"key": "avtocentr.sumy.ua", "tags": ["language:ukrainian", "region:ukraine", "topic:transport", "type:publication"]}
+{"key": "avtradetalk.podbean.com", "tags": ["topic:tech-industry", "type:podcast"]}
+{"key": "avuelapluma.es", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
+{"key": "avvocatogiovannapanucci.substack.com", "tags": ["language:italian", "topic:ai", "type:community"]}
+{"key": "awa.daa.jp", "tags": ["language:japanese", "region:japan", "topic:art", "type:personal-blog"]}
+{"key": "awad.dev", "tags": ["topic:programming", "topic:web-development", "type:personal-blog"]}
+{"key": "awakeandunite.com", "tags": ["topic:health", "topic:personal", "type:personal-blog"]}
+{"key": "awakebookclub.substack.com", "tags": ["topic:books", "topic:history", "type:newsletter"]}
+{"key": "awakecoding.com", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "awaken.church", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "awakencolumbus.squarespace.com", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "awakencommunity.podbean.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "awakenedconsciousness.substack.com", "tags": ["topic:philosophy", "type:personal-blog"]}
+{"key": "awakenedzine.substack.com", "tags": ["topic:religion", "type:newsletter"]}
+{"key": "awakeningbg.podbean.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "awakeningmoments.podbean.com", "tags": ["topic:personal", "type:podcast"]}
+{"key": "awakeninthedream.substack.com", "tags": ["topic:religion", "type:personal-blog"]}
+{"key": "awakennewsletter.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "awakentango.substack.com", "tags": ["topic:art", "type:newsletter"]}
+{"key": "awakenvideo.podbean.com", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "awakenwithwillow.substack.com", "tags": ["topic:religion", "type:personal-blog"]}
+{"key": "awakeusnow.libsyn.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "awaldorfjourney.substack.com", "tags": ["topic:education", "type:newsletter"]}
+{"key": "awamiawaz.pk", "tags": ["region:pakistan", "topic:news", "type:publication"]}
+{"key": "awanaltrove.bearblog.dev", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "awanderingmind.blog", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "awanderwoman.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "awardswatchpodcasts.libsyn.com", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "awardwinningfjords.com", "tags": ["topic:programming", "topic:web-development", "type:personal-blog"]}
+{"key": "aware-uk.org", "tags": ["region:uk", "topic:education", "topic:health", "type:institution"]}
+{"key": "awarenessexplorers.libsyn.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "awarm.leaflet.pub", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "awate.com", "tags": ["region:africa", "topic:news", "type:publication"]}
+{"key": "awayabroad.substack.com", "tags": ["topic:travel", "type:newsletter"]}
+{"key": "awaydaynz.substack.com", "tags": ["region:new-zealand", "topic:design", "topic:lifestyle", "type:aggregator"]}
+{"key": "awaywegopodcast.substack.com", "tags": ["topic:sport", "topic:travel", "type:podcast"]}
+{"key": "awazthevoice.in", "tags": ["region:india", "topic:news", "type:publication"]}
+{"key": "awbennett50.podomatic.com", "tags": ["region:usa", "topic:entertainment", "type:podcast"]}
+{"key": "awcclive.org", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "awealthofcommonsense.com", "tags": ["region:usa", "topic:economics", "topic:finance", "type:personal-blog"]}
+{"key": "awec.ntu.edu.tw", "tags": ["language:chinese", "region:asia", "topic:education", "type:institution"]}
+{"key": "aweexchange.substack.com", "tags": ["topic:philosophy", "type:newsletter"]}
+{"key": "aweirdimagination.net", "tags": ["topic:programming", "topic:web-development", "type:personal-blog"]}
+{"key": "awellmadewoman.substack.com", "tags": ["region:usa", "topic:politics", "type:personal-blog"]}
+{"key": "awesci.com", "tags": ["topic:hardware", "type:personal-blog"]}
+{"key": "awesomeagents.ai", "tags": ["topic:ai", "topic:tech-industry", "type:podcast"]}
+{"key": "awesomeastronomy.libsyn.com", "tags": ["topic:science", "type:podcast"]}
+{"key": "awesomecardgames.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "awesomecomics.podbean.com", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "awesomecto.substack.com", "tags": ["topic:programming", "topic:tech-industry", "type:newsletter"]}
+{"key": "awesomekling.substack.com", "tags": ["topic:programming", "topic:systems", "type:personal-blog"]}
+{"key": "aweventurer.substack.com", "tags": ["topic:personal", "topic:travel", "type:personal-blog"]}
+{"key": "awfnr.podigee.io", "tags": ["language:german", "topic:entertainment", "type:podcast"]}
+{"key": "awftl.podbean.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "awftlvser.podbean.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "awful.substack.com", "tags": ["topic:entertainment", "type:personal-blog"]}
+{"key": "awfulannouncing.com", "tags": ["topic:media", "topic:sport", "type:publication"]}
+{"key": "awfulokayawesome.podomatic.com", "tags": ["topic:personal", "type:podcast"]}
+{"key": "awfulwoman.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "awildspirituality.substack.com", "tags": ["topic:religion", "type:newsletter"]}
+{"key": "awingender.com", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "awjuliani.github.io", "tags": ["topic:ai", "topic:philosophy", "type:personal-blog"]}
+{"key": "awk.bearblog.dev", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "https://awk.space/tal.xml", "tags": ["region:usa", "topic:entertainment", "topic:journalism", "type:aggregator"]}
+{"key": "awklab.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "awkwardgit.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "awni.github.io", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "awo-deutschlanddukannstdas.podigee.io", "tags": ["language:german", "region:germany", "topic:health", "topic:politics", "type:podcast"]}
+{"key": "awoodennest.substack.com", "tags": ["topic:lifestyle", "type:personal-blog"]}
+{"key": "awordfitlyspoken.life", "tags": ["topic:religion", "type:podcast"]}
+{"key": "awordfitlyspoken.podbean.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "awordfromthelordwithdreaton.podbean.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "aworkinglibrary.com", "tags": ["topic:books", "topic:personal", "type:personal-blog"]}
+{"key": "aworkinprogress.bearblog.dev", "tags": ["topic:history", "type:personal-blog"]}
+{"key": "awpc.org", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "awritersdiary.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "awriterstip.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "awrldvew.com", "tags": ["topic:art", "topic:business", "type:personal-blog"]}
+{"key": "aws.edu.pl", "tags": ["language:polish", "region:poland", "topic:education", "topic:government", "type:institution"]}
+{"key": "awscq.substack.com", "tags": ["topic:ai", "type:newsletter"]}
+{"key": "awsforidiots.com", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "awsh.org", "tags": ["topic:hardware", "topic:open-source", "type:personal-blog"]}
+{"key": "awsteele.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "awtlser.podbean.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "awty.substack.com", "tags": ["region:usa", "topic:travel", "type:personal-blog"]}
+{"key": "awwblogjp.substack.com", "tags": ["language:japanese", "region:japan", "topic:ai", "topic:entertainment", "type:vendor-blog"]}
+{"key": "awwfeathers.com", "tags": ["topic:entertainment", "type:personal-blog"]}
+{"key": "awwman.net", "tags": ["topic:music", "type:podcast"]}
+{"key": "awzdrc.podcaster.de", "tags": ["language:german", "topic:astrology", "type:podcast"]}
+{"key": "axadletimes.com", "tags": ["region:africa", "topic:news", "type:publication"]}
+{"key": "axaleng.substack.com", "tags": ["topic:programming", "type:vendor-blog"]}
+{"key": "axautikgroupllc.substack.com", "tags": ["topic:hardware", "topic:tech-industry", "type:newsletter"]}
+{"key": "axay.hashnode.dev", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "axbom.com", "tags": ["topic:ai", "topic:design", "type:personal-blog"]}
+{"key": "axbom.me", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "axcessnews.com", "tags": ["topic:news", "type:publication"]}
+{"key": "axe-n-anvil.com", "tags": ["topic:art", "topic:personal", "type:vendor-blog"]}
+{"key": "axecop.com", "tags": ["topic:entertainment", "type:personal-blog"]}
+{"key": "axel.mx", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "axelbojanowski.substack.com", "tags": ["language:german", "region:germany", "topic:environment", "type:newsletter"]}
+{"key": "axelhackekolumne.podigee.io", "tags": ["language:german", "region:germany", "topic:books", "topic:entertainment", "type:podcast"]}
+{"key": "axelivan.bearblog.dev", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "axelk.ee", "tags": ["topic:ai", "topic:personal", "type:personal-blog"]}
+{"key": "axelljohan.podbean.com", "tags": ["topic:health", "type:podcast"]}
+{"key": "axelmnvn.substack.com", "tags": ["language:spanish", "topic:finance", "type:newsletter"]}
+{"key": "axelp.io", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "axeltombereau.substack.com", "tags": ["topic:ai", "topic:business", "type:newsletter"]}
+{"key": "axiawomen.substack.com", "tags": ["topic:religion", "type:community"]}
+{"key": "axio.ms", "tags": ["topic:hardware", "type:personal-blog"]}
+{"key": "axioma-techno.com.ua", "tags": ["language:ukrainian", "region:ukraine", "topic:tech-industry", "type:publication"]}
+{"key": "axisimagingnews.com", "tags": ["topic:ai", "topic:medicine", "type:publication"]}
+{"key": "axislibrary.substack.com", "tags": ["topic:philosophy", "type:personal-blog"]}
+{"key": "axismundinetwork.substack.com", "tags": ["region:usa", "topic:media", "topic:politics", "type:publication"]}
+{"key": "axisofeasy.com", "tags": ["topic:security", "topic:tech-industry", "type:podcast"]}
+{"key": "axisofeval.blogspot.ca", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "axleos.com", "tags": ["topic:embedded", "topic:hardware", "type:personal-blog"]}
+{"key": "axltnnr.io", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "axmpaperspacescalemodels.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "axoga.to", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "axolotlai.substack.com", "tags": ["topic:ai", "topic:open-source", "type:newsletter"]}
+{"key": "axolotls-has-a-website.neocities.org", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "axoncomunicacion.net", "tags": ["language:spanish", "region:spain", "topic:business", "type:vendor-blog"]}
+{"key": "axotron.se", "tags": ["topic:hardware", "type:personal-blog"]}
+{"key": "axup.substack.com", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "axwilkinson.substack.com", "tags": ["topic:environment", "topic:personal", "type:newsletter"]}
+{"key": "axxuy.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "ayaanshah.blog", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "ayacnews2nd.com", "tags": ["language:japanese", "region:japan", "topic:entertainment", "type:aggregator"]}
+{"key": "ayakas-voice-delivery.com", "tags": ["language:japanese", "region:japan", "topic:entertainment", "type:personal-blog"]}
+{"key": "ayalalaotratribuna.blogspot.com", "tags": ["language:spanish", "topic:politics", "type:personal-blog"]}
+{"key": "ayamartinseaver.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "ayanamadrone.substack.com", "tags": ["topic:astrology", "topic:religion", "type:personal-blog"]}
+{"key": "ayandas.me", "tags": ["topic:ai", "topic:graphics", "type:personal-blog"]}
+{"key": "ayandastood.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "ayasofya-media.com", "tags": ["language:japanese", "region:japan", "topic:religion", "type:podcast"]}
+{"key": "ayats.org", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "ayazhafiz.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "aysen.mop.gob.cl", "tags": ["language:spanish", "region:latin-america", "topic:government", "topic:infrastructure", "type:institution"]}
+{"key": "aydin.kurtelli.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "aydindenge.com.tr", "tags": ["topic:news", "type:publication"]}
+{"key": "aydinlik.com.tr", "tags": ["topic:news", "type:publication"]}
+{"key": "aydinnyunus.github.io", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "aydos.de", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "ayearinthecountry.co.uk", "tags": ["region:uk", "topic:entertainment", "type:personal-blog"]}
+{"key": "ayearofhealing.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "ayeks.de", "tags": ["topic:ai", "topic:security", "type:personal-blog"]}
+{"key": "ayelet8.podbean.com", "tags": ["topic:personal", "type:podcast"]}
+{"key": "ayellewaterhouse.substack.com", "tags": ["language:french", "topic:lifestyle", "type:newsletter"]}
+{"key": "ayesimo.com", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "ayewo.com", "tags": ["topic:programming", "topic:web-development", "type:personal-blog"]}
+{"key": "ayhaber.com.tr", "tags": ["topic:news", "type:publication"]}
+{"key": "ayham.xyz", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "ayhamkader.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "ayine.substack.com", "tags": ["language:portuguese", "region:latin-america", "topic:books", "topic:politics", "type:institution"]}
+{"key": "aylabythesea.com", "tags": ["region:spain", "topic:personal", "type:personal-blog"]}
+{"key": "aylasultana.bearblog.dev", "tags": ["language:chinese", "topic:personal", "type:personal-blog"]}
+{"key": "aylgorith.com", "tags": ["topic:finance", "topic:tech-industry", "type:personal-blog"]}
+{"key": "aylmerexpress.com", "tags": ["region:canada", "topic:news", "type:publication"]}
+{"key": "aylmermuseum.ca", "tags": ["region:canada", "topic:art", "topic:history", "type:institution"]}
+{"key": "aymanbagabas.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "aymannadeem.github.io", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "aymenfurter.ch", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "aymeric-roucher.github.io", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "aymericbeaumet.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://aynahaber.org/rss-yazar.xml", "tags": ["topic:news", "topic:politics", "type:publication"]}
+{"key": "https://aynahaber.org/rss.xml", "tags": ["topic:news", "type:publication"]}
+{"key": "https://aynahaber.org/rss/spor/157.xml", "tags": ["topic:sport", "type:publication"]}
+{"key": "ayne.podbean.com", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "aynyan2828.github.io", "tags": ["language:japanese", "region:japan", "topic:ai", "type:podcast"]}
+{"key": "ayodaniels.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "ayohata.substack.com", "tags": ["language:japanese", "region:japan", "topic:personal", "type:newsletter"]}
+{"key": "ayoogunde.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "ayophilip.com", "tags": ["topic:data", "type:personal-blog"]}
+{"key": "ayoto.substack.com", "tags": ["topic:philosophy", "type:personal-blog"]}
+{"key": "ayrshare.podbean.com", "tags": ["topic:tech-industry", "type:podcast"]}
+{"key": "aysenahora.cl", "tags": ["language:spanish", "region:latin-america", "topic:news", "type:publication"]}
+{"key": "ayther.fr", "tags": ["language:french", "region:france", "topic:entertainment", "type:publication"]}
+{"key": "ayto-finestrat.es", "tags": ["language:spanish", "region:spain", "topic:government", "type:institution"]}
+{"key": "aytozujar.es", "tags": ["language:spanish", "region:spain", "topic:government", "type:institution"]}
+{"key": "aytwit.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "ayu.land", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "ayue.substack.com", "tags": ["language:chinese", "topic:books", "type:newsletter"]}
+{"key": "ayuformation.podcaster.de", "tags": ["language:german", "region:germany", "topic:health", "topic:medicine", "type:podcast"]}
+{"key": "ayuhito.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "ayuntamientodezahinos.es", "tags": ["language:spanish", "region:spain", "topic:government", "type:institution"]}
+{"key": "ayurveda.koelab.net", "tags": ["language:japanese", "region:japan", "topic:health", "topic:philosophy", "type:podcast"]}
+{"key": "ayushchat.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "ayushchugh.com", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "ayushithakkar.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "ayushsaraswat.com", "tags": ["topic:business", "topic:tech-industry", "type:personal-blog"]}
+{"key": "ayushshanker.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "ayvnews.com", "tags": ["region:africa", "topic:news", "type:publication"]}
+{"key": "aywren.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "ayyybel.party", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "az-audio-e-paper.podigee.io", "tags": ["language:german", "region:germany", "topic:news", "type:podcast"]}
+{"key": "az.azvision.az", "tags": ["topic:news", "type:publication"]}
+{"key": "az.rip", "tags": ["topic:politics", "type:personal-blog"]}
+{"key": "az.trend.az", "tags": ["topic:news", "type:publication"]}
+{"key": "azadehghareh.substack.com", "tags": ["topic:health", "topic:medicine", "type:newsletter"]}
+{"key": "azadehjoon.substack.com", "tags": ["region:usa", "topic:health", "topic:politics", "type:newsletter"]}
+{"key": "azadhindtimes.com", "tags": ["language:hindi", "region:india", "topic:news", "type:publication"]}
+{"key": "azadmedia.az", "tags": ["topic:news", "type:publication"]}
+{"key": "azaiagenda.substack.com", "tags": ["region:usa", "topic:ai", "type:newsletter"]}
+{"key": "azalea-recorder-7bnk.squarespace.com", "tags": ["topic:personal", "type:podcast"]}
+{"key": "azamat.bearblog.dev", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "azamsharp.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "azat.co", "tags": ["topic:travel", "type:personal-blog"]}
+{"key": "azat.tv", "tags": ["topic:news", "type:publication"]}
+{"key": "azathabar.com", "tags": ["topic:news", "type:publication"]}
+{"key": "azattyq-news.kz", "tags": ["topic:news", "type:publication"]}
+{"key": "azatutyun.am", "tags": ["topic:news", "type:publication"]}
+{"key": "azbikelaw.org", "tags": ["region:usa", "topic:politics", "topic:transport", "type:vendor-blog"]}
+{"key": "http://azdailysun.com/search/?f=rss&t=article&c=news/local/environment&l=50&s=start_time&sd=desc", "tags": ["region:usa", "topic:environment", "topic:news", "type:publication"]}
+{"key": "azdavis.net", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "azdesertswarm.com", "tags": ["region:usa", "topic:sport", "type:community"]}
+{"key": "azeemba.com", "tags": ["topic:ai", "topic:mathematics", "type:personal-blog"]}
+{"key": "azeiger.ch", "tags": ["language:german", "topic:news", "type:publication"]}
+{"key": "azeletmegminden.hu", "tags": ["topic:personal", "type:podcast"]}
+{"key": "azense.app", "tags": ["topic:ai", "topic:medicine", "type:podcast"]}
+{"key": "azerbaijan-news.az", "tags": ["topic:news", "type:publication"]}
+{"key": "azerbaijannewsgazette.com", "tags": ["topic:news", "type:publication"]}
+{"key": "azerinform.az", "tags": ["topic:news", "type:publication"]}
+{"key": "azerty.lepodcast.fr", "tags": ["language:french", "region:france", "topic:tech-industry", "type:podcast"]}
+{"key": "azfreenews.com", "tags": ["region:usa", "topic:news", "topic:politics", "type:publication"]}
+{"key": "azhbr.gov.al", "tags": ["topic:business", "topic:government", "type:institution"]}
+{"key": "azhdarchid.com", "tags": ["topic:gaming", "topic:programming", "type:personal-blog"]}
+{"key": "azhockeyinsider.substack.com", "tags": ["region:usa", "topic:sport", "type:newsletter"]}
+{"key": "azhukov.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "azia.az", "tags": ["topic:news", "type:publication"]}
+{"key": "azia.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "aziis98.com", "tags": ["topic:mathematics", "topic:programming", "type:personal-blog"]}
+{"key": "azimi.me", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "azimuth.substack.com", "tags": ["topic:ai", "topic:software-engineering", "type:newsletter"]}
+{"key": "azinfobd.com", "tags": ["topic:business", "type:aggregator"]}
+{"key": "azinformasiya.az", "tags": ["topic:news", "type:publication"]}
+{"key": "azjewishpost.com", "tags": ["region:usa", "topic:news", "topic:religion", "type:publication"]}
+{"key": "azlp.mk", "tags": ["topic:government", "topic:security", "type:institution"]}
+{"key": "azminanews.substack.com", "tags": ["language:portuguese", "region:latin-america", "topic:news", "topic:politics", "type:publication"]}
+{"key": "azmr.uk", "tags": ["topic:design", "topic:programming", "type:personal-blog"]}
+{"key": "azmundus.substack.com", "tags": ["topic:politics", "type:personal-blog"]}
+{"key": "aznmb3.podcaster.de", "tags": ["language:german", "topic:entertainment", "type:podcast"]}
+{"key": "azov.org.ua", "tags": ["language:ukrainian", "region:ukraine", "topic:military", "type:institution"]}
+{"key": "azpha.org", "tags": ["region:usa", "topic:health", "type:institution"]}
+{"key": "azra.ba", "tags": ["topic:health", "topic:lifestyle", "type:publication"]}
+{"key": "azraelsec.sh", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "azretsultan.kz", "tags": ["topic:art", "topic:history", "type:institution"]}
+{"key": "azsamadlessons.com", "tags": ["topic:education", "topic:music", "type:personal-blog"]}
+{"key": "azsnakepit.com", "tags": ["region:usa", "topic:sport", "type:community"]}
+{"key": "azspot.net", "tags": ["region:usa", "topic:politics", "type:personal-blog"]}
+{"key": "aztecsauce.blogspot.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "aztotheleastofthese.org", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "aztuc0.podcaster.de", "tags": ["language:german", "region:germany", "topic:philosophy", "type:podcast"]}
+{"key": "azturkxeber.az", "tags": ["topic:news", "type:publication"]}
+{"key": "azuanz.com", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "azubiwissen.podigee.io", "tags": ["language:german", "region:germany", "topic:education", "type:podcast"]}
+{"key": "azud.podigee.io", "tags": ["language:german", "topic:art", "topic:lifestyle", "type:podcast"]}
+{"key": "azukailgames.com", "tags": ["topic:gaming", "type:vendor-blog"]}
+{"key": "azulpress.ma", "tags": ["language:arabic", "region:africa", "topic:art", "topic:books", "type:publication"]}
+{"key": "azuma.koelab.info", "tags": ["language:japanese", "region:japan", "topic:business", "type:podcast"]}
+{"key": "azuolynobiblioteka.lt", "tags": ["topic:books", "topic:education", "type:institution"]}
+{"key": "https://azura.arkeo.cl/public/2/podcast/1f0fcbfd-1006-690c-97e6-2347d1c2b31d/feed", "tags": ["language:spanish", "region:latin-america", "topic:environment", "type:podcast"]}
+{"key": "https://azura.arkeo.cl/public/2/podcast/1f112e2a-6a31-6928-ae8f-0bdbd3a44b97/feed", "tags": ["language:spanish", "region:latin-america", "topic:music", "type:podcast"]}
+{"key": "https://azura.arkeo.cl/public/2/podcast/1f16b8d7-43a5-6204-a566-d3d3401a2b6a/feed", "tags": ["language:spanish", "region:latin-america", "topic:politics", "type:podcast"]}
+{"key": "azuradastra.substack.com", "tags": ["topic:astrology", "type:personal-blog"]}
+{"key": "azure.github.io", "tags": ["topic:infrastructure", "topic:software-engineering", "type:vendor-blog"]}
+{"key": "azureauthority.substack.com", "tags": ["topic:infrastructure", "topic:software-engineering", "type:newsletter"]}
+{"key": "azurelunatic.dreamwidth.org", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "azuremagazine.com", "tags": ["region:usa", "topic:art", "topic:design", "type:publication"]}
+{"key": "azvision.az", "tags": ["topic:news", "type:publication"]}
+{"key": "azwateragenda.substack.com", "tags": ["region:usa", "topic:environment", "topic:politics", "type:newsletter"]}
+{"key": "azzamitsi1.substack.com", "tags": ["topic:politics", "type:personal-blog"]}
+{"key": "azzapress.com", "tags": ["language:arabic", "region:africa", "topic:news", "type:publication"]}
+{"key": "b-ark.ca", "tags": ["region:canada", "topic:personal", "type:personal-blog"]}
+{"key": "b-hilprecht.github.io", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "b-list.org", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "b-mobile.com.ua", "tags": ["language:ukrainian", "region:ukraine", "topic:gadgets", "topic:tech-industry", "type:publication"]}
+{"key": "b-nado.bh", "tags": ["region:middle-east", "topic:sport", "type:institution"]}
+{"key": "b-onetv.cd", "tags": ["language:french", "region:africa", "topic:news", "type:publication"]}
+{"key": "b-sharman.dev", "tags": ["topic:personal", "topic:programming", "type:personal-blog"]}
+{"key": "b-u-b.podigee.io", "tags": ["language:german", "region:germany", "topic:business", "type:podcast"]}
+{"key": "b.27p.de", "tags": ["topic:hardware", "topic:networking", "type:personal-blog"]}
+{"key": "b.agilob.net", "tags": ["topic:personal", "topic:software-engineering", "type:personal-blog"]}
+{"key": "b.atch.se", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "b.h4x.zip", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "https://b.hatena.ne.jp/entry/rss/https://zenn.dev/oke331/articles/65d2833a6a555f", "tags": ["language:japanese", "region:japan", "topic:ai", "topic:programming", "type:aggregator"]}
+{"key": "b.j4.lc", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "b.l0g.jp", "tags": ["language:japanese", "region:japan", "topic:books", "topic:programming", "type:personal-blog"]}
+{"key": "b.mtjm.eu", "tags": ["topic:networking", "topic:open-source", "type:personal-blog"]}
