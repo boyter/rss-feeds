@@ -147,3 +147,5 @@ Checked by hand on this pass, still blocked to the harvester: `bmj.com`,
 Two of these are worth a browser check first: `bmj.com` and `breakingdefense.com`
 are the largest of their topic and both look like ordinary WordPress/Cloudflare
 setups rather than a paywalled feed.
+
+- https://www.macsparky.com/feed/ — 403s the harvester, serves RSS to browser headers (verified 2026-10-27); in feeds.json, flagged each pass

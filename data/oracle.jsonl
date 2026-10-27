@@ -4401,3 +4401,4 @@
 {"site": "zolmeister.com", "feeds": [{"url": "https://zolmeister.com/feeds/posts/default", "title": "Zolmeister"}], "error": ""}
 {"site": "zserge.com", "feeds": [{"url": "https://zserge.com/rss.xml", "title": "zserge's blog"}], "error": ""}
 {"site": "zsmb.co", "feeds": [{"url": "https://zsmb.co/index.xml", "title": "zsmb.co"}], "error": ""}
+{"site": "https://www.macsparky.com/feed/", "feeds": [], "error": ""}
