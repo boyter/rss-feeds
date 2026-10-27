@@ -78,3 +78,7 @@
 {"key": "bahardaily.ir", "reason": "Iranian news site whose feed serves casino spam (Vox Casino, Casoola, Trixino, 7Gear bonus text), non-Persian item titles"}
 {"key": "balzaromagazine.co.uk", "reason": "content farm posing as a trade magazine: all items are B2B SEO listicles (sweatshirts for clubs, GEO agencies, air filtration) - hand-checked"}
 {"key": "bankingonfootball.com.ng", "reason": "SEO content farm: \"Bank Sort Codes\" title with unrelated money-mix articles (neobanks, loan calculators), football in name only"}
+{"key": "bartenders.com.bo", "reason": "casino/gambling spam items (Gates of Olympus, 1win) on a bartending course site"}
+{"key": "baseballnewssource.com", "reason": "baseball domain serving auto-generated stock-ticker press-release spam"}
+{"key": "batchenga.cm", "reason": "Cameroonian commune site serving gambling spam (mostbet, Gl\u00fccksspiele) in several languages"}
+{"key": "baueditora.com.br", "reason": "lorem-ipsum placeholder posts (\"Eget elementum on train\", \"Hello world!\"), no real content"}
