@@ -51,9 +51,21 @@ SPAM_PATTERNS = [
 # feed's own name or description is damning, but a single headline is not.
 ITEM_SPAM_HITS = 3
 
+# Two false removals pinned this list. "Quit Porn with Ben Uyama" is a real
+# recovery podcast: an adult-industry word in a feed NAME can be the subject
+# the feed is about, not what it sells - those words count only via items, at
+# the >=3 threshold like everything else. And "Martes de la semana XXX del
+# Tiempo Ordinario" is week 30 in a Catholic lectionary: Roman-numeral XXX is
+# not the spam token. "xxx" therefore matches lowercase only.
+NAME_EXEMPT_WORDS = {"porn", "xxx", "onlyfans"}
+
 
 def spam_hits(text, words):
-    return sum(len(re.findall(r"\b%s\b" % re.escape(w), text, re.I)) for w in words)
+    n = 0
+    for w in words:
+        flags = 0 if w == "xxx" else re.I  # uppercase XXX = roman numeral
+        n += len(re.findall(r"\b%s\b" % re.escape(w), text, flags))
+    return n
 
 
 def load_spam(path=paths.data("spam.jsonl")):
@@ -143,7 +155,7 @@ def classify(rec, feed, spam_rules=()):
             continue
         meta = f"{rec.get('title', '')} {rec.get('description', '')}"
         items = " ".join(rec.get("items", []))
-        if spam_hits(meta, words):
+        if spam_hits(meta, [w for w in words if w not in NAME_EXEMPT_WORDS]):
             return "remove", f"spam:{name}:in-feed-name"
         hits = spam_hits(items, words)
         if hits >= ITEM_SPAM_HITS:

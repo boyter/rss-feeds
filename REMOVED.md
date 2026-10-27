@@ -1,12 +1,8 @@
 # Removed from feeds.json
 
-3 feeds. The previous file is in git history; restore any of these by re-adding the line.
+2 feeds. The previous file is in git history; restore any of these by re-adding the line.
 
-## not-a-feed (2)
+## spam (2)
 
-- `https://asdr.gov.uz/feed/` — not-a-feed
-- `https://www.designernews.co/?format=atom` — not-a-feed
-
-## gone (1)
-
-- `http://web.eecs.utk.edu/~azh/blog/feed.rss` — gone:404
+- `https://benuyama.com/feed/podcast/quit-porn-with-ben-uyama/` — spam:casino-seo:in-feed-name
+- `https://biblialiturgia.com/feed/` — spam:casino-seo:5-item-hits

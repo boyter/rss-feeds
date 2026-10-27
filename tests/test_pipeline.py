@@ -869,6 +869,61 @@ class UnacceptableTagsReachTheHumanQueue(unittest.TestCase):
         self.assertIn("esperanto", unrows[0]["missing"])
 
 
+class TestSpamWordRulesThatAlmostKilledGoodFeeds(unittest.TestCase):
+    """Two false removals pinned: roman-numeral XXX and a recovery podcast named for its subject.
+
+    Pinned because triage proposed remove:spam on both, found only by reading
+    the items by hand before applying - a false removal is data loss:
+    - "Martes de la semana XXX del Tiempo Ordinario" x5: XXX is the liturgical
+      week number, not the adult token. spam_hits must match xxx lowercase only.
+    - "Quit Porn with Ben Uyama": a real nofap recovery podcast; an adult word
+      in the feed NAME is not damning when the feed sells nothing - those
+      words (NAME_EXEMPT_WORDS) count only via items at the >=3 threshold.
+    """
+
+    def rec(self, title, items, desc=""):
+        return {"url": "https://example.test/feed", "status": 200,
+                "isFeed": True, "title": title, "description": desc,
+                "items": items}
+
+    def test_roman_numeral_xxx_in_items_is_not_spam(self):
+        v, why = triage.classify(self.rec(
+            "Biblia y Liturgia de las Horas en Audio - mp3",
+            ["Martes de la semana XXX del Tiempo Ordinario",
+             "Lunes de la semana XXX del Tiempo Ordinario",
+             "Domingo de la semana XXX del Tiempo Ordinario",
+             "Lecturas y Evangelio - semana XXX",
+             "Salmo de la semana XXX"]),
+            {}, [])
+        self.assertNotEqual(v, "remove")
+
+    def test_a_recovery_podcast_named_for_its_subject_survives(self):
+        v, why = triage.classify(self.rec(
+            "Quit Porn with Ben Uyama",
+            ["Have a Porn Fetish? You need to hear this (nofap)",
+             "Why NoFap won't fix your life",
+             "I'm done. This is the truth you avoid"]),
+            {}, [])
+        self.assertNotEqual(v, "remove")
+
+    def test_a_real_casino_hijack_still_goes(self):
+        v, why = triage.classify(self.rec(
+            "Alternatives théâtrales",
+            ["Woospin leaderboard", "Velobet Casino registrazione",
+             "Fiz Casino cosa sapere", "Jackpotter Italia guida",
+             "GoldenLion Casino bonus"]),
+            {}, [])
+        self.assertEqual(v, "remove")
+
+    def test_an_adult_word_alone_still_needs_three_item_hits(self):
+        v, why = triage.classify(self.rec(
+            "Industry Weekly",
+            ["OnlyFans creator economy Q3", "a cooking video",
+             "a bike review"]),
+            {"url": "https://example.test/feed", "tags": []}, [])
+        self.assertNotEqual(v, "remove")
+
+
 class TestOracle429RetriedAndErrorRowsNeverCached(unittest.TestCase):
     """A 429 from the free index says "not yet", never "no".
 

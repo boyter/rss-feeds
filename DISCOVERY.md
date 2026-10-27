@@ -762,3 +762,26 @@ status, so a REJECTED batch looked like it passed and the settle chain
 continued without those rules. Caught because the second `discover.py tag`
 count came back oddly small; fixed the rule, re-applied, merged the remaining
 224. Shell chains over decide.py must check for REJECTED, not exit codes.
+
+## Tranche 12 + two spam-rule false removals caught (2026-10-27)
+
+1,500 leads, 1,365 live (91%), ~1,230 rules in four batches:
+**24394 -> 25507 feeds, 18,054 hosts.**
+
+The near-misses matter more than the adds this time. Triage proposed
+`remove:spam` on two feeds that hand-reading showed were real:
+- `biblialiturgia.com` - "semana XXX del Tiempo Ordinario" x5: the Catholic
+  lectionary's week 30 in ROMAN NUMERALS, matched as the adult token "xxx".
+  The pattern is now case-sensitive for "xxx" (spam houses write it lowercase;
+  Rome writes it uppercase).
+- `benuyama.com/.../quit-porn-with-ben-uyama` - a genuine recovery podcast
+  whose NAME names the thing it helps you quit. Adult-industry words
+  (porn/xxx/onlyfans) can no longer fire on feed name alone; they count only
+  via items at the >=3 threshold, like every other word. Casino/viagra words
+  still fire on name - alternativestheatrales-style hijacks stay caught, and
+  its item set is a pinned test.
+
+Four new tests, mutation-verified: with the fix reverted exactly those two
+tests fail. Rule: reading the ITEMS before applying a remove is not optional
+ritual - it is where a counting rule meets natural language and finds the
+Roman numerals.
