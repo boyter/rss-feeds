@@ -56,6 +56,7 @@ Non-technology:
 `topic:journalism`, `topic:sport`, `topic:gaming`, `topic:entertainment`,
 `topic:transport`,
 `topic:music`, `topic:art`, `topic:books`, `topic:travel`, `topic:food`,
+`topic:astrology` (horoscopes, natal charts, astrological practice - a real recurring cluster; esoteric but categorizable),
 `topic:health`, `topic:education`, `topic:religion`, `topic:lifestyle`, `topic:personal`
 
 `topic:personal` is for general life-writing blogs with no dominant subject. It
