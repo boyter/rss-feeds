@@ -723,3 +723,16 @@ mechanical (match the key against the batch's real URLs - two turned out to
 have different paths than the delegate remembered: index.xml vs rss.xml).
 Rulebook note added: topic:programming:LANG is valid and should be used when
 the feed is about one named language.
+
+## Tranche 9 + topic:astrology added (2026-10-27)
+
+1,500 leads, 1,395 live (93%), ~1,250 rules in five delegated batches:
+**20471 -> 21818 feeds, 15,147 hosts, zero hand-verified removals** - the
+cleanest settle yet (no dead feeds among the additions at all).
+
+Vocabulary change, same-change rule honoured (TAGS.md + rules together):
+`topic:astrology` added. The delegates kept skipping it - 17 rows in one batch,
+plus stragglers in earlier ones - "no topic fits" is a vocabulary gap when the
+cluster keeps recurring, not a judgment failure. 15 astrology feeds tagged;
+the esoteric-but-categorizable line is drawn at actual astrology, not at
+religion-adjacent wellness.
