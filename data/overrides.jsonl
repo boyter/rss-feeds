@@ -13468,3 +13468,9 @@
 {"key": "https://aslakhellesoy.com/rss.xml", "tags": ["topic:software-engineering", "type:personal-blog"]}
 {"key": "https://aslamnajeebdeen.com/feed.xml", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "https://aslansplace.substack.com/feed", "tags": ["region:usa", "topic:religion", "type:newsletter"]}
+{"key": "https://analytik.news/messen/lab-supply-hamburg/programm/rss.xml", "tags": ["language:german", "region:germany", "topic:science", "type:publication"]}
+{"key": "https://analytik.news/messen/lab-supply-hannover/programm/rss.xml", "tags": ["language:german", "region:germany", "topic:science", "type:publication"]}
+{"key": "https://analytik.news/messen/lab-supply-leverkusen/programm/rss.xml", "tags": ["language:german", "region:germany", "topic:science", "type:publication"]}
+{"key": "https://anbariloche.com.ar/rss/neuquen-alto-valle", "tags": ["language:spanish", "region:latin-america", "topic:news", "type:publication"]}
+{"key": "https://anbariloche.com.ar/rss/noticias", "tags": ["language:spanish", "region:latin-america", "topic:news", "type:publication"]}
+{"key": "https://anbariloche.com.ar/rss/opinion", "tags": ["language:spanish", "region:latin-america", "topic:politics", "type:publication"]}
