@@ -28955,3 +28955,337 @@
 {"url": "https://blog.aaronbieber.com/posts/index.xml", "checkedAt": 1793141747, "status": 200, "finalUrl": "https://blog.aaronbieber.com/posts/index.xml", "contentType": "text/xml", "isFeed": true, "title": "Posts on The Chronicle", "description": "Recent content in Posts on The Chronicle", "items": ["They Took Our Jobs!", "Reverse Centaur Salads", "Defying Gravity", "Vibe Coding Is a Lot Like Ruby on Rails", "Tech Enshittification Reaches a Fever Pitch", "AI Isn't Coming for Your Job (Your Boss Is)"], "itemsSampled": 6, "itemCount": 10}
 {"url": "https://blog.abevoelker.com/feed.xml", "checkedAt": 1793141747, "status": 200, "finalUrl": "https://abevoelker.com/feed.xml", "contentType": "application/xml", "truncated": "body capped at 60000 bytes", "isFeed": true, "title": "Abe Voelker", "description": "", "items": ["Building old Rubies on Ubuntu 22.04"], "itemsSampled": 1, "itemCount": 1}
 {"url": "https://blog.abluestar.com/feed.xml", "checkedAt": 1793141748, "status": 200, "finalUrl": "https://blog.abluestar.com/feed.xml", "contentType": "application/xml", "isFeed": true, "title": "A Blue Star", "description": "Steven Smethurst is a Vancouver based Maker, Hacker, Coder, Artist, and all around great guy!", "items": ["Mixxtape - the first boards, and what went wrong", "Tokyo Metro PCB - 248 stations, work in progress", "Montréal Métro PCB - porting the SkyTrain board to a new city", "Events and Art in Vancouver", "Vancouver SkyTrain PCB v3 - generated from real geography", "Mixxtape - a cassette you can actually record on"], "itemsSampled": 6, "itemCount": 100}
+{"url": "https://asec.ahnlab.com/en/category/detection-en/feed/", "checkedAt": 1793142544, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.securityweek.com/category/application-security/feed/", "checkedAt": 1793142544, "status": 403, "error": "HTTPError 403"}
+{"url": "https://thecyberexpress.com/firewall-daily/dark-web-news/feed/", "checkedAt": 1793142544, "status": 403, "error": "HTTPError 403"}
+{"url": "https://tympanus.net/codrops/collective/feed/", "checkedAt": 1793142544, "status": 403, "error": "HTTPError 403"}
+{"url": "https://asec.ahnlab.com/en/category/malware-information-en/feed/", "checkedAt": 1793142545, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.securityweek.com/category/cloud-security/feed/", "checkedAt": 1793142545, "status": 403, "error": "HTTPError 403"}
+{"url": "https://thecyberexpress.com/firewall-daily/data-breaches-news/feed/", "checkedAt": 1793142545, "status": 403, "error": "HTTPError 403"}
+{"url": "https://tympanus.net/codrops/feed/", "checkedAt": 1793142545, "status": 403, "error": "HTTPError 403"}
+{"url": "https://asec.ahnlab.com/en/feed/", "checkedAt": 1793142545, "status": 403, "error": "HTTPError 403"}
+{"url": "https://us-cert.cisa.gov/ncas/alerts.xml", "checkedAt": 1793142544, "status": 403, "error": "HTTPError 403", "regressed": true}
+{"url": "https://www.securityweek.com/category/cyber-insurance/feed/", "checkedAt": 1793142545, "status": 403, "error": "HTTPError 403"}
+{"url": "https://thecyberexpress.com/firewall-daily/feed/", "checkedAt": 1793142545, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.securityweek.com/category/cybercrime/feed/", "checkedAt": 1793142545, "status": 403, "error": "HTTPError 403"}
+{"url": "https://thecyberexpress.com/firewall-daily/hacker-news/feed/", "checkedAt": 1793142545, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.securityweek.com/category/cyberwarfare/feed/", "checkedAt": 1793142546, "status": 403, "error": "HTTPError 403"}
+{"url": "https://thecyberexpress.com/firewall-daily/ransomware-news/feed/", "checkedAt": 1793142546, "status": 403, "error": "HTTPError 403"}
+{"url": "https://us-cert.cisa.gov/ncas/analysis-reports.xml", "checkedAt": 1793142545, "status": 403, "error": "HTTPError 403", "regressed": true}
+{"url": "https://www.reddit.com/r/css.rss", "checkedAt": 1793142544, "status": 200, "finalUrl": "https://www.reddit.com/r/css.rss", "contentType": "application/atom+xml", "isFeed": true, "title": "Cascading Style Sheets", "description": "A community for discussing about CSS (Cascading Style Sheets), Web Design and surrounding relevant topics. Feel free to discuss, ask questions, share projects and do other things related to CSS here.", "items": ["New Flairs and Changes for r/CSS", "A Modern CSS Guide to Responsive Web Design", "Embracing Playful Imperfection With The CSS random() Function", "CSS Tricks is back!", "Warping html with two svg filter primitives, no webgl. anyone using this in production?", "[Mod-approved] Free Manning ebook sampler: modular CSS, native scope, and more"], "itemsSampled": 6, "itemCount": 25}
+{"url": "https://www.securityweek.com/category/data-breaches/feed/", "checkedAt": 1793142546, "status": 403, "error": "HTTPError 403"}
+{"url": "https://thecyberexpress.com/firewall-daily/vulnerabilities/feed/", "checkedAt": 1793142546, "status": 403, "error": "HTTPError 403"}
+{"url": "https://tympanus.net/codrops/rss", "checkedAt": 1793142545, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.securityweek.com/category/data-protection/feed/", "checkedAt": 1793142546, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.reddit.com/r/cybersecurity/.rss", "checkedAt": 1793142546, "status": 429, "error": "HTTPError 429", "regressed": true}
+{"url": "https://www.securityweek.com/category/endpoint-security/feed/", "checkedAt": 1793142547, "status": 403, "error": "HTTPError 403"}
+{"url": "https://us-cert.cisa.gov/ncas/current-activity.xml", "checkedAt": 1793142546, "status": 403, "error": "HTTPError 403", "regressed": true}
+{"url": "https://blog.mozilla.org/accessibility/feed/", "checkedAt": 1793142547, "status": 403, "error": "HTTPError 403"}
+{"url": "https://0x.c0ffee.me/feed.xml", "checkedAt": 1793142547, "status": 0, "error": "URLError [Errno 111] Connection refused"}
+{"url": "https://www.securityweek.com/category/fraud-identity-theft/feed/", "checkedAt": 1793142547, "status": 403, "error": "HTTPError 403"}
+{"url": "https://blog.mozilla.org/feed/", "checkedAt": 1793142547, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.reddit.com/r/gamers/.rss", "checkedAt": 1793142547, "status": 429, "error": "HTTPError 429", "regressed": true}
+{"url": "https://www.securityweek.com/category/ics-ot/feed/", "checkedAt": 1793142547, "status": 403, "error": "HTTPError 403"}
+{"url": "https://accessibledreams.home.blog/feed/", "checkedAt": 1793142547, "status": 403, "error": "HTTPError 403"}
+{"url": "https://blog.twitter.com/engineering/en_us/blog.rss", "checkedAt": 1793142547, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.securityweek.com/category/identity-access/feed/", "checkedAt": 1793142548, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.yahoo.com/news/rss/topstories", "checkedAt": 1793142548, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.reddit.com/r/InfoSecNews/.rss", "checkedAt": 1793142548, "status": 429, "error": "HTTPError 429"}
+{"url": "https://www.securityweek.com/category/incident-response/feed/", "checkedAt": 1793142548, "status": 403, "error": "HTTPError 403"}
+{"url": "https://blog.twitter.com/engineering/feed", "checkedAt": 1793142548, "status": 403, "error": "HTTPError 403"}
+{"url": "https://baovanhoa.vn/rss/ban-doc-165.rss", "checkedAt": 1793142545, "status": 200, "finalUrl": "https://baovanhoa.vn/rss/ban-doc-165.rss", "contentType": "text/xml", "truncated": "body capped at 60000 bytes decoded as utf-8, tail cut by the byte cap", "charset": "decoded as utf-8, tail cut by the byte cap", "isFeed": true, "title": "Bạn đọc | Báo Văn Hóa", "description": "", "items": ["Quán cà phê Trạm Mây ở Măng Đen: Trên bảo dưới không nghe?", "Hiến tạng: Ai quyết định khi người hiến không còn lên tiếng?", "Giao dịch phải công chứng cần được xác định trong luật"], "itemsSampled": 3, "itemCount": 3}
+{"url": "https://www.securityweek.com/category/iot-security/feed/", "checkedAt": 1793142548, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.anastasiaopara.com/feed.xml", "checkedAt": 1793142548, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1082)"}
+{"url": "https://www.reddit.com/r/javascript.rss", "checkedAt": 1793142548, "status": 429, "error": "HTTPError 429"}
+{"url": "https://0fps.net/feed/", "checkedAt": 1793142548, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.securityweek.com/category/malware-cyber-threats/feed/", "checkedAt": 1793142549, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.yahoo.com/news/rss/world/", "checkedAt": 1793142548, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.securityweek.com/category/mobile-wireless/feed/", "checkedAt": 1793142549, "status": 403, "error": "HTTPError 403"}
+{"url": "https://abramov.io/rss.xml", "checkedAt": 1793142549, "status": 503, "error": "HTTPError 503"}
+{"url": "http://www.reddit.com/r/netsec/.rss", "checkedAt": 1793142549, "status": 429, "error": "HTTPError 429"}
+{"url": "https://www.securityweek.com/category/nation-state/feed/", "checkedAt": 1793142549, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.securityweek.com/category/network-security/feed/", "checkedAt": 1793142549, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.reddit.com/r/reactjs.rss", "checkedAt": 1793142549, "status": 429, "error": "HTTPError 429"}
+{"url": "https://www.securityweek.com/category/privacy-compliance/feed/", "checkedAt": 1793142550, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.reddit.com/r/vuejs.rss", "checkedAt": 1793142550, "status": 429, "error": "HTTPError 429", "regressed": true}
+{"url": "https://www.securityweek.com/category/ransomware/feed/", "checkedAt": 1793142550, "status": 403, "error": "HTTPError 403"}
+{"url": "https://alistapart.com/main/feed/", "checkedAt": 1793142550, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.securityweek.com/category/risk-management/feed/", "checkedAt": 1793142550, "status": 403, "error": "HTTPError 403"}
+{"url": "https://alexpareto.com/feed.xml", "checkedAt": 1793142549, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.securityweek.com/category/supply-chain-security/feed/", "checkedAt": 1793142551, "status": 403, "error": "HTTPError 403"}
+{"url": "https://akhali.ge/feed/", "checkedAt": 1793142549, "status": 401, "error": "HTTPError 401"}
+{"url": "https://arcan-fe.com/feed/", "checkedAt": 1793142551, "status": 403, "error": "HTTPError 403"}
+{"url": "https://argamasilladecalatrava.es/feed/", "checkedAt": 1793142549, "status": 200, "finalUrl": "https://argamasilladecalatrava.es/feed/", "contentType": "application/rss+xml", "truncated": "body capped at 60000 bytes", "isFeed": true, "title": "Ayuntamiento de Argamasilla de Calatrava", "description": "Argamasilla de Calatrava - Al servicios de los ciudadanos", "items": ["Argamasilla de Calatrava se suma a la campaña de concienciación sobre el síndrome de Rett", "El programa SEPAP imparte un taller de termoterapia con parafina para el tratamiento de las algias", "Jesús Ruiz defiende la legitimidad de Argamasilla de Calatrava para acoger un centro de formación para la mina de Abenójar", "Escolares de los colegios de Argamasilla de Calatrava compartieron nuevos desayunos saludables", "Los Veteranos del CF Calatrava entregan a la asociación APATI los 1.200 euros recaudados en la Argakings League 2026", "El Ayuntamiento de Argamasilla de Calatrava comparte con la Junta Local de la AECC el Día Mundial Contra el Cáncer de Mama"], "itemsSampled": 6, "itemCount": 8}
+{"url": "https://www.securityweek.com/category/threat-intelligence/feed/", "checkedAt": 1793142551, "status": 403, "error": "HTTPError 403"}
+{"url": "https://baovanhoa.vn/rss/chinh-tri-39.rss", "checkedAt": 1793142548, "status": 200, "finalUrl": "https://baovanhoa.vn/rss/chinh-tri-39.rss", "contentType": "text/xml", "truncated": "body capped at 60000 bytes", "isFeed": true, "title": "Chính trị | Báo Văn Hóa", "description": "", "items": ["Cần khung hỗ trợ thống nhất trong phát triển công nghiệp văn hóa", "Quốc hội thảo luận về dự thảo Bộ luật Tố tụng Hình sự (sửa đổi)", "Quốc hội thảo luận về dự thảo Bộ luật Hình sự (sửa đổi)"], "itemsSampled": 3, "itemCount": 3}
+{"url": "https://www.securityweek.com/category/tracking-law-enforcement/feed/", "checkedAt": 1793142551, "status": 403, "error": "HTTPError 403"}
+{"url": "https://arcology.garden/updates.xml", "checkedAt": 1793142551, "status": 200, "finalUrl": "https://arcology.garden/updates.xml", "contentType": "text/xml", "isFeed": true, "title": "Arcology Garden Site Updates", "description": "", "items": ["Updated My \"Uses This\" page for 2025", "Posted: Fuck Time Two: Time Keeping Design Trends from 295BCE to ~2020CE", "Updated my \"rrix uses this\" page", "[[id:20240111T122723.179913][Postmortem: 2024-01 Wobserver Downtime]]", "Securing and Standardizing Data Rights Requests with a Data Rights Protocol - DRP @ PEPR23 -", "I got a new smartwatch and wrote a watchface for it in an evening."], "itemsSampled": 6, "itemCount": 10}
+{"url": "https://www.cisa.gov/cybersecurity-advisories/ics-advisories.xml", "checkedAt": 1793142551, "status": 403, "error": "HTTPError 403", "regressed": true}
+{"url": "https://www.securityweek.com/category/vulnerabilities/feed/", "checkedAt": 1793142551, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.securityweek.com/feed/", "checkedAt": 1793142552, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.cisa.gov/cybersecurity-advisories/ics-medical-advisories.xml", "checkedAt": 1793142552, "status": 403, "error": "HTTPError 403", "regressed": true}
+{"url": "https://arah.my/feed/", "checkedAt": 1793142551, "status": 200, "finalUrl": "https://arah.my/feed/", "contentType": "application/rss+xml", "truncated": "body capped at 60000 bytes", "isFeed": true, "title": "Arah.my", "description": "", "items": ["Dr. Arabic bantu pelajar kuasai Bahasa Arab", "Anggota Maritim Malaysia terkorban ketika kejar PATI selamat dikebumikan", "Jenazah anggota Maritim Malaysia terkorban ketika kejar PATI selamat dikebumikan", "Anggota APMM maut dalam operasi PATI selamat dikebumikan", "Ajal penunggang basikal warga emas digilis lori", "Kerajaan sedia teliti cadangan cuti bersalin dikongsi bersama suami"], "itemsSampled": 6, "itemCount": 9}
+{"url": "https://ericlippert.com/feed/", "checkedAt": 1793142552, "status": 403, "error": "HTTPError 403"}
+{"url": "https://ahilado.wordpress.com/feed/", "checkedAt": 1793142552, "status": 403, "error": "HTTPError 403"}
+{"url": "http://feeds.regulargeek.com/RegularGeek", "checkedAt": 1793142552, "status": 403, "error": "HTTPError 403"}
+{"url": "https://azurelunatic.dreamwidth.org/data/atom", "checkedAt": 1793142552, "status": 200, "finalUrl": "https://azurelunatic.dreamwidth.org/data/atom", "contentType": "text/xml", "isFeed": true, "title": "The Lunatic is in my Head", "description": "nearly a prosthetic memory", "items": ["A new kitten invention", "Alas, dreams", "5am, time for surreal dreams", "Knees!!", "Latest nickname for Kittenpants", "Proof of life"], "itemsSampled": 6, "itemCount": 25}
+{"url": "https://hacks.mozilla.org/feed/", "checkedAt": 1793142553, "status": 403, "error": "HTTPError 403"}
+{"url": "https://avenuemagazine.com/feed", "checkedAt": 1793142551, "status": 200, "finalUrl": "https://avenuemagazine.com/feed/", "contentType": "application/rss+xml", "truncated": "body capped at 60000 bytes", "isFeed": true, "title": "Avenue Magazine", "description": "", "items": ["Collegio alla Querce: The New Crown Of Florence", "The Week’s Best Parties"], "itemsSampled": 2, "itemCount": 2}
+{"url": "https://idontgetoutmuch.wordpress.com/feed/", "checkedAt": 1793142553, "status": 403, "error": "HTTPError 403"}
+{"url": "https://avc.com/feed/", "checkedAt": 1793142552, "status": 500, "error": "HTTPError 500"}
+{"url": "https://balaibahasakaltim.kemendikdasmen.go.id/?feed=rss2", "checkedAt": 1793142551, "status": 200, "finalUrl": "https://balaibahasakaltim.kemendikdasmen.go.id/?feed=rss2", "contentType": "application/rss+xml", "isFeed": true, "title": "Balai Bahasa Provinsi Kalimantan Timur", "description": "", "items": ["Kongres Bahasa Daerah 2026 Rumuskan Tiga Pilar Rekomendasi Pelindungan Bahasa Daerah", "Kongres Bahasa Daerah 2026 Perkuat Kebijakan dan Praktik Pelindungan Bahasa Daerah", "Pertama Digelar di Papua, Kongres Bahasa Daerah 2026 Teguhkan Pelestarian Warisan Budaya Bangsa", "Mendikdasmen: Pendidikan adalah Kekuatan untuk Membangun Bangsa dan Menyiapkan Generasi Emas"], "itemsSampled": 4, "itemCount": 4}
+{"url": "https://bartoszmilewski.com/feed/", "checkedAt": 1793142554, "status": 403, "error": "HTTPError 403"}
+{"url": "https://jjbeshara.com/feed/", "checkedAt": 1793142554, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.bigeng.io/rss/", "checkedAt": 1793142554, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.bigeng.io'. (_ssl.c:1082)"}
+{"url": "https://lee.af/rss", "checkedAt": 1793142554, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)"}
+{"url": "https://bbaceh.kemendikdasmen.go.id/feed/", "checkedAt": 1793142553, "status": 200, "finalUrl": "https://bbaceh.kemendikdasmen.go.id/feed/", "contentType": "application/rss+xml", "isFeed": true, "title": "Balai Bahasa Provinsi Aceh", "description": "Memajukan Bahasa Membangun Bangsa", "items": ["Balai Bahasa Provinsi Aceh Tetapkan 10 Finalis Terpilih Lomba Cerita Mengulas Buku Tahun 2026", "Erotisisme dalam Hidup", "Kongres Bahasa Daerah 2026 Perkuat Kebijakan dan Praktik Pelindungan Bahasa Daerah", "Pertama Digelar di Papua, Kongres Bahasa Daerah 2026 Teguhkan Pelestarian Warisan Budaya Bangsa", "Kepala Balai Bahasa Provinsi Aceh Hadiri Penutupan Festival Piasan Aceh Rayeuk dan FTBI di Aceh Besar"], "itemsSampled": 5, "itemCount": 5}
+{"url": "https://microship.com/feed/", "checkedAt": 1793142555, "status": 403, "error": "HTTPError 403"}
+{"url": "https://bip.zielonka.pl/api/contexts/default/rss", "checkedAt": 1793142554, "status": 200, "finalUrl": "https://bip.zielonka.pl/api/contexts/default/rss", "contentType": "text/xml", "isFeed": true, "title": "Biuletyn Informacji Publicznej Miasta Zielonka zrealizowany w ramach projektu „E-urząd – urząd przyjazny mieszkańcom", "description": "Biuletyn Informacji Publicznej Miasta Zielonka zrealizowany w ramach projektu „E-urząd – urząd przyjazny mieszkańcom", "items": ["Protokół Nr 40 z posiedzenia w dniu 26 października 2026 r.", "Protokół Nr 31 z posiedzenia w dniu 26 października 2026 r.", "2026 rok", "21 Odbiór, transport i zagospodarowanie odpadów komunalnych (miejskich) pochodzących z terenu Miasta Zielonka, w 2027 roku", "Ogłoszenie WK.2110.11.2026", "Sprawozdanie Rb-N o stanie należności oraz wybranych aktywów finansowych za III kw. 2026r."], "itemsSampled": 6, "itemCount": 10}
+{"url": "https://www.newscentric.com.ng/feed", "checkedAt": 1793142556, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)"}
+{"url": "https://www.hackercombat.com/category/hacks/feed/", "checkedAt": 1793142544, "status": 0, "error": "URLError timed out"}
+{"url": "https://bip.wiazowna.pl/api/contexts/default/rss", "checkedAt": 1793142555, "status": 200, "finalUrl": "https://bip.wiazowna.pl/api/contexts/default/rss", "contentType": "text/xml", "isFeed": true, "title": "Urząd Gminy Wiązowna", "description": "Urząd Gminy Wiązowna", "items": ["Obwieszczenie Wójta Gminy Wiązowna z dnia 27.10.2026 r. w sprawie wydania decyzji o środowiskowych uwarunkowaniach dla przedsięwzięcia polegającego na zbieraniu", "Oferta pracy nr 24/2026 na stanowisko w Wydziale Gospodarki Komunalnej", "Oferta pracy nr 25/2026 na stanowisko w Wydziale Gospodarki Komunalnej", "Obwieszczenie Wójta Gminy Wiązowna z dnia 26.10.2026 r. w sprawie wydania decyzji o środowiskowych uwarunkowaniach", "Raport z konsultacji społecznych", "Obwieszczenie Wójta Gminy Wiązowna z dnia 26.10.2026 r. w sprawie wydania decyzji o środowiskowych uwarunkowaniach"], "itemsSampled": 6, "itemCount": 10}
+{"url": "https://www.9news.com/feeds/syndication/rss/news", "checkedAt": 1793142544, "status": 0, "error": "TimeoutError: The read operation timed out", "regressed": true}
+{"url": "https://predictablynoisy.com/feed.xml", "checkedAt": 1793142556, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'predictablynoisy.com'. (_ssl.c:1082)"}
+{"url": "https://blog.almaer.com/feed/", "checkedAt": 1793142557, "status": 403, "error": "HTTPError 403"}
+{"url": "https://blog.demofox.org/feed/", "checkedAt": 1793142557, "status": 403, "error": "HTTPError 403"}
+{"url": "http://www.recode.net/rss/index.xml", "checkedAt": 1793142557, "status": 500, "error": "HTTPError 500"}
+{"url": "https://blog.gojekengineering.com/feed", "checkedAt": 1793142557, "status": 0, "error": "URLError [Errno 111] Connection refused"}
+{"url": "https://www.scottaaronson.com/blog/?feed=rss2", "checkedAt": 1793142558, "status": 403, "error": "HTTPError 403"}
+{"url": "https://blog.nightly.mozilla.org/feed/", "checkedAt": 1793142558, "status": 403, "error": "HTTPError 403"}
+{"url": "https://smallwarsjournal.com/rss/blogs", "checkedAt": 1793142559, "status": 403, "error": "HTTPError 403"}
+{"url": "https://blog.siftscience.com/feed/", "checkedAt": 1793142559, "status": 403, "error": "HTTPError 403"}
+{"url": "https://bohops.com/feed/", "checkedAt": 1793142559, "status": 403, "error": "HTTPError 403"}
+{"url": "https://stackshare.io/featured-posts.atom", "checkedAt": 1793142559, "status": 429, "error": "HTTPError 429"}
+{"url": "https://systemicsoftwaredebugging.com/feed/", "checkedAt": 1793142560, "status": 403, "error": "HTTPError 403"}
+{"url": "https://technicshistory.com/feed/", "checkedAt": 1793142560, "status": 403, "error": "HTTPError 403"}
+{"url": "https://bazlur.ca/feed", "checkedAt": 1793142554, "status": 200, "finalUrl": "https://bazlur.ca/feed/", "contentType": "text/xml", "isFeed": true, "title": "A N M Bazlur Rahman", "description": "Java Champion 🏆 Empowering Developers through Speaking 🗣️ Writing ✍️ Mentoring 🤝 & Community Building 🌍 Published Author 📖 Contributing Editor at InfoQ and Foojay.IO", "items": ["Java Virtual Threads Under Load: Three Limits to Make Explicit", "Building LLM Apps in Java with LangChain4j", "AI-Assisted Java Development: An 18-Part Series", "Structured Concurrency in Java 26: API Polishing, Timeouts, and Better Joiners", "Zooming In: Profiling Just the Methods You Care About with JFR (JDK 25)", "When Does Java’s Foreign Function & Memory API Actually Make Sense?"], "itemsSampled": 6, "itemCount": 10}
+{"url": "https://binnenschifffahrt-online.de/feed/", "checkedAt": 1793142560, "status": 200, "finalUrl": "https://binnenschifffahrt-online.de/feed/", "contentType": "application/rss+xml", "isFeed": true, "title": "Binnenschifffahrt Online", "description": "Das Magazin für Technik und Logistik", "items": ["Neue Führungsstruktur für Autologistiker Mosolf", "Bremer Hafen- und Logistikwirtschaft schickt Azubis ins „Bootcamp“", "Fahrgastschiff havariert auf Binnenmüritz", "Bund startet Ersatzneubau der Schleuse Erlangen", "Verkehrsministerkonferenz beschließt Verlängerung der Lkw-Fahrverbote bei Niedrigwasser", "VOLVO PENTA – Die nächste Generation von IPS"], "itemsSampled": 6, "itemCount": 10}
+{"url": "https://blog.acolyer.org/feed/", "checkedAt": 1793142563, "status": 403, "error": "HTTPError 403"}
+{"url": "https://blog.cuviper.com/feed/", "checkedAt": 1793142564, "status": 403, "error": "HTTPError 403"}
+{"url": "https://api.afripods.com/feed/db9cb9ba-2ac7-4122-819e-abf50c620491", "checkedAt": 1793142552, "status": 0, "error": "TimeoutError: The read operation timed out"}
+{"url": "https://blog.fullstacktraining.com/rss/", "checkedAt": 1793142565, "status": 0, "error": "URLError [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1082)"}
+{"url": "https://binduraeye.co.zw/feed/", "checkedAt": 1793142554, "status": 0, "error": "TimeoutError: The read operation timed out"}
+{"url": "https://blog.morphisec.com/rss.xml", "checkedAt": 1793142566, "status": 403, "error": "HTTPError 403"}
+{"url": "https://blog.seantheprogrammer.com/feed", "checkedAt": 1793142567, "status": 0, "error": "URLError [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1082)"}
+{"url": "https://www.blowthetruth.com/feeds/posts/default", "checkedAt": 1793142568, "status": 403, "error": "HTTPError 403"}
+{"url": "https://atomic-energy.ru/news/rss.xml", "checkedAt": 1793142565, "status": 200, "finalUrl": "https://www.atomic-energy.ru/news/rss.xml", "contentType": "text/xml", "isFeed": true, "title": "Атомная энергия 2.0", "description": "", "items": ["Смоленские атомщики поделились передовым опытом со специалистами Белорусской АЭС", "Система экологического менеджмента Кольской АЭС успешно подтвердила соответствие международным стандартам", "В пруд-охладитель энергоблока № 5 Нововоронежской АЭС выпущено 6 тонн мальков толстолобика", "Состоялось открытое собрание Объединенного совета обучающихся ядерного университета НИЯУ МИФИ", "Минский Центр аддитивных технологий «Росатома» и Белорусская АЭС договорились о сотрудничестве", "В Новоуральске прошла вторая межгородская стажировка Клуба экопартнёров «Росатома»"], "itemsSampled": 6, "itemCount": 10}
+{"url": "https://byorgey.wordpress.com/feed/", "checkedAt": 1793142568, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.hackercombat.com/category/malware-attacks/feed/", "checkedAt": 1793142557, "status": 0, "error": "URLError timed out"}
+{"url": "https://cloudfour.com/feed/", "checkedAt": 1793142569, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.9news.com/feeds/syndication/rss/news/entertainment-news", "checkedAt": 1793142557, "status": 0, "error": "TimeoutError: The read operation timed out", "regressed": true}
+{"url": "https://danielspost.news.blog/feed/", "checkedAt": 1793142569, "status": 403, "error": "HTTPError 403"}
+{"url": "https://barneyschurch.au/feed/sermons/", "checkedAt": 1793142569, "status": 200, "finalUrl": "https://barneyschurch.au/feed/sermons/", "contentType": "text/xml", "isFeed": true, "title": "Barneys Church", "description": "https://barneyschurch.au", "items": ["Committed to Community", "What Are You Devoted to?", "Rooted in Scriptures", "Centred on the Gospel", "Colossians 4:2-18", "Living in Christ"], "itemsSampled": 6, "itemCount": 100}
+{"url": "http://www.drbunsen.org/feed.xml", "checkedAt": 1793142569, "status": 403, "error": "HTTPError 403"}
+{"url": "https://einarwh.wordpress.com/feed/", "checkedAt": 1793142570, "status": 403, "error": "HTTPError 403"}
+{"url": "https://engineering.hashnode.com/rss.xml", "checkedAt": 1793142571, "status": 429, "error": "HTTPError 429"}
+{"url": "https://billpg.com/feed", "checkedAt": 1793142570, "status": 200, "finalUrl": "https://owl.billpg.com/index.xml", "contentType": "text/xml", "truncated": "body capped at 60000 bytes", "isFeed": true, "title": "billpg industries™", "description": "Recent content on billpg industries™", "items": ["Let's Fix Temperature!", "I Wrote a NuGet Package!", "Am I worried AI will take my job?", "8086 Segmented Memory Was a Good Idea. (Almost.)", "On no! I've invented SVG badly!", "Notes from a Helpful Glober — “Stationary”"], "itemsSampled": 6, "itemCount": 52}
+{"url": "https://biznes.interia.pl/feed", "checkedAt": 1793142573, "status": 200, "finalUrl": "https://biznes.interia.pl/feed", "contentType": "application/xml", "isFeed": true, "title": "Biznes w INTERIA.PL", "description": "Biznes w INTERIA.PL - najświeższe informacje gospodarcze - aktualne kursy walut, notowania giełdowe i ceny surowców, wiadomości ze spółek głównego parkietu i NewConnect, ale także merytoryczne wiadomo", "items": ["Nie chcą wyższego podatku, protestowali w stolicy. \"Apelujemy do rządu\"", "Senat zdecydował. Duże zmiany w podatkach", "Honda ostrzega przed skutkami decyzji Trumpa. \"To byłoby katastrofalne\"", "Anthropic szykuje się do gigantycznego debiutu. Chce przegonić SpaceX", "Opłaciła nocleg na Booking, potem dostała cennik. UOKiK potwierdza skargi", "Polska ma własne plany dotyczące rezerw paliw. Motyka ujawnił szczegóły"], "itemsSampled": 6, "itemCount": 50}
+{"url": "https://blog.codepen.io/feed/", "checkedAt": 1793142575, "status": 403, "error": "HTTPError 403"}
+{"url": "https://blog.fox-it.com/feed/", "checkedAt": 1793142575, "status": 403, "error": "HTTPError 403"}
+{"url": "https://blog.mgattozzi.dev/rss/", "checkedAt": 1793142576, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1082)"}
+{"url": "https://blog.saasify.sh/rss/", "checkedAt": 1793142576, "status": 503, "error": "HTTPError 503"}
+{"url": "https://blog.teamtreehouse.com/feed", "checkedAt": 1793142577, "status": 403, "error": "HTTPError 403"}
+{"url": "https://brendaneich.com/feed/", "checkedAt": 1793142577, "status": 403, "error": "HTTPError 403"}
+{"url": "https://chriscoyier.net/feed/", "checkedAt": 1793142578, "status": 403, "error": "HTTPError 403"}
+{"url": "https://cwilso.com/feed/", "checkedAt": 1793142578, "status": 403, "error": "HTTPError 403"}
+{"url": "https://bizwatchnigeria.ng/feed/", "checkedAt": 1793142566, "status": 0, "error": "TimeoutError: The read operation timed out"}
+{"url": "https://developers.redhat.com/blog/feed/atom/", "checkedAt": 1793142578, "status": 403, "error": "HTTPError 403"}
+{"url": "https://blog.cryptographyengineering.com/feed/", "checkedAt": 1793142579, "status": 403, "error": "HTTPError 403"}
+{"url": "https://eclecticlight.co/feed/", "checkedAt": 1793142579, "status": 403, "error": "HTTPError 403"}
+{"url": "https://engineering.gusto.com/rss/", "checkedAt": 1793142580, "status": 403, "error": "HTTPError 403"}
+{"url": "https://blog.freedomscientific.com/feed/", "checkedAt": 1793142580, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.hackercombat.com/category/ransomware/feed/", "checkedAt": 1793142569, "status": 0, "error": "URLError timed out"}
+{"url": "https://blog.moove-it.com/rss", "checkedAt": 1793142580, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.9news.com/feeds/syndication/rss/news/health", "checkedAt": 1793142569, "status": 0, "error": "TimeoutError: The read operation timed out", "regressed": true}
+{"url": "https://www.w3.org/blog/feed/", "checkedAt": 1793142581, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.w3.org/blog/news/feed", "checkedAt": 1793142582, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.w3.org/WAI/feed.xml", "checkedAt": 1793142582, "status": 403, "error": "HTTPError 403"}
+{"url": "https://blog.safecpp.com/feed.xml", "checkedAt": 1793142581, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'blog.safecpp.com'. (_ssl.c:1082)"}
+{"url": "https://engineering.upgrad.com/feed", "checkedAt": 1793142571, "status": 0, "error": "URLError timed out"}
+{"url": "http://blog.vngrs.com/rss.xml", "checkedAt": 1793142583, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)"}
+{"url": "http://aarvik.dk/rss/", "checkedAt": 1793142582, "status": 0, "error": "URLError [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1082)"}
+{"url": "https://tia.mat.br/posts/rss.html", "checkedAt": 1793142560, "status": 0, "error": "URLError timed out"}
+{"url": "https://webuild.envato.com/atom.xml", "checkedAt": 1793142585, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.hackercombat.com/feed/", "checkedAt": 1793142581, "status": 0, "error": "URLError timed out"}
+{"url": "https://blogs.windows.com/msedgedev/feed/", "checkedAt": 1793142593, "status": 403, "error": "HTTPError 403"}
+{"url": "https://blogs.windows.com/msedgedev/rss", "checkedAt": 1793142594, "status": 403, "error": "HTTPError 403"}
+{"url": "http://0xfeedface.org/feed.xml", "checkedAt": 1793142594, "status": 521, "error": "HTTPError 521"}
+{"url": "https://acesounderglass.com/feed/", "checkedAt": 1793142595, "status": 403, "error": "HTTPError 403"}
+{"url": "https://andy.xyz/feed/", "checkedAt": 1793142595, "status": 403, "error": "HTTPError 403"}
+{"url": "https://adecentralizedworld.com/feed/", "checkedAt": 1793142584, "status": 0, "error": "URLError timed out"}
+{"url": "https://feeds.dzone.com/webdev", "checkedAt": 1793142583, "status": 0, "error": "URLError timed out"}
+{"url": "https://godaddy.com/engineering/feed.xml", "checkedAt": 1793142597, "status": 403, "error": "HTTPError 403"}
+{"url": "https://htmlcssjavascript.com/feed/", "checkedAt": 1793142597, "status": 403, "error": "HTTPError 403"}
+{"url": "https://antoniosantos.io/rss.xml", "checkedAt": 1793142596, "status": 200, "finalUrl": "https://antoniosantos.io/rss.xml", "contentType": "application/rss+xml", "isFeed": true, "title": "Antonio Santos", "description": "Latest posts, notes, and bird sightings", "items": ["This Blog Has Moved", "re: Going to the Movies Alone", "September 5, 2026 at 2:33 PM", "My Hurricane Early-Warning System", "September 3, 2026 at 2:32 PM", "September 1, 2026 at 10:19 PM"], "itemsSampled": 6, "itemCount": 20}
+{"url": "https://www.jamesward.com/feed/", "checkedAt": 1793142597, "status": 403, "error": "HTTPError 403"}
+{"url": "https://arp242.net/feed.xml", "checkedAt": 1793142595, "status": 0, "error": "URLError [Errno 113] No route to host"}
+{"url": "https://bandcamptech.wordpress.com/feed/", "checkedAt": 1793142599, "status": 403, "error": "HTTPError 403"}
+{"url": "https://bigeye.ug/feed/", "checkedAt": 1793142599, "status": 200, "finalUrl": "https://bigeye.ug/feed/", "contentType": "application/rss+xml", "truncated": "body capped at 60000 bytes", "isFeed": true, "title": "BigEye.UG", "description": "Uganda Entertainment, Celebrity Gossip, Lifestyle, New Music News and Sports", "items": ["Diwali Food Festival 2026 Brings a Celebration of Food, Culture and Community to Speke Resort Munyonyo", "Simon Kaggwa Njala Denies Seeking Social Media Attention Over Ivan Ssemwanga’s eath", "Works PS Bageya Waiswa’s Daughter and Husband Clash Over Matrimonial Property in Divorce Case", "Salvado and Dr. Hillary Okello deliver a night of laughs at ‘2 Kings One Mic’ show", "Nigerian star, Ice Prince thrills fans at the Singleton Big Meeting", "Zulitums Saddened He Has Not Yet Built His Mother a House"], "itemsSampled": 6, "itemCount": 9}
+{"url": "https://bip.zyrardow.pl/api/contexts/default/rss", "checkedAt": 1793142601, "status": 200, "finalUrl": "https://bip.zyrardow.pl/api/contexts/default/rss", "contentType": "text/xml", "isFeed": true, "title": "Urząd Miasta Żyrardowa", "description": "Urząd Miasta Żyrardowa", "items": ["Komisja Oświaty i Kultury Fizycznej Rady Miasta Żyrardowa", "Komisja Bezpieczeństwa, Porządku Publicznego, Handlu i Usług Rady Miasta Żyrardowa", "Wnioski i interpelacje radnych", "Wniosek nr 66/2026", "Radni IX Kadencji Rady Miasta Żyrardowa", "Obwieszczenie o wszczęciu postępowania administracyjnego w sprawie uzyskania pozwolenia wodnoprawnego, w zakresie usługi wodnej polegającej na odprowadzaniu wód"], "itemsSampled": 6, "itemCount": 10}
+{"url": "https://assemblee.bi/?feed=rss2", "checkedAt": 1793142598, "status": 200, "finalUrl": "https://assemblee.bi/?feed=rss2", "contentType": "application/rss+xml", "isFeed": true, "title": "Assemblée Nationale du Burundi", "description": "La dynamique sociale fait que toutes les sociétés connaissent des disparités sociales, des contradictions et des conflits. La société burundaise ne peut pas y échapper.", "items": ["Session ordinaire d’août 2026", "Session ordinaire d’août 2026", "Célébration de la Fête des Communes à Ruyigi : entre redevabilité, solidarité et cohésion nationale", "Le Premier Vice-Président de l’Assemblée nationale participe à la célébration de la fête communale, édition 2026, dans sa commune natale de Rutana", "La carte d’assistance médicale devrait être utilisée à bon escient", "Un ménage développe : le pilier de la vision nationale"], "itemsSampled": 6, "itemCount": 10}
+{"url": "http://blog.bjhomer.com/feeds/posts/default", "checkedAt": 1793142603, "status": 403, "error": "HTTPError 403"}
+{"url": "https://blog.expensify.com/feed/", "checkedAt": 1793142603, "status": 526, "error": "HTTPError 526"}
+{"url": "https://blog.jooq.org/feed/", "checkedAt": 1793142604, "status": 403, "error": "HTTPError 403"}
+{"url": "https://blog.qualys.com/vulnerabilities-threat-research/feed", "checkedAt": 1793142604, "status": 403, "error": "HTTPError 403"}
+{"url": "https://blog.strangestack.com/feed/", "checkedAt": 1793142605, "status": 0, "error": "URLError [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1082)"}
+{"url": "https://www.boxever.com/feed/", "checkedAt": 1793142606, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)"}
+{"url": "https://barakafm.co.ke/feed/", "checkedAt": 1793142603, "status": 200, "finalUrl": "https://barakafm.co.ke/feed/", "contentType": "application/rss+xml", "isFeed": true, "title": "Baraka FM 95.5", "description": "Baraka Kwetu Sote", "items": ["Jomvu mother arrested for allegedly preventing daughter from ditting KPSEA ober assessment number 666", "Nassir: BabaCare puts Raila Odinga’s principles Into action", "Batuli challenges coast voters to reject money politics ahead of 2027", "Mombasa small businesses urged to register to access loans, grants", "Mombasa riders turn to motorcycle financing to boost incomes", "Saints win inaugural Mwaguya Open Basketball Challenge, Mombasa North Edition"], "itemsSampled": 6, "itemCount": 10}
+{"url": "https://bikesafe.me/blogs/news.atom", "checkedAt": 1793142607, "status": 429, "error": "HTTPError 429"}
+{"url": "https://bipumzyrardow.nv.pl/api/contexts/default/rss", "checkedAt": 1793142607, "status": 200, "finalUrl": "https://bipumzyrardow.nv.pl/api/contexts/default/rss", "contentType": "text/xml", "isFeed": true, "title": "Urząd Miasta Żyrardowa", "description": "Urząd Miasta Żyrardowa", "items": ["Komisja Oświaty i Kultury Fizycznej Rady Miasta Żyrardowa", "Komisja Bezpieczeństwa, Porządku Publicznego, Handlu i Usług Rady Miasta Żyrardowa", "Wnioski i interpelacje radnych", "Wniosek nr 66/2026", "Radni IX Kadencji Rady Miasta Żyrardowa", "Obwieszczenie o wszczęciu postępowania administracyjnego w sprawie uzyskania pozwolenia wodnoprawnego, w zakresie usługi wodnej polegającej na odprowadzaniu wód"], "itemsSampled": 6, "itemCount": 10}
+{"url": "https://blog.carlosgaldino.com/atom.xml", "checkedAt": 1793142609, "status": 403, "error": "HTTPError 403"}
+{"url": "https://blog.fedecarg.com/feed/", "checkedAt": 1793142610, "status": 403, "error": "HTTPError 403"}
+{"url": "http://blog.kevmod.com/feed/", "checkedAt": 1793142610, "status": 403, "error": "HTTPError 403"}
+{"url": "https://blog.rapidapi.com/feed/", "checkedAt": 1793142611, "status": 530, "error": "HTTPError 530"}
+{"url": "https://blog.takipi.com/feed/", "checkedAt": 1793142611, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'blog.takipi.com'. (_ssl.c:1082)"}
+{"url": "https://www.brainstobytes.com/rss/", "checkedAt": 1793142612, "status": 403, "error": "HTTPError 403"}
+{"url": "http://www.charlesetc.com/index.xml", "checkedAt": 1793142613, "status": 0, "error": "URLError [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1082)"}
+{"url": "https://contentsimplicity.com/feed/", "checkedAt": 1793142614, "status": 403, "error": "HTTPError 403"}
+{"url": "https://developer.salesforce.com/blogs/feed", "checkedAt": 1793142615, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.easternherald.com/feed/", "checkedAt": 1793142615, "status": 403, "error": "HTTPError 403"}
+{"url": "https://cert.360.cn/feed", "checkedAt": 1793142606, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)"}
+{"url": "https://computer.forensikblog.de/en/atom.xml", "checkedAt": 1793142620, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'computer.forensikblog.de'. (_ssl.c:1082)"}
+{"url": "https://developer.atlassian.com/blog/feed.xml", "checkedAt": 1793142621, "status": 403, "error": "HTTPError 403"}
+{"url": "https://earnestcapital.com/feed/", "checkedAt": 1793142622, "status": 403, "error": "HTTPError 403"}
+{"url": "https://engineering.coinbase.com/feed", "checkedAt": 1793142623, "status": 403, "error": "HTTPError 403"}
+{"url": "https://engineering.linecorp.com/en/blog/rss2", "checkedAt": 1793142624, "status": 403, "error": "HTTPError 403"}
+{"url": "https://engineering.groupon.com/feed/", "checkedAt": 1793142615, "status": 0, "error": "TimeoutError: The read operation timed out"}
+{"url": "https://engineering.panoramaed.com/feed/", "checkedAt": 1793142628, "status": 403, "error": "HTTPError 403"}
+{"url": "https://facebook.design/feed.xml", "checkedAt": 1793142628, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)"}
+{"url": "https://geoffgraham.me/feed/", "checkedAt": 1793142629, "status": 403, "error": "HTTPError 403"}
+{"url": "https://herbsutter.com/feed/", "checkedAt": 1793142629, "status": 403, "error": "HTTPError 403"}
+{"url": "https://fabianfett.de/feed.xml", "checkedAt": 1793142625, "status": 0, "error": "URLError timed out"}
+{"url": "https://www.fs.blog/feed/", "checkedAt": 1793142637, "status": 403, "error": "HTTPError 403"}
+{"url": "https://henrikwarne.com/feed/", "checkedAt": 1793142638, "status": 403, "error": "HTTPError 403"}
+{"url": "https://insidexpress.com/feed/", "checkedAt": 1793142638, "status": 500, "error": "HTTPError 500"}
+{"url": "https://johncarlosbaez.wordpress.com/feed/", "checkedAt": 1793142639, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.macsparky.com/blog?format=rss", "checkedAt": 1793142639, "status": 200, "finalUrl": "https://www.macsparky.com/blog/2020/08/blogging-from-space/?format=rss", "contentType": "text/html", "truncated": "body capped at 60000 bytes", "isFeed": false, "snippet": "<!doctype html> <html lang=\"en-US\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\"> <meta ht", "altFeed": ["https://www.macsparky.com/feed/", "https://www.macsparky.com/comments/feed/"]}
+{"url": "https://instagram-engineering.com/feed", "checkedAt": 1793142630, "status": 0, "error": "URLError timed out"}
+{"url": "https://johnwickerson.wordpress.com/feed/", "checkedAt": 1793142642, "status": 403, "error": "HTTPError 403"}
+{"url": "https://makeapppie.com/feed/", "checkedAt": 1793142642, "status": 403, "error": "HTTPError 403"}
+{"url": "https://nadiaeghbal.com/feed.xml", "checkedAt": 1793142641, "status": 0, "error": "URLError timed out"}
+{"url": "https://orrsella.com/rss.xml", "checkedAt": 1793142654, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)"}
+{"url": "https://www.python-engineer.com/feed.rss", "checkedAt": 1793142655, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.python-engineer.com'. (_ssl.c:1082)"}
+{"url": "https://nakedsecurity.sophos.com/feed/", "checkedAt": 1793142643, "status": 0, "error": "TimeoutError: The read operation timed out"}
+{"url": "https://outpost24.com/blog/category/research-and-threat-intel/feed/", "checkedAt": 1793142657, "status": 403, "error": "HTTPError 403"}
+{"url": "https://qntm.org/rss.php", "checkedAt": 1793142657, "status": 403, "error": "HTTPError 403"}
+{"url": "https://rudism.com/rss.xml", "checkedAt": 1793142659, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'aimakesmesad.com'. (_ssl.c:1082)"}
+{"url": "https://securityboulevard.com/feed/", "checkedAt": 1793142662, "status": 403, "error": "HTTPError 403"}
+{"url": "http://ruder.io/rss/index.rss", "checkedAt": 1793142655, "status": 0, "error": "TimeoutError: timed out"}
+{"url": "https://software.intel.com/en-us/blogs/feed", "checkedAt": 1793142662, "status": 403, "error": "HTTPError 403"}
+{"url": "https://summation.net/feed/", "checkedAt": 1793142668, "status": 403, "error": "HTTPError 403"}
+{"url": "https://tech.pic-collage.com/feed", "checkedAt": 1793142668, "status": 0, "error": "URLError [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1082)"}
+{"url": "https://themessenger.com/rss/default.xml", "checkedAt": 1793142669, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.secureworks.com/rss?feed=blog&category=research-intelligence", "checkedAt": 1793142668, "status": 0, "error": "TimeoutError: The read operation timed out"}
+{"url": "https://softologyblog.wordpress.com/feed/", "checkedAt": 1793142680, "status": 403, "error": "HTTPError 403"}
+{"url": "https://stratechery.com/feed/", "checkedAt": 1793142680, "status": 403, "error": "HTTPError 403"}
+{"url": "https://tech.lendinghome.com/feed", "checkedAt": 1793142681, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'tech.lendinghome.com'. (_ssl.c:1082)"}
+{"url": "https://vladaionescu.com/feed", "checkedAt": 1793142670, "status": 0, "error": "URLError timed out"}
+{"url": "https://thecyberwire.com/feeds/rss.xml", "checkedAt": 1793142682, "status": 200, "finalUrl": "https://thecyberwire.com/feeds/rss.xml", "contentType": "application/xml", "undecodable": "br", "isFeed": null, "regressed": true}
+{"url": "https://xenaproject.wordpress.com/feed/", "checkedAt": 1793142683, "status": 403, "error": "HTTPError 403"}
+{"url": "https://tzapu.com/feed/", "checkedAt": 1793142683, "status": 0, "error": "URLError timed out"}
+{"url": "https://blog.bitsrc.io/feed", "checkedAt": 1793142556, "status": 0, "error": "URLError timed out"}
+{"url": "https://blog.engineyard.com/feed.xml", "checkedAt": 1793142700, "status": 0, "error": "URLError [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1082)"}
+{"url": "https://blog.jessitron.com/feed/", "checkedAt": 1793142701, "status": 403, "error": "HTTPError 403"}
+{"url": "https://blog.nviso.eu/feed", "checkedAt": 1793142702, "status": 403, "error": "HTTPError 403"}
+{"url": "https://bytes.swiggy.com/feed", "checkedAt": 1793142560, "status": 0, "error": "URLError timed out"}
+{"url": "https://blog.soshace.com/en/feed/", "checkedAt": 1793142703, "status": 403, "error": "HTTPError 403"}
+{"url": "https://bosker.wordpress.com/feed/", "checkedAt": 1793142704, "status": 403, "error": "HTTPError 403"}
+{"url": "https://catchts.com/api/rss", "checkedAt": 1793142704, "status": 500, "error": "HTTPError 500"}
+{"url": "http://code.hootsuite.com/rss", "checkedAt": 1793142704, "status": 403, "error": "HTTPError 403"}
+{"url": "https://codeblog.jonskeet.uk/feed/", "checkedAt": 1793142706, "status": 403, "error": "HTTPError 403"}
+{"url": "https://data-artisans.com/feed", "checkedAt": 1793142706, "status": 0, "error": "URLError [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1082)"}
+{"url": "https://www.worldaffairsjournal.org/feed/", "checkedAt": 1793142695, "status": 0, "error": "TimeoutError: The read operation timed out"}
+{"url": "https://deezer.io/feed", "checkedAt": 1793142706, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.drivenbycode.com/feed/", "checkedAt": 1793142707, "status": 403, "error": "HTTPError 403"}
+{"url": "https://elegantcode.com/feed/", "checkedAt": 1793142708, "status": 0, "error": "URLError [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1082)"}
+{"url": "https://engineering.haus.com/feed", "checkedAt": 1793142709, "status": 0, "error": "URLError [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1082)"}
+{"url": "http://www.duskborn.com/index.xml", "checkedAt": 1793142708, "status": 0, "error": "RemoteDisconnected: Remote end closed connection without response"}
+{"url": "https://www.erlang-solutions.com/news.rss", "checkedAt": 1793142709, "status": 403, "error": "HTTPError 403"}
+{"url": "https://engineering.clever.com/rss", "checkedAt": 1793142709, "status": 403, "error": "HTTPError 403"}
+{"url": "https://engineering.imvu.com/feed/", "checkedAt": 1793142710, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'engineering.imvu.com'. (_ssl.c:1082)"}
+{"url": "https://existentialtype.wordpress.com/feed/", "checkedAt": 1793142710, "status": 403, "error": "HTTPError 403"}
+{"url": "https://fgiesen.wordpress.com/feed/", "checkedAt": 1793142711, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.hashicorp.com/feed.xml", "checkedAt": 1793142711, "status": 429, "error": "HTTPError 429"}
+{"url": "https://www.independent.co.uk/asia/rss", "checkedAt": 1793142711, "status": 429, "error": "HTTPError 429"}
+{"url": "https://www.joelonsoftware.com/feed/", "checkedAt": 1793142712, "status": 403, "error": "HTTPError 403"}
+{"url": "https://liorpachter.wordpress.com/feed/", "checkedAt": 1793142712, "status": 403, "error": "HTTPError 403"}
+{"url": "https://mynintendonews.com/feed", "checkedAt": 1793142713, "status": 403, "error": "HTTPError 403"}
+{"url": "https://optshiftk.com/feed/", "checkedAt": 1793142713, "status": 403, "error": "HTTPError 403"}
+{"url": "https://programmingwithmosh.com/feed", "checkedAt": 1793142713, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'programmingwithmosh.com'. (_ssl.c:1082)"}
+{"url": "https://riad.blog/feed/", "checkedAt": 1793142714, "status": 403, "error": "HTTPError 403"}
+{"url": "https://scriptstoprograms.wordpress.com/feed/", "checkedAt": 1793142714, "status": 403, "error": "HTTPError 403"}
+{"url": "https://soatok.blog/feed/", "checkedAt": 1793142714, "status": 403, "error": "HTTPError 403"}
+{"url": "https://steveblank.com/feed/", "checkedAt": 1793142715, "status": 403, "error": "HTTPError 403"}
+{"url": "https://feeds.washingtonpost.com/rss/world", "checkedAt": 1793142710, "status": 502, "error": "HTTPError 502"}
+{"url": "https://hanszandbelt.wordpress.com/feed/", "checkedAt": 1793142718, "status": 403, "error": "HTTPError 403"}
+{"url": "https://ilya-sher.org/feed/", "checkedAt": 1793142719, "status": 403, "error": "HTTPError 403"}
+{"url": "https://engineering.prezi.com/feed", "checkedAt": 1793142580, "status": 0, "error": "URLError timed out"}
+{"url": "https://buildingvts.com/feed", "checkedAt": 1793142583, "status": 0, "error": "URLError timed out"}
+{"url": "https://tech.just-eat.com/feed/", "checkedAt": 1793142715, "status": 0, "error": "TimeoutError: The read operation timed out"}
+{"url": "https://christine.website/blog.atom", "checkedAt": 1793142728, "status": 0, "error": "URLError [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1082)"}
+{"url": "https://textslashplain.com/feed/", "checkedAt": 1793142728, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.tpgi.com/blog/feed/", "checkedAt": 1793142729, "status": 403, "error": "HTTPError 403"}
+{"url": "https://cybersecurity.att.com/site/blog-all-rss", "checkedAt": 1793142729, "status": 403, "error": "HTTPError 403"}
+{"url": "https://donsbot.wordpress.com/feed/", "checkedAt": 1793142730, "status": 403, "error": "HTTPError 403"}
+{"url": "https://eheitzresearch.wordpress.com/feed/", "checkedAt": 1793142730, "status": 403, "error": "HTTPError 403"}
+{"url": "http://engineering.harrys.com/feed.xml", "checkedAt": 1793142730, "status": 403, "error": "HTTPError 403"}
+{"url": "http://wirfs-brock.com/blog/feed/", "checkedAt": 1793142729, "status": 403, "error": "HTTPError 403"}
+{"url": "https://engineering.riotgames.com/rss.xml", "checkedAt": 1793142731, "status": 504, "error": "HTTPError 504"}
+{"url": "https://fauna.com/blog/feed.rss", "checkedAt": 1793142725, "status": 0, "error": "URLError timed out"}
+{"url": "https://www.giftegwuenu.com/rss.xml", "checkedAt": 1793142737, "status": 522, "error": "HTTPError 522"}
+{"url": "https://kickstarter.engineering/feed", "checkedAt": 1793142598, "status": 0, "error": "URLError timed out"}
+{"url": "https://www.michaelwest.com.au/feed/", "checkedAt": 1793142743, "status": 403, "error": "HTTPError 403"}
+{"url": "http://news.xbox.com/feed", "checkedAt": 1793142743, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.philipotoole.com/feed/", "checkedAt": 1793142744, "status": 403, "error": "HTTPError 403"}
+{"url": "http://fbrnc.net/blog.atom", "checkedAt": 1793142731, "status": 0, "error": "URLError timed out"}
+{"url": "https://rambo.codes/feed.xml", "checkedAt": 1793142744, "status": 500, "error": "HTTPError 500"}
+{"url": "https://www.schneier.com/blog/atom.xml", "checkedAt": 1793142745, "status": 403, "error": "HTTPError 403"}
+{"url": "https://seths.blog/feed", "checkedAt": 1793142745, "status": 403, "error": "HTTPError 403"}
+{"url": "https://splintah.gitlab.io/atom.xml", "checkedAt": 1793142745, "status": 403, "error": "HTTPError 403"}
+{"url": "https://swiftindepth.com/feed.xml", "checkedAt": 1793142747, "status": 403, "error": "HTTPError 403"}
+{"url": "https://hodapple.com/blag/atom.xml", "checkedAt": 1793142738, "status": 0, "error": "URLError timed out"}
+{"url": "https://ipfs.io/blog/index.xml", "checkedAt": 1793142750, "status": 403, "error": "HTTPError 403"}
+{"url": "https://jsalvatier.wordpress.com/feed/", "checkedAt": 1793142750, "status": 403, "error": "HTTPError 403"}
+{"url": "https://globalreport.news/feed/", "checkedAt": 1793142744, "status": 0, "error": "TimeoutError: The read operation timed out"}
+{"url": "https://homotopytypetheory.org/feed/", "checkedAt": 1793142756, "status": 403, "error": "HTTPError 403"}
+{"url": "https://jack-clark.net/feed/", "checkedAt": 1793142757, "status": 403, "error": "HTTPError 403"}
+{"url": "https://kamathematics.wordpress.com/feed/", "checkedAt": 1793142757, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/feed/", "checkedAt": 1793142757, "status": 403, "error": "HTTPError 403"}
+{"url": "http://manu.sporny.org/feed/", "checkedAt": 1793142751, "status": 0, "error": "URLError [Errno 113] No route to host"}
+{"url": "https://nativeguru.wordpress.com/feed/", "checkedAt": 1793142759, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.paypal-engineering.com/feed/", "checkedAt": 1793142760, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.quicksprout.com/feed/", "checkedAt": 1793142760, "status": 403, "error": "HTTPError 403"}
+{"url": "https://ryxcommar.com/feed/", "checkedAt": 1793142760, "status": 403, "error": "HTTPError 403"}
+{"url": "https://securityintelligence.com/feed/", "checkedAt": 1793142761, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)"}
+{"url": "https://news.sophos.com/en-us/category/threat-research/feed/", "checkedAt": 1793142758, "status": 0, "error": "TimeoutError: The read operation timed out"}
+{"url": "https://pepeiborra.wordpress.com/feed/", "checkedAt": 1793142770, "status": 403, "error": "HTTPError 403"}
+{"url": "https://spacekookie.de/rss.xml", "checkedAt": 1793142762, "status": 0, "error": "URLError timed out"}
+{"url": "https://sunshinejr.com/index.xml", "checkedAt": 1793142774, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'sunshinejr.com'. (_ssl.c:1082)"}
+{"url": "https://tech.transferwise.com/rss/", "checkedAt": 1793142775, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.theravenfile.com/feed", "checkedAt": 1793142775, "status": 403, "error": "HTTPError 403"}
+{"url": "https://vladmihalcea.com/feed/", "checkedAt": 1793142776, "status": 403, "error": "HTTPError 403"}
+{"url": "https://yetanotherdevblog.com/rss/", "checkedAt": 1793142776, "status": 0, "error": "URLError timed out"}
+{"url": "http://rachelbythebay.com/w/atom.xml", "checkedAt": 1793142770, "status": 0, "error": "URLError timed out"}
+{"url": "http://www.sbnonline.com/feed/", "checkedAt": 1793142795, "status": 403, "error": "HTTPError 403"}
+{"url": "http://segmentfault.com/feeds/blogs", "checkedAt": 1793142795, "status": 0, "error": "TimeoutError: The read operation timed out"}
+{"url": "https://spin.atomicobject.com/feed/", "checkedAt": 1793142809, "status": 403, "error": "HTTPError 403"}
+{"url": "https://swarm64.com/feed/", "checkedAt": 1793142810, "status": 0, "error": "TimeoutError: The read operation timed out"}
+{"url": "https://tech.xing.com/feed", "checkedAt": 1793142823, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.thevividreader.com/feed/", "checkedAt": 1793142823, "status": 0, "error": "TimeoutError: The read operation timed out"}
+{"url": "http://warpspire.com/feed/", "checkedAt": 1793142836, "status": 406, "error": "HTTPError 406"}
+{"url": "https://jobandtalent.engineering/feed", "checkedAt": 1793142719, "status": 0, "error": "URLError timed out"}
+{"url": "https://letterstoanewdeveloper.com/feed/", "checkedAt": 1793142864, "status": 403, "error": "HTTPError 403"}
+{"url": "https://murze.be/feed", "checkedAt": 1793142864, "status": 0, "error": "URLError timed out"}
+{"url": "https://nordicapis.com/feed/", "checkedAt": 1793142876, "status": 403, "error": "HTTPError 403"}
+{"url": "https://www.previous.cloudbees.com/blog.xml", "checkedAt": 1793142877, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.previous.cloudbees.com'. (_ssl.c:1082)"}
+{"url": "https://rhettinger.wordpress.com/feed/", "checkedAt": 1793142877, "status": 403, "error": "HTTPError 403"}
+{"url": "https://scottlocklin.wordpress.com/feed/", "checkedAt": 1793142878, "status": 403, "error": "HTTPError 403"}
+{"url": "https://sniperinmahwah.wordpress.com/feed/", "checkedAt": 1793142878, "status": 403, "error": "HTTPError 403"}
+{"url": "https://starckmarcandthefarc.wordpress.com/feed/", "checkedAt": 1793142878, "status": 403, "error": "HTTPError 403"}
+{"url": "https://tech.geoblink.com/feed/", "checkedAt": 1793142879, "status": 0, "error": "URLError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'tech.geoblink.com'. (_ssl.c:1082)"}
+{"url": "https://testingclouds.wordpress.com/feed/", "checkedAt": 1793142881, "status": 403, "error": "HTTPError 403"}
+{"url": "https://tonyarnold.com/atom.xml", "checkedAt": 1793142881, "status": 406, "error": "HTTPError 406"}
+{"url": "https://www.westhesportsguy.com/feeds/posts/default", "checkedAt": 1793142882, "status": 403, "error": "HTTPError 403"}
+{"url": "https://techblog.commercetools.com/feed", "checkedAt": 1793142749, "status": 0, "error": "URLError timed out"}
+{"url": "https://theworst.dev/rss.xml", "checkedAt": 1793142893, "status": 403, "error": "HTTPError 403"}
+{"url": "https://web.itu.edu.tr/celikd/feed/", "checkedAt": 1793142895, "status": 0, "error": "URLError timed out"}

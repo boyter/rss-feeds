@@ -785,3 +785,15 @@ Four new tests, mutation-verified: with the fix reverted exactly those two
 tests fail. Rule: reading the ITEMS before applying a remove is not optional
 ritual - it is where a counting rule meets natural language and finds the
 Roman numerals.
+
+## Tranche 13 (2026-10-27)
+
+1,496 leads, 1,375 live (92%), ~1,270 rules in four batches:
+**25507 -> 26821 feeds, 19,103 hosts** (blisty.cz rescued: harvest recorded
+dead-domain, but DNS resolves and curl returns 41 KB of RSS - transient
+resolver failure at fetch time, --retry-failed fixed it; the hand-check
+before applying a remove caught the fourth harvester false-negative).
+Delegate reply lost on batch 3 with the WORK complete (progressive writes):
+coverage arithmetic (326 of 345, 19 uncovered ≈ the skip rate) said apply
+it, no re-dispatch. blockchainmagazine.com spam hand-confirmed (BC.Game,
+BiggerZ, 1win press releases); sister PR sites flagged for a future sweep.
