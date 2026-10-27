@@ -748,3 +748,17 @@ all items are B2B SEO listicles ("Sweatshirts for Clubs", "GEO agencies")
 under a magazine name. Delegates flagging borderline calls for verification,
 rather than silently tagging or spaming, is the behaviour that keeps both
 false removals and farm-tags out.
+
+## Tranche 11 (2026-10-27)
+
+1,498 leads, 1,369 live (91%), ~1,250 rules in four batches:
+**23076 -> 24394 feeds, 17,101 hosts.** Third consecutive zero-removal settle;
+9 spam refused at merge (crypto-shill podcast, "natural cure for cancer"
+Substack, cam-site affiliate farm, casino-hijacked sites in Bolivia/Cameroon).
+
+Process incident, recorded because it is a landmine in the ORCHESTRATOR, not
+the delegate: `python3 tools/decide.py file | head -1` exits with head's
+status, so a REJECTED batch looked like it passed and the settle chain
+continued without those rules. Caught because the second `discover.py tag`
+count came back oddly small; fixed the rule, re-applied, merged the remaining
+224. Shell chains over decide.py must check for REJECTED, not exit codes.
