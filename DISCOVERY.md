@@ -736,3 +736,15 @@ plus stragglers in earlier ones - "no topic fits" is a vocabulary gap when the
 cluster keeps recurring, not a judgment failure. 15 astrology feeds tagged;
 the esoteric-but-categorizable line is drawn at actual astrology, not at
 religion-adjacent wellness.
+
+## Tranche 10 (2026-10-27)
+
+1,498 leads, 1,313 live (88%), ~1,200 rules in four delegated 330-row batches:
+**21818 -> 23076 feeds, 16,079 hosts.** Second consecutive zero-removal settle.
+Spam refused before entry (6): SEO/gambling copy farms, a casino-hijacked
+Iranian news feed, a book-promo link mill, and `balzaromagazine.co.uk` - the
+delegate flagged it as a maybe-farm and asked for a human check; curl showed
+all items are B2B SEO listicles ("Sweatshirts for Clubs", "GEO agencies")
+under a magazine name. Delegates flagging borderline calls for verification,
+rather than silently tagging or spaming, is the behaviour that keeps both
+false removals and farm-tags out.
