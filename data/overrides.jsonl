@@ -574,7 +574,7 @@
 {"key": "awesomekling.github.io", "tags": ["topic:systems", "topic:programming:cpp", "type:personal-blog"]}
 {"key": "awilkins.id.au", "tags": ["topic:web-development", "type:personal-blog", "region:australia"]}
 {"key": "axesslab.com", "tags": ["topic:web-development", "topic:design", "type:vendor-blog"]}
-{"key": "bad-concurrency.blogspot.com", "tags": ["topic:systems", "topic:programming", "type:personal-blog"]}
+{"key": "bad-concurrency.blogspot.com", "tags": ["topic:programming", "topic:systems", "type:personal-blog"]}
 {"key": "barakmich.dev", "tags": ["topic:ai", "topic:security", "type:personal-blog"]}
 {"key": "beckyhansmeyer.com", "tags": ["topic:programming:swift", "type:personal-blog"]}
 {"key": "belter.io", "tags": ["topic:web-development", "type:personal-blog"]}
@@ -15128,3 +15128,298 @@
 {"key": "b.j4.lc", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "b.l0g.jp", "tags": ["language:japanese", "region:japan", "topic:books", "topic:programming", "type:personal-blog"]}
 {"key": "b.mtjm.eu", "tags": ["topic:networking", "topic:open-source", "type:personal-blog"]}
+{"key": "b.nfd.moe", "tags": ["topic:personal", "topic:programming", "type:personal-blog"]}
+{"key": "b.tuxes.uk", "tags": ["topic:open-source", "topic:systems", "type:personal-blog"]}
+{"key": "b.yuxuan.org", "tags": ["topic:hardware", "topic:open-source", "type:personal-blog"]}
+{"key": "b0.bearblog.dev", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "b0ba.dev", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "b10c.me", "tags": ["topic:finance", "topic:programming", "type:personal-blog"]}
+{"key": "b10hub.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "b12deficient.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "b13rg.icecdn.tech", "tags": ["topic:hardware", "topic:programming", "type:personal-blog"]}
+{"key": "b15.com.mx", "tags": ["language:spanish", "region:mexico", "topic:news", "type:publication"]}
+{"key": "b17news.com", "tags": ["topic:lifestyle", "topic:news", "type:publication"]}
+{"key": "b1nzy.com", "tags": ["topic:software-engineering", "topic:systems", "type:personal-blog"]}
+{"key": "https://b1ubf4.podcaster.de/tanjabrock.rss", "tags": ["language:german", "region:germany", "topic:astrology", "type:podcast"]}
+{"key": "b24.am", "tags": ["topic:business", "topic:finance", "topic:news", "type:publication"]}
+{"key": "b2bbite.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "b2bmagazine.bg", "tags": ["region:europe", "topic:business", "topic:news", "type:publication"]}
+{"key": "https://b2bmarke.com/sole/feed/podcast/", "tags": ["language:japanese", "region:japan", "topic:business", "type:podcast"]}
+{"key": "b2bmedia.bg", "tags": ["region:europe", "topic:business", "topic:news", "type:publication"]}
+{"key": "b2bopenplaybook.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "b2bsuomi.fi", "tags": ["language:finnish", "region:europe", "topic:business", "type:publication"]}
+{"key": "https://b2btalks.podcaster.de/b2btalksde.rss", "tags": ["language:german", "region:germany", "topic:business", "type:podcast"]}
+{"key": "https://b2pet.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:business", "type:podcast"]}
+{"key": "b31.org.uk", "tags": ["region:uk", "topic:news", "type:publication"]}
+{"key": "b365.ro", "tags": ["region:europe", "topic:news", "type:publication"]}
+{"key": "b3n.org", "tags": ["topic:religion", "topic:systems", "type:personal-blog"]}
+{"key": "https://b4church.thechurchco.com/podcast-category/b4church-teaching/feed/podcast", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "https://b4kmql.podcaster.de/miteinander-leben.rss", "tags": ["language:german", "region:germany", "topic:lifestyle", "type:podcast"]}
+{"key": "https://b9y9of.podcaster.de/kern-stelly.rss", "tags": ["language:german", "region:germany", "topic:hardware", "type:podcast"]}
+{"key": "ba.org.ua", "tags": ["language:ukrainian", "region:ukraine", "topic:politics", "type:institution"]}
+{"key": "baabaa.blog", "tags": ["topic:open-source", "topic:security", "type:personal-blog"]}
+{"key": "baanaado.substack.com", "tags": ["topic:music", "type:personal-blog"]}
+{"key": "baatz.io", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "baazaa.github.io", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://bab.podigee.io/feed/mp3/", "tags": ["language:german", "region:africa", "topic:history", "type:podcast"]}
+{"key": "bababooey.bearblog.dev", "tags": ["topic:history", "type:personal-blog"]}
+{"key": "babakeclub.substack.com", "tags": ["topic:food", "type:newsletter"]}
+{"key": "babakfakhamzadeh.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "babbagefiles.xyz", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "babbageinsight.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "babbittville.com", "tags": ["topic:sport", "type:podcast"]}
+{"key": "babblery.com", "tags": ["topic:lifestyle", "type:podcast"]}
+{"key": "babbling.fish", "tags": ["topic:data", "type:personal-blog"]}
+{"key": "babbo.dev", "tags": ["topic:ai", "topic:philosophy", "type:personal-blog"]}
+{"key": "babe.com.my", "tags": ["region:asia", "topic:food", "type:publication"]}
+{"key": "babel.satusuara.co.id", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "babel.ua", "tags": ["language:ukrainian", "region:ukraine", "topic:news", "type:publication"]}
+{"key": "babelbabble.substack.com", "tags": ["topic:education", "type:newsletter"]}
+{"key": "https://babelli.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:lifestyle", "type:podcast"]}
+{"key": "babelpos.disway.id", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "babeltechreviews.com", "tags": ["topic:tech-industry", "type:publication"]}
+{"key": "babesballsbrands.com", "tags": ["topic:business", "topic:sport", "type:publication"]}
+{"key": "babeskills.libsyn.com", "tags": ["topic:health", "topic:lifestyle", "type:podcast"]}
+{"key": "babettebrown.it", "tags": ["language:italian", "region:italy", "topic:books", "type:publication"]}
+{"key": "babevillebuffalo.com", "tags": ["region:usa", "topic:art", "type:institution"]}
+{"key": "babieslearninglanguage.blogspot.com", "tags": ["topic:education", "type:personal-blog"]}
+{"key": "babin.posthaven.com", "tags": ["topic:ai", "topic:business", "type:personal-blog"]}
+{"key": "babolnovin.ir", "tags": ["region:middle-east", "topic:news", "type:publication"]}
+{"key": "babsbelovedbooks.blogspot.com", "tags": ["topic:books", "type:personal-blog"]}
+{"key": "https://babumenos.com/SPDR/feed.xml", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://baburu.lepodcast.fr/rss", "tags": ["language:french", "region:france", "topic:music", "type:podcast"]}
+{"key": "babuschk.in", "tags": ["topic:ai", "topic:science", "type:personal-blog"]}
+{"key": "babusiness.libsyn.com", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://babyboomer-stories.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:lifestyle", "type:podcast"]}
+{"key": "babybrain.substack.com", "tags": ["region:uk", "topic:lifestyle", "type:newsletter"]}
+{"key": "babygotbusiness.club", "tags": ["language:german", "region:germany", "topic:business", "type:podcast"]}
+{"key": "babylonburns.com", "tags": ["topic:economics", "topic:finance", "type:publication"]}
+{"key": "babypodcast.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "babysallright.substack.com", "tags": ["region:usa", "topic:entertainment", "type:newsletter"]}
+{"key": "babysigns.com", "tags": ["topic:education", "type:publication"]}
+{"key": "babythenwhat.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "babyvc.substack.com", "tags": ["topic:business", "topic:tech-industry", "type:newsletter"]}
+{"key": "https://babywelt.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:lifestyle", "type:podcast"]}
+{"key": "babyyu.podomatic.com", "tags": ["topic:music", "type:podcast"]}
+{"key": "bacakabar.id", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "bacalao.ch", "tags": ["topic:music", "type:podcast"]}
+{"key": "bacananews.com.br", "tags": ["language:portuguese", "region:latin-america", "topic:news", "type:publication"]}
+{"key": "bacap.com.ar", "tags": ["language:spanish", "region:latin-america", "topic:news", "type:publication"]}
+{"key": "bacardi55.io", "tags": ["topic:open-source", "topic:systems", "type:personal-blog"]}
+{"key": "bacaupress.ro", "tags": ["region:europe", "topic:news", "type:publication"]}
+{"key": "bacchi.org", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "bachelierresearch.substack.com", "tags": ["topic:finance", "type:newsletter"]}
+{"key": "bachini.substack.com", "tags": ["topic:finance", "topic:tech-industry", "type:newsletter"]}
+{"key": "bachmanrachel.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "bacioi.md", "tags": ["region:europe", "topic:government", "type:institution"]}
+{"key": "bacist.com", "tags": ["topic:education", "topic:travel", "type:publication"]}
+{"key": "https://back-audioblog.arteradio.com/blog/126579/rss", "tags": ["language:french", "region:france", "topic:education", "topic:media", "type:podcast"]}
+{"key": "https://back-audioblog.arteradio.com/blog/130688/rss", "tags": ["language:french", "region:france", "topic:music", "type:podcast"]}
+{"key": "back-on-track.eu", "tags": ["region:europe", "topic:transport", "type:institution"]}
+{"key": "https://back-to-the-future-of-ai.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:ai", "type:podcast"]}
+{"key": "back.dairynews7x7.com", "tags": ["region:india", "topic:business", "type:publication"]}
+{"key": "back.engineering", "tags": ["topic:security", "type:institution"]}
+{"key": "https://back.studeo.fm/api/v1/podcasts/130/rss-feeds", "tags": ["region:usa", "topic:news", "topic:politics", "type:podcast"]}
+{"key": "https://back.studeo.fm/podcasts/126/rss-feeds", "tags": ["region:usa", "topic:news", "topic:politics", "type:podcast"]}
+{"key": "https://back.studeo.fm/podcasts/FY21PQPUNLZENYAUXFOJ.xml", "tags": ["region:usa", "topic:finance", "type:podcast"]}
+{"key": "back2houseradiohq7073.podomatic.com", "tags": ["topic:music", "type:podcast"]}
+{"key": "backalleycoder.com", "tags": ["topic:software-engineering", "topic:web-development", "type:personal-blog"]}
+{"key": "backbonecoalition.substack.com", "tags": ["region:usa", "topic:finance", "type:newsletter"]}
+{"key": "backburnerthoughts.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "backchannel1.substack.com", "tags": ["topic:environment", "topic:politics", "type:newsletter"]}
+{"key": "backcornerradio.com", "tags": ["topic:music", "type:podcast"]}
+{"key": "backcountrybrooke.substack.com", "tags": ["topic:travel", "type:newsletter"]}
+{"key": "backcountrymagazine.com", "tags": ["region:usa", "topic:sport", "type:publication"]}
+{"key": "backcountrypsych.substack.com", "tags": ["topic:science", "type:newsletter"]}
+{"key": "backdrifting.net", "tags": ["topic:security", "topic:systems", "type:personal-blog"]}
+{"key": "backend.cafe", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "backend.how", "tags": ["topic:software-engineering", "topic:systems", "type:personal-blog"]}
+{"key": "backend.kanalk.ch", "tags": ["language:german", "region:europe", "topic:art", "topic:media", "type:podcast"]}
+{"key": "https://backend.mindtunes.org/podcasts/Dresden/feed.xml", "tags": ["language:german", "region:germany", "topic:lifestyle", "topic:news", "type:podcast"]}
+{"key": "https://backend.mindtunes.org/podcasts/Frankfurt/feed.xml", "tags": ["language:german", "region:germany", "topic:food", "type:podcast"]}
+{"key": "https://backend.mindtunes.org/podcasts/MostlyHarmless/feed.xml", "tags": ["topic:ai", "type:podcast"]}
+{"key": "backend.podd.huseli.us", "tags": ["region:europe", "topic:music", "type:podcast"]}
+{"key": "backendhance.com", "tags": ["topic:software-engineering", "type:vendor-blog"]}
+{"key": "https://backendspace.cu-maghnia.dz:8443/server/opensearch/search?format=atom&query=%2A", "tags": ["language:arabic", "region:africa", "topic:education", "type:institution"]}
+{"key": "backendtea.com", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "backfire.tv", "tags": ["region:usa", "topic:sport", "type:podcast"]}
+{"key": "backinsteppt.com", "tags": ["region:usa", "topic:medicine", "topic:sport", "type:podcast"]}
+{"key": "backinthedayinberlin.substack.com", "tags": ["region:germany", "topic:history", "type:newsletter"]}
+{"key": "backlinklist.substack.com", "tags": ["topic:web-development", "type:newsletter"]}
+{"key": "backlit.neocities.org", "tags": ["topic:tech-industry", "type:personal-blog"]}
+{"key": "https://backloglepodcast.lepodcast.fr/rss", "tags": ["language:french", "region:france", "topic:gaming", "type:podcast"]}
+{"key": "backnotprop.com", "tags": ["topic:ai", "topic:security", "type:personal-blog"]}
+{"key": "backofmind.substack.com", "tags": ["topic:economics", "topic:finance", "type:newsletter"]}
+{"key": "https://backofthegrid.podbean.com/feed.xml", "tags": ["region:uk", "topic:sport", "type:podcast"]}
+{"key": "backpackchronicles.substack.com", "tags": ["topic:food", "topic:travel", "type:newsletter"]}
+{"key": "https://backr24.ilsole24ore.com/podcast/140-caratteri.xml", "tags": ["language:italian", "region:italy", "topic:media", "type:podcast"]}
+{"key": "https://backr24.ilsole24ore.com/podcast/2024-speciale-intelligenza-artificiale.xml", "tags": ["language:italian", "region:italy", "topic:ai", "type:podcast"]}
+{"key": "https://backr24.ilsole24ore.com/podcast/2024.xml", "tags": ["language:italian", "region:italy", "topic:tech-industry", "type:podcast"]}
+{"key": "backroadportfolio.com", "tags": ["region:usa", "topic:history", "topic:travel", "type:newsletter"]}
+{"key": "backroadsdrivingwindowsdown.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "backroomdeals.substack.com", "tags": ["region:usa", "topic:journalism", "topic:politics", "type:newsletter"]}
+{"key": "backseatbabies.substack.com", "tags": ["region:usa", "topic:lifestyle", "topic:travel", "type:newsletter"]}
+{"key": "backseatlinguist.substack.com", "tags": ["topic:education", "type:newsletter"]}
+{"key": "backspintennis.blogspot.com", "tags": ["region:usa", "topic:sport", "type:personal-blog"]}
+{"key": "https://backstage.podcaster.de/BackstagePodcast.rss", "tags": ["language:german", "region:germany", "topic:music", "type:podcast"]}
+{"key": "backstageclassical.com", "tags": ["language:german", "region:germany", "topic:music", "type:publication"]}
+{"key": "backstageonwzbg.podomatic.com", "tags": ["region:usa", "topic:music", "type:podcast"]}
+{"key": "backstageupstage.blubrry.net", "tags": ["topic:health", "type:podcast"]}
+{"key": "backstreetcinema.podomatic.com", "tags": ["language:chinese", "region:asia", "topic:entertainment", "type:podcast"]}
+{"key": "backtoblading.com", "tags": ["topic:sport", "type:podcast"]}
+{"key": "backtoonepodcast.substack.com", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "backtoschool.com.ng", "tags": ["region:nigeria", "topic:education", "type:publication"]}
+{"key": "backtothebalcony.libsyn.com", "tags": ["topic:entertainment", "topic:history", "type:podcast"]}
+{"key": "backtothebiblejamaica.podbean.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "backwardmutters.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "backyardchurch.substack.com", "tags": ["topic:religion", "type:newsletter"]}
+{"key": "backyardfarming.substack.com", "tags": ["topic:food", "topic:lifestyle", "type:newsletter"]}
+{"key": "backyardstewardship.substack.com", "tags": ["topic:environment", "type:newsletter"]}
+{"key": "backyardtinker.bearblog.dev", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "backyardultrapodcast.podbean.com", "tags": ["region:australia", "topic:sport", "type:podcast"]}
+{"key": "baclarke.substack.com", "tags": ["topic:books", "topic:history", "type:newsletter"]}
+{"key": "bacninhtv.vn", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "https://baco.podbean.com/feed.xml", "tags": ["topic:music", "type:podcast"]}
+{"key": "bacolodcity.gov.ph", "tags": ["region:philippines", "topic:government", "type:institution"]}
+{"key": "bacon.boutique", "tags": ["region:uk", "topic:history", "topic:personal", "type:personal-blog"]}
+{"key": "baconsale.podbean.com", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "bactra.org", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "bad-faith-times.ghost.io", "tags": ["region:usa", "topic:politics", "type:newsletter"]}
+{"key": "bad-pr.tumblr.com", "tags": ["region:uk", "topic:media", "type:personal-blog"]}
+{"key": "badaine.cz", "tags": ["language:czech", "region:europe", "topic:lifestyle", "type:podcast"]}
+{"key": "badakhabar.in", "tags": ["region:india", "topic:news", "type:publication"]}
+{"key": "badantanmiah.com.bn", "tags": ["region:asia", "topic:business", "type:institution"]}
+{"key": "badarteveryday.com", "tags": ["topic:art", "topic:personal", "type:personal-blog"]}
+{"key": "badassagile.com", "tags": ["topic:business", "type:podcast"]}
+{"key": "badasswomeninhistory.substack.com", "tags": ["topic:history", "type:newsletter"]}
+{"key": "badatmagic.blubrry.net", "tags": ["topic:gaming", "type:podcast"]}
+{"key": "badbadhats.substack.com", "tags": ["region:usa", "topic:music", "type:institution"]}
+{"key": "badbannews.ir", "tags": ["region:middle-east", "topic:art", "topic:entertainment", "type:publication"]}
+{"key": "badbird3.github.io", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "badbossbrief.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "badbradberkwitt.com", "tags": ["region:usa", "topic:politics", "type:personal-blog"]}
+{"key": "badcheese.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "badd10de.dev", "tags": ["topic:hardware", "topic:programming", "type:personal-blog"]}
+{"key": "https://baddecisions.podbean.com/feed.xml", "tags": ["topic:business", "type:podcast"]}
+{"key": "baddestchaplain.substack.com", "tags": ["topic:religion", "type:newsletter"]}
+{"key": "baddotrobot.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "baddrunks.podomatic.com", "tags": ["topic:sport", "type:podcast"]}
+{"key": "baddyproductions1971.podomatic.com", "tags": ["topic:music", "type:podcast"]}
+{"key": "badecaf.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "https://baden-kompakt.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:news", "type:podcast"]}
+{"key": "baden.ch", "tags": ["language:german", "region:europe", "topic:government", "type:institution"]}
+{"key": "baderb.me", "tags": ["topic:art", "topic:personal", "type:personal-blog"]}
+{"key": "https://badewannengespraeche.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:lifestyle", "type:podcast"]}
+{"key": "badfaithtimes.com", "tags": ["region:usa", "topic:politics", "type:newsletter"]}
+{"key": "badfi.com", "tags": ["topic:networking", "type:personal-blog"]}
+{"key": "badgerbadgerbadger.ca", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "badgerbadgerbadgerbadger.dev", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "badgerherald.com", "tags": ["region:usa", "topic:education", "topic:news", "type:publication"]}
+{"key": "badgernotes.com", "tags": ["region:usa", "topic:sport", "type:publication"]}
+{"key": "badgerobserver.com", "tags": ["region:usa", "topic:sport", "type:newsletter"]}
+{"key": "badgerofhonor.com", "tags": ["region:usa", "topic:sport", "type:publication"]}
+{"key": "badgersworkbench.com", "tags": ["topic:hardware", "topic:personal", "type:personal-blog"]}
+{"key": "badgirlsbible.com", "tags": ["topic:lifestyle", "type:publication"]}
+{"key": "badguru.substack.com", "tags": ["topic:philosophy", "type:newsletter"]}
+{"key": "badhabitswritingacademy.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "badheroes.webcomic.ws", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "badice.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "badilum.mahkamahagung.go.id", "tags": ["region:asia", "topic:government", "type:institution"]}
+{"key": "badkeming.com", "tags": ["topic:design", "type:publication"]}
+{"key": "https://badlands.substack.com/feed", "tags": ["region:usa", "topic:journalism", "type:newsletter"]}
+{"key": "https://badlandsmedia.podbean.com/feed.xml", "tags": ["region:usa", "topic:journalism", "topic:politics", "type:podcast"]}
+{"key": "badlodge.com", "tags": ["region:usa", "topic:personal", "topic:religion", "type:personal-blog"]}
+{"key": "badmachinery.com", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "badmen.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "badmusichertz.com", "tags": ["topic:music", "type:podcast"]}
+{"key": "badoption.eu", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "badpallod.com", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "badpenny.bearblog.dev", "tags": ["region:usa", "topic:personal", "type:personal-blog"]}
+{"key": "badrapport.com", "tags": ["region:usa", "topic:entertainment", "type:podcast"]}
+{"key": "badredheadmediallc.substack.com", "tags": ["topic:books", "topic:business", "type:newsletter"]}
+{"key": "badsector.dev", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "badshah.io", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "badsoftwareadvice.substack.com", "tags": ["topic:software-engineering", "type:newsletter"]}
+{"key": "badspot.us", "tags": ["topic:gaming", "topic:hardware", "type:personal-blog"]}
+{"key": "badvoltage.org", "tags": ["region:uk", "topic:open-source", "topic:tech-industry", "type:podcast"]}
+{"key": "https://badw.de/mediathek/podcast/nachgehakt-rss/rss.xml", "tags": ["language:german", "region:germany", "topic:history", "topic:politics", "type:podcast"]}
+{"key": "https://badw.de/mediathek/podcast/weltbewegt-rss/rss.xml", "tags": ["language:german", "region:germany", "topic:environment", "topic:politics", "type:podcast"]}
+{"key": "badweatherpod.podbean.com", "tags": ["region:usa", "topic:lifestyle", "type:podcast"]}
+{"key": "badwoman.substack.com", "tags": ["topic:lifestyle", "topic:politics", "type:newsletter"]}
+{"key": "baerae.substack.com", "tags": ["topic:finance", "type:newsletter"]}
+{"key": "baerentsen.space", "tags": ["topic:open-source", "topic:personal", "type:personal-blog"]}
+{"key": "baesystemsai.podbean.com", "tags": ["region:uk", "topic:military", "topic:tech-industry", "type:podcast"]}
+{"key": "baez.link", "tags": ["topic:open-source", "topic:systems", "type:personal-blog"]}
+{"key": "bafriedman.substack.com", "tags": ["topic:history", "topic:military", "type:newsletter"]}
+{"key": "bagaglioleggero.substack.com", "tags": ["language:italian", "region:italy", "topic:travel", "type:newsletter"]}
+{"key": "bagelfund.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "bagerbach.com", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "baggebohomestead.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "baghdad.gov.iq", "tags": ["language:arabic", "region:middle-east", "topic:government", "type:institution"]}
+{"key": "baghestannews.ir", "tags": ["region:middle-east", "topic:news", "type:publication"]}
+{"key": "bagoregion.gov.mm", "tags": ["region:asia", "topic:government", "type:institution"]}
+{"key": "bagsociety.podbean.com", "tags": ["region:usa", "topic:politics", "type:podcast"]}
+{"key": "bagster.substack.com", "tags": ["region:uk", "topic:finance", "type:newsletter"]}
+{"key": "baha.org.bz", "tags": ["region:latin-america", "topic:government", "type:institution"]}
+{"key": "bahadiraydin.com", "tags": ["topic:programming", "topic:systems", "type:personal-blog"]}
+{"key": "bahadrabadnews.com", "tags": ["language:hindi", "region:india", "topic:news", "type:publication"]}
+{"key": "bahaiteachings.org", "tags": ["topic:religion", "type:publication"]}
+{"key": "bahalmag.ir", "tags": ["region:middle-east", "topic:entertainment", "topic:lifestyle", "type:publication"]}
+{"key": "bahazit.co.il", "tags": ["region:middle-east", "topic:news", "type:publication"]}
+{"key": "baheyeldin.com", "tags": ["topic:open-source", "topic:systems", "type:personal-blog"]}
+{"key": "bahiafatosnews.com.br", "tags": ["language:portuguese", "region:latin-america", "topic:news", "type:publication"]}
+{"key": "bahiamanchetes.com.br", "tags": ["language:portuguese", "region:latin-america", "topic:news", "type:publication"]}
+{"key": "bahitom.desa.id", "tags": ["region:asia", "topic:government", "type:institution"]}
+{"key": "bahmut.in.ua", "tags": ["language:ukrainian", "region:ukraine", "topic:military", "topic:news", "type:publication"]}
+{"key": "bahnblogstelle.com", "tags": ["language:german", "region:germany", "topic:transport", "type:publication"]}
+{"key": "https://bahnhofskino.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:entertainment", "type:podcast"]}
+{"key": "https://bahnsinn-hinter-den-kulissen.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:transport", "type:podcast"]}
+{"key": "bahut.alma.ch", "tags": ["language:french", "topic:open-source", "topic:systems", "type:personal-blog"]}
+{"key": "https://bai.koelab.company/feed/podcast/", "tags": ["language:japanese", "region:japan", "topic:business", "type:podcast"]}
+{"key": "baidoadistrict.sw.so", "tags": ["region:africa", "topic:government", "type:institution"]}
+{"key": "baihocthutu.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "baikal-daily.ru", "tags": ["language:russian", "region:russia", "topic:news", "type:publication"]}
+{"key": "baildon.co", "tags": ["topic:programming", "topic:systems", "type:personal-blog"]}
+{"key": "baileyburnsed.dev", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "baileyhorton.com", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "baileymichael.substack.com", "tags": ["region:usa", "topic:politics", "type:newsletter"]}
+{"key": "baileysbeerblog.blogspot.com", "tags": ["region:uk", "topic:food", "topic:travel", "type:personal-blog"]}
+{"key": "baileyvantassel.substack.com", "tags": ["topic:food", "type:newsletter"]}
+{"key": "baillievensel.substack.com", "tags": ["topic:art", "type:newsletter"]}
+{"key": "bainsdenergies.fr", "tags": ["region:france", "topic:environment", "type:institution"]}
+{"key": "baipin.pw", "tags": ["language:chinese", "topic:software-engineering", "type:personal-blog"]}
+{"key": "bairdbrightman.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "baishunsu.substack.com", "tags": ["language:chinese", "topic:finance", "type:newsletter"]}
+{"key": "baixcampradio.com", "tags": ["region:spain", "topic:news", "type:podcast"]}
+{"key": "bajcic.com", "tags": ["topic:music", "topic:programming", "type:personal-blog"]}
+{"key": "bajhss.bauc14.edu.iq", "tags": ["language:arabic", "region:middle-east", "topic:education", "type:institution"]}
+{"key": "bajkowski.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://bak-podcast-dat.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:design", "type:podcast"]}
+{"key": "bak.de", "tags": ["language:german", "region:germany", "topic:design", "type:institution"]}
+{"key": "bakabar.com", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "bakedbean.org.uk", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "bakedbree.com", "tags": ["topic:food", "type:personal-blog"]}
+{"key": "bakedin.joythebaker.com", "tags": ["topic:food", "type:newsletter"]}
+{"key": "bakeexperiments.substack.com", "tags": ["topic:food", "type:newsletter"]}
+{"key": "bakefromscratch.com", "tags": ["topic:food", "type:publication"]}
+{"key": "bakefromyourheart.substack.com", "tags": ["topic:religion", "type:personal-blog"]}
+{"key": "bakercityherald.com", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "https://bakermckenzie-podcastlibrary-wordpress.onenorth.com/feed/podcast/legalthreads/", "tags": ["language:spanish", "region:mexico", "topic:business", "type:podcast"]}
+{"key": "bakernaz.com", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "bakerstudio.substack.com", "tags": ["topic:design", "type:newsletter"]}
+{"key": "bakeryandsnacks.com", "tags": ["topic:business", "type:publication"]}
+{"key": "https://bakerybears.podbean.com/feed.xml", "tags": ["region:uk", "topic:art", "topic:lifestyle", "type:podcast"]}
+{"key": "bakesandbliss.co", "tags": ["topic:food", "type:personal-blog"]}
+{"key": "bakhshi-art.uz", "tags": ["region:asia", "topic:art", "topic:music", "type:institution"]}
+{"key": "bakingbusiness.com.au", "tags": ["region:australia", "topic:business", "type:publication"]}
+{"key": "bakingmischief.com", "tags": ["topic:food", "type:personal-blog"]}
+{"key": "bakis.bg", "tags": ["region:europe", "topic:news", "type:publication"]}
+{"key": "bakivaxti.az", "tags": ["topic:news", "type:publication"]}
+{"key": "bakucity.co.il", "tags": ["topic:travel", "type:publication"]}
+{"key": "bakues.az", "tags": ["topic:news", "type:publication"]}
+{"key": "bakunews.az", "tags": ["topic:news", "type:publication"]}
+{"key": "bal-e.org", "tags": ["topic:programming", "topic:systems", "type:personal-blog"]}
+{"key": "balado.ckrl.qc.ca", "tags": ["language:french", "region:canada", "topic:media", "topic:music", "type:podcast"]}
+{"key": "https://baladoquebec.ca/0447/rss", "tags": ["language:french", "region:canada", "topic:finance", "type:podcast"]}
+{"key": "https://baladoquebec.ca/2follesadisney/rss", "tags": ["language:french", "region:canada", "topic:travel", "type:podcast"]}
+{"key": "https://baladoquebec.ca/70/rss", "tags": ["language:french", "region:canada", "topic:entertainment", "type:podcast"]}
