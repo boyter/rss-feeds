@@ -1989,7 +1989,7 @@
 {"key": "axianspice.blogspot.com", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "basicappleguy.com", "tags": ["topic:gadgets", "type:personal-blog"]}
 {"key": "bastionland.com", "tags": ["topic:personal", "type:personal-blog"]}
-{"key": "bearded-devil.com", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "bearded-devil.com", "tags": ["topic:entertainment", "topic:gaming", "type:personal-blog"]}
 {"key": "becominghuman.ai", "tags": ["topic:ai", "type:personal-blog"]}
 {"key": "ben-evans.com", "tags": ["topic:tech-industry", "type:personal-blog"]}
 {"key": "benoitpasquier.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
@@ -7003,7 +7003,7 @@
 {"key": "https://aztec8888.substack.com/feed", "tags": ["topic:health", "topic:politics", "type:personal-blog"]}
 {"key": "badchoices.us", "tags": ["region:usa", "topic:entertainment", "topic:politics", "type:personal-blog"]}
 {"key": "https://bbc.sermonplatform.com/api/v1/rss?limit=100", "tags": ["region:usa", "topic:religion", "type:podcast"]}
-{"key": "bblank.thinkmo.de", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "bblank.thinkmo.de", "tags": ["topic:open-source", "topic:programming", "type:personal-blog"]}
 {"key": "bbpress.org", "tags": ["topic:software-engineering", "type:institution"]}
 {"key": "https://bbsradio.com/customshow/251885", "tags": ["region:usa", "topic:religion", "type:podcast"]}
 {"key": "https://benfranklinsaves.substack.com/feed", "tags": ["topic:books", "topic:personal", "type:personal-blog"]}
@@ -16320,3 +16320,319 @@
 {"key": "https://bbgventures.substack.com/feed", "tags": ["region:usa", "topic:business", "topic:finance", "type:vendor-blog"]}
 {"key": "https://bbiancasousa.substack.com/feed", "tags": ["language:portuguese", "topic:books", "topic:personal", "type:newsletter"]}
 {"key": "https://bash.bashinform.ru/rss/yandex", "tags": ["region:russia", "topic:news", "type:publication"]}
+{"key": "bbirnbaum.com", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "bbl.is", "tags": ["region:europe", "topic:news", "type:publication"]}
+{"key": "bblais.github.io", "tags": ["topic:mathematics", "topic:philosophy", "topic:religion", "type:personal-blog"]}
+{"key": "bbm987.com.au", "tags": ["region:australia", "topic:news", "type:podcast"]}
+{"key": "bbonline.sk", "tags": ["region:europe", "topic:news", "type:publication"]}
+{"key": "bbox-mag.fr", "tags": ["language:french", "region:france", "topic:gadgets", "topic:tech-industry", "type:publication"]}
+{"key": "bbpod.xyz", "tags": ["topic:ai", "topic:philosophy", "type:podcast"]}
+{"key": "bbqnewsletter.substack.com", "tags": ["topic:food", "type:newsletter"]}
+{"key": "bbr-fruehstueckbeibarbara.podigee.io", "tags": ["language:german", "region:germany", "topic:entertainment", "type:podcast"]}
+{"key": "bbr-fruehstueckbeibarbara-amazon.podigee.io", "tags": ["language:german", "region:germany", "topic:entertainment", "type:podcast"]}
+{"key": "bbr-fruehstueckbeibarbara-deezer.podigee.io", "tags": ["language:german", "region:germany", "topic:entertainment", "type:podcast"]}
+{"key": "bbr-fruehstueckbeibarbara-itunes.podigee.io", "tags": ["language:german", "region:germany", "topic:entertainment", "type:podcast"]}
+{"key": "bbr-fruehstueckbeibarbara-spotify.podigee.io", "tags": ["language:german", "region:germany", "topic:entertainment", "type:podcast"]}
+{"key": "bbs-weyer.at", "tags": ["language:german", "region:europe", "topic:education", "type:institution"]}
+{"key": "bbscorner.com", "tags": ["topic:networking", "topic:software-engineering", "type:publication"]}
+{"key": "bbsfromscratch.com", "tags": ["topic:networking", "topic:programming", "type:personal-blog"]}
+{"key": "bbsnews.id", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "bbsnews.net", "tags": ["language:french", "region:france", "topic:business", "type:publication"]}
+{"key": "https://bbsradio.com/customshow/12015", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://bbsradio.com/customshow/167244", "tags": ["topic:politics", "type:podcast"]}
+{"key": "bbss.dev", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "bbtemple.org", "tags": ["topic:religion", "type:podcast"]}
+{"key": "bbuyukliev.blogspot.com", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "https://bbvaacentos.libsyn.com/feed", "tags": ["language:spanish", "region:latin-america", "topic:economics", "topic:finance", "type:podcast"]}
+{"key": "https://bbvablink.libsyn.com/feed", "tags": ["language:spanish", "topic:finance", "topic:tech-industry", "type:podcast"]}
+{"key": "https://bbvacom.libsyn.com/feed", "tags": ["language:spanish", "region:spain", "topic:education", "type:podcast"]}
+{"key": "https://bbvacompartiendoconocimiento.libsyn.com/rss", "tags": ["language:spanish", "region:spain", "topic:business", "type:podcast"]}
+{"key": "https://bbvadesdelabanca.libsyn.com/feed", "tags": ["language:spanish", "region:mexico", "topic:economics", "topic:finance", "type:podcast"]}
+{"key": "https://bbvasaludfinanciera.libsyn.com/rss", "tags": ["language:spanish", "topic:finance", "type:podcast"]}
+{"key": "bc1984.com", "tags": ["topic:politics", "topic:security", "type:personal-blog"]}
+{"key": "bcantrill.dtrace.org", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "bcarrigan.com", "tags": ["topic:hardware", "topic:programming", "type:personal-blog"]}
+{"key": "bcashow.libsyn.com", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "bcb.cat", "tags": ["topic:art", "topic:entertainment", "type:publication"]}
+{"key": "bcb.gov.br", "tags": ["language:portuguese", "region:latin-america", "topic:economics", "topic:finance", "topic:government", "type:institution"]}
+{"key": "bcbabbles.substack.com", "tags": ["topic:business", "type:personal-blog"]}
+{"key": "bcbg1.podbean.com", "tags": ["topic:music", "type:podcast"]}
+{"key": "bcblotter.substack.com", "tags": ["topic:education", "topic:news", "type:publication"]}
+{"key": "bcbp.pw", "tags": ["region:philippines", "topic:government", "type:institution"]}
+{"key": "bcbs.dharmaseed.org", "tags": ["topic:religion", "type:podcast"]}
+{"key": "bcbusiness.ca", "tags": ["region:canada", "topic:business", "type:publication"]}
+{"key": "bcc.gov.sl", "tags": ["region:africa", "topic:government", "type:institution"]}
+{"key": "bccar.bz", "tags": ["region:latin-america", "topic:business", "topic:government", "type:institution"]}
+{"key": "bcccb.org", "tags": ["topic:religion", "type:podcast"]}
+{"key": "bccchurch.podomatic.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "bccjpsurvival.substack.com", "tags": ["topic:politics", "type:personal-blog"]}
+{"key": "bccpress.substack.com", "tags": ["topic:books", "topic:religion", "type:institution"]}
+{"key": "bcdecomic.com", "tags": ["topic:art", "topic:entertainment", "type:publication"]}
+{"key": "bcengine.net", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "bcf.church", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "bcf.sermon.net", "tags": ["topic:religion", "type:podcast"]}
+{"key": "bcfblogculturaefutebol.blogspot.com", "tags": ["language:portuguese", "region:latin-america", "topic:entertainment", "topic:sport", "type:personal-blog"]}
+{"key": "bcfcsermons.podbean.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "bcfg.substack.com", "tags": ["topic:science", "type:newsletter"]}
+{"key": "bcfodessa.podbean.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "bcgrayer.substack.com", "tags": ["topic:books", "type:personal-blog"]}
+{"key": "bchannibal.com", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "bcheights.com", "tags": ["region:usa", "topic:education", "topic:news", "type:publication"]}
+{"key": "bchleadershippodcast.libsyn.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "bchow.substack.com", "tags": ["topic:art", "topic:tech-industry", "type:personal-blog"]}
+{"key": "bci24news.com", "tags": ["topic:news", "type:publication"]}
+{"key": "bckomix.substack.com", "tags": ["topic:art", "topic:entertainment", "type:personal-blog"]}
+{"key": "bckonline.com", "tags": ["topic:entertainment", "topic:lifestyle", "type:publication"]}
+{"key": "https://bcl.lu/fr/support/rss/00_rssfeed.rss", "tags": ["language:french", "region:europe", "topic:economics", "topic:finance", "type:institution"]}
+{"key": "bcmapodcast.podbean.com", "tags": ["topic:art", "type:podcast"]}
+{"key": "bcms.edu.iq", "tags": ["language:arabic", "region:middle-east", "topic:education", "topic:medicine", "type:institution"]}
+{"key": "bcmullins.github.io", "tags": ["topic:ai", "topic:security", "type:personal-blog"]}
+{"key": "bcn.gob.ni", "tags": ["language:spanish", "region:latin-america", "topic:economics", "topic:finance", "type:institution"]}
+{"key": "bcnusanews.net", "tags": ["region:usa", "topic:politics", "type:aggregator"]}
+{"key": "bconnectedcolorado.com", "tags": ["region:usa", "topic:lifestyle", "type:institution"]}
+{"key": "bcons-solary.vn", "tags": ["region:asia", "topic:business", "type:vendor-blog"]}
+{"key": "bcope.substack.com", "tags": ["topic:ai", "topic:environment", "type:newsletter"]}
+{"key": "bcparrish76.podomatic.com", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "bcpetregistry.ca", "tags": ["region:canada", "topic:lifestyle", "type:institution"]}
+{"key": "bcreator.substack.com", "tags": ["region:uk", "topic:entertainment", "topic:media", "type:newsletter"]}
+{"key": "bcsnn.com", "tags": ["region:usa", "topic:sport", "type:publication"]}
+{"key": "bcthebeatles.podbean.com", "tags": ["topic:music", "type:podcast"]}
+{"key": "bcwarr.substack.com", "tags": ["topic:religion", "type:personal-blog"]}
+{"key": "bcwinstitute.libsyn.com", "tags": ["topic:business", "topic:religion", "type:podcast"]}
+{"key": "bcwtigerfan.podomatic.com", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "bd-cathdegarate.overblog.com", "tags": ["language:french", "topic:books", "type:personal-blog"]}
+{"key": "bd.bnphu.gob.do", "tags": ["language:spanish", "region:latin-america", "topic:books", "topic:history", "type:institution"]}
+{"key": "bd103.dev", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "bda-podcast-berufsverband.podigee.io", "tags": ["language:german", "region:germany", "topic:medicine", "type:podcast"]}
+{"key": "bdaily.co.uk", "tags": ["region:uk", "topic:business", "type:publication"]}
+{"key": "bdash.net.nz", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "bdbdproverbs.freebiblestudyhelp.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "bdbdpsalms.freebiblestudyhelp.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "bdbnews.ro", "tags": ["region:europe", "topic:news", "type:publication"]}
+{"key": "bdcbt.org", "tags": ["region:usa", "topic:business", "topic:politics", "type:institution"]}
+{"key": "bdcmagazine.com", "tags": ["topic:business", "type:publication"]}
+{"key": "bdcrimenews.com", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "bddnews.com", "tags": ["language:japanese", "region:asia", "topic:news", "type:publication"]}
+{"key": "bdewey.substack.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "bdinvesting.substack.com", "tags": ["topic:ai", "topic:finance", "type:personal-blog"]}
+{"key": "bdnewstimes.com", "tags": ["region:asia", "topic:news", "type:aggregator"]}
+{"key": "bdougie.substack.com", "tags": ["topic:infrastructure", "topic:software-engineering", "type:personal-blog"]}
+{"key": "bdsansmoderation.substack.com", "tags": ["language:french", "topic:art", "topic:books", "type:newsletter"]}
+{"key": "bdscoalition.ca", "tags": ["region:canada", "topic:politics", "type:institution"]}
+{"key": "bdtechtalks.substack.com", "tags": ["topic:ai", "type:newsletter"]}
+{"key": "bdu.edu.et", "tags": ["region:africa", "topic:education", "type:institution"]}
+{"key": "bdwm.be", "tags": ["language:dutch", "topic:web-development", "type:vendor-blog"]}
+{"key": "be-iron.com", "tags": ["language:french", "topic:sport", "type:podcast"]}
+{"key": "be-side.jp", "tags": ["language:japanese", "region:japan", "topic:entertainment", "type:podcast"]}
+{"key": "be-visible-ww7kz6.jellypod.com", "tags": ["topic:ai", "topic:business", "type:podcast"]}
+{"key": "be4si.substack.com", "tags": ["topic:business", "topic:education", "type:newsletter"]}
+{"key": "beable.bearblog.dev", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "beabulletinbytess.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "beabytes.com", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "beachape.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "beachburg.blogspot.com", "tags": ["region:canada", "topic:transport", "type:personal-blog"]}
+{"key": "beachcomber.bearblog.dev", "tags": ["topic:art", "topic:entertainment", "type:personal-blog"]}
+{"key": "beachesandtrailspublishing.substack.com", "tags": ["topic:books", "type:vendor-blog"]}
+{"key": "beacheschapel.sermon.net", "tags": ["topic:religion", "type:podcast"]}
+{"key": "beachman.substack.com", "tags": ["topic:ai", "topic:finance", "type:newsletter"]}
+{"key": "beachreadsandbubbly.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "beachspectres.com", "tags": ["topic:mathematics", "type:personal-blog"]}
+{"key": "beacon-church-948.thechurchco.site", "tags": ["topic:religion", "type:podcast"]}
+{"key": "beaconhilltimes.com", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "beaconites.libsyn.com", "tags": ["region:usa", "topic:news", "type:podcast"]}
+{"key": "beaconofcreation.libsyn.com", "tags": ["topic:gaming", "type:podcast"]}
+{"key": "beacononlinenews.com", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "beaconreports.substack.com", "tags": ["region:japan", "topic:news", "topic:politics", "type:newsletter"]}
+{"key": "beactive.podigee.io", "tags": ["language:german", "region:germany", "topic:health", "topic:sport", "type:podcast"]}
+{"key": "beagle-azalea-fgxd.squarespace.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "beagledraft.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "beakuency.substack.com", "tags": ["region:usa", "topic:lifestyle", "type:newsletter"]}
+{"key": "bealestreetcaravan.podbean.com", "tags": ["region:usa", "topic:music", "type:podcast"]}
+{"key": "beamedaway.bearblog.dev", "tags": ["topic:sport", "type:personal-blog"]}
+{"key": "beamedaway.com", "tags": ["topic:sport", "type:personal-blog"]}
+{"key": "beamforall.com", "tags": ["topic:tech-industry", "topic:transport", "type:vendor-blog"]}
+{"key": "http://beanball.wcbn.org/Living_Writers/", "tags": ["topic:books", "type:podcast"]}
+{"key": "beanieanddaddy.podomatic.com", "tags": ["topic:lifestyle", "type:podcast"]}
+{"key": "beansandbytes.substack.com", "tags": ["topic:ai", "type:newsletter"]}
+{"key": "beanstalkmums.podbean.com", "tags": ["topic:lifestyle", "type:podcast"]}
+{"key": "beansupporter.substack.com", "tags": ["topic:food", "type:personal-blog"]}
+{"key": "beantin.net", "tags": ["topic:design", "topic:web-development", "type:personal-blog"]}
+{"key": "beantobeing.substack.com", "tags": ["topic:health", "type:personal-blog"]}
+{"key": "bear.best", "tags": ["topic:programming", "topic:software-engineering", "type:personal-blog"]}
+{"key": "bearalley.blogspot.com", "tags": ["region:uk", "topic:art", "topic:entertainment", "type:personal-blog"]}
+{"key": "bearbin.net", "tags": ["topic:gadgets", "topic:hardware", "type:personal-blog"]}
+{"key": "bearblog.stevedylan.dev", "tags": ["topic:media", "topic:web-development", "type:personal-blog"]}
+{"key": "beardedmenofrealestate.libsyn.com", "tags": ["region:usa", "topic:business", "type:podcast"]}
+{"key": "beardmancerbungalow.blot.im", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "beardownbias.substack.com", "tags": ["region:usa", "topic:sport", "type:podcast"]}
+{"key": "beardsbooksbourbon.libsyn.com", "tags": ["topic:books", "topic:lifestyle", "type:podcast"]}
+{"key": "beardsell.substack.com", "tags": ["topic:philosophy", "topic:politics", "type:personal-blog"]}
+{"key": "beardslap.podomatic.com", "tags": ["topic:music", "type:podcast"]}
+{"key": "beardtrimmings.substack.com", "tags": ["topic:design", "type:personal-blog"]}
+{"key": "beardystarstuff.net", "tags": ["topic:open-source", "topic:politics", "type:personal-blog"]}
+{"key": "beargrassprotogroveadf.bearblog.dev", "tags": ["topic:religion", "type:community"]}
+{"key": "beargrylls.substack.com", "tags": ["region:uk", "topic:lifestyle", "topic:sport", "type:newsletter"]}
+{"key": "bearing.substack.com", "tags": ["topic:ai", "topic:tech-industry", "type:personal-blog"]}
+{"key": "bearingarms.com", "tags": ["region:usa", "topic:politics", "type:publication"]}
+{"key": "bearingnews.org", "tags": ["region:usa", "topic:education", "topic:news", "type:publication"]}
+{"key": "bearlamp.com.au", "tags": ["region:australia", "topic:books", "topic:personal", "type:personal-blog"]}
+{"key": "bearlyadiary.bearblog.dev", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "bearlymanaging.substack.com", "tags": ["topic:finance", "type:personal-blog"]}
+{"key": "bearlypolitics.co.uk", "tags": ["region:uk", "topic:politics", "type:personal-blog"]}
+{"key": "bearmillsauthor.libsyn.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "bearnutscomic.com", "tags": ["topic:art", "topic:entertainment", "type:publication"]}
+{"key": "bearpsych.libsyn.com", "tags": ["topic:health", "type:podcast"]}
+{"key": "bearracuda.com", "tags": ["topic:lifestyle", "type:community"]}
+{"key": "bearsbulletins.substack.com", "tags": ["topic:entertainment", "topic:personal", "type:personal-blog"]}
+{"key": "bearskinrug.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "bearswillattack.bearblog.dev", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "bearz.substack.com", "tags": ["topic:finance", "topic:mathematics", "type:newsletter"]}
+{"key": "beast.blot.im", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "beastmastersclub.libsyn.com", "tags": ["topic:lifestyle", "type:podcast"]}
+{"key": "beastus666.substack.com", "tags": ["topic:lifestyle", "topic:religion", "type:personal-blog"]}
+{"key": "beastwhimsy.tumblr.com", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "beastx.ro", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "beasuperdad.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "beat.doebe.li", "tags": ["language:german", "region:europe", "topic:education", "topic:media", "type:institution"]}
+{"key": "beatabernina.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "beatajurasz.podigee.io", "tags": ["language:polish", "region:poland", "topic:lifestyle", "type:podcast"]}
+{"key": "beatati.substack.com", "tags": ["region:europe", "topic:health", "topic:lifestyle", "type:personal-blog"]}
+{"key": "beatdom.substack.com", "tags": ["topic:art", "topic:books", "type:publication"]}
+{"key": "beathagenlocher.com", "tags": ["topic:personal", "topic:programming", "type:personal-blog"]}
+{"key": "beatingbdd.libsyn.com", "tags": ["topic:health", "type:podcast"]}
+{"key": "beatlesexaminer.podbean.com", "tags": ["topic:music", "type:podcast"]}
+{"key": "beatlestalk.libsyn.com", "tags": ["topic:music", "type:podcast"]}
+{"key": "beatlockloopz.podomatic.com", "tags": ["topic:music", "type:podcast"]}
+{"key": "beatnikspy.substack.com", "tags": ["topic:books", "topic:entertainment", "type:personal-blog"]}
+{"key": "beatricefisi.substack.com", "tags": ["language:italian", "region:italy", "topic:health", "type:newsletter"]}
+{"key": "beatricengkessler.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "beatricevonpreussen.co.uk", "tags": ["topic:art", "topic:science", "type:personal-blog"]}
+{"key": "beatrixguitar.substack.com", "tags": ["topic:music", "type:newsletter"]}
+{"key": "beatrizgarcaricondo.substack.com", "tags": ["language:spanish", "topic:personal", "type:personal-blog"]}
+{"key": "beatrizlibertad.podbean.com", "tags": ["language:spanish", "topic:religion", "type:podcast"]}
+{"key": "beatrizlizana.substack.com", "tags": ["language:spanish", "topic:science", "type:newsletter"]}
+{"key": "beats-and-bones.podigee.io", "tags": ["language:german", "region:germany", "topic:science", "type:podcast"]}
+{"key": "beatsandbusiness.substack.com", "tags": ["topic:business", "topic:music", "type:newsletter"]}
+{"key": "https://beatsperminute.com/category/podcasts/feed/", "tags": ["topic:music", "type:podcast"]}
+{"key": "https://beatsperminute.com/category/podcasts/meet-our-makers/feed/", "tags": ["topic:music", "type:podcast"]}
+{"key": "https://beatsperminute.com/feed/", "tags": ["topic:music", "type:publication"]}
+{"key": "beatz.com.br", "tags": ["language:portuguese", "region:latin-america", "topic:business", "type:podcast"]}
+{"key": "beaubfm.org", "tags": ["language:french", "topic:music", "type:podcast"]}
+{"key": "beauce.erq.qc.ca", "tags": ["language:french", "region:canada", "topic:religion", "type:podcast"]}
+{"key": "beauetry.substack.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "beaugh.substack.com", "tags": ["topic:food", "topic:religion", "topic:sport", "type:personal-blog"]}
+{"key": "beaumarisbaptist.org.au", "tags": ["region:australia", "topic:religion", "type:podcast"]}
+{"key": "beaumontleadership.com", "tags": ["topic:business", "type:vendor-blog"]}
+{"key": "beauregardnews.com", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "beaurivage.io", "tags": ["topic:embedded", "topic:programming", "type:personal-blog"]}
+{"key": "beausociety.substack.com", "tags": ["topic:entertainment", "topic:lifestyle", "type:newsletter"]}
+{"key": "beaustringer.com", "tags": ["topic:politics", "topic:religion", "type:personal-blog"]}
+{"key": "beausworld.substack.com", "tags": ["topic:lifestyle", "type:personal-blog"]}
+{"key": "beautemagazine.gr", "tags": ["region:europe", "topic:lifestyle", "type:publication"]}
+{"key": "beautiful-commitment-podcast.podigee.io", "tags": ["language:german", "region:germany", "topic:lifestyle", "type:podcast"]}
+{"key": "beautifulaltadena.substack.com", "tags": ["region:usa", "topic:news", "type:newsletter"]}
+{"key": "beautifulbizarre.net", "tags": ["topic:art", "type:publication"]}
+{"key": "beautifulchristianlife.substack.com", "tags": ["topic:religion", "type:newsletter"]}
+{"key": "beautifulgraysponge.podbean.com", "tags": ["topic:philosophy", "type:podcast"]}
+{"key": "beautifulheresy.substack.com", "tags": ["topic:art", "topic:books", "type:personal-blog"]}
+{"key": "beautifulparticulars.substack.com", "tags": ["topic:ai", "topic:philosophy", "type:newsletter"]}
+{"key": "beautifulruby.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "beautifulshifts.podbean.com", "tags": ["topic:lifestyle", "type:podcast"]}
+{"key": "beautifulthingsgrowhere.substack.com", "tags": ["topic:health", "topic:personal", "type:personal-blog"]}
+{"key": "beautifulvoyager.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "beauty-of-imagination.blogspot.fr", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "beautyandthebeastfitness.libsyn.com", "tags": ["topic:business", "topic:health", "type:podcast"]}
+{"key": "beautyandthesurgeon.libsyn.com", "tags": ["topic:health", "type:podcast"]}
+{"key": "beautybiz.libsyn.com", "tags": ["topic:business", "topic:lifestyle", "type:podcast"]}
+{"key": "beautybusiness24.podigee.io", "tags": ["language:german", "region:germany", "topic:business", "type:podcast"]}
+{"key": "beautybusinessco.podbean.com", "tags": ["topic:business", "type:podcast"]}
+{"key": "beautybusinesspodcast.com", "tags": ["topic:business", "type:podcast"]}
+{"key": "beautyfirstfilms.substack.com", "tags": ["topic:entertainment", "topic:religion", "type:newsletter"]}
+{"key": "beautyfulaudio.com", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "beautygeekery.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "beautygoodnesstruth1.substack.com", "tags": ["topic:politics", "topic:religion", "type:personal-blog"]}
+{"key": "beautyisabitch.blubrry.net", "tags": ["topic:lifestyle", "type:podcast"]}
+{"key": "beautymatters.substack.com", "tags": ["topic:art", "topic:philosophy", "type:publication"]}
+{"key": "beautyneurosis.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "beautynewstokyo.jp", "tags": ["language:japanese", "region:japan", "topic:lifestyle", "type:publication"]}
+{"key": "beautyofagame.substack.com", "tags": ["topic:art", "topic:sport", "type:newsletter"]}
+{"key": "beautyofbelonging.substack.com", "tags": ["topic:personal", "topic:politics", "type:newsletter"]}
+{"key": "beautyofcolors66.libsyn.com", "tags": ["topic:health", "type:podcast"]}
+{"key": "beautyofmathematics.com", "tags": ["topic:education", "topic:mathematics", "type:podcast"]}
+{"key": "beautyschoolbobbi.podbean.com", "tags": ["topic:business", "topic:lifestyle", "type:podcast"]}
+{"key": "beautytherapist.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "beautyunderpressure.libsyn.com", "tags": ["topic:health", "topic:religion", "type:podcast"]}
+{"key": "beauvoyagemedia.substack.com", "tags": ["language:french", "topic:travel", "type:newsletter"]}
+{"key": "beauxecho.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "beaver.bearblog.dev", "tags": ["topic:ai", "topic:personal", "type:personal-blog"]}
+{"key": "beaverbaptist.podbean.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "beaverlodge.ca", "tags": ["region:canada", "topic:government", "type:institution"]}
+{"key": "beavertalesco.substack.com", "tags": ["topic:business", "type:podcast"]}
+{"key": "beaverton.cc", "tags": ["topic:religion", "type:podcast"]}
+{"key": "beavertonvalleytimes.com", "tags": ["region:usa", "topic:news", "topic:sport", "type:publication"]}
+{"key": "beb-schweppe.de", "tags": ["language:german", "region:germany", "topic:health", "type:podcast"]}
+{"key": "bebackbydinner.substack.com", "tags": ["topic:travel", "type:newsletter"]}
+{"key": "bebap.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "bebasket.be", "tags": ["region:europe", "topic:sport", "type:publication"]}
+{"key": "bebasket.fr", "tags": ["language:french", "region:france", "topic:sport", "type:publication"]}
+{"key": "bebbnotes.substack.com", "tags": ["topic:business", "topic:education", "type:newsletter"]}
+{"key": "https://bebeez.it/category/bebeez-podcast/feed/", "tags": ["language:italian", "region:italy", "topic:finance", "type:podcast"]}
+{"key": "https://bebeez.it/feed/", "tags": ["language:italian", "region:italy", "topic:business", "topic:finance", "type:publication"]}
+{"key": "bebelbooks.substack.com", "tags": ["language:portuguese", "region:latin-america", "topic:art", "topic:books", "type:vendor-blog"]}
+{"key": "bebewrites.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "bebhuvan.com", "tags": ["region:india", "topic:books", "topic:politics", "type:personal-blog"]}
+{"key": "becausefiction.libsyn.com", "tags": ["topic:books", "topic:religion", "type:podcast"]}
+{"key": "becauseiampodcast.libsyn.com", "tags": ["topic:entertainment", "topic:lifestyle", "type:podcast"]}
+{"key": "becauseofmarketing.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "becausetherapysexpensive.podomatic.com", "tags": ["topic:health", "type:podcast"]}
+{"key": "becca.ooo", "tags": ["topic:personal", "topic:programming", "type:personal-blog"]}
+{"key": "beccafreeman.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "beccaguerrero.com", "tags": ["topic:lifestyle", "topic:travel", "type:podcast"]}
+{"key": "beccameron.substack.com", "tags": ["topic:health", "topic:personal", "type:personal-blog"]}
+{"key": "beccawatson.substack.com", "tags": ["topic:books", "topic:entertainment", "type:personal-blog"]}
+{"key": "beccawilliams.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "bechkasper.podbean.com", "tags": ["region:europe", "topic:transport", "type:podcast"]}
+{"key": "https://beck-aktuell.de/taxonomy/term/5331/feed", "tags": ["language:german", "region:germany", "topic:politics", "type:podcast"]}
+{"key": "beckerdrive.podomatic.com", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "beckersbets.podigee.io", "tags": ["language:german", "region:germany", "topic:finance", "type:podcast"]}
+{"key": "beckham.nz", "tags": ["topic:ai", "topic:mathematics", "type:personal-blog"]}
+{"key": "beckje01.com", "tags": ["topic:programming", "topic:software-engineering", "type:personal-blog"]}
+{"key": "becksoham.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "beckyances.net", "tags": ["topic:books", "topic:travel", "type:personal-blog"]}
+{"key": "beckygracetherapy.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "beckyhelms.substack.com", "tags": ["topic:art", "topic:personal", "type:personal-blog"]}
+{"key": "beckyisj.substack.com", "tags": ["topic:art", "topic:personal", "type:personal-blog"]}
+{"key": "beckyocole.substack.com", "tags": ["topic:art", "topic:food", "type:personal-blog"]}
+{"key": "beckystrahle.substack.com", "tags": ["topic:art", "topic:religion", "type:newsletter"]}
+{"key": "becomeawritertoday.com", "tags": ["topic:books", "type:publication"]}
+{"key": "becomebetter-podcast.podigee.io", "tags": ["language:german", "region:germany", "topic:business", "type:podcast"]}
+{"key": "becomemorecompelling.libsyn.com", "tags": ["topic:personal", "type:podcast"]}
+{"key": "becomenomad.libsyn.com", "tags": ["topic:business", "topic:travel", "type:podcast"]}
+{"key": "becomesovran.com", "tags": ["topic:open-source", "topic:security", "type:personal-blog"]}
+{"key": "becoming-you.libsyn.com", "tags": ["topic:business", "type:podcast"]}
+{"key": "becoming.creatorpascal.com", "tags": ["topic:business", "topic:philosophy", "type:personal-blog"]}
+{"key": "becomingabetterme.callcast.co", "tags": ["topic:health", "topic:personal", "type:podcast"]}
+{"key": "becomingaleader.substack.com", "tags": ["topic:business", "topic:software-engineering", "type:newsletter"]}
+{"key": "becomingasuperhuman.libsyn.com", "tags": ["topic:health", "topic:personal", "type:podcast"]}
+{"key": "becomingberkshire.substack.com", "tags": ["topic:business", "topic:finance", "type:newsletter"]}
+{"key": "becomingbetter.org", "tags": ["topic:health", "topic:personal", "type:personal-blog"]}
+{"key": "becomingbrussels.substack.com", "tags": ["region:europe", "topic:lifestyle", "type:newsletter"]}
+{"key": "becomingcrew.substack.com", "tags": ["topic:books", "topic:entertainment", "type:podcast"]}
+{"key": "becomingelli.libsyn.com", "tags": ["topic:health", "topic:sport", "type:podcast"]}
+{"key": "becomingherletters.substack.com", "tags": ["topic:health", "topic:lifestyle", "type:newsletter"]}
+{"key": "becominghuman.libsyn.com", "tags": ["topic:philosophy", "topic:religion", "type:podcast"]}
+{"key": "becomingkiwi.substack.com", "tags": ["region:new-zealand", "topic:personal", "topic:travel", "type:personal-blog"]}
+{"key": "becomingloveproject.substack.com", "tags": ["topic:art", "topic:health", "type:newsletter"]}
+{"key": "becomingme.substack.com", "tags": ["topic:health", "topic:personal", "type:personal-blog"]}
+{"key": "becomingmomrealtalk.substack.com", "tags": ["topic:health", "topic:personal", "type:newsletter"]}
+{"key": "becomingnature.libsyn.com", "tags": ["topic:environment", "topic:science", "type:podcast"]}
+{"key": "becomingnoble.substack.com", "tags": ["topic:economics", "topic:personal", "type:newsletter"]}
+{"key": "becomingroninpodcast.libsyn.com", "tags": ["topic:health", "topic:sport", "type:podcast"]}
+{"key": "becomingthatgiirl.substack.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "becomingtheredeemed.substack.com", "tags": ["topic:religion", "type:newsletter"]}
+{"key": "becomingultra.libsyn.com", "tags": ["topic:health", "topic:sport", "type:podcast"]}
+{"key": "becomingunfuckwithable.podomatic.com", "tags": ["topic:politics", "type:podcast"]}
+{"key": "becomingwhoweare.podbean.com", "tags": ["topic:health", "topic:science", "type:podcast"]}
+{"key": "becooljmadisblogs.blogspot.com", "tags": ["topic:education", "topic:media", "type:personal-blog"]}
+{"key": "becoolsodapopnl.substack.com", "tags": ["language:dutch", "topic:entertainment", "type:personal-blog"]}
+{"key": "becounted.substack.com", "tags": ["topic:business", "topic:military", "type:personal-blog"]}
