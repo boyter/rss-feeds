@@ -1,8 +1,7 @@
 # Removed from feeds.json
 
-2 feeds. The previous file is in git history; restore any of these by re-adding the line.
+1 feeds. The previous file is in git history; restore any of these by re-adding the line.
 
-## spam (2)
+## dead-domain (1)
 
-- `https://benuyama.com/feed/podcast/quit-porn-with-ben-uyama/` — spam:casino-seo:in-feed-name
-- `https://biblialiturgia.com/feed/` — spam:casino-seo:5-item-hits
+- `https://blisty.cz/rss2.rb?all=1` — dead-domain
