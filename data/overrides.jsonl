@@ -86,7 +86,7 @@
 {"key": "bach.ai", "tags": ["topic:ai", "topic:philosophy", "type:personal-blog"]}
 {"key": "beepb00p.xyz", "tags": ["topic:software-engineering", "type:personal-blog"]}
 {"key": "begriffs.com", "tags": ["topic:systems", "topic:programming", "type:personal-blog"]}
-{"key": "benmccormick.org", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "benmccormick.org", "tags": ["topic:ai", "topic:programming", "topic:software-engineering", "type:personal-blog"]}
 {"key": "blog.adambell.ca", "tags": ["topic:software-engineering", "topic:security", "type:personal-blog", "region:canada"]}
 {"key": "blog.alexellis.io", "tags": ["topic:infrastructure", "topic:open-source", "topic:hardware", "type:personal-blog"]}
 {"key": "blog.axlight.com", "tags": ["topic:web-development", "type:personal-blog"]}
@@ -584,10 +584,10 @@
 {"key": "benefitfocus.com", "tags": ["topic:software-engineering", "type:vendor-blog"]}
 {"key": "benfrain.com", "tags": ["topic:web-development", "topic:design", "type:personal-blog"]}
 {"key": "benjamincongdon.me", "tags": ["topic:software-engineering", "type:personal-blog"]}
-{"key": "benjaminwil.info", "tags": ["topic:software-engineering", "topic:personal", "type:personal-blog"]}
+{"key": "benjaminwil.info", "tags": ["topic:personal", "topic:software-engineering", "type:personal-blog"]}
 {"key": "benkuhn.net", "tags": ["topic:software-engineering", "topic:personal", "type:personal-blog"]}
-{"key": "bentnib.org", "tags": ["topic:programming", "topic:mathematics", "type:personal-blog"]}
-{"key": "benyu.org", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "bentnib.org", "tags": ["topic:mathematics", "topic:programming", "type:personal-blog"]}
+{"key": "benyu.org", "tags": ["topic:books", "topic:personal", "type:personal-blog"]}
 {"key": "berline.rs", "tags": ["topic:programming:rust", "type:community"]}
 {"key": "berthub.eu", "tags": ["topic:networking", "topic:security", "type:personal-blog"]}
 {"key": "betterwebtype.com", "tags": ["topic:design", "topic:web-development", "type:personal-blog"]}
@@ -16954,3 +16954,324 @@
 {"key": "https://andaluciainformacion.es/rss/album/el-gallinero/", "tags": ["language:spanish", "region:spain", "topic:entertainment", "type:publication"]}
 {"key": "https://andaluciainformacion.es/rss/album/el-rocio/", "tags": ["language:spanish", "region:spain", "topic:religion", "type:publication"]}
 {"key": "https://andaluciainformacion.es/rss/album/espana/", "tags": ["language:spanish", "region:spain", "topic:entertainment", "type:publication"]}
+{"key": "benjaminaebuehi.substack.com", "tags": ["topic:food", "type:newsletter"]}
+{"key": "benjaminbenben.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "benjaminbennettalexander.substack.com", "tags": ["topic:data", "topic:programming", "type:newsletter"]}
+{"key": "benjamincain.substack.com", "tags": ["topic:philosophy", "topic:politics", "type:newsletter"]}
+{"key": "benjaminchait.net", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "benjamincrozat.com", "tags": ["topic:programming", "topic:web-development", "type:personal-blog"]}
+{"key": "benjamindlee.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "benjamindreyer.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "benjamindueholm.substack.com", "tags": ["topic:religion", "type:newsletter"]}
+{"key": "benjaminfinancial.com", "tags": ["topic:business", "topic:finance", "type:vendor-blog"]}
+{"key": "benjaminhause.substack.com", "tags": ["topic:philosophy", "type:newsletter"]}
+{"key": "benjaminhoff.substack.com", "tags": ["language:german", "region:germany", "topic:politics", "type:newsletter"]}
+{"key": "https://benjaminhollon.com/feed/", "tags": ["topic:food", "type:personal-blog"]}
+{"key": "https://benjaminhollon.com/musings/feed", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "benjaminkerstein.substack.com", "tags": ["topic:politics", "type:newsletter"]}
+{"key": "https://benjaminmcevoy.libsyn.com/rss", "tags": ["topic:books", "type:podcast"]}
+{"key": "https://benjaminmillam.com/rss.xml", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "benjaminrcremer.substack.com", "tags": ["topic:politics", "topic:religion", "type:newsletter"]}
+{"key": "benjaminrosshoffman.com", "tags": ["topic:philosophy", "type:personal-blog"]}
+{"key": "benjaminschneider.ch", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "benjaminschneider.substack.com", "tags": ["topic:infrastructure", "topic:politics", "type:newsletter"]}
+{"key": "benjaminsen.substack.com", "tags": ["topic:business", "type:personal-blog"]}
+{"key": "benjaminsmallwood.com", "tags": ["topic:personal", "topic:web-development", "type:personal-blog"]}
+{"key": "benjaminste.in", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "benjaminstef.substack.com", "tags": ["topic:business", "topic:finance", "type:newsletter"]}
+{"key": "benjaminstein.substack.com", "tags": ["topic:business", "topic:tech-industry", "type:newsletter"]}
+{"key": "benjamintodd.substack.com", "tags": ["topic:ai", "type:newsletter"]}
+{"key": "benjamintoll.com", "tags": ["topic:infrastructure", "topic:systems", "type:personal-blog"]}
+{"key": "benjamintravis.com", "tags": ["topic:business", "topic:tech-industry", "type:personal-blog"]}
+{"key": "benjamintseng.com", "tags": ["topic:business", "topic:health", "type:personal-blog"]}
+{"key": "benjaminwilliamson.substack.com", "tags": ["topic:art", "topic:travel", "type:newsletter"]}
+{"key": "benjamistan.tech", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "benjcal.space", "tags": ["topic:hardware", "topic:programming", "type:personal-blog"]}
+{"key": "benjdd.com", "tags": ["topic:data", "topic:programming", "type:personal-blog"]}
+{"key": "benjernigan.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "benjieai.substack.com", "tags": ["topic:ai", "topic:infrastructure", "type:newsletter"]}
+{"key": "benjifaun.substack.com", "tags": ["topic:media", "topic:news", "type:newsletter"]}
+{"key": "benjifriedman.com", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "benjiirby.substack.com", "tags": ["topic:politics", "type:newsletter"]}
+{"key": "benjoffe.com", "tags": ["topic:mathematics", "topic:programming", "type:personal-blog"]}
+{"key": "benjohnson.substack.com", "tags": ["topic:sport", "type:newsletter"]}
+{"key": "benjonesonpennstate.substack.com", "tags": ["topic:sport", "type:newsletter"]}
+{"key": "benkaiser.dev", "tags": ["region:australia", "topic:programming", "type:personal-blog"]}
+{"key": "benkettle.xyz", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "benkinsley.com", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "benknoble.github.io", "tags": ["topic:personal", "topic:programming", "type:personal-blog"]}
+{"key": "benkoshy.github.io", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "benlakoff.substack.com", "tags": ["topic:finance", "topic:tech-industry", "type:newsletter"]}
+{"key": "benlandautaylor.com", "tags": ["topic:politics", "type:personal-blog"]}
+{"key": "benlesh.com", "tags": ["topic:programming", "topic:software-engineering", "type:personal-blog"]}
+{"key": "benleskey.com", "tags": ["topic:gaming", "topic:programming", "type:personal-blog"]}
+{"key": "benletchford.com", "tags": ["topic:personal", "topic:science", "type:personal-blog"]}
+{"key": "benlevinstein.substack.com", "tags": ["topic:ai", "topic:philosophy", "type:newsletter"]}
+{"key": "benlevy.com", "tags": ["topic:transport", "type:personal-blog"]}
+{"key": "benlimmer.com", "tags": ["topic:programming", "topic:software-engineering", "type:personal-blog"]}
+{"key": "benlippett.substack.com", "tags": ["topic:food", "type:newsletter"]}
+{"key": "benlockwood.substack.com", "tags": ["topic:environment", "type:newsletter"]}
+{"key": "benlog.net", "tags": ["topic:journalism", "type:personal-blog"]}
+{"key": "benmarkham.substack.com", "tags": ["topic:entertainment", "type:newsletter"]}
+{"key": "benmilleare.com", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "benmilne.com", "tags": ["topic:finance", "topic:tech-industry", "type:personal-blog"]}
+{"key": "benmoskowitz.com", "tags": ["topic:ai", "topic:business", "type:personal-blog"]}
+{"key": "benn.substack.com", "tags": ["topic:data", "topic:tech-industry", "type:newsletter"]}
+{"key": "bennaddaffhafrey.substack.com", "tags": ["topic:history", "type:newsletter"]}
+{"key": "bennadel.com", "tags": ["topic:programming", "topic:web-development", "type:personal-blog"]}
+{"key": "bennathanson.substack.com", "tags": ["topic:health", "topic:medicine", "type:newsletter"]}
+{"key": "bennet.org", "tags": ["topic:open-source", "topic:security", "type:personal-blog"]}
+{"key": "bennett.dev", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "bennettcapozzi.substack.com", "tags": ["topic:politics", "type:newsletter"]}
+{"key": "https://bennettcreekchurch.com/podcast/", "tags": ["topic:religion", "type:podcast"]}
+{"key": "bennhuang.com", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "benni754.substack.com", "tags": ["language:german", "region:germany", "topic:ai", "topic:environment", "topic:sport", "type:newsletter"]}
+{"key": "benniemosher.com", "tags": ["topic:personal", "topic:software-engineering", "type:personal-blog"]}
+{"key": "bennolan.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "bennorris.com", "tags": ["topic:health", "topic:personal", "type:personal-blog"]}
+{"key": "bennorthmore.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "bennuttall.com", "tags": ["topic:hardware", "topic:programming", "type:personal-blog"]}
+{"key": "benny.bearblog.dev", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "bennygoodman.substack.com", "tags": ["topic:philosophy", "topic:politics", "type:newsletter"]}
+{"key": "bennymorris.substack.com", "tags": ["region:middle-east", "topic:history", "topic:politics", "type:newsletter"]}
+{"key": "bennypad.substack.com", "tags": ["region:uk", "topic:design", "topic:tech-industry", "type:newsletter"]}
+{"key": "bennypowers.dev", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "benoit.paris", "tags": ["topic:graphics", "topic:mathematics", "type:personal-blog"]}
+{"key": "benoitessiambre.com", "tags": ["topic:philosophy", "topic:science", "type:personal-blog"]}
+{"key": "benoittgt.github.io", "tags": ["topic:programming", "topic:web-development", "type:personal-blog"]}
+{"key": "benoittrystram.substack.com", "tags": ["language:french", "region:france", "topic:business", "type:newsletter"]}
+{"key": "benoitzante.substack.com", "tags": ["language:french", "region:france", "topic:business", "topic:personal", "type:newsletter"]}
+{"key": "benorenstein.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "benovermyer.com", "tags": ["topic:art", "topic:personal", "type:personal-blog"]}
+{"key": "benowens.substack.com", "tags": ["topic:health", "type:newsletter"]}
+{"key": "benparry.substack.com", "tags": ["topic:personal", "topic:travel", "type:newsletter"]}
+{"key": "benparzybok.substack.com", "tags": ["topic:books", "topic:programming", "type:newsletter"]}
+{"key": "benpaulhanna.com", "tags": ["topic:hardware", "topic:programming", "type:personal-blog"]}
+{"key": "benperove.com", "tags": ["topic:hardware", "topic:personal", "type:personal-blog"]}
+{"key": "https://benpike.net/portfolio?format=rss", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "benprisby.com", "tags": ["topic:infrastructure", "topic:networking", "type:personal-blog"]}
+{"key": "benr.build", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "benraz.dev", "tags": ["topic:politics", "topic:programming", "type:personal-blog"]}
+{"key": "benreinberg.substack.com", "tags": ["topic:finance", "type:newsletter"]}
+{"key": "benrennie.substack.com", "tags": ["topic:design", "topic:philosophy", "type:newsletter"]}
+{"key": "benricemccarthy.ghost.io", "tags": ["topic:design", "topic:programming", "type:personal-blog"]}
+{"key": "https://benrishi.koelab.blue/feed/podcast/", "tags": ["language:japanese", "region:japan", "topic:business", "type:podcast"]}
+{"key": "benrothenberg.com", "tags": ["topic:journalism", "topic:sport", "type:personal-blog"]}
+{"key": "benrudgers.posthaven.com", "tags": ["topic:design", "topic:personal", "type:personal-blog"]}
+{"key": "benrutter.github.io", "tags": ["topic:programming", "topic:software-engineering", "type:personal-blog"]}
+{"key": "benryves.com", "tags": ["topic:personal", "topic:programming", "type:personal-blog"]}
+{"key": "bensbites.com", "tags": ["topic:ai", "topic:tech-industry", "type:newsletter"]}
+{"key": "benscheirman.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "benscofield.com", "tags": ["topic:ai", "topic:personal", "type:personal-blog"]}
+{"key": "bensgotapen.com", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "bensguide.substack.com", "tags": ["topic:programming", "topic:software-engineering", "type:newsletter"]}
+{"key": "bensibox.substack.com", "tags": ["topic:art", "topic:finance", "type:vendor-blog"]}
+{"key": "bensilverman.co.uk", "tags": ["region:uk", "topic:personal", "topic:programming", "type:personal-blog"]}
+{"key": "https://bensimsrunitred.libsyn.com/rss", "tags": ["topic:music", "type:podcast"]}
+{"key": "benslavic.substack.com", "tags": ["topic:education", "type:newsletter"]}
+{"key": "bensmann.no", "tags": ["region:europe", "topic:environment", "topic:tech-industry", "type:personal-blog"]}
+{"key": "benspeggen.substack.com", "tags": ["topic:journalism", "topic:media", "type:newsletter"]}
+{"key": "benstager.substack.com", "tags": ["topic:personal", "topic:tech-industry", "type:newsletter"]}
+{"key": "benstoneonline.com", "tags": ["topic:history", "topic:programming", "type:personal-blog"]}
+{"key": "benswift.me", "tags": ["topic:ai", "topic:design", "type:personal-blog"]}
+{"key": "bentbuttrue.substack.com", "tags": ["topic:books", "topic:personal", "type:newsletter"]}
+{"key": "benterikscholz.podcaster.de", "tags": ["language:german", "region:germany", "topic:entertainment", "topic:politics", "type:podcast"]}
+{"key": "benthams.substack.com", "tags": ["topic:philosophy", "topic:politics", "type:newsletter"]}
+{"key": "benthicbeach.substack.com", "tags": ["topic:gaming", "type:newsletter"]}
+{"key": "bentilly.blogspot.com", "tags": ["topic:personal", "topic:tech-industry", "type:personal-blog"]}
+{"key": "bentleyj.substack.com", "tags": ["topic:personal", "topic:politics", "type:newsletter"]}
+{"key": "https://bentonbuckleybooks.com/artful-living?format=rss", "tags": ["topic:art", "topic:books", "type:vendor-blog"]}
+{"key": "bentrimbo.substack.com", "tags": ["region:usa", "topic:sport", "type:newsletter"]}
+{"key": "bentsukun.ch", "tags": ["topic:open-source", "topic:programming", "type:personal-blog"]}
+{"key": "https://benttree.org/mediafiles/sermons.xml", "tags": ["topic:religion", "type:podcast"]}
+{"key": "benuanews.com", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "https://benuyama.com/feed/podcast/quit-porn-with-ben-uyama/", "tags": ["topic:health", "type:podcast"]}
+{"key": "benv.ca", "tags": ["topic:business", "topic:programming", "type:personal-blog"]}
+{"key": "benviveur.blogspot.com", "tags": ["topic:food", "topic:personal", "type:personal-blog"]}
+{"key": "benwang.dev", "tags": ["topic:embedded", "topic:hardware", "type:personal-blog"]}
+{"key": "benward.me", "tags": ["topic:music", "topic:personal", "type:personal-blog"]}
+{"key": "benward.uk", "tags": ["topic:music", "topic:personal", "type:personal-blog"]}
+{"key": "benwen.com", "tags": ["topic:personal", "topic:programming", "type:personal-blog"]}
+{"key": "benwendt.ca", "tags": ["region:canada", "topic:programming", "topic:software-engineering", "type:personal-blog"]}
+{"key": "benwhite.com.au", "tags": ["region:australia", "topic:ai", "topic:tech-industry", "type:personal-blog"]}
+{"key": "benwilber.github.io", "tags": ["topic:programming", "topic:systems", "type:personal-blog"]}
+{"key": "benwiser.com", "tags": ["topic:programming", "topic:web-development", "type:personal-blog"]}
+{"key": "benwoestenburg.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "benword.com", "tags": ["topic:programming", "topic:web-development", "type:personal-blog"]}
+{"key": "beny23.github.io", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "benzingespraeche.podigee.io", "tags": ["language:german", "region:germany", "topic:business", "topic:transport", "type:podcast"]}
+{"key": "beolgo.com", "tags": ["language:korean", "region:south-korea", "topic:business", "topic:tech-industry", "type:publication"]}
+{"key": "beorg.substack.com", "tags": ["topic:lifestyle", "type:vendor-blog"]}
+{"key": "beourguestpodcast.podbean.com", "tags": ["topic:entertainment", "topic:travel", "type:podcast"]}
+{"key": "bepis.io", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "https://bepod.wisdomsq.com/rss", "tags": ["language:japanese", "region:japan", "topic:business", "topic:education", "type:podcast"]}
+{"key": "beproud.podigee.io", "tags": ["language:german", "region:germany", "topic:business", "type:podcast"]}
+{"key": "beptruong.edu.vn", "tags": ["region:asia", "topic:food", "type:institution"]}
+{"key": "bepxl.art", "tags": ["language:spanish", "topic:art", "topic:tech-industry", "type:personal-blog"]}
+{"key": "ber-it.podcaster.de", "tags": ["language:german", "region:germany", "topic:business", "topic:web-development", "type:podcast"]}
+{"key": "ber.gd", "tags": ["topic:networking", "topic:politics", "type:personal-blog"]}
+{"key": "beradadisini.com", "tags": ["topic:books", "topic:personal", "type:personal-blog"]}
+{"key": "berahome.substack.com", "tags": ["language:chinese", "topic:finance", "type:newsletter"]}
+{"key": "berane.me", "tags": ["region:europe", "topic:government", "type:institution"]}
+{"key": "beraneonline.me", "tags": ["region:europe", "topic:news", "type:publication"]}
+{"key": "beratbozkurt.net", "tags": ["topic:personal", "topic:web-development", "type:personal-blog"]}
+{"key": "https://berationable.com/rationable-blog?format=rss", "tags": ["topic:health", "topic:science", "type:podcast"]}
+{"key": "beratungsnetzwerk-hessen.de", "tags": ["language:german", "region:germany", "topic:education", "topic:politics", "type:podcast"]}
+{"key": "berchtesgaden-impossible.podigee.io", "tags": ["language:german", "region:germany", "topic:entertainment", "type:podcast"]}
+{"key": "berdmedia.ru", "tags": ["language:russian", "region:russia", "topic:news", "type:publication"]}
+{"key": "berdsk-online.ru", "tags": ["language:russian", "region:russia", "topic:news", "type:publication"]}
+{"key": "berdyansk-news.ru", "tags": ["language:russian", "region:ukraine", "topic:news", "type:publication"]}
+{"key": "https://bere.gau.ac.ir/ju.rss", "tags": ["region:middle-east", "topic:environment", "topic:science", "type:institution"]}
+{"key": "bereadysteady.substack.com", "tags": ["topic:business", "type:newsletter"]}
+{"key": "https://bereal.libsyn.com/rss", "tags": ["topic:business", "type:podcast"]}
+{"key": "berean-biblechurch.org", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://bereanbiblechurch.podomatic.com/rss2.xml", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://bereanhub.com/media/podcast/333/feed.rss", "tags": ["topic:religion", "type:podcast"]}
+{"key": "beredsamkeit.bearblog.dev", "tags": ["topic:books", "topic:personal", "type:personal-blog"]}
+{"key": "beregihirek.hu", "tags": ["region:europe", "topic:news", "type:publication"]}
+{"key": "https://bereit.ai/podcast.xml", "tags": ["language:german", "region:germany", "topic:ai", "topic:business", "type:podcast"]}
+{"key": "berelyse.org", "tags": ["topic:books", "type:personal-blog"]}
+{"key": "berens.co", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "berenstainbearcast.org", "tags": ["topic:books", "topic:entertainment", "type:podcast"]}
+{"key": "berezowsky.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "bergamailkhaber.com.tr", "tags": ["topic:news", "type:publication"]}
+{"key": "bergeistern.com", "tags": ["language:german", "topic:environment", "topic:travel", "type:podcast"]}
+{"key": "bergenbibliotek.no", "tags": ["language:norwegian", "region:europe", "topic:books", "topic:education", "type:institution"]}
+{"key": "bergensia.com", "tags": ["topic:environment", "topic:politics", "type:publication"]}
+{"key": "bergerpoints.substack.com", "tags": ["topic:business", "topic:finance", "type:newsletter"]}
+{"key": "bergetoons.blogspot.com", "tags": ["topic:art", "topic:politics", "type:personal-blog"]}
+{"key": "berggesundheit-podcast.podigee.io", "tags": ["language:german", "region:germany", "topic:health", "type:podcast"]}
+{"key": "bergie.iki.fi", "tags": ["region:europe", "topic:programming", "topic:web-development", "type:personal-blog"]}
+{"key": "bergknoff.com", "tags": ["topic:personal", "topic:programming", "type:personal-blog"]}
+{"key": "bergland.gv.at", "tags": ["language:german", "region:europe", "topic:government", "type:institution"]}
+{"key": "berglyd.net", "tags": ["topic:entertainment", "topic:personal", "type:personal-blog"]}
+{"key": "bergman-udl.blogspot.com", "tags": ["topic:education", "type:personal-blog"]}
+{"key": "bergnet.org", "tags": ["topic:open-source", "topic:software-engineering", "type:personal-blog"]}
+{"key": "bergpodcast.podigee.io", "tags": ["language:german", "topic:environment", "topic:travel", "type:podcast"]}
+{"key": "bergzeit-podcast.podigee.io", "tags": ["language:german", "region:germany", "topic:business", "topic:travel", "type:podcast"]}
+{"key": "beri.kvarkadabra.net", "tags": ["region:europe", "topic:science", "type:institution"]}
+{"key": "berita.pas.org.my", "tags": ["region:asia", "topic:politics", "type:publication"]}
+{"key": "berita.razzi.my", "tags": ["region:asia", "topic:news", "type:personal-blog"]}
+{"key": "berita.rtm.gov.my", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritabandung.id", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritabanten.com", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritabatam.com", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritabojonegoro.com", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritabuana.co", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritaind.com", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritaistana.co.id", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritaja.com", "tags": ["topic:ai", "topic:business", "type:vendor-blog"]}
+{"key": "beritajateng.id", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritajateng.tv", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritakalteng.com", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritakeadilan.com", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritakebumen.com", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritakitanih.com", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritakopak.cc", "tags": ["region:asia", "topic:entertainment", "type:publication"]}
+{"key": "beritakota.id", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritakotaonline.com", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritalennus.co.id", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritamilan.com", "tags": ["region:asia", "topic:sport", "type:publication"]}
+{"key": "beritamoneter.com", "tags": ["region:asia", "topic:economics", "topic:finance", "type:publication"]}
+{"key": "beritanasional.id", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritaopini.id", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritapalu.id", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritapemerhatikorupsi.id", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritaprioritas.com", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritasampit.com", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritasatunews.id", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritasidrap.com", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritasumatera.co.id", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritatangerang.id", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritatkp.com", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritatotabuan.com", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritatrends.co.id", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "beritkramer-moritzkueffner.podcaster.de", "tags": ["language:german", "region:germany", "topic:lifestyle", "type:podcast"]}
+{"key": "berittenesfax.podigee.io", "tags": ["language:german", "region:germany", "topic:entertainment", "type:podcast"]}
+{"key": "berjon.com", "tags": ["topic:media", "topic:web-development", "type:personal-blog"]}
+{"key": "berk.es", "tags": ["region:europe", "topic:programming", "topic:web-development", "type:personal-blog"]}
+{"key": "berkansasmaz.substack.com", "tags": ["topic:ai", "topic:software-engineering", "type:newsletter"]}
+{"key": "berkaycubuk.com", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "berke.bearblog.dev", "tags": ["topic:personal", "topic:programming", "type:personal-blog"]}
+{"key": "berkeleybeacon.com", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "berkeleyzencenter.org", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "berksweekly.com", "tags": ["region:usa", "topic:news", "type:publication"]}
+{"key": "berlin-mitte-talk.podigee.io", "tags": ["language:german", "region:germany", "topic:politics", "type:podcast"]}
+{"key": "berlin-podcast.de", "tags": ["language:german", "region:germany", "topic:entertainment", "type:podcast"]}
+{"key": "berlin-story-news.podigee.io", "tags": ["language:german", "region:germany", "topic:news", "topic:politics", "type:podcast"]}
+{"key": "https://berlin.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:politics", "type:podcast"]}
+{"key": "berlinbridge.substack.com", "tags": ["region:germany", "topic:politics", "type:newsletter"]}
+{"key": "berliner-abendblatt.de", "tags": ["language:german", "region:germany", "topic:news", "type:publication"]}
+{"key": "berliner-lokalnachrichten.de", "tags": ["language:german", "region:germany", "topic:entertainment", "topic:news", "type:publication"]}
+{"key": "berliner-und-pfannkuchen.podigee.io", "tags": ["language:german", "region:germany", "topic:politics", "type:podcast"]}
+{"key": "berliner-zinner.podigee.io", "tags": ["language:german", "region:germany", "topic:business", "topic:entertainment", "type:podcast"]}
+{"key": "berlinergazette.de", "tags": ["region:germany", "topic:journalism", "topic:politics", "type:publication"]}
+{"key": "berlinoeuropa.substack.com", "tags": ["language:italian", "region:europe", "topic:politics", "type:newsletter"]}
+{"key": "berlinomagazine.com", "tags": ["language:italian", "region:germany", "topic:news", "type:publication"]}
+{"key": "berlinunboxed.podigee.io", "tags": ["language:german", "region:germany", "topic:entertainment", "topic:travel", "type:podcast"]}
+{"key": "berlitz.podbean.com", "tags": ["language:spanish", "region:latin-america", "topic:education", "type:podcast"]}
+{"key": "berlynn-wohl.tumblr.com", "tags": ["topic:entertainment", "type:personal-blog"]}
+{"key": "bermpeak.substack.com", "tags": ["topic:sport", "topic:transport", "type:newsletter"]}
+{"key": "bern-einfach.podigee.io", "tags": ["language:german", "region:europe", "topic:politics", "type:podcast"]}
+{"key": "bernadetteekazmarski.substack.com", "tags": ["topic:art", "topic:personal", "type:newsletter"]}
+{"key": "bernardablola.substack.com", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "bernardgoldberg.com", "tags": ["region:usa", "topic:media", "topic:politics", "type:personal-blog"]}
+{"key": "bernardmarr.com", "tags": ["region:uk", "topic:ai", "topic:business", "type:personal-blog"]}
+{"key": "bernardoamc.com", "tags": ["topic:programming", "topic:security", "type:personal-blog"]}
+{"key": "bernardoarevalo.presidencia.gob.gt", "tags": ["language:spanish", "region:latin-america", "topic:politics", "type:institution"]}
+{"key": "bernardopilatti.substack.com", "tags": ["language:spanish", "region:latin-america", "topic:sport", "type:newsletter"]}
+{"key": "bernardouncommon.substack.com", "tags": ["language:spanish", "topic:business", "type:newsletter"]}
+{"key": "bernat.tech", "tags": ["topic:programming", "topic:software-engineering", "type:personal-blog"]}
+{"key": "bernau-live.de", "tags": ["language:german", "region:germany", "topic:news", "type:publication"]}
+{"key": "bernd.dev", "tags": ["region:germany", "topic:security", "topic:tech-industry", "type:personal-blog"]}
+{"key": "https://berndgeropp.libsyn.com/rss", "tags": ["language:german", "region:germany", "topic:business", "type:podcast"]}
+{"key": "https://berner-account.libsyn.com/rss", "tags": ["topic:sport", "type:podcast"]}
+{"key": "https://bernet.ch/blog/2025/04/15/unternehmens-podcasts-so-gelingt-die-umsetzung/feed/", "tags": ["language:german", "region:europe", "topic:business", "type:vendor-blog"]}
+{"key": "bernews.com", "tags": ["topic:news", "type:publication"]}
+{"key": "bernhardwenzel.com", "tags": ["region:germany", "topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "berniesanders.substack.com", "tags": ["region:usa", "topic:politics", "type:institution"]}
+{"key": "berniethewordsmith.bearblog.dev", "tags": ["topic:books", "topic:personal", "type:personal-blog"]}
+{"key": "bernking.xyz", "tags": ["topic:programming", "topic:security", "type:personal-blog"]}
+{"key": "bernmobil.podcaster.ch", "tags": ["language:german", "region:europe", "topic:business", "topic:transport", "type:podcast"]}
+{"key": "bernste.in", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "beroepscodeprofessionelecoaching.nl", "tags": ["language:dutch", "region:europe", "topic:business", "type:institution"]}
+{"key": "berovo.gov.mk", "tags": ["region:europe", "topic:government", "type:institution"]}
+{"key": "berpod-berlin.podigee.io", "tags": ["language:german", "region:germany", "topic:environment", "topic:politics", "type:podcast"]}
+{"key": "berreby.ai", "tags": ["topic:ai", "topic:security", "type:personal-blog"]}
+{"key": "berry.sh", "tags": ["topic:programming", "topic:web-development", "type:personal-blog"]}
+{"key": "berrymme.substack.com", "tags": ["topic:personal", "topic:travel", "type:newsletter"]}
+{"key": "bert.org", "tags": ["topic:history", "topic:tech-industry", "type:personal-blog"]}
+{"key": "bert.substack.com", "tags": ["topic:books", "type:newsletter"]}
+{"key": "bertails.org", "tags": ["topic:programming", "topic:software-engineering", "type:personal-blog"]}
+{"key": "https://bertcast.libsyn.com/rss", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "bertchintez.substack.com", "tags": ["topic:entertainment", "topic:personal", "type:newsletter"]}
+{"key": "bertinelli.me", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "bertini.substack.com", "tags": ["language:portuguese", "topic:books", "topic:personal", "type:newsletter"]}
+{"key": "bertptrs.nl", "tags": ["region:europe", "topic:programming", "type:personal-blog"]}
+{"key": "bertrandmeyer.com", "tags": ["topic:programming", "topic:software-engineering", "type:personal-blog"]}
+{"key": "bertwagner.com", "tags": ["topic:personal", "topic:programming", "type:personal-blog"]}
+{"key": "bertwander.substack.com", "tags": ["topic:politics", "type:newsletter"]}
+{"key": "berufsjugendlich.podigee.io", "tags": ["language:german", "region:germany", "topic:education", "topic:politics", "type:podcast"]}
+{"key": "berlinreveler.substack.com", "tags": ["topic:transport", "type:newsletter"]}
+{"key": "berufspodcast.libsyn.com", "tags": ["language:german", "region:germany", "topic:business", "type:podcast"]}
+{"key": "berufsweltenbummler.podigee.io", "tags": ["language:german", "region:germany", "topic:business", "topic:education", "type:podcast"]}
+{"key": "berufungspodcast.podigee.io", "tags": ["language:german", "region:germany", "topic:lifestyle", "type:podcast"]}
+{"key": "berwaz.com.kw", "tags": ["language:arabic", "region:middle-east", "topic:news", "type:publication"]}
+{"key": "berzniz.com", "tags": ["topic:programming", "topic:software-engineering", "type:personal-blog"]}
+{"key": "bes-dev.com", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "besacenter.org", "tags": ["region:middle-east", "topic:military", "topic:politics", "type:institution"]}
+{"key": "beschichterpodcast.podigee.io", "tags": ["language:german", "region:germany", "topic:business", "type:podcast"]}
+{"key": "beseries.podbean.com", "tags": ["topic:business", "topic:religion", "type:podcast"]}
+{"key": "besesi.substack.com", "tags": ["topic:art", "topic:design", "type:vendor-blog"]}
+{"key": "beshankovichi.by", "tags": ["region:europe", "topic:news", "type:publication"]}
+{"key": "https://besharamagazine.org/podcasts/beshara_mag_feed.xml", "tags": ["topic:philosophy", "topic:religion", "type:podcast"]}
+{"key": "https://beslutspodden.libsyn.com/rss", "tags": ["region:europe", "topic:business", "type:podcast"]}
+{"key": "besniekspres.com", "tags": ["topic:news", "type:publication"]}
+{"key": "bespinbulletin.com", "tags": ["topic:entertainment", "topic:gaming", "type:publication"]}
+{"key": "bespoke-business.com", "tags": ["topic:business", "type:vendor-blog"]}
+{"key": "bespokeedge.com", "tags": ["topic:design", "topic:lifestyle", "type:vendor-blog"]}
+{"key": "bespokehumancontent.substack.com", "tags": ["topic:military", "topic:politics", "type:newsletter"]}
+{"key": "bespokeinvest.substack.com", "tags": ["topic:economics", "topic:finance", "type:newsletter"]}
+{"key": "bespoyasov.me", "tags": ["topic:software-engineering", "topic:web-development", "type:personal-blog"]}
+{"key": "https://bessacarr.church/wp-content/uploads/podcast.xml", "tags": ["region:uk", "topic:religion", "type:podcast"]}
+{"key": "bessarabia.ua", "tags": ["language:russian", "region:ukraine", "topic:news", "type:publication"]}
