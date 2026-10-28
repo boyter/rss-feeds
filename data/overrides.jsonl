@@ -12,7 +12,7 @@
 {"key": "bellingcat.com", "tags": ["topic:journalism", "topic:security", "type:publication"], "pathTags": {"/category/africa": ["region:africa"], "/category/mena": ["region:middle-east"], "/category/uk-and-europe": ["region:uk", "region:europe"], "/category/rest-of-world": ["region:world"], "/category/news": ["topic:news"]}}
 {"key": "benfrederickson.com", "tags": ["topic:programming", "topic:programming:python", "type:personal-blog"]}
 {"key": "bitsofco.de", "tags": ["topic:web-development", "type:personal-blog"]}
-{"key": "blog.cloudflare.com", "tags": ["topic:security", "topic:infrastructure", "topic:web-development", "type:vendor-blog"]}
+{"key": "blog.cloudflare.com", "tags": ["topic:infrastructure", "topic:networking", "topic:security", "topic:web-development", "type:vendor-blog"]}
 {"key": "blog.filippo.io", "tags": ["topic:security", "topic:programming", "topic:programming:go", "type:personal-blog"]}
 {"key": "blog.fogus.me", "tags": ["topic:programming", "topic:software-engineering", "type:personal-blog"]}
 {"key": "blog.getbootstrap.com", "tags": ["topic:web-development", "type:vendor-blog"]}
@@ -751,15 +751,15 @@
 {"key": "blog.babbel.com", "tags": ["topic:education", "type:vendor-blog"]}
 {"key": "blog.balthazar-rouberol.com", "tags": ["topic:infrastructure", "topic:software-engineering", "type:personal-blog"]}
 {"key": "blog.benmyers.dev", "tags": ["topic:web-development", "type:personal-blog"]}
-{"key": "blog.blackhc.net", "tags": ["topic:software-engineering", "type:personal-blog"]}
-{"key": "blog.blundellapps.co.uk", "tags": ["region:uk", "topic:software-engineering", "type:personal-blog"]}
-{"key": "blog.bossylobster.com", "tags": ["topic:mathematics", "topic:software-engineering", "type:personal-blog"]}
-{"key": "blog.bushidotoken.net", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.blackhc.net", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.blundellapps.co.uk", "tags": ["region:uk", "topic:programming", "topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.bossylobster.com", "tags": ["topic:mathematics", "topic:programming", "topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.bushidotoken.net", "tags": ["region:uk", "topic:security", "type:personal-blog"]}
 {"key": "blog.carlmjohnson.net", "tags": ["topic:programming:go", "topic:software-engineering", "type:personal-blog"]}
-{"key": "blog.christianposta.com", "tags": ["topic:ai", "topic:infrastructure", "type:personal-blog"]}
+{"key": "blog.christianposta.com", "tags": ["topic:ai", "topic:infrastructure", "topic:software-engineering", "type:personal-blog"]}
 {"key": "blog.chromium.org", "tags": ["topic:open-source", "topic:web-development", "type:vendor-blog"]}
 {"key": "blog.cleancoder.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
-{"key": "blog.cleverelephant.ca", "tags": ["region:canada", "topic:data", "topic:infrastructure", "type:personal-blog"]}
+{"key": "blog.cleverelephant.ca", "tags": ["region:canada", "topic:data", "topic:infrastructure", "topic:software-engineering", "type:personal-blog"]}
 {"key": "blog.cr.yp.to", "tags": ["topic:mathematics", "topic:security", "type:personal-blog"]}
 {"key": "blog.danlew.net", "tags": ["topic:software-engineering", "type:personal-blog"]}
 {"key": "blog.developer.bazaarvoice.com", "tags": ["topic:infrastructure", "topic:software-engineering", "type:vendor-blog"]}
@@ -1827,7 +1827,7 @@
 {"key": "optshiftk.com", "tags": ["topic:ai", "type:personal-blog"]}
 {"key": "luigifreitas.me", "tags": ["topic:web-development", "type:personal-blog"]}
 {"key": "blog.almaer.com", "tags": ["topic:design", "topic:web-development", "type:personal-blog"]}
-{"key": "blog.carlosgaldino.com", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "blog.carlosgaldino.com", "tags": ["topic:programming", "topic:systems", "topic:web-development", "type:personal-blog"]}
 {"key": "blog.bitsrc.io", "tags": ["topic:web-development", "type:vendor-blog"]}
 {"key": "pqina.nl", "tags": ["topic:web-development", "type:vendor-blog"]}
 {"key": "blog.fullstacktraining.com", "tags": ["topic:education", "topic:web-development", "type:vendor-blog"]}
@@ -19453,3 +19453,327 @@
 {"key": "https://blog.angeloff.name/atom.xml", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
 {"key": "https://blog.angelside.net/rss.xml", "tags": ["topic:politics", "topic:software-engineering", "type:personal-blog"]}
 {"key": "https://blog.anilshanbhag.com/index.xml", "tags": ["topic:business", "topic:politics", "type:personal-blog"]}
+{"key": "blog.anirudha.dev", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.anishde.dev", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.anj.ai", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "blog.ankursundara.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.annapurna.cc", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.annkempster.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://blog.annmariemcmanus.com/itunes.xml", "tags": ["region:usa", "topic:business", "type:podcast"]}
+{"key": "blog.anotherhomepage.org", "tags": ["language:french", "topic:programming", "type:personal-blog"]}
+{"key": "blog.anp.lol", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.antfeedr.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.anthonybald.win", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.antosubash.com", "tags": ["topic:ai", "topic:web-development", "type:personal-blog"]}
+{"key": "blog.antoyo.xyz", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.antsu.net", "tags": ["topic:systems", "type:personal-blog"]}
+{"key": "blog.anubhab.me", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "blog.aos.sh", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.aotoki.me", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.apaonline.org", "tags": ["topic:philosophy", "type:institution"]}
+{"key": "blog.apotenza.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.applied-algorithms.tech", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.approximated-intelligence.de", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "blog.aravindvs.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.arbinada.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.arcbjorn.com", "tags": ["topic:systems", "type:personal-blog"]}
+{"key": "blog.archiv.ekir.de", "tags": ["language:german", "region:germany", "topic:history", "topic:religion", "type:institution"]}
+{"key": "https://blog.aridgwayweb.com/feeds/ai.atom.xml", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "blog.arimamary.net", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.arjunv.net", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.arkey.fr", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.arkholt.com", "tags": ["topic:art", "topic:history", "type:personal-blog"]}
+{"key": "blog.arkstack.dev", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.armeet.ca", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.arnav.me", "tags": ["region:india", "topic:personal", "type:personal-blog"]}
+{"key": "blog.arnedebo.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "https://blog.aroundtownct.com/itunes.xml", "tags": ["region:usa", "topic:business", "type:podcast"]}
+{"key": "blog.arribasail.com", "tags": ["topic:travel", "type:personal-blog"]}
+{"key": "blog.arrowtype.com", "tags": ["topic:art", "topic:design", "type:vendor-blog"]}
+{"key": "blog.artaj.online", "tags": ["topic:entertainment", "type:personal-blog"]}
+{"key": "blog.arusekk.pl", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.arvidandersson.se", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "blog.asciinema.org", "tags": ["topic:open-source", "type:institution"]}
+{"key": "blog.asciitweezers.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.ashley.pr", "tags": ["language:spanish", "topic:lifestyle", "type:personal-blog"]}
+{"key": "blog.asie.pl", "tags": ["topic:hardware", "topic:programming", "type:personal-blog"]}
+{"key": "blog.asleson.org", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "blog.asmusictheory.com", "tags": ["topic:music", "type:personal-blog"]}
+{"key": "blog.aspb.org", "tags": ["region:usa", "topic:science", "type:institution"]}
+{"key": "blog.asrpo.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.astithas.com", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "blog.atbk.dev", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.atimin.dev", "tags": ["topic:embedded", "topic:systems", "type:personal-blog"]}
+{"key": "blog.aud1t.xyz", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "blog.aurahack.ca", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.auryn.dev", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.austinsteady.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.autarkaw.com", "tags": ["topic:education", "topic:mathematics", "type:personal-blog"]}
+{"key": "blog.automaton2000.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.autoreseditores.com", "tags": ["language:spanish", "topic:books", "type:vendor-blog"]}
+{"key": "blog.avoidpointer.com", "tags": ["topic:gaming", "topic:programming", "type:personal-blog"]}
+{"key": "blog.awais.io", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.award-winning.me", "tags": ["topic:hardware", "topic:open-source", "type:personal-blog"]}
+{"key": "blog.awdrey.net", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.aweissman.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.awill.me", "tags": ["topic:hardware", "type:personal-blog"]}
+{"key": "blog.awoo.systems", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.axiom5.in", "tags": ["region:india", "topic:business", "type:vendor-blog"]}
+{"key": "blog.axymria.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.aymenhamza.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.aziz.tn", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.azuki.vip", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.azureinfra.com", "tags": ["topic:infrastructure", "type:personal-blog"]}
+{"key": "blog.b-son.net", "tags": ["language:japanese", "region:japan", "topic:security", "type:personal-blog"]}
+{"key": "blog.bagel.com", "tags": ["topic:ai", "type:institution"]}
+{"key": "blog.baldassari.me", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.bambulab.com", "tags": ["topic:hardware", "type:vendor-blog"]}
+{"key": "https://blog.bananathumbnail.com/feed/podcast/", "tags": ["topic:ai", "topic:art", "type:podcast"]}
+{"key": "blog.baro.dev", "tags": ["topic:open-source", "topic:programming", "type:personal-blog"]}
+{"key": "blog.barthe.ph", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.baselinemakes.com", "tags": ["topic:design", "topic:hardware", "type:personal-blog"]}
+{"key": "blog.basilgohar.com", "tags": ["topic:personal", "topic:religion", "type:personal-blog"]}
+{"key": "blog.basilisklabs.com", "tags": ["topic:software-engineering", "type:vendor-blog"]}
+{"key": "blog.bassemdy.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.bayindirh.io", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.bbs-software.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.bdim.moe", "tags": ["topic:ai", "topic:mathematics", "type:personal-blog"]}
+{"key": "blog.bdw.li", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.beabyrne.com", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "blog.beanis.eu", "tags": ["topic:gaming", "topic:music", "type:personal-blog"]}
+{"key": "blog.bearcats.nl", "tags": ["topic:programming", "topic:systems", "type:personal-blog"]}
+{"key": "https://blog.becpas.com/podcasts/197384204428/rss.xml", "tags": ["region:usa", "topic:business", "topic:finance", "type:podcast"]}
+{"key": "https://blog.becpas.com/podcasts/200093908153/rss.xml", "tags": ["region:usa", "topic:business", "topic:finance", "type:podcast"]}
+{"key": "https://blog.becpas.com/podcasts/200096112689/rss.xml", "tags": ["region:usa", "topic:business", "type:podcast"]}
+{"key": "blog.beerriot.com", "tags": ["topic:personal", "topic:programming", "type:personal-blog"]}
+{"key": "blog.beforemario.com", "tags": ["topic:gaming", "topic:history", "type:personal-blog"]}
+{"key": "blog.behnel.de", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.bejarano.io", "tags": ["topic:infrastructure", "type:personal-blog"]}
+{"key": "blog.belemnitedivers.co.uk", "tags": ["region:uk", "topic:sport", "type:institution"]}
+{"key": "https://blog.belizerealestateservices.com/itunes.xml", "tags": ["region:latin-america", "topic:business", "type:podcast"]}
+{"key": "blog.bembel.net", "tags": ["language:german", "region:germany", "topic:open-source", "type:personal-blog"]}
+{"key": "blog.bemyak.net", "tags": ["topic:gaming", "topic:programming", "type:personal-blog"]}
+{"key": "blog.benediktsvogler.com", "tags": ["topic:ai", "topic:hardware", "type:personal-blog"]}
+{"key": "blog.benjamin-encz.de", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.benjamincano.com", "tags": ["language:spanish", "topic:personal", "type:personal-blog"]}
+{"key": "blog.benjaminreinhardt.com", "tags": ["topic:books", "topic:history", "type:personal-blog"]}
+{"key": "blog.benjojo.co.uk", "tags": ["region:uk", "topic:networking", "topic:programming", "type:personal-blog"]}
+{"key": "blog.benjscho.dev", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.bennycornelissen.nl", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.benoitj.ca", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.benoitvallon.com", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "blog.bensigelman.org", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.bensontech.dev", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.bentkowski.info", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.benton.io", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.benwiener.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.benwinding.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.benyamin.xyz", "tags": ["topic:hardware", "type:personal-blog"]}
+{"key": "blog.beraliv.dev", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "blog.besthotels.bg", "tags": ["topic:travel", "type:vendor-blog"]}
+{"key": "blog.bestpracticeinstitute.org", "tags": ["topic:business", "type:institution"]}
+{"key": "blog.bethcodes.com", "tags": ["topic:politics", "topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.bgcarlisle.com", "tags": ["region:uk", "topic:ai", "topic:politics", "type:personal-blog"]}
+{"key": "blog.bhanuteja.dev", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "blog.bhasin.dev", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.bigsmoke.us", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "blog.billyedmoore.com", "tags": ["region:uk", "topic:personal", "type:personal-blog"]}
+{"key": "https://blog.binaergewitter.de/podcast_feed/all/mp3/rss.xml", "tags": ["language:german", "region:germany", "topic:open-source", "topic:programming", "type:podcast"]}
+{"key": "https://blog.bioticsresearch.com/podcasts/183427316602/rss.xml", "tags": ["topic:health", "topic:medicine", "type:podcast"]}
+{"key": "blog.birbpara.de", "tags": ["topic:programming", "topic:security", "type:personal-blog"]}
+{"key": "blog.birdhouse.org", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.bitfinex.com", "tags": ["topic:finance", "type:vendor-blog"]}
+{"key": "blog.bitflinger.tv", "tags": ["topic:programming", "type:vendor-blog"]}
+{"key": "blog.bitgate.cz", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.bithole.dev", "tags": ["topic:art", "topic:science", "type:personal-blog"]}
+{"key": "blog.bitjson.com", "tags": ["topic:finance", "topic:security", "type:personal-blog"]}
+{"key": "https://blog.bitrot.de/hereinasia/feed/", "tags": ["topic:travel", "type:personal-blog"]}
+{"key": "blog.bityard.net", "tags": ["topic:hardware", "topic:personal", "type:personal-blog"]}
+{"key": "blog.bixilon.de", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.bkryza.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.bl00cyb.org", "tags": ["topic:politics", "type:personal-blog"]}
+{"key": "https://blog.blessedlifegroup.com/itunes.xml", "tags": ["region:usa", "topic:business", "type:podcast"]}
+{"key": "blog.blockingqueue.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.blockstream.com", "tags": ["topic:finance", "topic:infrastructure", "type:vendor-blog"]}
+{"key": "blog.bloomca.me", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.bluebyday.com", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "blog.bluewaysw.de", "tags": ["topic:software-engineering", "type:vendor-blog"]}
+{"key": "blog.bmannconsulting.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.bmh.io", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "https://blog.bofh.it/?format=atom", "tags": ["topic:networking", "topic:open-source", "type:personal-blog"]}
+{"key": "blog.bolajiayodeji.com", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "blog.bolshakov.dev", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.bonnieeisenman.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "https://blog.booksprintedizioni.it/?format=feed&type=rss", "tags": ["language:italian", "region:italy", "topic:books", "type:vendor-blog"]}
+{"key": "blog.booleanbiotech.com", "tags": ["topic:ai", "topic:science", "type:institution"]}
+{"key": "blog.boon.gl", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "blog.boreddev.nl", "tags": ["topic:programming", "topic:systems", "type:personal-blog"]}
+{"key": "blog.borodutch.com", "tags": ["topic:business", "topic:programming", "type:personal-blog"]}
+{"key": "blog.borrego.dev", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "blog.boucle.sh", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "blog.bovid.space", "tags": ["topic:personal", "topic:philosophy", "type:personal-blog"]}
+{"key": "blog.boykisser.nl", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.bozho.net", "tags": ["region:europe", "topic:politics", "topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.bozso.dev", "tags": ["topic:ai", "topic:books", "type:personal-blog"]}
+{"key": "blog.br11k.dev", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.braegger.pw", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.brakmic.com", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "blog.bramp.net", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "blog.breathingworld.com", "tags": ["topic:gaming", "type:vendor-blog"]}
+{"key": "blog.brfares.com", "tags": ["region:uk", "topic:transport", "type:personal-blog"]}
+{"key": "blog.brian-fitzgerald.net", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.brian-underwood.codes", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.briankitano.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.brianseitel.com", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.bricked.tech", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.brillantit.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.brixit.nl", "tags": ["topic:hardware", "topic:programming", "type:personal-blog"]}
+{"key": "blog.brocas.org", "tags": ["language:french", "region:france", "topic:open-source", "topic:security", "type:institution"]}
+{"key": "blog.broulik.de", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "https://blog.bru.ac.th/feed/", "tags": ["topic:education", "topic:mathematics", "type:institution"]}
+{"key": "blog.bruchez.name", "tags": ["topic:hardware", "type:personal-blog"]}
+{"key": "blog.brujordet.no", "tags": ["region:europe", "topic:ai", "type:personal-blog"]}
+{"key": "blog.brunk.io", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "blog.bryanl.dev", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.bshah.in", "tags": ["region:india", "topic:open-source", "type:personal-blog"]}
+{"key": "blog.bsprague.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.bssg.dragas.net", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "blog.buenzli.dev", "tags": ["topic:open-source", "topic:programming", "type:personal-blog"]}
+{"key": "blog.bugsiki.dev", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.bulmash.com", "tags": ["topic:books", "type:personal-blog"]}
+{"key": "blog.burakcankus.com", "tags": ["topic:networking", "topic:security", "type:personal-blog"]}
+{"key": "blog.burhoff.de", "tags": ["language:german", "region:germany", "topic:politics", "type:personal-blog"]}
+{"key": "blog.burkert.me", "tags": ["topic:ai", "topic:books", "type:personal-blog"]}
+{"key": "blog.burntsushi.net", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.burrard-lucas.com", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "blog.buschnick.net", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.bxaw.name", "tags": ["language:chinese", "topic:personal", "type:personal-blog"]}
+{"key": "blog.bytebytego.com", "tags": ["topic:software-engineering", "type:newsletter"]}
+{"key": "blog.bytequalia.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.bytewerk.io", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.c0nrad.io", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "blog.c21-mac.com", "tags": ["topic:networking", "topic:systems", "type:personal-blog"]}
+{"key": "blog.cahillanelabs.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.cakers.io", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.calebhugo.com", "tags": ["topic:music", "type:personal-blog"]}
+{"key": "blog.calebjay.com", "tags": ["topic:ai", "topic:tech-industry", "type:personal-blog"]}
+{"key": "blog.calenhad.com", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "blog.can.ac", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "blog.cani.ne.jp", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.canoozie.net", "tags": ["topic:systems", "type:personal-blog"]}
+{"key": "blog.canyoubelieve.me", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.carl.so", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.carlid.dev", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.carlosnunez.me", "tags": ["topic:open-source", "topic:programming", "type:personal-blog"]}
+{"key": "blog.carter2099.com", "tags": ["topic:entertainment", "topic:gaming", "type:personal-blog"]}
+{"key": "blog.cartoonconnie.com", "tags": ["topic:art", "type:personal-blog"]}
+{"key": "https://blog.castac.org/feed/podcast", "tags": ["topic:science", "type:podcast"]}
+{"key": "blog.caustik.com", "tags": ["topic:music", "type:personal-blog"]}
+{"key": "blog.cavelab.dev", "tags": ["topic:hardware", "topic:networking", "type:personal-blog"]}
+{"key": "blog.cbnanashi.net", "tags": ["language:japanese", "region:japan", "topic:transport", "type:personal-blog"]}
+{"key": "https://blog.cbstiles.com/itunes.xml", "tags": ["region:usa", "topic:business", "type:podcast"]}
+{"key": "blog.cdemi.io", "tags": ["topic:infrastructure", "topic:networking", "type:personal-blog"]}
+{"key": "blog.cdleary.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.ce9e.org", "tags": ["topic:mathematics", "topic:politics", "type:personal-blog"]}
+{"key": "https://blog.cenciaa.com/feed/podcast/", "tags": ["language:french", "region:france", "topic:gadgets", "topic:health", "type:podcast"]}
+{"key": "blog.cedriccharly.com", "tags": ["topic:infrastructure", "topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.ceejbot.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.cellutils.com", "tags": ["topic:embedded", "topic:networking", "type:personal-blog"]}
+{"key": "blog.cerowrt.org", "tags": ["topic:networking", "topic:open-source", "type:personal-blog"]}
+{"key": "blog.cessen.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.cetinich.net", "tags": ["topic:infrastructure", "topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.cf8.gg", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.ch3nyang.top", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.chand1012.dev", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.changs.co.uk", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.chaospixel.com", "tags": ["topic:art", "topic:open-source", "topic:science", "type:personal-blog"]}
+{"key": "https://blog.charlesleerealestate.com/itunes.xml", "tags": ["region:usa", "topic:business", "type:podcast"]}
+{"key": "blog.charliemonroe.net", "tags": ["topic:software-engineering", "type:vendor-blog"]}
+{"key": "blog.charmes.net", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.chasclifton.com", "tags": ["topic:religion", "type:personal-blog"]}
+{"key": "blog.chaselambda.com", "tags": ["topic:environment", "topic:travel", "type:personal-blog"]}
+{"key": "blog.chembark.com", "tags": ["topic:science", "type:publication"]}
+{"key": "blog.chewxy.com", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.chickenwing-gingerbreadman.xyz", "tags": ["topic:sport", "type:personal-blog"]}
+{"key": "blog.chillaid.art", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.chipx86.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.chiragmadaan.com", "tags": ["topic:philosophy", "topic:programming", "type:personal-blog"]}
+{"key": "blog.chlc.cc", "tags": ["topic:systems", "type:personal-blog"]}
+{"key": "blog.chmouel.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.chordian.net", "tags": ["topic:gaming", "type:personal-blog"]}
+{"key": "blog.chrislewis.au", "tags": ["topic:gaming", "topic:programming", "type:personal-blog"]}
+{"key": "blog.chrisrowbury.com", "tags": ["topic:music", "type:personal-blog"]}
+{"key": "blog.christianperone.com", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "blog.christophersmart.com", "tags": ["topic:infrastructure", "topic:open-source", "type:personal-blog"]}
+{"key": "blog.christopherwink.com", "tags": ["region:usa", "topic:journalism", "type:personal-blog"]}
+{"key": "blog.christophetd.fr", "tags": ["topic:infrastructure", "topic:security", "type:personal-blog"]}
+{"key": "blog.chriszacharias.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.chudioranu.com", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "blog.cihar.com", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "https://blog.cisive.com/podcasts/207941365581/rss.xml", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://blog.citiesrealestate.com/itunes.xml", "tags": ["region:usa", "topic:business", "type:podcast"]}
+{"key": "blog.clear-byte.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.clement.delafargue.name", "tags": ["language:french", "topic:programming", "type:personal-blog"]}
+{"key": "blog.clew.se", "tags": ["topic:open-source", "topic:programming", "type:personal-blog"]}
+{"key": "blog.cliffano.com", "tags": ["topic:personal", "topic:programming", "type:personal-blog"]}
+{"key": "blog.clintcparker.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.clivemurray.com", "tags": ["topic:design", "topic:music", "type:personal-blog"]}
+{"key": "blog.cloud-eng.nl", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.cmakafui.com", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.cmpxchg8b.com", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "https://blog.cnbankpa.com/podcasts/192089756328/rss.xml", "tags": ["region:usa", "topic:finance", "type:podcast"]}
+{"key": "blog.cochlea.xyz", "tags": ["topic:ai", "topic:music", "type:personal-blog"]}
+{"key": "blog.code-create.dev", "tags": ["topic:design", "topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.codefarm.me", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.codemaclife.net", "tags": ["topic:lifestyle", "type:personal-blog"]}
+{"key": "blog.codemine.be", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.codemon.me", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.codepipes.com", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.coderspirit.xyz", "tags": ["topic:mathematics", "topic:programming", "type:personal-blog"]}
+{"key": "blog.codinghorror.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.codingmilitia.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.codosaur.us", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.coffinsec.com", "tags": ["topic:programming", "topic:security", "type:personal-blog"]}
+{"key": "blog.cofree.coffee", "tags": ["topic:mathematics", "topic:programming", "type:personal-blog"]}
+{"key": "blog.cohix.network", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.coldboot.org", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
+{"key": "blog.coldflake.com", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.colinbreck.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.colindou.ch", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "http://blog.colinmarshall.org/?feed=rss2", "tags": ["topic:books", "topic:travel", "type:personal-blog"]}
+{"key": "blog.colocataires.dev", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "blog.comfy.org", "tags": ["topic:ai", "type:newsletter"]}
+{"key": "blog.compass-security.com", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "blog.computers.pictures", "tags": ["topic:hardware", "topic:security", "type:personal-blog"]}
+{"key": "blog.comunicae.es", "tags": ["language:spanish", "region:spain", "topic:business", "type:vendor-blog"]}
+{"key": "blog.con.rs", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.concannon.tech", "tags": ["topic:sport", "type:personal-blog"]}
+{"key": "blog.consumerguide.com", "tags": ["region:usa", "topic:transport", "type:publication"]}
+{"key": "blog.continentaluniversity.us", "tags": ["language:spanish", "region:usa", "topic:education", "type:institution"]}
+{"key": "blog.cornelius-schumacher.de", "tags": ["topic:open-source", "topic:politics", "type:personal-blog"]}
+{"key": "blog.coryfoy.com", "tags": ["topic:business", "type:personal-blog"]}
+{"key": "blog.cosmin.cloud", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "blog.cosmix.org", "tags": ["topic:environment", "topic:politics", "type:personal-blog"]}
+{"key": "blog.cosmos-institute.org", "tags": ["topic:ai", "topic:philosophy", "type:institution"]}
+{"key": "blog.cottonbureau.com", "tags": ["topic:lifestyle", "type:vendor-blog"]}
+{"key": "blog.coutinho.io", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.cr0.org", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "blog.crackinglanguage.com", "tags": ["topic:ai", "topic:education", "type:personal-blog"]}
+{"key": "blog.craftyguy.net", "tags": ["topic:open-source", "type:personal-blog"]}
+{"key": "blog.creekorful.org", "tags": ["topic:web-development", "type:personal-blog"]}
+{"key": "blog.cria.net.br", "tags": ["language:portuguese", "region:latin-america", "topic:education", "type:institution"]}
+{"key": "https://blog.croftrealestategroup.com/itunes.xml", "tags": ["region:usa", "topic:business", "type:podcast"]}
+{"key": "https://blog.crossroadsboone.org/feed/podcast/crossroads-at-boone-united-methodist-church/", "tags": ["region:usa", "topic:religion", "type:podcast"]}
+{"key": "blog.crumblebulletin.com", "tags": ["topic:books", "topic:science", "type:personal-blog"]}
+{"key": "blog.cryptomilk.org", "tags": ["topic:open-source", "topic:systems", "type:personal-blog"]}
+{"key": "blog.cschad.com", "tags": ["topic:open-source", "topic:systems", "type:personal-blog"]}
+{"key": "blog.cskr.dev", "tags": ["topic:personal", "topic:programming", "type:personal-blog"]}
+{"key": "blog.csongor.co.uk", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "blog.csystemslab.com", "tags": ["topic:programming", "topic:systems", "type:personal-blog"]}
+{"key": "blog.ctis.me", "tags": ["topic:open-source", "topic:programming", "type:personal-blog"]}
+{"key": "blog.ctms.me", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "blog.cubieserver.de", "tags": ["topic:networking", "topic:systems", "type:personal-blog"]}
+{"key": "blog.curqui.com", "tags": ["topic:open-source", "topic:software-engineering", "type:personal-blog"]}
+{"key": "blog.curtisduggan.com", "tags": ["topic:personal", "topic:philosophy", "type:personal-blog"]}
+{"key": "blog.curtisherbert.com", "tags": ["topic:business", "type:personal-blog"]}
+{"key": "http://blog.cyan.pet/feed.xml", "tags": ["topic:personal", "type:personal-blog"]}
