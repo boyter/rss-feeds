@@ -125,7 +125,13 @@ and `classify.py`:
   `language:`. If a hand-decided feed should carry another topic, put it in the
   override.
 - A **URL** rule is the whole answer for the facets it names, so it replaces what
-  the feed had — and the displaced tags are reported.
+  the feed had — and the displaced tags are reported. `decide.py`'s drop-guard
+  compares the **same key**, so a new URL rule that narrows what an older **host**
+  rule gave the same feed is not stopped: three rules written in one batch
+  collapsed `topic:security topic:software-engineering` to `topic:personal` on
+  `blog.adambell.ca`. The only place that shows is the `override replaced N
+  tag(s) already in feeds.json` line in `rebuild.py --write` — read it before
+  `--apply`, and fix additively by re-writing the rule for the same key.
 - A **host** rule generalizes over a whole site, so it may settle only `type:`.
   It may not erase a topic a human gave to one feed: the `npr.org` host rule once
   stripped `topic:health` from the NPR Global Health section feed. Read the other

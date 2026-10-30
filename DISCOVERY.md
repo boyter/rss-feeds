@@ -847,3 +847,45 @@ Rule for next time: after a merge, read the `override replaced N tag(s)` lines
 in `rebuild.py --write` output before `--apply`. That line is where a
 this-session rule meets a shipped one, and it is the only place the destruction
 is visible.
+
+## Queue pass: the 1,037-row residue, read to the bottom (2026-10-31)
+
+`data/DISCOVERY_UNTAGGED.jsonl` had grown to 1,037 rows. All of it was read
+(title + description, ~150 rows at a time). Composition, measured before reading:
+685 rows carried a description worth reading, 348 were name-only or blank
+(title == description, or Substack's default "My personal Substack"), 4 were
+`Comments on:` comment feeds. The last three groups stay in the queue: an
+undecidable title is not a guess waiting to be made.
+
+Wrote **294 URL rules** (one `decide.py` batch, committed before anything else):
+`discover.py tag` then produced 314 tagged candidates and shrank the queue
+1,037 -> **743**. `add.py merge` took **283**, refused **31**: 27 `banned by
+spam.jsonl`, 4 parked as dead in `harvest.jsonl`. Product:
+**28,071 -> 28,354 feeds, 20,260 hosts**, 27,991 titled, zero removals, 12
+known untagged rows unchanged, `rebuild.py --apply` needed 6 tags from the
+host-rule layer and the second pass was byte-identical. 132 tests pass.
+
+**11 of my 294 rules were for feeds already banned in `spam.jsonl`.** That is
+the lesson of the pass: a queue row can be perfectly taggable from its own name
+and description and still be a farm, because the thing that made it a farm is
+its ITEMS, which the queue row does not carry. `importpython.com` (Python name,
+SEO listicle items), `avstarnews`, `bageltechnews`, `birminghamjournal.co.uk`,
+`bartenders.com.bo`, `batchenga.cm`, `beenews.com.br`, `androidoyun.club`,
+`aihausanovels.com.ng`, `anthroholic.com`, `bahardaily.ir` all read fine and are
+all banned on their content. The merge-time spam gate is what makes
+description-only tagging safe; without it this pass would have pinned 11 farms.
+
+Channel yield: **283 feeds from 1,037 rows read (27%)**, at ~1 hour of reading.
+The amp directory gives ~370 per 30 minutes with far less reading, because the
+heading or the site tells you the subject. The residue is residue for a reason:
+of the 743 rows left, ~500 are name-only/blank/comment feeds. Do not plan
+volume around this queue; plan it around the directory and use the queue when a
+pass is already running.
+
+Vocabulary gaps this pass hit and deliberately did not paper over - rows left
+untagged because no honest tag exists: animals and pet/animal-rescue sites
+(dog rescue, horse sleigh rides, a reptile goods shop), linguistics and
+language-and-naming shows, true crime, adult/erotic publishing. Four recurring
+clusters, ~20 rows between them: if a future tranche hits them again, add the
+tag to TAGS.md in the same change rather than stretching `topic:personal` or
+`topic:entertainment` over them.
