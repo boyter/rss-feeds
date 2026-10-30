@@ -797,3 +797,53 @@ Delegate reply lost on batch 3 with the WORK complete (progressive writes):
 coverage arithmetic (326 of 345, 19 uncovered ≈ the skip rate) said apply
 it, no re-dispatch. blockchainmagazine.com spam hand-confirmed (BC.Game,
 BiggerZ, 1win press releases); sister PR sites flagged for a future sweep.
+
+## Tranche 14 (2026-10-28, settled 2026-10-31)
+
+1,494 whole-directory leads, 1,333 live (89%), 1,206 rules written in four
+batches (295/337/324/272), net **1,189** after 17 in-batch corrections:
+**26,821 -> 28,071 feeds, 20,101 hosts** (27,708 titled). Zero-removal settle;
+`REMOVED.md` untouched at its single macsparky line.
+
+Merge refusals, 20 of 1,270 tagged rows, and they split in a way worth
+measuring: **16 were `banned by spam.jsonl`** — the directory re-serves feeds a
+human already removed, five `api2.wondercraft.ai/feeds/podcasts/*` press-release
+syndication rows, `bitcoincasinosnews`, `nytimespost` (NYT-branded scraper),
+`alltotalnews`, `articleify`, `balzaromagazine`, `alternativestheatrales`
+(casino-hijacked), `beljanski` (cancer-cure promo), a crypto-shill podomatic
+feed, a lepodcast placeholder, and the superseded Trustwave SpiderLabs feed.
+A directory channel does not decay: expect banned rows in every tranche, and
+`add.py`'s spam gate is what keeps them out. The other **4 are parked, not
+refused**: probed live, but `harvest.jsonl` is newer and says dead (404
+`actuprepa.substack.com`, 404 `aquilaos.com/feed.xml`, 200-not-a-feed
+`addisababamajlis.org.et`, 200-not-a-feed `asdr.gov.uz`). They are tagged and
+waiting for a `--retry-failed` pass; blisty.cz is the reason not to write them
+off on a 200.
+
+### The settle was not done at `add.py merge --apply`
+
+`rebuild.py --write` after the merge differed from the product in **303 rows**.
+Two causes, one benign and one not:
+
+- Benign: `add.py merge` writes a candidate's own tags; the host-rule layer
+  (`region:`, `language:`, pathTags) lands only in `rebuild.py`, which is the
+  writer. 241 new rows and 62 pre-existing rows gained 403 rule tags, and the
+  second pass is byte-identical, so it converges. **A settle is not complete
+  until `rebuild.py --apply` makes `feeds.json` == `feeds.json.new`.**
+- Not benign: three URL rules written in this tranche's batches destroyed tags
+  an older rule had given the same feed - `topic:security` +
+  `topic:software-engineering` collapsed to `topic:personal` on
+  `blog.adambell.ca`; `topic:programming:javascript` + `topic:web-development`
+  dropped from Mark's Dev Blog; `topic:data` + `topic:software-engineering`
+  collapsed to `topic:programming` on `blog.joda.org`. `decide.py`'s guard
+  compares the **same key**, so a URL rule that undercuts an older **host** rule
+  walks straight through. Corrected additively (1b735d2) with `decide.py`, and
+  the file diff proved it: 3 insertions, 3 deletions, 20,368 lines in and out.
+  One drop survives and is defensible: the Jay Fields Blogger `?alt=rss`
+  variant loses a stale `topic:books` to its host rule's
+  `topic:software-engineering`.
+
+Rule for next time: after a merge, read the `override replaced N tag(s)` lines
+in `rebuild.py --write` output before `--apply`. That line is where a
+this-session rule meets a shipped one, and it is the only place the destruction
+is visible.
