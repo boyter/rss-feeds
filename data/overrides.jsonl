@@ -19347,7 +19347,7 @@
 {"key": "https://blog.aclindsay.com/feed/", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "https://blog.acthompson.net/atom.xml", "tags": ["topic:education", "topic:programming", "type:personal-blog"]}
 {"key": "https://blog.acthompson.net/feeds/posts/default", "tags": ["topic:education", "topic:programming", "type:personal-blog"]}
-{"key": "https://blog.adambell.ca/rss.xml", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://blog.adambell.ca/rss.xml", "tags": ["topic:personal", "topic:security", "topic:software-engineering", "type:personal-blog"]}
 {"key": "https://blog.adamcanady.com/atom.xml", "tags": ["topic:programming", "type:personal-blog"]}
 {"key": "https://blog.adamchalmers.com/atom.xml", "tags": ["topic:programming", "type:personal-blog"]}
 {"key": "https://blog.adamhepner.pl/index.xml", "tags": ["topic:software-engineering", "type:personal-blog"]}
@@ -20270,7 +20270,7 @@
 {"key": "blog.ironweave.io", "tags": ["topic:finance", "topic:software-engineering", "type:vendor-blog"]}
 {"key": "https://blog.ishangavidusha.com/rss.xml", "tags": ["topic:programming", "type:personal-blog"]}
 {"key": "https://blog.isosceles.com/rss/", "tags": ["topic:security", "type:personal-blog"]}
-{"key": "https://blog.isquaredsoftware.com/index.xml", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
+{"key": "https://blog.isquaredsoftware.com/index.xml", "tags": ["topic:ai", "topic:programming:javascript", "topic:software-engineering", "topic:web-development", "type:personal-blog"]}
 {"key": "https://blog.itdxer.com/feed.xml", "tags": ["topic:ai", "topic:mathematics", "type:personal-blog"]}
 {"key": "blog.itsnero.com", "tags": ["topic:art", "topic:entertainment", "type:personal-blog"]}
 {"key": "blog.itstoday.site", "tags": ["topic:personal", "type:personal-blog"]}
@@ -20352,7 +20352,7 @@
 {"key": "blog.jnwiedle.com", "tags": ["topic:art", "type:personal-blog"]}
 {"key": "blog.jobelenus.dev", "tags": ["topic:software-engineering", "type:personal-blog"]}
 {"key": "https://blog.jochentopf.com/feed.xml", "tags": ["topic:open-source", "type:personal-blog"]}
-{"key": "http://blog.joda.org/feeds/posts/default", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "http://blog.joda.org/feeds/posts/default", "tags": ["topic:data", "topic:programming", "topic:software-engineering", "type:personal-blog"]}
 {"key": "blog.joeblau.com", "tags": ["topic:finance", "type:personal-blog"]}
 {"key": "blog.joegreen.pl", "tags": ["topic:hardware", "topic:programming", "type:personal-blog"]}
 {"key": "blog.joemag.dev", "tags": ["topic:software-engineering", "type:personal-blog"]}
