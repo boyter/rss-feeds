@@ -933,3 +933,43 @@ Product: **28,354 -> 29,706 feeds, 20,260 -> 21,457 hosts**, 27,991 -> 29,340
 titled. Second classify + `rebuild --write` byte-identical (fixed point),
 132 tests pass. Untagged queue 743 -> 765. The 12 known untagged rows and the
 6 standing type conflicts are unchanged.
+
+## Tranche 16 (2026-11-03)
+
+`amp --all --limit 1500 --max-per-host 2`: 1,498 candidates (probe_results
+49,241 -> 50,739), 1,361 live. `discover.py tag`: 356 from sibling/host-rule
+generalization of tranche-15 rules, 1,791 needing a human (1,026 new).
+
+Read all 1,026 new rows (~8 batches) and wrote **711 URL rules** in one
+`decide.py` batch, plus **15 pile-up pins** (below): overrides.jsonl
+21,849 -> 22,575, all insertions. `add.py merge` took **1,035**, refused
+**32**: the same 27 `banned by spam.jsonl` re-offers as tranche 15 and the
+same 5 known deads (four parked + nationalarchives, 405 on every attempt).
+Post-merge harvest: all 1,035 fetched, all live. **Zero removals.**
+
+**Two tags added to TAGS.md** — the clusters hit three-plus times, per the
+standing rule: `topic:legal` (Law Talk, Maurer School of Law, Bonatti Penal,
+Borderlines) and `topic:animals` (Woodland Park Zoo, Bodega Cats of New York,
+Au Bonheur des Bêtes, boriquagato — animal-rescue was the named gap). True
+crime hit once (Blutrausch) and adult content three times (boardroomtobedroom,
+Blonde Sunrise, Between the Sheets); both stay in the queue — one is not a
+cluster, and adding an adult tag is a policy call, not mine to make.
+
+**The pile-up, measured for the first time.** Of the 1,035 new rows, **84
+gained 1–4 headline-rule topics at rebuild** that no human decided — most on
+shared podcast hosts (libsyn, podbean, substack) where the only tag source is
+a sibling generalization, so the feed has no URL rule of its own and the
+headline rules are not excluded for the topic facet. This is the documented
+failure mode, and it shipped the same way in tranche 15 (the 3speak rows in
+HEAD already carry piled topics), but the rate is now visible: ~8% of a
+tranche. Pinned the 15 rows whose titles make the noise obvious (bedtime
+books + topic:ai, a Star Wars podcast + topic:business, Bogleheads +
+topic:tech-industry, four 4-topic pile-ups). The 15 pins replace exactly the
+sibling topic they displace, reported by `rebuild --write` as designed.
+Countermeasure for a tooling pass, if the rate stays: when a candidate's tags
+came from a sibling generalization (tagOrigin says so), treat them as the
+decision that excludes headline topic rules — the data to do it exists.
+
+Product: **29,706 -> 30,741 feeds, 21,457 -> 22,326 hosts**, 29,340 -> 30,373
+titled. Against HEAD: +1,035, 0 removed, **zero shipped rows changed**.
+Fixed point byte-identical, 132 tests pass. Untagged queue 1,791 -> 1,080.

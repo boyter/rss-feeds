@@ -51,13 +51,13 @@ that language. This list is read by `vocab.py`, so it is written in full:
 Non-technology:
 
 `topic:science`, `topic:mathematics`, `topic:medicine`, `topic:environment`,
-`topic:politics`, `topic:government`, `topic:military`, `topic:design`, `topic:history`, `topic:philosophy`,
+`topic:politics`, `topic:government`, `topic:legal` (courts, law, legal practice - a real recurring cluster: law podcasts, law schools, law firms; not `topic:politics`, which is policy and power), `topic:military`, `topic:design`, `topic:history`, `topic:philosophy`,
 `topic:economics`, `topic:finance`, `topic:business`, `topic:media`,
 `topic:journalism`, `topic:sport`, `topic:gaming`, `topic:entertainment`,
 `topic:transport`,
 `topic:music`, `topic:art`, `topic:books`, `topic:travel`, `topic:food`,
 `topic:astrology` (horoscopes, natal charts, astrological practice - a real recurring cluster; esoteric but categorizable),
-`topic:health`, `topic:education`, `topic:religion`, `topic:lifestyle`, `topic:personal`
+`topic:health`, `topic:education`, `topic:religion`, `topic:lifestyle`, `topic:animals` (animal welfare and rescue, zoos, keeping and studying animals - a recurring cluster that `topic:science` and `topic:lifestyle` both stretched), `topic:personal`
 
 `topic:personal` is for general life-writing blogs with no dominant subject. It
 is the only topic that may stand alone without a second topic.
