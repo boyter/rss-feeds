@@ -55,7 +55,7 @@ Non-technology:
 `topic:economics`, `topic:finance`, `topic:business`, `topic:media`,
 `topic:journalism`, `topic:sport`, `topic:gaming`, `topic:entertainment`,
 `topic:transport`,
-`topic:music`, `topic:art`, `topic:books`, `topic:travel`, `topic:food`,
+`topic:music`, `topic:art`, `topic:books`, `topic:comics` (comics, webcomics, manga, graphic novels - a real recurring cluster that `topic:art` and `topic:books` both stretched), `topic:travel`, `topic:food`,
 `topic:astrology` (horoscopes, natal charts, astrological practice - a real recurring cluster; esoteric but categorizable),
 `topic:health`, `topic:education`, `topic:religion`, `topic:lifestyle`, `topic:animals` (animal welfare and rescue, zoos, keeping and studying animals - a recurring cluster that `topic:science` and `topic:lifestyle` both stretched), `topic:personal`
 
