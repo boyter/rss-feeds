@@ -889,3 +889,47 @@ language-and-naming shows, true crime, adult/erotic publishing. Four recurring
 clusters, ~20 rows between them: if a future tranche hits them again, add the
 tag to TAGS.md in the same change rather than stretching `topic:personal` or
 `topic:entertainment` over them.
+
+## Tranche 15 (2026-11-02)
+
+`amp --all --limit 1500 --max-per-host 2`: 1,500 candidates, all probed
+(probe_results 47,741 -> 49,241). `discover.py tag` produced **1,385 tagged**
+candidates from **1,187 decisions** written in one `decide.py` batch
+(1,186 in `decisions-t15b.txt` + 1 pin, below): overrides.jsonl
+20,662 -> 21,849 (35 host rules, 1,152 URL rules added).
+
+`add.py merge` took **1,354** at merge time, refused **32**: 27 `banned by
+spam.jsonl` — the directory re-offers the farms every tranche, this batch
+included five `api2.wondercraft.ai` podcast spams — and 5: the four known
+parked deads (`actuprepa`/`aquilaos` 404, `addisababamajlis`/`asdr.gov.uz`
+200-but-not-a-feed) plus `blog.nationalarchives.gov.uk/rss/news.xml`, which
+answered 405 on **both** post-merge harvests and was dropped by the rebuild
+before it ever shipped. It is a removal that never touched the product, so it
+is recorded here, not in REMOVED.md.
+
+Post-merge harvest fetched all 1,354: 1,352 `isFeed=true`, 1 timeout (flagged,
+kept), the 405 above. `rebuild.py --apply` then layered rule tags; against
+HEAD the product is **+1,353 added, 1 removed, zero shipped rows changed** —
+every change is additive (region/language/one topic).
+
+**The one pin.** `api.afripods.com` is a Kenyan podcast host and its first
+tranche row, *Iko Nini Podcast* (Kenyan true crime), was about to pick up
+`topic:programming` from a headline keyword — the documented rule-volatility
+trap, caught because the pre-apply diff showed one **pre-existing** row
+changing. Pinned with a URL rule (`topic:media type:podcast`, its shipped
+tags), which excludes the headline rules for those facets. Lesson: after a
+big rule batch, check the pre-apply diff for changed **old** rows, not just
+the new ones; the new rows are expected to move.
+
+**One shipped removal.** `blog.bitsrc.io/feed` (in HEAD) now 30x-redirects to
+`bit.cloud/blog`, and `bit.cloud` serves HTML at every guessed feed path —
+hand-checked with curl, no feed exists there. The publisher still publishes on
+Medium: `https://medium.com/feed/bitsrc` is live (43 KB RSS), and the tagged
+variant `medium.com/feed/bitsrc/tagged/web-development` is already in the
+list. Re-pointing the line is a human decision; it is parked, and the old line
+is recorded in REMOVED.md. Do not re-add the old URL.
+
+Product: **28,354 -> 29,706 feeds, 20,260 -> 21,457 hosts**, 27,991 -> 29,340
+titled. Second classify + `rebuild --write` byte-identical (fixed point),
+132 tests pass. Untagged queue 743 -> 765. The 12 known untagged rows and the
+6 standing type conflicts are unchanged.
