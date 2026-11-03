@@ -973,3 +973,47 @@ decision that excludes headline topic rules — the data to do it exists.
 Product: **29,706 -> 30,741 feeds, 21,457 -> 22,326 hosts**, 29,340 -> 30,373
 titled. Against HEAD: +1,035, 0 removed, **zero shipped rows changed**.
 Fixed point byte-identical, 132 tests pass. Untagged queue 1,791 -> 1,080.
+
+## Tranche 17 (2026-11-03)
+
+`amp --all --limit 1500 --max-per-host 2`: 1,500 candidates (probe_results
+50,739 -> 52,239), 1,390 live. `discover.py tag`: 447 tagged (367 from
+sibling/host-rule generalization of this tranche's own rules + 80 from a list
+heading), 964 new untagged rows.
+
+Read all 964 rows (~7 batches) and wrote **765 URL rules** in one `decide.py`
+batch, plus **15 pile-up pins** (below): overrides.jsonl 22,575 -> 23,355.
+`add.py merge` took **1,180**, refused **32**: the same 27 `banned by
+spam.jsonl` re-offers and the same 5 known deads as tranches 15-16. Post-merge
+harvest: all 1,180 fetched, all live. **Zero removals.**
+
+**One tag added to TAGS.md** — `topic:comics` (comics, webcomics, manga,
+graphic novels): six hits in this tranche alone (Webcomics Handbook,
+Breadfinder, Brett Bean, Broken English, Broken Heart Studio, Brood), well
+over the 3+ cluster rule. `topic:adult` candidates did not appear this pass;
+the three queued rows from tranche 16 remain an owner decision.
+
+**The pile-up again, slightly worse.** Of the 1,180 new rows, **118 gained 1-4
+headline-rule topics at rebuild** (~10%, vs ~8% in tranche 16) — the same
+shared-host pattern (libsyn, podbean, substack rows where the only tag source
+is sibling generalization). Pinned the 15 rows whose titles make the noise
+obvious (golf podcast + topic:ai, ministries podcast + topic:ai, real-estate
+podcast + topic:sport, Outlook 4-topic pile-up, ...). Each pin is a URL rule
+carrying exactly the topics the feed should have, so the rebuild report shows
+the displaced topics as designed. The remaining ~103 rows carry piled topics
+until the structural fix lands (see tranche 16): when a candidate's tags came
+from a sibling generalization (tagOrigin says so), treat them as the decision
+that excludes headline topic rules.
+
+One tooling scare, resolved: mid-tranche the working-tree overrides.jsonl
+kept snapping back to its committed state within seconds, silently dropping
+the 765-rule batch between steps. No local process was found doing it
+(watcher + trap logs); the countermeasure was to commit the batch the moment
+it was verified, so any further restore became a no-op. If it happens again,
+commit early and verify counts before every rebuild.
+
+Product: **30,741 -> 31,921 feeds, 22,326 -> 23,239 hosts**, 30,373 -> 31,553
+titled. Against pre-tranche HEAD: +1,180, 0 removed, **zero shipped rows
+changed** (the 160 adjusted rows are all new rows gaining region:/language:
+or the pinned corrections). Fixed point byte-identical, 132 tests pass.
+Untagged queue 1,791 -> 1,279.
