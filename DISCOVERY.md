@@ -1328,3 +1328,89 @@ seconds of network for a whole batch.
 has no script rule — that gap is now hit a third time and is the cheapest remaining
 structural fix (with a `marathi` keyword rule first, since Marathi also writes
 Devanagari).
+
+## Tranche 21: fourth amp pass, and the description-reading pass pays for itself (2026-11-04)
+
+```bash
+python3 tools/discover.py amp --all --limit 1500 --max-per-host 2
+```
+
+| step | count |
+|---|---|
+| directory entries | 546,502 |
+| dropped: already probed | 29,280 |
+| candidates | 1,495 |
+| served a real feed | 1,402 (**94%** — best of any tranche) |
+| taggable | 313 |
+| merged | **312** |
+| declined | 1 (`casinokrisa.substack.com`: casino handle + generic SEO marketing listicles) |
+| still untagged | 4,264 |
+
+Product 32,735 → **33,047 feeds**, 23,969 → 24,207 hosts. Zero removals. 23 hand
+rules; fixed point byte-identical; 148 tests; `--strict` exits 0.
+
+### Three topics are noise magnets
+
+Read from each feed's own description, 22 of 313 rows needed correcting — the same
+rate as tranche 19's 20/415. What fools the word rules is not obscure vocabulary, it
+is **cognates in prose**:
+
+| shipped tag | the phrase that caused it | what the feed is |
+|---|---|---|
+| `topic:ai` | *"Dritti **ai** Diritti"* | Italian: "ai" = **"to the"**; a newsletter explaining one right at a time |
+| `topic:environment` | *"threat **environment**"* | CASIS *Secure Line*: Canadian intelligence |
+| `topic:food` | *"**Wineskins**"* | a Catholic radio program (wineskins = the biblical image) |
+| `topic:science` | *"behold God's presence"* / *"any kind of stuff"* | a contemplative newsletter; a personal bearblog |
+| `topic:tech-industry` | *"role playing game"*, *"cat ladies"* | two board-gaming podcasts; a political comedy show |
+| `topic:history` | *"long historical series"* | a video-game review show |
+
+So `topic:ai`, `topic:science`, `topic:history` and `topic:tech-industry` are the
+magnets: they are the words most likely to appear incidentally in prose about
+something else. A queue pass that reads only titles will keep re-introducing these.
+
+### Why Amar Ujala's city desks say `topic:education`
+
+`amarujala.com`'s host rule is **correct** (`topic:news type:publication
+language:hindi region:india`), yet 22 shipped feeds carry `topic:education` and this
+tranche's two new desks arrived tagged `topic:education topic:politics`. The
+mechanism is the deliberate bootstrap asymmetry: a **host rule may settle `type:`
+but may not supply topics** (the `youtube.com → topic:science` defect, AGENTS.md),
+while for a feed with **no tags yet** the keyword rules are allowed to bootstrap
+topics — and they read **item headlines**. Every Amar Ujala city desk publishes under
+one generic site title ("Latest And Breaking Hindi News Headlines…"), so the only
+text available is today's headlines: `tagWhy` for `bhilwara.xml` literally says
+`["topic:election", "topic:education"]`.
+
+Not a bug — but it means **any site whose feeds share one boilerplate title gets its
+topics from that day's news cycle, permanently pinned.** Two new desks pinned by hand
+this tranche. The open structural question, recorded not yet fixed: when a human host
+rule already names a topic, should headline keywords still be allowed to bootstrap
+topics for a new feed on that host? The youtube.com case says host-rule topics are
+untrustworthy; the amarujala case says headline topics are untrustworthy. The fix is
+probably per-rule trust (a host rule written from the site's own front page vs one
+guessed from a section), which the data model does not currently record.
+
+### The query-string matcher, measured
+
+`classify.py:360` matches a URL rule as `url.startswith(key + "?") or url == key`: a
+rule written without a query deliberately covers query-bearing variants. Needed for
+tracking parameters; hazardous where the query **is** the section (`norm_key` keeps
+`sectionId`, so those are distinct feeds — my `casis.substack.com/feed` rule fired on
+`feed?sectionId=185584`). Measured: **10,998 URL rules have no query and only 2 speak
+for more than one query-identified feed** (euronews ×4, babbel ×2 — both correct for
+every variant), so the exposure is small but it is not zero. Also measured: **69 URL
+rules match nothing at all** — inert residue of feeds removed in earlier passes. Not
+deleted (deleting rules is a human decision, and they cost nothing), listed here so a
+future pass can review them as a set.
+
+### Still unmerged, and the recurring-decline problem
+
+**40 tagged rows from other sources** (oracle, sibling, earlier amp runs) sit in
+`data/candidates.tagged.jsonl` and are not in the product; this tranche merged only
+its own amp rows. They need their own read before merging — the tagger is right ~94%
+of the time and the failures are exactly the word-sense class above.
+
+`casinokrisa` now joins `btccasinonews.com` and the legacy libsyn duplicate as
+declined-but-still-offered feeds. Three declines, no declined-URL list: until either
+`spam.jsonl` bans them (owner decision) or `add.py merge` consults a declined file,
+every tranche re-offers them and every tranche has to re-decline them.

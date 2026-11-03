@@ -1,0 +1,43 @@
+# tranche 21 corrections. Every one was read from the feed's own description or
+# items; the quoted phrase is the evidence. The tagger matches words, and three
+# topics are noise magnets — topic:science, topic:ai and topic:history land on
+# anything whose description happens to contain a cognate:
+#   "threat environment"      -> topic:environment   (an intelligence podcast)
+#   "wineskins" (biblical)    -> topic:food          (a Catholic radio program)
+#   "Dritti ai Diritti"       -> topic:ai            ("ai" = Italian "to the")
+#   "behold God's presence"   -> topic:science
+# Declined, not tagged: https://casinokrisa.substack.com/feed — the handle is a
+# casino name and the content is generic SEO marketing listicles; not a publisher.
+# (Same treatment as btccasinonews in t19: declined, no spam.jsonl ban, because a
+# ban is an owner decision. Both will be re-offered until one exists.)
+
+# Amar Ujala city desks. The host rule is right (topic:news) but for a NEW feed the
+# rules bootstrap topics from item headlines, and every city desk shares one generic
+# site title — so this feed's topics were whatever today's headlines mentioned
+# (tagWhy: topic:election, topic:education). Pinning it the way six sibling desks
+# are already pinned.
+https://amarujala.com/rss/bhilwara.xml	language:hindi region:india topic:news type:publication
+https://amarujala.com/rss/bharatpur.xml	language:hindi region:india topic:news type:publication
+
+# word-sense and missing-topic corrections
+https://casis.substack.com/feed	region:canada topic:security topic:military topic:politics type:newsletter
+https://cathylatorre.substack.com/feed	language:italian topic:legal type:newsletter
+https://catholicecho.podbean.com/feed.xml	topic:religion type:podcast
+https://celiaamiller.substack.com/feed	topic:religion topic:personal type:newsletter
+https://catscontrollercorner.substack.com/feed	topic:gaming topic:entertainment type:newsletter
+http://cdn.thesecretcabal.com/scpodcast.xml	topic:gaming topic:media type:podcast
+http://cdn.thesecretcabal.com/lordspodcast.xml	topic:gaming topic:media type:podcast
+https://castranger.podbean.com/feed.xml	topic:entertainment topic:gaming type:podcast
+https://catladiesforamerica.substack.com/feed	topic:politics topic:entertainment type:newsletter
+https://cassiterite.bearblog.dev/feed	topic:personal type:personal-blog
+https://cassandramcclure.substack.com/feed	topic:lifestyle topic:health type:personal-blog
+https://catherineprice.substack.com/feed	topic:health topic:lifestyle type:newsletter
+https://catalinamoralesv.substack.com/feed	topic:philosophy topic:health type:newsletter
+https://catesthill.substack.com/feed	topic:design topic:travel topic:lifestyle type:newsletter
+https://cashmarginpartners.substack.com/feed	topic:business topic:sport type:newsletter
+https://audioblog.arteradio.com/blog/142571/rss	language:french region:france topic:politics type:podcast
+https://ccda.gov.pg/feed/	topic:environment topic:government type:institution
+https://catenacapital.substack.com/feed	topic:finance topic:ai type:newsletter
+https://cdixon.substack.com/feed	topic:finance topic:programming topic:history type:newsletter
+https://cedoor.substack.com/feed	topic:security topic:software-engineering type:newsletter
+https://carolynparry.substack.com/feed	topic:ai topic:business type:newsletter
