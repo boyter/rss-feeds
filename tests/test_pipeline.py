@@ -1127,3 +1127,58 @@ class TestOracle429RetriedAndErrorRowsNeverCached(unittest.TestCase):
         self.assertEqual(cache[0]["error"], "")
         self.assertEqual([r["url"] for r in leads],
                          [f["url"] for f in self.FEEDS])
+
+
+class TestTheMediumIsNotTheSubject(unittest.TestCase):
+    """Two bugs that made ~1 in 5 of the tranche-23 candidates wrong.
+
+    1. There was no religion rule at all, so a feed named "Church on the Move
+       Podcast" had no rule that knew what a church is.
+    2. The rule that DID fire was podcast|episode|audio -> topic:media, and
+       topic:media names the medium, not the subject. Every rule that fires is
+       kept, so such a feed shipped as topic:media and nothing else: 96 shipped
+       feeds named church/sermon/pastor carried topic:media while 415 others
+       carried topic:religion.
+    """
+
+    def setUp(self):
+        classify.VOCAB = vocab_mod.load()
+
+    def suggested(self, url, title="", desc="", items=()):
+        return classify.suggest({"url": url, "title": title, "description": desc,
+                                 "items": list(items)}, [])[0]
+
+    def test_a_church_name_names_religion_not_media(self):
+        got = self.suggested("https://churchonthemove.podbean.com/feed.xml",
+                             "Church on the Move Podcast")
+        self.assertIn("topic:religion", got)
+        self.assertNotIn("topic:media", got)
+
+    def test_sermon_audio_is_not_a_music_or_media_feed(self):
+        got = self.suggested("https://cg.example.de/feed",
+                             "Predigten der Christus-Gemeinde | Audio")
+        self.assertIn("topic:religion", got)
+
+    def test_the_medium_still_tags_a_feed_with_no_subject_at_all(self):
+        # Removing the fallback entirely would send these to the human queue with
+        # nothing said about them; the point is that it loses to a subject, not
+        # that it disappears.
+        got = self.suggested("https://widgets.example/feed", "Widgets Weekly Podcast")
+        self.assertIn("topic:media", got)
+
+    def test_churchill_is_not_religion(self):
+        # The first version matched the prefix of "Churchill" and would have made
+        # every Churchill-society feed a religion feed.
+        got = self.suggested("https://churchill.example.org/feed",
+                             "The Churchill Society quarterly")
+        self.assertNotIn("topic:religion", got)
+
+    def test_a_subject_rule_beats_the_medium_rule_generally(self):
+        # biology, not "science": classify names concrete sciences on purpose,
+        # because the bare word appears in pseudoscience and science fiction.
+        got = self.suggested("https://dfs.example/feed",
+                             "Deep Fried Biology: podcast episodes about the ocean")
+        self.assertIn("topic:science", got)
+        self.assertNotIn("topic:media", got)
+
+

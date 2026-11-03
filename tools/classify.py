@@ -46,6 +46,10 @@ TOPIC_RULES = [
     (r"\b(economy|inflation|\bgdp\b|monetary|fiscal|market|equit|stock|bond|investing|\bfinance\b|banking|crypto currency|cryptocurrenc|\bbitcoin\b|blockchain)", ["topic:finance"]),
     (r"\b(nfl|nba|mlb|nhl|soccer|football|cricket|rugby|tennis|golf|\bf1\b|formula 1|boxing|mma|ufc|olympic|baseball|basketball|hockey)", ["topic:sport"]),
     (r"\b(video game|game design|\bgamedev\b|game development|\bxbox\b|\bplaystation\b|\bnintendo\b|steam|\broguelike|tabletop|rpg)", ["topic:gaming"]),
+    # A church's own name is direct evidence of its subject. The absence of this
+    # rule is why ~96 shipped feeds named "... Church Sermons" carry topic:media:
+    # the only rule that fired on them was the podcast one below.
+    (r"\b(church(es)?|sermons?|predigt|predigten|kirchgemeinde|kirche|kerk|é?glise|preach\w*|pastor\w*|gospel|worship|ministry|bible|theolog\w*|congregation\w*|denominat\w*|catholic\w*|protestant|anglican|baptist\w*|methodist|presbyterian|lutheran|evangelical|rabbi\w*|synagogue\w*|mosque\w*|islam\b|islamic\b|quran|koran|hindu\b|buddhis\w*|monastic\w*)\b", ["topic:religion"]),
     (r"\b(podcast|episode|\baudio\b|interview with|listen to)", ["topic:media"]),
     (r"\b(journalism|newsroom|news media|reporting|press freedom|fact[- ]check)", ["topic:journalism"]),
     (r"\b(travel|flight|hotel|backpack)", ["topic:travel"]),
@@ -243,11 +247,21 @@ def infer_type(rec, host):
 def suggest(rec, old_tags):
     text = haystack(rec)
     tags, why = [], []
-    for pattern, added in TOPIC_RULES:
-        m = re.search(pattern, text, re.I)
-        if m:
-            tags.extend(t for t in added if t not in tags)
-            why.append(f"topic:{m.group(1)[:24]}")
+    fired = [(re.search(p, text, re.I), added) for p, added in TOPIC_RULES]
+    fired = [(m, added) for m, added in fired if m]
+    # `topic:media` names the MEDIUM, not the subject: podcast, episode, audio and
+    # "listen to" appear in the blurb of nearly every audio show, so the rule fires
+    # on feeds whose real subject another rule already found. It survives only when
+    # nothing else fired — which is what stops "Church on the Move Podcast" from
+    # being tagged as though "podcast" were its topic, while a feed that is only
+    # ever an audio show about things still gets a topic rather than flooding the
+    # human queue.
+    subjects = [added for m, added in fired if added != ["topic:media"]]
+    for m, added in fired:
+        if added == ["topic:media"] and subjects:
+            continue
+        tags.extend(t for t in added if t not in tags)
+        why.append(f"topic:{m.group(1)[:24]}")
     for pattern, lang in LANG_RULES:
         if re.search(pattern, text):
             if lang == "language:japanese" and re.search(r"[\uac00-\ud7af]", text):
