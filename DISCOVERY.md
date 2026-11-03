@@ -1426,7 +1426,7 @@ every tranche re-offers them and every tranche has to re-decline them.
 | hand rules | 36 |
 | still untagged | 5,228 |
 
-Product 33,047 → **33,439 feeds**, hosts → 24,573. **Zero removals, zero
+Product 33,047 → **33,439 feeds**, hosts → 24,530. **Zero removals, zero
 pre-existing rows changed**, fixed point byte-identical, `--strict` 0, 148 tests.
 
 **Word-sense again, and it is cheap to beat.** 34 of 392 rows (9%) were wrong, all of
