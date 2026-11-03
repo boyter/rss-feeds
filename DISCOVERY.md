@@ -1460,3 +1460,72 @@ not: all 25 `bhaskar.com` rows in the product carry it. The candidate file shows
 the tags the *tagging* path decided and omits what a **host rule** contributes
 (`language:`, `region:`) — rebuild adds those later. Check the product, never
 `candidates.tagged.jsonl`, when asking whether a tag is present.
+
+## Tranche 23: the `topic:media` catch-all, and a note about accusing the wrong file (2026-11-04)
+
+| step | count |
+|---|---|
+| candidates | 1,500 |
+| served a real feed | 1,342 (89%) |
+| taggable | 397 → **419** after the rule fix |
+| merged | **419** |
+| hand rules | 6 |
+| untagged queue | 6,168 → **6,078** (it went *down*) |
+
+Product 33,439 -> 33,858 feeds, 24,530 -> 24,874 hosts. Zero removals, zero pre-existing rows changed,
+fixed point byte-identical, `--strict` 0, **153 tests**.
+
+### A whole tranche read as podcasts, not as subjects
+
+Reading this batch, 292 of 397 taggable rows carried a magnet topic, and the dominant
+one was `topic:media`: `Bram FM`, `Chubstep`, `Gray Areas`, `Cigar Hacks Podcast` … and
+**~40 church feeds** — `Christ Church Bentonville`, `River Church Sermons`,
+`Predigten der Christus-Gemeinde` — sitting at `topic:media` while 415 other
+church feeds in the product carry `topic:religion`.
+
+Two causes, both in `classify.py`:
+
+* `TOPIC_RULES` had **no religion rule at all** — `religio` is the only form the
+  tagging path knew, so a feed named *Church … Sermons* matched nothing about
+  churches.
+* It did match `(podcast|episode|\baudio\b|interview with|listen to) → topic:media`.
+  Every matching rule is kept, so the medium became the subject. `topic:media` names
+  how a feed is delivered, not what it is about — it is the catch-all AGENTS.md says
+  not to reintroduce, reached by accident rather than intent.
+
+**Fix:** the medium is now a **last resort**. `suggest()` collects every rule that
+fired; if any subject rule fired, `topic:media` is dropped; if nothing did, it stays —
+a feed that is only ever "an audio show about things" still gets a topic instead of
+flooding the human queue. Plus a religion rule with word boundaries and the
+non-English forms this very batch contained (`predigten`, `kirche`, `kerk`, `église`).
+
+Measured on this tranche: `topic:media` rows **165 → 69**, `topic:religion` **2 → 73**,
+taggable rows **397 → 419** (22 feeds gained their first real subject), untagged queue
+**down** by 90. No row lost its only topic; 96 rows lost `topic:media` and kept or
+gained a subject. `5` new tests, each half failing without its half of the fix (2 fail
+without the last-resort guard, 3 without the religion rule).
+
+**The product did not move.** `classify.py && rebuild.py --write && cmp` was
+byte-identical, because `merge_tags` protects tags already in `feeds.json` — the fix
+changes what *new* candidates get, not what shipped rows keep. So the ~96 shipped
+church feeds still say `topic:media`; correcting those is a reviewed data pass like the
+pile-up retro-clean, not something to do by shipping a rule change.
+
+### My own rule made one false positive, and it is in the batch as a hand rule
+
+`Church & Street Foto Club` — *"street photography, travel, self-discovery, and
+occasionally, cameras"* — is a photo newsletter on **Church Street**, and the new
+religion rule claimed it. It is pinned by hand with `topic:design topic:travel` and
+recorded here, because a rule that fixes 40 rows while breaking one is only honest if
+the one is written down. (`The Churchill Society` is why `\bchurch(es)?\b` has a
+trailing boundary — the first version matched the prefix of *Churchill* and the test
+for it exists so nobody removes the boundary.)
+
+### The wrong accusation, recorded so it is not repeated
+
+I first blamed `discover.py:146` (`(r"podcast", ["topic:media"])`) for this. Wrong:
+that table (`CATEGORY_TOPICS`) runs on a curated **list's outlines only**, and its own
+comment spells out that a feed's name is never fed to it — the comment even cites
+*"Apple Weekly" becoming topic:gadgets* as the reason. The real culprit was the
+same-shaped rule in a different file. Grepping for a string and then reading the code
+*around* it is the step that matters: two identical rules, one innocent.

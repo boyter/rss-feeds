@@ -23475,3 +23475,9 @@
 {"key": "https://chadzumock.libsyn.com/rss", "tags": ["topic:entertainment", "topic:media", "type:podcast"]}
 {"key": "https://amarujala.com/rss/bhind.xml", "tags": ["language:hindi", "region:india", "topic:news", "type:publication"]}
 {"key": "https://amarujala.com/rss/bhiwani.xml", "tags": ["language:hindi", "region:india", "topic:news", "type:publication"]}
+{"key": "https://chrisstup.substack.com/feed", "tags": ["language:french", "topic:comics", "topic:entertainment", "type:newsletter"]}
+{"key": "http://chris-intel-corner.blogspot.com/atom.xml", "tags": ["topic:history", "topic:military", "type:personal-blog"]}
+{"key": "https://churchandstreet.substack.com/feed", "tags": ["topic:design", "topic:travel", "type:newsletter"]}
+{"key": "https://churchandmain.substack.com/feed", "tags": ["topic:politics", "topic:religion", "type:podcast"]}
+{"key": "https://churchfront.libsyn.com/rss", "tags": ["topic:media", "topic:religion", "type:podcast"]}
+{"key": "https://cinemashame.libsyn.com/rss", "tags": ["topic:entertainment", "type:podcast"]}

@@ -1,0 +1,16 @@
+# tranche 23 hand corrections. Most of this tranche's wrongness was fixed by the
+# classify rule change (topic:media stopped standing in for a subject; a religion rule
+# now exists). These are the residue, each read from the feed's own description.
+# One row is a false positive created by my NEW religion rule, recorded as such.
+# French: Chris explores American comics (bande dessinee) in pop culture - topic:music appears nowhere in it
+https://chrisstup.substack.com/feed	language:french topic:comics topic:entertainment type:newsletter
+# "Military and intelligence history mostly dealing with World War II"
+http://chris-intel-corner.blogspot.com/atom.xml	topic:military topic:history type:personal-blog
+# MY OWN new religion rule false-fired on a street name: "street photography, travel, self-discovery, and occasionally, cameras"
+https://churchandstreet.substack.com/feed	topic:design topic:travel type:newsletter
+# "where faith and public affairs meet"; it is a podcast as well as a newsletter
+https://churchandmain.substack.com/feed	topic:religion topic:politics type:podcast
+# "Equipping church leaders ... thriving ministry" - topic:science was noise
+https://churchfront.libsyn.com/rss	topic:religion topic:media type:podcast
+# "a support group for penitent moviewatchers and cinephiles" - topic:science was noise
+https://cinemashame.libsyn.com/rss	topic:entertainment type:podcast
