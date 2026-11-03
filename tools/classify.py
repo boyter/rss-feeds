@@ -85,6 +85,39 @@ CC_TLD = {
     "im": None,
 }
 
+# ccTLD -> the language that domain's publishers overwhelmingly write in. This is
+# the language twin of CC_TLD, and it exists because LANG_RULES can only see a
+# language through its script (Hangul, kana, Han, Arabic, Cyrillic): German,
+# Spanish, Czech, Turkish, Vietnamese and Indonesian are all Latin script, so the
+# rules were blind to them. Measured on the shipped file: 1,448 feeds sat on a
+# strong-language ccTLD with no language: tag at all, while 1,711 identical-shape
+# feeds had one - and TAGS.md omits language: for English, so a .de feed with no
+# tag reads as English to anyone browsing the list.
+#
+# Deliberately absent: every ccTLD where English is a major publishing language
+# (.in, .sg, .ph, .za, .my, .ae) and every registry whose language is not a
+# single call (.io, .me, .tv, .fm, .to, .ai). A ccTLD is a strong hint, not
+# proof, and the exclusions are what keep it that way. Three more were removed
+# after reading the feeds that would have been tagged: .ch (Switzerland publishes
+# in German, French and Italian, and its tech shops publish in English - 200ok.ch
+# is an English-language dev consultancy), .is (English personal sites use it as a
+# word: alastair.is, alec.is), and .tw (the .tw feeds in this list are largely
+# English-writing developers - 404.tw is Gea-Suan Lin, who writes in English).
+# .bg is absent for a different reason: the Bulgarian-hosted papers in the list are
+# the Turkish-language minority press (Bizim Gazete, Bakış), so the domain and the
+# language disagree more often than not at that size.
+CC_LANG = {
+    "de": "german", "at": "german",
+    "fr": "french", "es": "spanish", "it": "italian", "pt": "portuguese",
+    "br": "portuguese", "nl": "dutch", "pl": "polish", "cz": "czech",
+    "sk": "czech", "se": "swedish", "no": "norwegian", "dk": "danish",
+    "fi": "finnish", "ro": "romanian", "gr": "greek", "tr": "turkish",
+    "vn": "vietnamese", "id": "indonesian", "ua": "ukrainian", "ru": "russian",
+    "jp": "japanese", "kr": "korean", "cn": "chinese",
+    "hu": "hungarian", "hr": "croatian", "si": "slovenian",
+    "rs": "serbian", "lt": "lithuanian", "lv": "latvian", "ee": "estonian",
+}
+
 PERSONAL_HOST_HINTS = re.compile(
     r"(github\.io|gitlab\.io|blogspot\.|wordpress\.com|readthedocs\.io|"
     r"substack\.com|write\.as|medium\.com/@|neocities\.org|news\.blog|"
@@ -167,6 +200,18 @@ def region_for(host):
     return CC_TLD.get(tld)
 
 
+def language_for(host):
+    """The language a ccTLD's publishers overwhelmingly write in, or None.
+
+    Only the bare ccTLD counts: `example.com` and `example.io` say nothing, and
+    the multi-part English-speaking registries (.com.in, .co.za) are not in
+    CC_LANG at all. Script evidence (LANG_RULES) outranks this and is applied
+    first, so a Russian-language feed on a .de host keeps language:russian.
+    """
+    tld = host.rsplit(".", 1)[-1]
+    return CC_LANG.get(tld)
+
+
 def infer_type(rec, host):
     """Guess the source type from the feed's own title.
 
@@ -213,6 +258,12 @@ def suggest(rec, old_tags):
     region = region_for(host)
     if region and region not in tags:
         tags.append(f"region:{region}")
+    # Language from the domain, last rather than first: LANG_RULES above read the
+    # text and a script match is direct evidence, while a ccTLD is an inference
+    # about who publishes there. A .de host serving Russian text is a Russian feed.
+    lang = language_for(host)
+    if lang and not any(t.startswith("language:") for t in tags):
+        tags.append(f"language:{lang}")
     for pattern, added in HOST_TOPICS:
         if re.search(pattern, host, re.I):
             tags.extend(t for t in added if t not in tags)

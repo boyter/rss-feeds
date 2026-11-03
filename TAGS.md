@@ -102,11 +102,30 @@ Sub-national, only for feeds that are actually local:
 
 ## language: (only when not English, or for a translated feed)
 
-`language:arabic`, `language:chinese`, `language:czech`, `language:english`,
-`language:dutch`, `language:finnish`, `language:french`, `language:german`,
-`language:hindi`, `language:italian`, `language:japanese`, `language:korean`,
-`language:norwegian`, `language:polish`, `language:portuguese`, `language:russian`,
-`language:spanish`, `language:ukrainian`, `language:urdu`
+`language:arabic`, `language:bulgarian`, `language:chinese`, `language:croatian`,
+`language:czech`, `language:danish`, `language:dutch`, `language:english`,
+`language:estonian`, `language:finnish`, `language:french`, `language:german`,
+`language:greek`, `language:hindi`, `language:hungarian`, `language:indonesian`,
+`language:italian`, `language:japanese`, `language:korean`, `language:latvian`,
+`language:lithuanian`, `language:norwegian`, `language:polish`, `language:portuguese`,
+`language:romanian`, `language:russian`, `language:serbian`, `language:slovenian`,
+`language:spanish`, `language:swedish`, `language:turkish`, `language:ukrainian`,
+`language:urdu`, `language:vietnamese`
+
+The keyword rules can see a language only through its script (Hangul, kana, Han,
+Arabic, Cyrillic), so every Latin-script language is invisible to them. The ccTLD
+rule in `classify.CC_LANG` fills that gap, and it can only emit a tag listed here:
+croatian, danish, estonian, greek, hungarian, indonesian, latvian, lithuanian,
+romanian, serbian, slovenian, swedish, turkish and vietnamese arrived with that
+rule, each kept because reading the feeds it would tag showed the domain speaking
+honestly. Registries whose language is not a single call are not in the map at all
+— no `.ch` (Switzerland publishes in German, French and Italian), no `.is` (English
+personal sites use it as a word), no `.tw` (the .tw feeds here are largely
+English-writing developers), no `.bg` (the Bulgarian-hosted papers in the list are
+the Turkish-language minority press) — and nothing where English is a major
+publishing language (`.in`, `.sg`, `.za`, `.ph`). `language:bulgarian` stays in the
+vocabulary for hand decisions: the script rule mislabels Cyrillic Bulgarian as
+russian today, and fixing that is a data pass this rule deliberately does not do.
 
 `language:english` is normally omitted. The one exception is a feed that is a
 translation of a non-English site, where naming the language is what tells the

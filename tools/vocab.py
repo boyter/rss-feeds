@@ -170,6 +170,14 @@ def merge_tags(keep, override, suggested, vocab, scope="host"):
     # touches topics only: region:/language:/type: suggestions pass through.
     if any(t.startswith("topic:") for t in keep):
         suggested = [t for t in suggested if not t.startswith("topic:")]
+    # A feed has one language. A hand rule, or a tag already in feeds.json, names
+    # it; the rules may fill a blank but must not create a second one. Without
+    # this, the ccTLD language rule would stamp language:german onto the German
+    # service of a Ukrainian paper that already says language:german... and onto
+    # 112.ua/en/rss.xml, whose hand rule says language:english, giving it two.
+    if any(t.startswith("language:") for t in keep) or \
+       any(t.startswith("language:") for t in override):
+        suggested = [t for t in suggested if not t.startswith("language:")]
     tags = normalize(sorted(set(keep) | set(override) | set(suggested)))
     types = facet(tags, "type")
     if len(types) > 1:

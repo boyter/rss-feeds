@@ -20,12 +20,96 @@ import unittest
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "tools"))
 
 import paths
+import classify
 import decide
 import rebuild
 import removals
 import triage
 import add
 import vocab as vocab_mod
+
+
+class TestALanguageFromTheDomain(unittest.TestCase):
+    """A ccTLD names a language when the script cannot.
+
+    Pinned on the measured gap: LANG_RULES can only see a language through its
+    script (Hangul, kana, Han, Arabic, Cyrillic), so every Latin-script language
+    was invisible to it. 1,448 shipped feeds sat on a strong-language ccTLD with
+    no language: tag while 1,711 identical-shape feeds had one, and TAGS.md
+    omits language: for English - so a .de feed with no tag reads as English.
+    Remove the language_for() call in classify.suggest and only the first test
+    fails; delete an entry from CC_LANG's guard test and the last one fails.
+    """
+
+    def setUp(self):
+        self.vocab = vocab_mod.load()
+        # classify filters its suggestions through a module-level VOCAB that main()
+        # fills from TAGS.md. Called from a test it is an empty set and every
+        # suggestion would be discarded, so load it the way main() does.
+        classify.VOCAB = self.vocab
+
+    def suggested(self, url, title="", desc="", items=()):
+        return classify.suggest({"url": url, "title": title, "description": desc,
+                                 "items": list(items)}, [])[0]
+
+    def test_a_strong_language_cctld_gives_the_language(self):
+        got = self.suggested("https://beispiel.de/feed", "Der wöchentliche Podcast")
+        self.assertIn("language:german", got)
+
+    def test_a_generic_registry_says_nothing_about_language(self):
+        # The over-match this rule must not create: example.com and example.io
+        # carry no information about who writes in what.
+        for u in ("https://example.com/feed", "https://example.io/feed",
+                  "https://example.me/feed"):
+            got = self.suggested(u, "Weekly notes")
+            self.assertFalse([t for t in got if t.startswith("language:")], u)
+
+    def test_english_speaking_registries_are_not_mapped(self):
+        # India, Singapore and South Africa publish enormously in English; a .in
+        # feed is not evidence of Hindi any more than a .za feed of Afrikaans.
+        for u in ("https://example.in/feed", "https://example.co.za/feed",
+                  "https://example.com.sg/feed", "https://example.ph/feed"):
+            got = self.suggested(u, "Weekly notes")
+            self.assertFalse([t for t in got if t.startswith("language:")], u)
+
+    def test_script_evidence_outranks_the_domain(self):
+        # A Russian-language feed hosted in Germany is a Russian feed. The script
+        # rules read the text and run first; the domain is an inference about the
+        # publisher and may not overwrite what the bytes say.
+        got = self.suggested("https://beispiel.de/feed",
+                             "Новости недели", "Обзор", ["новости"])
+        self.assertIn("language:russian", got)
+        self.assertNotIn("language:german", got)
+
+    def test_a_feed_that_names_a_language_gains_no_second_one(self):
+        # 112.ua/en/rss.xml is the English service of a Ukrainian paper and its
+        # hand rule says language:english; .ua maps to ukrainian, so the ccTLD rule
+        # would have handed it a second language. 146 shipped feeds already carry
+        # two language tags from before this guard - the rules may fill a blank,
+        # never a second answer. Remove the language guard in vocab.merge_tags and
+        # only this test fails.
+        got = vocab_mod.merge_tags(["language:english", "type:publication"], [],
+                                  ["language:ukrainian"], self.vocab)[0]
+        self.assertEqual(got, ["language:english", "type:publication"])
+
+    def test_a_hand_rule_language_survives_the_ccTLD_guess(self):
+        # The same guard seen from the override side: the decision speaks, the
+        # domain does not get a vote.
+        got = vocab_mod.merge_tags(["type:publication"], ["language:german"],
+                                  ["language:ukrainian"], self.vocab)[0]
+        self.assertEqual(got, ["language:german", "type:publication"])
+
+    def test_rules_may_still_fill_a_blank_language(self):
+        got = vocab_mod.merge_tags(["type:publication"], [],
+                                  ["language:german"], self.vocab)[0]
+        self.assertIn("language:german", got)
+
+    def test_every_language_the_map_can_emit_is_in_the_vocabulary(self):
+        # A tag outside TAGS.md is dropped by merge_tags and reported as
+        # "dropped tags not in TAGS.md" on every run - a rule that emits a tag the
+        # vocabulary rejects is a rule that silently does nothing.
+        missing = {f"language:{v}" for v in classify.CC_LANG.values()} - self.vocab
+        self.assertEqual(missing, set(), f"add these to TAGS.md: {missing}")
 
 
 class TriagePrecedence(unittest.TestCase):
