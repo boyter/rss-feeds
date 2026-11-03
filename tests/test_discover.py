@@ -201,6 +201,40 @@ class TestTagCascade(unittest.TestCase):
             self.assertNotIn("topic:science", r["tags"],
                              "a sibling channel's topic was copied onto a different channel")
 
+    def test_a_comments_feed_is_not_merged_even_when_its_url_is_ordinary(self):
+        # betterexplained.com: the oracle offered
+        # /articles/using-json-to-exchange-data/feed/, a normal content path, and
+        # only the fetched <title> said what it was. Its items were "By: joshua",
+        # "By: jasa pembuatan website sekolah" - WordPress comment spam. The
+        # URL-shape filter cannot see that, so the title is checked where the
+        # title is our own observation. Remove the COMMENT_FEED_TITLE check in
+        # cmd_tag and only this test fails.
+        url = "https://betterexplained.example.com/articles/using-json/feed/"
+        cands = [{"url": url, "tags": [], "hintTopics": [], "hintType": None,
+                  "category": ""}]
+        probed = [{"url": url, "isFeed": True, "status": 200,
+                   "title": "Comments on: Using JSON to Exchange Data",
+                   "description": "Math lessons that click",
+                   "items": ["By: joshua", "By: jasa pembuatan website sekolah"]}]
+        overrides = [{"key": "betterexplained.example.com",
+                      "tags": ["topic:mathematics", "type:publication"]}]
+        self.assertEqual(self.run_tag(cands, probed, (), overrides), [])
+
+    def test_a_feed_whose_NAME_is_comments_is_still_merged(self):
+        # The false positive the rule above must not create: a discussion feed
+        # genuinely named for commenting is content. WordPress writes the comment
+        # feed as "Comments on: <post title>", so the colon is what is matched.
+        url = "https://thinker.example.org/feed/"
+        cands = [{"url": url, "tags": [], "hintTopics": [], "hintType": None,
+                  "category": ""}]
+        probed = [{"url": url, "isFeed": True, "status": 200,
+                   "title": "Comments on the State of the Union",
+                   "description": "A politics round-table", "items": ["a debate"]}]
+        overrides = [{"key": "thinker.example.org",
+                      "tags": ["topic:politics", "type:podcast"]}]
+        out = self.run_tag(cands, probed, (), overrides)
+        self.assertEqual([r["url"] for r in out], [url])
+
     def test_a_curated_category_beats_a_channels_own_headlines(self):
         cands = [{"url": "https://www.youtube.com/feeds/videos.xml?channel_id=CRIC",
                   "tags": [], "hostTags": ["topic:science", "type:video"],
@@ -306,6 +340,37 @@ class TestOracleLeads(unittest.TestCase):
         ok, _ = discover.is_plausible_feed(
             "https://blogs.bmj.com/bmj/category/medical-ethics-2/feed/")
         self.assertTrue(ok)
+
+
+class TestCommentFeedsAreNotCarried(unittest.TestCase):
+    """A site's comment traffic is not its content.
+
+    Pinned on the oracle channel: the feed index named five Blogger comment feeds
+    for one site our list already carries (`/feeds/<post id>/comments/default`),
+    and NOT_WORTH_CARRYING only knew the WordPress shapes (`/comments/feed`,
+    `/feed/comments`, `/comments/rss`), so five feeds nobody wanted walked into the
+    merge. Revert the `comments/(default|full|rss2|atom)` alternative in
+    discover.NOT_WORTH_CARRYING and only the first test fails.
+    """
+
+    def test_a_blogger_comment_feed_is_not_carried(self):
+        ok, why = discover.worth_carrying(
+            "https://blog.cornelius-schumacher.de/feeds/1873444370047691750/comments/default")
+        self.assertFalse(ok)
+        self.assertEqual(why, "comment feed")
+
+    def test_a_blogger_content_feed_is_still_carried(self):
+        # The false positive this rule must not create: the same Blogger site
+        # publishes its CONTENT at /feeds/posts/default. Keying on /feeds/ instead
+        # of on /comments/ would have deleted a site's whole feed.
+        ok, _ = discover.worth_carrying("https://blog.example.com/feeds/posts/default")
+        self.assertTrue(ok)
+
+    def test_the_wordpress_shapes_are_still_dropped(self):
+        for u in ("https://example.com/comments/feed/",
+                  "https://example.com/feed/comments/",
+                  "https://example.com/comments/rss/"):
+            self.assertFalse(discover.worth_carrying(u)[0], u)
 
 
 class TestACandidatesTopicsComeFromItsOwnName(unittest.TestCase):

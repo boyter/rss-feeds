@@ -234,7 +234,23 @@ def clean_url(u):
 # already list. Both were found in bulk by the sibling pass, so both are named
 # here and counted, never quietly dropped.
 NOT_WORTH_CARRYING = re.compile(
-    r"(^|/)(comments/feed|feed/comments|comments/rss)(/|$|\?)", re.I)
+    r"(^|/)(comments/feed|feed/comments|comments/rss"
+    # Blogger puts a post's comment feed at /feeds/<post id>/comments/default.
+    # Keyed on the /comments/ segment, never on /feeds/: the same site publishes
+    # its content at /feeds/posts/default, and cutting that would delete a live
+    # feed to stop a comment stream.
+    r"|comments/(default|full|rss2|atom))(/|$|\?)", re.I)
+# A comments feed whose URL looks like content. WordPress titles a comment feed
+# "Comments on: <post title>", and its URL can be an ordinary /articles/<slug>/feed/
+# path, so no URL shape reveals it: betterexplained.com offered exactly that, and
+# the items proved it - "By: joshua", "By: jasa pembuatan website sekolah", which
+# is comment spam, not an article. Checked in cmd_tag, where the title is one we
+# read from the fetched body rather than one an index claimed. The colon is
+# deliberate: a discussion feed genuinely named "Comments on the State of the
+# Union" is content and must survive.
+COMMENT_FEED_TITLE = re.compile(r"^\s*comments on\s*:", re.I)
+
+
 MIRROR_HOSTS = re.compile(
     r"(^|\.)(news\.google\.|go\.redirectingat\.|msn\.com|news\.microsoft\.|"
     r"news\.yahoo\.|bing\.com|feedburner\.google\.com)$")
@@ -555,6 +571,11 @@ def cmd_tag(args):
             c["hintTopics"], c["hintType"] = category_tags(c["category"], voc)
         rec = {k: r.get(k) for k in ("url", "title", "description", "items")}
         rec["url"] = c["url"]
+        if COMMENT_FEED_TITLE.match(rec.get("title") or ""):
+            # Counted, never quietly skipped: choosing not to take a feed we
+            # could have taken is a fact about what this channel yields.
+            stats["dropped:comment feed (title)"] += 1
+            continue
         rule_tags, why = classify.suggest(rec, [])
         # A candidate is about to be pinned forever, so the only text allowed to
         # decide its topics is the feed's own name and description. classify's
