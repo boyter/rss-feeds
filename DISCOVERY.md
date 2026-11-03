@@ -1017,3 +1017,49 @@ titled. Against pre-tranche HEAD: +1,180, 0 removed, **zero shipped rows
 changed** (the 160 adjusted rows are all new rows gaining region:/language:
 or the pinned corrections). Fixed point byte-identical, 132 tests pass.
 Untagged queue 1,791 -> 1,279.
+
+## Structural pile-up fix (2026-11-04, commit d342fac)
+
+A tooling pass, not a settle. No feeds added, removed, or re-tagged: the fixed
+point is **byte-identical** (`classify && rebuild --write && cmp`).
+
+**The bug.** `merge_tags` excludes the rules' topics only when a *hand decision*
+(override) speaks to the topic facet. A sibling-generalized feed — one whose topic
+came from the candidate's own tags, written into `feeds.json` by `add.py merge`,
+with **no URL override of its own** — never hits that exclusion. So the headline
+keyword rules (matched over 6 item titles) lay a second topic on a feed that
+already had one: a golf podcast gaining `topic:ai` because an episode mentioned
+AI. Measured at ~8–10% of new rows per tranche (tranches 15–17), ~15 title-obvious
+pins per tranche by hand.
+
+**The fix.** In `merge_tags` (the single source of tag precedence, shared by
+`classify.py` and `rebuild.py`): when `keep` already carries a `topic:`, drop the
+`topic:` tags from `suggested`. A feed that already has a topic has a *decided*
+topic facet — set by a hand decision, a sibling generalization, or the feed's own
+name and description — and the rules read headlines, which is not a decision.
+Rules still bootstrap a feed with **no** topic, and the filter touches topics
+only (`region:`/`language:`/`type:` pass through). This is the per-tranche pinning
+automated, and it subsumes it: no more pins needed going forward.
+
+**Why byte-identical, and why.** At a fixed point every topic the rules would
+add is already in `keep` (a prior rebuild wrote it), so filtering `suggested`
+changes nothing for the shipped product. The fix only stops the *next* rebuild
+(from a re-harvest, or a new merged feed) from piling. That is the proof it is a
+tooling change, not a data change.
+
+**Tests.** 132 -> 135. The old `test_a_type_only_override_does_not_strip_topics`
+mis-wrote its own comment (it asserted a headline topic *piles onto* a feed that
+already had a topic — the bug, pinned as a feature). Split into three: a
+type-only override does not strip a decided topic; rules still bootstrap a
+no-topic feed; and two new pile-up tests that **fail without the guard** (the
+bootstrap test passes both ways, so the guard is what the pile-up tests turn on).
+
+**Not retro-cleaned.** The fix filters what would be *added*, not what is
+already in `keep`. The existing pile remains: **~1,976 rows (6.2%), ~2,953
+noise topic instances**, by the precise signature (a topic a rule fires for on
+the headlines but not on the feed's own name/description, and that no override
+covers). Upper bound — feeds in other languages are false positives (Gitarrenkram
+is correctly `topic:music`; the English rule did not fire on the German name).
+A mechanical removal is not safe: `feeds.json` has no per-tag provenance, and the
+invariant needs an explicit human decision to drop a tag. Left frozen (owner
+decision on a bounded judgment cleanup pass is open).
