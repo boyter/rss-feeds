@@ -1,0 +1,57 @@
+# tranche 20 — one bad HOST rule replaced by per-section truth, plus corrections.
+#
+# baohungyen.vn (Báo Hưng Yên điện tử, a Vietnamese provincial daily) carries a
+# host rule written by an earlier queue pass:
+#   region:asia topic:food topic:military topic:news type:publication
+# It reads as though someone listed two sections of the site and stamped them on
+# the whole domain. It is right for two of the site's feeds and wrong for eleven:
+# the life, travel, investment, heritage and reader-pages desks are neither about
+# food nor about the military. A host rule generalizes, so this one generalized a
+# coincidence. Replaced by the rule the site actually is (a news daily); the
+# sections that DO have a subject get URL rules of their own, so the correction
+# takes nothing away that was right.
+# --allow-type-change is deliberate: this IS the decision, and rebuild --write
+# reports every tag the old rule used to give.
+baohungyen.vn	region:asia language:vietnamese topic:news type:publication
+
+# the two sections the old host rule happened to be right about, pinned so the
+# correction cannot take them (ẩm thực = cuisine; an ninh - quốc phòng = public
+# security and national defence)
+https://baohungyen.vn/rss/news/am-thuc.rss	region:asia language:vietnamese topic:food type:publication
+https://baohungyen.vn/rss/news/an-ninh-quoc-phong.rss	region:asia language:vietnamese topic:security topic:military type:publication
+
+# the sections it was wrong about, read from their own names
+https://baohungyen.vn/rss/news/an-ninh-trat-tu.rss	region:asia language:vietnamese topic:security topic:news type:publication
+https://baohungyen.vn/rss/news/bao-ve-nen-tang-tu-tuong-cua-dang.rss	region:asia language:vietnamese topic:politics type:publication
+https://baohungyen.vn/rss/news/cai-cach-hanh-chinh.rss	region:asia language:vietnamese topic:government type:publication
+https://baohungyen.vn/rss/news/dat-va-nguoi-hung-yen.rss	region:asia language:vietnamese topic:history topic:art type:publication
+https://baohungyen.vn/rss/news/dau-tu.rss	region:asia language:vietnamese topic:business type:publication
+https://baohungyen.vn/rss/news/di-tich-le-hoi.rss	region:asia language:vietnamese topic:history topic:art type:publication
+https://baohungyen.vn/rss/news/doi-song.rss	region:asia language:vietnamese topic:lifestyle type:publication
+https://baohungyen.vn/rss/news/doi-song-van-hoa.rss	region:asia language:vietnamese topic:art topic:lifestyle type:publication
+https://baohungyen.vn/rss/news/du-lich.rss	region:asia language:vietnamese topic:travel type:publication
+https://baohungyen.vn/rss/news/giao-thong-xay-dung.rss	region:asia language:vietnamese topic:transport topic:infrastructure type:publication
+https://baohungyen.vn/rss/news/hoat-dong-cua-doan-dai-bieu-quoc-hoi-tinh-va-hdnd-cac-cap.rss	region:asia language:vietnamese topic:politics topic:government type:publication
+https://baohungyen.vn/rss/audio/podcast.rss	region:asia language:vietnamese topic:media type:podcast
+
+# two rules written in tranche 19 named only topic+type, so their rows lost the
+# region:asia every other feed on this host carries. Re-written additively for the
+# same keys, which is how AGENTS.md says to fix an under-specified rule.
+https://baohungyen.vn/rss/news/giao-duc.rss	region:asia language:vietnamese topic:education type:publication
+https://baohungyen.vn/rss/news/giai-tri.rss	region:asia language:vietnamese topic:entertainment type:publication
+
+# corrections in this tranche (cafelatteau.substack.com, an erotica feed, is NOT here: TAGS.md has no sexuality/adult tag and that is an open owner policy call, so it stays in the untagged queue)'s tagged rows, each read from the feed's own
+# description (the tagger matched a word, not the subject)
+https://bulinews.com/news/rss.xml	topic:sport type:publication
+https://canadahealthwatch.substack.com/feed	topic:health topic:politics type:newsletter
+https://canadianzionistforum.substack.com/feed	topic:politics topic:religion type:newsletter
+https://captainpaulwatson.substack.com/feed	topic:environment topic:books type:newsletter
+https://carfreeamerica.substack.com/feed	topic:transport topic:politics type:newsletter
+https://cancelme.substack.com/feed	topic:personal type:newsletter
+https://cachemiss.xyz/blog/feed.xml	topic:programming topic:software-engineering type:personal-blog
+https://cabreza.substack.com/feed	topic:ai topic:infrastructure topic:software-engineering type:newsletter
+
+# azadhindtimes.com: an Indian Hindi daily whose category feeds are Devanagari.
+# Devanagari has no script rule yet (documented gap), so the language is written
+# once at the host level and every category feed inherits it.
+azadhindtimes.com	topic:news type:publication language:hindi
