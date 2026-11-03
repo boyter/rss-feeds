@@ -23353,3 +23353,24 @@
 {"key": "https://brokeish.libsyn.com/rss", "tags": ["topic:finance", "type:podcast"]}
 {"key": "https://brighterthinkingpod.libsyn.com/rss", "tags": ["topic:business", "type:podcast"]}
 {"key": "https://britishacademyofmanagement.substack.com/feed", "tags": ["topic:business", "type:newsletter"]}
+{"key": "https://8-4.jp/ja/feed/", "tags": ["language:japanese", "topic:gaming", "type:vendor-blog"]}
+{"key": "https://feeds.theincomparable.com/acp", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://feeds.theincomparable.com/batmanuniversity", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://feeds.theincomparable.com/bonustrack", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://feeds.theincomparable.com/cartooncast", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://feeds.theincomparable.com/chickflickfix", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://feeds.theincomparable.com/cots", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://media.rss.com/dtnunhinged/feed.xml", "tags": ["topic:sport", "type:podcast"]}
+{"key": "https://billmei.substack.com/feed", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://craphound.com/feed/", "tags": ["topic:books", "topic:tech-industry", "type:personal-blog"]}
+{"key": "http://droettboom.com/feeds/all.atom.xml", "tags": ["topic:open-source", "topic:software-engineering", "type:personal-blog"]}
+{"key": "https://www.blogger.com/feeds/1780313140812545284/posts/default", "tags": ["topic:animals", "type:institution"]}
+{"key": "https://www.blogger.com/feeds/8997727588422391656/posts/default", "tags": ["topic:software-engineering", "type:personal-blog"]}
+{"key": "https://blogs.ed.ac.uk/EFIstudentexhibitions/feed/", "tags": ["region:uk", "topic:art", "type:institution"]}
+{"key": "https://blogs.ed.ac.uk/caliphalfinances/feed/", "tags": ["region:uk", "topic:finance", "topic:history", "type:institution"]}
+{"key": "https://blogs.ed.ac.uk/ecalibrary/feed/", "tags": ["region:uk", "topic:art", "topic:education", "type:institution"]}
+{"key": "https://blogs.ed.ac.uk/imes/feed/", "tags": ["region:uk", "topic:history", "topic:religion", "type:institution"]}
+{"key": "https://blogs.ed.ac.uk/research-bow/feed/", "tags": ["region:uk", "topic:education", "type:institution"]}
+{"key": "https://niemanstoryboard.org/category/podcast/feed/", "tags": ["topic:journalism", "type:podcast"]}
+{"key": "https://blexmedia.com/feed/podcast/blex-media/", "tags": ["region:usa", "topic:entertainment", "type:podcast"]}
+{"key": "https://developers.openai.com/codex/changelog/rss.xml", "tags": ["topic:ai", "topic:software-engineering", "type:vendor-blog"]}

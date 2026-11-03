@@ -1098,3 +1098,81 @@ is a missing relevant tag on a small set, not a corrupted feed.
 rebuild --write && cmp` is byte-identical, so the removals do not come back under
 the fixed rule, and the write matches the pipeline format exactly. 135 tests
 pass. Diff of all 1,176 lines saved at `/tmp/pileup-cleanup.diff`.
+
+## Tranche 18: the per-host oracle run wide for the first time (2026-11-04)
+
+The oracle channel had only ever been run on hand-picked site lists. This asked
+**500 never-asked single-feed hosts** — strided every 33rd through the sorted
+list of 16,706, so the yield is honest for extrapolation rather than
+alphabetical-first.
+
+| | |
+|---|---|
+| hosts asked | 500 (index knew none for **398**, 80%) |
+| index claims | 307 feeds on 102 hosts |
+| filters | comment feed 45, duplicate in batch 8, feed under a page 1, per-site cap 95 |
+| leads written | 158 |
+| probed, answered as a feed | **143 (91%)** |
+| already in the product | **93 of the 143** (78 by URL, 15 by `norm_key` — mostly `www.` variants) |
+| genuinely new | 50 → **30 added**, 10 left in the untagged queue, 10 skipped |
+| hand decisions | 21 URL rules in `overrides.jsonl` (23,355 → 23,376) |
+| product | **31,921 → 31,951 feeds** (23,325 → 23,329 hosts, 31,553 → 31,583 titled), zero removals, zero pre-existing rows changed |
+| harvest | 34,710 → 34,740 records; all 30 new rows recorded `isFeed=true` |
+
+**What this channel is, measured.** It is *repair*, not volume: 65% of what the
+index says a site has, we already have. The feeds are high quality (the host is
+already vetted) and the probe rate is the best of any channel (91%), but the
+new-feed yield is **6 added feeds per 100 hosts asked**. Extrapolated, the
+remaining ~16,200 never-asked single-feed hosts are worth **~970 feeds**, at one
+query per second — roughly 4.5 hours of asking for a thousand feeds. `amp
+--all` gets ~370 feeds per half-hour pass. So the oracle complements the
+directory; it does not replace it. Its other use is fixing hosts we carry on one
+feed only.
+
+**The 10 skipped, and why** (all counted, none quietly dropped):
+- 5 tag-archive feeds of one personal blog (`blog.chand1012.dev/tags/{beginner,
+  cars,cli,computer,devops}/index.xml`) — slices of the single stream whose site
+  feed we already carry. A site's editorial *section* (a newspaper's desks, a
+  podcast archive) is a content unit and stays wanted; a tag slice of one person's
+  stream is the index being exhaustive on our behalf. `--max-leads-per-site 6`
+  allowed them, so the cap alone does not stop this.
+- 3 WordPress comment feeds (`betterexplained.com/articles/…/feed/`,
+  `asiapacificreport.nz/news/feed/`, an Edinburgh course blog) — caught by the new
+  title rule below.
+- 1 RSS serialization of a feed we carry as Atom (`adambien.blog/…/entries/rss`
+  vs `…/entries/atom`), and 1 legacy libsyn URL of a podcast we add under its
+  current URL (`feeds.libsyn.com/150914/rss` = `anglotopia.libsyn.com/rss`).
+
+**Tooling found by this tranche: comment feeds with ordinary-looking URLs.**
+`NOT_WORTH_CARRYING` only knew the WordPress shapes (`/comments/feed`,
+`/feed/comments`, `/comments/rss`). Two other shapes walk through it:
+- Blogger puts a post's comment feed at `/feeds/<post id>/comments/default`.
+  Five arrived from one site. The rule now matches `comments/(default|full|rss2|
+  atom)`, keyed on the `/comments/` segment and never on `/feeds/`, because the
+  same Blogger site publishes its **content** at `/feeds/posts/default`.
+  Across the 500 hosts this caught 20 more comment feeds (45 dropped vs 25).
+- WordPress titles a comment feed `Comments on: <post title>` while its URL is an
+  ordinary `/articles/<slug>/feed/` path. No URL shape reveals it; the items do
+  (`By: joshua`, `By: jasa pembuatan website sekolah` — comment spam). Checked in
+  `cmd_tag`, where the title is one we read from the fetched body, and anchored on
+  the colon so a discussion feed genuinely named "Comments on the State of the
+  Union" survives. It dropped 10 rows across the candidate set.
+
+5 new tests, 140 total, each failing without its fix (verified by reverting on a
+copy). The pile-up fix from earlier in this session is why no pile-up pins were
+needed here: 8 of the 30 new rows carry two topics and every one is a decision,
+not a headline keyword.
+
+**Catches the human read made** (the reason the tagger is not left alone):
+- `DTN UNHINGED` — "DTN" is Daily Tech News, and its items are `Gaal Vs Aiava |
+  WTA VS ATP`: a tennis show. `topic:sport`, not tech.
+- `8-4.jp/ja/feed/` is the Japanese-language twin of the English feed we carry.
+  TAGS.md says naming the language is what tells two feeds on one host apart, so
+  it carries `language:japanese`.
+- Five Edinburgh University blogs share one host, but each is its own publisher,
+  so each got a URL rule; a host rule would stamp one blog's subject on all.
+- `premium.boingboing.net/feed` and `feeds.allenpike.com/feed` are mirrors of
+  feeds we already carry; `bif.rs/feed/atom/` is the Atom serialization of a feed
+  we carry as RSS; `api.flickr.com/…/photos_public.gne` ("Uploads from everyone")
+  is a firehose, not a publisher — and no photography tag exists, so there is
+  nothing honest to call it.
