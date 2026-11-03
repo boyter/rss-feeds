@@ -1063,3 +1063,38 @@ is correctly `topic:music`; the English rule did not fire on the German name).
 A mechanical removal is not safe: `feeds.json` has no per-tag provenance, and the
 invariant needs an explicit human decision to drop a tag. Left frozen (owner
 decision on a bounded judgment cleanup pass is open).
+
+## Pile-up retro-clean (2026-11-04, after the structural fix)
+
+A data change, decided by the owner. Removes the accumulated pile-up the
+structural fix (d342fac) only froze. **1,176 feeds, 1,481 topics removed.**
+No feed removed, no title/type/region/language changed, no feed left without a
+topic.
+
+**The removal set** (per feed, from `draft.jsonl` — the same ground truth
+`rebuild.py` applies): a topic is removed only if it (a) is a rule topic that
+fires on the full haystack (title+desc+6 headlines), (b) does **not** fire on
+the feed's own name/description alone, and (c) is **not** in the feed's `final`
+override — i.e. it is specifically a headline pile-up, not a decided tag and not
+an identity-supported tag. The guard: a feed is touched only if it keeps at
+least one topic (its anchor). That means never a decided tag, never a tag the
+feed's own name supports, never a non-firing (sibling) tag, never a feed's last
+topic.
+
+**Skipped (left frozen):** non-ASCII-name feeds (~199, foreign languages —
+English keyword rules can't validate them; a German "Musikproduktion" podcast is
+correctly `topic:music`) and no-anchor feeds (~231, every topic piled, so there
+is no decided/identity topic to keep — a guess either way).
+
+**Honest cost.** Sampled 60 ASCII feeds: ~85% are clearly correct, ~15% removed
+a topic that is arguably the feed's real subject but only matched via a headline
+because the name is cryptic/abbreviated — `SingularityHub` lost `topic:ai` (kept
+`science`), `SEI Blog` lost `topic:programming`, `Body Bites` lost `topic:health`.
+In every case the feed keeps an anchor and the change is one line in git
+history (restore = re-add the tag). The net is strictly less noise; the residual
+is a missing relevant tag on a small set, not a corrupted feed.
+
+**Proof.** The cleaned `feeds.json` is a stable fixed point: `classify &&
+rebuild --write && cmp` is byte-identical, so the removals do not come back under
+the fixed rule, and the write matches the pipeline format exactly. 135 tests
+pass. Diff of all 1,176 lines saved at `/tmp/pileup-cleanup.diff`.
