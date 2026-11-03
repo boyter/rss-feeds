@@ -1414,3 +1414,49 @@ of the time and the failures are exactly the word-sense class above.
 declined-but-still-offered feeds. Three declines, no declined-URL list: until either
 `spam.jsonl` bans them (owner decision) or `add.py merge` consults a declined file,
 every tranche re-offers them and every tranche has to re-decline them.
+
+## Tranche 22: fifth amp pass (2026-11-04)
+
+| step | count |
+|---|---|
+| candidates | 1,499 |
+| served a real feed | 1,361 (**91%**) |
+| taggable | 392 |
+| merged | **392**, nothing declined |
+| hand rules | 36 |
+| still untagged | 5,228 |
+
+Product 33,047 → **33,439 feeds**, hosts → 24,573. **Zero removals, zero
+pre-existing rows changed**, fixed point byte-identical, `--strict` 0, 148 tests.
+
+**Word-sense again, and it is cheap to beat.** 34 of 392 rows (9%) were wrong, all of
+them visible only in the description: `topic:food` on a **VFX/3D blog** called *CGI
+Coffee*; `topic:programming` on a **recipe** newsletter because the author's handle
+is *Chef*; `topic:hardware` on a **chess** newsletter called *The Chess Circuit*;
+`topic:web-development` on a **philosophy** newsletter (*Fear Is a Liar*) and on a
+**French school radio** show; `topic:music` on a **comedian's** show; `topic:history`
+on a **Duke basketball** podcast because its own blurb says *"a legacy … history"*.
+Fetching 36 descriptions at 1 request/s costs about 40 seconds and settles all of it.
+
+**A host rule of my own, and decide.py caught me writing it badly.** The Duke desk
+came out `topic:history`; every other Beatline feed on the same host came out
+`sport`. The right fix is one host rule (`cdn.beatlinesports.com → topic:sport
+type:podcast`), and I first wrote it as `https://cdn.beatlinesports.com` — scheme, no
+path. `decide.py` refused: *"URL rule with no path matches one exact URL; a host rule
+(no slash) is usually what is meant."* The validator is earning its keep on my own
+mistakes, not just the tagger's.
+
+**Amar Ujala for the third tranche running.** Two more city desks
+(`bhind`, `bhiwani`) arrived bootstrapped from that day's headlines
+(`topic:business topic:politics`, `topic:education topic:politics`) and pinned by
+hand. Nine desks pinned across three tranches; the host rule is right and the
+bootstrap path keeps going around it. If a sixth tranche brings two more, the
+cumulative cost has passed the cost of answering the structural question in
+DISCOVERY.md (tranche 21).
+
+**One false alarm worth recording, because it will recur.** Two Bhaskar rows looked
+like they were missing `language:hindi` in `data/candidates.tagged.jsonl`. They are
+not: all 25 `bhaskar.com` rows in the product carry it. The candidate file shows only
+the tags the *tagging* path decided and omits what a **host rule** contributes
+(`language:`, `region:`) — rebuild adds those later. Check the product, never
+`candidates.tagged.jsonl`, when asking whether a tag is present.

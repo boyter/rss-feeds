@@ -1,0 +1,78 @@
+# tranche 22 - corrections, each read from the feed's own description (quoted).
+# Same class as tranche 21: word-sense, not jargon. topic:food from 'Coffee' (a VFX blog),
+# topic:programming from 'Chef' (a recipe newsletter), topic:hardware from 'Circuit' (chess),
+# topic:history from the word history inside a sports team's own blurb, topic:web-development
+# on a philosophy newsletter and on a French school radio. No new tags: every tag used is
+# already in TAGS.md. Nothing declined this tranche.
+# a German mother-and-child podcast ("Kitabesichtigungen und Babyschwimmen") that carried topic:news topic:travel
+https://aod.nrjaudio.fm/xml/2058.xml	language:german region:germany topic:lifestyle type:podcast
+# HOST rule: every feed on the site is a daily team podcast; the Duke desk had topic:history because its own blurb says "a legacy" and "history"
+cdn.beatlinesports.com	topic:sport type:podcast
+# "Testing to see if good science can be done at home" - topic:software-engineering appears nowhere in it
+https://chillphysicsenjoyer.substack.com/feed	topic:science topic:mathematics type:newsletter
+# "safe blood collection practices ... and the history behind our profession" - medicine was missing
+https://centerforphlebotomyeducation.substack.com/feed	topic:medicine topic:education type:newsletter
+# city council and park-board recordings published by the city of Centerville, MN
+https://centervillemn.podbean.com/feed.xml	topic:government topic:media type:podcast
+# sermons from a church ("family of Christ-followers") - had topic:history
+https://centralrr.sermon.net/rss/main/audio	topic:religion topic:media type:podcast
+# same church, the other feed shape
+https://centralrr.sermon.net/rss/main	topic:religion topic:media type:podcast
+# "Jots and thoughts from a cybersecurity enthusiast" - one person, not a vendor
+https://cephalosec.com/blog/rss/	topic:security type:personal-blog
+# "my space to post whatever longform writing ... I am a furry/animal artist" - had topic:science
+https://cerberus.bearblog.dev/feed	topic:personal topic:art type:personal-blog
+# "all things 3D, VFX and CGI" - topic:food came from the word Coffee in the title
+https://cgicoffee.com/blog/feed/rss	topic:graphics topic:design type:personal-blog
+# "Musings from life and the meditation space" - had topic:science
+https://chanell.substack.com/feed	topic:health topic:lifestyle type:newsletter
+# writer/activist on democracy and midterms - had topic:tech-industry
+https://charlotteenfrance.substack.com/feed	topic:politics topic:government type:newsletter
+# entrepreneur and Love Is Blind cast member - had topic:security
+https://chaselifewithkelly.libsyn.com/rss	topic:business topic:entertainment type:podcast
+# "Christian, Marketplace Ministry, Faith, Kingdom Business" - religion was missing entirely
+https://chasingthekingdom.podbean.com/feed.xml	topic:religion topic:business type:podcast
+# travels and destination dressing - had topic:science
+https://checkthebag.substack.com/feed	topic:travel topic:design type:newsletter
+# ballots, elections, voter-integrity claims - had topic:tech-industry
+https://checkmyvote.substack.com/feed	topic:politics topic:government type:newsletter
+# recipe community; topic:programming is the config-management tool Chef, not this feed
+https://chefbai.substack.com/feed	topic:food type:newsletter
+# private-chef recipes; topic:sport came from "NBA Champion Jayson Tatum" in the bio
+https://cheftrenita.substack.com/feed	topic:food type:newsletter
+# a Brazilian import/trade podcast - topic:infrastructure came from "Container compartilhado"
+https://chinagate.podbean.com/feed.xml	language:portuguese region:latin-america topic:business type:podcast
+# "slow down, create sacred space, healing hearts minds and bodies" - had topic:science
+https://api.substack.com/feed/podcast/1043339.rss	topic:health topic:lifestyle type:newsletter
+# mental and emotional wellbeing plus parenting - had topic:science
+https://cheranderton.substack.com/feed	topic:health topic:lifestyle type:newsletter
+# a HuffPost Culture & Arts feed tagged only topic:news
+https://chaski.huffpost.com/us/auto/topic/podcasts	topic:art topic:news type:aggregator
+# "Short essays on fear, perception, and the difference between reaction and clarity" - had topic:web-development
+https://charlesfglassmanmd.substack.com/feed	topic:philosophy topic:personal type:newsletter
+# the school radio of lycee Jacques Cartier, Saint-Malo - had topic:web-development type:vendor-blog
+https://audioblog.arteradio.com/blog/143493/rss	language:french region:france topic:education type:podcast
+# a travel blog - had type:vendor-blog
+https://cheigh.me/blog/feed.xml	topic:travel topic:personal type:personal-blog
+# illustration, sketchbooks and picture books - art was missing
+https://charlottedurance.substack.com/feed	topic:art topic:books type:newsletter
+# the "LLMs, from the Beginning" series - had topic:science
+https://ceres1.space/posts/index.xml	topic:ai topic:software-engineering type:personal-blog
+# "Mostly notes on algorithms" - the topic was right, the TYPE was wrong: personal site, not a vendor
+https://chaoxu.prof/rss.xml	topic:programming type:personal-blog
+# chess tournaments - topic:hardware came from the word Circuit
+https://chesscircuit.substack.com/feed	topic:gaming topic:sport type:newsletter
+# "Real snowflake macro photography by Alexey Kljatov" - had topic:data
+https://chaoticmind75.blogspot.com/feeds/posts/default	topic:art topic:science type:newsletter
+# Bowen family-systems theory and family therapy - had topic:business
+https://cfcevanston.substack.com/feed	topic:health topic:science type:newsletter
+# CME/CEU programs for diabetes care - had topic:business
+https://cgmeducation.net/podcasts/podcast.xml	topic:health topic:education type:podcast
+# "success, lifestyle, culture, politics, economics and history"
+https://charlesbosworth.substack.com/feed	topic:history topic:politics topic:economics type:newsletter
+# a comedian interview show - had topic:music
+https://chadzumock.libsyn.com/rss	topic:entertainment topic:media type:podcast
+# another Amar Ujala city desk bootstrapped from that day headlines
+https://amarujala.com/rss/bhind.xml	language:hindi region:india topic:news type:publication
+# another Amar Ujala city desk bootstrapped from that day headlines
+https://amarujala.com/rss/bhiwani.xml	language:hindi region:india topic:news type:publication
