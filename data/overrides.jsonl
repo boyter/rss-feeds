@@ -15040,7 +15040,7 @@
 {"key": "az.trend.az", "tags": ["topic:news", "type:publication"]}
 {"key": "azadehghareh.substack.com", "tags": ["topic:health", "topic:medicine", "type:newsletter"]}
 {"key": "azadehjoon.substack.com", "tags": ["region:usa", "topic:health", "topic:politics", "type:newsletter"]}
-{"key": "azadhindtimes.com", "tags": ["language:hindi", "region:india", "topic:news", "type:publication"]}
+{"key": "azadhindtimes.com", "tags": ["language:hindi", "topic:news", "type:publication"]}
 {"key": "azadmedia.az", "tags": ["topic:news", "type:publication"]}
 {"key": "azaiagenda.substack.com", "tags": ["region:usa", "topic:ai", "type:newsletter"]}
 {"key": "azalea-recorder-7bnk.squarespace.com", "tags": ["topic:personal", "type:podcast"]}
@@ -15622,7 +15622,7 @@
 {"key": "https://baogiaothong.vn/rss/home.rss", "tags": ["region:asia", "topic:news", "topic:transport", "type:publication"]}
 {"key": "https://baohatinh.vn/rss/home.rss", "tags": ["region:asia", "topic:news", "type:publication"]}
 {"key": "https://baohatinh.vn/rss/podcast-521.rss", "tags": ["region:asia", "topic:news", "type:podcast"]}
-{"key": "baohungyen.vn", "tags": ["region:asia", "topic:food", "topic:military", "topic:news", "type:publication"]}
+{"key": "baohungyen.vn", "tags": ["language:vietnamese", "region:asia", "topic:news", "type:publication"]}
 {"key": "https://baoism.substack.com/feed", "tags": ["topic:lifestyle", "topic:personal", "type:personal-blog"]}
 {"key": "https://baolangson.vn/rss/news/am-thuc-xu-lang.rss", "tags": ["region:asia", "topic:food", "type:publication"]}
 {"key": "https://baolangson.vn/rss/news/an-ninh-mang.rss", "tags": ["region:asia", "topic:security", "type:publication"]}
@@ -23378,8 +23378,8 @@
 {"key": "https://amarujala.com/rss/betul.xml", "tags": ["language:hindi", "region:india", "topic:news", "type:publication"]}
 {"key": "https://anchor.fm/s/1000c9af8/podcast/rss", "tags": ["language:spanish", "topic:music", "type:podcast"]}
 {"key": "https://backr24.ilsole24ore.com/podcast/essere-e-avere.xml", "tags": ["language:italian", "topic:business", "type:podcast"]}
-{"key": "https://baohungyen.vn/rss/news/giao-duc.rss", "tags": ["topic:education", "type:publication"]}
-{"key": "https://baohungyen.vn/rss/news/giai-tri.rss", "tags": ["topic:entertainment", "type:publication"]}
+{"key": "https://baohungyen.vn/rss/news/giao-duc.rss", "tags": ["language:vietnamese", "region:asia", "topic:education", "type:publication"]}
+{"key": "https://baohungyen.vn/rss/news/giai-tri.rss", "tags": ["language:vietnamese", "region:asia", "topic:entertainment", "type:publication"]}
 {"key": "https://brookewarner.substack.com/feed", "tags": ["topic:books", "topic:business", "type:personal-blog"]}
 {"key": "https://brrreadfan.github.io/feed.xml", "tags": ["topic:finance", "topic:music", "type:personal-blog"]}
 {"key": "https://bsiegelwax.substack.com/feed", "tags": ["topic:mathematics", "topic:science", "type:newsletter"]}
@@ -23394,3 +23394,25 @@
 {"key": "https://buybooks.substack.com/feed", "tags": ["topic:books", "type:newsletter"]}
 {"key": "https://bygraceming.substack.com/feed", "tags": ["topic:art", "type:newsletter"]}
 {"key": "https://bymiha.substack.com/feed", "tags": ["topic:lifestyle", "type:newsletter"]}
+{"key": "https://baohungyen.vn/rss/news/am-thuc.rss", "tags": ["language:vietnamese", "region:asia", "topic:food", "type:publication"]}
+{"key": "https://baohungyen.vn/rss/news/an-ninh-quoc-phong.rss", "tags": ["language:vietnamese", "region:asia", "topic:military", "topic:security", "type:publication"]}
+{"key": "https://baohungyen.vn/rss/news/an-ninh-trat-tu.rss", "tags": ["language:vietnamese", "region:asia", "topic:news", "topic:security", "type:publication"]}
+{"key": "https://baohungyen.vn/rss/news/bao-ve-nen-tang-tu-tuong-cua-dang.rss", "tags": ["language:vietnamese", "region:asia", "topic:politics", "type:publication"]}
+{"key": "https://baohungyen.vn/rss/news/cai-cach-hanh-chinh.rss", "tags": ["language:vietnamese", "region:asia", "topic:government", "type:publication"]}
+{"key": "https://baohungyen.vn/rss/news/dat-va-nguoi-hung-yen.rss", "tags": ["language:vietnamese", "region:asia", "topic:art", "topic:history", "type:publication"]}
+{"key": "https://baohungyen.vn/rss/news/dau-tu.rss", "tags": ["language:vietnamese", "region:asia", "topic:business", "type:publication"]}
+{"key": "https://baohungyen.vn/rss/news/di-tich-le-hoi.rss", "tags": ["language:vietnamese", "region:asia", "topic:art", "topic:history", "type:publication"]}
+{"key": "https://baohungyen.vn/rss/news/doi-song.rss", "tags": ["language:vietnamese", "region:asia", "topic:lifestyle", "type:publication"]}
+{"key": "https://baohungyen.vn/rss/news/doi-song-van-hoa.rss", "tags": ["language:vietnamese", "region:asia", "topic:art", "topic:lifestyle", "type:publication"]}
+{"key": "https://baohungyen.vn/rss/news/du-lich.rss", "tags": ["language:vietnamese", "region:asia", "topic:travel", "type:publication"]}
+{"key": "https://baohungyen.vn/rss/news/giao-thong-xay-dung.rss", "tags": ["language:vietnamese", "region:asia", "topic:infrastructure", "topic:transport", "type:publication"]}
+{"key": "https://baohungyen.vn/rss/news/hoat-dong-cua-doan-dai-bieu-quoc-hoi-tinh-va-hdnd-cac-cap.rss", "tags": ["language:vietnamese", "region:asia", "topic:government", "topic:politics", "type:publication"]}
+{"key": "https://baohungyen.vn/rss/audio/podcast.rss", "tags": ["language:vietnamese", "region:asia", "topic:media", "type:podcast"]}
+{"key": "https://bulinews.com/news/rss.xml", "tags": ["topic:sport", "type:publication"]}
+{"key": "https://canadahealthwatch.substack.com/feed", "tags": ["topic:health", "topic:politics", "type:newsletter"]}
+{"key": "https://canadianzionistforum.substack.com/feed", "tags": ["topic:politics", "topic:religion", "type:newsletter"]}
+{"key": "https://captainpaulwatson.substack.com/feed", "tags": ["topic:books", "topic:environment", "type:newsletter"]}
+{"key": "https://carfreeamerica.substack.com/feed", "tags": ["topic:politics", "topic:transport", "type:newsletter"]}
+{"key": "https://cancelme.substack.com/feed", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "https://cachemiss.xyz/blog/feed.xml", "tags": ["topic:programming", "topic:software-engineering", "type:personal-blog"]}
+{"key": "https://cabreza.substack.com/feed", "tags": ["topic:ai", "topic:infrastructure", "topic:software-engineering", "type:newsletter"]}

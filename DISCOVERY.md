@@ -1246,3 +1246,85 @@ Cyrillic rule labels Bulgarian feeds `language:russian` (168 Chasa, 24 Chasa),
 which a data pass could correct but this rule deliberately does not; and
 Devanagari, Thai, Greek-alphabet-but-not-Greek and Hebrew have no script rule at
 all, so `language:hindi` on the Amar Ujala feeds above is hand-written.
+
+## Tranche 20: the amp directory, third pass (2026-11-04)
+
+```bash
+python3 tools/discover.py amp --all --limit 1500 --max-per-host 2
+```
+
+| step | count |
+|---|---|
+| directory entries | 546,502 |
+| dropped: already probed | 27,775 |
+| dropped: per-host cap | 85,658 |
+| candidates this run | 1,497 |
+| served a real feed | 1,333 (**89%**) |
+| taggable | 370 |
+| still untagged (needs a human) | 3,183 |
+| merged | **370** (369 from this run + 1 leftover oracle lead) |
+| declined / parked | 4 (below) |
+
+Product 32,365 → **32,735 feeds**, 23,673 → 23,969 hosts, 32,367 titled, 7,487
+language-tagged. Zero removals, harvest +370 records.
+
+Declined, and why: `cafelatteau.substack.com` is an erotica feed and TAGS.md has no
+`sexuality`/`adult` tag — that is the owner's open policy call, so it stays in the
+untagged queue rather than me minting a tag to hold it. Five
+`blog.chand1012.dev/tags/<t>/index.xml` rows are one person's single stream sliced
+by tag, not five content units (the tranche-18 rule). `btccasinonews.com` was
+declined in tranche 19 and keeps coming back because it is still sitting in
+`data/candidates.tagged.jsonl`; `feeds.libsyn.com/150914/rss` is the legacy
+duplicate skipped in tranche 18. **Both will come back again** until either they
+are banned in `spam.jsonl` (an owner decision) or a declined-URL list exists —
+there is no such list yet, so every tranche re-offers them.
+
+### A bad HOST rule, found by seeing the same nonsense pair twice
+
+Two feeds in this batch — Hưng Yên papers' transport desk and National Assembly
+desk — carried `topic:food topic:military`, the same pair tranche 19's queue pass
+had corrected for two other sections of the same site. Not a coincidence: there is
+a **host rule** in `overrides.jsonl`, written by an earlier queue pass, reading
+
+```json
+{"key": "baohungyen.vn", "tags": ["region:asia","topic:food","topic:military","topic:news","type:publication"]}
+```
+
+Someone listed two sections of a Vietnamese provincial daily and stamped them on
+the whole domain. It touches 23 feeds and is **right for exactly two** —
+`am-thuc` is cuisine, `an ninh - quốc phòng` is public security and national
+defence — and wrong for everything else: the travel, investment, administrative
+reform, heritage, cultural-life, lifestyle and reader-pages desks are neither about
+food nor about the military. 13 shipped feeds carried `topic:military` because of
+it. Replaced with the rule the site actually is (`topic:news type:publication`)
+plus a URL rule per section, read from the section name. The two sections the old
+rule happened to be right about were pinned first, so the correction takes away
+nothing that was true; `--allow-type-change` was used because dropping the pair IS
+the decision, and `rebuild --write` reported every displaced tag.
+
+The lesson for queue passes: a host rule is a claim about every feed on the host.
+A queue pass that reads one section's subject and writes it at host level
+generalizes a coincidence, and nothing downstream can see that — the feeds all look
+internally consistent.
+
+### Also corrected this tranche, each from the feed's own description
+
+`bulinews.com/news/rss.xml` was `type:vendor-blog` for a football news site;
+`canadianzionistforum` was `topic:science` ("the status of the Jewish people in
+Canada"); `captainpaulwatson` was `topic:books topic:security` (ocean writing,
+biocentrism — Sea Shepherd); `cancelme.substack.com` was `topic:security` ("hot
+takes and cringe vulnerability"); `cachemiss.xyz` was `topic:mathematics
+type:vendor-blog` (CUDA and GPU posts); `carfreeamerica` lacked `topic:transport`
+("City Planning and Transportation Policy"); `canadahealthwatch` lacked
+`topic:health`; `cabreza` gained `topic:infrastructure topic:software-engineering`.
+
+Two of my suspicions were **wrong** and the rules were right: `California
+Meditation` really is Chinese ("不定期發佈矽谷灣區的社會觀察碎碎念") and `The Tanton
+View` really is football ("In-depth football analysis… tactics, squad-building").
+Fetching the description before writing a rule is what settles that, and it is 15
+seconds of network for a whole batch.
+
+`azadhindtimes.com` took a host rule with `language:hindi` because Devanagari still
+has no script rule — that gap is now hit a third time and is the cheapest remaining
+structural fix (with a `marathi` keyword rule first, since Marathi also writes
+Devanagari).
