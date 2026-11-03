@@ -1176,3 +1176,73 @@ not a headline keyword.
   we carry as RSS; `api.flickr.com/…/photos_public.gne` ("Uploads from everyone")
   is a firehose, not a publisher — and no photography tag exists, so there is
   nothing honest to call it.
+
+## Tranche 19: the amp directory again, and a language gap found mid-tranche (2026-11-04)
+
+| | |
+|---|---|
+| candidates (`amp --all --limit 1500 --max-per-host 2`) | 1,499 (26,265 already probed skipped; 85,765 dropped by the per-host cap) |
+| answered as a real feed | **1,371 (91%)** |
+| taggable by the tagger | 415 → **414 merged**, 1 declined |
+| left for a human | 952 new rows in `data/DISCOVERY_UNTAGGED.jsonl` (queue now 2,233) |
+| hand corrections written | **20 URL rules** (overrides 23,376 → 23,396) |
+| product | **31,951 → 32,365 feeds**, 0 removals, 0 pre-existing rows changed |
+| harvest | 34,740 → 35,154 records; 11 regressions flagged, none removed |
+
+**No pile-up pins needed for the second tranche running.** 138 of the 414 new rows
+carry two or more topics, and every one is a decision — a hand URL rule, a human
+host rule, or the feed's own name and description. Since d342fac the headline
+rules cannot add a topic to a feed that already has one, and `cmd_tag` only ever
+tags a *candidate* from its own name and description, so the pile-up has two
+independent doors closed. Nothing to pin.
+
+**20 wrong tags, found by reading the description and items.** The rules guess
+from words; these are what the words got wrong: a Basra university journal tagged
+`topic:infrastructure` (its papers are maritime insurance, Iraqi environmental
+law, drug-control law — it is a **law** journal, now `topic:legal`); a Spanish
+overnight radio show tagged `topic:web-development`; a Radio 24 consumption
+programme tagged `topic:ai`; two Báo Hưng Yên sections (education, entertainment)
+both tagged `topic:food topic:military`; an author advocate/publisher tagged
+`topic:tech-industry`; a purpose-of-life podcast tagged `topic:food` because it is
+called *Built to Thrive*; a personal blog tagged `type:vendor-blog` while its own
+description says "this is my personal space". Amar Ujala's city desks got
+`topic:news type:publication language:hindi region:india` — Devanagari is not in
+`LANG_RULES` either, so that language had to be written by hand.
+
+**One declined, not banned:** `btccasinonews.com/feed/` — "Crypto casinos,
+honestly reviewed", items are trading-program reviews. Affiliate content, not a
+publisher. Not merged; not added to `spam.jsonl` (that would be a ban nobody
+asked for). If the owner wants it banned so it stops being re-offered, that is one
+line in `spam.jsonl`.
+
+## The language gap this tranche exposed (fixed separately, commit f54b133)
+
+Reading the tagged rows showed foreign feeds with no `language:` tag at all — and
+the reason is structural: `LANG_RULES` can only see a language through its
+**script** (Hangul, kana, Han, Arabic, Cyrillic), so every Latin-script language
+is invisible to it. Measured on the shipped file: **1,448 feeds on a
+strong-language ccTLD had no `language:` tag while 1,711 identical-shape feeds
+did** — and TAGS.md omits `language:` for English, so `beispiel.de/feed` with no
+tag reads as English to anyone browsing.
+
+Fix: `classify.CC_LANG` (ccTLD → language), the twin of the existing ccTLD →
+region map, applied **after** the script rules so text evidence outranks the
+domain (a Russian-language feed hosted in Germany stays `language:russian`).
+**1,757 shipped feeds gained exactly one language tag**; 5,611 → 7,368 carry one.
+Diff review: zero non-language changes, zero removals, and the 146 feeds that
+already carried two language tags stayed at 146 — a new guard in `merge_tags`
+stops the rules giving a second language to a feed that names one, which is what
+would otherwise have happened to `112.ua/en/rss.xml` (`language:english`, on `.ua`).
+
+Four registries were dropped from the map after reading the feeds they would have
+tagged, not on principle: `.ch` (200ok.ch is an English-language dev consultancy),
+`.is` (alastair.is, alec.is are English personal sites), `.tw` (404.tw is
+Gea-Suan Lin, who writes in English), `.bg` (the Bulgarian-hosted papers here are
+the Turkish-language minority press — Bizim Gazete, Bakış). English-publishing
+registries (`.in`, `.sg`, `.za`, `.ph`) were never in it.
+
+**Two gaps this found and did not fix, recorded so nobody re-derives them:** the
+Cyrillic rule labels Bulgarian feeds `language:russian` (168 Chasa, 24 Chasa),
+which a data pass could correct but this rule deliberately does not; and
+Devanagari, Thai, Greek-alphabet-but-not-Greek and Hebrew have no script rule at
+all, so `language:hindi` on the Amar Ujala feeds above is hand-written.
