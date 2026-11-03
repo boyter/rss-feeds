@@ -128,10 +128,38 @@ class TagPrecedence(unittest.TestCase):
 
     def test_a_type_only_override_does_not_strip_topics(self):
         # reddit.com says "aggregator" and leaves the topics to pathTags; a feed
-        # matching no pathTag must keep what the rules gave it.
-        got = self.merge(["topic:security"], ["type:publication"], ["topic:ai"])
+        # a pathTag gave a topic must keep it - a type-only override settles the
+        # kind of source, not the subject.
+        got = self.merge(["topic:security"], ["type:publication"], [])
         self.assertIn("topic:security", got)
-        self.assertIn("topic:ai", got)
+        self.assertIn("type:publication", got)
+
+    def test_rules_still_bootstrap_a_feed_with_no_topic(self):
+        # The rules remain the only way an undecided feed (one that matched no
+        # pathTag and so has no topic of its own) gets its first topic, even
+        # under a type-only override. This is the case the old
+        # test_a_type_only_override_does_not_strip_topics meant but mis-wrote.
+        got = self.merge(["type:publication"], ["type:publication"], ["topic:security"])
+        self.assertIn("topic:security", got)
+
+    def test_headline_topics_do_not_pile_onto_a_decided_topic(self):
+        # The pile-up. A sibling-generalized feed has its topic in keep, with no
+        # override of its own; one item headline matching a rule must not lay a
+        # second topic on top (a golf podcast gaining topic:ai because an
+        # episode mentioned AI). keep already has a topic -> the rules' topics
+        # are excluded. Revert the decided-topic guard in merge_tags and only
+        # this test fails.
+        got = self.merge(["topic:security", "type:vendor-blog"], [], ["topic:ai"])
+        self.assertNotIn("topic:ai", got)
+        self.assertEqual(got, ["topic:security", "type:vendor-blog"])
+
+    def test_headline_topics_do_not_pile_even_with_a_type_only_rule(self):
+        # A URL rule that settles only type: leaves the topic facet open to the
+        # rules - but a feed that already carries a topic is decided, so the
+        # headline guess still loses.
+        got = self.merge(["topic:security", "type:vendor-blog"], ["type:publication"], ["topic:ai"])
+        self.assertNotIn("topic:ai", got)
+        self.assertEqual(got, ["topic:security", "type:publication"])
 
     def test_rules_may_still_add_region_and_language(self):
         got = self.merge([], ["topic:security", "type:publication"], ["region:uk", "language:fr"])

@@ -121,6 +121,14 @@ def merge_tags(keep, override, suggested, vocab, scope="host"):
     feed, and topic:ai from a science channel about AI research. Only URL rules
     replace what is already there, and when they do it is reported, never absorbed.
 
+    A feed that already carries a topic is decided on the topic facet whether or
+    not an override named it: the topic came from a hand decision, a sibling
+    generalization written into feeds.json, or the feed's own name and description.
+    So the rules may not add topics on top of it - that is the pile-up, where a
+    headline keyword rule laid a second topic on a feed that already had one. The
+    rules still bootstrap a feed with no topic, and this never touches region:/
+    language:/type:.
+
     Returns (tags, problems).
     """
     raw_keep, raw_override, raw_suggested = keep, override, suggested
@@ -151,6 +159,17 @@ def merge_tags(keep, override, suggested, vocab, scope="host"):
             problems.append(f"override replaced {len(replaced)} tag(s) already in "
                             f"feeds.json: {replaced}")
         keep = [t for t in keep if t.split(":", 1)[0] not in strip]
+    # A feed that already carries a topic has a decided topic facet: the topic
+    # was set by a hand decision, a sibling generalization written into
+    # feeds.json, or the feed's own name and description. The rules read item
+    # headlines, and one headline mentioning a thing is not what the feed is
+    # about - that is the pile-up (a golf podcast gaining topic:ai because an
+    # episode mentioned AI). So when keep already has a topic the rules may not
+    # add topics on top of it. They still bootstrap a feed that has none (an
+    # undecided feed gets its first topic from the rules), and this filter
+    # touches topics only: region:/language:/type: suggestions pass through.
+    if any(t.startswith("topic:") for t in keep):
+        suggested = [t for t in suggested if not t.startswith("topic:")]
     tags = normalize(sorted(set(keep) | set(override) | set(suggested)))
     types = facet(tags, "type")
     if len(types) > 1:
