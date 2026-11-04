@@ -59,6 +59,19 @@ ITEM_SPAM_HITS = 3
 # not the spam token. "xxx" therefore matches lowercase only.
 NAME_EXEMPT_WORDS = {"porn", "xxx", "onlyfans"}
 
+# A feed's NAME may legitimately contain a gambling word, so a name hit is not
+# damning on its own: "The Climate Casino" is Prof. Eliot Jacobson's feed on the
+# collapse of industrial civilization and "casino" there names the climate gamble,
+# not a product; a "Casino Royale" film feed is the same shape. Unlike the
+# pharma words (viagra, cbd oil), which no legitimate feed is named for, these
+# need the body to corroborate: a name hit plus at least one gambling hit in the
+# items removes, a name hit with no gambling in the items does not. (This is
+# stricter than NAME_EXEMPT_WORDS, which ignore the name entirely and demand the
+# full >=3 item count - a real casino feed whose items mention gambling once or
+# twice must still go.)
+NAME_CORROBORATED = {"casino", "kasin", "jackpot", "slots", "pokies",
+                     "vegas slots", "betting bonus"}
+
 
 def spam_hits(text, words):
     n = 0
@@ -155,9 +168,14 @@ def classify(rec, feed, spam_rules=()):
             continue
         meta = f"{rec.get('title', '')} {rec.get('description', '')}"
         items = " ".join(rec.get("items", []))
-        if spam_hits(meta, [w for w in words if w not in NAME_EXEMPT_WORDS]):
-            return "remove", f"spam:{name}:in-feed-name"
+        name_words = [w for w in words if w not in NAME_EXEMPT_WORDS]
+        definite = [w for w in name_words if w not in NAME_CORROBORATED]
+        corroborated = [w for w in name_words if w in NAME_CORROBORATED]
         hits = spam_hits(items, words)
+        if spam_hits(meta, definite):
+            return "remove", f"spam:{name}:in-feed-name"
+        if corroborated and spam_hits(meta, corroborated) and hits >= 1:
+            return "remove", f"spam:{name}:name-plus-{hits}-item-hits"
         if hits >= ITEM_SPAM_HITS:
             return "remove", f"spam:{name}:{hits}-item-hits"
 

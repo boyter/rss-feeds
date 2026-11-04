@@ -1022,10 +1022,43 @@ class TestSpamWordRulesThatAlmostKilledGoodFeeds(unittest.TestCase):
         v, why = triage.classify(self.rec(
             "Alternatives théâtrales",
             ["Woospin leaderboard", "Velobet Casino registrazione",
-             "Fiz Casino cosa sapere", "Jackpotter Italia guida",
+             "Fiz Casino cosa sapere","Jackpotter Italia guida",
              "GoldenLion Casino bonus"]),
             {}, [])
         self.assertEqual(v, "remove")
+
+    def test_a_climate_feed_named_for_the_climate_gamble_survives(self):
+        # The bug this tranche caught: triage removed a real climate-collapsism
+        # feed because its name contained "casino". A gambling word in a name is
+        # not damning on its own; the body must corroborate it.
+        v, why = triage.classify(self.rec(
+            "The Climate Casino",
+            ["Dear everyone: 1.50°C is yesterday's news",
+             "The sixth great extinction",
+             "Peak everything"]),
+            {}, [])
+        self.assertNotEqual(v, "remove", why)
+
+    def test_a_casino_feed_with_one_gambling_item_still_goes(self):
+        # The corroboration tier must stay STRICTER than the >=3 item rule: a
+        # name hit plus a single gambling item is enough, or a casino feed whose
+        # items mention gambling once or twice would slip through the exemption.
+        v, why = triage.classify(self.rec(
+            "Best Online Casino Bonuses",
+            ["Welcome to our casino guide",
+             "A travel vlog",
+             "A cooking recipe"]),
+            {}, [])
+        self.assertEqual(v, "remove")
+
+    def test_a_name_with_casino_but_no_gambling_anywhere_survives(self):
+        v, why = triage.classify(self.rec(
+            "Casino Night: a board game show",
+            ["Episode 12: the poker puzzle",
+             "Episode 11: bridge for beginners",
+             "Episode 10: the dice sequence"]),
+            {}, [])
+        self.assertNotEqual(v, "remove", why)
 
     def test_an_adult_word_alone_still_needs_three_item_hits(self):
         v, why = triage.classify(self.rec(
