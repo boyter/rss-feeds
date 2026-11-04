@@ -1,0 +1,35 @@
+# tranche 24 - hand corrections. Most read from the feed's own description.
+# A large block of them are 'media was the only rule that fired': after the
+# topic:media last-resort fix (tranche 23), those rows still carry topic:media
+# because NO subject word matched - which is correct behaviour, but the subject
+# is obvious from the description, so I name it rather than ship 'media'.
+# a public library podcast (teen book discussions, oral histories) - topic:tech-industry was nothing in it
+https://cmclibrary.libsyn.com/rss	topic:books topic:education type:podcast
+# New York City Ballet repertory; history is right, art was missing
+https://cityballet.libsyn.com/rss	topic:art topic:history type:podcast
+# retro gaming with historical context; gaming was missing
+https://classicgamingtoday.podbean.com/feed.xml	topic:gaming topic:history type:podcast
+# "Ancient Wisdom for Future Minds" (items: Catacombs of Alexandria) - topic:food came from "Ancient Recipes"
+https://classicalwisdomkids.substack.com/feed	topic:history topic:education type:newsletter
+# the AUSTRIAN VETERINARY publisher (Tierarzt=veterinarian); media was the only rule that fired
+https://cdn.stationista.com/feeds/der-tieraerzteverlag-podcast	language:german topic:animals topic:health type:podcast
+# a gastroenterology podcast for clinicians; media was the only rule that fired
+https://clinicalconversations.podbean.com/feed.xml	topic:health topic:medicine type:podcast
+# the City of Plano behind the scenes (firefighters, neighborhoods, murals); media was the only rule that fired
+https://cityofplano.libsyn.com/rss	topic:news topic:government type:podcast
+# FC Schalke 04 football; media was the only rule that fired
+https://cn6xso.podcaster.de/knappencast-der-schalke-podcast.rss	language:german region:germany topic:sport type:podcast
+# CKD = chronic kidney disease; topic:tech-industry was nothing in it
+https://ckdstage3.substack.com/feed	topic:health type:newsletter
+# civil engineering career advice; media was the only rule that fired
+https://civilengineeringpodcast.libsyn.com/rss	topic:infrastructure type:podcast
+# refugee-rescue at sea and European states; media was the only rule that fired
+https://civilfleet.libsyn.com/rss	topic:politics type:podcast
+# the ACLU civil-liberties podcast; media was the only rule that fired
+https://civillibertiesminute.libsyn.com/rss	topic:legal topic:politics type:podcast
+# a point-and-click adventure game podcast; media was the only rule that fired
+https://classicgamersguild.podbean.com/feed.xml	topic:gaming type:podcast
+# "Jeder Mensch trägt Trauma in sich" (trauma and relationships); media was the only rule that fired
+https://clarissamitc.com/feed/podcast/	language:german topic:health type:podcast
+# question-based sales (ToyoGas/Toyota ex-salesman); media was the only rule that fired
+https://ckp-podcast.com/aoki/feed/podcast/	language:japanese topic:business type:podcast

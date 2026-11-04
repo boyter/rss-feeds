@@ -1529,3 +1529,91 @@ comment spells out that a feed's name is never fed to it — the comment even ci
 *"Apple Weekly" becoming topic:gadgets* as the reason. The real culprit was the
 same-shaped rule in a different file. Grepping for a string and then reading the code
 *around* it is the step that matters: two identical rules, one innocent.
+
+## Tranche 24: +447 feeds, and the spam rule quietly deleted a real feed (2026-11-04)
+
+| step | count |
+|---|---|
+| candidates | 1,498 |
+| served a real feed | 1,380 (**92%**) |
+| taggable | 447 (largest batch of the session - the topic:media fix raised the taggable fraction) |
+| merged | **447** |
+| hand rules | 15 |
+| untagged queue | 7,004 |
+
+Product 33,858 → **34,305 feeds**, 24,874 → 25,251 hosts. Zero removals, zero
+pre-existing rows changed, fixed point byte-identical, `--strict` 0, **156 tests**.
+
+The church feeds that were `topic:media` in every prior tranche now carry
+`topic:religion` (the tranche-23 fix); the large climate block reads right. This is
+the highest-quality batch of the session.
+
+### The rule deleted a feed I had just merged, and I caught it
+
+After the merge, `feeds.json` had 34,305 rows. After the settle, it had **34,304**
+with 0 reported removals. One row had vanished. Following it:
+
+* It was in `harvest.jsonl` (fetched, status 200, valid XML).
+* It was **not** in `draft.jsonl`, so classify had not written it.
+* It was not a `norm_key` duplicate.
+* `triage.jsonl` said: `remove` — `spam:casino-seo:in-feed-name`.
+
+The feed was **`https://climatecasino.substack.com/feed`**, "The Climate Casino" —
+Prof. Eliot Jacobson's newsletter on *the collapse of global industrial civilization
+and the sixth great extinction*. It is a climate feed. "Casino" is a metaphor for the
+climate gamble. The `casino-seo` spam rule saw the word in the feed's **name** and
+removed it, and `rebuild.py` applied the verdict silently.
+
+**That is the invariant broken**: a code path removed a feed a human (this pass,
+having read the 447 tagged rows) had just deliberately added.
+
+### Why the rule misfired, and the fix
+
+`triage.py`'s `SPAM_PATTERNS` has `casino-seo`, whose word list includes `casino`, and
+a spam term in a feed's **name** is damning on its own. That is true of pharma words
+(`viagra`, `cbd oil`) — no legitimate feed is named for those — and of the two words
+already fixed by `NAME_EXEMPT_WORDS` (`porn`, `xxx`; a recovery podcast and a Roman
+numeral). `casino` is a **fourth** word in the same class: a common English word that
+can be a metaphor, a proper noun, or an entertainment reference in a real feed's name.
+
+Fix: a new tier, `NAME_CORROBORATED`. A gambling word in a feed's name removes only if
+the **body corroborates** it (≥1 gambling hit in the items). `The Climate Casino` has
+zero gambling words in its items, so it is no longer removed. This is deliberately
+**stricter** than `NAME_EXEMPT_WORDS` (which ignore the name and demand the full ≥3
+item count): a real casino feed whose name says "casino" and whose items mention
+gambling even once still goes, so the fix does not weaken detection. The existing
+`test_a_real_casino_hijack_still_goes` is caught via item hits, not the name, and
+still passes. Three new tests pin it: the climate feed survives; a casino feed with a
+name hit + one gambling item is removed; a "Casino Night board game show" with no gambling
+anywhere survives.
+
+### Blast radius: one feed, and the class is now closed
+
+Searching the removal record, `casino-seo:in-feed-name` had **two** prior false
+positives — `benuyama.com/.../quit-porn-with-ben-uyama/` (a nofap recovery podcast)
+and `biblialiturgia.com/feed/` (a Roman-numeral lectionary) — both already fixed by
+`NAME_EXEMPT_WORDS` in an earlier tranche. `The Climate Casino` was the **third**, the
+first on `casino` itself. It is the only `casino-seo` removal in the current product;
+no other legitimate feed was lost to it.
+
+### The restore
+
+Restored by re-merging the **single row** (a full re-merge of the 447-file would have
+written 446 spurious `overrides.jsonl` lines, since merge treats an already-present
+candidate as an override candidate). After the rule fix, triage now returns `keep | ok`
+for it and the settle removes 0, so the pass's `REMOVED.md` was reverted to HEAD —
+which still accurately records the `blog.bitsrc.io` removal from an earlier revision.
+Final: 34,305 feeds, all 447 candidates present, climatecasino back.
+
+### The structural gap this exposes (recorded, not fixed here)
+
+`add.py merge` adds on a human's review; `triage` + `rebuild` can then **subtract** on a
+pattern's verdict, with no per-feed human in between. The spam pattern is a human-written
+rule, but it fired wrongly on a specific feed, and the only reason that was caught is
+that the count (34,305 → 34,304) was checked against the merge. A feed with a name that
+trips a *different* pattern could vanish with no count mismatch to spot (if it were the
+only removal and REMOVED.md is read, it is caught; but the settle did not print it).
+A candidate guard, left to the owner: a pattern-based `remove` of a feed that is **new in
+this pass** (absent from HEAD's `feeds.json`) should `flag`, not `remove` — a feed that
+just cleared a human review is not the pattern's to delete. That needs a git baseline in
+triage, which is a design change, not a tranche edit.
