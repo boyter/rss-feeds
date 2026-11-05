@@ -71,7 +71,7 @@ TOPIC_RULES = [
     # A church's own name is direct evidence of its subject. The absence of this
     # rule is why ~96 shipped feeds named "... Church Sermons" carry topic:media:
     # the only rule that fired on them was the podcast one below.
-    (r"\b(church(es)?|sermons?|predigt|predigten|kirchgemeinde|kirche|kerk|pree?k\w*|é?glise|preach\w*|pastor\w*|gospel|worship|ministry|bible|theolog\w*|congregation\w*|denominat\w*|catholic\w*|protestant|anglican|baptist\w*|methodist|presbyterian|lutheran|evangelical|rabbi\w*|synagogue\w*|mosque\w*|islam\b|islamic\b|quran|koran|hindu\b|buddhis\w*|monastic\w*)\b", ["topic:religion"]),
+    (r"\b(church(es)?|sermons?|predigt|predigten|kirchgemeinde|kirche|kerk|pree?k\w*|é?glise|preach\w*|pastor\w*|gospel|worship|ministry|bible|theolog\w*|congregation\w*|denominat\w*|catholic\w*|protestant|anglican|baptist\w*|methodist|presbyterian|lutheran|evangelical|\brabbis?\b|\brabbin(?:ic|ical)\b|synagogue\w*|mosque\w*|islam\b|islamic\b|quran|koran|hindu\b|buddhis\w*|monastic\w*)\b", ["topic:religion"]),
     (r"\b(podcast|episode|\baudio\b|interview with|listen to)", ["topic:media"]),
     (r"\b(journalism|newsroom|news media|reporting|press freedom|fact[- ]check)", ["topic:journalism"]),
     (r"\b(travel|flight|hotel|backpack)", ["topic:travel"]),

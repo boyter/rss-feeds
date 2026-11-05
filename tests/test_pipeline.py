@@ -1188,6 +1188,46 @@ class TestOracle429RetriedAndErrorRowsNeverCached(unittest.TestCase):
                          [f["url"] for f in self.FEEDS])
 
 
+class TestARabbitIsNotARabbi(unittest.TestCase):
+    """The religion rule carried `rabbi\\w*` with no leading boundary, and every
+    topic rule runs under re.I, so it matched **rabbit** - the whole word. 21
+    shipped feeds have rabbit as their only religion signal (Hundred Rabbits is a
+    hardware and software blog); they survived only because the pile-up guard
+    stopped a rule adding a topic to a feed that already had one. A candidate
+    tagged fresh would have been filed as religion, and one row in the faith pass
+    ("rabbit holes, psychoactive internet rabbit holes") nearly shipped.
+
+    Restore `rabbi\\w*` and the first two fail; drop the rabbi forms and the
+    third does.
+    """
+
+    def setUp(self):
+        self.vocab = vocab_mod.load()
+        classify.VOCAB = self.vocab
+
+    def suggested(self, url, title="", desc="", items=()):
+        return classify.suggest({"url": url, "title": title, "description": desc,
+                                 "items": list(items)}, [])[0]
+
+    def test_an_internet_rabbit_hole_is_not_religion(self):
+        got = self.suggested("https://rabbitholes.example/feed", "rabbit holes",
+                             desc="Every week we hand-pick the most psychoactive "
+                                  "internet rabbit holes.")
+        self.assertNotIn("topic:religion", got)
+
+    def test_hundred_rabbits_is_not_religion(self):
+        got = self.suggested("https://100r.example/feed", "Hundred Rabbits links",
+                             desc="Links from Hundred Rabbits, solar-powered "
+                                  "computers and small tools.")
+        self.assertNotIn("topic:religion", got)
+
+    def test_a_rabbi_still_is(self):
+        got = self.suggested("https://parashah.example/feed", "Weekly Reading",
+                             desc="Rabbi Sacks on the parashah, with rabbinical "
+                                  "commentary and a dvar Torah.")
+        self.assertIn("topic:religion", got)
+
+
 class TestDomIsNotAlwaysTheDocumentObjectModel(unittest.TestCase):
     """The web-development rule ran under re.I, so the token \bDOM\b matched
     "Dom/sub" in a BDSM erotica feed and filed it as web development, and it
