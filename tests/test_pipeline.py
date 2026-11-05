@@ -1188,6 +1188,44 @@ class TestOracle429RetriedAndErrorRowsNeverCached(unittest.TestCase):
                          [f["url"] for f in self.FEEDS])
 
 
+class TestDomIsNotAlwaysTheDocumentObjectModel(unittest.TestCase):
+    """The web-development rule ran under re.I, so the token \bDOM\b matched
+    "Dom/sub" in a BDSM erotica feed and filed it as web development, and it
+    matched two people called Dom. A feed truly about the DOM says javascript or
+    css or react too, so the abbreviation was buying nothing.
+
+    Put \bDOM\b back and the first two fail; drop the spelled-out term and the
+    third does.
+    """
+
+    def setUp(self):
+        self.vocab = vocab_mod.load()
+        classify.VOCAB = self.vocab
+
+    def suggested(self, url, title="", desc="", items=()):
+        return classify.suggest({"url": url, "title": title, "description": desc,
+                                 "items": list(items)}, [])[0]
+
+    def test_dom_sub_is_not_web_development(self):
+        got = self.suggested("https://cafelatteau.example/feed",
+                             "The Humiliation Journal",
+                             desc="Cheating, cucking, BDSM, Dom/sub, humiliation and "
+                                  "degradation. Raw perverted filth.")
+        self.assertNotIn("topic:web-development", got)
+
+    def test_a_person_called_dom_is_not_web_development(self):
+        got = self.suggested("https://dom.example/feed", "Dom Corriveau",
+                             desc="Hi, I'm Dom and this is my web feed. Thoughts, "
+                                  "opinions and wild speculation.")
+        self.assertNotIn("topic:web-development", got)
+
+    def test_the_document_object_model_still_counts(self):
+        got = self.suggested("https://frontend.example/feed", "Markup Weekly",
+                             desc="Notes on the document object model, events and "
+                                  "layout performance.")
+        self.assertIn("topic:web-development", got)
+
+
 class TestTheHarvestersOwnFingerprint(unittest.TestCase):
     """198 shipped feeds sat parked as blocked 403s for one reason: the harvester
     announced Firefox/97.0 on Windows, and "outdated Firefox on Windows" is a bot

@@ -2055,3 +2055,51 @@ tags were carried across a move.
 Still parked after all this: 78 blocked + 77 unreachable, and the same 9 feeds with no
 harvest content — 3 of them TLS `CERTIFICATE_VERIFY_FAILED`, which a header cannot fix,
 and the rest Cloudflare JS challenges, which no header fixes either.
+
+## `topic:adult`, and `DOM` meaning a person (2026-11-06)
+
+Product 36,067 (one feed added), **181 tests**, `--strict` 0.
+
+The owner answered the standing policy call: adult content stays, so it gets a tag. 14
+shipped feeds tagged by hand and one candidate that had been declined earlier *only
+because the vocabulary had no place for it* now merges. 29 shipped feeds contain the
+words; 14 are the subject. The declines and their reasons are in `decisions-adult.txt` —
+the notable ones being `kink.nl` (a Dutch radio station, plus two of its programmes),
+`NSFW` as an advisory line on a history podcast and a Cold War podcast, a musician whose
+blog is named after his band, and two recovery podcasts.
+
+TAGS.md now states the two rules that make the tag mean anything:
+
+- it is what a feed **contains**, not what it **discusses** — a pornography-addiction
+  recovery podcast is `health`/`personal`, never `adult`;
+- **write no classify rule for it.** It is a noise magnet of a kind not seen before: the
+  words are band names, station names and advisory boilerplate.
+
+### How the feed that prompted the policy call was tagged in the queue
+
+`cafelatteau.substack.com` ("The Humiliation Journal", BDSM erotica) arrived in
+`candidates.tagged.jsonl` as **`topic:web-development`**, with `tagWhy: ["topic:Dom"]`.
+The web-development rule contains `\bDOM\b` and every topic rule runs under `re.I`, so it
+matched "**Dom**/sub".
+
+Measured before changing anything: shipped feeds carrying `topic:web-development` whose
+*only* web token is "dom" — **2**, both people named Dom (one an irrigation contractor
+who writes about B-movies, one a networking engineer). Two more named Dom are genuine
+Rails/JavaScript writers and keep the tag. A feed truly about the DOM always says
+javascript/css/react/html too, all already tokens, so the abbreviation was buying nothing
+and cost two false tags plus one absurd one. Replaced with `document object model`;
+3 tests, and restoring `\bDOM\b` fails exactly those 3. The two mis-tagged rows were
+corrected by hand (both keep ≥1 topic; the 5 rows still without any topic are the blocked
+feeds and pre-date this change).
+
+### What the blocked set is made of now
+
+After the User-Agent fix: 78 blocked + 77 unreachable, and 9 feeds still outside the
+format contract. Breaking down the 9 by cause, since "blocked" was hiding three
+different problems: Cloudflare JS challenges (no header fixes these), a `522`
+origin-down, a `403` WAF, and **two TLS failures** — `programmingwithmosh.com` presents a
+certificate for the wrong hostname, `aarvik.dk` answers `TLSV1_ALERT_INTERNAL_ERROR`.
+Those two are reachable only by disabling certificate verification, which is not
+something a harvester should do silently: fetched bytes would be stored as evidence of
+what a feed said, over a connection nobody vouched for. Left as-is per the owner's
+"in if you cannot get them, ignore them".

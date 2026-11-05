@@ -1,0 +1,5 @@
+# topic:web-development arrived on these two feeds because the classify token
+# \bDOM\b ran under re.I and matched a person called Dom. It is not the
+# Document Object Model. Both keep their real topics; neither loses a facet.
+https://blog.ctms.me/index.xml	topic:entertainment topic:personal type:personal-blog
+https://dgood.win/index.xml	topic:networking type:personal-blog

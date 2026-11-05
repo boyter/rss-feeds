@@ -24227,3 +24227,5 @@
 {"key": "http://feeds.libsyn.com/302975/rss", "tags": ["topic:adult", "topic:lifestyle", "type:podcast"]}
 {"key": "https://miketaylr.com/posts/rss.xml", "tags": ["topic:adult", "topic:web-development", "type:personal-blog"]}
 {"key": "https://blog.itsnero.com/feed", "tags": ["topic:adult", "topic:art", "topic:entertainment", "type:personal-blog"]}
+{"key": "https://blog.ctms.me/index.xml", "tags": ["topic:entertainment", "topic:personal", "type:personal-blog"]}
+{"key": "https://dgood.win/index.xml", "tags": ["topic:networking", "type:personal-blog"]}

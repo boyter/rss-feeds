@@ -30,7 +30,12 @@ TOPIC_RULES = [
     (r"\b(machine learning|\bdeep learning\b|neural net|\bLLM\b|large language|transformer|GPT|\bAI\b|artificial intelligence|data science|\bMLOps\b|TensorFlow|PyTorch)", ["topic:ai"]),
     (r"\b(database|Postgres|MySQL|SQLite|Snowflake|ClickHouse|data engineering|data warehouse|analytics|business intelligence|\bETL\b|Apache Spark|Airflow)", ["topic:data"]),
     (r"\b(kubernetes|\bk8s\b|docker|container|terraform|ansible|devops|\bSRE\b|site reliability|continuous (integration|delivery|deployment)|\bCI/CD\b|observability|prometheus|cloud computing|\bAWS\b|\bAzure\b|\bGCP\b|serverless)", ["topic:infrastructure"]),
-    (r"\b(browser|javascript|typescript|\bCSS\b|\bHTML\b|front[- ]?end|react|vue|svelte|\bDOM\b|web platform|progressive web|webassembly|\bWASM\b|accessibility|\bWCAG\b)", ["topic:web-development"]),
+    # "\bDOM\b" is removed and replaced with the spelled-out term. The rules run
+    # under re.I, so the abbreviation matched "Dom/sub" in a BDSM erotica feed and
+    # tagged it topic:web-development, and it matched two people named Dom. A feed
+    # genuinely about the DOM also says javascript/react/html/css, which are already
+    # tokens here, so spelling it out costs nothing measurable.
+    (r"(\b(browser|javascript|typescript|\bCSS\b|\bHTML\b|front[- ]?end|react|vue|svelte|web platform|progressive web|webassembly|\bWASM\b|accessibility|\bWCAG\b|document object model)\b)", ["topic:web-development"]),
     (r"\b(kernel|operating system|\bOS dev|file system|ext4|zfs|btrfs|virtualization|hypervisor|container runtime|\bCPU\b cache|memory management|scheduler|plan 9|solaris|freebsd|openbsd|netbsd|linux)", ["topic:systems"]),
     (r"\b(network protocol|\bTCP\b|\bUDP\b|\bHTTP/|\bDNS\b|routing|bgp|\bIPv6\b|wireguard|packet|networking)", ["topic:networking"]),
     (r"\b(microcontroller|\bMCU\b|arduino|raspberry pi|fpga|\bASIC\b|transistor|circuit|soldering|3d printing|\bPCB\b|retrocomput|hardware hacking|robotics|oscilloscope)", ["topic:hardware"]),
