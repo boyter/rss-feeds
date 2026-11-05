@@ -43,7 +43,15 @@ TOPIC_RULES = [
     (r"\b(mathematics|\bmath\b|number theory|topology|\balgebra\b|calculus|\bstatistics\b|probability|\bphysics\b|quantum)", ["topic:mathematics"]),
     (r"\b(biology|genetics|neuroscience|chemistry|astronomy|space|climate|ecology|paleontology)", ["topic:science"]),
     (r"\b(election|parliament|senate|congress|policy|democracy|legislation|\bpolitical\b|geopolit|\bforeign policy\b)", ["topic:politics"]),
-    (r"\b(economy|inflation|\bgdp\b|monetary|fiscal|market|equit|stock|bond|investing|\bfinance\b|banking|crypto currency|cryptocurrenc|\bbitcoin\b|blockchain)", ["topic:finance"]),
+    (r"\b(economy|inflation|\bgdp\b|monetary|fiscal|market|equit|stock|bond|investing|\bfinance\b|banking)", ["topic:finance"]),
+    # Crypto split out of the finance rule above. It sat there for four tranches and
+    # 121 feeds because the vocabulary had nowhere else to put them; a Bitcoin
+    # newsletter and a pension-fund newsletter are not the same list.
+    # The bare word "crypto" is deliberately NOT a trigger: security writing uses it
+    # as shorthand for cryptography, and a feed titled "Crypto Is Not A Four Letter
+    # Word" about key exchange is a security feed. A compound ("crypto assets",
+    # "crypto market") or any of the unambiguous terms below is required.
+    (r"(\bcrypto(?:currenc\w*|\s+(?:asset|assets|market|markets|news|exchange|exchanges|industry|company|firms?|regulation|policy|bubble|media|podcast|blog|weekly|daily))\b|\bbitcoin\w*\b|\bbtc\b|blockchain|\bdefi\b|\baltcoins?\b|\bstablecoins?\b|\bnfts?\b|\bweb3\b|satoshi|\bethereum\b|\bhalving\b)", ["topic:crypto"]),
     (r"\b(nfl|nba|mlb|nhl|soccer|football|cricket|rugby|tennis|golf|\bf1\b|formula 1|boxing|mma|ufc|olympic|baseball|basketball|hockey)", ["topic:sport"]),
     (r"\b(video game|game design|\bgamedev\b|game development|\bxbox\b|\bplaystation\b|\bnintendo\b|steam|\broguelike|tabletop|rpg)", ["topic:gaming"]),
     # A church's own name is direct evidence of its subject. The absence of this

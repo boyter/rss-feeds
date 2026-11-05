@@ -1229,6 +1229,32 @@ class TestTheMediumIsNotTheSubject(unittest.TestCase):
         self.assertIn("topic:religion", got)
         self.assertNotIn("topic:media", got)
 
+    def test_a_bitcoin_newsletter_is_crypto_not_only_finance(self):
+        # Four tranches of crypto feeds had to be mapped to topic:finance because
+        # the vocabulary had nowhere else for them (121 shipped feeds eventually).
+        # A Bitcoin price and halving newsletter is not a pensions newsletter.
+        # Move the crypto words back into the finance regex and this fails.
+        got = self.suggested("https://thebitcoiner.example/feed",
+                             "The Daily Bitcoiner",
+                             desc="Bitcoin price, halving, Lightning and self custody.")
+        self.assertIn("topic:crypto", got)
+
+    def test_cryptography_is_security_not_crypto(self):
+        # The word that makes this a rule rather than a substring match:
+        # "cryptography" must not pull in topic:crypto, which means cryptocurrency.
+        got = self.suggested("https://crypto.example.com/feed",
+                             "Crypto Is Not A Four Letter Word",
+                             desc="Applied cryptography, key exchange and AEAD modes.")
+        self.assertIn("topic:security", got)
+        self.assertNotIn("topic:crypto", got)
+
+    def test_a_pension_newsletter_gains_no_crypto_tag(self):
+        got = self.suggested("https://pensions.example/feed",
+                             "Retirement Watch",
+                             desc="Bonds, annuities, fiscal policy and the economy.")
+        self.assertIn("topic:finance", got)
+        self.assertNotIn("topic:crypto", got)
+
     def test_the_medium_still_tags_a_feed_with_no_subject_at_all(self):
         # Removing the fallback entirely would send these to the human queue with
         # nothing said about them; the point is that it loses to a subject, not
