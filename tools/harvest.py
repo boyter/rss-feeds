@@ -55,8 +55,17 @@ PAUSE = 0.25
 # Same approach as check.py: a plain browser User-Agent, because a bare
 # urllib default gets blocked by far more sites than it protects.
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) "
-                  "Gecko/20100101 Firefox/97.0",
+    # A current Firefox ESR on Linux. The version and platform are load-bearing,
+    # not decoration: the previous string (Firefox/97.0 on Windows NT 10.0) was
+    # a 2022 browser, and "outdated Firefox on Windows" is a bot signature that
+    # WAFs answer with 403. Measured on six shipped feeds that had been parked
+    # as blocked: Firefox/97 on Windows -> 403 on all four of the ones that
+    # flipped; Firefox/97 on Linux -> 200; Firefox/115 on Windows -> 200; even
+    # "curl/8.5.0" -> 200. It was never about politeness, and no browser
+    # fallback code path was needed - the fingerprint was stale.
+    # Linux because that is what this box is, so the claim is at least true.
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:115.0) "
+                  "Gecko/20100101 Firefox/115.0",
     "Accept": "application/rss+xml, application/atom+xml, application/xml, "
               "text/xml, */*",
     # Advertise only what decode() can undo. CDNs brotli-compress responses even

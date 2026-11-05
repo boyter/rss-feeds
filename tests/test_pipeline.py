@@ -11,6 +11,7 @@ Run:  python3 -m unittest discover -s tests -p "test_*.py"
 
 import json
 import os
+import re
 import sys
 import tempfile
 import unittest
@@ -25,6 +26,7 @@ import decide
 import rebuild
 import removals
 import triage
+import harvest
 import add
 import vocab as vocab_mod
 
@@ -1184,6 +1186,33 @@ class TestOracle429RetriedAndErrorRowsNeverCached(unittest.TestCase):
         self.assertEqual(cache[0]["error"], "")
         self.assertEqual([r["url"] for r in leads],
                          [f["url"] for f in self.FEEDS])
+
+
+class TestTheHarvestersOwnFingerprint(unittest.TestCase):
+    """198 shipped feeds sat parked as blocked 403s for one reason: the harvester
+    announced Firefox/97.0 on Windows, and "outdated Firefox on Windows" is a bot
+    signature a WAF answers with 403. Measured on the same URLs minutes apart:
+    Firefox/97 on Windows 403, Firefox/97 on Linux 200, Firefox/115 on Windows
+    200, curl/8.5.0 200. So it was the fingerprint, not the manners - and no
+    browser-fallback code path was needed.
+
+    This cannot be tested against the network, so it pins the claim instead: a
+    current Firefox, and not the combination that gets 403. Someone "tidying"
+    the UA back to a Windows string loses 198 feeds and this test says why.
+    """
+
+    def test_the_user_agent_is_not_the_stale_windows_signature(self):
+        ua = harvest.HEADERS["User-Agent"]
+        self.assertNotIn("Windows NT", ua)
+        m = re.search(r"Firefox/(\d+)", ua)
+        self.assertTrue(m, ua)
+        self.assertGreaterEqual(int(m.group(1)), 100,
+                                "a Firefox older than this is the 403 signature")
+
+    def test_it_still_advertises_only_what_decode_can_undo(self):
+        # Brotli is not in the standard library: advertise it and a live feed
+        # arrives as bytes nobody can read and gets written off as not-a-feed.
+        self.assertEqual(harvest.HEADERS["Accept-Encoding"], "gzip, deflate")
 
 
 class TestADeclineDoesNotExpire(unittest.TestCase):
