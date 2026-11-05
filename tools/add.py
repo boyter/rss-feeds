@@ -87,6 +87,7 @@ def cmd_merge(args):
     existing = {vocab_mod.norm_key(f["url"]) for f in feeds}
     voc = vocab_mod.load()
     spam_rules = triage.load_spam()
+    declined = triage.load_declined()
     # harvest.jsonl is evidence of what the URL is NOW; probe_results is a
     # snapshot that goes stale. A feed that died after being probed was
     # re-merged from an old candidates file and deleted again by rebuild -
@@ -109,6 +110,14 @@ def cmd_merge(args):
             # re-added the hand-removed feeds and rebuild deleted them again.
             # "is not None": an empty reason is still a decision.
             skipped.append((url, f"banned by spam.jsonl: {banned}"))
+            continue
+        refused = triage.declined_hit(url, declined)
+        if refused is not None:
+            # A decline outlives the tranche that made it. Without this gate the
+            # same three feeds came back every pass and each one cost a fresh
+            # read: btccasinonews.com (twice), casinokrisa, the legacy libsyn
+            # duplicate. The reason is printed so the file stays honest.
+            skipped.append((url, f"declined: {refused}"))
             continue
         if key in existing:
             skipped.append((url, "already present"))

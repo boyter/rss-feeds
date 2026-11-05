@@ -46,6 +46,7 @@ from urllib.parse import urlparse
 import classify
 import harvest
 import paths
+import triage
 import vocab as vocab_mod
 
 SOURCES = paths.data("sources.txt")
@@ -528,6 +529,20 @@ def load_url_overrides():
     return rules
 
 
+def write_declined_report(rows):
+    """Every candidate the declined list stopped, with the reason.
+
+    A filter that says nothing is how a decline becomes a mystery: the feed just
+    stops appearing and the next pass cannot tell whether it was never found or
+    was refused. This file is the difference.
+    """
+    with open(paths.data("DISCOVERY_DECLINED.md"), "w", encoding="utf-8") as fh:
+        fh.write("# Candidates refused by data/declined.jsonl\n\n")
+        fh.write(f"{len(rows)} refused this run. A decline does not expire.\n\n")
+        for r in rows:
+            fh.write(f"- `{r['url']}`\n  declined: {r['reason']}\n")
+
+
 def cmd_tag(args):
     """Tag probed candidates from what the feed itself said."""
     voc = vocab_mod.load()
@@ -544,6 +559,8 @@ def cmd_tag(args):
     untagged = []
     rules = load_overrides()
     url_rules = load_url_overrides()
+    declined = triage.load_declined()
+    declined_rows = []
     for c in cands:
         r = probed.get(c["url"])
         if not r:
@@ -555,6 +572,15 @@ def cmd_tag(args):
         key = vocab_mod.norm_key(c["url"])
         if key in have or key in seen:
             stats["duplicate"] += 1
+            continue
+        refused = triage.declined_hit(c["url"], declined)
+        if refused is not None:
+            # Do not put a declined feed in the queue at all. It reached the tag
+            # step three times this session and each time cost a fresh read and
+            # a fresh decline: btccasinonews.com, casinokrisa, the legacy libsyn
+            # duplicate. add.py merge refuses it too; this saves the read.
+            stats["declined"] += 1
+            declined_rows.append({"url": c["url"], "reason": refused})
             continue
         ok, why = worth_carrying(c["url"])
         if not ok:
@@ -726,6 +752,7 @@ def cmd_tag(args):
             fh.write(json.dumps(r, ensure_ascii=False) + "\n")
     write_hint_report(rows)
     write_untagged_report(untagged)
+    write_declined_report(declined_rows)
     print(f"{len(rows)} feed-backed candidates -> {TAGGED}")
     for k, v in sorted(stats.items()):
         print(f"  {k:34} {v}")

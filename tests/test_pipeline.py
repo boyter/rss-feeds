@@ -1186,6 +1186,68 @@ class TestOracle429RetriedAndErrorRowsNeverCached(unittest.TestCase):
                          [f["url"] for f in self.FEEDS])
 
 
+class TestADeclineDoesNotExpire(unittest.TestCase):
+    """A feed a human declined came back every tranche because nothing recorded
+    the refusal: btccasinonews.com twice, casinokrisa, the legacy libsyn alias.
+    data/declined.jsonl is that record, and two doors consult it.
+    """
+
+    def merge(self, cands, probed, declined):
+        with tempfile.TemporaryDirectory() as d:
+            cpath, rpath, fpath = (os.path.join(d, n) for n in
+                                   ("c.jsonl", "r.jsonl", "feeds.json"))
+            for path, rows in ((cpath, cands), (rpath, probed)):
+                with open(path, "w", encoding="utf-8") as fh:
+                    for r in rows:
+                        fh.write(json.dumps(r) + "\n")
+            open(fpath, "w").write("[]")
+            saved = (add.RESULTS, add.paths.root, add.triage.load_declined)
+            add.RESULTS = rpath
+            add.paths.root = lambda n: fpath if n == "feeds.json" else os.path.join(d, n)
+            add.triage.load_declined = lambda *a, **k: list(declined)
+            try:
+                add.cmd_merge(type("A", (), {"candidates": cpath, "apply": True})())
+                out = json.load(open(fpath, encoding="utf-8"))
+            finally:
+                add.RESULTS, add.paths.root, add.triage.load_declined = saved
+        return [f["url"] for f in out]
+
+    def test_a_declined_url_never_merges_even_when_it_is_a_perfect_feed(self):
+        probed = [{"url": "https://declined.test/feed", "isFeed": True, "status": 200},
+                  {"url": "https://fine.test/feed", "isFeed": True, "status": 200}]
+        cands = [{"url": u, "tags": ["topic:news", "type:publication"]}
+                 for u in ("https://declined.test/feed", "https://fine.test/feed")]
+        self.assertEqual(self.merge(cands, probed, [("declined.test", "affiliate site")]),
+                         ["https://fine.test/feed"])
+
+    def test_an_empty_reason_is_still_a_decline(self):
+        probed = [{"url": "https://bare.test/feed", "isFeed": True, "status": 200}]
+        cands = [{"url": "https://bare.test/feed", "tags": ["topic:news", "type:publication"]}]
+        self.assertEqual(self.merge(cands, probed, [("bare.test", "")]), [])
+
+    def test_a_decline_matches_a_different_spelling_of_the_same_feed(self):
+        # The declines that hurt were spelling-driven: the substack and the .com
+        # of one handle. One key covers both because matching is a substring of
+        # the lowercased URL, exactly as the spam matcher works.
+        probed = [{"url": "http://www.Declined.Test/feed/", "isFeed": True, "status": 200}]
+        cands = [{"url": "http://www.Declined.Test/feed/",
+                  "tags": ["topic:news", "type:publication"]}]
+        self.assertEqual(self.merge(cands, probed, [("declined.test", "site")]), [])
+
+    def test_no_declined_file_is_not_an_error(self):
+        # The file is optional. A repo without one must not fail every merge.
+        with tempfile.TemporaryDirectory() as d:
+            self.assertEqual(triage.load_declined(os.path.join(d, "none.jsonl")), [])
+
+    def test_a_decline_does_not_remove_a_feed_that_is_already_in_the_product(self):
+        # Decline and removal are different judgements. declined.jsonl gates
+        # additions; only spam.jsonl (hand:) is a human decision to delete, and
+        # triage must not confuse the two files.
+        rec = {"url": "https://declined.test/feed", "status": 200, "isFeed": True,
+               "title": "A live feed", "items": ["a"]}
+        self.assertEqual(triage.classify(rec, {}, [])[0], "keep")
+
+
 class TestANewFeedIsNotRemovedByAPattern(unittest.TestCase):
     """The verdict that deleted a climate newsletter named "The Climate Casino"
     minutes after it was added. A feed with no history has no evidence but the

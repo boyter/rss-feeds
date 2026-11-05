@@ -121,6 +121,42 @@ def load_spam(path=paths.data("spam.jsonl")):
     return rules
 
 
+def load_declined(path=paths.data("declined.jsonl")):
+    """Feeds a human declined to add, and why. A decline does not expire.
+
+    Separate from spam.jsonl on purpose. spam.jsonl is a removal - the feed was
+    in the product or is being deleted from it - and triage treats it as a human
+    decision that removes. A decline is the opposite direction: never offered
+    again. Folding one into the other would let "we chose not to add this" act
+    like "delete this from the product".
+
+    Format: one JSON object per line, {"key": ..., "reason": ...}, where key is
+    a lowercased substring of the URL, matched exactly as spam keys are.
+    """
+    rows = []
+    if not os.path.exists(path):
+        return rows
+    for line in open(path, encoding="utf-8"):
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            r = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        key = (r.get("key") or "").lower()
+        if key:
+            rows.append((key, r.get("reason", "")))
+    return rows
+
+
+def declined_hit(url, declined_rules):
+    """Same matching as spam_hit: a decline must survive a scheme change, www.,
+    a junk query parameter or a trailing slash, or the same feed is offered
+    again next tranche under a spelling."""
+    return spam_hit(url, declined_rules)
+
+
 def spam_hit(url, spam_rules):
     """Is this URL covered by a hand-curated removal? One matcher, shared.
 

@@ -15,6 +15,7 @@ data/NEEDS_REVIEW.md
 data/TRIAGE.md
 data/DISCOVERY_REVIEW.md
 data/DISCOVERY_UNTAGGED.md
+# Which candidates a decline stopped. Derived: data/declined.jsonl is the record.
 
 # Fetched copies of the curated lists in data/sources.txt - derived, re-fetchable.
 data/sources/
