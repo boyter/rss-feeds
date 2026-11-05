@@ -1186,6 +1186,40 @@ class TestOracle429RetriedAndErrorRowsNeverCached(unittest.TestCase):
                          [f["url"] for f in self.FEEDS])
 
 
+class TestANewFeedIsNotRemovedByAPattern(unittest.TestCase):
+    """The verdict that deleted a climate newsletter named "The Climate Casino"
+    minutes after it was added. A feed with no history has no evidence but the
+    pattern, so a pattern may only flag it. Delete the guard and the first test
+    fails; make the guard too broad and the last three fail.
+    """
+
+    def g(self, verdict, reason, is_new):
+        return triage.apply_newness_guard(verdict, reason, is_new)
+
+    def test_a_word_list_cannot_delete_a_feed_that_is_new_in_this_pass(self):
+        v, r = self.g("remove", "spam:casino-seo:in-feed-name", True)
+        self.assertEqual(v, "flag")
+        self.assertTrue(r.endswith("->new-in-pass"), r)
+
+    def test_a_body_that_is_not_xml_cannot_delete_a_new_feed_either(self):
+        v, _ = self.g("remove", "not-a-feed", True)
+        self.assertEqual(v, "flag")
+
+    def test_the_same_verdict_still_removes_a_feed_that_was_already_shipped(self):
+        # The guard is about feeds with no history, not about disabling spam.
+        v, r = self.g("remove", "spam:casino-seo:in-feed-name", False)
+        self.assertEqual((v, r), ("remove", "spam:casino-seo:in-feed-name"))
+
+    def test_a_human_ban_removes_a_new_feed_immediately(self):
+        # spam.jsonl IS the decision. The guard must not second-guess it.
+        v, r = self.g("remove", "hand:reappears under a new alias", True)
+        self.assertEqual(v, "remove")
+
+    def test_a_server_saying_gone_or_a_name_that_does_not_resolve_still_removes(self):
+        for reason in ("gone:404", "gone:410", "dead-domain"):
+            self.assertEqual(self.g("remove", reason, True)[0], "remove", reason)
+
+
 class TestTheMediumIsNotTheSubject(unittest.TestCase):
     """Two bugs that made ~1 in 5 of the tranche-23 candidates wrong.
 

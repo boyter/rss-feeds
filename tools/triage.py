@@ -19,8 +19,10 @@ import collections
 import json
 import os
 import re
+import subprocess
 import sys
 import paths
+import vocab
 
 # A 401/403/429 is the site objecting to a script, not evidence the feed is
 # gone. Those feeds stay, flagged, because a reader's feed client will be fine.
@@ -138,6 +140,47 @@ def spam_hit(url, spam_rules):
     return None
 
 
+def apply_newness_guard(verdict, reason, is_new):
+    """A pattern-based removal may not delete a feed that is new in this pass.
+
+    "New in this pass" means: not in feeds.json at HEAD. Such a feed has no
+    history, so the only evidence about it is the pattern itself - and a pattern
+    that has never been checked against this particular feed is exactly how
+    "The Climate Casino", a climate newsletter, was deleted as gambling spam
+    minutes after being added. A false removal is data loss; a false keep is one
+    line that a human can look at next time.
+
+    What still removes a new feed:
+      hand:       a human wrote it into spam.jsonl - that IS the decision
+      gone:NNN    the server says it is gone (404/410/451)
+      dead-domain the name does not resolve
+    Those are observed facts, not vocabulary. A word list and "this body is not
+    XML" are patterns, and patterns get a pass.
+    """
+    if verdict == "remove" and is_new and (
+            reason.startswith("spam:") or reason == "not-a-feed"):
+        return "flag", reason + "->new-in-pass"
+    return verdict, reason
+
+
+def baseline_keys():
+    """Norm keys of the feeds in feeds.json at HEAD, or None if git cannot say.
+
+    None means "unknown", and the guard treats unknown as "not new" rather than
+    "new": a broken git read must not turn every removal into a flag and quietly
+    stop the tool doing its job. It prints instead.
+    """
+    root = os.path.dirname(paths.root("feeds.json"))
+    try:
+        out = subprocess.run(["git", "-C", root, "show", "HEAD:feeds.json"],
+                             capture_output=True, text=True)
+        if out.returncode != 0:
+            return None
+        return {vocab.norm_key(f["url"]) for f in json.loads(out.stdout)}
+    except Exception:
+        return None
+
+
 def classify(rec, feed, spam_rules=()):
     status = rec.get("status", 0)
     err = rec.get("error", "")
@@ -224,6 +267,10 @@ def main():
 
     feeds = json.load(open(paths.root("feeds.json"), encoding="utf-8"))
     spam_rules = load_spam()
+    baseline = baseline_keys()
+    if baseline is None:
+        print("triage: could not read feeds.json at HEAD; the new-in-pass guard "
+              "is off for this run", file=sys.stderr)
     harvest = {}
     for line in open(args.harvest, encoding="utf-8"):
         try:
@@ -241,6 +288,9 @@ def main():
             rec = {}
         else:
             verdict, reason = classify(rec, feed, spam_rules)
+        if baseline is not None:
+            is_new = vocab.norm_key(url) not in baseline
+            verdict, reason = apply_newness_guard(verdict, reason, is_new)
         counts[f"{verdict}:{reason.split(':')[0]}"] += 1
         rows.append({
             "url": url, "verdict": verdict, "reason": reason,
