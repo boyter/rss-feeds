@@ -1,0 +1,220 @@
+# topic:crypto added to TAGS.md; these shipped feeds name crypto in their OWN
+# title or description (not in an item headline - that is the pile-up). finance
+# is kept only where a non-crypto money word is also present in the same text.
+https://0dotxyz.substack.com/feed	topic:crypto topic:music type:newsletter
+https://0xpasta.substack.com/feed	topic:crypto type:personal-blog
+https://0xplay.substack.com/feed	topic:business topic:crypto type:newsletter
+https://0xshah.substack.com/feed	topic:crypto type:newsletter
+https://0xshardlab.substack.com/feed	topic:crypto topic:science type:newsletter
+https://168xclub.substack.com/feed	topic:ai topic:crypto type:newsletter
+https://3loop.substack.com/feed	topic:business topic:crypto topic:data topic:finance type:newsletter
+https://3qcom3.podcaster.de/SOLernenWir.rss	topic:crypto topic:media type:podcast
+https://5blockchains.com/index.xml	topic:crypto topic:programming type:personal-blog
+https://961today.com/feed	topic:crypto topic:finance type:publication
+https://99bitcoins.com/feed/	topic:crypto type:publication
+https://abcoin.net/rss	topic:crypto topic:tech-industry type:personal-blog
+https://abrahamrivv.substack.com/feed	topic:crypto topic:programming type:newsletter
+https://acceleratedcapital.substack.com/feed	topic:crypto topic:finance type:newsletter
+https://accesstribe.com/feed	topic:crypto topic:education type:newsletter
+https://adlerscryptoinsights.substack.com/feed	topic:crypto topic:finance type:newsletter
+https://adlunam.substack.com/feed	topic:crypto type:newsletter
+https://adoptotech.substack.com/feed	topic:crypto type:newsletter
+https://adriandefi.substack.com/feed	topic:crypto topic:finance type:newsletter
+https://advantageblockchain.substack.com/feed	topic:business topic:crypto type:newsletter
+https://afterschool2021.substack.com/feed	topic:crypto topic:tech-industry type:newsletter
+https://ai-henoheno-mohero.com/feed/	topic:ai topic:crypto type:publication
+https://airdroplistcoen.substack.com/feed	topic:crypto type:newsletter
+https://albertomeraupsb.substack.com/feed	topic:crypto topic:media type:newsletter
+https://alejo0630.substack.com/feed	topic:crypto type:newsletter
+https://alexanderchukovski.com/rss	topic:ai topic:business topic:crypto type:personal-blog
+https://alexmirran.substack.com/feed	topic:crypto type:newsletter
+https://algogovclub.substack.com/feed	topic:crypto type:newsletter
+https://algorithm.substack.com/feed	topic:crypto topic:finance type:vendor-blog
+https://alles-coin-nichts-muss.podigee.io/feed/mp3	topic:crypto type:podcast
+https://allscale.substack.com/feed	topic:crypto type:newsletter
+https://alphalist.podigee.io/feed/mp3	topic:ai topic:business topic:crypto topic:tech-industry type:podcast
+https://andresfelipearias.substack.com/feed	topic:ai topic:crypto type:newsletter
+https://andrewaxelrod.substack.com/feed	topic:crypto topic:finance type:newsletter
+https://anialexander.substack.com/feed	topic:ai topic:business topic:crypto type:newsletter
+https://ankr.substack.com/feed	topic:crypto topic:infrastructure topic:web-development type:vendor-blog
+https://antongolub.substack.com/feed	topic:crypto topic:finance type:newsletter
+https://antonyreading.substack.com/feed	topic:ai topic:business topic:crypto topic:finance topic:web-development type:newsletter
+https://apcollectiveio.substack.com/feed	topic:business topic:crypto topic:finance type:vendor-blog
+https://aped.ai/rss	topic:ai topic:crypto topic:finance type:aggregator
+https://apetown.substack.com/feed	topic:crypto topic:finance type:newsletter
+https://api.aped.ai/rss	topic:crypto topic:finance type:aggregator
+https://api.riverside.fm/hosting/11te19HB.rss	topic:crypto topic:education topic:media type:podcast
+https://apisod.com/api/rss/podcast_71723b1b-4555-459e-950d-706baf21ad13.xml	topic:crypto topic:finance type:podcast
+https://arielfl.substack.com/feed	topic:crypto topic:tech-industry type:newsletter
+https://arminreiter.com/feed/	topic:crypto topic:infrastructure topic:programming topic:software-engineering type:personal-blog
+https://athenaalpha.substack.com/feed	topic:crypto type:newsletter
+https://atka.substack.com/feed	topic:crypto type:newsletter
+https://audio.fiatdenier.com/podcast.xml	topic:crypto type:podcast
+https://aufgeraeumt.podigee.io/feed/mp3	topic:business topic:crypto type:podcast
+https://ausblockai.substack.com/feed	topic:ai topic:crypto type:newsletter
+https://australiandefiassociation.substack.com/feed	topic:ai topic:crypto type:newsletter
+https://b10c.me/feed.xml	topic:crypto topic:programming type:personal-blog
+https://bachini.substack.com/feed	topic:crypto topic:finance topic:tech-industry type:newsletter
+https://bagster.substack.com/feed	topic:business topic:crypto type:newsletter
+https://basedgiant.substack.com/feed	topic:crypto type:personal-blog
+https://bazabtc.substack.com/feed	topic:crypto topic:finance type:newsletter
+https://becomesovran.com/RSS.xml	topic:crypto topic:open-source topic:security type:personal-blog
+https://beincrypto.com/feed	topic:crypto type:publication
+https://benjamistan.tech/feed.xml	topic:crypto topic:programming topic:web-development type:personal-blog
+https://bennet.org/rss.xml	topic:crypto topic:open-source topic:security type:personal-blog
+https://betokenmyfriend.substack.com/feed	topic:crypto type:newsletter
+https://bfmtv.com/rss/crypto/	topic:crypto topic:tech-industry type:publication
+https://bfrr.podigee.io/feed/mp3	topic:business topic:crypto topic:media type:podcast
+https://bitboycrypto.libsyn.com/rss	topic:crypto type:podcast
+https://bitcoin-consciousness.com/feed/podcast/bitcoin-consciousness/	topic:crypto type:podcast
+https://bitcoin-kurier.de/feed/	topic:crypto type:publication
+https://bitcoin-takeover.com/audio/feed.xml	topic:crypto type:podcast
+https://bitcoin-takeover.com/feed/	topic:crypto topic:media topic:open-source topic:security type:podcast
+https://bitcoin.clarkmoody.com/rss	topic:crypto topic:hardware type:vendor-blog
+https://bitcoin.fr/feed/	topic:crypto type:publication
+https://bitcoin.org.il/feed/podcast/	topic:crypto type:podcast
+https://bitcoinalmanack.com/rss.xml	topic:crypto type:newsletter
+https://bitcoinandmarkets.libsyn.com/rss	topic:crypto topic:finance type:podcast
+https://bitcoinbinge.substack.com/feed	topic:crypto type:newsletter
+https://bitcoinbitches.substack.com/feed	topic:crypto type:newsletter
+https://bitcoinbriefly.substack.com/feed	topic:crypto type:newsletter
+https://bitcoinenespanol.substack.com/feed	topic:crypto topic:security type:newsletter
+https://bitcoinfortress.substack.com/feed	topic:crypto type:newsletter
+https://bitcoinforwomen.substack.com/feed	topic:crypto type:newsletter
+https://bitcoiniop.substack.com/feed	topic:crypto type:newsletter
+https://bitcoinisdata.substack.com/feed	topic:crypto topic:data type:newsletter
+https://bitcoinist.com/feed/	topic:crypto topic:news type:publication
+https://bitcoinkatie.substack.com/feed	topic:crypto type:newsletter
+https://bitcoinkurzerklaert.podigee.io/feed/mp3	topic:crypto topic:media type:podcast
+https://bitcoinlaws.substack.com/feed	topic:crypto topic:politics type:newsletter
+https://bitcoinlighthouse.substack.com/feed	topic:crypto topic:security type:newsletter
+https://bitcoinmindset.substack.com/feed	topic:crypto topic:education type:newsletter
+https://bitcoinnews.ch/feed/	topic:crypto type:publication
+https://bitcoinnewsdigest.substack.com/feed	topic:crypto topic:finance type:newsletter
+https://bitcoinnutzen.podigee.io/feed/mp3	topic:crypto type:podcast
+https://bitcoinops.org/feed.xml	topic:business topic:crypto topic:software-engineering type:newsletter
+https://bitcoinproduct.substack.com/feed	topic:crypto topic:science topic:software-engineering type:newsletter
+https://bitcoinstrategy.substack.com/feed	topic:crypto type:newsletter
+https://bitcointalks.podbean.com/feed.xml	topic:crypto topic:media type:podcast
+https://bitcointrain.it/feed	topic:crypto type:podcast
+https://bithub.pl/feed/	topic:crypto type:publication
+https://bithub.pl/feed/gn/	topic:crypto type:publication
+https://bitinvestment.io/feed.xml	topic:crypto type:podcast
+https://bitstein.substack.com/feed	topic:crypto type:newsletter
+https://bjdichter.substack.com/feed	topic:crypto topic:philosophy topic:politics type:newsletter
+https://blingbling.substack.com/feed	topic:crypto topic:economics topic:politics type:newsletter
+https://blockanalitica.substack.com/feed	topic:crypto topic:finance type:newsletter
+https://blockbandit.xyz/atom	topic:crypto topic:finance topic:programming type:personal-blog
+https://blockchainbacker.substack.com/feed	topic:crypto topic:finance type:newsletter
+https://blockchaingames.substack.com/feed	topic:crypto topic:gaming type:newsletter
+https://blockchaingandalf.substack.com/feed	topic:crypto type:personal-blog
+https://blockchaingermany.podcaster.de/blockchaingermany.rss	topic:crypto topic:media topic:tech-industry type:podcast
+https://blockchainincomereport.substack.com/feed	topic:crypto type:newsletter
+https://blockchainmagazine.net/feed/	topic:crypto topic:tech-industry type:publication
+https://blockchainreporter.net/feed/	topic:crypto topic:finance type:publication
+https://blockchainsure.substack.com/feed	topic:crypto type:newsletter
+https://blocknews.com/feed/	topic:crypto topic:tech-industry type:publication
+https://blockscholesresearch.substack.com/feed	topic:crypto topic:finance type:newsletter
+https://blocksignals.substack.com/feed	topic:business topic:crypto topic:security type:newsletter
+https://blocktelegraph.io/feed/	topic:crypto type:publication
+https://blocktower.substack.com/feed	topic:crypto topic:finance type:newsletter
+https://blog.0xbuilder.com/_feather/rss.xml	topic:crypto topic:programming type:personal-blog
+https://blog.adopto.ca/feed	topic:crypto type:newsletter
+https://blog.arcbjorn.com/rss	topic:crypto topic:data topic:systems type:personal-blog
+https://blog.bitfinex.com/feed/	topic:crypto type:vendor-blog
+https://blog.bitjson.com/rss	topic:crypto topic:finance topic:security type:personal-blog
+https://blog.blockstream.com/rss/	topic:crypto topic:infrastructure type:vendor-blog
+https://blog.casa.io/rss/	topic:crypto topic:security type:vendor-blog
+https://blog.dhimmel.com/feeds/all.atom.xml	topic:crypto topic:data type:personal-blog
+https://blog.erratasec.com/feeds/1949610645936705403/comments/default	topic:crypto topic:security type:personal-blog
+https://blog.ethereum.org/en/feed.xml	topic:crypto topic:software-engineering type:institution
+https://blog.ethereum.org/feed.xml	topic:crypto topic:software-engineering type:institution
+https://blog.lopp.net/rss	topic:crypto topic:security type:personal-blog
+https://blog.nadjabester.com/feed	topic:crypto topic:personal type:personal-blog
+https://blog.ryjones.org/feed.xml	topic:crypto topic:open-source topic:software-engineering type:personal-blog
+https://blog.saimadugula.com/rss.xml	topic:ai topic:business topic:crypto topic:tech-industry type:personal-blog
+https://blog.statechannels.org/rss.xml	topic:crypto topic:programming type:community
+https://blog.verichains.io/feed	topic:crypto topic:security type:vendor-blog
+https://blog.wizsec.jp/feeds/posts/default	topic:crypto type:personal-blog
+https://bluerainmanagement.substack.com/feed	topic:business topic:crypto topic:finance topic:networking topic:tech-industry type:newsletter
+https://bmpro.substack.com/feed	topic:crypto topic:finance type:newsletter
+https://bombthrower.com/feed/podcast/bombthrower-tv/	topic:crypto type:podcast
+https://borsagundem.com.tr/rss	topic:crypto type:publication
+https://bravenewcoin.com/feed	topic:crypto topic:finance type:publication
+https://bravenewcoin.com/rss/insights	topic:crypto topic:finance type:publication
+https://bridge21.substack.com/feed	topic:crypto topic:finance type:newsletter
+https://brrreadfan.github.io/feed.xml	topic:crypto topic:music type:personal-blog
+https://btcnizando.substack.com/feed	topic:crypto type:newsletter
+https://btcurrent.substack.com/feed	topic:crypto type:newsletter
+https://budisukmana.substack.com/feed	topic:crypto type:newsletter
+https://buidlguidl.substack.com/feed	topic:crypto topic:software-engineering type:institution
+https://bullishthoughts.substack.com/feed	topic:business topic:crypto type:newsletter
+https://carlbmenger.substack.com/feed	topic:crypto type:newsletter
+https://castleisland.libsyn.com/rss	topic:crypto topic:science type:podcast
+https://www.chainalysis.com/feed/	topic:ai topic:crypto type:personal-blog
+https://www.chainalysis.com/rss/	topic:ai topic:crypto type:personal-blog
+https://www.chaincatcher.com/rss.xml	topic:ai topic:crypto type:publication
+https://chaintw.substack.com/feed	topic:business topic:crypto type:newsletter
+https://cheekyrolo.substack.com/feed	topic:crypto topic:history type:newsletter
+https://christinedkim.substack.com/feed	topic:crypto type:newsletter
+https://chukxyz.substack.com/feed	topic:crypto topic:finance type:newsletter
+https://cloudwall.substack.com/feed	topic:crypto topic:finance type:newsletter
+https://coinidol.com/rssshort/	topic:crypto type:publication
+https://coinjournal.net/feed/	topic:crypto type:publication
+https://coinpedian.substack.com/feed	topic:crypto type:newsletter
+https://coinstack.substack.com/feed	topic:crypto type:newsletter
+https://cointelegraph-cn.com/rss	topic:crypto type:publication
+https://cointelegraph-tw.com/rss	topic:crypto type:publication
+https://cointelegraph.com/rss	topic:crypto type:publication
+https://cointelegraph.fr/rss	topic:crypto type:publication
+https://cointelegraph.jp/rss	topic:crypto type:publication
+https://consenso.substack.com/feed	topic:crypto type:newsletter
+https://crawlie.substack.com/feed	topic:crypto type:newsletter
+https://criptoath.substack.com/feed	topic:crypto type:newsletter
+https://crypto-moeda.blogspot.com/feeds/posts/default	topic:crypto type:personal-blog
+https://crypto-nerds-podcast.podigee.io/feed/mp3	topic:crypto type:podcast
+https://crypto.news/feed/	topic:crypto type:publication
+https://cryptobigstories.substack.com/feed	topic:crypto topic:finance type:newsletter
+https://cryptobreakdown.substack.com/feed	topic:crypto type:newsletter
+https://cryptobriefing.com/news/feed/	topic:crypto topic:finance type:vendor-blog
+https://cryptobriefing.com/podcast-notes/feed/	topic:crypto topic:finance type:podcast
+https://cryptocomdefi.substack.com/feed	topic:crypto topic:security topic:web-development type:newsletter
+https://cryptocommunitynews.substack.com/feed	topic:crypto topic:finance type:newsletter
+https://cryptocomresearch.substack.com/feed	topic:crypto topic:finance type:newsletter
+https://cryptocon.substack.com/feed	topic:crypto type:newsletter
+https://cryptocurrencyjobs.substack.com/feed	topic:crypto type:newsletter
+https://cryptoexponentials.substack.com/feed	topic:crypto type:newsletter
+https://cryptofolks.substack.com/feed	topic:crypto type:newsletter
+https://cryptografiaavanzada.substack.com/feed	topic:crypto type:newsletter
+https://cryptohayes.substack.com/feed	topic:crypto topic:tech-industry type:newsletter
+https://cryptoinvestar.com/feed/podcast/the-cryptoinvestar-podcast/	topic:crypto type:podcast
+https://cryptojargon.substack.com/feed	topic:crypto topic:finance type:newsletter
+https://cryptoknightacademy.substack.com/feed	topic:crypto topic:finance type:newsletter
+https://cryptonewslives.com/feed/	topic:crypto type:publication
+https://cryptoniteventures.substack.com/feed	topic:ai topic:business topic:crypto type:newsletter
+https://cryptoquick.substack.com/feed	topic:crypto topic:mathematics type:newsletter
+https://cryptoquorum.com/feed/	topic:crypto topic:finance type:publication
+https://cryptorobotcom.substack.com/feed	topic:crypto type:newsletter
+https://cryptorundown.libsyn.com/rss	topic:crypto topic:finance type:podcast
+https://cryptosuperhub.substack.com/feed	topic:crypto type:newsletter
+https://cryptoticker.substack.com/feed	topic:crypto topic:finance type:newsletter
+https://cubeatms.substack.com/feed	topic:crypto type:newsletter
+https://cubicanalytics.substack.com/feed	topic:crypto topic:data topic:finance type:newsletter
+https://cvj.ch/feed/	topic:crypto type:publication
+https://dailybitcoiner.substack.com/feed	topic:crypto type:newsletter
+https://dariusaskaripour.substack.com/feed	topic:business topic:crypto type:newsletter
+http://darkwhite666.blogspot.com/feeds/posts/default	topic:crypto topic:science topic:security type:personal-blog
+https://darkwhite666.blogspot.com/feeds/posts/default?alt=rss	topic:crypto topic:science topic:security type:personal-blog
+https://darthcoin.substack.com/feed	topic:crypto topic:education type:newsletter
+https://dea-podcast.podigee.io/feed/mp3	topic:crypto type:podcast
+https://federicocarrone.com/atom.xml	topic:crypto topic:mathematics topic:personal topic:programming type:personal-blog
+https://feeds.megaphone.fm/SLT1002166400	topic:ai topic:crypto topic:media type:podcast
+https://fortune.com/feed/fortune-feeds/?id=3689511	topic:business topic:crypto type:publication
+https://joeprevite.com/rss.xml	topic:books topic:crypto topic:web-development type:personal-blog
+https://karl.tech/rss/	topic:crypto topic:programming type:personal-blog
+https://kpiech.substack.com/feed	topic:crypto topic:finance topic:politics type:newsletter
+https://mineforeman.com/feeds/all.atom.xml	topic:crypto type:personal-blog
+https://serhack.me/blog/index.xml	topic:crypto topic:security type:personal-blog
+https://serhack.me/it/blog/index.xml	topic:crypto topic:security type:personal-blog
+https://www.trinitycyber.com/blog/rss.xml	topic:ai topic:crypto topic:security type:vendor-blog
+https://web3isgoinggreat.com/feed.xml	topic:crypto topic:security topic:tech-industry type:personal-blog

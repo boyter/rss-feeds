@@ -2943,7 +2943,7 @@
 {"key": "https://adkien.thecomicseries.com/rss", "tags": ["topic:art", "type:publication"]}
 {"key": "https://adlaw.jotwell.com/feed/", "tags": ["topic:politics", "type:aggregator"]}
 {"key": "https://adlk.io/rss.xml", "tags": ["topic:open-source", "type:personal-blog"]}
-{"key": "https://adlunam.substack.com/feed", "tags": ["topic:finance", "type:newsletter"]}
+{"key": "https://adlunam.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
 {"key": "https://adm-zheleznovodsk.ru/rss/", "tags": ["language:russian", "topic:government", "type:institution"]}
 {"key": "https://admcpr.com/rss", "tags": ["topic:software-engineering", "type:personal-blog"]}
 {"key": "https://admediosnoticias.com.do/feed/", "tags": ["language:spanish", "region:caribbean", "topic:news", "type:publication"]}
@@ -3220,7 +3220,7 @@
 {"key": "https://afterquitting.substack.com/feed", "tags": ["language:chinese", "topic:design", "type:newsletter"]}
 {"key": "https://afters.substack.com/feed", "tags": ["language:chinese", "topic:personal", "type:newsletter"]}
 {"key": "https://afterschool.substack.com/feed", "tags": ["topic:entertainment", "type:newsletter"]}
-{"key": "https://afterschool2021.substack.com/feed", "tags": ["language:chinese", "topic:tech-industry", "type:newsletter"]}
+{"key": "https://afterschool2021.substack.com/feed", "tags": ["topic:crypto", "topic:tech-industry", "type:newsletter"]}
 {"key": "https://afterstan.bearblog.dev/feed/", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "https://afterthemothertongue.substack.com/feed", "tags": ["topic:personal", "type:newsletter"]}
 {"key": "https://aftertherails.substack.com/feed", "tags": ["topic:business", "type:newsletter"]}
@@ -4401,7 +4401,7 @@
 {"key": "https://alexander.sieradzki.dev/blog.xml", "tags": ["topic:software-engineering", "type:personal-blog"]}
 {"key": "https://alexander.whillas.com/feeds/atom.xml", "tags": ["topic:tech-industry", "type:personal-blog"]}
 {"key": "https://alexanderbjoy.com/feed", "tags": ["region:usa", "topic:books", "type:personal-blog"]}
-{"key": "https://alexanderchukovski.com/rss", "tags": ["topic:ai", "topic:business", "type:personal-blog"]}
+{"key": "https://alexanderchukovski.com/rss", "tags": ["topic:ai", "topic:business", "topic:crypto", "type:personal-blog"]}
 {"key": "https://alexanderglavan.substack.com/feed", "tags": ["topic:religion", "type:newsletter"]}
 {"key": "https://alexanderhoughton.co.uk/feed/", "tags": ["topic:programming", "type:personal-blog"]}
 {"key": "https://alexanderisora.substack.com/feed", "tags": ["topic:tech-industry", "type:newsletter"]}
@@ -5196,8 +5196,8 @@
 {"key": "https://0xlxmklkv.bearblog.dev/feed", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "https://0xmun1r.substack.com/feed", "tags": ["topic:security", "type:newsletter"]}
 {"key": "https://0xnairolf.substack.com/feed", "tags": ["topic:finance", "type:newsletter"]}
-{"key": "https://0xpasta.substack.com/feed", "tags": ["topic:finance", "type:personal-blog"]}
-{"key": "https://0xshah.substack.com/feed", "tags": ["topic:finance", "type:newsletter"]}
+{"key": "https://0xpasta.substack.com/feed", "tags": ["topic:crypto", "type:personal-blog"]}
+{"key": "https://0xshah.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
 {"key": "0xsid.com", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "0xsp.com", "tags": ["topic:security", "type:vendor-blog"]}
 {"key": "https://0xstation.substack.com/feed", "tags": ["topic:finance", "type:newsletter"]}
@@ -5731,7 +5731,7 @@
 {"key": "59.ru", "tags": ["language:russian", "region:russia", "topic:news", "type:publication"]}
 {"key": "https://5ab5traction5.bearblog.dev/feed/", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "https://5bbtbd.podcaster.de/listen.rss", "tags": ["language:german", "region:germany", "topic:music", "type:podcast"]}
-{"key": "https://5blockchains.com/index.xml", "tags": ["topic:finance", "topic:programming", "type:personal-blog"]}
+{"key": "https://5blockchains.com/index.xml", "tags": ["topic:crypto", "topic:programming", "type:personal-blog"]}
 {"key": "https://5dceb4.podcaster.de/jfk60.rss", "tags": ["language:german", "region:germany", "topic:history", "type:podcast"]}
 {"key": "5f5.org", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "https://5gstore.com/blog/feed/", "tags": ["topic:gadgets", "topic:tech-industry", "type:vendor-blog"]}
@@ -6329,7 +6329,7 @@
 {"key": "https://abrabelke.substack.com/feed", "tags": ["topic:business", "type:newsletter"]}
 {"key": "https://abracadabramag.substack.com/feed", "tags": ["topic:personal", "type:newsletter"]}
 {"key": "abrahamicvoices.com", "tags": ["topic:religion", "type:podcast"]}
-{"key": "https://abrahamrivv.substack.com/feed", "tags": ["language:spanish", "topic:programming", "type:newsletter"]}
+{"key": "https://abrahamrivv.substack.com/feed", "tags": ["topic:crypto", "topic:programming", "type:newsletter"]}
 {"key": "abdullah.gula.bi", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "https://aberron.substack.com/feed", "tags": ["language:spanish", "topic:personal", "type:newsletter"]}
 {"key": "https://aberstoat.substack.com/feed", "tags": ["region:usa", "topic:books", "type:institution"]}
@@ -7575,7 +7575,7 @@
 {"key": "arif.sh", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
 {"key": "https://bigtimstiles.substack.com/feed", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "blog.skorulis.com", "tags": ["topic:ai", "type:personal-blog"]}
-{"key": "https://buidlguidl.substack.com/feed", "tags": ["topic:software-engineering", "type:institution"]}
+{"key": "https://buidlguidl.substack.com/feed", "tags": ["topic:crypto", "topic:software-engineering", "type:institution"]}
 {"key": "dangrafham.com", "tags": ["topic:ai", "topic:software-engineering", "type:personal-blog"]}
 {"key": "https://feeds.soundcloud.com/users/soundcloud:users:435085245/sounds.rss", "tags": ["topic:business", "topic:transport", "type:podcast"]}
 {"key": "https://helleborezine.substack.com/feed", "tags": ["region:uk", "topic:art", "topic:books", "type:institution"]}
@@ -7636,7 +7636,7 @@
 {"key": "https://arnoldkling.substack.com/feed", "tags": ["topic:economics", "topic:philosophy", "type:personal-blog"]}
 {"key": "atticusli.com", "tags": ["topic:data", "type:personal-blog"]}
 {"key": "https://audioboom.com/channels/4966228.rss", "tags": ["topic:economics", "type:podcast"]}
-{"key": "https://bitcoin.clarkmoody.com/rss", "tags": ["topic:finance", "topic:hardware", "type:vendor-blog"]}
+{"key": "https://bitcoin.clarkmoody.com/rss", "tags": ["topic:crypto", "topic:hardware", "type:vendor-blog"]}
 {"key": "https://bizmodelmastery.substack.com/feed", "tags": ["topic:business", "topic:finance", "type:newsletter"]}
 {"key": "blog.jcx.au", "tags": ["topic:ai", "topic:data", "topic:economics", "type:personal-blog"]}
 {"key": "blog.thoughtinvest.com", "tags": ["topic:finance", "type:personal-blog"]}
@@ -7779,7 +7779,7 @@
 {"key": "baltazarstudios.com", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "beambots.dev", "tags": ["topic:programming", "type:personal-blog"]}
 {"key": "bethdecarbo.substack.com", "tags": ["topic:business", "type:newsletter"]}
-{"key": "https://bitcoin-takeover.com/audio/feed.xml", "tags": ["topic:finance", "type:podcast"]}
+{"key": "https://bitcoin-takeover.com/audio/feed.xml", "tags": ["topic:crypto", "type:podcast"]}
 {"key": "blog.backslasher.net", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "blog.casa.io", "tags": ["topic:finance", "topic:security", "type:vendor-blog"]}
 {"key": "blog.cyrusroshan.com", "tags": ["topic:personal", "type:personal-blog"]}
@@ -7992,11 +7992,11 @@
 {"key": "https://algherolive.it/feed/", "tags": ["language:italian", "region:italy", "topic:news", "type:publication"]}
 {"key": "https://algoestapasando.com.ar/feed/", "tags": ["language:spanish", "region:latin-america", "topic:news", "type:publication"]}
 {"key": "https://algofolk.substack.com/feed", "tags": ["topic:ai", "topic:media", "type:institution"]}
-{"key": "https://algogovclub.substack.com/feed", "tags": ["topic:finance", "type:newsletter"]}
+{"key": "https://algogovclub.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
 {"key": "https://algomatictrading.substack.com/feed", "tags": ["topic:finance", "topic:programming", "type:newsletter"]}
 {"key": "https://algoodwyn.substack.com/feed", "tags": ["region:usa", "topic:art", "topic:politics", "type:newsletter"]}
 {"key": "https://algopop.tumblr.com/rss", "tags": ["topic:ai", "topic:media", "type:personal-blog"]}
-{"key": "https://algorithm.substack.com/feed", "tags": ["topic:finance", "type:vendor-blog"]}
+{"key": "https://algorithm.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:vendor-blog"]}
 {"key": "https://algorithmicabolitionist.substack.com/feed", "tags": ["topic:ai", "topic:philosophy", "type:personal-blog"]}
 {"key": "https://algorithmicpattern.org/feed/atom", "tags": ["topic:ai", "topic:art", "type:institution"]}
 {"key": "https://algorithms.openmymind.net/atom.xml", "tags": ["topic:programming", "topic:software-engineering", "type:personal-blog"]}
@@ -8255,7 +8255,7 @@
 {"key": "https://allergyasc.podbean.com/feed.xml", "tags": ["topic:health", "topic:medicine", "type:podcast"]}
 {"key": "https://alles-auf-sicher.podigee.io/feed/mp3", "tags": ["language:german", "topic:security", "type:podcast"]}
 {"key": "https://alles-ausser-gewoehnlich.podigee.io/feed/mp3", "tags": ["language:german", "topic:lifestyle", "type:podcast"]}
-{"key": "https://alles-coin-nichts-muss.podigee.io/feed/mp3", "tags": ["language:german", "topic:finance", "type:podcast"]}
+{"key": "https://alles-coin-nichts-muss.podigee.io/feed/mp3", "tags": ["topic:crypto", "type:podcast"]}
 {"key": "https://alles-fuer-die-katz-podcast.de/feed/mp3", "tags": ["language:german", "topic:lifestyle", "type:podcast"]}
 {"key": "https://alles-im-griff.podigee.io/feed/mp3", "tags": ["language:german", "topic:business", "type:podcast"]}
 {"key": "https://alles-isi.podigee.io/feed/mp3", "tags": ["language:german", "topic:travel", "type:podcast"]}
@@ -11490,7 +11490,7 @@
 {"key": "apeadero.es", "tags": ["language:spanish", "region:spain", "topic:travel", "type:podcast"]}
 {"key": "apearson.substack.com", "tags": ["topic:art", "topic:books", "type:newsletter"]}
 {"key": "apeatling.com", "tags": ["topic:web-development", "type:personal-blog"]}
-{"key": "https://aped.ai/rss", "tags": ["topic:ai", "topic:finance", "type:aggregator"]}
+{"key": "https://aped.ai/rss", "tags": ["topic:ai", "topic:crypto", "topic:finance", "type:aggregator"]}
 {"key": "http://apee-autismo.blogspot.com/feeds/posts/default", "tags": ["language:portuguese", "region:europe", "topic:education", "topic:health", "type:institution"]}
 {"key": "https://apeel.substack.com/feed", "tags": ["topic:environment", "topic:food", "type:vendor-blog"]}
 {"key": "https://apeirogongames.substack.com/feed", "tags": ["region:canada", "topic:gaming", "type:personal-blog"]}
@@ -11502,7 +11502,7 @@
 {"key": "https://apersonalanthology.substack.com/feed", "tags": ["topic:books", "type:newsletter"]}
 {"key": "https://apersonfirst.substack.com/feed", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "https://apetitonline.cz/rss.xml", "tags": ["language:czech", "region:europe", "topic:food", "type:publication"]}
-{"key": "https://apetown.substack.com/feed", "tags": ["topic:finance", "type:newsletter"]}
+{"key": "https://apetown.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:newsletter"]}
 {"key": "https://apexcourtweekly.substack.com/feed", "tags": ["region:india", "topic:politics", "type:newsletter"]}
 {"key": "https://apexmovement.substack.com/feed", "tags": ["topic:sport", "type:vendor-blog"]}
 {"key": "https://apexventurestudio.substack.com/feed", "tags": ["topic:business", "type:newsletter"]}
@@ -11531,7 +11531,7 @@
 {"key": "https://api.aipodlab.it/api/rss/feed.xml", "tags": ["language:italian", "region:italy", "topic:ai", "type:podcast"]}
 {"key": "api.allportsopen.org", "tags": ["topic:entertainment", "type:podcast"]}
 {"key": "https://api.anquanke.com/data/v1/rss", "tags": ["language:chinese", "region:asia", "topic:security", "type:publication"]}
-{"key": "https://api.aped.ai/rss", "tags": ["topic:finance", "type:aggregator"]}
+{"key": "https://api.aped.ai/rss", "tags": ["topic:crypto", "topic:finance", "type:aggregator"]}
 {"key": "https://api.apu.fi/rss", "tags": ["language:finnish", "region:europe", "topic:health", "type:publication"]}
 {"key": "https://api.apu.fi/rss/theme/podcastit", "tags": ["language:finnish", "region:europe", "topic:entertainment", "type:podcast"]}
 {"key": "https://api.arretsurimages.net/api/public/rss/all-content", "tags": ["language:french", "region:france", "topic:media", "type:publication"]}
@@ -12254,7 +12254,7 @@
 {"key": "https://apis.rfi.fr/products/get_product/fov-rfi-fr-get-journaux-podcast-v2-afrique?token_application=975d23b8-7a07-11e8-9f62-005056a90194", "tags": ["language:french", "region:africa", "topic:news", "type:podcast"]}
 {"key": "https://apisod.com/api/rss/podcast_3d61cc57-2984-4f4d-b448-09cd560414c6.xml", "tags": ["region:usa", "topic:business", "topic:tech-industry", "type:podcast"]}
 {"key": "https://apisod.com/api/rss/podcast_671a6f58-fb5b-4d55-85b1-9bfd1eda5ce0.xml", "tags": ["region:usa", "topic:business", "topic:tech-industry", "type:podcast"]}
-{"key": "https://apisod.com/api/rss/podcast_71723b1b-4555-459e-950d-706baf21ad13.xml", "tags": ["topic:finance", "type:podcast"]}
+{"key": "https://apisod.com/api/rss/podcast_71723b1b-4555-459e-950d-706baf21ad13.xml", "tags": ["topic:crypto", "topic:finance", "type:podcast"]}
 {"key": "https://apotheke-adhoc.de/nachrichten/politik/rss.xml", "tags": ["language:german", "region:germany", "topic:health", "topic:politics", "type:publication"]}
 {"key": "https://apotheke-adhoc.de/nachrichten/rss.xml", "tags": ["language:german", "region:germany", "topic:health", "type:publication"]}
 {"key": "https://apotheke-adhoc.de/termine/termine-suchen/rss.xml", "tags": ["language:german", "region:germany", "topic:education", "topic:health", "type:aggregator"]}
@@ -13811,7 +13811,7 @@
 {"key": "https://atipiche.substack.com/feed", "tags": ["language:italian", "topic:health", "type:newsletter"]}
 {"key": "https://atisabelles.substack.com/feed", "tags": ["region:usa", "topic:food", "type:newsletter"]}
 {"key": "https://atjexv.podcaster.de/lehrenlernen.rss", "tags": ["language:german", "topic:education", "type:podcast"]}
-{"key": "https://atka.substack.com/feed", "tags": ["topic:finance", "type:newsletter"]}
+{"key": "https://atka.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
 {"key": "https://atlallday.com/feed", "tags": ["region:usa", "topic:sport", "type:publication"]}
 {"key": "https://atlanta285.substack.com/feed", "tags": ["region:usa", "topic:health", "type:vendor-blog"]}
 {"key": "https://atlantabartlett.substack.com/feed", "tags": ["region:usa", "topic:design", "type:newsletter"]}
@@ -14007,7 +14007,7 @@
 {"key": "https://audio.ekrasworks.com/podcast.rss", "tags": ["topic:history", "topic:news", "type:podcast"]}
 {"key": "https://audio.enoent.one/feed.rss", "tags": ["topic:music", "type:podcast"]}
 {"key": "https://audio.felixk.me/feed.xml", "tags": ["language:chinese", "topic:ai", "type:podcast"]}
-{"key": "https://audio.fiatdenier.com/podcast.xml", "tags": ["topic:finance", "type:podcast"]}
+{"key": "https://audio.fiatdenier.com/podcast.xml", "tags": ["topic:crypto", "type:podcast"]}
 {"key": "http://audio.globoradio.globo.com/podcast/feed/105/condominio-legal", "tags": ["language:portuguese", "region:latin-america", "topic:lifestyle", "type:podcast"]}
 {"key": "http://audio.globoradio.globo.com/podcast/feed/112/cbn-agronegocios", "tags": ["language:portuguese", "region:latin-america", "topic:business", "type:podcast"]}
 {"key": "http://audio.globoradio.globo.com/podcast/feed/113/cbn-comunicacao-e-lideranca", "tags": ["language:portuguese", "region:latin-america", "topic:business", "type:podcast"]}
@@ -14130,7 +14130,7 @@
 {"key": "https://aufgebohrt.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:business", "type:podcast"]}
 {"key": "https://aufgehtsderrehablog.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:health", "type:personal-blog"]}
 {"key": "https://aufgeklaertes-herz.libsyn.com/rss", "tags": ["language:german", "region:germany", "topic:health", "type:podcast"]}
-{"key": "https://aufgeraeumt.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:business", "type:podcast"]}
+{"key": "https://aufgeraeumt.podigee.io/feed/mp3", "tags": ["topic:business", "topic:crypto", "type:podcast"]}
 {"key": "https://aufmerkmomente.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:business", "type:podcast"]}
 {"key": "https://aufnahmebereit.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:politics", "type:podcast"]}
 {"key": "aufraeumen-podcast.de", "tags": ["language:german", "region:germany", "topic:lifestyle", "type:podcast"]}
@@ -14214,7 +14214,7 @@
 {"key": "https://ausbilder-vier-punkt-null.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:education", "type:podcast"]}
 {"key": "https://ausbildung-de.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:education", "type:podcast"]}
 {"key": "https://ausbildungtogo.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:education", "type:podcast"]}
-{"key": "https://ausblockai.substack.com/feed", "tags": ["topic:ai", "type:newsletter"]}
+{"key": "https://ausblockai.substack.com/feed", "tags": ["topic:ai", "topic:crypto", "type:newsletter"]}
 {"key": "https://auschwitz.net/feed/", "tags": ["topic:history", "type:institution"]}
 {"key": "https://ausdauerblog.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:sport", "type:podcast"]}
 {"key": "https://ausdauerwelt.libsyn.com/rss", "tags": ["language:german", "region:germany", "topic:sport", "type:podcast"]}
@@ -16072,7 +16072,7 @@
 {"key": "https://basedbooksale.substack.com/feed", "tags": ["topic:books", "type:newsletter"]}
 {"key": "https://basedcamppodcast.substack.com/feed", "tags": ["topic:personal", "type:podcast"]}
 {"key": "https://basedfob.substack.com/feed", "tags": ["topic:entertainment", "topic:music", "type:newsletter"]}
-{"key": "https://basedgiant.substack.com/feed", "tags": ["topic:finance", "type:personal-blog"]}
+{"key": "https://basedgiant.substack.com/feed", "tags": ["topic:crypto", "type:personal-blog"]}
 {"key": "https://basedinparis.substack.com/feed", "tags": ["region:france", "topic:politics", "type:personal-blog"]}
 {"key": "https://basedunderground.substack.com/feed", "tags": ["region:usa", "topic:news", "topic:politics", "type:newsletter"]}
 {"key": "https://basefeld.podcaster.de/mixfrommars.rss", "tags": ["topic:music", "type:podcast"]}
@@ -16293,7 +16293,7 @@
 {"key": "https://bazaarsupperclub.substack.com/feed", "tags": ["region:usa", "topic:food", "type:newsletter"]}
 {"key": "https://bazaartimes.com/feed/", "tags": ["region:middle-east", "topic:business", "type:publication"]}
 {"key": "https://bazaarvietnam.vn/feed/", "tags": ["region:asia", "topic:lifestyle", "type:publication"]}
-{"key": "https://bazabtc.substack.com/feed", "tags": ["language:russian", "topic:finance", "type:newsletter"]}
+{"key": "https://bazabtc.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:newsletter"]}
 {"key": "https://bazarmedia.ro/feed/", "tags": ["region:europe", "topic:news", "type:publication"]}
 {"key": "https://bazcaitcheon.substack.com/feed", "tags": ["region:uk", "topic:personal", "type:newsletter"]}
 {"key": "https://bazil.org/index.xml", "tags": ["topic:open-source", "topic:software-engineering", "type:institution"]}
@@ -18103,7 +18103,7 @@
 {"key": "https://between-ai.com/rss/hi.xml", "tags": ["language:hindi", "topic:ai", "type:podcast"]}
 {"key": "https://bfmtv.com/rss/bordeaux/", "tags": ["language:french", "region:france", "topic:news", "type:publication"]}
 {"key": "https://bfmtv.com/rss/cote-d-azur/", "tags": ["language:french", "region:france", "topic:news", "type:publication"]}
-{"key": "https://bfmtv.com/rss/crypto/", "tags": ["language:french", "region:france", "topic:finance", "topic:tech-industry", "type:publication"]}
+{"key": "https://bfmtv.com/rss/crypto/", "tags": ["topic:crypto", "topic:tech-industry", "type:publication"]}
 {"key": "https://bfmtv.fr/rss/economie/entreprises/assurance-banque/", "tags": ["language:french", "region:france", "topic:business", "topic:finance", "type:publication"]}
 {"key": "https://bfmtv.fr/rss/economie/entreprises/energie/", "tags": ["language:french", "region:france", "topic:business", "topic:environment", "type:publication"]}
 {"key": "https://bfmtv.fr/rss/economie/entreprises/services/", "tags": ["language:french", "region:france", "topic:business", "type:publication"]}
@@ -18678,7 +18678,7 @@
 {"key": "bitfission.com", "tags": ["topic:programming", "type:personal-blog"]}
 {"key": "bitflip.show", "tags": ["topic:infrastructure", "type:podcast"]}
 {"key": "bithub.pl", "tags": ["language:polish", "topic:finance", "type:publication"]}
-{"key": "https://bitinvestment.io/feed.xml", "tags": ["language:spanish", "region:mexico", "topic:finance", "type:podcast"]}
+{"key": "https://bitinvestment.io/feed.xml", "tags": ["topic:crypto", "type:podcast"]}
 {"key": "bitlyanews.com", "tags": ["language:spanish", "region:latin-america", "topic:news", "type:publication"]}
 {"key": "bitmason.blogspot.com", "tags": ["topic:tech-industry", "type:vendor-blog"]}
 {"key": "bitmasonsllc.blogspot.com", "tags": ["topic:tech-industry", "type:vendor-blog"]}
@@ -20929,7 +20929,7 @@
 {"key": "https://blog.lojic.com/feed_rss_created.xml", "tags": ["topic:tech-industry", "type:vendor-blog"]}
 {"key": "https://blog.lon.tv/feed/", "tags": ["topic:tech-industry", "type:personal-blog"]}
 {"key": "https://blog.londogard.com/index.xml", "tags": ["topic:ai", "topic:data", "type:personal-blog"]}
-{"key": "https://blog.lopp.net/rss", "tags": ["topic:finance", "topic:security", "type:personal-blog"]}
+{"key": "https://blog.lopp.net/rss", "tags": ["topic:crypto", "topic:security", "type:personal-blog"]}
 {"key": "https://blog.loreleice.net/feed", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "https://blog.lorenzano.eu/rss", "tags": ["topic:programming", "topic:software-engineering", "type:personal-blog"]}
 {"key": "https://blog.lostartpress.com/feed/", "tags": ["topic:books", "type:vendor-blog"]}
@@ -21147,7 +21147,7 @@
 {"key": "https://blog.mzfr.me/index.xml", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "https://blog.n.ichol.ai/rss.xml", "tags": ["topic:ai", "type:personal-blog"]}
 {"key": "https://blog.n8n.io/rss/", "tags": ["topic:software-engineering", "type:vendor-blog"]}
-{"key": "https://blog.nadjabester.com/feed", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://blog.nadjabester.com/feed", "tags": ["topic:crypto", "topic:personal", "type:personal-blog"]}
 {"key": "https://blog.nahurst.com/posts.atom", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "https://blog.naimmiah.com/rss/", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "https://blog.najaryan.net/index.xml", "tags": ["topic:software-engineering", "type:personal-blog"]}
@@ -21517,7 +21517,7 @@
 {"key": "https://blog.runtux.com/rss.xml", "tags": ["language:german", "topic:personal", "type:personal-blog"]}
 {"key": "http://blog.russelldmatt.com/feed.xml", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "https://blog.ryanjarv.sh/feed.xml", "tags": ["topic:infrastructure", "topic:security", "type:personal-blog"]}
-{"key": "https://blog.ryjones.org/feed.xml", "tags": ["topic:open-source", "topic:software-engineering", "type:personal-blog"]}
+{"key": "https://blog.ryjones.org/feed.xml", "tags": ["topic:crypto", "topic:open-source", "topic:software-engineering", "type:personal-blog"]}
 {"key": "https://blog.ryuslash.org/feed/atom?with=emacs", "tags": ["topic:software-engineering", "type:personal-blog"]}
 {"key": "https://blog.s-schoener.com/feed.xml", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "https://blog.s20n.dev/index.xml", "tags": ["topic:software-engineering", "type:personal-blog"]}
@@ -21955,7 +21955,7 @@
 {"key": "https://blog.vasi.li/feed", "tags": ["topic:software-engineering", "type:personal-blog"]}
 {"key": "https://blog.veeso.dev/rss/en.xml", "tags": ["topic:open-source", "type:personal-blog"]}
 {"key": "https://blog.veladan.org/feed.xml", "tags": ["topic:programming", "type:personal-blog"]}
-{"key": "https://blog.verichains.io/feed", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "https://blog.verichains.io/feed", "tags": ["topic:crypto", "topic:security", "type:vendor-blog"]}
 {"key": "https://blog.vermeilsoft.com/atom.xml", "tags": ["topic:software-engineering", "type:vendor-blog"]}
 {"key": "https://blog.verslu.is/index.xml", "tags": ["topic:software-engineering", "type:personal-blog"]}
 {"key": "https://blog.vertigrated.com/rss.xml", "tags": ["topic:software-engineering", "type:personal-blog"]}
@@ -22001,7 +22001,7 @@
 {"key": "https://blog.wirelessmoves.com/feed", "tags": ["topic:networking", "type:personal-blog"]}
 {"key": "https://blog.wiseprobe.io/feed", "tags": ["topic:ai", "type:vendor-blog"]}
 {"key": "https://blog.withcode.uk/feed/", "tags": ["region:uk", "topic:education", "type:community"]}
-{"key": "https://blog.wizsec.jp/feeds/posts/default", "tags": ["topic:finance", "type:personal-blog"]}
+{"key": "https://blog.wizsec.jp/feeds/posts/default", "tags": ["topic:crypto", "type:personal-blog"]}
 {"key": "https://blog.wolfman.com/posts.rss", "tags": ["topic:programming", "type:personal-blog"]}
 {"key": "https://blog.wordproject21.com/feeds/posts/default", "tags": ["language:japanese", "topic:media", "type:personal-blog"]}
 {"key": "https://blog.writefreely.org/feed/", "tags": ["topic:tech-industry", "type:vendor-blog"]}
@@ -22430,7 +22430,7 @@
 {"key": "https://bomberosenaccion.com.ve/feed/", "tags": ["language:spanish", "region:latin-america", "topic:government", "type:publication"]}
 {"key": "https://bomberoslaserena.cl/feed/", "tags": ["language:spanish", "region:latin-america", "topic:government", "type:institution"]}
 {"key": "https://bombshelter.substack.com/feed", "tags": ["region:us-new-york", "topic:entertainment", "type:community"]}
-{"key": "https://bombthrower.com/feed/podcast/bombthrower-tv/", "tags": ["topic:finance", "type:podcast"]}
+{"key": "https://bombthrower.com/feed/podcast/bombthrower-tv/", "tags": ["topic:crypto", "type:podcast"]}
 {"key": "https://bomenenbos.substack.com/feed", "tags": ["language:dutch", "topic:politics", "type:personal-blog"]}
 {"key": "https://bomet.go.ke/feed", "tags": ["region:africa", "topic:government", "type:institution"]}
 {"key": "https://bommyknocker.bearblog.dev/atom", "tags": ["topic:gaming", "type:personal-blog"]}
@@ -22666,7 +22666,7 @@
 {"key": "https://borrachalaranja.com/feed", "tags": ["language:portuguese", "topic:sport", "type:personal-blog"]}
 {"key": "https://borravalo.hu/feed/", "tags": ["topic:food", "type:personal-blog"]}
 {"key": "https://borravalo.hu/feed/podcast", "tags": ["topic:food", "type:podcast"]}
-{"key": "https://borsagundem.com.tr/rss", "tags": ["region:europe", "topic:finance", "type:publication"]}
+{"key": "https://borsagundem.com.tr/rss", "tags": ["topic:crypto", "type:publication"]}
 {"key": "https://borsod24.hu/feed/", "tags": ["topic:news", "type:publication"]}
 {"key": "https://boruto-france.fr/feed/", "tags": ["language:french", "topic:entertainment", "type:publication"]}
 {"key": "https://borutzki.github.io/feed", "tags": ["topic:software-engineering", "type:personal-blog"]}
@@ -22974,8 +22974,8 @@
 {"key": "https://bravelocation.com/rss.xml", "tags": ["topic:business", "type:vendor-blog"]}
 {"key": "https://bravenature.substack.com/feed", "tags": ["topic:environment", "type:newsletter"]}
 {"key": "https://bravenatureschool.substack.com/feed", "tags": ["topic:environment", "type:newsletter"]}
-{"key": "https://bravenewcoin.com/feed", "tags": ["topic:finance", "type:publication"]}
-{"key": "https://bravenewcoin.com/rss/insights", "tags": ["topic:finance", "type:publication"]}
+{"key": "https://bravenewcoin.com/feed", "tags": ["topic:crypto", "topic:finance", "type:publication"]}
+{"key": "https://bravenewcoin.com/rss/insights", "tags": ["topic:crypto", "topic:finance", "type:publication"]}
 {"key": "https://braveneweurope.com/feed", "tags": ["region:europe", "topic:politics", "type:publication"]}
 {"key": "https://bravenewnormal.substack.com/feed", "tags": ["topic:personal", "type:newsletter"]}
 {"key": "https://bravenewwords.substack.com/feed", "tags": ["topic:personal", "type:newsletter"]}
@@ -23381,12 +23381,12 @@
 {"key": "https://baohungyen.vn/rss/news/giao-duc.rss", "tags": ["language:vietnamese", "region:asia", "topic:education", "type:publication"]}
 {"key": "https://baohungyen.vn/rss/news/giai-tri.rss", "tags": ["language:vietnamese", "region:asia", "topic:entertainment", "type:publication"]}
 {"key": "https://brookewarner.substack.com/feed", "tags": ["topic:books", "topic:business", "type:personal-blog"]}
-{"key": "https://brrreadfan.github.io/feed.xml", "tags": ["topic:finance", "topic:music", "type:personal-blog"]}
+{"key": "https://brrreadfan.github.io/feed.xml", "tags": ["topic:crypto", "topic:music", "type:personal-blog"]}
 {"key": "https://bsiegelwax.substack.com/feed", "tags": ["topic:mathematics", "topic:science", "type:newsletter"]}
 {"key": "https://bsj.uobasrah.edu.iq/index.php/bsj/gateway/plugin/WebFeedGatewayPlugin/atom", "tags": ["topic:legal", "type:institution"]}
 {"key": "https://buildphillynow.substack.com/feed", "tags": ["topic:business", "topic:infrastructure", "type:institution"]}
 {"key": "https://builttothrive.libsyn.com/rss", "tags": ["topic:lifestyle", "type:podcast"]}
-{"key": "https://bullishthoughts.substack.com/feed", "tags": ["topic:business", "topic:finance", "type:newsletter"]}
+{"key": "https://bullishthoughts.substack.com/feed", "tags": ["topic:business", "topic:crypto", "type:newsletter"]}
 {"key": "https://bullpenbulletins.libsyn.com/rss", "tags": ["topic:comics", "type:podcast"]}
 {"key": "https://burakkarakan.com/blog/feed.xml", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "https://businessofdrinks.substack.com/feed", "tags": ["topic:business", "topic:politics", "type:newsletter"]}
@@ -23604,7 +23604,7 @@
 {"key": "https://crashingthemode.libsyn.com/rss", "tags": ["topic:entertainment", "type:podcast"]}
 {"key": "https://crate808.libsyn.com/rss", "tags": ["topic:music", "type:podcast"]}
 {"key": "https://crawfordsvillemayortime.libsyn.com/rss", "tags": ["topic:news", "type:podcast"]}
-{"key": "https://crawlie.substack.com/feed", "tags": ["topic:finance", "type:newsletter"]}
+{"key": "https://crawlie.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
 {"key": "https://creamcitysocial.libsyn.com/rss", "tags": ["topic:politics", "type:podcast"]}
 {"key": "https://createdforgreatness.podbean.com/feed.xml", "tags": ["topic:education", "type:podcast"]}
 {"key": "https://creatingspace.substack.com/feed", "tags": ["topic:tech-industry", "type:newsletter"]}
@@ -23678,9 +23678,9 @@
 {"key": "https://crusadechannel.com/feed/crusade-news/", "tags": ["topic:news", "type:publication"]}
 {"key": "https://crushlivepoker.com/podcasts/rss/category/free-clp-podcast", "tags": ["topic:entertainment", "type:podcast"]}
 {"key": "https://cryn.substack.com/feed", "tags": ["topic:books", "topic:politics", "type:newsletter"]}
-{"key": "https://crypto-moeda.blogspot.com/feeds/posts/default", "tags": ["topic:finance", "type:personal-blog"]}
+{"key": "https://crypto-moeda.blogspot.com/feeds/posts/default", "tags": ["topic:crypto", "type:personal-blog"]}
 {"key": "https://cryptoclass.substack.com/feed", "tags": ["topic:politics", "type:newsletter"]}
-{"key": "https://cryptoexponentials.substack.com/feed", "tags": ["topic:finance", "type:newsletter"]}
+{"key": "https://cryptoexponentials.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
 {"key": "https://cryptopediacast.podbean.com/feed.xml", "tags": ["topic:entertainment", "type:podcast"]}
 {"key": "https://crystalfoster753-dotcom.github.io/coffeelovestea-feeds/feed-bookstore.xml", "tags": ["topic:books", "type:personal-blog"]}
 {"key": "https://crystalfoster753-dotcom.github.io/coffeelovestea-feeds/feed-games.xml", "tags": ["topic:gaming", "type:personal-blog"]}
@@ -23979,7 +23979,7 @@
 {"key": "https://dduane.tumblr.com/rss", "tags": ["topic:books", "type:personal-blog"]}
 {"key": "https://de-jongens-van-de-gestampte-podcast.podigee.io/feed/mp3", "tags": ["language:dutch", "topic:sport", "type:podcast"]}
 {"key": "https://de9vpm.podcaster.de/fotobuch-ecke.rss", "tags": ["language:german", "topic:art", "type:podcast"]}
-{"key": "https://dea-podcast.podigee.io/feed/mp3", "tags": ["topic:finance", "type:podcast"]}
+{"key": "https://dea-podcast.podigee.io/feed/mp3", "tags": ["topic:crypto", "type:podcast"]}
 {"key": "https://deadcelebrity.blubrry.net/feed/podcast/", "tags": ["topic:finance", "type:podcast"]}
 {"key": "https://deafartistmum.substack.com/feed", "tags": ["topic:art", "type:newsletter"]}
 {"key": "https://dealfarm.libsyn.com/rss", "tags": ["topic:business", "type:podcast"]}
@@ -23989,3 +23989,180 @@
 {"key": "https://ahilado.wordpress.com/feed/", "tags": ["topic:mathematics", "topic:science", "type:personal-blog"]}
 {"key": "https://danielspost.news.blog/feed/", "tags": ["topic:news", "type:personal-blog"]}
 {"key": "https://hanszandbelt.wordpress.com/feed/", "tags": ["topic:security", "type:personal-blog"]}
+{"key": "https://0dotxyz.substack.com/feed", "tags": ["topic:crypto", "topic:music", "type:newsletter"]}
+{"key": "https://0xplay.substack.com/feed", "tags": ["topic:business", "topic:crypto", "type:newsletter"]}
+{"key": "https://0xshardlab.substack.com/feed", "tags": ["topic:crypto", "topic:science", "type:newsletter"]}
+{"key": "https://168xclub.substack.com/feed", "tags": ["topic:ai", "topic:crypto", "type:newsletter"]}
+{"key": "https://3loop.substack.com/feed", "tags": ["topic:business", "topic:crypto", "topic:data", "topic:finance", "type:newsletter"]}
+{"key": "https://3qcom3.podcaster.de/SOLernenWir.rss", "tags": ["topic:crypto", "topic:media", "type:podcast"]}
+{"key": "https://961today.com/feed", "tags": ["topic:crypto", "topic:finance", "type:publication"]}
+{"key": "https://99bitcoins.com/feed/", "tags": ["topic:crypto", "type:publication"]}
+{"key": "https://abcoin.net/rss", "tags": ["topic:crypto", "topic:tech-industry", "type:personal-blog"]}
+{"key": "https://acceleratedcapital.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:newsletter"]}
+{"key": "https://accesstribe.com/feed", "tags": ["topic:crypto", "topic:education", "type:newsletter"]}
+{"key": "https://adlerscryptoinsights.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:newsletter"]}
+{"key": "https://adoptotech.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://adriandefi.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:newsletter"]}
+{"key": "https://advantageblockchain.substack.com/feed", "tags": ["topic:business", "topic:crypto", "type:newsletter"]}
+{"key": "https://ai-henoheno-mohero.com/feed/", "tags": ["topic:ai", "topic:crypto", "type:publication"]}
+{"key": "https://airdroplistcoen.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://albertomeraupsb.substack.com/feed", "tags": ["topic:crypto", "topic:media", "type:newsletter"]}
+{"key": "https://alejo0630.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://alexmirran.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://allscale.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://alphalist.podigee.io/feed/mp3", "tags": ["topic:ai", "topic:business", "topic:crypto", "topic:tech-industry", "type:podcast"]}
+{"key": "https://andresfelipearias.substack.com/feed", "tags": ["topic:ai", "topic:crypto", "type:newsletter"]}
+{"key": "https://andrewaxelrod.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:newsletter"]}
+{"key": "https://anialexander.substack.com/feed", "tags": ["topic:ai", "topic:business", "topic:crypto", "type:newsletter"]}
+{"key": "https://ankr.substack.com/feed", "tags": ["topic:crypto", "topic:infrastructure", "topic:web-development", "type:vendor-blog"]}
+{"key": "https://antongolub.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:newsletter"]}
+{"key": "https://antonyreading.substack.com/feed", "tags": ["topic:ai", "topic:business", "topic:crypto", "topic:finance", "topic:web-development", "type:newsletter"]}
+{"key": "https://apcollectiveio.substack.com/feed", "tags": ["topic:business", "topic:crypto", "topic:finance", "type:vendor-blog"]}
+{"key": "https://api.riverside.fm/hosting/11te19HB.rss", "tags": ["topic:crypto", "topic:education", "topic:media", "type:podcast"]}
+{"key": "https://arielfl.substack.com/feed", "tags": ["topic:crypto", "topic:tech-industry", "type:newsletter"]}
+{"key": "https://arminreiter.com/feed/", "tags": ["topic:crypto", "topic:infrastructure", "topic:programming", "topic:software-engineering", "type:personal-blog"]}
+{"key": "https://athenaalpha.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://australiandefiassociation.substack.com/feed", "tags": ["topic:ai", "topic:crypto", "type:newsletter"]}
+{"key": "https://b10c.me/feed.xml", "tags": ["topic:crypto", "topic:programming", "type:personal-blog"]}
+{"key": "https://bachini.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "topic:tech-industry", "type:newsletter"]}
+{"key": "https://bagster.substack.com/feed", "tags": ["topic:business", "topic:crypto", "type:newsletter"]}
+{"key": "https://becomesovran.com/RSS.xml", "tags": ["topic:crypto", "topic:open-source", "topic:security", "type:personal-blog"]}
+{"key": "https://beincrypto.com/feed", "tags": ["topic:crypto", "type:publication"]}
+{"key": "https://benjamistan.tech/feed.xml", "tags": ["topic:crypto", "topic:programming", "topic:web-development", "type:personal-blog"]}
+{"key": "https://bennet.org/rss.xml", "tags": ["topic:crypto", "topic:open-source", "topic:security", "type:personal-blog"]}
+{"key": "https://betokenmyfriend.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://bfrr.podigee.io/feed/mp3", "tags": ["topic:business", "topic:crypto", "topic:media", "type:podcast"]}
+{"key": "https://bitboycrypto.libsyn.com/rss", "tags": ["topic:crypto", "type:podcast"]}
+{"key": "https://bitcoin-consciousness.com/feed/podcast/bitcoin-consciousness/", "tags": ["topic:crypto", "type:podcast"]}
+{"key": "https://bitcoin-kurier.de/feed/", "tags": ["topic:crypto", "type:publication"]}
+{"key": "https://bitcoin-takeover.com/feed/", "tags": ["topic:crypto", "topic:media", "topic:open-source", "topic:security", "type:podcast"]}
+{"key": "https://bitcoin.fr/feed/", "tags": ["topic:crypto", "type:publication"]}
+{"key": "https://bitcoin.org.il/feed/podcast/", "tags": ["topic:crypto", "type:podcast"]}
+{"key": "https://bitcoinalmanack.com/rss.xml", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://bitcoinandmarkets.libsyn.com/rss", "tags": ["topic:crypto", "topic:finance", "type:podcast"]}
+{"key": "https://bitcoinbinge.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://bitcoinbitches.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://bitcoinbriefly.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://bitcoinenespanol.substack.com/feed", "tags": ["topic:crypto", "topic:security", "type:newsletter"]}
+{"key": "https://bitcoinfortress.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://bitcoinforwomen.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://bitcoiniop.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://bitcoinisdata.substack.com/feed", "tags": ["topic:crypto", "topic:data", "type:newsletter"]}
+{"key": "https://bitcoinist.com/feed/", "tags": ["topic:crypto", "topic:news", "type:publication"]}
+{"key": "https://bitcoinkatie.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://bitcoinkurzerklaert.podigee.io/feed/mp3", "tags": ["topic:crypto", "topic:media", "type:podcast"]}
+{"key": "https://bitcoinlaws.substack.com/feed", "tags": ["topic:crypto", "topic:politics", "type:newsletter"]}
+{"key": "https://bitcoinlighthouse.substack.com/feed", "tags": ["topic:crypto", "topic:security", "type:newsletter"]}
+{"key": "https://bitcoinmindset.substack.com/feed", "tags": ["topic:crypto", "topic:education", "type:newsletter"]}
+{"key": "https://bitcoinnews.ch/feed/", "tags": ["topic:crypto", "type:publication"]}
+{"key": "https://bitcoinnewsdigest.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:newsletter"]}
+{"key": "https://bitcoinnutzen.podigee.io/feed/mp3", "tags": ["topic:crypto", "type:podcast"]}
+{"key": "https://bitcoinops.org/feed.xml", "tags": ["topic:business", "topic:crypto", "topic:software-engineering", "type:newsletter"]}
+{"key": "https://bitcoinproduct.substack.com/feed", "tags": ["topic:crypto", "topic:science", "topic:software-engineering", "type:newsletter"]}
+{"key": "https://bitcoinstrategy.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://bitcointalks.podbean.com/feed.xml", "tags": ["topic:crypto", "topic:media", "type:podcast"]}
+{"key": "https://bitcointrain.it/feed", "tags": ["topic:crypto", "type:podcast"]}
+{"key": "https://bithub.pl/feed/", "tags": ["topic:crypto", "type:publication"]}
+{"key": "https://bithub.pl/feed/gn/", "tags": ["topic:crypto", "type:publication"]}
+{"key": "https://bitstein.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://bjdichter.substack.com/feed", "tags": ["topic:crypto", "topic:philosophy", "topic:politics", "type:newsletter"]}
+{"key": "https://blingbling.substack.com/feed", "tags": ["topic:crypto", "topic:economics", "topic:politics", "type:newsletter"]}
+{"key": "https://blockanalitica.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:newsletter"]}
+{"key": "https://blockbandit.xyz/atom", "tags": ["topic:crypto", "topic:finance", "topic:programming", "type:personal-blog"]}
+{"key": "https://blockchainbacker.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:newsletter"]}
+{"key": "https://blockchaingames.substack.com/feed", "tags": ["topic:crypto", "topic:gaming", "type:newsletter"]}
+{"key": "https://blockchaingandalf.substack.com/feed", "tags": ["topic:crypto", "type:personal-blog"]}
+{"key": "https://blockchaingermany.podcaster.de/blockchaingermany.rss", "tags": ["topic:crypto", "topic:media", "topic:tech-industry", "type:podcast"]}
+{"key": "https://blockchainincomereport.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://blockchainmagazine.net/feed/", "tags": ["topic:crypto", "topic:tech-industry", "type:publication"]}
+{"key": "https://blockchainreporter.net/feed/", "tags": ["topic:crypto", "topic:finance", "type:publication"]}
+{"key": "https://blockchainsure.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://blocknews.com/feed/", "tags": ["topic:crypto", "topic:tech-industry", "type:publication"]}
+{"key": "https://blockscholesresearch.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:newsletter"]}
+{"key": "https://blocksignals.substack.com/feed", "tags": ["topic:business", "topic:crypto", "topic:security", "type:newsletter"]}
+{"key": "https://blocktelegraph.io/feed/", "tags": ["topic:crypto", "type:publication"]}
+{"key": "https://blocktower.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:newsletter"]}
+{"key": "https://blog.0xbuilder.com/_feather/rss.xml", "tags": ["topic:crypto", "topic:programming", "type:personal-blog"]}
+{"key": "https://blog.adopto.ca/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://blog.arcbjorn.com/rss", "tags": ["topic:crypto", "topic:data", "topic:systems", "type:personal-blog"]}
+{"key": "https://blog.bitfinex.com/feed/", "tags": ["topic:crypto", "type:vendor-blog"]}
+{"key": "https://blog.bitjson.com/rss", "tags": ["topic:crypto", "topic:finance", "topic:security", "type:personal-blog"]}
+{"key": "https://blog.blockstream.com/rss/", "tags": ["topic:crypto", "topic:infrastructure", "type:vendor-blog"]}
+{"key": "https://blog.casa.io/rss/", "tags": ["topic:crypto", "topic:security", "type:vendor-blog"]}
+{"key": "https://blog.dhimmel.com/feeds/all.atom.xml", "tags": ["topic:crypto", "topic:data", "type:personal-blog"]}
+{"key": "https://blog.erratasec.com/feeds/1949610645936705403/comments/default", "tags": ["topic:crypto", "topic:security", "type:personal-blog"]}
+{"key": "https://blog.ethereum.org/en/feed.xml", "tags": ["topic:crypto", "topic:software-engineering", "type:institution"]}
+{"key": "https://blog.ethereum.org/feed.xml", "tags": ["topic:crypto", "topic:software-engineering", "type:institution"]}
+{"key": "https://blog.saimadugula.com/rss.xml", "tags": ["topic:ai", "topic:business", "topic:crypto", "topic:tech-industry", "type:personal-blog"]}
+{"key": "https://blog.statechannels.org/rss.xml", "tags": ["topic:crypto", "topic:programming", "type:community"]}
+{"key": "https://bluerainmanagement.substack.com/feed", "tags": ["topic:business", "topic:crypto", "topic:finance", "topic:networking", "topic:tech-industry", "type:newsletter"]}
+{"key": "https://bmpro.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:newsletter"]}
+{"key": "https://bridge21.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:newsletter"]}
+{"key": "https://btcnizando.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://btcurrent.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://budisukmana.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://carlbmenger.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://castleisland.libsyn.com/rss", "tags": ["topic:crypto", "topic:science", "type:podcast"]}
+{"key": "https://www.chainalysis.com/feed/", "tags": ["topic:ai", "topic:crypto", "type:personal-blog"]}
+{"key": "https://www.chainalysis.com/rss/", "tags": ["topic:ai", "topic:crypto", "type:personal-blog"]}
+{"key": "https://www.chaincatcher.com/rss.xml", "tags": ["topic:ai", "topic:crypto", "type:publication"]}
+{"key": "https://chaintw.substack.com/feed", "tags": ["topic:business", "topic:crypto", "type:newsletter"]}
+{"key": "https://cheekyrolo.substack.com/feed", "tags": ["topic:crypto", "topic:history", "type:newsletter"]}
+{"key": "https://christinedkim.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://chukxyz.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:newsletter"]}
+{"key": "https://cloudwall.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:newsletter"]}
+{"key": "https://coinidol.com/rssshort/", "tags": ["topic:crypto", "type:publication"]}
+{"key": "https://coinjournal.net/feed/", "tags": ["topic:crypto", "type:publication"]}
+{"key": "https://coinpedian.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://coinstack.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://cointelegraph-cn.com/rss", "tags": ["topic:crypto", "type:publication"]}
+{"key": "https://cointelegraph-tw.com/rss", "tags": ["topic:crypto", "type:publication"]}
+{"key": "https://cointelegraph.com/rss", "tags": ["topic:crypto", "type:publication"]}
+{"key": "https://cointelegraph.fr/rss", "tags": ["topic:crypto", "type:publication"]}
+{"key": "https://cointelegraph.jp/rss", "tags": ["topic:crypto", "type:publication"]}
+{"key": "https://consenso.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://criptoath.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://crypto-nerds-podcast.podigee.io/feed/mp3", "tags": ["topic:crypto", "type:podcast"]}
+{"key": "https://crypto.news/feed/", "tags": ["topic:crypto", "type:publication"]}
+{"key": "https://cryptobigstories.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:newsletter"]}
+{"key": "https://cryptobreakdown.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://cryptobriefing.com/news/feed/", "tags": ["topic:crypto", "topic:finance", "type:vendor-blog"]}
+{"key": "https://cryptobriefing.com/podcast-notes/feed/", "tags": ["topic:crypto", "topic:finance", "type:podcast"]}
+{"key": "https://cryptocomdefi.substack.com/feed", "tags": ["topic:crypto", "topic:security", "topic:web-development", "type:newsletter"]}
+{"key": "https://cryptocommunitynews.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:newsletter"]}
+{"key": "https://cryptocomresearch.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:newsletter"]}
+{"key": "https://cryptocon.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://cryptocurrencyjobs.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://cryptofolks.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://cryptografiaavanzada.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://cryptohayes.substack.com/feed", "tags": ["topic:crypto", "topic:tech-industry", "type:newsletter"]}
+{"key": "https://cryptoinvestar.com/feed/podcast/the-cryptoinvestar-podcast/", "tags": ["topic:crypto", "type:podcast"]}
+{"key": "https://cryptojargon.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:newsletter"]}
+{"key": "https://cryptoknightacademy.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:newsletter"]}
+{"key": "https://cryptonewslives.com/feed/", "tags": ["topic:crypto", "type:publication"]}
+{"key": "https://cryptoniteventures.substack.com/feed", "tags": ["topic:ai", "topic:business", "topic:crypto", "type:newsletter"]}
+{"key": "https://cryptoquick.substack.com/feed", "tags": ["topic:crypto", "topic:mathematics", "type:newsletter"]}
+{"key": "https://cryptoquorum.com/feed/", "tags": ["topic:crypto", "topic:finance", "type:publication"]}
+{"key": "https://cryptorobotcom.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://cryptorundown.libsyn.com/rss", "tags": ["topic:crypto", "topic:finance", "type:podcast"]}
+{"key": "https://cryptosuperhub.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://cryptoticker.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "type:newsletter"]}
+{"key": "https://cubeatms.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://cubicanalytics.substack.com/feed", "tags": ["topic:crypto", "topic:data", "topic:finance", "type:newsletter"]}
+{"key": "https://cvj.ch/feed/", "tags": ["topic:crypto", "type:publication"]}
+{"key": "https://dailybitcoiner.substack.com/feed", "tags": ["topic:crypto", "type:newsletter"]}
+{"key": "https://dariusaskaripour.substack.com/feed", "tags": ["topic:business", "topic:crypto", "type:newsletter"]}
+{"key": "http://darkwhite666.blogspot.com/feeds/posts/default", "tags": ["topic:crypto", "topic:science", "topic:security", "type:personal-blog"]}
+{"key": "https://darkwhite666.blogspot.com/feeds/posts/default?alt=rss", "tags": ["topic:crypto", "topic:science", "topic:security", "type:personal-blog"]}
+{"key": "https://darthcoin.substack.com/feed", "tags": ["topic:crypto", "topic:education", "type:newsletter"]}
+{"key": "https://federicocarrone.com/atom.xml", "tags": ["topic:crypto", "topic:mathematics", "topic:personal", "topic:programming", "type:personal-blog"]}
+{"key": "https://feeds.megaphone.fm/SLT1002166400", "tags": ["topic:ai", "topic:crypto", "topic:media", "type:podcast"]}
+{"key": "https://fortune.com/feed/fortune-feeds/?id=3689511", "tags": ["topic:business", "topic:crypto", "type:publication"]}
+{"key": "https://joeprevite.com/rss.xml", "tags": ["topic:books", "topic:crypto", "topic:web-development", "type:personal-blog"]}
+{"key": "https://karl.tech/rss/", "tags": ["topic:crypto", "topic:programming", "type:personal-blog"]}
+{"key": "https://kpiech.substack.com/feed", "tags": ["topic:crypto", "topic:finance", "topic:politics", "type:newsletter"]}
+{"key": "https://mineforeman.com/feeds/all.atom.xml", "tags": ["topic:crypto", "type:personal-blog"]}
+{"key": "https://serhack.me/blog/index.xml", "tags": ["topic:crypto", "topic:security", "type:personal-blog"]}
+{"key": "https://serhack.me/it/blog/index.xml", "tags": ["topic:crypto", "topic:security", "type:personal-blog"]}
+{"key": "https://www.trinitycyber.com/blog/rss.xml", "tags": ["topic:ai", "topic:crypto", "topic:security", "type:vendor-blog"]}
+{"key": "https://web3isgoinggreat.com/feed.xml", "tags": ["topic:crypto", "topic:security", "topic:tech-industry", "type:personal-blog"]}

@@ -1931,3 +1931,41 @@ Our inability to read them is not evidence they are dead; they join the ~200 blo
 feeds that need a browser, and they remain outside the contract until someone reads them.
 Two of them (`aarvik.dk`, `developer.salesforce.com`) carry a topic but no `type:` — a
 `type:` could be guessed but would be a guess, so it was not written.
+
+## `topic:crypto` — the vocabulary gap that had been mapped away for four tranches (2026-11-05)
+
+Product 36,071 → **36,071**, zero removals, **162 tests**, `--strict` 0.
+
+Every crypto feed for four tranches was filed under `topic:finance` because the
+vocabulary had nowhere else for it — 121 by title/URL, and **385** once the actual rule
+ran over the harvest. The tag now exists, with the rule to keep it filled and a reviewed
+pass over what was already shipped.
+
+**The rule.** Crypto was split out of the finance regex (which had been matching
+`bitcoin|blockchain|cryptocurrenc*` all along) into its own. The word that makes this a
+rule rather than a substring match is **`crypto` on its own**: it is how security writers
+abbreviate *cryptography*, and a feed titled "Crypto Is Not A Four Letter Word" about key
+exchange is a security feed. My own test caught that — the first version fired on it. So
+the bare word is not a trigger: a compound ("crypto assets", "crypto market", "crypto
+exchange") or an unambiguous term (`bitcoin`, `btc`, `blockchain`, `defi`, `altcoin`,
+`stablecoin`, `nft`, `web3`, `satoshi`, `ethereum`, `halving`) is required. Three tests;
+revert the split and exactly one fails.
+
+**The retro pass, and where the pile-up would have entered.** 385 shipped feeds match the
+rule, but the haystack includes item headlines, which is the pile-up's front door. Split
+by signal source, using the same counting discipline the spam rule uses:
+
+| signal | count | action |
+|---|---|---|
+| in the feed's **own title or description** | **217** | tagged `topic:crypto` |
+| one item headline only | 130 | untouched — one mention is not a subject |
+| 2 item headlines | 21 | untouched |
+| **3+** item headlines | 17 | left for a human look (a newspaper can run three crypto stories) |
+
+For the 217, `topic:finance` was **kept only where a non-crypto money word appears in the
+same text** (economy, market, bond, investing, banking…): 44 keep both, 173 become crypto
+without finance. Verified before `--apply`: 217 rows changed, `topic:finance` the only tag
+lost anywhere, **zero** `type:`/`region:`/`language:` facets touched, zero feeds added or
+removed. `--allow-type-change` was needed because 40 of these rows already had a hand rule
+naming `finance` — that flag is the record that replacing a previous human decision was
+the point of the change, not an accident.
