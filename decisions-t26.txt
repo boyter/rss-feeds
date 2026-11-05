@@ -1,0 +1,207 @@
+# tranche 26 hand corrections. Each read from the feed's own description or item
+# titles in the probe. 'X was nothing in it' = the rule that fired keyed on a
+# word-sense the feed does not have.
+# "software libre, programming, technology, cycling" - science was nothing in it
+http://cravacuore.com.ar/blog/feed	topic:programming type:personal-blog
+# "Vibes Web3 Music Competition" covers
+https://3speak.tv/rss/pjwelry.xml	topic:music type:podcast
+# 3speak creator content (talent hunts, weddings, music covers)
+https://3speak.tv/rss/princessbusayo.xml	topic:entertainment type:podcast
+# "the #1 place to be for personal development"
+https://anchor.fm/s/10015a24c/podcast/rss	topic:personal type:podcast
+# daily horoscope ("que réservent les astres"), one feed per zodiac sign
+https://aod.nrjaudio.fm/xml/2082.xml	language:french topic:entertainment type:podcast
+# daily horoscope ("que réservent les astres"), one feed per zodiac sign
+https://aod.nrjaudio.fm/xml/2083.xml	language:french topic:entertainment type:podcast
+# Czech: "an entertaining yet educational view of the world happening around us"
+https://api.mujrozhlas.cz/rss/podcast/35c18f7b-ef7c-39ae-86a5-4bb4b1a1953d.rss	language:czech topic:news type:podcast
+# "the end of scarcity", nuclear renaissance, AI - history was nothing in it
+https://api.riverside.fm/hosting/1kCj3pQp.rss	topic:tech-industry type:podcast
+# political commentary ("Trump & Scotland")
+https://api.substack.com/feed/podcast/1050947.rss	topic:politics type:newsletter
+# audio of pro-life articles
+https://api.substack.com/feed/podcast/1051686.rss	topic:religion type:newsletter
+# "unfiltered conversations about the good, the hard, the messy" - mental health (courageouslyu)
+https://app.kajabi.com/podcasts/2147506913/feed	topic:health type:podcast
+# Dutch "afvallen" = weight loss
+https://app.springcast.fm/podcast-xml/15726	language:dutch topic:health type:podcast
+# Dutch nutrition medicine for health professionals
+https://app.springcast.fm/podcast-xml/15761	language:dutch topic:health type:podcast
+# French traditional-music radio (musiques_traditionelles)
+https://bramfm.com/feed/podcast/musiques_traditionelles/	language:french topic:music type:podcast
+# German "Psychologie der Extreme" (psychology of extremes)
+https://cdn.audiorella.com/podcasts/1526-blackbox-der-psy-crime-podcast/feed.rss	language:german topic:health type:podcast
+# daily Kansas basketball - history was a one-off
+https://cdn.beatlinesports.com/feeds/cbb-ku.xml	topic:sport type:podcast
+# German comedy podcast
+https://cdn.julephosting.de/podcasts/1081-pelham-wehn-retten-die-welt/feed.rss	language:german topic:entertainment type:podcast
+# Dutch: the changing role of the information professional / new Archiefwet
+https://channels.podcastfeed.eu/56b740db-d8c0-4555-9a6a-cd617d0fb8a1/feed.xml	language:dutch topic:data type:podcast
+# Japanese pro-baseball commentary (Hawks, Yozawa)
+https://ckp-podcast.com/morimoto/feed/podcast/	language:japanese topic:sport type:podcast
+# Japanese lawyer explaining labour law for business owners
+https://ckp-podcast.com/mukai/feed/podcast/	language:japanese topic:legal topic:business type:podcast
+# GPC tokens (AI token, friction token, benchmark token)
+https://clientcabin.com/distribution_feeds/company/46424/Podcasts/rss	topic:finance type:podcast
+# sauna/hot-tub wellness ("ideal hot tub temp for sleep")
+https://clientcabin.com/distribution_feeds/company/46742/Podcasts/rss	topic:health type:podcast
+# ageism ("is 'being old getting older?") - music was nothing in it
+https://consumerageism.substack.com/feed	topic:politics type:newsletter
+# World Retail Congress content (Lululemon, Tesa) - politics was nothing in it
+https://content.worldretailcongress.com/podcasts/111156337104/rss.xml	topic:business type:podcast
+# content creation for schools (NSPRA, storytelling in schools)
+https://contentgeneration.libsyn.com/rss	topic:education type:podcast
+# Apple/gadget reviews (Touchscreen MacBook, iPhone Duo)
+https://contextmachine.io/feed/podcast/	topic:gadgets type:podcast
+# "building strong men ... in public life"; items on government overreach
+https://contraraticspodcast.libsyn.com/rss	topic:politics type:podcast
+# facilitation for software teams: tech debt, "AI doesn't remove friction"
+https://control-the-room.libsyn.com/rss	topic:software-engineering type:podcast
+# modern manufacturing / smart factory
+https://controlsys.libsyn.com/rss	topic:systems type:podcast
+# "concerned about creeping authoritarianism and fascism"
+https://convergencemag.com/feed/podcast/anti-authoritarian-podcast/	topic:politics type:podcast
+# "el podcast para solopreneurs" (Conversation de Negocios)
+https://conversaciondenegocios.com/feed/podcast/podcast-crecer-bajo-el-radar/	language:spanish topic:business type:podcast
+# "mindset and mental health as it relates to performance" + training horses
+https://conversecowboy.libsyn.com/rss	topic:health topic:sport type:podcast
+# German: selling digital products (coaching, online courses)
+https://conversioncopywritingpodcast.podigee.io/feed/mp3	language:german topic:business type:podcast
+# "conversations with leading experts in orthopedic trauma"
+https://conveymd.libsyn.com/rss	topic:health type:podcast
+# library podcast: genealogy, book pick-of-week
+https://cooklib.libsyn.com/rss	topic:books type:podcast
+# "radioshow outa Münster City / Germany" (language added)
+https://cool-and-deadly.podomatic.com/rss2.xml	language:german topic:media type:podcast
+# "the relationship between Grandfathers and their Grandchildren"
+https://coolgrandpa.libsyn.com/rss	topic:personal type:podcast
+# nostalgia trip: retro tapes and tunes - food was nothing in it
+https://coolkidsclub.libsyn.com/rss	topic:music type:podcast
+# "an archive of interesting maps i find (and sometimes make)"
+https://coolmaps.substack.com/feed	topic:travel type:personal-blog
+# "will focus mostly on the adventures side"
+https://coolnerdmark.substack.com/feed	topic:travel type:personal-blog
+# Spanish educational cooperative: housing co-ops, social & solidarity economy
+https://cooperativacoopera.libsyn.com/rss	language:spanish topic:business type:podcast
+# a DJ radio show (78rpm records)
+https://copeland.podomatic.com/rss2.xml	topic:music type:podcast
+# an audio drama set in a nuclear-winter alternate reality
+https://copperheart.libsyn.com/rss	topic:entertainment type:podcast
+# "Open Source Intelligence News" - open-source was the wrong sense
+https://corbettreport.com/category/podcasts/feed/	topic:news type:podcast
+# "about animals and the people who dedicate their lives to them"
+https://corbinmaxey.com/podcast-1/?format=rss	topic:animals type:podcast
+# Open Format Podcast: DJ sets (breaks, electronica, afro/latin house)
+https://coretxone.podomatic.com/rss2.xml	topic:music type:podcast
+# Miranda Spivack: "government secrecy and its impact on everyday life"
+https://corinnevictoriadesign.substack.com/feed	topic:journalism type:newsletter
+# leadership in the AI era, US policy
+https://coronavirus-a-world-transformed.libsyn.com/rss	topic:tech-industry type:podcast
+# "Certified Life Coach ... motivational, faith-based guidance"
+https://corrinnewalkerbook.podbean.com/feed.xml	topic:personal topic:religion type:podcast
+# "technology M&A" (Corum Group)
+https://corumgroup.libsyn.com/rss	topic:tech-industry topic:finance type:podcast
+# a Star Wars podcast
+https://coruscantradiounderground.podbean.com/feed.xml	topic:entertainment type:podcast
+# "hearing from the God that created the universe"
+https://corycabri.podbean.com/feed.xml	topic:religion type:podcast
+# "civic futurist" (Divided We Fall); items are civic commentary - entertainment was nothing in it
+https://cosgrovetc.substack.com/feed	topic:politics type:newsletter
+# German: animal communication (Tierkommunikation) as a profession
+https://cosmic-whisperer.podigee.io/feed/mp3	language:german topic:animals type:podcast
+# "health, autoimmunity, cybersecurity, and spiritual growth" - security was one of four
+https://cosmicquill.substack.com/feed	topic:health topic:religion type:newsletter
+# "a 52-week series exploring what it means to parent"
+https://cosmoparenting.substack.com/feed?sectionId=154204	topic:health type:newsletter
+# "Renting Your Recreational Property for Profit"
+https://cottageblogger.libsyn.com/rss	topic:business topic:travel type:podcast
+# Cotton Grower magazine: the cotton market, demand, China
+https://cottoncompanion.podbean.com/feed.xml	topic:business type:podcast
+# "Living Well with Shell": self-help - media was the only rule that fired
+https://couldawouldashoulda.ca/feed/podcast	topic:health type:podcast
+# "queer therapist | sex therapist" - science was nothing in it
+https://counselingprism.substack.com/feed	topic:health type:newsletter
+# "unlimited text-based mental health support"
+https://counslr.substack.com/feed	topic:health type:newsletter
+# "we talk all things MCU" - hardware was nothing in it
+https://countdowntoinfinity.libsyn.com/rss	topic:entertainment type:podcast
+# "the less sexy side of the data sciences" - ai was nothing in it
+https://counting.substack.com/feed	topic:data type:newsletter
+# "news, sports, events ... for Fremont County, Wyoming"
+https://county10.com/feed/podcast/	topic:news topic:sport type:podcast
+# "the practice of Couples Therapy"
+https://couplestherapistcouch.libsyn.com/rss	topic:health type:podcast
+# same feed as Midlife AF (courageouslyu) - mental health
+https://courageouslyu.libsyn.com/rss	topic:health type:podcast
+# "The Body Awareness Life Makeover" - tech-industry was nothing in it
+https://courageousselfcare.substack.com/feed	topic:health type:newsletter
+# laser fault injection on the RP2350, DEFCON 33 - hardware was too shallow
+https://courk.cc/feeds/all.atom.xml	topic:security type:personal-blog
+# "essays on spirituality and becoming Future You" - travel was the in-flight metaphor
+https://courtneyalexischo.substack.com/feed	topic:religion type:newsletter
+# "serialized fiction, thought-stirring articles" (women reclaiming romance)
+https://courtneycoleauthor.substack.com/feed	topic:books type:newsletter
+# Sacramento Kings/Athletics/Giants/Raiders analysis - entertainment was nothing in it
+https://cowbellkingdom.substack.com/feed	topic:sport type:podcast
+# "celebrates the coziest time of year"
+https://cozychristmas.libsyn.com/rss	topic:entertainment type:podcast
+# German "Ökonomen-Podcast für wirtschaftspolitische Themen"
+https://cp0hrn.podcaster.de/WirtschaftlicheFreiheit.rss	language:german topic:finance type:podcast
+# German "Experteneinblicke in die Welt der Wirtschaft und Finanzen"
+https://cp0hrn.podcaster.de/economics-to-go.rss	language:german topic:finance type:podcast
+# podcast by BC chartered professional accountants - food+security were both nothing in it
+https://cpabc.libsyn.com/rss	topic:finance type:podcast
+# GAAP accounting, IRS & tax headlines, Medicare billing
+https://cpadvisors.podbean.com/feed.xml	topic:finance type:podcast
+# physician-owned surgery centers, sale-leasebacks
+https://cpomp.libsyn.com/rss	topic:finance topic:health type:podcast
+# Spanish ham-radio (radioafición) technology podcast
+https://cqenfrecuencia.com/feed/podcast/	topic:hardware type:podcast
+# Spanish ham-radio (radioafición) technology podcast
+https://cqenfrecuencia.com/feed/podcast/cq-en-frecuencia/	topic:hardware type:podcast
+# daily political commentary in a comedy voice (Fox ratings, Trump)
+https://crabdiving.com/feed/podcast/	topic:politics type:podcast
+# Craft Beer Radio Extras
+https://craftbeerradio.blob.core.windows.net/audio/cbr-extras/feed.xml	topic:food type:podcast
+# the craft-beer show
+https://craftbeerradio.blob.core.windows.net/audio/cbr/feed.xml	topic:food type:podcast
+# German sewing/crafts (no craft topic; language added)
+https://crafteln-passt.podigee.io/feed/mp3	language:german topic:media type:podcast
+# "mathematics, science, and society" plus MAGA-world commentary
+https://craigchrist.substack.com/feed	topic:science topic:politics type:personal-blog
+# a personal audio blog
+https://craigtowens.libsyn.com/rss	topic:personal type:podcast
+# "Author. Wine lover. Shop owner." - food was the wine hobby, not the feed
+https://cranejulia.substack.com/feed	topic:books type:newsletter
+# "an in-depth analysis of the Young Justice animated show"
+https://crashingthemode.libsyn.com/rss	topic:entertainment type:podcast
+# "missing the golden era of hip hop? travels back to the 1990s" - travel was the metaphor
+https://crate808.libsyn.com/rss	topic:music type:podcast
+# city news for Crawfordsville, Indiana
+https://crawfordsvillemayortime.libsyn.com/rss	topic:news type:podcast
+# "the latest news and alpha in the cryptocurrency space"
+https://crawlie.substack.com/feed	topic:finance type:newsletter
+# "official podcast of Milwaukee's chapter of the DSA"
+https://creamcitysocial.libsyn.com/rss	topic:politics type:podcast
+# recorded at Pottstown Middle School: anti-bullying
+https://createdforgreatness.podbean.com/feed.xml	topic:education type:podcast
+# "creating space for technology adoption, technologists, career growth"
+https://creatingspace.substack.com/feed	topic:tech-industry type:newsletter
+# "financial education community ... from financial anxiety to financial confidence"
+https://creatingwealth.libsyn.com/rss	topic:finance type:podcast
+# "the pursuit of Truth: Technology ⊂ Science ∪ Mathematics ⊃ Rationality"
+https://creativeblock.substack.com/feed	topic:science topic:philosophy type:newsletter
+# "for artists, makers, and creative thinkers"
+https://creativechats.libsyn.com/rss	topic:art type:podcast
+# "behind every book, play, and song is a person"
+https://creativekind.podbean.com/feed.xml	topic:art type:podcast
+# neurodiversity, brains@work, rejection-sensitive dysphoria
+https://creativeleadership.libsyn.com/rss	topic:health type:podcast
+# "35 years across many creative disciplines"
+https://creativeunderground.substack.com/feed	topic:art type:newsletter
+# for modern authors ("a book is the starting point") - tech-industry was nothing in it
+https://creatorinstitute.podbean.com/feed.xml	topic:books type:podcast
+# French: AI tools for teachers (ChatGPT ads, lesson design)
+https://creer-parcours-pedagogique-avec-ia.com/feed/podcast/	language:french topic:ai topic:education type:podcast
+# an OB/GYN resident study podcast - coffee was the pun, food was the word
+https://creogsovercoffee.podbean.com/feed.xml	topic:health type:podcast

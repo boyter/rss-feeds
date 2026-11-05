@@ -1667,3 +1667,45 @@ count against the merge (34,305 → 34,304). From this tranche on the settle
 explicitly checks that **every merged candidate is present in the product** before it
 is called done. This tranche: 381 merged, 381 present, 0 missing. A feed that tripped a
 spam pattern would have shown up as a missing row the moment it was dropped.
+
+## Tranche 26: +398 feeds across 35k, and the highest correction rate of the session (2026-11-04)
+
+| step | count |
+|---|---|
+| candidates | 1,498 |
+| served a real feed | 1,316 (88%) |
+| taggable | 398 |
+| merged | **398** |
+| hand rules | **102** (26% of taggable) |
+| untagged queue | 8,900 |
+
+Product 34,686 → **35,084 feeds**, 25,557 → 25,884 hosts, 34,716 titled, 7,790
+language-tagged. Zero removals, zero pre-existing rows changed, fixed point
+byte-identical, `--strict` 0, 157 tests. Every merged candidate present in the product.
+
+**The correction rate was the highest of the session: 26%**, against the ~7–9% of
+tranches 22–24. The cause is visible in the corrections: this AMP slice is heavy in
+personal podcasts with evocative names, and the headline/topic rules key on
+word-senses the feed does not have. The four noise magnets account for most of it:
+`topic:science` on a therapist ("Sister Kana"), `topic:ai` on a data newsletter,
+`topic:tech-industry` on a self-care newsletter, `topic:hardware` on a Marvel podcast,
+`topic:history` on a DSA chapter and a basketball feed. `topic:food` came from the word
+coffee twice (a chartered-accountant podcast, a commodities feed) and from an OB/GYN
+study podcast ("CREOGs Over Coffee"). Several church-adjacent and DJ-show feeds fell to
+`media` as the correct last-resort but were still pinned for the obvious subject
+(football, case law, 808 hip-hop, ham radio, Star Wars, MCU).
+
+Two vocabulary gaps surfaced and were closed by mapping, not by adding tags:
+**there is no `topic:crypto`** (mapped to `finance`), no `topic:consumer-electronics`
+(mapped to `gadgets`), no `topic:engineering` (mapped to `systems`), and no
+`topic:self-improvement` (mapped to `personal`). `decide.py` rejects a tag outside
+TAGS.md, which is what caught all four in the same run. Whether `crypto` deserves its
+own topic is a real question now — it is the third tranche in which a crypto feed had
+to be mapped to finance — but that is a TAGS.md change, not a tranche edit.
+
+Languages read from the feed's own content: Dutch (weight-loss, nutrition medicine,
+information-archivists, sewing, animal communication, a Münster radio show), German
+(economics ×2, copywriting, comedy, a 2. Bundesliga-adjacent show), Japanese (a labour-law
+podcast for business owners, a pro-baseball commentary), Czech, French (horoscopes,
+teacher AI tools, traditional music), Spanish (solopreneurs, a housing cooperative),
+Portuguese (Brazilian football).
