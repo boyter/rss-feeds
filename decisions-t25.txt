@@ -1,0 +1,43 @@
+# tranche 25 hand corrections. Most read from the feed's own description.
+# Several are 'media was the only rule that fired' after the topic:media last-resort
+# fix (tranche 23) - correct behaviour, but the subject is obvious from the description.
+# The Dutch church feed (Rafaël gemeente De Rank) needed NO hand rule: the religion
+# rule gained pree?k\w* (preek/preken) so it tags automatically. See the notebook.
+# a CFA on approaching/being in retirement - topic:tech-industry was nothing in it
+https://consideratecapital.com/feed/podcast.xml	topic:finance type:podcast
+# Amsterdam Ajax football supporters podcast; media was the only rule that fired
+https://channels.podcastfeed.nl/a2c51760-f8f2-11eb-bfa7-27b320c0c1fe/feed.xml	language:dutch region:europe topic:sport type:podcast
+# Polish: "historie biegaczy długodystansowych" (ultra-distance running stories); media was the only rule that fired
+https://anchor.fm/s/10013986c/podcast/rss	language:polish topic:sport type:podcast
+# "Christian Podcasts on Dating, Parenting, Marriage, Finances, Life"; media was the only rule that fired
+https://christian-dating-service-plus.com/feed/podcast	topic:religion type:podcast
+# "a technology blog mainly focused on programming" - topic:food came from the word Coffee
+https://coffeeandcommits.bearblog.dev/atom.xml	topic:programming type:personal-blog
+# items are about designing Rovo AI agents - topic:food came from the word Coffee
+https://coffeecup.tech/blog/atom.xml	topic:ai type:vendor-blog
+# "jazz, spirituality, and personal storytelling" about John Coltrane; topic:science was noise
+https://coltranecode.substack.com/feed	topic:music topic:religion type:newsletter
+# comics and pop-culture interviews; topic:music was nothing in it
+https://comiccrusaderspodcast.libsyn.com/rss	topic:books topic:entertainment type:podcast
+# "in depth news on commodities: gold, silver, platinum, copper, oil, coffee..." - topic:food came from coffee
+https://commoditiespredict.substack.com/feed	topic:finance type:newsletter
+# "your home for Android app development support"; topic:books was what they sell, not what the blog posts
+https://commonsware.com/blog/atom.xml	topic:software-engineering type:vendor-blog
+# "the Connected by data initiative, led by Jeni Tennison"; topic:sport was nothing in it
+https://connectedbydata.org/blog/feed.xml	topic:data type:vendor-blog
+# "Dein Sky Talk über die 2. Bundesliga" (football); media was the only rule that fired
+https://cdn.julephosting.de/podcasts/1046-hvk-tusche-dein-zweitliga-talk/feed.rss	language:german region:germany topic:sport type:podcast
+# "Psychiatrist... exploring the sacred feminine"; topic:tech-industry was nothing in it
+https://consciousfeminism.substack.com/feed	topic:health topic:philosophy type:newsletter
+# e-commerce: "selling over $1.25M on the Etsy platform"; media was the only rule that fired
+https://app.kajabi.com/podcasts/2147506467/feed	topic:business type:podcast
+# an FC Bayern Munich football podcast; media was the only rule that fired
+https://cdn.audiorella.com/podcasts/1524-mia-san-vier-der-fc-bayern-podcast-von-sky-sport/feed.rss	language:german region:germany topic:sport type:podcast
+# "for criminal defense teams... case law updates"; media was the only rule that fired
+https://coloradoadc.libsyn.com/rss	topic:legal type:podcast
+# "trade unionism, cooperatives, internationalism, energy transition, politics"
+https://colinlong.substack.com/feed	topic:politics topic:environment type:newsletter
+# a tech/security journal (GitHub, cryptography); topic:finance was nothing in it
+https://consp.org/blog/blog-html.atom	topic:security type:personal-blog
+# community cat-care; topic:animals was missing
+https://communitycatspodcast.libsyn.com/rss	topic:animals topic:education type:podcast

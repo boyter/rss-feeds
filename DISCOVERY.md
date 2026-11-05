@@ -1617,3 +1617,53 @@ A candidate guard, left to the owner: a pattern-based `remove` of a feed that is
 this pass** (absent from HEAD's `feeds.json`) should `flag`, not `remove` — a feed that
 just cleared a human review is not the pattern's to delete. That needs a git baseline in
 triage, which is a design change, not a tranche edit.
+
+## Tranche 25: +381 feeds, the cleanest batch yet, and a Dutch sermon the rule missed (2026-11-04)
+
+| step | count |
+|---|---|
+| candidates | 1,499 |
+| served a real feed | 1,368 (91%) |
+| taggable | 381 |
+| merged | **381** |
+| hand rules | 19 |
+| untagged queue | 7,985 |
+
+Product 34,305 → **34,686 feeds**, 25,251 → 25,557 hosts, 34,318 titled, 7,741
+language-tagged. Zero removals, zero pre-existing rows changed, fixed point
+byte-identical, `--strict` 0, **157 tests**. Every merged candidate present in the
+product (the count guard below).
+
+This is the **cleanest batch of the session**: every church feed carries `religion`
+(the tranche-23 fix holds across two tranches now), and most `media` rows are the
+correct last-resort. 19 hand rules, the usual word-sense class: "Coffee & Commits"
+tagged food (a programming blog), "Commodities Predict" tagged food (coffee is one of
+the commodities), "CommonsWare" tagged books (it is an Android development blog),
+"Connected by data" tagged sport (a data initiative), a psychiatrist tagged
+`topic:tech-industry`, a Polish ultra-running podcast tagged media, three football
+podcasts (Ajax, Schalke's 2. Bundesliga talk, Bayern) tagged media, and an OADC
+criminal-case-law podcast tagged media.
+
+### A Dutch sermon the religion rule missed, closed at the rule not the row
+
+One church feed fell through to `topic:media` anyway: `Rafaël gemeente "De Rank"`,
+whose description is *"Dit kanaal bevat de preken die op zondagochtend in onze
+gemeente worden gehouden"* (this channel contains the sermons held Sunday mornings in
+our congregation). The tranche-23 religion rule knew the German (`predigt`) and French
+(`prêche` via `église`) word for sermon but not the Dutch one.
+
+Fixed at the rule: added `pree?k\w*`. Two forms exist and the first attempt
+(`preek\w*`) matched only the singular — the doubled *e* collapses in the plural, so
+`preek` is p-r-e-e-k but `preken` is p-r-e-k-e-n, and `pree?k\w*` is what catches both.
+`gemeente` was **deliberately not** added: in Dutch it also means *municipality*, so a
+municipal feed would become a religion feed. One test pins the Dutch case; product
+byte-identical (the rule change touches only new candidates). The feed now tags
+`religion` with no hand rule.
+
+### The count guard is now a standing check
+
+The only reason tranche 24's silent deletion was caught was comparing the settled
+count against the merge (34,305 → 34,304). From this tranche on the settle
+explicitly checks that **every merged candidate is present in the product** before it
+is called done. This tranche: 381 merged, 381 present, 0 missing. A feed that tripped a
+spam pattern would have shown up as a missing row the moment it was dropped.
