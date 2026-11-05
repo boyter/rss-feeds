@@ -1,0 +1,285 @@
+# tranche 27 hand corrections. Each read from the feed's own description or item
+# titles in the probe. 'X was nothing in it' = the rule that fired keyed on a
+# word-sense the feed does not have. Largest set of the session (~140).
+# "generally about games" (Resident Evil)
+http://criticallysane.com/category/podcasts/pss/feed/	topic:gaming type:podcast
+# Warhammer 40K & Age of Sigmar
+http://cubicshenanigans.net/feed/podcast/	topic:gaming type:podcast
+# GTA V content
+https://3speak.tv/rss/professor.gaming.xml	topic:gaming type:podcast
+# music competition covers (Web3 music, gospel)
+https://3speak.tv/rss/quduus1.xml	topic:music type:podcast
+# Amar Ujala Hindi local news (Budaun, Bundi city feeds)
+https://amarujala.com/rss/budaun.xml	language:hindi topic:news type:publication
+# Amar Ujala Hindi local news (Budaun, Bundi city feeds)
+https://amarujala.com/rss/bundi.xml	language:hindi topic:news type:publication
+# daily horoscope, one feed per zodiac sign (Balance/Vierge)
+https://aod.nrjaudio.fm/xml/2084.xml	language:french topic:entertainment type:podcast
+# daily horoscope, one feed per zodiac sign (Balance/Vierge)
+https://aod.nrjaudio.fm/xml/2085.xml	language:french topic:entertainment type:podcast
+# Czech: "komplexní pohled na aktuální témata, politické debaty"
+https://api.mujrozhlas.cz/rss/podcast/37830b29-65e6-36f9-8fdf-4869d32ce617.rss	language:czech topic:news type:podcast
+# "life, faith, philosophy, ethics... Christ Against Civilization"
+https://api.riverside.com/hosting/33RGn6GL.rss	topic:religion topic:philosophy type:podcast
+# Mr. Ribs: "mountains out of molehills"
+https://api.substack.com/feed/podcast/1052786.rss	topic:personal type:newsletter
+# Dutch dog coach: "honden en hun gedrag"
+https://app.springcast.fm/podcast-xml/15815	language:dutch topic:animals type:podcast
+# Dutch: leaders in the life sciences
+https://app.springcast.fm/podcast-xml/15966	language:dutch topic:science type:podcast
+# regional news
+https://audioboom.com/channels/3449521.rss	topic:news type:podcast
+# Italian: minerals/metals for smartphones & batteries
+https://backr24.ilsole24ore.com/podcast/materie.xml	language:italian topic:science type:podcast
+# French-Canadian: prospects who may make the NHL
+https://baladoquebec.ca/la-releve/rss	language:french topic:sport type:podcast
+# ÖJAB 80th-anniversary podcast (language added)
+https://cdn.stationista.com/feeds/gemeinsam-zukunft-gestalten-der-oejab-podcast	language:german topic:media type:podcast
+# "state and local news, weather, and sports for Wisconsin"
+https://civicmedia.us/feed/podcast/cm-news/	topic:news type:podcast
+# Japanese: "train your financial brain" (マネトレ)
+https://ckp-podcast.com/okubo/feed/podcast	language:japanese topic:finance type:podcast
+# M&A program for business owners (Shirakawa Masayoshi)
+https://ckp-podcast.com/shirakawa/feed/podcast/	language:japanese topic:finance type:podcast
+# cyber insurance readiness
+https://clientcabin.com/distribution_feeds/company/47770/Podcasts/rss	topic:security type:podcast
+# "finding and reviewing the best online courses"
+https://coursesdrop.com/feed/podcast/course-access-hub/	topic:education type:podcast
+# commercial real estate (CRE) - tech-industry was nothing in it
+https://cresuccess.libsyn.com/rss	topic:finance type:podcast
+# Greek: "Το νέο ειδησεογραφικό μέσο της Κρήτης" (Crete news)
+https://cretaone.gr/podcast/feed/	language:greek topic:news type:podcast
+# true crime (Murdaugh Murders X2)
+https://crimeandcask.com/feed/	topic:journalism type:publication
+# "the podcast you would do if you had nothing else to do" (AITA)
+https://crimeandstuffonline.com/category/podcast-episode/aita/feed/	topic:personal type:podcast
+# CRIMEandSTUFF main feed: "the podcast you would do if you had nothing else to do"
+https://crimeandstuffonline.com/category/podcast-episode/feed/	topic:personal type:podcast
+# true crime ("doesn't shy away from the gruesome details")
+https://crimehappens.com/feed/podcast/crime-happens/	topic:journalism type:podcast
+# German: "Wirtschafts- und Steuerstrafrecht und Compliance"
+https://criminal-compliance.podigee.io/feed/mp3	language:german topic:legal type:podcast
+# international criminal justice development
+https://criminaljusticenetwork.net/feed/podcast/	topic:legal type:podcast
+# Italian teacher: "vissuti e letture di una maestra curiosa"
+https://cristina-ansuini.podomatic.com/rss2.xml	language:italian topic:education type:podcast
+# "el programa de salud y belleza más escuchado en España"
+https://cristinamitre.substack.com/feed	language:spanish topic:health type:newsletter
+# border walls, Latin America geopolitics, wildlife conservation
+https://criticaledgespodcast.substack.com/feed	topic:environment topic:politics type:podcast
+# "critical thinking in a language-learner-based approach"
+https://criticallymindednetwork.com/feed/podcast/critically-minded-network/	topic:education type:podcast
+# "critical thinking in a language-learner-based approach"
+https://criticallymindednetwork.com/feed/podcast/welcome/	topic:education type:podcast
+# Dr. Markow interviews experts (farming, bedbugs, satellites)
+https://criticallyspeaking.libsyn.com/rss	topic:science type:podcast
+# "television, politics and tennis" (election results)
+https://criticalreport.substack.com/feed	topic:politics topic:sport type:newsletter
+# "economic security, industrial policy, trade economics, EU-US-China"
+https://criticalsupply.substack.com/feed	topic:finance topic:politics type:newsletter
+# "counter-Enlightenment philosophy, the post-Christian condition"
+https://critiqueanddigest.substack.com/feed	topic:religion topic:philosophy type:newsletter
+# Spanish: "ciencia, salud y nutrición deportiva"
+https://crm.nutriexper.com/nx-core-9kprd/v1/marketing/podcast/feed	language:spanish topic:health type:podcast
+# "midlife things: kids, parents, food, sex, holidays, rage"
+https://cronesandwich.substack.com/feed	topic:personal type:newsletter
+# Austrian: "Themen am Teller" (topics on the plate)
+https://cropfm.at/cropfm/services/cropfmrssservlet	language:german topic:food type:podcast
+# greenhouses, CEA, AgTech
+https://croptalkpodcast.libsyn.com/rss	topic:food type:podcast
+# UNL crop research: harvest, crop weather
+https://cropwatchpodcast.podbean.com/feed.xml	topic:food type:podcast
+# Christian Legal Society: "law, religion, and public policy"
+https://crossandgavel.libsyn.com/rss	topic:legal topic:religion type:podcast
+# EY international tax news
+https://crossbordertax.libsyn.com/rss	topic:finance type:podcast
+# to Starve Your Sin, Sharing the Gospel"
+https://crossconference.libsyn.com/rss	topic:religion type:podcast
+# fantasy through leadership theory (ACOTAR's Nesta Archeron)
+https://crossingrealms.substack.com/feed	topic:books type:newsletter
+# insurance risk management
+https://crossingthinice.podbean.com/feed.xml	topic:finance type:podcast
+# full-cast audio drama reimagining the Wizard of Oz
+https://crossovers.libsyn.com/rss	topic:books type:podcast
+# "the collision of real life and trusting God"
+https://crossroadsabc.com/mediafiles/collision-podcast.xml	topic:religion type:podcast
+# Kickstarter/Indiegogo crowdfunding advice
+https://crowdcrux.libsyn.com/rss	topic:finance type:podcast
+# CrowdStrike: "threat actors target organizations with sophisticated cybera[tacks]"
+https://crowdstrike.podbean.com/feed.xml	topic:security type:podcast
+# Crowell & Moring government-contracting legal podcast
+https://crowellmoring.podbean.com/feed.xml	topic:legal type:podcast
+# healthcare leadership
+https://crtconsulting.solutions/podcast/feed/podcast/preside-prevail/	topic:health type:podcast
+# film discussion (Suicide Kings, The Thing, Mission Impossible)
+https://crucialpodcast.libsyn.com/rss	topic:entertainment type:podcast
+# German: "Der Kreuzfahrt-Podcast" (cruises)
+https://cruisetricks.podigee.io/feed/mp3	language:german topic:travel type:podcast
+# high-school football (Lord Botetourt coach)
+https://crunch.podbean.com/feed.xml	topic:sport type:podcast
+# CRUSADE Channel newscasts (Mike Church)
+https://crusadechannel.com/feed/crusade-news/	topic:news type:publication
+# poker analysis (skill-based, not casino spam)
+https://crushlivepoker.com/podcasts/rss/category/free-clp-podcast	topic:entertainment type:podcast
+# "book reviews on history and philosophy, as well as current events"
+https://cryn.substack.com/feed	topic:books topic:politics type:newsletter
+# crypto blog - science was nothing in it
+https://crypto-moeda.blogspot.com/feeds/posts/default	topic:finance type:personal-blog
+# "crypto and AI in the world of politics" (Hegseth, Trump)
+https://cryptoclass.substack.com/feed	topic:politics type:newsletter
+# "find their way into cryptocurrency" - science was nothing in it
+https://cryptoexponentials.substack.com/feed	topic:finance type:newsletter
+# paranormal: "myths and legends that haunt the human mind"
+https://cryptopediacast.podbean.com/feed.xml	topic:entertainment type:podcast
+# "Cherry's Bookstore - the raccoon girl's picks" (thrillers)
+https://crystalfoster753-dotcom.github.io/coffeelovestea-feeds/feed-bookstore.xml	topic:books type:personal-blog
+# "the Coffeehouse Arcade runs the video games" (itch.io) - food was the café name
+https://crystalfoster753-dotcom.github.io/coffeelovestea-feeds/feed-games.xml	topic:gaming type:personal-blog
+# "mothers navigating eating disorder recovery"
+https://crystalkarges.substack.com/feed	topic:health type:newsletter
+# "faith, books, and daily life meet... scripture"
+https://crystiss.substack.com/feed	topic:religion topic:books type:newsletter
+# Japanese: on-site staff discuss modern welfare (福祉)
+https://cs-takibi.jp/podcast/feed/podcast	language:japanese topic:health type:podcast
+# Czech: "Akciové trhy ve vašich uších" (stock markets in your ears)
+https://cs.bulios.com/podcasts/rss.xml	language:czech topic:finance type:podcast
+# Hungarian: psychology, body image, nutrition, self-knowledge, health
+https://csakhaerdekelpodcast.podbean.com/feed.xml	language:hungarian topic:health type:podcast
+# reverse dieting, calorie deficit, nutrition
+https://cschmidtfit.libsyn.com/rss	topic:health type:podcast
+# Romanian: announcements/letters from the FAU Cluj student council
+https://csfau.substack.com/feed	language:romanian topic:education type:newsletter
+# "transforming personal lives with spiritual tools"
+https://cslbellingham.org/feed/podcast/	topic:religion type:podcast
+# "The California Sports Lawyer® Briefing"
+https://cslbriefing.substack.com/feed	topic:legal type:newsletter
+# "family life, personal..." - coffee was the pun, education+food were the words
+https://csteach.substack.com/feed	topic:personal type:newsletter
+# The Conference Board: "how to redesign work", state of the economy
+https://csuiteperspectives.libsyn.com/rss	topic:business type:podcast
+# Hungarian: "Ez egy filmnapló" (film diary)
+https://cszn83.blogspot.com/feeds/posts/default	language:hungarian topic:entertainment type:personal-blog
+# c't (computer magazine) tech podcast: iPhone, PS5 jailbreak, Apple M5
+https://ct-3003.podigee.io/feed/mp3	language:german topic:tech-industry type:podcast
+# Czech Television (ČT24) news podcast
+https://ct24.cz/rss/tema/podcast-3737	language:czech topic:news type:podcast
+# Cathedral of Christ the King faith formation
+https://ctkfaithformation.podbean.com/feed.xml	topic:religion type:podcast
+# "science, startups, neuroengineering, philosophy"
+https://ctscans.substack.com/feed	topic:science type:newsletter
+# "dedicated volunteers... to get homeless animals into loving homes"
+https://cttr.substack.com/feed	topic:animals type:newsletter
+# Brazilian light-info talk show
+https://cuecaapertada.blubrry.net/feed/podcast/	language:portuguese topic:entertainment type:podcast
+# French: "recettes de saison, menus batch" (batch cooking)
+https://cuisineaddict.substack.com/feed	language:french topic:food type:newsletter
+# "mindful reflection, balance, and growth"
+https://cultivateyourwellness.substack.com/feed	topic:health type:newsletter
+# "about cults" - Japanese Death Cults, Troubled Teen Industry
+https://cultpodcast.podbean.com/feed.xml	topic:journalism type:podcast
+# how technology is changing culture (exhibition design, curators)
+https://culture-technology.podigee.io/feed/mp3	topic:art type:podcast
+# Iain M. Banks' Culture novels (space opera)
+https://culturebooks.libsyn.com/rss	topic:books type:podcast
+# "the intersection of culture and capitalism"
+https://culturecapitalist.substack.com/feed	topic:business type:newsletter
+# bathing/steam culture - gaming was nothing in it
+https://cultureofbathing.substack.com/feed	topic:lifestyle type:newsletter
+# "independent stories and analysis exploring sport, culture, business"
+https://cultureofsport.substack.com/feed	topic:sport type:newsletter
+# peer-reviewed academic journal
+https://cultures.mgimo.ru/jour/gateway/plugin/WebFeedGatewayPlugin/atom	language:russian topic:books type:publication
+# "media, trends, entertainment, marketing"
+https://cultureshauk.substack.com/feed	topic:entertainment type:newsletter
+# leadership stories (Aztek, law firms, Lazorpoint)
+https://cultureshoc.podbean.com/feed.xml	topic:business type:podcast
+# Spanish: "fiestas de cumpleaños infantiles con manualidades"
+https://cumplescraft.com/feed/podcast/	language:spanish topic:business type:podcast
+# German wrestling podcast (WWE/AEW)
+https://cuppahaters.podcaster.de/hatersfolgen.rss	language:german topic:sport type:podcast
+# comedy + Florida State football
+https://cuptocup.libsyn.com/rss	topic:sport topic:entertainment type:podcast
+# "psychoactive internet rabbit holes" - religion was nothing in it
+https://curatedrabbitholes.substack.com/feed	topic:media type:newsletter
+# fashion/closet style notes - food was nothing in it
+https://curatedwears.substack.com/feed	topic:lifestyle type:newsletter
+# artist Chloé Duplessis elevating ideas/artists
+https://curatingmemory.substack.com/feed	topic:art type:newsletter
+# Halloween characters fictional podcast
+https://curdleholler.com/feed/podcast/	topic:entertainment type:podcast
+# German: Aufarbeitung (coming to terms with the past)
+https://cure.uni-saarland.de/feed/mp3/	language:german topic:politics topic:history type:podcast
+# "stories from the thresholds of life... the practice of Self-Trust"
+https://curiosityrising.substack.com/feed	topic:personal type:newsletter
+# Spring Boot, Kubernetes tutorials
+https://curiousdevscorner.substack.com/feed	topic:programming type:newsletter
+# special-education attorney for special-needs families
+https://curiousincident.libsyn.com/rss	topic:education topic:legal type:podcast
+# community markets, coffee, Safe Harbor Financial
+https://curiouspundits.substack.com/feed	topic:finance type:newsletter
+# Richie Goldman on "aging, family, books, life"
+https://curmudg.substack.com/feed	topic:books topic:personal type:newsletter
+# Richie Goldman on "aging, family, books, life"
+https://curmudgucation.substack.com/feed	topic:books topic:personal type:newsletter
+# COVID, vaccines, mandates, legislation
+https://curtiscost.substack.com/feed	topic:health topic:politics type:newsletter
+# "theoretical physics, consciousness, AI, and God" (Fields Medal, Aaronson)
+https://curtjaimungal.substack.com/feed	topic:science topic:ai type:newsletter
+# mind-body-spirit wellness ("move as spirit in form")
+https://cusiosityandconsciousliving.libsyn.com/rss	topic:health topic:religion type:podcast
+# customer-centric business conversations
+https://customersfirst.libsyn.com/rss	topic:business type:podcast
+# "Pakistan Customs, Tax, Shipping & Business News Resource"
+https://customnews.pk/category/world-news/news-feed/feed/	topic:news topic:business type:publication
+# Philippines Bureau of Customs: official notices, not a finance feed
+https://customs.gov.ph/feed/	topic:politics type:institution
+# "radical discipleship... reflections on following Jesus"
+https://customwordpresssites.com/mjb/feed/podcast/	topic:religion type:podcast
+# Felicitas Goodman Institute: spirituality, self-authorship, trance
+https://cuyainstitute.substack.com/feed	topic:religion type:newsletter
+# "practitioners in the field of strength and c[onditioning]"
+https://cvasps.podomatic.com/rss2.xml	topic:sport type:podcast
+# Christian liberal-arts professors: book club, movie club, autobiographies
+https://cwcradio.podbean.com/feed.xml	topic:education topic:religion type:podcast
+# German: men's counselors (Beratungsstellen/Männerberater)
+https://cwhlc1.podcaster.de/Echte-maenner-reden.rss	language:german topic:health type:podcast
+# X-Nation: "Marvel's Merry Mutants, the X-Men"
+https://cworm.libsyn.com/rss	topic:comics type:podcast
+# OSINT tools/techniques - open-source was the wrong sense
+https://cybdetective.substack.com/feed	topic:security type:newsletter
+# German: "der tägliche Wahnsinn der Cyber Security"
+https://cyber-tango-podcast.podigee.io/feed/mp3	language:german topic:security type:podcast
+# "turning books and concepts into lists of their most important thoughts"
+https://cyberbunny.substack.com/feed	topic:books type:newsletter
+# branding/marketing ("ad fails in history") - security was nothing in it
+https://cyberdogz.libsyn.com/rss	topic:business type:podcast
+# cyber insurance for agencies (phishing, cyberattacks)
+https://cyberfin.substack.com/feed	topic:security type:newsletter
+# threat intelligence, OSINT (Iran-Israel cyber tracker)
+https://cyberknow.substack.com/feed	topic:security type:newsletter
+# "stitching together the techno-social debris"
+https://cyberneticforests.substack.com/feed	topic:tech-industry type:newsletter
+# "on software, life and everything in-between" (dogs, Holy Spirit)
+https://cyberomin.github.io/feed.xml	topic:personal type:personal-blog
+# Portuguese: comics/manga (quadrinhos) - not security
+https://cyberquadrinhos.blogspot.com/feeds/posts/default	language:portuguese topic:comics type:personal-blog
+# space industry startups, market trends, innovation
+https://cyclopspacetech.substack.com/feed	topic:tech-industry type:newsletter
+# safeguarding children from abuse (true stories) - not cybersecurity
+https://cykascanyoukeepasecret.podbean.com/feed.xml	topic:journalism type:podcast
+# "deep exploration of controversial topics" (Trump, Charlie Kirk)
+https://cylinderradio.libsyn.com/rss	topic:politics type:podcast
+# "world politics through history, economics"
+https://cymposium.substack.com/feed	topic:politics topic:history type:newsletter
+# "Enter The Kingdom Through Love... Prophecy... The Prayer Of Jesus"
+https://cyndifosterbfa.podbean.com/feed.xml	topic:religion type:podcast
+# "Las Vegas news, reviews and vintage segments" - history only was half the picture
+https://cynicalthinktank.podbean.com/feed.xml	topic:travel topic:history type:podcast
+# CROMATICS German coaching podcast (language added)
+https://crmtcs.podigee.io/feed/mp3	language:german topic:media type:podcast
+# CxO Today: "India's latest technology, business & IT news"
+https://cxotoday.com/blog/feed	topic:tech-industry type:vendor-blog
+# Australian cyber sector - finance was nothing in it
+https://cyberdaily.au/podcasts?format=feed&type=atom	region:australia topic:security type:podcast
+# Australian cyber sector - finance was nothing in it
+https://cybersecurityconnect.com.au/podcasts?format=feed&type=rss	region:australia topic:security type:podcast

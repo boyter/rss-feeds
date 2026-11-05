@@ -1709,3 +1709,40 @@ information-archivists, sewing, animal communication, a Münster radio show), Ge
 podcast for business owners, a pro-baseball commentary), Czech, French (horoscopes,
 teacher AI tools, traditional music), Spanish (solopreneurs, a housing cooperative),
 Portuguese (Brazilian football).
+
+## Tranche 27: +413 feeds across 26k hosts, and the session's worst correction rate (2026-11-04)
+
+| step | count |
+|---|---|
+| candidates | 1,499 |
+| served a real feed | 1,366 (91%) |
+| taggable | 413 |
+| merged | **413** |
+| hand rules | **141** (34% of taggable) |
+| untagged queue | 9,842 |
+
+Product 35,084 → **35,497 feeds**, 25,884 → 26,233 hosts, 35,129 titled, 7,857
+language-tagged. Zero removals, zero pre-existing rows changed, fixed point
+byte-identical, `--strict` 0, 157 tests. Every merged candidate present in the product.
+
+**Correction rate 34%, the worst of the session and worse than tranche 26 (26%). The
+AMP directory's tail is where the word-sense misfires concentrate, and it keeps
+getting worse: tranche 26 was 26%, this one 34%. The same four noise magnets, the same
+coffee→food pun (a bookstore and a video-game café both sit on a host whose name
+contains "Coffee"), and a long tail of `media` last-resort rows pinned for the obvious
+subject (curling, wrestling, crossfit, cycling, a Hungarian CV-coach, a Dutch
+water-dam podcast, a German hockey podcast, an Italian materials podcast, two
+NRJ horoscopes).
+
+Two new vocabulary confirmations: **crypto still has no topic of its own** — this
+tranche mapped seven crypto feeds to `finance` (a new record, versus three running
+total last tranche). The case for a `topic:crypto` in TAGS.md is now unambiguous.
+And **`topic:gadgets`** (added in an earlier vocabulary pass) absorbed the consumer-
+electronics row (an Italian materials/minerals podcast). `decide.py` rejected every
+out-of-vocabulary tag in the same run; nothing invalid reached `overrides.jsonl`.
+
+Languages read from content: Czech ×3, German ×4, French ×3 (incl. two more NRJ
+horoscopes), Dutch ×2, Japanese ×3, Hindi, Russian, Greek, Romanian, Hungarian ×2,
+Portuguese, Spanish, Italian, Turkish. The NRJ horoscope pattern (one feed per zodiac
+sign) is now in three tranches; it is a site, not a feed set, so each sign feed is
+pinned individually.
