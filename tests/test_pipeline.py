@@ -1192,6 +1192,19 @@ class TestTheMediumIsNotTheSubject(unittest.TestCase):
                              "Predigten der Christus-Gemeinde | Audio")
         self.assertIn("topic:religion", got)
 
+    def test_a_dutch_sermon_feed_is_religion_not_media(self):
+        # A Dutch church feed ("de preken die op zondagochtend in onze gemeente
+        # worden gehouden") fell through to topic:media: the rule knew the German
+        # and French word for sermon but not the Dutch one. "preek" has no
+        # non-religious Dutch homograph, so it is safe to name. "gemeente" is
+        # deliberately NOT added - it also means "municipality".
+        got = self.suggested("https://example.nl/feed",
+                             "Rafaël gemeente De Rank",
+                             desc="Dit kanaal bevat de preken die op zondagochtend "
+                                  "in onze gemeente worden gehouden.")
+        self.assertIn("topic:religion", got)
+        self.assertNotIn("topic:media", got)
+
     def test_the_medium_still_tags_a_feed_with_no_subject_at_all(self):
         # Removing the fallback entirely would send these to the human queue with
         # nothing said about them; the point is that it loses to a subject, not
