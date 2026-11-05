@@ -1,0 +1,237 @@
+# tranche 29 (leads + AMP). Each read from the feed's own description or items.
+# Most rules name ONLY the facet being changed, so the type:/region:/language: the
+# existing tagging got right survives - a URL rule replaces the facets it NAMES, and
+# naming fewer facets is the less destructive form.
+# NOT touched: importpython.com, whose existing rule carries topic:programming:python.
+# That tag family (630 shipped feeds, 33 languages) is NOT in TAGS.md - see the notebook;
+# my first draft of this rule was redundant and has been dropped.
+# "unlock your potential" self-help (two feeds)
+http://daretoshinepodcast.com/?feed=podcast	topic:personal type:podcast
+# "unlock your potential" self-help (two feeds)
+http://daretoshinepodcast.com/feed/podcast/	topic:personal type:podcast
+# Amar Ujala Hindi city desks (Chamoli, Champawat) - education/politics were headline noise
+https://amarujala.com/rss/chamoli.xml	language:hindi topic:news type:publication
+# Amar Ujala Hindi city desks (Chamoli, Champawat) - education/politics were headline noise
+https://amarujala.com/rss/champawat.xml	language:hindi topic:news type:publication
+# sexual self-esteem, intimacy; media was the only rule that fired
+https://anchor.fm/s/100175510/podcast/rss	language:spanish topic:health type:podcast
+# daily horoscope - TAGS.md has topic:astrology (tranche 28 lesson applied same tranche)
+https://aod.nrjaudio.fm/xml/2088.xml	language:french region:france topic:astrology type:podcast
+# daily horoscope - TAGS.md has topic:astrology (tranche 28 lesson applied same tranche)
+https://aod.nrjaudio.fm/xml/2089.xml	language:french region:france topic:astrology type:podcast
+# Danish: "Danmarks vigtigste metal podcast"
+https://api.dr.dk/podcasts/v1/feeds/sort-soendag.xml?format=podcast&limit=100	language:danish topic:music type:podcast
+# Czech regional news blocks
+https://api.mujrozhlas.cz/rss/podcast/3af5f1c1-6c47-35cd-b3fd-0a1de596f23c.rss	language:czech topic:news type:podcast
+# for nerds and geeks
+https://api.riverside.com/hosting/3KDlenHK.rss	topic:entertainment type:podcast
+# sports show
+https://api.riverside.fm/hosting/1tfzjZQn.rss	topic:sport type:podcast
+# the Urantia book - politics was nothing in it
+https://api.substack.com/feed/podcast/1057926.rss	topic:religion type:newsletter
+# "a metabolic mission"
+https://api.substack.com/feed/podcast/1059098.rss	topic:health type:newsletter
+# Dutch-language anime podcast
+https://app.springcast.fm/podcast-xml/16100	language:dutch topic:entertainment type:podcast
+# Danish: psychologist Sara on the 3 P's
+https://app.springcast.fm/podcast-xml/16114	language:danish topic:health type:podcast
+# French independent climate podcast
+https://audioblog.arteradio.com/blog/159187/rss	language:french topic:environment type:vendor-blog
+# French ceramics makers talk; media was the only rule that fired
+https://audioblog.arteradio.com/blog/159381/rss	language:french topic:design type:vendor-blog
+# Italian: how to feed body and mind
+https://backr24.ilsole24ore.com/podcast/obiettivo-salute-in-tavola.xml	language:italian topic:health type:podcast
+# French community radio
+https://cause-commune.fm/feed/podcast/ouvre-la-3	language:french topic:entertainment type:podcast
+# German: diabetes talk show
+https://cdn.audiorella.com/podcasts/1584-candy-diaries/feed.rss	language:german topic:health type:podcast
+# German: ProB basketball team behind the scenes
+https://cdn.julephosting.de/podcasts/1124-jump/feed.rss	language:german topic:sport type:podcast
+# Dutch: podcast of the Evangelisch College
+https://channels.podcastfeed.eu/89e9d02e-8b92-44aa-8192-268c16cfc6aa/feed.xml	language:dutch topic:religion type:podcast
+# Dutch regional talk podcast
+https://channels.podcastfeed.eu/8bff9cff-b9a2-4bea-9aa5-56c0567549ab/feed.xml	language:dutch topic:personal type:podcast
+# a Canadian oddities show
+https://ckuw.ca/programs/feed/the-wonderful-frightening-world-of-patrick-michalishyn	region:canada topic:entertainment type:podcast
+# intimacy/relationships; media was the only rule that fired
+https://clientcabin.com/distribution_feeds/company/48279/Podcasts/rss	topic:health type:podcast
+# a podcast built for learners
+https://coursesdrop.com/feed/podcast/get-courses/	topic:education type:podcast
+# Spanish: photography, video, books
+https://cuonda.com/photolari-podcast/feed	language:spanish topic:art type:podcast
+# Swedish: passion for dance
+https://danspassion.podbean.com/feed.xml	language:swedish topic:art type:podcast
+# "design your life around your dreams"
+https://dantalks.libsyn.com/rss	topic:personal type:podcast
+# formerly DAO Talk (decentralised autonomous organisations)
+https://daotalk.substack.com/feed	topic:tech-industry type:newsletter
+# "Daraja Press is a not-for-profit publisher" - security was nothing in it
+https://darajapress.substack.com/feed	topic:books type:newsletter
+# "where quilters come to create" (craft)
+https://daratomasson.libsyn.com/rss	topic:design type:podcast
+# "how do I build a life of courage and confidence"
+https://daregreatlypodcast.libsyn.com/rss	topic:personal type:podcast
+# Polish: "zmysłowych opowieści" (sensual stories)
+https://dareklust.com/feed/podcast/	language:polish topic:entertainment type:podcast
+# weekly motivation - business/tech-industry were nothing in it
+https://daretogrow.libsyn.com/thepodcast	topic:personal type:podcast
+# "deeply philosophical questions"
+https://daretoknowpodcast.libsyn.com/daretoknow	topic:philosophy type:podcast
+# German: accompaniment through grief/illness
+https://dariakatrinlinzbach.podigee.io/feed/mp3	language:german topic:health type:podcast
+# Doherty Properties (real estate)
+https://daring-sandpaper.cloudvent.net/itunes.xml	topic:finance type:podcast
+# "investment philosophy" - politics was nothing in it
+https://daringarman.podbean.com/feed.xml	topic:finance type:podcast
+# "helps women rise up rested" (burnout)
+https://daringtorest.libsyn.com/rss	topic:health type:podcast
+# Italian newsletter on generative-engine optimisation
+https://dariodemicheli.substack.com/feed	language:italian type:newsletter topic:ai
+# film study - science was nothing in it
+https://dariollinares.substack.com/feed	topic:entertainment type:newsletter
+# dark-academia mythos
+https://darkacademicals.com/podcast?format=rss	topic:entertainment type:podcast
+# Dark Crystal fandom; media was the only rule that fired
+https://darkcrystalpodcast.podbean.com/feed.xml	topic:entertainment type:podcast
+# creative renditions/poetry
+https://darklingpsalter.substack.com/feed	topic:books type:newsletter
+# French blog on film censorship
+https://darkness-fanzine.over-blog.com/rss	language:french type:personal-blog topic:entertainment
+# retail tech and compliance - finance was nothing in it
+https://darkopavic.substack.com/feed	topic:tech-industry type:newsletter
+# astrology read against Christianity - astrology is the subject and TAGS.md has it
+https://darkstarastrology.substack.com/feed	topic:astrology topic:religion type:newsletter
+# the Stephen King podcast
+https://darktowerradio.libsyn.com/rss	topic:books type:podcast
+# monthly DJ mixes
+https://darkwaves.podomatic.com/rss2.xml	topic:music type:podcast
+# German: gut health (Darm)
+https://darm-talk.podigee.io/feed/mp3	language:german topic:health type:podcast
+# a personal life-review podcast
+https://darrenelliott.podomatic.com/rss2.xml	topic:personal type:podcast
+# stories for kids
+https://darrengalindo.podbean.com/feed.xml	topic:entertainment type:podcast
+# weekly recipes and food hacks (the tag was right, kept for the record)
+https://darrenrobertsonfood.substack.com/feed	topic:food type:newsletter
+# art, literature and history of Eastern Europe
+https://daryazorka.substack.com/feed	topic:art topic:books topic:history type:newsletter
+# German: compliance for medical practices (Arztpraxen)
+https://das-auch-noch-compliance-podcast-arztpraxis.podigee.io/feed/mp3	language:german topic:health type:podcast
+# German relationship podcast
+https://das-neue-wir.podigee.io/feed/mp3	language:german topic:personal type:podcast
+# Quaschning is an energy/climate host
+https://dasisteinegutefrage.podigee.io/feed/mp3	language:german topic:environment type:podcast
+# "spricht mit Künstler:innen" (talks with artists)
+https://dasistkunst.podigee.io/feed/mp3	topic:art type:podcast
+# Dutch: privacy and everything around it
+https://dasprive.be/feed/podcast/	language:dutch topic:security type:podcast
+# German world-news podcast
+https://daswort.tv/data/rss/audio/daswort---news/	language:german topic:news type:publication
+# "essays about running, culture" - music/tech-industry were nothing in it
+https://dasz.substack.com/feed	topic:sport type:newsletter
+# German data-protection talk (Datenschutz)
+https://dataagenda.podigee.io/feed/mp3	language:german topic:security type:podcast
+# a community for data professionals - finance was nothing in it
+https://dataaistockholm1.substack.com/feed	topic:data type:newsletter
+# j-pop / chip / garage music radio
+https://datafruits.streampusher.com/podcasts/datafruits.xml	topic:music type:podcast
+# German data-protection practice
+https://datenschutz-praxis-podcast.podigee.io/feed/mp3	language:german topic:security type:podcast
+# a marriage podcast - tech-industry was nothing in it
+https://dateyourwife.libsyn.com/rss	topic:personal type:podcast
+# dating/relationships for post-divorce mid-life
+https://datingdaze.libsyn.com/rss	topic:personal type:podcast
+# dating advice - education was the word "teachings"
+https://datingwomenradioshow.libsyn.com/rss	topic:personal type:podcast
+# "how you handle the stress" of careers - ai was nothing in it
+https://datstresscoach.substack.com/feed	topic:personal type:newsletter
+# an academic research journal - gadgets was nothing in it
+https://davaoresearchjournal.ph/index.php/main/gateway/plugin/WebFeedGatewayPlugin/atom	topic:science type:publication
+# Alberta politics podcast
+https://daveberta.ca/feed/podcast/	region:canada topic:politics type:podcast
+# the dance-music historian - journalism was close but wrong
+https://davehaslam.substack.com/feed	topic:music type:newsletter
+# "old African missionary serving as a circuit preacher" - hardware was nothing in it
+https://davejenkins394305.substack.com/feed	topic:religion type:newsletter
+# "buy or sell a home"
+https://daveknightteam.com/itunes.xml	topic:finance type:podcast
+# NYC photographer - tech-industry was nothing in it
+https://davekrugman.substack.com/feed	topic:art type:newsletter
+# Northern Soul / ska / rocksteady radio
+https://davesmith.podomatic.com/rss2.xml	topic:music type:podcast
+# economic development in Atlantic Canada
+https://david476.substack.com/feed	topic:economics region:canada type:newsletter
+# founder of the U.S. Green Building Council (LEED)
+https://davidagottfried.substack.com/feed	topic:environment type:newsletter
+# "thriving with Adult ADHD"
+https://davidagreenwood.libsyn.com/rss	topic:health type:podcast
+# workplace safety Q&A
+https://davidayers.podbean.com/feed.xml	topic:health type:podcast
+# "the financial podcast"
+https://davidbachshow.libsyn.com/rss	topic:finance type:podcast
+# Spanish: sales podcast (venta)
+https://davidcordoba.es/podcast/rss.xml	topic:business type:podcast
+# "neuroscientist at Stanford, NYT bestselling author"
+https://davideagleman.substack.com/feed	topic:science type:newsletter
+# "Sports; Humanities; Travel; Photography"
+https://davidfranks.blogspot.com/feeds/posts/default	topic:travel type:personal-blog
+# "the presence and power of the Holy Spirit"
+https://davidhernandezministries.podbean.com/feed.xml	topic:religion type:podcast
+# co-founder of a political organising group - tech-industry was nothing in it
+https://davidmileshogg.substack.com/feed	topic:politics type:newsletter
+# "saving democracy: a user's guide"
+https://davidpepper.substack.com/feed	topic:politics type:newsletter
+# yoga teacher / wellness author
+https://davidscottyglesias.substack.com/feed	topic:health type:newsletter
+# observations and Ottawa life - science was nothing in it
+https://davidscrimshaw.blogspot.com/atom.xml	topic:personal type:personal-blog
+# Spanish-language English-teaching method
+https://daway.libsyn.com/rss	language:spanish topic:education type:podcast
+# "crafts of all kinds"
+https://dawnlewis.libsyn.com/rss	topic:design type:podcast
+# "sacred words" morning prayers
+https://dawnprayers.podbean.com/feed.xml	topic:religion type:podcast
+# senior care
+https://daybyday.libsyn.com/rss	topic:health type:podcast
+# Human Design is an astrology-derived system
+https://dayluna.libsyn.com/rss	topic:astrology type:podcast
+# "weekend messages from Dayspring Fellowship"
+https://dayspringfellowship.podbean.com/feed.xml	topic:religion type:podcast
+# kiteboarding, skiing, health and fitness
+https://daytonkingery.substack.com/feed	topic:health type:newsletter
+# Windows internals (DNS, networking) - open-source was the wrong facet
+https://dblohm7.ca/atom.xml	topic:systems type:personal-blog
+# German: "macht Architektur hörbar" (makes architecture audible)
+https://dbz-der-podcast.podigee.io/feed/mp3	language:german topic:design type:podcast
+# "hockey thoughts, reactions and outbursts" - ai was nothing in it
+https://dcastillo.substack.com/feed	topic:sport type:newsletter
+# Dutch podcast on online (marketing) podcasts
+https://dcdwpodcast.libsyn.com/rss	language:dutch type:podcast topic:media
+# German: podcast of comics-loving older men
+https://dcomics.podcaster.de/diagnose-comics.rss	language:german topic:comics type:podcast
+# writing craft - ai was nothing in it
+https://ddeutsch.substack.com/feed	topic:books type:newsletter
+# Danish: "uafhængig, undersøgende podcast-serie" (independent investigative)
+https://ddr-podcast.dk/podcast.xml	language:danish topic:journalism type:podcast
+# "brain droppings"
+https://ddrpodcast.com/@ddrpodcast/feed.xml	topic:personal type:podcast
+# "the writer: 40 years in print, 50+ novels"
+https://dduane.tumblr.com/rss	topic:books type:personal-blog
+# Dutch: a football club (voetbalvereniging) podcast
+https://de-jongens-van-de-gestampte-podcast.podigee.io/feed/mp3	language:dutch topic:sport type:podcast
+# German photobook corner
+https://de9vpm.podcaster.de/fotobuch-ecke.rss	language:german topic:art type:podcast
+# the Digital Euro Association
+https://dea-podcast.podigee.io/feed/mp3	topic:finance type:podcast
+# celebrity real estate; media was the only rule that fired
+https://deadcelebrity.blubrry.net/feed/podcast/	topic:finance type:podcast
+# "A Deaf, ND artist and writer" - history was the wrong word-sense
+https://deafartistmum.substack.com/feed	topic:art type:newsletter
+# business deals; media was the only rule that fired
+https://dealfarm.libsyn.com/rss	topic:business type:podcast
+# M&A (DealRoom) - tech-industry was close but wrong
+https://dealroom.libsyn.com/rss	topic:finance type:podcast
+# "senior economist at the Center for Economic and Policy Research"
+https://deanbaker22.substack.com/feed	topic:economics type:newsletter
+# title is just "Podcast" / subject from the description
+https://davidbixlerlinernotes.libsyn.com/rss	topic:entertainment type:podcast

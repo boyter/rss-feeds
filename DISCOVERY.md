@@ -1802,3 +1802,65 @@ a Star Wars show, wrestling, hockey, NBA, Title IX, real estate, home inspection
 Languages read from content: German ×6, French ×5, Czech ×2, Dutch ×2, Italian ×2,
 Spanish, Japanese, Turkish, Vietnamese, Indonesian. `topic:film` does not exist (mapped
 to `entertainment`); `decide.py` rejected it in the same run.
+
+## Tranche 29: +307 feeds, two channels tried, and the count guard earning its keep
+
+| step | count |
+|---|---|
+| candidates | 1,619 (`leads` 121 + AMP 1,499) |
+| served a real feed | 1,252 (77%) |
+| taggable | 308 |
+| merged | **307** (1 refused) |
+| hand rules | 115 |
+| untagged queue | 11,774 |
+
+Product 35,764 → **36,071 feeds**, 26,440 → 26,683 hosts, 35,703 titled, 7,972
+language-tagged, 610 carrying a `topic:programming:<lang>` language tag. Zero
+removals, zero pre-existing rows changed, fixed point byte-identical, `--strict` 0,
+157 tests, `REMOVED.md` unchanged.
+
+### Why not AMP again, and what the alternative channel gave
+
+After tranche 28's 42% correction rate I tried a second channel in the same tranche:
+`discover.py leads` (feed links found on pages of hosts we already trust), which
+measured **94% live** when first run. It is now exhausted: it offered only **121**
+candidates (11,052 altFeeds already seen, 9,296 already in the product) and those
+leftovers served a real feed just **35%** of the time. The good altFeeds have all been
+picked. Both channels are now thin: AMP 86–91% live but 34–42% mis-tagged, leads 35%
+live and nearly empty.
+
+### The count guard found one feed that did not land — and it was supposed not to
+
+`merged candidates missing from product: 1` → `https://importpython.com/feed/`. It
+probed as a real feed (200, `isFeed=true`), was in the merged file, and was not in
+`feeds.json`. The reason, printed by `add.py merge`:
+
+> `banned by spam.jsonl: SEO listicle farm under a Python name: fitness app dev
+> companies, crypto licence services, VASP compliance`
+
+**A prior human decision, honoured.** `add.py` refuses candidates that `spam.jsonl`
+bans precisely so a stale candidates file cannot re-admit what a human removed. This is
+the standing declined-URL problem seen from the good side: the ban was written down, so
+the reappearance was caught. The three cases where I could only report a repeat
+(`btccasinonews.com`, `casinokrisa`, the legacy libsyn duplicate) were repeats *because*
+nothing was written down. importpython.com is the fourth reappearance and the first one
+the system stopped by itself.
+
+### Two false conclusions of my own, both from how I inspected tags
+
+Worth writing down because they cost detours and both were wrong:
+
+1. My tag printer showed a topic as `t.split(':')[-1]`, so
+   `topic:programming:python` displayed as **`python`** and I concluded the feed had no
+   topic — then wrote a rule to "fix" it. It already had one.
+2. To answer "is this tag in the vocabulary?" I ran `grep -oE "topic:[a-z-]+" TAGS.md`,
+   which **cuts at the second colon** and so reported that `topic:programming:<lang>`
+   was missing — when TAGS.md documents it explicitly (line 32, full list 37–49:
+   ada, apl, assembly, c, clojure, cpp, crystal, d, dart, elixir, erlang, fortran,
+   fsharp, go, haskell, java, javascript, julia, kotlin, lisp, lua, nim, objective-c,
+   ocaml, perl, php, python, r, ruby, rust, scala, shell, smalltalk, sql, swift, zig).
+
+Both mistakes pointed at a "defect" that did not exist. The correct tool for both
+questions is `vocab.load()` — it parses TAGS.md with a regex that allows `:` in the
+value, and it confirms all 33 language sub-tags are in the vocabulary (174 tags total).
+**Ask the code that defines the rule, not a grep that approximates it.**
