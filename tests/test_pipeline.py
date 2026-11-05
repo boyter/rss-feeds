@@ -99,6 +99,30 @@ class TestALanguageFromTheDomain(unittest.TestCase):
                                   ["language:ukrainian"], self.vocab)[0]
         self.assertEqual(got, ["language:german", "type:publication"])
 
+    def test_a_host_rule_language_replaces_the_one_left_in_feeds_json(self):
+        # 03352.com.ua is a Ukrainian regional paper. An early pass stamped
+        # language:russian into feeds.json from the Cyrillic script rule, and a
+        # later HOST rule decided language:ukrainian. The guard above stops the
+        # rules adding a second language, but it says nothing about the language
+        # already sitting in feeds.json, so the feed shipped both - 129 feeds this
+        # way. A hand decision that speaks the language facet is the answer for
+        # that facet, so it replaces what feeds.json held, and the displaced tag
+        # is reported rather than dropped in silence. Remove the language branch
+        # of the host-scope strip in vocab.merge_tags and only this test fails.
+        got, problems = vocab_mod.merge_tags(
+            ["language:russian", "type:publication"], ["language:ukrainian"],
+            [], self.vocab, "host")
+        self.assertEqual(got, ["language:ukrainian", "type:publication"])
+        self.assertTrue([p for p in problems if "override replaced" in p],
+                        f"the displaced language must be reported: {problems}")
+
+    def test_a_host_rule_language_does_not_blank_an_undecided_feed(self):
+        # The replacement is a replacement, not a veto: with nothing in
+        # feeds.json to displace, the host rule simply supplies the language.
+        got, _ = vocab_mod.merge_tags(["type:publication"], ["language:ukrainian"],
+                                      ["language:russian"], self.vocab, "host")
+        self.assertEqual(got, ["language:ukrainian", "type:publication"])
+
     def test_rules_may_still_fill_a_blank_language(self):
         got = vocab_mod.merge_tags(["type:publication"], [],
                                   ["language:german"], self.vocab)[0]

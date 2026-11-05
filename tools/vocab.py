@@ -149,7 +149,19 @@ def merge_tags(keep, override, suggested, vocab, scope="host"):
     if override:
         decided = decided_facets(override)
         suggested = [t for t in suggested if t.split(":", 1)[0] not in decided]
+        # A URL rule is the whole answer for the facets it names. A HOST rule may
+        # only settle type: - it has no business deciding one feed's subject, and
+        # the npr.org host rule once stripped topic:health from a section feed.
+        # language: joins type: in the host-scope strip because a site really does
+        # publish in a language: a host rule saying "this domain is Ukrainian" is a
+        # claim about every feed on it, and leaving the old script-rule guess
+        # alongside it shipped 129 feeds carrying language:russian AND
+        # language:ukrainian. topic: stays out of the host-scope strip for the
+        # reason above. decided_facets keeps its topic/type contract; language is
+        # handled here so the two precedence stories stay readable apart.
         strip = decided if scope == "url" else (decided & {"type"})
+        if any(t.startswith("language:") for t in override):
+            strip = strip | {"language"}
         # Only a tag that actually vanishes is worth reporting: an override that
         # repeats what feeds.json already said displaces nothing, and reporting
         # that made 2,127 normal feeds look like a defect in every rebuild.
