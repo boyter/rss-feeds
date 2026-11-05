@@ -1864,3 +1864,70 @@ Both mistakes pointed at a "defect" that did not exist. The correct tool for bot
 questions is `vocab.load()` — it parses TAGS.md with a regex that allows `:` in the
 value, and it confirms all 33 language sub-tags are in the vocabulary (174 tags total).
 **Ask the code that defines the rule, not a grep that approximates it.**
+
+## Cleanup pass: the double-language defect, and the feeds outside the format contract (2026-11-05)
+
+No new feeds. Product 36,071 → **36,071**, zero removals, **159 tests**.
+
+A read-only audit of the product against `vocab.load()` (not a grep — see tranche 29's
+landmine) found three violations of the documented contract:
+
+| finding | count | action |
+|---|---|---|
+| feeds with two `language:` tags | 146 | 127 fixed, 19 left (correct) |
+| feeds with no `topic:`, or not exactly one `type:` | 12 | 3 fixed, 9 left (blocked) |
+| feeds with 3 `region:` tags | 1 | left |
+
+### The language precedence defect, and why `language:` joins `type:` at host scope
+
+`merge_tags` had a guard — "a feed has one language" — that stopped **rules**
+stacking a second language onto a decided one. It said nothing about the language
+already sitting in `keep` from an earlier pass. The mechanism, from an actual row:
+
+```
+03352.com.ua  feeds.json held language:russian  (Cyrillic script rule, an old pass)
+              a later HOST rule decided          language:ukrainian
+              merge unioned the two              -> both shipped
+```
+
+129 feeds were this shape — a hand decision beside a rule-derived guess. The fix
+extends the host-scope strip from `{type}` to `{type, language}`: a **host** rule has
+no business deciding one feed's `topic:` (the `npr.org` rule once stripped
+`topic:health` from a section feed), but a site really does publish in a language, so
+"this domain is Ukrainian" is a legitimate claim about every feed on it. The displaced
+tag is reported by the existing `override replaced N tag(s)` line, never dropped in
+silence. `decided_facets` keeps its topic/type contract; `language` is handled in
+`merge_tags` so the two precedence stories stay readable apart.
+
+The diff proved the scope before it shipped: **127 rows changed, each losing exactly
+one `language:` tag, gaining nothing, nothing else touched, zero feeds added or
+removed.** 95 were `russian`→`ukrainian` (`.ua` regional papers), 16 `arabic`→`urdu`
+(Pakistani news sites).
+
+**19 double-language feeds remain, correctly.** Every language on them is present in a
+hand rule for that URL or host — including two that my first classifier misfiled as
+defects because it read `tags` and not **`pathTags`**: `joho-todai.com` (`language:japanese`
+for the site, `pathTags: {/en/rss: language:english}`) and `advalvas.vu.nl` (Dutch, with
+an `/en/feed` English section). A multilingual host with a per-path language rule is the
+system working, and `pathTags` is the third place a tag can come from — audit all three.
+
+### 12 feeds shipped outside the format contract; 3 were readable, 9 are blocked
+
+The contract is at least one `topic:` and exactly one `type:`. Twelve feeds violated it,
+none with a title or description in the harvest. Probed: **0 of 12 served a feed to the
+harvester.** Checked by hand the way the project requires (`curl --compressed`, browser
+UA): **3 of 12 served a real RSS feed** — the harvester was being blocked, not the feed
+dead:
+
+- `ahilado.wordpress.com` — *"Math and Physics for Everyone"*, items on Hilbert modular
+  surfaces and Higgs bundles → `topic:mathematics topic:science`
+- `hanszandbelt.wordpress.com` — *"Stuff on Identity Federation, SSO etc."*, items on
+  WebAuthn and OpenID Connect → `topic:security`
+- `danielspost.news.blog` — *The Daniels Post*, Daniel Akoh's news blog → `topic:news`
+
+The other nine stay **flagged, not removed** — Cloudflare "Just a moment…" challenges
+(403), a 522 origin-down, a 503 "deployment paused", TLS hostname mismatches, timeouts.
+Our inability to read them is not evidence they are dead; they join the ~200 blocked
+feeds that need a browser, and they remain outside the contract until someone reads them.
+Two of them (`aarvik.dk`, `developer.salesforce.com`) carry a topic but no `type:` — a
+`type:` could be guessed but would be a guess, so it was not written.

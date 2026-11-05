@@ -1,0 +1,9 @@
+# The 12 feeds that shipped outside the format contract (no topic: or no single
+# type:). These three answered curl with a browser UA after the harvester was
+# blocked, so their subject is readable from their own description.
+# "Math and Physics for Everyone"; items are Hilbert modular surfaces, Higgs bundles.
+https://ahilado.wordpress.com/feed/	topic:mathematics topic:science type:personal-blog
+# "The Daniels Post" - Daniel Akoh's news blog (world news, Nollywood).
+https://danielspost.news.blog/feed/	topic:news type:personal-blog
+# "Stuff on Identity Federation, SSO etc."; items are WebAuthn, OpenID Connect.
+https://hanszandbelt.wordpress.com/feed/	topic:security type:personal-blog
