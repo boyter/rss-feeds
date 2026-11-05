@@ -52,12 +52,16 @@ Non-technology:
 
 `topic:science`, `topic:mathematics`, `topic:medicine`, `topic:environment`,
 `topic:politics`, `topic:government`, `topic:legal` (courts, law, legal practice - a real recurring cluster: law podcasts, law schools, law firms; not `topic:politics`, which is policy and power), `topic:military`, `topic:design`, `topic:history`, `topic:philosophy`,
-`topic:economics`, `topic:finance`, `topic:crypto` (bitcoin, blockchain, DeFi, stablecoins, exchange and custody business - a real recurring cluster: 121 feeds had to be filed under `finance` for four tranches because there was nowhere else to put them), `topic:business`, `topic:media`,
+`topic:economics`, `topic:finance`, `topic:real-estate` (agents, brokers, property investment and management, home buying and inspection, housing markets - 64 feeds were filed under `finance` alone because there was nothing else, which is the same stretch `crypto` fixed), `topic:crypto` (bitcoin, blockchain, DeFi, stablecoins, exchange and custody business - a real recurring cluster: 121 feeds had to be filed under `finance` for four tranches because there was nowhere else to put them), `topic:business`, `topic:media`,
 `topic:journalism`, `topic:sport`, `topic:gaming`, `topic:entertainment`,
 `topic:transport`,
 `topic:music`, `topic:art`, `topic:books`, `topic:comics` (comics, webcomics, manga, graphic novels - a real recurring cluster that `topic:art` and `topic:books` both stretched), `topic:travel`, `topic:food`,
 `topic:astrology` (horoscopes, natal charts, astrological practice - a real recurring cluster; esoteric but categorizable),
 `topic:health`, `topic:education`, `topic:religion`, `topic:lifestyle`, `topic:animals` (animal welfare and rescue, zoos, keeping and studying animals - a recurring cluster that `topic:science` and `topic:lifestyle` both stretched), `topic:personal`
+
+`topic:real-estate` is what a feed is about, not a mention: a mortgage-rate paragraph in a
+macro newsletter stays `topic:finance`. Keep both only when the feed genuinely covers money
+and property.
 
 `topic:crypto` is a subject in its own right, not a sub-genre of money: add `topic:finance`
 as well only when the feed is genuinely about markets, banking or investing at large, not

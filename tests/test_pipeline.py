@@ -1255,6 +1255,41 @@ class TestTheMediumIsNotTheSubject(unittest.TestCase):
         self.assertIn("topic:finance", got)
         self.assertNotIn("topic:crypto", got)
 
+    def test_a_realtor_podcast_is_real_estate_not_only_finance(self):
+        # 64 shipped feeds carried only finance/business/media because property had
+        # no tag at all - the same stretch crypto had. Delete the real-estate rule
+        # and this fails.
+        got = self.suggested("https://realtor.example/feed",
+                             "The Listing Desk",
+                             desc="Buyer and seller agents on listings, home buying and "
+                                  "what housing prices are doing.")
+        self.assertIn("topic:real-estate", got)
+
+    def test_mortgage_rates_in_a_macro_letter_does_not_become_real_estate(self):
+        # The word that shapes this rule: a newsletter quoting mortgage rates is a
+        # finance feed, not a property feed.
+        got = self.suggested("https://macro.example/feed",
+                             "Rates Watch",
+                             desc="Mortgage rates, the bond market, the Fed and inflation.")
+        self.assertIn("topic:finance", got)
+        self.assertNotIn("topic:real-estate", got)
+
+    def test_a_multitenant_app_is_not_real_estate(self):
+        # "tenant" is software vocabulary. The rule must not name it.
+        got = self.suggested("https://saas.example/feed",
+                             "Platform Notes",
+                             desc="Multi-tenant architecture, isolation and quotas.")
+        self.assertNotIn("topic:real-estate", got)
+
+    def test_a_pub_landlord_is_not_real_estate(self):
+        # "landlord" in British usage is the keeper of a public house. This cost a
+        # row when the rule first ran. Drop the (?<!pub ) guard and this fails.
+        got = self.suggested("https://publandlord.example/feed",
+                             "Adam Brooks",
+                             desc="I'm a normal bloke, a pub landlord, navigating the "
+                                  "snobby world of the hospitality industry.")
+        self.assertNotIn("topic:real-estate", got)
+
     def test_the_medium_still_tags_a_feed_with_no_subject_at_all(self):
         # Removing the fallback entirely would send these to the human queue with
         # nothing said about them; the point is that it loses to a subject, not

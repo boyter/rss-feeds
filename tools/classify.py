@@ -51,6 +51,15 @@ TOPIC_RULES = [
     # as shorthand for cryptography, and a feed titled "Crypto Is Not A Four Letter
     # Word" about key exchange is a security feed. A compound ("crypto assets",
     # "crypto market") or any of the unambiguous terms below is required.
+    # Real estate was the same gap crypto was: 76 feeds named property in their own
+    # description and 64 of them carried only finance/business/media, because that is
+    # where a realtor podcast gets filed when there is nowhere else. Bare "mortgage"
+    # is deliberately NOT a trigger - a macro newsletter quoting mortgage rates is a
+    # finance feed - and neither is "tenant", which is software vocabulary
+    # (multi-tenancy). "landlord" needs a guard of its own: in British usage a
+    # "pub landlord" is the keeper of a public house, not a property owner.
+    # The alternatives are all property-specific compounds.
+    (r"(real[ -]estate|\brealtors?\b|\brealty\b|estate agents?|property\s+(?:market|markets|listing|investment|management|portfolio)|housing\s+(?:market|starts|prices)|home\s+(?:buying|buyers?|inspection|flipping)|(?<!pub )\blandlord\b)", ["topic:real-estate"]),
     (r"(\bcrypto(?:currenc\w*|\s+(?:asset|assets|market|markets|news|exchange|exchanges|industry|company|firms?|regulation|policy|bubble|media|podcast|blog|weekly|daily))\b|\bbitcoin\w*\b|\bbtc\b|blockchain|\bdefi\b|\baltcoins?\b|\bstablecoins?\b|\bnfts?\b|\bweb3\b|satoshi|\bethereum\b|\bhalving\b)", ["topic:crypto"]),
     (r"\b(nfl|nba|mlb|nhl|soccer|football|cricket|rugby|tennis|golf|\bf1\b|formula 1|boxing|mma|ufc|olympic|baseball|basketball|hockey)", ["topic:sport"]),
     (r"\b(video game|game design|\bgamedev\b|game development|\bxbox\b|\bplaystation\b|\bnintendo\b|steam|\broguelike|tabletop|rpg)", ["topic:gaming"]),
