@@ -2011,3 +2011,47 @@ Verified before `--apply`: 88 rows changed, `topic:finance` the only tag lost an
 
 `review.py` now reports **0 judgeable feeds** in the queue and 9 rows with no harvest
 data — the nine blocked feeds from the contract pass, still waiting on a browser.
+
+## The blocked feeds were a fingerprint problem, not a politeness one (2026-11-06)
+
+Product 36,071 → **36,066** (8 verified removals, 3 verified successors added),
+titles 35,703 → **35,813**, **178 tests**, `--strict` 0.
+
+The ~200 blocked feeds were the largest standing gap, and the plan was a `curl`-style
+browser fallback. Measured first, and the plan was wrong: `harvest.py` already sends
+browser-ish headers, and the only header that mattered was **the User-Agent version and
+platform**. Firefox/97.0 on Windows NT 10.0 is a 2022 browser, and "outdated Firefox on
+Windows" is itself a bot tell. Same six URLs, minutes apart: Windows/97 → 403 on all;
+Linux/97 → 200; Windows/115 → 200; `curl/8.5.0` → 200. Accept-Language and Accept
+q-values changed nothing.
+
+So the fix is one header line, the etiquette is untouched (8 lanes, one host per lane, a
+pause), and there is no second fetch path to maintain. `--retry-failed` over all 351
+parked URLs recovered **148 feeds and 146 titles** with **zero newly-broken**, and left
+10 regressions flagged rather than removed.
+
+### What the recovery then required: reading the removal list
+
+The recovered harvest made 8 feeds removable (2×404, 6 serving `text/html`). All 8 were
+checked by hand with `curl -L --compressed` as a reader's client would, and the
+`not-a-feed` ones were checked for a declared successor before being cut:
+
+| dead | successor | merged |
+|---|---|---|
+| `blog.moove-it.com/rss` | `qubika.com/feed/` (the company renamed) | yes, tags carried |
+| `feeds.regulargeek.com/RegularGeek` | `regulargeek.com/feed/` | yes |
+| `smallwarsjournal.com/rss/blogs` | `smallwarsjournal.com/feed/` | yes |
+| `developer.atlassian.com/blog/feed.xml` | named, but the named URL is not a feed | no |
+| `asec.ahnlab.com/en/category/malware-information-en/feed/` | `asec.ahnlab.com/en/feed/` — **already in the product** | no (would have been a duplicate line) |
+| `insidexpress.com/feed/`, `webuild.envato.com/atom.xml`, `erlang-solutions.com/news.rss` | none declared; homepage names none either | no |
+
+Two near-misses worth recording: adding ahnlab's successor would have **duplicated a feed
+already shipped**, and `smallwarsjournal.com/feed/` was refused as `not a feed (403)`
+because `probe_results.jsonl` cached a 403 from my own repeat hits minutes after the same
+URL answered cleanly with 5 items — the cached snapshot, not the feed, was stale. Clearing
+that one record let it merge. `successors.jsonl` is committed as the provenance for which
+tags were carried across a move.
+
+Still parked after all this: 78 blocked + 77 unreachable, and the same 9 feeds with no
+harvest content — 3 of them TLS `CERTIFICATE_VERIFY_FAILED`, which a header cannot fix,
+and the rest Cloudflare JS challenges, which no header fixes either.
