@@ -1,0 +1,128 @@
+# 119 media-only feeds whose OWN title or description fires the shipped religion
+# rule. topic:media is the last-resort placeholder, so it is replaced, not kept
+# next to the real subject. Selection uses the tool's own rule so my regex cannot
+# invent a match the pipeline would never make.
+# Declined with reason below: 1 feed (Sex for Saints).
+# Note: this pass is what found the rabbi/rabbit defect - the feed "rabbit holes"
+# fired the old rule and is correctly absent now that the rule is fixed.
+# DECLINED http://feeds.libsyn.com/121210/rss
+#   Sex for Saints: a marriage and intimacy podcast; the LDS reference is the author's identity, not the subject
+https://12tribes.net/stn/feed/podcast/	topic:religion type:podcast
+https://15bigidea.libsyn.com/rss	topic:religion type:podcast
+http://feeds.libsyn.com/261389/rss	topic:religion type:podcast
+https://1mproject.libsyn.com/rss	topic:religion type:podcast
+http://feeds.libsyn.com/151667/rss	topic:religion type:podcast
+https://26westchurch.podbean.com/feed.xml	topic:religion type:podcast
+https://5pointschurchplanting.libsyn.com/rss	topic:religion type:podcast
+http://feeds.libsyn.com/253109/rss	topic:religion type:podcast
+https://99.church/feed/podcast/	topic:religion type:podcast
+https://alcsermons.podbean.com/feed.xml	topic:religion type:podcast
+https://afterclass.libsyn.com/rss	topic:religion type:podcast
+http://feeds.libsyn.com/121590/rss	topic:religion type:podcast
+https://allshoresoutreach.libsyn.com/rss	topic:religion type:podcast
+http://feeds.libsyn.com/148409/rss	topic:religion type:podcast
+https://ammanfordchurch.com/media/podcast/99/feed.rss	topic:religion type:podcast
+https://feeds.simplecast.com/4dl5OkkT	topic:religion type:podcast
+https://feed.podbean.com/bbcemory/feed.xml	topic:religion type:podcast
+https://bravechurch.libsyn.com/rss	topic:religion type:podcast
+https://bwtheology.podbean.com/feed.xml	topic:religion type:podcast
+https://calvarychapelbremerton.com/podcasts/be-not-deceived-with-vicki-wiederrich/rss	topic:religion type:podcast
+https://bmcgladys.com/feed/podcast/	topic:religion type:podcast
+https://c3ec.org/sermons?format=rss	topic:religion type:podcast
+https://bloomchurch.libsyn.com/rss	topic:religion type:podcast
+https://blueashcc.podbean.com/feed.xml	topic:religion type:podcast
+https://boysinthecave.libsyn.com/rss	topic:religion type:podcast
+https://bravechurch.podbean.com/feed.xml	topic:religion type:podcast
+https://breakforjesus.libsyn.com/rss	topic:religion type:podcast
+https://bpac.podomatic.com/rss2.xml	topic:religion type:podcast
+https://brevardchristian.com/podcast/feed.xml	topic:religion type:podcast
+https://bridgenorthshore.podomatic.com/rss2.xml	topic:religion type:podcast
+https://bridgetogodsword.podbean.com/feed.xml	topic:religion type:podcast
+https://bridgesonline.org/podcast/e2c3d6f3-b926-4011-a6af-41c2238c7223.xml	topic:religion type:podcast
+https://brightcitychurch.libsyn.com/rss	topic:religion type:podcast
+https://broadmoor.podbean.com/feed.xml	topic:religion type:podcast
+https://brookwoodchurchaudio.podbean.com/feed.xml	topic:religion type:podcast
+https://broomfieldassembly.org/sermons/broomfield-assembly-podcast.rss	topic:religion type:podcast
+https://botschaften.podcaster.de/brot-und-wein.rss	language:german region:germany topic:religion type:podcast
+https://buddhistbootcamp.libsyn.com/rss	topic:religion type:podcast
+https://buildingonthesolidrock.com/broadcasts/?podcast	topic:religion type:podcast
+https://bursledonparish.org/feed/podcast/bursledon-parish-podcast/	topic:religion type:podcast
+https://c3assemblychurch.podomatic.com/rss2.xml	topic:religion type:podcast
+https://c3churchtaupo.podbean.com/feed.xml	topic:religion type:podcast
+https://c3lausanneaudio.podbean.com/feed.xml	topic:religion type:podcast
+https://ccvs.church/sermons?format=rss	topic:religion type:podcast
+https://brethren.libsyn.com/rss	topic:religion type:podcast
+https://calledtobe.libsyn.com/rss	topic:religion type:podcast
+https://ccsmpodcasts.libsyn.com/rss	topic:religion type:podcast
+https://calvarycc.libsyn.com/rss	topic:religion type:podcast
+https://calvary.online/media/podcast/234/feed.rss	topic:religion type:podcast
+https://calvarywestlake.podbean.com/feed.xml	topic:religion type:podcast
+https://calvaryhsm805.podbean.com/feed.xml	topic:religion type:podcast
+https://calvaryraleigh.podbean.com/feed.xml	topic:religion type:podcast
+https://calvarytabernacleqc.org/media/podcast/5773/feed.rss	topic:religion type:podcast
+https://capecodchurch.libsyn.com/rss	topic:religion type:podcast
+https://capcity.info/media/podcast/323/feed.rss	topic:religion type:podcast
+https://captivatechurchsd.podomatic.com/rss2.xml	topic:religion type:podcast
+https://carlislecongregational.libsyn.com/rss	topic:religion type:podcast
+https://carrickvineyard.podbean.com/feed.xml	topic:religion type:podcast
+https://ccministry.podbean.com/feed.xml	topic:religion type:podcast
+https://castleview.libsyn.com/rss	topic:religion type:podcast
+https://catalystchristian.podbean.com/feed.xml	topic:religion type:podcast
+https://anchor.fm/s/e563906c/podcast/rss	topic:religion type:podcast
+https://catalystconversations.libsyn.com/rss	topic:religion type:podcast
+https://castopod.cccath.ca/@cathedralfredericton/feed.xml	region:canada topic:religion type:podcast
+https://catholicaudiomedia.substack.com/feed	topic:religion type:newsletter
+https://catholicfeedback.libsyn.com/rss	topic:religion type:podcast
+https://catholicsofpleasanton.libsyn.com/rss	topic:religion type:podcast
+https://celebrationchurch-phoenix.sermon.net/rss/main	topic:religion type:podcast
+https://celebrationchurchfairhope.libsyn.com/rss	topic:religion type:podcast
+https://centralassembly.podbean.com/feed.xml	topic:religion type:podcast
+https://centralbaptist.podomatic.com/rss2.xml	topic:religion type:podcast
+https://centralcc.libsyn.com/rss	topic:religion type:podcast
+https://centralcommunity.libsyn.com/rss	topic:religion type:podcast
+https://cc.myiknowchurch.co.uk/media/xmlFeed/03bbaab7153f7ea5b716d61864252944	region:uk topic:religion type:podcast
+http://champschurch.com/podcast/d98945d3-2cc1-472d-ae97-6cc66d786602.xml	topic:religion type:podcast
+https://chapeloflight.libsyn.com/rss	topic:religion type:podcast
+https://chicagognosis.podbean.com/feed.xml	topic:religion type:podcast
+https://cbglades.podbean.com/feed.xml	topic:religion type:podcast
+https://broadmoorchurch.com/sermons/podcast	topic:religion type:podcast
+https://ccboulder-goinglive.squarespace.com/podcast?format=rss	topic:religion type:podcast
+https://cchk.podbean.com/feed.xml	topic:religion type:podcast
+https://cbcrancho.libsyn.com/rss	topic:religion type:podcast
+https://ccwgg.podbean.com/feed.xml	topic:religion type:podcast
+https://ccfnt.org.au/podcast/3d62f321-b345-4ce3-9216-378e1fbc0c0a.xml	topic:religion type:podcast
+https://elevationchurchcairns.libsyn.com/rss	topic:religion type:podcast
+http://feeds.libsyn.com/249254/rss	topic:religion type:podcast
+https://bmalow.podbean.com/feed.xml	topic:religion type:podcast
+https://0mbftq.podcaster.de/glaubenszeit.rss	language:german region:germany topic:religion type:podcast
+https://akgcf.podbean.com/feed.xml	topic:religion type:podcast
+https://ca.gty.org/feeds/RadioPodcast.xml	topic:religion type:podcast
+https://agharvest.podbean.com/feed.xml	topic:religion type:podcast
+https://anchor.fm/s/ff144b00/podcast/rss	topic:religion type:podcast
+https://brisbanefire.com/messages?format=rss	topic:religion type:podcast
+https://cemchurches.libsyn.com/rss	topic:religion type:podcast
+http://feeds.libsyn.com/92737/rss	topic:religion type:podcast
+https://cenational.libsyn.com/rss	topic:religion type:podcast
+https://benbergren.libsyn.com/rss	topic:religion type:podcast
+https://feed.podbean.com/rectorscupboard/feed.xml	topic:religion type:podcast
+https://abidechurchar.org/sitepodcast	topic:religion type:podcast
+https://anchor.fm/s/53c6cd4/podcast/rss	topic:religion type:podcast
+https://cache.stl.churchcasting.io/hx0evyKqKtx937epyEWzGATn99QbriBr/channels/1/feeds/1/rss	topic:religion type:podcast
+https://agapeloveishere.org/podcasts/story-time-podcast/feed/	topic:religion type:podcast
+https://calvaryroswell.com/images/mp3/SundayPodcast.xml	topic:religion type:podcast
+https://cedarbrookchurch.libsyn.com/rss	topic:religion type:podcast
+https://bryancutshall.com/feed/podcast/hope-in-the-word-with-bryan-cutshall/	topic:religion type:podcast
+https://brownlinechurch.org/listen-to-teachings?format=rss	topic:religion type:podcast
+https://catholicadvance.podomatic.com/rss2.xml	topic:religion type:podcast
+https://cbfnaples.com/feed/sermon-podcast/	topic:religion type:podcast
+https://catholicfamilypodcast.podbean.com/feed.xml	topic:religion type:podcast
+https://agapeloveishere.org/podcasts/king-and-the-kingdom/feed/	topic:religion type:podcast
+https://agapeloveishere.org/podcasts/kings-international-spiritual-care-university-podcast/feed/	topic:religion type:podcast
+https://calvarytw.uk/sermons-and-notes-blog?format=rss	topic:religion type:podcast
+https://ccl.network/ministryand/feed.xml	topic:religion type:podcast
+https://feeds.acast.com/public/shows/657f4d0ece5d430017bf1c75	topic:religion type:podcast
+https://cedvhv.podcaster.de/unity-training.rss	language:german region:germany topic:religion type:podcast
+https://calvaryroswell.com/images/mp3/WednesdayPodcast.xml	topic:religion type:podcast
+https://adambellamy.podbean.com/feed.xml	topic:religion type:podcast
+https://call2disciple.libsyn.com/rss	topic:religion type:podcast
+https://5qr3nc.podcaster.de/mylight.rss	language:german region:germany topic:religion type:podcast

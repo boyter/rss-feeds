@@ -2103,3 +2103,34 @@ Those two are reachable only by disabling certificate verification, which is not
 something a harvester should do silently: fetched bytes would be stored as evidence of
 what a feed said, over a connection nobody vouched for. Left as-is per the owner's
 "in if you cannot get them, ignore them".
+
+## The faith pass, and `rabbit` matching `rabbi` (2026-11-06)
+
+Product 36,067 unchanged in count, **184 tests**, `--strict` 0. `topic:religion`
+1,682 → **1,802**, `topic:media`-only 1,655 → **1,536**.
+
+The recommendation for the 1,655 media-only feeds was to *not* grind them, and the shape
+measurement showed why the bounded version works: 797 of them signal a subject in their own
+title or description (205 news-shaped, 202 tech, 128 faith, 65 home/hobby, 64 writing, 55
+parenting), and **858 signal nothing at all** — for those `media` is currently the honest
+answer. So the pass taken was the one the tool can already see: every media-only row whose
+own text fires the *shipped* religion rule. **119 tagged**, one declined.
+
+Selecting with the tool's own rule rather than a regex of my own was the right instinct and
+it removed the false positives my first attempt had invented (Dutch `bespreken`/`gesprek` —
+"discuss", "conversation" — matching `preken`, a sermon). It also caught a real defect:
+
+**The religion rule carried `rabbi\w*` with no leading boundary, and the rules run under
+`re.I`, so it matched `rabbit` — the entire word.** 21 shipped feeds have rabbit as their
+only religion signal (Hundred Rabbits is a solar-powered-computers blog, "A RABBIT'S FOOT"
+is an art blog); they survived only because the pile-up guard stops a rule adding a topic
+to a feed that already has one. A *fresh candidate* would have been filed as religion, and
+one such row — a substack literally called "rabbit holes" — was sitting in the first draft
+of this pass when I read it by eye. Fixed to `\brabbis?\b|\brabbin(?:ic|ical)\b`; 3 tests,
+and restoring `rabbi\w*` fails exactly the two rabbit ones.
+
+Before `--apply`, checked the thing the invariant actually cares about: `topic:media` is
+usually a placeholder, but **239 hand rules at HEAD do decide `media` deliberately** — so
+the 119 were checked against all of them, and **none** of the 119 had a hand-decided
+`media`. That check is also why "rabbit holes" keeps its media tag: a human wrote it
+there, and the corrected rule no longer disagrees.
