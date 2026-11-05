@@ -180,7 +180,7 @@
 {"key": "inclusive-components.design", "tags": ["topic:web-development", "topic:design", "type:personal-blog"]}
 {"key": "interrupt.memfault.com", "tags": ["topic:embedded", "topic:hardware", "type:vendor-blog"]}
 {"key": "ishadeed.com", "tags": ["topic:web-development", "topic:design", "type:personal-blog"]}
-{"key": "http://feeds.feedburner.com/atlanticbusinesschannel", "tags": ["topic:business", "topic:politics", "type:publication", "region:usa"]}
+{"key": "http://feeds.feedburner.com/AtlanticBusinessChannel", "tags": ["topic:business", "topic:politics", "topic:real-estate", "type:publication"]}
 {"key": "http://feeds.feedburner.com/calculatedrisk", "tags": ["topic:economics", "topic:finance", "type:personal-blog"]}
 {"key": "http://feeds.feedburner.com/ericsthoughts", "tags": ["topic:open-source", "topic:personal", "type:personal-blog"]}
 {"key": "http://feeds.feedburner.com/googleonlinesecurityblog", "tags": ["topic:security", "type:vendor-blog"]}
@@ -6017,7 +6017,7 @@
 {"key": "aaron.vegh.ca", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "aaronaiken.micro.blog", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "https://aaronalt.substack.com/feed", "tags": ["topic:entertainment", "type:personal-blog"]}
-{"key": "https://aaronameen.substack.com/feed", "tags": ["topic:business", "topic:finance", "type:newsletter"]}
+{"key": "https://aaronameen.substack.com/feed", "tags": ["topic:business", "topic:real-estate", "type:newsletter"]}
 {"key": "aaronarney.dev", "tags": ["topic:programming", "type:personal-blog"]}
 {"key": "https://aaronartair.substack.com/feed", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "aaronbos.dev", "tags": ["topic:programming", "type:personal-blog"]}
@@ -7601,7 +7601,7 @@
 {"key": "https://blog.roboflow.com/rss/", "tags": ["topic:ai", "type:vendor-blog"]}
 {"key": "https://feed.pippa.io/public/shows/5d6996ad156201903067e8c4", "tags": ["topic:business", "topic:tech-industry", "type:podcast"]}
 {"key": "https://feed.podbean.com/mitsupplychainfrontiers/feed.xml", "tags": ["region:usa", "topic:transport", "type:podcast"]}
-{"key": "https://feed.podbean.com/realassetinsight/feed.xml", "tags": ["topic:business", "topic:finance", "type:podcast"]}
+{"key": "https://feed.podbean.com/realassetinsight/feed.xml", "tags": ["topic:business", "topic:finance", "topic:real-estate", "type:podcast"]}
 {"key": "https://feeds.acast.com/public/shows/68632a61db315037b7937d60", "tags": ["region:australia", "topic:sport", "type:podcast"]}
 {"key": "https://feeds.megaphone.fm/roadsigns", "tags": ["region:usa", "topic:transport", "type:podcast"]}
 {"key": "https://inboundlogisticspodcast.libsyn.com/rss", "tags": ["topic:business", "topic:transport", "type:podcast"]}
@@ -8147,7 +8147,7 @@
 {"key": "alison-cooks-htown.ghost.io", "tags": ["region:usa", "topic:food", "type:personal-blog"]}
 {"key": "https://alison-maseko5578.podomatic.com/rss2.xml", "tags": ["topic:music", "type:podcast"]}
 {"key": "alisoncheperdak.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
-{"key": "https://alisoncreamer.podbean.com/feed.xml", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://alisoncreamer.podbean.com/feed.xml", "tags": ["topic:business", "topic:real-estate", "type:podcast"]}
 {"key": "alisongary.substack.com", "tags": ["topic:lifestyle", "type:newsletter"]}
 {"key": "https://alisonjones.libsyn.com/rss", "tags": ["topic:books", "topic:business", "type:podcast"]}
 {"key": "alisonkrupnick.substack.com", "tags": ["topic:food", "topic:lifestyle", "type:newsletter"]}
@@ -10104,7 +10104,7 @@
 {"key": "https://andersmithund.podigee.io/feed/mp3", "tags": ["language:german", "topic:lifestyle", "type:podcast"]}
 {"key": "andersmurphy.com", "tags": ["topic:programming:clojure", "type:personal-blog"]}
 {"key": "https://anderson.bearblog.dev/feed/?type=rss", "tags": ["topic:hardware", "topic:programming", "type:personal-blog"]}
-{"key": "https://andersonadvisors.podbean.com/feed.xml", "tags": ["topic:business", "topic:finance", "type:podcast"]}
+{"key": "https://andersonadvisors.podbean.com/feed.xml", "tags": ["topic:business", "topic:finance", "topic:real-estate", "type:podcast"]}
 {"key": "https://andersonalerts.substack.com/feed", "tags": ["region:usa", "topic:politics", "type:newsletter"]}
 {"key": "https://andersonbkk.substack.com/feed", "tags": ["topic:ai", "topic:media", "type:newsletter"]}
 {"key": "https://andersonleite.hashnode.dev/rss.xml", "tags": ["topic:ai", "topic:web-development", "type:personal-blog"]}
@@ -10201,7 +10201,7 @@
 {"key": "https://andreasjhkarlsson.github.io/feed.xml", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "https://andreasklippe.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:business", "type:podcast"]}
 {"key": "https://andreaskossiski.podigee.io/feed/mp3", "tags": ["language:german", "region:germany", "topic:journalism", "type:podcast"]}
-{"key": "https://andreasmueller.substack.com/feed", "tags": ["topic:finance", "type:newsletter"]}
+{"key": "https://andreasmueller.substack.com/feed", "tags": ["topic:finance", "topic:real-estate", "type:newsletter"]}
 {"key": "https://andreasolbes.substack.com/feed", "tags": ["language:spanish", "topic:business", "topic:design", "type:newsletter"]}
 {"key": "andreasschrade.com", "tags": ["topic:ai", "type:vendor-blog"]}
 {"key": "https://andreastrienbacher.libsyn.com/rss", "tags": ["language:german", "region:germany", "topic:health", "topic:sport", "type:podcast"]}
@@ -11688,7 +11688,7 @@
 {"key": "https://api.syosetu.com/writernovel/2819671.Atom", "tags": ["language:japanese", "region:japan", "topic:books", "type:personal-blog"]}
 {"key": "api.thehawk.in", "tags": ["region:india", "topic:news", "type:publication"]}
 {"key": "https://api.thehawk.in/rss/economy-and-business", "tags": ["region:india", "topic:economics", "type:publication"]}
-{"key": "https://api.thepropertyportfolio.com.au/rss/audio/podcasts/1e122d48-423a-497c-8f33-188000638c25", "tags": ["region:australia", "topic:finance", "type:podcast"]}
+{"key": "https://api.thepropertyportfolio.com.au/rss/audio/podcasts/1e122d48-423a-497c-8f33-188000638c25", "tags": ["topic:real-estate", "type:podcast"]}
 {"key": "https://api.theregister.com/api/v1/article?orderBy=published&site_id=2&remapper=rss", "tags": ["region:uk", "topic:tech-industry", "type:publication"]}
 {"key": "https://api.tinnoi.ai/bedtime/rss/apple_podcasts?api_key=eaqd9gkto7aOOV2uPAziyX6cHDL7h6DI", "tags": ["region:asia", "topic:entertainment", "type:podcast"]}
 {"key": "https://api.tinnoi.ai/rss/hom_nay/apple_podcasts?api_key=KNal5JNaGCjUJTYeICghJZJy0MMkLvhS", "tags": ["region:asia", "topic:news", "type:podcast"]}
@@ -16764,7 +16764,7 @@
 {"key": "https://behindthecoaching.substack.com/feed", "tags": ["topic:sport", "type:newsletter"]}
 {"key": "https://behindthecrust.substack.com/feed", "tags": ["topic:food", "type:newsletter"]}
 {"key": "https://behindthecurtain.substack.com/feed", "tags": ["topic:finance", "type:newsletter"]}
-{"key": "https://behindthefacade.libsyn.com/rss", "tags": ["topic:business", "topic:finance", "type:podcast"]}
+{"key": "https://behindthefacade.libsyn.com/rss", "tags": ["topic:business", "topic:finance", "topic:real-estate", "type:podcast"]}
 {"key": "behindthehelm.bearblog.dev", "tags": ["topic:gaming", "type:personal-blog"]}
 {"key": "https://behindthehill.substack.com/feed", "tags": ["topic:travel", "type:newsletter"]}
 {"key": "https://behindthejacket.substack.com/feed", "tags": ["topic:books", "type:newsletter"]}
@@ -19487,7 +19487,7 @@
 {"key": "blog.armeet.ca", "tags": ["topic:programming", "type:personal-blog"]}
 {"key": "blog.arnav.me", "tags": ["region:india", "topic:personal", "type:personal-blog"]}
 {"key": "blog.arnedebo.com", "tags": ["topic:programming", "type:personal-blog"]}
-{"key": "https://blog.aroundtownct.com/itunes.xml", "tags": ["region:usa", "topic:business", "type:podcast"]}
+{"key": "https://blog.aroundtownct.com/itunes.xml", "tags": ["topic:business", "topic:real-estate", "type:podcast"]}
 {"key": "blog.arribasail.com", "tags": ["topic:travel", "type:personal-blog"]}
 {"key": "blog.arrowtype.com", "tags": ["topic:art", "topic:design", "type:vendor-blog"]}
 {"key": "blog.artaj.online", "tags": ["topic:entertainment", "type:personal-blog"]}
@@ -19543,7 +19543,7 @@
 {"key": "blog.beanis.eu", "tags": ["topic:gaming", "topic:music", "type:personal-blog"]}
 {"key": "blog.bearcats.nl", "tags": ["topic:programming", "topic:systems", "type:personal-blog"]}
 {"key": "https://blog.becpas.com/podcasts/197384204428/rss.xml", "tags": ["region:usa", "topic:business", "topic:finance", "type:podcast"]}
-{"key": "https://blog.becpas.com/podcasts/200093908153/rss.xml", "tags": ["region:usa", "topic:business", "topic:finance", "type:podcast"]}
+{"key": "https://blog.becpas.com/podcasts/200093908153/rss.xml", "tags": ["topic:business", "topic:real-estate", "type:podcast"]}
 {"key": "https://blog.becpas.com/podcasts/200096112689/rss.xml", "tags": ["region:usa", "topic:business", "type:podcast"]}
 {"key": "blog.beerriot.com", "tags": ["topic:personal", "topic:programming", "type:personal-blog"]}
 {"key": "blog.beforemario.com", "tags": ["topic:gaming", "topic:history", "type:personal-blog"]}
@@ -19762,7 +19762,7 @@
 {"key": "blog.craftyguy.net", "tags": ["topic:open-source", "type:personal-blog"]}
 {"key": "blog.creekorful.org", "tags": ["topic:web-development", "type:personal-blog"]}
 {"key": "blog.cria.net.br", "tags": ["language:portuguese", "region:latin-america", "topic:education", "type:institution"]}
-{"key": "https://blog.croftrealestategroup.com/itunes.xml", "tags": ["region:usa", "topic:business", "type:podcast"]}
+{"key": "https://blog.croftrealestategroup.com/itunes.xml", "tags": ["topic:business", "topic:real-estate", "type:podcast"]}
 {"key": "https://blog.crossroadsboone.org/feed/podcast/crossroads-at-boone-united-methodist-church/", "tags": ["region:usa", "topic:religion", "type:podcast"]}
 {"key": "blog.crumblebulletin.com", "tags": ["topic:books", "topic:science", "type:personal-blog"]}
 {"key": "blog.cryptomilk.org", "tags": ["topic:open-source", "topic:systems", "type:personal-blog"]}
@@ -19880,7 +19880,7 @@
 {"key": "blog.dgold.eu", "tags": ["topic:systems", "type:personal-blog"]}
 {"key": "blog.dhavaltanna.com", "tags": ["topic:ai", "type:personal-blog"]}
 {"key": "blog.dhsdevelopments.com", "tags": ["topic:programming", "type:personal-blog"]}
-{"key": "https://blog.dianeandbrian.com/itunes.xml", "tags": ["region:usa", "topic:business", "type:podcast"]}
+{"key": "https://blog.dianeandbrian.com/itunes.xml", "tags": ["topic:business", "topic:real-estate", "type:podcast"]}
 {"key": "blog.diego.dev", "tags": ["topic:programming", "type:personal-blog"]}
 {"key": "blog.diffen.com", "tags": ["topic:ai", "topic:tech-industry", "type:vendor-blog"]}
 {"key": "blog.digital-forensics.it", "tags": ["topic:security", "type:personal-blog"]}
@@ -19996,10 +19996,10 @@
 {"key": "blog.eutopian.io", "tags": ["topic:politics", "topic:security", "type:personal-blog"]}
 {"key": "blog.evacchi.dev", "tags": ["topic:programming", "topic:software-engineering", "type:personal-blog"]}
 {"key": "blog.evanchen.cc", "tags": ["topic:education", "topic:mathematics", "type:personal-blog"]}
-{"key": "https://blog.evergreenrealestatepartners.com/itunes.xml", "tags": ["region:usa", "topic:business", "type:podcast"]}
+{"key": "https://blog.evergreenrealestatepartners.com/itunes.xml", "tags": ["topic:business", "topic:real-estate", "type:podcast"]}
 {"key": "blog.eweibel.net", "tags": ["topic:software-engineering", "type:personal-blog"]}
 {"key": "blog.exceptionerror.io", "tags": ["topic:infrastructure", "topic:programming", "type:personal-blog"]}
-{"key": "https://blog.expectrealty.com/itunes.xml", "tags": ["region:usa", "topic:business", "type:podcast"]}
+{"key": "https://blog.expectrealty.com/itunes.xml", "tags": ["topic:business", "topic:real-estate", "type:podcast"]}
 {"key": "blog.eyas.sh", "tags": ["topic:programming", "type:personal-blog"]}
 {"key": "blog.ezyang.com", "tags": ["topic:open-source", "topic:programming", "type:personal-blog"]}
 {"key": "blog.fabiomanganiello.com", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
@@ -20031,7 +20031,7 @@
 {"key": "blog.fixermark.com", "tags": ["topic:programming", "type:personal-blog"]}
 {"key": "https://blog.flametreepublishing.com/fantasy-gothic/rss.xml", "tags": ["topic:books", "type:vendor-blog"]}
 {"key": "blog.flanker017.me", "tags": ["topic:programming", "topic:security", "type:personal-blog"]}
-{"key": "https://blog.flatheadrealestate.com/itunes.xml", "tags": ["region:usa", "topic:business", "type:podcast"]}
+{"key": "https://blog.flatheadrealestate.com/itunes.xml", "tags": ["topic:business", "topic:real-estate", "type:podcast"]}
 {"key": "blog.flolight.dev", "tags": ["topic:ai", "topic:programming", "type:personal-blog"]}
 {"key": "blog.flomb.net", "tags": ["topic:infrastructure", "topic:security", "type:personal-blog"]}
 {"key": "blog.florentdelannoy.com", "tags": ["topic:infrastructure", "type:personal-blog"]}
@@ -20203,7 +20203,7 @@
 {"key": "blog.hjcyberx.com", "tags": ["topic:security", "type:publication"]}
 {"key": "blog.hlavnespravy.sk", "tags": ["region:europe", "topic:news", "topic:politics", "type:publication"]}
 {"key": "http://blog.hmvh.net/feed/", "tags": ["topic:personal", "type:personal-blog"]}
-{"key": "https://blog.hodgkinshomes.com/itunes.xml", "tags": ["region:usa", "topic:business", "type:podcast"]}
+{"key": "https://blog.hodgkinshomes.com/itunes.xml", "tags": ["topic:business", "topic:real-estate", "type:podcast"]}
 {"key": "https://blog.hoetzel.info/tags/emacs/index.xml", "tags": ["topic:software-engineering", "type:personal-blog"]}
 {"key": "https://blog.hofstede.it/feeds/all.atom.xml", "tags": ["topic:open-source", "topic:systems", "type:personal-blog"]}
 {"key": "blog.hollandgibson.com", "tags": ["topic:software-engineering", "type:personal-blog"]}
@@ -22037,7 +22037,7 @@
 {"key": "https://blog.zuthof.nl/feed", "tags": ["topic:infrastructure", "type:personal-blog"]}
 {"key": "https://blog4aleshanee.blogspot.com/feeds/posts/default", "tags": ["language:german", "topic:books", "type:personal-blog"]}
 {"key": "https://blogablocs.com/feed/", "tags": ["language:french", "topic:art", "type:community"]}
-{"key": "https://blogboulderhomesource.com/itunes.xml", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://blogboulderhomesource.com/itunes.xml", "tags": ["topic:business", "topic:real-estate", "type:podcast"]}
 {"key": "https://blogbusternl.blogspot.com/feeds/posts/default", "tags": ["language:dutch", "topic:media", "type:publication"]}
 {"key": "https://blogcarlossantos.com.br/feed/", "tags": ["language:portuguese", "topic:journalism", "type:personal-blog"]}
 {"key": "https://blogdairy.in/feed/", "tags": ["region:india", "topic:education", "type:community"]}
@@ -22108,7 +22108,7 @@
 {"key": "https://blogs.perficient.com/feed/", "tags": ["topic:tech-industry", "type:vendor-blog"]}
 {"key": "https://blogs.radiocanut.org/canutinfos-jeudi/?feed=rss2", "tags": ["language:french", "topic:politics", "type:community"]}
 {"key": "https://blogs.radiocanut.org/noisepollution/?feed=podcast", "tags": ["language:french", "topic:music", "type:podcast"]}
-{"key": "https://blogs.realestate.gov.eg/feed/", "tags": ["region:middle-east", "topic:business", "type:institution"]}
+{"key": "https://blogs.realestate.gov.eg/feed/", "tags": ["topic:business", "topic:real-estate", "type:institution"]}
 {"key": "http://blogs.timesofindia.indiatimes.com/feed/defaultrss", "tags": ["region:india", "topic:news", "type:aggregator"]}
 {"key": "https://blogs.unimelb.edu.au/shaps-research/feed/", "tags": ["topic:history", "type:institution"]}
 {"key": "https://blogs.univ-tlse2.fr/japonais/feed/", "tags": ["language:french", "topic:education", "type:institution"]}
@@ -22685,9 +22685,9 @@
 {"key": "https://bostik.iki.fi/aivoituksia/feeds/all.atom.xml", "tags": ["topic:tech-industry", "type:personal-blog"]}
 {"key": "https://boston.conman.org/bostondiaries.rss", "tags": ["topic:security", "type:personal-blog"]}
 {"key": "https://boston.conman.org/index.atom", "tags": ["topic:security", "type:personal-blog"]}
-{"key": "https://bostonagentmagazine.com/feed", "tags": ["topic:business", "type:publication"]}
+{"key": "https://bostonagentmagazine.com/feed", "tags": ["topic:business", "topic:real-estate", "type:publication"]}
 {"key": "https://bostonbarrister.com/feed/podcast/", "tags": ["topic:legal", "type:podcast"]}
-{"key": "https://bostonrealestatetimes.com/feed/", "tags": ["topic:business", "type:publication"]}
+{"key": "https://bostonrealestatetimes.com/feed/", "tags": ["topic:business", "topic:real-estate", "type:publication"]}
 {"key": "https://bostonreviewofbooks.substack.com/feed", "tags": ["language:chinese", "topic:books", "type:newsletter"]}
 {"key": "https://bostonvr.substack.com/feed", "tags": ["region:usa", "topic:gaming", "type:community"]}
 {"key": "http://bosummersonline.blogspot.com/feeds/posts/default", "tags": ["language:italian", "topic:books", "type:personal-blog"]}
@@ -22746,7 +22746,7 @@
 {"key": "https://bowienewsonline.com/feed/", "tags": ["topic:news", "type:publication"]}
 {"key": "https://bowlofmisua.bearblog.dev/feed", "tags": ["topic:food", "type:personal-blog"]}
 {"key": "https://bowtiedbiohacker.com/feed", "tags": ["topic:health", "type:personal-blog"]}
-{"key": "https://bowtiedbull.io/feed", "tags": ["topic:finance", "type:personal-blog"]}
+{"key": "https://bowtiedbull.io/feed", "tags": ["topic:finance", "topic:real-estate", "type:personal-blog"]}
 {"key": "https://bowtiedbum.io/feed", "tags": ["topic:finance", "type:personal-blog"]}
 {"key": "https://bowtiedcommoner13.substack.com/feed", "tags": ["topic:personal", "type:personal-blog"]}
 {"key": "https://bowtiedgracie.substack.com/feed", "tags": ["topic:sport", "type:personal-blog"]}
@@ -22883,7 +22883,7 @@
 {"key": "https://brainfart.podcaster.de/kack-sachgeschichten.rss", "tags": ["language:german", "topic:science", "type:podcast"]}
 {"key": "https://brainhealthkitchen.substack.com/feed", "tags": ["topic:health", "type:newsletter"]}
 {"key": "https://braininflcollab.substack.com/feed", "tags": ["topic:medicine", "type:personal-blog"]}
-{"key": "https://braininlaw.com/feed/", "tags": ["topic:legal", "type:vendor-blog"]}
+{"key": "https://braininlaw.com/feed/", "tags": ["topic:legal", "topic:real-estate", "type:vendor-blog"]}
 {"key": "https://braininspired.co/feed/podcast/brain-inspired/", "tags": ["topic:ai", "type:podcast"]}
 {"key": "https://brainjour.com/atom", "tags": ["topic:books", "type:personal-blog"]}
 {"key": "https://brainlabclub.substack.com/feed", "tags": ["language:french", "topic:business", "type:newsletter"]}
@@ -22932,7 +22932,7 @@
 {"key": "https://brandonclements.substack.com/feed", "tags": ["topic:religion", "type:personal-blog"]}
 {"key": "https://brandoncrilly.com/?feed=rss2", "tags": ["topic:gaming", "type:personal-blog"]}
 {"key": "https://brandoncurrent.libsyn.com/rss", "tags": ["topic:religion", "type:podcast"]}
-{"key": "https://brandondonnelly.com/feed", "tags": ["topic:business", "type:newsletter"]}
+{"key": "https://brandondonnelly.com/feed", "tags": ["topic:business", "topic:real-estate", "type:newsletter"]}
 {"key": "https://brandongarner.substack.com/feed", "tags": ["topic:gaming", "type:personal-blog"]}
 {"key": "https://brandonisnotyourbro.substack.com/feed", "tags": ["topic:health", "type:personal-blog"]}
 {"key": "https://brandonjacksonphoto.substack.com/feed", "tags": ["topic:art", "type:personal-blog"]}
@@ -22984,7 +22984,7 @@
 {"key": "https://bravestoday.com/feed", "tags": ["topic:sport", "type:publication"]}
 {"key": "https://bravethemountainpodcast.libsyn.com/rss", "tags": ["topic:personal", "type:podcast"]}
 {"key": "https://brawlatthepoetscafe.substack.com/feed", "tags": ["topic:lifestyle", "type:newsletter"]}
-{"key": "https://brazilbeachliving.substack.com/feed", "tags": ["region:latin-america", "topic:business", "type:newsletter"]}
+{"key": "https://brazilbeachliving.substack.com/feed", "tags": ["topic:business", "topic:real-estate", "type:newsletter"]}
 {"key": "https://brazileconomy.com.br/feed/", "tags": ["language:portuguese", "region:latin-america", "topic:finance", "type:publication"]}
 {"key": "https://brazilinbeta.com/feed/", "tags": ["region:latin-america", "topic:news", "type:newsletter"]}
 {"key": "https://brazilreports.com/blog/feed", "tags": ["region:latin-america", "topic:news", "type:publication"]}
@@ -23163,7 +23163,7 @@
 {"key": "https://bribeswindleorsteal.libsyn.com/rss", "tags": ["topic:finance", "type:podcast"]}
 {"key": "https://bribte.ac.ug/feed/", "tags": ["region:africa", "topic:education", "type:institution"]}
 {"key": "https://bricedattee.substack.com/feed", "tags": ["topic:business", "type:newsletter"]}
-{"key": "https://brickandmortar.substack.com/feed", "tags": ["topic:business", "type:newsletter"]}
+{"key": "https://brickandmortar.substack.com/feed", "tags": ["topic:business", "topic:real-estate", "type:newsletter"]}
 {"key": "https://brickarchitect.com/atom", "tags": ["topic:gaming", "type:personal-blog"]}
 {"key": "https://brickbriscoe.substack.com/feed", "tags": ["topic:lifestyle", "type:newsletter"]}
 {"key": "https://brickcrisis.com/feed/", "tags": ["topic:gaming", "type:podcast"]}
@@ -23348,7 +23348,7 @@
 {"key": "https://boz.substack.com/feed", "tags": ["topic:security", "type:newsletter"]}
 {"key": "https://brighthorizonsteachplaylove.libsyn.com/rss", "tags": ["topic:education", "type:podcast"]}
 {"key": "https://brighthorizonsworklifeequation.libsyn.com/rss", "tags": ["topic:business", "topic:media", "type:podcast"]}
-{"key": "https://brisbanerealestatepodcast.libsyn.com/rss", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://brisbanerealestatepodcast.libsyn.com/rss", "tags": ["topic:business", "topic:real-estate", "type:podcast"]}
 {"key": "https://briankeanebusiness.libsyn.com/rss", "tags": ["topic:business", "topic:health", "type:podcast"]}
 {"key": "https://brokeish.libsyn.com/rss", "tags": ["topic:finance", "type:podcast"]}
 {"key": "https://brighterthinkingpod.libsyn.com/rss", "tags": ["topic:business", "type:podcast"]}
@@ -23591,7 +23591,7 @@
 {"key": "https://cp0hrn.podcaster.de/economics-to-go.rss", "tags": ["language:german", "topic:finance", "type:podcast"]}
 {"key": "https://cpabc.libsyn.com/rss", "tags": ["topic:finance", "type:podcast"]}
 {"key": "https://cpadvisors.podbean.com/feed.xml", "tags": ["topic:finance", "type:podcast"]}
-{"key": "https://cpomp.libsyn.com/rss", "tags": ["topic:finance", "topic:health", "type:podcast"]}
+{"key": "https://cpomp.libsyn.com/rss", "tags": ["topic:health", "topic:real-estate", "type:podcast"]}
 {"key": "https://cqenfrecuencia.com/feed/podcast/", "tags": ["topic:hardware", "type:podcast"]}
 {"key": "https://cqenfrecuencia.com/feed/podcast/cq-en-frecuencia/", "tags": ["topic:hardware", "type:podcast"]}
 {"key": "https://crabdiving.com/feed/podcast/", "tags": ["topic:politics", "type:podcast"]}
@@ -23639,7 +23639,7 @@
 {"key": "https://ckp-podcast.com/shirakawa/feed/podcast/", "tags": ["language:japanese", "topic:finance", "type:podcast"]}
 {"key": "https://clientcabin.com/distribution_feeds/company/47770/Podcasts/rss", "tags": ["topic:security", "type:podcast"]}
 {"key": "https://coursesdrop.com/feed/podcast/course-access-hub/", "tags": ["topic:education", "type:podcast"]}
-{"key": "https://cresuccess.libsyn.com/rss", "tags": ["topic:finance", "type:podcast"]}
+{"key": "https://cresuccess.libsyn.com/rss", "tags": ["topic:real-estate", "type:podcast"]}
 {"key": "https://cretaone.gr/podcast/feed/", "tags": ["language:greek", "topic:news", "type:podcast"]}
 {"key": "https://crimeandcask.com/feed/", "tags": ["topic:journalism", "type:publication"]}
 {"key": "https://crimeandstuffonline.com/category/podcast-episode/aita/feed/", "tags": ["topic:personal", "type:podcast"]}
@@ -23822,7 +23822,7 @@
 {"key": "https://dailytarot.podbean.com/feed.xml", "tags": ["topic:astrology", "type:podcast"]}
 {"key": "https://dailytrojan.com/category/multimedia/podcasts/feed/", "tags": ["region:us-california", "topic:news", "type:podcast"]}
 {"key": "https://dalanah.substack.com/feed", "tags": ["topic:astrology", "type:newsletter"]}
-{"key": "https://dallasarealiving.com/itunes.xml", "tags": ["topic:finance", "type:podcast"]}
+{"key": "https://dallasarealiving.com/itunes.xml", "tags": ["topic:real-estate", "type:podcast"]}
 {"key": "https://damals-tm-podcast.de/?feed=damalstm-mp3", "tags": ["language:german", "region:germany", "topic:history", "type:podcast"]}
 {"key": "https://damanerds.podbean.com/feed.xml", "tags": ["topic:entertainment", "type:podcast"]}
 {"key": "https://damepower.substack.com/feed", "tags": ["topic:systems", "type:newsletter"]}
@@ -23865,7 +23865,7 @@
 {"key": "https://danmangan.substack.com/feed", "tags": ["topic:music", "type:newsletter"]}
 {"key": "https://danniaskini.substack.com/feed", "tags": ["topic:politics", "type:newsletter"]}
 {"key": "https://dannybader11minutestoinspiration.libsyn.com/rss", "tags": ["topic:personal", "type:podcast"]}
-{"key": "https://dannystevens101.podbean.com/feed.xml", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://dannystevens101.podbean.com/feed.xml", "tags": ["topic:business", "topic:real-estate", "type:podcast"]}
 {"key": "https://danschorrllc.libsyn.com/rss", "tags": ["topic:education", "topic:legal", "type:podcast"]}
 {"key": "https://aod.nrjaudio.fm/xml/2079.xml", "tags": ["language:french", "region:france", "topic:astrology", "type:podcast"]}
 {"key": "https://aod.nrjaudio.fm/xml/2080.xml", "tags": ["language:french", "region:france", "topic:astrology", "type:podcast"]}
@@ -23908,8 +23908,8 @@
 {"key": "https://daretogrow.libsyn.com/thepodcast", "tags": ["topic:personal", "type:podcast"]}
 {"key": "https://daretoknowpodcast.libsyn.com/daretoknow", "tags": ["topic:philosophy", "type:podcast"]}
 {"key": "https://dariakatrinlinzbach.podigee.io/feed/mp3", "tags": ["language:german", "topic:health", "type:podcast"]}
-{"key": "https://daring-sandpaper.cloudvent.net/itunes.xml", "tags": ["topic:finance", "type:podcast"]}
-{"key": "https://daringarman.podbean.com/feed.xml", "tags": ["topic:finance", "type:podcast"]}
+{"key": "https://daring-sandpaper.cloudvent.net/itunes.xml", "tags": ["topic:real-estate", "type:podcast"]}
+{"key": "https://daringarman.podbean.com/feed.xml", "tags": ["topic:real-estate", "type:podcast"]}
 {"key": "https://daringtorest.libsyn.com/rss", "tags": ["topic:health", "type:podcast"]}
 {"key": "https://dariodemicheli.substack.com/feed", "tags": ["language:italian", "topic:ai", "type:newsletter"]}
 {"key": "https://dariollinares.substack.com/feed", "tags": ["topic:entertainment", "type:newsletter"]}
@@ -23945,7 +23945,7 @@
 {"key": "https://daveberta.ca/feed/podcast/", "tags": ["region:canada", "topic:politics", "type:podcast"]}
 {"key": "https://davehaslam.substack.com/feed", "tags": ["topic:music", "type:newsletter"]}
 {"key": "https://davejenkins394305.substack.com/feed", "tags": ["topic:religion", "type:newsletter"]}
-{"key": "https://daveknightteam.com/itunes.xml", "tags": ["topic:finance", "type:podcast"]}
+{"key": "https://daveknightteam.com/itunes.xml", "tags": ["topic:real-estate", "type:podcast"]}
 {"key": "https://davekrugman.substack.com/feed", "tags": ["topic:art", "type:newsletter"]}
 {"key": "https://davesmith.podomatic.com/rss2.xml", "tags": ["topic:music", "type:podcast"]}
 {"key": "https://david476.substack.com/feed", "tags": ["region:canada", "topic:economics", "type:newsletter"]}
@@ -23982,7 +23982,7 @@
 {"key": "https://dea-podcast.podigee.io/feed/mp3", "tags": ["topic:crypto", "type:podcast"]}
 {"key": "https://deadcelebrity.blubrry.net/feed/podcast/", "tags": ["topic:finance", "type:podcast"]}
 {"key": "https://deafartistmum.substack.com/feed", "tags": ["topic:art", "type:newsletter"]}
-{"key": "https://dealfarm.libsyn.com/rss", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://dealfarm.libsyn.com/rss", "tags": ["topic:business", "topic:real-estate", "type:podcast"]}
 {"key": "https://dealroom.libsyn.com/rss", "tags": ["topic:finance", "type:podcast"]}
 {"key": "https://deanbaker22.substack.com/feed", "tags": ["topic:economics", "type:newsletter"]}
 {"key": "https://davidbixlerlinernotes.libsyn.com/rss", "tags": ["topic:entertainment", "type:podcast"]}
@@ -24166,3 +24166,57 @@
 {"key": "https://serhack.me/it/blog/index.xml", "tags": ["topic:crypto", "topic:security", "type:personal-blog"]}
 {"key": "https://www.trinitycyber.com/blog/rss.xml", "tags": ["topic:ai", "topic:crypto", "topic:security", "type:vendor-blog"]}
 {"key": "https://web3isgoinggreat.com/feed.xml", "tags": ["topic:crypto", "topic:security", "topic:tech-industry", "type:personal-blog"]}
+{"key": "https://300to3000.libsyn.com/rss", "tags": ["topic:business", "topic:real-estate", "type:podcast"]}
+{"key": "https://adam.vantagewestrealty.com/feed.xml", "tags": ["topic:finance", "topic:real-estate", "type:podcast"]}
+{"key": "https://adamhelgesonrealtor.podbean.com/feed.xml", "tags": ["topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://agentfromwithinpodcast.libsyn.com/rss", "tags": ["topic:business", "topic:finance", "topic:media", "topic:real-estate", "topic:science", "type:podcast"]}
+{"key": "https://agentinvestor.podbean.com/feed.xml", "tags": ["topic:education", "topic:finance", "topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://agentsforlife.com/feed.xml", "tags": ["topic:finance", "topic:real-estate", "type:podcast"]}
+{"key": "https://aipis.libsyn.com/rss", "tags": ["topic:education", "topic:real-estate", "type:podcast"]}
+{"key": "https://aj.vantagewestrealty.com/feed.xml", "tags": ["topic:finance", "topic:real-estate", "type:podcast"]}
+{"key": "https://albertarealestatetutor.libsyn.com/rss", "tags": ["topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://amanda.vantagewestrealty.com/feed.xml", "tags": ["topic:finance", "topic:real-estate", "type:podcast"]}
+{"key": "https://api.substack.com/feed/podcast/10269376/s/441646.rss", "tags": ["topic:media", "topic:real-estate", "type:newsletter"]}
+{"key": "https://artofmortgagemarketing.podbean.com/feed.xml", "tags": ["topic:business", "topic:finance", "topic:real-estate", "type:podcast"]}
+{"key": "https://beardedmenofrealestate.libsyn.com/rss", "tags": ["topic:business", "topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://benjaminstef.substack.com/feed", "tags": ["topic:business", "topic:real-estate", "type:newsletter"]}
+{"key": "https://benreinberg.substack.com/feed", "tags": ["topic:real-estate", "type:newsletter"]}
+{"key": "https://bergerpoints.substack.com/feed", "tags": ["topic:business", "topic:real-estate", "type:newsletter"]}
+{"key": "https://blackholeofrealestate.libsyn.com/rss", "tags": ["topic:business", "topic:finance", "topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://blog.kingdomrealtyteam.com/itunes.xml", "tags": ["topic:business", "topic:finance", "topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://blog.kingrealestate.group/itunes.xml", "tags": ["topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://blog.lindawelshrealty.com/itunes.xml", "tags": ["topic:finance", "topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://blog.mattstarkrealestate.com/itunes.xml", "tags": ["topic:finance", "topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://blog.munozhomegroup.com/itunes.xml", "tags": ["topic:finance", "topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://blog.nhcnow.com/itunes.xml", "tags": ["topic:finance", "topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://blog.pakhomerealty.com/itunes.xml", "tags": ["topic:business", "topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://blog.rachelmooney.com/itunes.xml", "tags": ["topic:finance", "topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://blog.reevesrealty.ca/itunes.xml", "tags": ["topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://blog.searchwihomes.com/itunes.xml", "tags": ["topic:finance", "topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://blog.thejrsrealtygroup.com/itunes.xml", "tags": ["topic:finance", "topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://bob-sokoler-consumer-vyral.cloudvent.net/itunes.xml", "tags": ["topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://bobrichardsletsgetreal.podbean.com/feed.xml", "tags": ["topic:business", "topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://bowtiedbroke.substack.com/feed", "tags": ["topic:finance", "topic:real-estate", "type:newsletter"]}
+{"key": "https://bowtiedbull.substack.com/feed", "tags": ["topic:finance", "topic:real-estate", "type:newsletter"]}
+{"key": "https://braveideaspodcast.substack.com/feed", "tags": ["topic:media", "topic:real-estate", "type:newsletter"]}
+{"key": "https://brianbeattyrealestateshow.libsyn.com/rss", "tags": ["topic:education", "topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://buildmeup.libsyn.com/rss", "tags": ["topic:business", "topic:finance", "topic:real-estate", "type:podcast"]}
+{"key": "https://builthow.libsyn.com/rss", "tags": ["topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://canopyrealtor.libsyn.com/rss", "tags": ["topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://capitalraisershow.libsyn.com/rss", "tags": ["topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://cardonezone.libsyn.com/rss", "tags": ["topic:business", "topic:finance", "topic:real-estate", "type:podcast"]}
+{"key": "https://careers.minegargamble.com/itunes.xml", "tags": ["topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://celinaliving.com/itunes.xml", "tags": ["topic:finance", "topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://centraltexasrealestatejournal.com/itunes.xml", "tags": ["topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://chad-and-sara-huebener-consumer-vyral.cloudvent.net/itunes.xml", "tags": ["topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://changinglivesthroughrealestate.com/itunes.xml", "tags": ["topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://chatcre.substack.com/feed", "tags": ["topic:ai", "topic:business", "topic:real-estate", "type:newsletter"]}
+{"key": "https://christal-johnson-consumer-vyral.cloudvent.net/itunes.xml", "tags": ["topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://citrusvalleyrealtors.podomatic.com/rss2.xml", "tags": ["topic:education", "topic:real-estate", "type:podcast"]}
+{"key": "https://coachcarson.libsyn.com/rss", "tags": ["topic:finance", "topic:real-estate", "type:podcast"]}
+{"key": "https://coachtrex.com/itunes.xml", "tags": ["topic:business", "topic:real-estate", "type:podcast"]}
+{"key": "https://commercialobserver.com/tag/podcast/feed/", "tags": ["topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "https://commercialrealestatepodcast.com/feed/podcast/", "tags": ["topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "http://feeds.libsyn.com/132861/rss", "tags": ["topic:media", "topic:real-estate", "type:podcast"]}
+{"key": "http://feeds.libsyn.com/277052/rss", "tags": ["topic:business", "topic:finance", "topic:media", "topic:real-estate", "topic:science", "type:podcast"]}
+{"key": "http://feeds.libsyn.com/277529/rss", "tags": ["topic:business", "topic:real-estate", "type:podcast"]}

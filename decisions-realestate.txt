@@ -1,0 +1,103 @@
+# topic:real-estate added to TAGS.md. Signal in the feed's OWN title/description
+# only, and each row read: six feeds matched the rule incidentally and are
+# declined below. finance is kept only where a non-property money word is present.
+# DECLINED https://nypost.com/feed/
+#   general newspaper; the description lists nine sections and real estate is one of them
+# DECLINED http://feeds.feedburner.com/AtlanticBusiness
+#   The Atlantic's business section, not a property feed
+# DECLINED https://blog.soshace.com/feed/
+#   a digital agency blog naming real estate among its clients
+# DECLINED https://805talk.libsyn.com/rss
+#   life-transitions podcast; real estate is one of the transitions discussed
+# DECLINED https://claesbackman.substack.com/feed
+#   a macro/AI letter that covers the housing market as one subject
+# DECLINED https://davidihill.libsyn.com/rss
+#   an entrepreneurship show; property is an aside
+https://300to3000.libsyn.com/rss	topic:business topic:real-estate type:podcast
+https://aaronameen.substack.com/feed	topic:business topic:real-estate type:newsletter
+https://adam.vantagewestrealty.com/feed.xml	topic:finance topic:real-estate type:podcast
+https://adamhelgesonrealtor.podbean.com/feed.xml	topic:media topic:real-estate type:podcast
+https://agentfromwithinpodcast.libsyn.com/rss	topic:business topic:finance topic:media topic:real-estate topic:science type:podcast
+https://agentinvestor.podbean.com/feed.xml	topic:education topic:finance topic:media topic:real-estate type:podcast
+https://agentsforlife.com/feed.xml	topic:finance topic:real-estate type:podcast
+https://aipis.libsyn.com/rss	topic:education topic:real-estate type:podcast
+https://aj.vantagewestrealty.com/feed.xml	topic:finance topic:real-estate type:podcast
+https://albertarealestatetutor.libsyn.com/rss	topic:media topic:real-estate type:podcast
+https://alisoncreamer.podbean.com/feed.xml	topic:business topic:real-estate type:podcast
+https://amanda.vantagewestrealty.com/feed.xml	topic:finance topic:real-estate type:podcast
+https://andersonadvisors.podbean.com/feed.xml	topic:business topic:finance topic:real-estate type:podcast
+https://andreasmueller.substack.com/feed	topic:finance topic:real-estate type:newsletter
+https://api.substack.com/feed/podcast/10269376/s/441646.rss	topic:media topic:real-estate type:newsletter
+https://api.thepropertyportfolio.com.au/rss/audio/podcasts/1e122d48-423a-497c-8f33-188000638c25	topic:real-estate type:podcast
+https://artofmortgagemarketing.podbean.com/feed.xml	topic:business topic:finance topic:real-estate type:podcast
+https://beardedmenofrealestate.libsyn.com/rss	topic:business topic:media topic:real-estate type:podcast
+https://behindthefacade.libsyn.com/rss	topic:business topic:finance topic:real-estate type:podcast
+https://benjaminstef.substack.com/feed	topic:business topic:real-estate type:newsletter
+https://benreinberg.substack.com/feed	topic:real-estate type:newsletter
+https://bergerpoints.substack.com/feed	topic:business topic:real-estate type:newsletter
+https://blackholeofrealestate.libsyn.com/rss	topic:business topic:finance topic:media topic:real-estate type:podcast
+https://blog.aroundtownct.com/itunes.xml	topic:business topic:real-estate type:podcast
+https://blog.becpas.com/podcasts/200093908153/rss.xml	topic:business topic:real-estate type:podcast
+https://blog.croftrealestategroup.com/itunes.xml	topic:business topic:real-estate type:podcast
+https://blog.dianeandbrian.com/itunes.xml	topic:business topic:real-estate type:podcast
+https://blog.evergreenrealestatepartners.com/itunes.xml	topic:business topic:real-estate type:podcast
+https://blog.expectrealty.com/itunes.xml	topic:business topic:real-estate type:podcast
+https://blog.flatheadrealestate.com/itunes.xml	topic:business topic:real-estate type:podcast
+https://blog.hodgkinshomes.com/itunes.xml	topic:business topic:real-estate type:podcast
+https://blog.kingdomrealtyteam.com/itunes.xml	topic:business topic:finance topic:media topic:real-estate type:podcast
+https://blog.kingrealestate.group/itunes.xml	topic:media topic:real-estate type:podcast
+https://blog.lindawelshrealty.com/itunes.xml	topic:finance topic:media topic:real-estate type:podcast
+https://blog.mattstarkrealestate.com/itunes.xml	topic:finance topic:media topic:real-estate type:podcast
+https://blog.munozhomegroup.com/itunes.xml	topic:finance topic:media topic:real-estate type:podcast
+https://blog.nhcnow.com/itunes.xml	topic:finance topic:media topic:real-estate type:podcast
+https://blog.pakhomerealty.com/itunes.xml	topic:business topic:media topic:real-estate type:podcast
+https://blog.rachelmooney.com/itunes.xml	topic:finance topic:media topic:real-estate type:podcast
+https://blog.reevesrealty.ca/itunes.xml	topic:media topic:real-estate type:podcast
+https://blog.searchwihomes.com/itunes.xml	topic:finance topic:media topic:real-estate type:podcast
+https://blog.thejrsrealtygroup.com/itunes.xml	topic:finance topic:media topic:real-estate type:podcast
+https://blogboulderhomesource.com/itunes.xml	topic:business topic:real-estate type:podcast
+https://blogs.realestate.gov.eg/feed/	topic:business topic:real-estate type:institution
+https://bob-sokoler-consumer-vyral.cloudvent.net/itunes.xml	topic:media topic:real-estate type:podcast
+https://bobrichardsletsgetreal.podbean.com/feed.xml	topic:business topic:media topic:real-estate type:podcast
+https://bostonagentmagazine.com/feed	topic:business topic:real-estate type:publication
+https://bostonrealestatetimes.com/feed/	topic:business topic:real-estate type:publication
+https://bowtiedbroke.substack.com/feed	topic:finance topic:real-estate type:newsletter
+https://bowtiedbull.io/feed	topic:finance topic:real-estate type:personal-blog
+https://bowtiedbull.substack.com/feed	topic:finance topic:real-estate type:newsletter
+https://braininlaw.com/feed/	topic:legal topic:real-estate type:vendor-blog
+https://brandondonnelly.com/feed	topic:business topic:real-estate type:newsletter
+https://braveideaspodcast.substack.com/feed	topic:media topic:real-estate type:newsletter
+https://brazilbeachliving.substack.com/feed	topic:business topic:real-estate type:newsletter
+https://brianbeattyrealestateshow.libsyn.com/rss	topic:education topic:media topic:real-estate type:podcast
+https://brickandmortar.substack.com/feed	topic:business topic:real-estate type:newsletter
+https://brisbanerealestatepodcast.libsyn.com/rss	topic:business topic:real-estate type:podcast
+https://buildmeup.libsyn.com/rss	topic:business topic:finance topic:real-estate type:podcast
+https://builthow.libsyn.com/rss	topic:media topic:real-estate type:podcast
+https://canopyrealtor.libsyn.com/rss	topic:media topic:real-estate type:podcast
+https://capitalraisershow.libsyn.com/rss	topic:media topic:real-estate type:podcast
+https://cardonezone.libsyn.com/rss	topic:business topic:finance topic:real-estate type:podcast
+https://careers.minegargamble.com/itunes.xml	topic:media topic:real-estate type:podcast
+https://celinaliving.com/itunes.xml	topic:finance topic:media topic:real-estate type:podcast
+https://centraltexasrealestatejournal.com/itunes.xml	topic:media topic:real-estate type:podcast
+https://chad-and-sara-huebener-consumer-vyral.cloudvent.net/itunes.xml	topic:media topic:real-estate type:podcast
+https://changinglivesthroughrealestate.com/itunes.xml	topic:media topic:real-estate type:podcast
+https://chatcre.substack.com/feed	topic:ai topic:business topic:real-estate type:newsletter
+https://christal-johnson-consumer-vyral.cloudvent.net/itunes.xml	topic:media topic:real-estate type:podcast
+https://citrusvalleyrealtors.podomatic.com/rss2.xml	topic:education topic:real-estate type:podcast
+https://coachcarson.libsyn.com/rss	topic:finance topic:real-estate type:podcast
+https://coachtrex.com/itunes.xml	topic:business topic:real-estate type:podcast
+https://commercialobserver.com/tag/podcast/feed/	topic:media topic:real-estate type:podcast
+https://commercialrealestatepodcast.com/feed/podcast/	topic:media topic:real-estate type:podcast
+https://cpomp.libsyn.com/rss	topic:health topic:real-estate type:podcast
+https://cresuccess.libsyn.com/rss	topic:real-estate type:podcast
+https://dallasarealiving.com/itunes.xml	topic:real-estate type:podcast
+https://dannystevens101.podbean.com/feed.xml	topic:business topic:real-estate type:podcast
+https://daring-sandpaper.cloudvent.net/itunes.xml	topic:real-estate type:podcast
+https://daringarman.podbean.com/feed.xml	topic:real-estate type:podcast
+https://daveknightteam.com/itunes.xml	topic:real-estate type:podcast
+https://dealfarm.libsyn.com/rss	topic:business topic:real-estate type:podcast
+https://feed.podbean.com/realassetinsight/feed.xml	topic:business topic:finance topic:real-estate type:podcast
+http://feeds.feedburner.com/AtlanticBusinessChannel	topic:business topic:politics topic:real-estate type:publication
+http://feeds.libsyn.com/132861/rss	topic:media topic:real-estate type:podcast
+http://feeds.libsyn.com/277052/rss	topic:business topic:finance topic:media topic:real-estate topic:science type:podcast
+http://feeds.libsyn.com/277529/rss	topic:business topic:real-estate type:podcast

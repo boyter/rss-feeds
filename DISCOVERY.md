@@ -1969,3 +1969,45 @@ lost anywhere, **zero** `type:`/`region:`/`language:` facets touched, zero feeds
 removed. `--allow-type-change` was needed because 40 of these rows already had a hand rule
 naming `finance` — that flag is the record that replacing a previous human decision was
 the point of the change, not an accident.
+
+## `topic:real-estate`, and a tag rejected on the evidence (2026-11-05)
+
+Product 36,071 → **36,071**, zero removals, **166 tests**, `--strict` 0.
+
+Measured before adding anything, across every shipped feed's own title and description:
+
+| cluster | feeds naming it | currently filed only under a stretched tag | verdict |
+|---|---|---|---|
+| mental health | 195 | — | **no new tag**: `topic:health` covers it honestly |
+| crafts / DIY | 174 | 37 | **rejected**: mostly already under `design`/`art` correctly, and the regex caught false positives ("DIY" inside a music label's name, DIY *marketing*) |
+| real estate | 76 | **64** | **added** |
+| fashion | 77 | — | no new tag: `design`/`lifestyle` are not stretches |
+| motorsport | 22 | 2 | no new tag: too small |
+| physics | 46 | 0 | no new tag: `science` + `mathematics` suffice |
+
+The bar TAGS.md already uses for `comics`, `animals` and `astrology` is *a recurring
+cluster that existing tags both stretched*. Real estate cleared it — 64 feeds were filed
+under `finance`/`business`/`media` alone. Crafts had volume but not the stretch, so it
+was rejected: **a big count is not the test.**
+
+### Two false positives the new rule taught me
+
+1. **`landlord`** fired on *"I'm a normal bloke, a pub landlord"* — in British usage the
+   keeper of a public house, not a property owner. Fixed with `(?<!pub )\blandlord\b`,
+   pinned by a test.
+2. **`nypost.com` gained `topic:real-estate`** because the paper's own description lists
+   its sections: *"breaking news, news about New York, sports, business, entertainment,
+   opinion, real estate, culture, fashion, and more."* A section-listing description is
+   not a subject decision. No heuristic caught it reliably — counting how many other
+   topic rules fire returned just 1 — so the pass stayed **reviewed**: all 88 rows read,
+   **6 declined** with the reason recorded in `decisions-realestate.txt` (the Post, The
+   Atlantic's business section, an agency blog naming real estate among its clients, a
+   life-transitions podcast, a macro letter covering the housing market, an
+   entrepreneurship show). NY Post still reads `region:usa topic:news type:publication`.
+
+Verified before `--apply`: 88 rows changed, `topic:finance` the only tag lost anywhere
+(15 rows, where nothing but property signalled money), zero `type:`/`region:`/
+`language:` facets touched, zero feeds added or removed, fixed point byte-identical.
+
+`review.py` now reports **0 judgeable feeds** in the queue and 9 rows with no harvest
+data — the nine blocked feeds from the contract pass, still waiting on a browser.
