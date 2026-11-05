@@ -1,0 +1,40 @@
+# Media-only feeds whose NAME identifies a publication, read one by one (31 found,
+# 28 tagged, 3 declined). This is NOT a blanket topic:news pass - an academic
+# journal is health, "Journal Updated" is a board-game club podcast, and
+# Brettspiel-News is a board-game magazine.
+#
+# Declined, staying topic:media:
+# DECLINED https://brandschutz-to-go.podigee.io/feed/mp3
+#   fire-protection trade tips; no subject in TAGS.md fits better than media
+# DECLINED https://campcourageous.org/feed/podcast/
+#   a summer camp's update feed; not a publication
+# DECLINED https://cincinnati.unitedresourceconnection.org/feed/amazon-pollycast/
+#   a sector newsletter for social services; no fitting subject
+https://31gsru.podcaster.de/leadlap-de.rss	language:german region:germany topic:sport type:podcast
+https://abnormalmapping.squarespace.com/journal-updated-feed?format=rss	topic:gaming type:publication
+https://academic.oup.com/rss/site_5375/Podcast.xml	topic:health type:podcast
+https://afn.net/api/v1/podcasts-rss?platform=ApplePodcasts	topic:news type:podcast
+https://afn.net/api/v1/podcasts-rss/	topic:news type:podcast
+https://agnetwest.com/tag/agnet-news-hour-podcast/feed/	topic:news type:podcast
+https://ajpaudio.libsyn.com/rss	topic:health type:podcast
+https://ajpgi.podbean.com/feed.xml	topic:health type:podcast
+https://albertanews.substack.com/feed	topic:politics type:newsletter
+https://audio.beyondwords.io/f/43989/133687	topic:news type:publication
+https://bostonsportsjournal.podbean.com/feed.xml	topic:sport type:podcast
+https://boxtorow.com/feed/podcast/show-archives/	topic:sport type:podcast
+https://brettspiel-news.de/index.php/de/podcasts?format=feed&type=rss	language:german region:germany topic:gaming type:podcast
+https://brobible.com/tag/endless-hustle-podcast/feed/	topic:sport type:podcast
+https://brobible.com/tag/oops-the-podcast/feed/	topic:sport type:podcast
+https://california-employment-news.blubrry.net/feed/podcast/	topic:legal type:publication
+https://canadaimmigration.news/feed/	topic:news type:publication
+https://canadaimmigration.news/feed/podcast/	topic:news type:podcast
+https://canadaimmigration.news/feed/podcast/canada-immigration-news-podcast/	topic:news type:podcast
+https://canadaimmigration.news/feed/podcast/canada-immigration-news/	topic:news type:podcast
+https://cavalera.news/podcast.fr.xml	language:french topic:gaming type:podcast
+https://cdn.audiorella.com/podcasts/1477-heute-journal-der-podcast/feed.rss	language:german topic:news type:podcast
+https://cedarmountainnews.todschmidt.com/rss.xml	topic:news type:podcast
+https://cni.libsyn.com/rss	topic:comics type:podcast
+https://cnv-medien.podigee.io/feed/mp3	language:german region:germany topic:news type:podcast
+https://columbiachronicle.com/category/multimedia/podcasts/feed/	region:usa topic:news type:podcast
+https://columbiachronicle.podbean.com/feed.xml	region:usa topic:news type:podcast
+https://feeds.transistor.fm/laravelnews	topic:programming:php type:podcast

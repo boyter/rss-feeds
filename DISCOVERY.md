@@ -2134,3 +2134,35 @@ usually a placeholder, but **239 hand rules at HEAD do decide `media` deliberate
 the 119 were checked against all of them, and **none** of the 119 had a hand-decided
 `media`. That check is also why "rabbit holes" keeps its media tag: a human wrote it
 there, and the corrected rule no longer disagrees.
+
+## The media tail does not decompose on words (2026-11-06)
+
+Product 36,067 unchanged, **184 tests**, `--strict` 0.
+
+I said last pass that the remaining media-only feeds split into "205 news-shaped and 202
+tech-shaped". **That was wrong, and the number came from my own loose regex, not from
+anything the pipeline could see.** Two measurements:
+
+- run every shipped topic rule over each media-only feed's own title and description:
+  **10 rows** fire. Not 407.
+- name the outlet instead (the word *news/journal/gazette/…* in the feed's own **name**):
+  **31 rows**, which I read one at a time.
+
+The 1,536-row tail is not a pile of mis-tagged subjects. When the broad regex said
+"news-shaped" it had matched the words *weekly*, *daily*, *post* and *journal* — a
+chiropractic show that updates weekly, a Post Punk podcast, the *American Journal of
+Physiology*, a church's "weekly messages". Cadence words are not subjects.
+
+The 31 that really do name a publication were tagged **per row, not as a bucket**, because
+the bucket dissolves on contact: *Journal Updated* is a board-game club (gaming),
+*Brettspiel-News* is a board-game magazine (gaming), the *European Heart Journal* and the
+*American Journal of Psychiatry* are health, *Boston Sports Journal* and *Racing-News* are
+sport, *California Employment News* is legal, *Comic News Insider* is comics, the *Laravel
+News Podcast* is `topic:programming:php`, and *Alberta News & Views* is political satire,
+not news. 28 tagged, 3 declined (a fire-protection trade feed, a summer camp's updates, a
+social-services sector newsletter — nothing in TAGS.md fits them better than `media`).
+Where the feed's own description settled it, `language:`/`region:` were added too (a
+French Star Citizen news feed, two German local-news feeds, a Chicago college paper).
+
+`topic:media` stays where nothing says otherwise: for these feeds it is the honest answer,
+and the invariant does not require a guess.
