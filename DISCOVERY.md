@@ -1746,3 +1746,59 @@ horoscopes), Dutch ×2, Japanese ×3, Hindi, Russian, Greek, Romanian, Hungarian
 Portuguese, Spanish, Italian, Turkish. The NRJ horoscope pattern (one feed per zodiac
 sign) is now in three tranches; it is a site, not a feed set, so each sign feed is
 pinned individually.
+
+## Tranche 28: +267 feeds, and my own hand rules corrected (`topic:astrology` already existed)
+
+| step | count |
+|---|---|
+| candidates | 1,499 |
+| served a real feed | 1,287 (86%) |
+| taggable | 267 |
+| merged | **267** |
+| hand rules | 113 (42% of taggable) |
+| pre-existing rows retagged | **8** (all deliberate) |
+| untagged queue | 10,850 |
+
+Product 35,497 → **35,764 feeds**, 26,233 → 26,440 hosts, 35,396 titled, 7,908
+language-tagged. Zero removals, fixed point byte-identical, `--strict` 0, 157 tests,
+`REMOVED.md` unchanged, every merged candidate present in the product.
+
+### The correction of a correction: `topic:astrology` was in TAGS.md all along
+
+Nine feeds named *L'horoscope* / *L'Horoscope NRJ* sat in the product split **three
+different ways**: two old ones correctly carried `topic:astrology` (which TAGS.md
+defines explicitly as "horoscopes, natal charts, astrological practice — a real
+recurring cluster"), three carried `topic:news topic:travel` from headline rules that
+keyed on words inside horoscope prose, and **four carried `topic:entertainment` because
+of my own hand rules in tranches 26 and 27** — I pinned the subject from the description
+without checking whether a topic for it existed. All nine now agree on `astrology`.
+
+That is a new failure mode for this notebook: not a rule keying on the wrong word-sense,
+but **a human decision that invents a tag instead of using the one the vocabulary
+already has.** The fix in practice: before writing a hand rule for an obvious subject,
+grep TAGS.md for it. It cost nothing here (8 rows, one tranche), but four of those rows
+were shipped by me with a tag I'd have rejected if a rule had produced it.
+
+**One near-miss caught by checking the feed before shipping.** Collecting the shipped
+horoscope feeds by title also picked up `balado.ckrl.qc.ca/radioshows/1156`, a Québec
+City radio segment. My drafted rule said `region:france` — wrong country for Québec
+radio — and would have silently dropped `topic:media` and `topic:music` that an earlier
+pass shipped. Rewritten additively (`region:canada` restated, old tags kept,
+`astrology` added), the row gained one tag and lost none. The lesson generalises:
+**a retag written for a *pattern* of feeds must be checked against each already-shipped
+member of the pattern**, because the shipped ones have history the new ones do not.
+`rebuild.py`'s `override replaced N tag(s)` line is what makes that visible — the CKRL
+row correctly does not appear in it.
+
+### Correction rate: 42%, and still climbing
+
+7–9% (tranches 22–24) → 26% (26) → 34% (27) → **42% (28)**. The AMP tail is now more
+mis-tags than tags, and the causes repeat rather than diversify: `coffee` → food (a
+tarot podcast, a German psychology show), `Data` → food ("Dave's Data", a computer
+science blog), `Dairy`/`dairy` → sport and business, four D&D actual-play shows → media,
+a Daft Punk photo archive → history, a heavy-metal podcast and two DJ sets → media,
+a Star Wars show, wrestling, hockey, NBA, Title IX, real estate, home inspection.
+
+Languages read from content: German ×6, French ×5, Czech ×2, Dutch ×2, Italian ×2,
+Spanish, Japanese, Turkish, Vietnamese, Indonesian. `topic:film` does not exist (mapped
+to `entertainment`); `decide.py` rejected it in the same run.

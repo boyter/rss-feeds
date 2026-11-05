@@ -23519,8 +23519,8 @@
 {"key": "https://3speak.tv/rss/pjwelry.xml", "tags": ["topic:music", "type:podcast"]}
 {"key": "https://3speak.tv/rss/princessbusayo.xml", "tags": ["topic:entertainment", "type:podcast"]}
 {"key": "https://anchor.fm/s/10015a24c/podcast/rss", "tags": ["topic:personal", "type:podcast"]}
-{"key": "https://aod.nrjaudio.fm/xml/2082.xml", "tags": ["language:french", "topic:entertainment", "type:podcast"]}
-{"key": "https://aod.nrjaudio.fm/xml/2083.xml", "tags": ["language:french", "topic:entertainment", "type:podcast"]}
+{"key": "https://aod.nrjaudio.fm/xml/2082.xml", "tags": ["language:french", "region:france", "topic:astrology", "type:podcast"]}
+{"key": "https://aod.nrjaudio.fm/xml/2083.xml", "tags": ["language:french", "region:france", "topic:astrology", "type:podcast"]}
 {"key": "https://api.mujrozhlas.cz/rss/podcast/35c18f7b-ef7c-39ae-86a5-4bb4b1a1953d.rss", "tags": ["language:czech", "topic:news", "type:podcast"]}
 {"key": "https://api.riverside.fm/hosting/1kCj3pQp.rss", "tags": ["topic:tech-industry", "type:podcast"]}
 {"key": "https://api.substack.com/feed/podcast/1050947.rss", "tags": ["topic:politics", "type:newsletter"]}
@@ -23623,8 +23623,8 @@
 {"key": "https://3speak.tv/rss/quduus1.xml", "tags": ["topic:music", "type:podcast"]}
 {"key": "https://amarujala.com/rss/budaun.xml", "tags": ["language:hindi", "topic:news", "type:publication"]}
 {"key": "https://amarujala.com/rss/bundi.xml", "tags": ["language:hindi", "topic:news", "type:publication"]}
-{"key": "https://aod.nrjaudio.fm/xml/2084.xml", "tags": ["language:french", "topic:entertainment", "type:podcast"]}
-{"key": "https://aod.nrjaudio.fm/xml/2085.xml", "tags": ["language:french", "topic:entertainment", "type:podcast"]}
+{"key": "https://aod.nrjaudio.fm/xml/2084.xml", "tags": ["language:french", "region:france", "topic:astrology", "type:podcast"]}
+{"key": "https://aod.nrjaudio.fm/xml/2085.xml", "tags": ["language:french", "region:france", "topic:astrology", "type:podcast"]}
 {"key": "https://api.mujrozhlas.cz/rss/podcast/37830b29-65e6-36f9-8fdf-4869d32ce617.rss", "tags": ["language:czech", "topic:news", "type:podcast"]}
 {"key": "https://api.riverside.com/hosting/33RGn6GL.rss", "tags": ["topic:philosophy", "topic:religion", "type:podcast"]}
 {"key": "https://api.substack.com/feed/podcast/1052786.rss", "tags": ["topic:personal", "type:newsletter"]}
@@ -23758,3 +23758,116 @@
 {"key": "https://cxotoday.com/blog/feed", "tags": ["topic:tech-industry", "type:vendor-blog"]}
 {"key": "https://cyberdaily.au/podcasts?format=feed&type=atom", "tags": ["region:australia", "topic:security", "type:podcast"]}
 {"key": "https://cybersecurityconnect.com.au/podcasts?format=feed&type=rss", "tags": ["region:australia", "topic:security", "type:podcast"]}
+{"key": "https://3speak.tv/rss/quincykristoffer.xml", "tags": ["topic:personal", "type:podcast"]}
+{"key": "https://3speak.tv/rss/rafa06.xml", "tags": ["topic:music", "type:podcast"]}
+{"key": "https://anchor.fm/s/10016b6dc/podcast/rss", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://aod.nrjaudio.fm/xml/2086.xml", "tags": ["language:french", "region:france", "topic:astrology", "type:podcast"]}
+{"key": "https://aod.nrjaudio.fm/xml/2087.xml", "tags": ["language:french", "region:france", "topic:astrology", "type:podcast"]}
+{"key": "https://api.mujrozhlas.cz/rss/podcast/37aac4cd-dbe6-37e3-82ba-9dfdfcd85151.rss", "tags": ["language:czech", "topic:news", "type:podcast"]}
+{"key": "https://api.mujrozhlas.cz/rss/podcast/388c2578-c76a-34cb-8f2e-590c2a353cc7.rss", "tags": ["language:czech", "topic:religion", "type:podcast"]}
+{"key": "https://api.substack.com/feed/podcast/1053023.rss", "tags": ["topic:politics", "type:newsletter"]}
+{"key": "https://app.kajabi.com/podcasts/2147507728/feed", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://app.springcast.fm/podcast-xml/16088", "tags": ["language:dutch", "topic:religion", "type:podcast"]}
+{"key": "https://backr24.ilsole24ore.com/podcast/nessuna-perfetta.xml", "tags": ["language:italian", "topic:politics", "type:podcast"]}
+{"key": "https://businessradiox.com/feed/podcast/status-life-with-leta/", "tags": ["topic:personal", "type:podcast"]}
+{"key": "https://cause-commune.fm/feed/podcast/mondes-reves-de-georges", "tags": ["language:french", "topic:entertainment", "type:podcast"]}
+{"key": "https://channels.podcastfeed.eu/761e493d-0a68-43e5-a117-3423f88e32de/feed.xml", "tags": ["language:dutch", "topic:business", "type:podcast"]}
+{"key": "https://clientcabin.com/distribution_feeds/company/47860/Podcasts/rss", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://coursesdrop.com/feed/podcast/coursesdrop-podcast/", "tags": ["topic:education", "type:podcast"]}
+{"key": "https://coursesdrop.com/feed/podcast/coursesdrop-store/", "tags": ["topic:education", "type:podcast"]}
+{"key": "https://crimeandstuffonline.com/feed/podcast/", "tags": ["topic:personal", "type:podcast"]}
+{"key": "https://cultureinsports.com/feed/podcast/the-culture-in-sports-podcast/", "tags": ["topic:sport", "type:podcast"]}
+{"key": "https://cynthiacapley.substack.com/feed", "tags": ["topic:books", "topic:history", "type:newsletter"]}
+{"key": "https://cynthiagralla.substack.com/feed", "tags": ["topic:books", "topic:health", "type:newsletter"]}
+{"key": "https://cynthiamorris.substack.com/feed", "tags": ["topic:art", "type:newsletter"]}
+{"key": "https://cyprustaxlife.substack.com/feed", "tags": ["topic:finance", "topic:legal", "type:newsletter"]}
+{"key": "https://cyrusmohseni.substack.com/feed", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "https://cyshow.libsyn.com/rss", "tags": ["topic:entertainment", "topic:sport", "type:podcast"]}
+{"key": "https://czmediapodcast.squarespace.com/cz-media-podcast?format=rss", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://czwly5.podcaster.de/Coffee-or-Tea.rss", "tags": ["language:german", "region:germany", "topic:health", "type:podcast"]}
+{"key": "https://d-malone.podomatic.com/rss2.xml", "tags": ["topic:music", "type:podcast"]}
+{"key": "https://d-t-m.podomatic.com/rss2.xml", "tags": ["topic:music", "type:podcast"]}
+{"key": "https://d0yeec.podcaster.de/ModelWelt.rss", "tags": ["language:german", "region:germany", "topic:design", "type:podcast"]}
+{"key": "https://d100talk.libsyn.com/rss", "tags": ["topic:transport", "type:podcast"]}
+{"key": "https://d1ohtljhghz8nz.cloudfront.net/feed.xml", "tags": ["topic:software-engineering", "type:podcast"]}
+{"key": "https://d1sv42a4x5atxf.cloudfront.net/aituber-news-en/rss.xml", "tags": ["topic:ai", "type:publication"]}
+{"key": "https://d20tocurtain.libsyn.com/rss", "tags": ["topic:gaming", "type:podcast"]}
+{"key": "https://d8nightpodcast.podbean.com/feed.xml", "tags": ["topic:gaming", "type:podcast"]}
+{"key": "https://da-data.blogspot.com/feeds/posts/default", "tags": ["topic:programming", "type:personal-blog"]}
+{"key": "https://da852a8b-bcc4-4d0e-9924-0aaebd2819da.libsyn.com/rss", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://dachdecker-podcast.podigee.io/feed/mp3", "tags": ["language:german", "topic:business", "type:podcast"]}
+{"key": "https://dadalogue.substack.com/feed", "tags": ["topic:ai", "topic:politics", "type:newsletter"]}
+{"key": "https://dadandson.libsyn.com/rss", "tags": ["topic:sport", "type:podcast"]}
+{"key": "https://dadchats.substack.com/feed", "tags": ["topic:education", "topic:legal", "type:newsletter"]}
+{"key": "https://daddi.libsyn.com/rss", "tags": ["topic:personal", "type:podcast"]}
+{"key": "https://dadstalk.podigee.io/feed/mp3", "tags": ["language:german", "topic:personal", "type:podcast"]}
+{"key": "https://daffnee.libsyn.com/rss", "tags": ["topic:personal", "type:podcast"]}
+{"key": "https://daftbootlegs.tumblr.com/rss", "tags": ["topic:music", "type:personal-blog"]}
+{"key": "https://daghewardmillsfirstlove.podbean.com/feed.xml", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://dagmargericke.podigee.io/feed/mp3", "tags": ["language:german", "topic:personal", "type:podcast"]}
+{"key": "https://dagrayarea.podbean.com/feed.xml", "tags": ["topic:personal", "type:podcast"]}
+{"key": "https://dahaotang.com/feed/", "tags": ["topic:ai", "type:personal-blog"]}
+{"key": "https://dahdaytix.substack.com/feed", "tags": ["topic:entertainment", "type:newsletter"]}
+{"key": "https://daily-news-briefing-en.podigee.io/feed/mp3", "tags": ["topic:news", "topic:politics", "type:publication"]}
+{"key": "https://daily-news-briefing.podigee.io/feed/mp3", "tags": ["topic:news", "topic:politics", "type:publication"]}
+{"key": "https://daily304.libsyn.com/rss", "tags": ["topic:news", "type:podcast"]}
+{"key": "https://dailybreath.substack.com/feed", "tags": ["topic:environment", "topic:health", "type:newsletter"]}
+{"key": "https://dailybred.libsyn.com/rss", "tags": ["topic:personal", "type:podcast"]}
+{"key": "https://dailydisneyblog.libsyn.com/rss", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://dailyeasyenglish.libsyn.com/rss", "tags": ["topic:education", "type:podcast"]}
+{"key": "https://dailyedge.podbean.com/feed.xml", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://dailymeditation.libsyn.com/rss", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://dailyphilosophy.substack.com/feed", "tags": ["topic:philosophy", "type:newsletter"]}
+{"key": "https://dailyscience.be/category/podcast/feed/", "tags": ["language:french", "topic:science", "type:podcast"]}
+{"key": "https://dailytarot.podbean.com/feed.xml", "tags": ["topic:astrology", "type:podcast"]}
+{"key": "https://dailytrojan.com/category/multimedia/podcasts/feed/", "tags": ["region:us-california", "topic:news", "type:podcast"]}
+{"key": "https://dalanah.substack.com/feed", "tags": ["topic:astrology", "type:newsletter"]}
+{"key": "https://dallasarealiving.com/itunes.xml", "tags": ["topic:finance", "type:podcast"]}
+{"key": "https://damals-tm-podcast.de/?feed=damalstm-mp3", "tags": ["language:german", "region:germany", "topic:history", "type:podcast"]}
+{"key": "https://damanerds.podbean.com/feed.xml", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://damepower.substack.com/feed", "tags": ["topic:systems", "type:newsletter"]}
+{"key": "https://damienaa.substack.com/feed", "tags": ["language:french", "topic:entertainment", "type:newsletter"]}
+{"key": "https://damientalks.libsyn.com/rss", "tags": ["topic:transport", "type:podcast"]}
+{"key": "https://damnchocobo.libsyn.com/rss", "tags": ["topic:gaming", "type:podcast"]}
+{"key": "https://damonthompson.libsyn.com/rss", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://danaarts.squarespace.com/blog?format=rss", "tags": ["topic:art", "type:podcast"]}
+{"key": "https://danaemercer.substack.com/feed", "tags": ["topic:health", "topic:personal", "type:newsletter"]}
+{"key": "https://danandjay.com/feed/podcast/", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://danandjoeshow.podbean.com/feed.xml", "tags": ["topic:music", "type:podcast"]}
+{"key": "https://danathomas.substack.com/feed", "tags": ["topic:books", "topic:design", "type:newsletter"]}
+{"key": "https://dancemadeincanada.ca/feed/podcast/thrust-podcast/", "tags": ["language:english", "region:canada", "topic:art", "type:podcast"]}
+{"key": "https://danddminus.libsyn.com/rss", "tags": ["topic:gaming", "type:podcast"]}
+{"key": "https://dandonbravepresents.podbean.com/feed.xml", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://dandyfunhouse.com/feed/podcast/", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://dangerousdogma.libsyn.com/rss", "tags": ["topic:religion", "type:podcast"]}
+{"key": "https://danhumphrey318.podbean.com/feed.xml", "tags": ["topic:comics", "type:podcast"]}
+{"key": "https://daniel-lambert.libsyn.com/rss", "tags": ["language:german", "topic:finance", "type:podcast"]}
+{"key": "https://daniel-nicholson-ew7p.squarespace.com/podcast?format=rss", "tags": ["topic:gaming", "type:podcast"]}
+{"key": "https://danielaamenta.substack.com/feed", "tags": ["language:italian", "topic:music", "type:newsletter"]}
+{"key": "https://danielalonzo.libsyn.com/rss", "tags": ["topic:finance", "type:podcast"]}
+{"key": "https://danielamarti.substack.com/feed", "tags": ["topic:astrology", "type:newsletter"]}
+{"key": "https://danielcamilo.substack.com/feed", "tags": ["topic:business", "topic:gaming", "type:newsletter"]}
+{"key": "https://danieljosephdavis.substack.com/feed", "tags": ["topic:books", "topic:gaming", "type:newsletter"]}
+{"key": "https://danielkooman.substack.com/feed", "tags": ["topic:entertainment", "topic:religion", "type:newsletter"]}
+{"key": "https://daniellatto.libsyn.com/rss", "tags": ["topic:finance", "type:podcast"]}
+{"key": "https://daniellemariemcdowall.substack.com/feed", "tags": ["topic:books", "topic:entertainment", "type:newsletter"]}
+{"key": "https://daniellemcgeough.podbean.com/feed.xml", "tags": ["topic:personal", "type:podcast"]}
+{"key": "https://daniellemercurio.libsyn.com/rss", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://danielleswritingspot.substack.com/feed", "tags": ["topic:books", "type:newsletter"]}
+{"key": "https://danieloption.o23.ch/feed.xml", "tags": ["language:german", "topic:religion", "type:podcast"]}
+{"key": "https://danielpeischl.podcaster.de/abnehmen-wohlfuehlen-mit-der-31-abnehmformel.rss", "tags": ["language:german", "region:germany", "topic:health", "type:podcast"]}
+{"key": "https://danielramos.podomatic.com/rss2.xml", "tags": ["language:spanish", "topic:religion", "type:podcast"]}
+{"key": "https://danielsolove.substack.com/feed", "tags": ["topic:ai", "topic:legal", "type:newsletter"]}
+{"key": "https://daninichols.substack.com/feed", "tags": ["topic:personal", "type:newsletter"]}
+{"key": "https://danisdiner.podbean.com/feed.xml", "tags": ["topic:music", "type:podcast"]}
+{"key": "https://dankeliebesuniversum.podigee.io/feed/mp3", "tags": ["language:german", "topic:religion", "type:podcast"]}
+{"key": "https://danliden.com/rss.xml", "tags": ["topic:ai", "topic:data", "type:personal-blog"]}
+{"key": "https://danmangan.substack.com/feed", "tags": ["topic:music", "type:newsletter"]}
+{"key": "https://danniaskini.substack.com/feed", "tags": ["topic:politics", "type:newsletter"]}
+{"key": "https://dannybader11minutestoinspiration.libsyn.com/rss", "tags": ["topic:personal", "type:podcast"]}
+{"key": "https://dannystevens101.podbean.com/feed.xml", "tags": ["topic:business", "type:podcast"]}
+{"key": "https://danschorrllc.libsyn.com/rss", "tags": ["topic:education", "topic:legal", "type:podcast"]}
+{"key": "https://aod.nrjaudio.fm/xml/2079.xml", "tags": ["language:french", "region:france", "topic:astrology", "type:podcast"]}
+{"key": "https://aod.nrjaudio.fm/xml/2080.xml", "tags": ["language:french", "region:france", "topic:astrology", "type:podcast"]}
+{"key": "https://aod.nrjaudio.fm/xml/2081.xml", "tags": ["language:french", "region:france", "topic:astrology", "type:podcast"]}
+{"key": "https://balado.ckrl.qc.ca/radioshows/1156/feed_itunes.xml", "tags": ["language:french", "region:canada", "topic:astrology", "topic:media", "topic:music", "type:podcast"]}

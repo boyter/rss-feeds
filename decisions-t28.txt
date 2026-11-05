@@ -1,0 +1,241 @@
+# tranche 28 hand corrections, each read from the feed's own description or items.
+# The horoscope lines also cover feeds SHIPPED IN EARLIER TRANCHES: TAGS.md has
+# topic:astrology (horoscopes, natal charts) and the oldest NRJ feeds already use
+# it, but tranches 25-27 let the headline rules put news+travel on them and my own
+# hand rules put entertainment on them. All nine now agree on topic:astrology.
+# 3Speak life/finance talk (chess, loans, relationships)
+https://3speak.tv/rss/quincykristoffer.xml	topic:personal type:podcast
+# 3Speak music competitions (Hive Music Festival, Open Mic)
+https://3speak.tv/rss/rafa06.xml	topic:music type:podcast
+# the survival genre (film/fiction)
+https://anchor.fm/s/10016b6dc/podcast/rss	topic:entertainment type:podcast
+# daily horoscope - topic:astrology EXISTS in TAGS.md; my earlier entertainment tag was a miss
+https://aod.nrjaudio.fm/xml/2086.xml	language:french region:france topic:astrology type:podcast
+# daily horoscope - topic:astrology EXISTS in TAGS.md; my earlier entertainment tag was a miss
+https://aod.nrjaudio.fm/xml/2087.xml	language:french region:france topic:astrology type:podcast
+# Czech Radio: "co možná nevíte o kraji, kde jsme doma" (about our region)
+https://api.mujrozhlas.cz/rss/podcast/37aac4cd-dbe6-37e3-82ba-9dfdfcd85151.rss	language:czech topic:news type:podcast
+# Czech: "záznamy bohoslužeb" = recordings of worship services
+https://api.mujrozhlas.cz/rss/podcast/388c2578-c76a-34cb-8f2e-590c2a353cc7.rss	language:czech topic:religion type:podcast
+# gender-identity policy, women's rights, free speech
+https://api.substack.com/feed/podcast/1053023.rss	topic:politics type:newsletter
+# occupational therapists building a practice
+https://app.kajabi.com/podcasts/2147507728/feed	topic:health type:podcast
+# Dutch: "persoonlijk en spiritueel wilt groeien"
+https://app.springcast.fm/podcast-xml/16088	language:dutch topic:religion type:podcast
+# Italian: journeys through the women's world
+https://backr24.ilsole24ore.com/podcast/nessuna-perfetta.xml	language:italian topic:politics type:podcast
+# women's empowerment movement
+https://businessradiox.com/feed/podcast/status-life-with-leta/	topic:personal type:podcast
+# French community radio (Radio Cause Commune)
+https://cause-commune.fm/feed/podcast/mondes-reves-de-georges	language:french topic:entertainment type:podcast
+# Dutch: "ondernemen in de optiek" (running an optical business)
+https://channels.podcastfeed.eu/761e493d-0a68-43e5-a117-3423f88e32de/feed.xml	language:dutch topic:business type:podcast
+# mental-health retraining
+https://clientcabin.com/distribution_feeds/company/47860/Podcasts/rss	topic:health type:podcast
+# online-course reviews
+https://coursesdrop.com/feed/podcast/coursesdrop-podcast/	topic:education type:podcast
+# online-course catalogue
+https://coursesdrop.com/feed/podcast/coursesdrop-store/	topic:education type:podcast
+# same show as the t27 rows: "the podcast you would do if you had nothing else to do"
+https://crimeandstuffonline.com/feed/podcast/	topic:personal type:podcast
+# sports culture
+https://cultureinsports.com/feed/podcast/the-culture-in-sports-podcast/	topic:sport type:podcast
+# Regency/Victorian romance writer; history is the subject, travel was not
+https://cynthiacapley.substack.com/feed	topic:books topic:history type:newsletter
+# "mental illness, literature"
+https://cynthiagralla.substack.com/feed	topic:books topic:health type:newsletter
+# "watercolor artist... reviving her creative practice" - food was the bon-vivant line
+https://cynthiamorris.substack.com/feed	topic:art type:newsletter
+# taxes, residency, non-dom status, company formation - web-development was nothing in it
+https://cyprustaxlife.substack.com/feed	topic:finance topic:legal type:newsletter
+# "how small shifts in thinking create massive transformation"
+https://cyrusmohseni.substack.com/feed	topic:personal type:newsletter
+# stand-up comic, ex-ESPN Snapchat host
+https://cyshow.libsyn.com/rss	topic:entertainment topic:sport type:podcast
+# artists, filmmakers, musicians interviews
+https://czmediapodcast.squarespace.com/cz-media-podcast?format=rss	topic:entertainment type:podcast
+# German: "die Psychologie des Alltags" - food was the title word
+https://czwly5.podcaster.de/Coffee-or-Tea.rss	language:german region:germany topic:health type:podcast
+# items are DJ sets (DISCO SOURCE, SPACE BASS)
+https://d-malone.podomatic.com/rss2.xml	topic:music type:podcast
+# Monthly Trancecast
+https://d-t-m.podomatic.com/rss2.xml	topic:music type:podcast
+# German: an ex-GNTM model on the modelling industry
+https://d0yeec.podcaster.de/ModelWelt.rss	language:german region:germany topic:design type:podcast
+# Dodge truck enthusiasts
+https://d100talk.libsyn.com/rss	topic:transport type:podcast
+# "crafting software" (Shift Left, databases)
+https://d1ohtljhghz8nz.cloudfront.net/feed.xml	topic:software-engineering type:podcast
+# English-language feed - language:japanese was wrong for it (the Japanese sibling keeps it)
+https://d1sv42a4x5atxf.cloudfront.net/aituber-news-en/rss.xml	topic:ai type:publication
+# D&D live-play
+https://d20tocurtain.libsyn.com/rss	topic:gaming type:podcast
+# D&D actual play
+https://d8nightpodcast.podbean.com/feed.xml	topic:gaming type:podcast
+# "computer science, systems, technology" - food was the word Data
+https://da-data.blogspot.com/feeds/posts/default	topic:programming type:personal-blog
+# "4 regular guys who love Jesus"
+https://da852a8b-bcc4-4d0e-9924-0aaebd2819da.libsyn.com/rss	topic:religion type:podcast
+# German: roofing contractors / self-employed trades
+https://dachdecker-podcast.podigee.io/feed/mp3	language:german topic:business type:podcast
+# "AI, society, Europe and a world getting crazier"
+https://dadalogue.substack.com/feed	topic:ai topic:politics type:newsletter
+# "a sports and banter podcast"
+https://dadandson.libsyn.com/rss	topic:sport type:podcast
+# "teaching you constitutional law"
+https://dadchats.substack.com/feed	topic:legal topic:education type:newsletter
+# "Daddy and Addi Talking Life"
+https://daddi.libsyn.com/rss	topic:personal type:podcast
+# German fathers podcast
+https://dadstalk.podigee.io/feed/mp3	language:german topic:personal type:podcast
+# "small things everyday to become better, happier"
+https://daffnee.libsyn.com/rss	topic:personal type:podcast
+# a Daft Punk photo/flyer archive - history was the vintage angle
+https://daftbootlegs.tumblr.com/rss	topic:music type:personal-blog
+# Bishop Dag Heward-Mills
+https://daghewardmillsfirstlove.podbean.com/feed.xml	topic:religion type:podcast
+# German parenting ("Mama-Podcast für Herz und Verstand")
+https://dagmargericke.podigee.io/feed/mp3	language:german topic:personal type:podcast
+# "character and personality make the value in humanity"
+https://dagrayarea.podbean.com/feed.xml	topic:personal type:podcast
+# items are ML work ("Train NN with Lambda Cloud") - finance was nothing in it
+https://dahaotang.com/feed/	topic:ai type:personal-blog
+# "buying tickets and the music, sports and comedy shows"
+https://dahdaytix.substack.com/feed	topic:entertainment type:newsletter
+# ARTICLY daily news podcast (both feeds)
+https://daily-news-briefing-en.podigee.io/feed/mp3	topic:news topic:politics type:publication
+# ARTICLY daily news podcast (both feeds)
+https://daily-news-briefing.podigee.io/feed/mp3	topic:news topic:politics type:publication
+# "news and opportunities" from West Virginia
+https://daily304.libsyn.com/rss	topic:news type:podcast
+# air pollutants and your health
+https://dailybreath.substack.com/feed	topic:health topic:environment type:newsletter
+# "opinions and life stories" by Mike Doyle
+https://dailybred.libsyn.com/rss	topic:personal type:podcast
+# a Star Wars podcast
+https://dailydisneyblog.libsyn.com/rss	topic:entertainment type:podcast
+# daily English expression for learners
+https://dailyeasyenglish.libsyn.com/rss	topic:education type:podcast
+# business/leadership insights
+https://dailyedge.podbean.com/feed.xml	topic:business type:podcast
+# guided meditation
+https://dailymeditation.libsyn.com/rss	topic:health type:podcast
+# "navigate modern life with the tools of philosophy" - ai was nothing in it
+https://dailyphilosophy.substack.com/feed	topic:philosophy type:newsletter
+# French: science and innovation made in Belgium
+https://dailyscience.be/category/podcast/feed/	language:french topic:science type:podcast
+# daily TAROT ("I write songs and read cards") - food was the word coffee
+https://dailytarot.podbean.com/feed.xml	topic:astrology type:podcast
+# University of Southern California student paper
+https://dailytrojan.com/category/multimedia/podcasts/feed/	region:us-california topic:news type:podcast
+# "astrological teachings, horoscopes, transit analyses" - education was wrong
+https://dalanah.substack.com/feed	topic:astrology type:newsletter
+# Dallas-Fort Worth real estate
+https://dallasarealiving.com/itunes.xml	topic:finance type:podcast
+# German: "Wie es kam, dass es ist wie es ist" (how things came to be)
+https://damals-tm-podcast.de/?feed=damalstm-mp3	language:german region:germany topic:history type:podcast
+# kendama (skill toy) - gaming was close but it is a toy, not a game
+https://damanerds.podbean.com/feed.xml	topic:entertainment type:podcast
+# IBM Power community: AIX, Ubuntu, Red Hat - open-source was one facet
+https://damepower.substack.com/feed	topic:systems type:newsletter
+# French cultural newsletter
+https://damienaa.substack.com/feed	language:french topic:entertainment type:newsletter
+# Streetsblog LA: streets, transit, places
+https://damientalks.libsyn.com/rss	topic:transport type:podcast
+# replaying Final Fantasy and RPGs
+https://damnchocobo.libsyn.com/rss	topic:gaming type:podcast
+# Damon Thompson Ministries
+https://damonthompson.libsyn.com/rss	topic:religion type:podcast
+# art blog posts read aloud
+https://danaarts.squarespace.com/blog?format=rss	topic:art type:podcast
+# "confidence, motherhood, body changes, midlife"
+https://danaemercer.substack.com/feed	topic:personal topic:health type:newsletter
+# "sketching comedy since 1993"
+https://danandjay.com/feed/podcast/	topic:entertainment type:podcast
+# a heavy metal podcast
+https://danandjoeshow.podbean.com/feed.xml	topic:music type:podcast
+# NYTimes style/fashion journalist and book author - environment+science were nothing in it
+https://danathomas.substack.com/feed	topic:design topic:books type:newsletter
+# a Canadian dance podcast (dancemadeincanada)
+https://dancemadeincanada.ca/feed/podcast/thrust-podcast/	language:english region:canada topic:art type:podcast
+# D&D actual play
+https://danddminus.libsyn.com/rss	topic:gaming type:podcast
+# classic pop culture
+https://dandonbravepresents.podbean.com/feed.xml	topic:entertainment type:podcast
+# retro toys, games, arcades, theme parks
+https://dandyfunhouse.com/feed/podcast/	topic:entertainment type:podcast
+# "challenge dangerous teachings found in various strands of Christianity"
+https://dangerousdogma.libsyn.com/rss	topic:religion type:podcast
+# all things Moonstone (the comic character)
+https://danhumphrey318.podbean.com/feed.xml	topic:comics type:podcast
+# German: Bilanzierung, Steuern, VWL, BWL
+https://daniel-lambert.libsyn.com/rss	language:german topic:finance type:podcast
+# friends discussing the gaming world
+https://daniel-nicholson-ew7p.squarespace.com/podcast?format=rss	topic:gaming type:podcast
+# Italian: "tutta la musica che mi gira in testa"
+https://danielaamenta.substack.com/feed	language:italian topic:music type:newsletter
+# "get totally financially independent"
+https://danielalonzo.libsyn.com/rss	topic:finance type:podcast
+# "life, branding, and the stars"
+https://danielamarti.substack.com/feed	topic:astrology type:newsletter
+# the Chinese games industry - finance was nothing in it
+https://danielcamilo.substack.com/feed	topic:gaming topic:business type:newsletter
+# "fantasy and RPG author" - he writes, and about games
+https://danieljosephdavis.substack.com/feed	topic:books topic:gaming type:newsletter
+# "faith and creativity through film... Biblical truth" (Elisha, Elijah, Daniel)
+https://danielkooman.substack.com/feed	topic:religion topic:entertainment type:newsletter
+# "property coaching & wealth creation"
+https://daniellatto.libsyn.com/rss	topic:finance type:podcast
+# Welsh fiction, reviews, media - food was nothing in it
+https://daniellemariemcdowall.substack.com/feed	topic:books topic:entertainment type:newsletter
+# goals and personal growth
+https://daniellemcgeough.podbean.com/feed.xml	topic:personal type:podcast
+# a talk show
+https://daniellemercurio.libsyn.com/rss	topic:entertainment type:podcast
+# a historical romantic mystery author
+https://danielleswritingspot.substack.com/feed	topic:books type:newsletter
+# German: "Die Kirche bewegt sich in einer nachchristlichen Kultur"
+https://danieloption.o23.ch/feed.xml	language:german topic:religion type:podcast
+# German: Jojo-Effekt/Heißhunger weight-loss coaching
+https://danielpeischl.podcaster.de/abnehmen-wohlfuehlen-mit-der-31-abnehmformel.rss	language:german region:germany topic:health type:podcast
+# Spanish: "crecimiento espiritual de toda la familia"
+https://danielramos.podomatic.com/rss2.xml	language:spanish topic:religion type:podcast
+# Daniel Solove, law professor: privacy, AI, tech law
+https://danielsolove.substack.com/feed	topic:legal topic:ai type:newsletter
+# "adoption, horses, marriage, friendship, motherhood" - food was one of six
+https://daninichols.substack.com/feed	topic:personal type:newsletter
+# a radio show on WVAO
+https://danisdiner.podbean.com/feed.xml	topic:music type:podcast
+# German manifestation/"Wunscherfüllung" podcast
+https://dankeliebesuniversum.podigee.io/feed/mp3	language:german topic:religion type:podcast
+# "data, AI, and other writing"
+https://danliden.com/rss.xml	topic:data topic:ai type:personal-blog
+# "direct streaming access to my musical catalog" - history was nothing in it
+https://danmangan.substack.com/feed	topic:music type:newsletter
+# "gender, power, dignity, and human rights" - tech-industry was nothing in it
+https://danniaskini.substack.com/feed	topic:politics type:newsletter
+# interviews with people in all walks of life
+https://dannybader11minutestoinspiration.libsyn.com/rss	topic:personal type:podcast
+# home inspection
+https://dannystevens101.podbean.com/feed.xml	topic:business type:podcast
+# Title IX and civil rights in schools
+https://danschorrllc.libsyn.com/rss	topic:legal topic:education type:podcast
+# shipped feed: NRJ daily horoscope, retagged from the rule/my earlier guess
+https://aod.nrjaudio.fm/xml/2079.xml	language:french region:france topic:astrology type:podcast
+# shipped feed: NRJ daily horoscope, retagged from the rule/my earlier guess
+https://aod.nrjaudio.fm/xml/2080.xml	language:french region:france topic:astrology type:podcast
+# shipped feed: NRJ daily horoscope, retagged from the rule/my earlier guess
+https://aod.nrjaudio.fm/xml/2081.xml	language:french region:france topic:astrology type:podcast
+# shipped feed: NRJ daily horoscope, retagged from the rule/my earlier guess
+https://aod.nrjaudio.fm/xml/2082.xml	language:french region:france topic:astrology type:podcast
+# shipped feed: NRJ daily horoscope, retagged from the rule/my earlier guess
+https://aod.nrjaudio.fm/xml/2083.xml	language:french region:france topic:astrology type:podcast
+# shipped feed: NRJ daily horoscope, retagged from the rule/my earlier guess
+https://aod.nrjaudio.fm/xml/2084.xml	language:french region:france topic:astrology type:podcast
+# shipped feed: NRJ daily horoscope, retagged from the rule/my earlier guess
+https://aod.nrjaudio.fm/xml/2085.xml	language:french region:france topic:astrology type:podcast
+# shipped feed (t15): CKRL Quebec City daily horoscope segment. ADDITIVE: adds topic:astrology
+# and restates the region (canada, not france - this is Quebec radio) while KEEPING the
+# media/music tags a previous pass shipped, which I have not decided to remove.
+https://balado.ckrl.qc.ca/radioshows/1156/feed_itunes.xml	language:french region:canada topic:astrology topic:media topic:music type:podcast
