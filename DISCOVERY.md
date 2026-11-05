@@ -2166,3 +2166,16 @@ French Star Citizen news feed, two German local-news feeds, a Chicago college pa
 
 `topic:media` stays where nothing says otherwise: for these feeds it is the honest answer,
 and the invariant does not require a guess.
+Then the same method on the tech-shaped names: **14 tagged, 7 declined**. The word matches
+were mostly not subjects at all — "*To Go*" is a phrase (a vanlife show, a board-game
+podcast, a fire-protection trade feed) and "*Network*" is a podcast network (a metal
+network, a pop-culture network, a career-coaching network). Where the description settled
+it, the tag came from that and not from the name: `Boardgames To Go` → gaming,
+`The CMS Network` → music, `Built To Go! #Vanlife` → travel, `Racket To Go` →
+`topic:programming:lisp` (Racket is a Lisp dialect), `⌘+P: The App Podcast` → software
+engineering **plus `language:french`**, `Code of C` → legal (a German compliance show).
+
+Two passes together: **42 media-only rows correctly tagged, 10 declined with reasons**, and
+a measured answer to the question I posed last pass — the remaining ~1,490 media-only feeds
+are not a pile of mis-tags. The shipped rules see 10 of them, names see ~60, and for the
+rest `topic:media` is what the evidence supports. Grinding them would be guessing.

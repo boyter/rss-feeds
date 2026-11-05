@@ -24376,3 +24376,17 @@
 {"key": "https://columbiachronicle.com/category/multimedia/podcasts/feed/", "tags": ["region:usa", "topic:news", "type:podcast"]}
 {"key": "https://columbiachronicle.podbean.com/feed.xml", "tags": ["region:usa", "topic:news", "type:podcast"]}
 {"key": "https://feeds.transistor.fm/laravelnews", "tags": ["topic:programming:php", "type:podcast"]}
+{"key": "https://a2recordsunleashed.libsyn.com/rss", "tags": ["topic:music", "type:podcast"]}
+{"key": "https://adbackstage.libsyn.com/rss", "tags": ["topic:software-engineering", "type:podcast"]}
+{"key": "https://adventuresinradiotech.substack.com/feed", "tags": ["topic:hardware", "type:newsletter"]}
+{"key": "https://api.substack.com/feed/podcast/1042/s/9388.rss", "tags": ["topic:programming:lisp", "topic:software-engineering", "type:newsletter"]}
+{"key": "https://atp.fm/episodes?format=rss", "tags": ["topic:tech-industry", "type:podcast"]}
+{"key": "https://atp.fm/rss", "tags": ["topic:tech-industry", "type:podcast"]}
+{"key": "https://boardgamestogo.libsyn.com/rss", "tags": ["topic:gaming", "type:podcast"]}
+{"key": "https://builttogo.podbean.com/feed.xml", "tags": ["topic:travel", "type:podcast"]}
+{"key": "https://chronicriftnetwork.libsyn.com/rss", "tags": ["topic:entertainment", "type:podcast"]}
+{"key": "https://clementsauvage.me/podcast/rss", "tags": ["language:french", "language:japanese", "topic:software-engineering", "type:podcast"]}
+{"key": "https://cmspn.substack.com/feed", "tags": ["topic:music", "type:newsletter"]}
+{"key": "https://cobe.podigee.io/feed/mp3", "tags": ["language:german", "topic:tech-industry", "type:podcast"]}
+{"key": "https://code-of-c-der-true-compliance-podcast-von-loupe.podigee.io/feed/mp3", "tags": ["language:german", "topic:legal", "type:podcast"]}
+{"key": "https://cynicaldeveloper.com/feed/podcast", "tags": ["topic:software-engineering", "type:podcast"]}

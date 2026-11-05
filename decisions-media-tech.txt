@@ -1,0 +1,32 @@
+# Media-only rows matched by a tech-shaped WORD IN THE NAME, read one by one.
+# Most were noise - "To Go" is a phrase, "Network" is a podcast network -
+# so the tags below are per row, from the description.
+# Declined with reasons below: 7 rows.
+# DECLINED https://9to5.cc/category/podcast/feed/
+#   a Montreal podcast NETWORK about not-working; matched the word Network
+# DECLINED https://9to5.cc/feed/podcast/
+#   same network; matched Go from a show name (Go Plug Yourself)
+# DECLINED https://apicasefiles.libsyn.com/rss
+#   API in the name but nothing in the record says software; no evidence to tag
+# DECLINED https://canatx.org/feed/podcast/
+#   a community-advancement network; matched Network
+# DECLINED https://clientcabin.com/distribution_feeds/company/46302/
+#   a hosting URL with no description; cannot be tagged honestly
+# DECLINED https://app.kajabi.com/podcasts/2147498126/feed
+#   career coaching network; matched Network
+# DECLINED https://brandschutz-to-go.podigee.io/feed/mp3
+#   fire-protection trade tips; already declined in the news pass
+https://a2recordsunleashed.libsyn.com/rss	topic:music type:podcast
+https://adbackstage.libsyn.com/rss	topic:software-engineering type:podcast
+https://adventuresinradiotech.substack.com/feed	topic:hardware type:newsletter
+https://api.substack.com/feed/podcast/1042/s/9388.rss	topic:programming:lisp topic:software-engineering type:newsletter
+https://atp.fm/episodes?format=rss	topic:tech-industry type:podcast
+https://atp.fm/rss	topic:tech-industry type:podcast
+https://boardgamestogo.libsyn.com/rss	topic:gaming type:podcast
+https://builttogo.podbean.com/feed.xml	topic:travel type:podcast
+https://chronicriftnetwork.libsyn.com/rss	topic:entertainment type:podcast
+https://clementsauvage.me/podcast/rss	language:french language:japanese topic:software-engineering type:podcast
+https://cmspn.substack.com/feed	topic:music type:newsletter
+https://cobe.podigee.io/feed/mp3	language:german topic:tech-industry type:podcast
+https://code-of-c-der-true-compliance-podcast-von-loupe.podigee.io/feed/mp3	language:german topic:legal type:podcast
+https://cynicaldeveloper.com/feed/podcast	topic:software-engineering type:podcast
