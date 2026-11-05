@@ -1,0 +1,48 @@
+# topic:adult added to TAGS.md by owner decision (2026-11-06): keep and tag,
+# not remove. 14 feeds. Written by hand, never by a rule - see the guidance in
+# TAGS.md: kink.nl is a radio station and NSFW is an advisory line.
+# The 15 feeds below matched the words and are declined as topic:adult, with why.
+# DECLINED https://400degreezpole.substack.com/feed
+#   music blog, 'Erotic Funk' is an album title
+# DECLINED https://acnewmanmusic.substack.com/feed
+#   a musician's blog; the Pornographer is his band
+# DECLINED https://acoldwar.com/category/podcast/feed/
+#   NSFW describes tone on a Cold War podcast
+# DECLINED https://aetherealmoods.substack.com/feed
+#   erotic magic in an occult/esoterica context
+# DECLINED https://annapulley.substack.com/feed
+#   erotica is a 'plus' on a creativity blog, not the subject
+# DECLINED https://annasansom.substack.com/feed
+#   NSFW advisory on an personal essay blog
+# DECLINED https://api.kink.nl/rss/kink-fast
+#   pop-punk show on that station
+# DECLINED https://api.kink.nl/rss/kink-festivalpodcast
+#   Dutch radio station KINK, not kink
+# DECLINED https://api.kink.nl/rss/kink-op-de-week
+#   a current-affairs show on that station
+# DECLINED https://ashgallagher.substack.com/feed
+#   erotic as a metaphor in political essays
+# DECLINED https://benuyama.com/feed/podcast/quit-porn-with-ben-uyama
+#   a recovery podcast - discusses porn, does not contain it
+# DECLINED https://beyondbrokenvows.podbean.com/feed.xml
+#   pornography-addiction recovery, a marriage podcast
+# DECLINED https://blackfeminineculturalmysticism.substack.com/feed
+#   cultural theory using erotic joy as a lens
+# DECLINED https://chainsawhistory.substack.com/feed
+#   NSFW is an advisory line on a history podcast
+# DECLINED https://chrissiemayr.libsyn.com/rss
+#   a comedian interviewing adult film stars among others
+https://49grey.substack.com/feed	topic:adult topic:lifestyle type:personal-blog
+https://afsnetwork.libsyn.com/rss	topic:adult topic:business topic:entertainment type:podcast
+https://alexcunning.substack.com/feed	topic:adult topic:art type:newsletter
+https://alex220.substack.com/feed	region:australia topic:adult topic:art type:newsletter
+https://ardentomas.substack.com/feed	topic:adult topic:books type:personal-blog
+https://coffinofconfections.substack.com/feed	topic:adult topic:gaming topic:science type:newsletter
+https://amberleitz.libsyn.com/rss	topic:adult topic:lifestyle type:podcast
+http://feeds.libsyn.com/302975/rss	topic:adult topic:lifestyle type:podcast
+https://miketaylr.com/posts/rss.xml	topic:adult topic:web-development type:personal-blog
+https://blog.itsnero.com/feed	topic:adult topic:art topic:entertainment type:personal-blog
+https://asloversdo.substack.com/feed	topic:adult topic:personal type:personal-blog
+https://atozofsex.libsyn.com/rss	topic:adult topic:health type:podcast
+https://britnipepper.substack.com/feed	topic:adult topic:books type:newsletter
+https://askasub.libsyn.com/rss	region:usa topic:adult topic:personal type:podcast

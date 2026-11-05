@@ -57,7 +57,20 @@ Non-technology:
 `topic:transport`,
 `topic:music`, `topic:art`, `topic:books`, `topic:comics` (comics, webcomics, manga, graphic novels - a real recurring cluster that `topic:art` and `topic:books` both stretched), `topic:travel`, `topic:food`,
 `topic:astrology` (horoscopes, natal charts, astrological practice - a real recurring cluster; esoteric but categorizable),
-`topic:health`, `topic:education`, `topic:religion`, `topic:lifestyle`, `topic:animals` (animal welfare and rescue, zoos, keeping and studying animals - a recurring cluster that `topic:science` and `topic:lifestyle` both stretched), `topic:personal`
+`topic:adult` (sexually explicit content and the adult industry: erotica and R18 art, the adult-film business, kink practice and sex education for adults - 14 feeds had nowhere to go and a policy call had to be made rather than deferred), `topic:health`, `topic:education`, `topic:religion`, `topic:lifestyle`, `topic:animals` (animal welfare and rescue, zoos, keeping and studying animals - a recurring cluster that `topic:science` and `topic:lifestyle` both stretched), `topic:personal`
+
+`topic:adult` is **hand-applied only - do not write a classify rule for it.** The words are
+a noise magnet of the worst kind: `kink.nl` is a Dutch radio station, "KINK FAST" is a
+pop-punk show, "NSFW" is an advisory line on a Cold War podcast and a history podcast,
+"Ballad of a New Pornographer" is a musician's blog, and "erotic magic" belongs to an
+occult essayist. Twenty-nine shipped feeds match the words and 14 are the subject.
+A rule would tag radio stations with pornography.
+
+The tag is also not an accusation and never a reason to remove: `triage.py` already
+refuses to delete a feed on `porn`/`xxx`/`onlyfans` in its own name, because a nofap
+recovery podcast and a lectionary week written in Roman numerals both matched. A feed
+*about* pornography addiction recovery is `topic:health` or `topic:personal`, not
+`topic:adult`: the tag is what the feed contains, not what it discusses.
 
 `topic:real-estate` is what a feed is about, not a mention: a mortgage-rate paragraph in a
 macro newsletter stays `topic:finance`. Keep both only when the feed genuinely covers money

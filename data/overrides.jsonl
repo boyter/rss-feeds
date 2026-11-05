@@ -4392,7 +4392,7 @@
 {"key": "https://alex.smola.org/blog.xml", "tags": ["topic:ai", "topic:systems", "type:personal-blog"]}
 {"key": "https://alex000kim.com/index.xml", "tags": ["topic:ai", "topic:infrastructure", "type:personal-blog"]}
 {"key": "https://alex1701c.github.io/feed.xml", "tags": ["topic:open-source", "type:personal-blog"]}
-{"key": "https://alex220.substack.com/feed", "tags": ["region:australia", "topic:art", "type:newsletter"]}
+{"key": "https://alex220.substack.com/feed", "tags": ["region:australia", "topic:adult", "topic:art", "type:newsletter"]}
 {"key": "https://alexahire.in/feed/", "tags": ["region:india", "topic:business", "type:publication"]}
 {"key": "https://alexaitken.nz/feed/", "tags": ["topic:software-engineering", "type:personal-blog"]}
 {"key": "https://alexand.ro/feed.xml", "tags": ["region:world", "topic:tech-industry", "type:personal-blog"]}
@@ -4460,7 +4460,7 @@
 {"key": "https://alexcodesart.com/rss", "tags": ["topic:graphics", "topic:programming", "type:personal-blog"]}
 {"key": "https://alexcoghe.substack.com/feed", "tags": ["topic:art", "type:newsletter"]}
 {"key": "https://alexcorzo.substack.com/feed", "tags": ["language:spanish", "region:latin-america", "topic:books", "topic:religion", "type:newsletter"]}
-{"key": "https://alexcunning.substack.com/feed", "tags": ["topic:art", "type:newsletter"]}
+{"key": "https://alexcunning.substack.com/feed", "tags": ["topic:adult", "topic:art", "type:newsletter"]}
 {"key": "https://alexcwatt.com/feed.xml", "tags": ["topic:education", "topic:tech-industry", "type:personal-blog"]}
 {"key": "https://alexdelorenzo.dev/feed.xml", "tags": ["topic:programming", "type:personal-blog"]}
 {"key": "https://alexdewey.github.io/AlexDeweyGiovanniniBlog/feed.xml", "tags": ["topic:software-engineering", "type:personal-blog"]}
@@ -5664,7 +5664,7 @@
 {"key": "https://48hills.substack.com/feed", "tags": ["region:usa", "topic:news", "type:publication"]}
 {"key": "49000.com.ua", "tags": ["language:russian", "region:ukraine", "topic:news", "type:publication"]}
 {"key": "https://497279.us23.myftpupload.com/feed/", "tags": ["topic:personal", "type:personal-blog"]}
-{"key": "https://49grey.substack.com/feed", "tags": ["topic:lifestyle", "type:personal-blog"]}
+{"key": "https://49grey.substack.com/feed", "tags": ["topic:adult", "topic:lifestyle", "type:personal-blog"]}
 {"key": "4ark.me", "tags": ["topic:art", "type:personal-blog"]}
 {"key": "4bungi.jp", "tags": ["language:japanese", "region:japan", "topic:science", "type:vendor-blog"]}
 {"key": "https://4cm3.dev/index.xml", "tags": ["topic:programming", "type:personal-blog"]}
@@ -13422,7 +13422,7 @@
 {"key": "https://askasoberlady.substack.com/feed", "tags": ["region:usa", "topic:personal", "type:newsletter"]}
 {"key": "https://askasoftwareengineer.substack.com/feed", "tags": ["topic:software-engineering", "type:newsletter"]}
 {"key": "https://askaspaceman.libsyn.com/rss", "tags": ["region:usa", "topic:science", "type:podcast"]}
-{"key": "https://askasub.libsyn.com/rss", "tags": ["region:usa", "topic:personal", "type:podcast"]}
+{"key": "https://askasub.libsyn.com/rss", "tags": ["region:usa", "topic:adult", "topic:personal", "type:podcast"]}
 {"key": "https://askawitchnow.podbean.com/feed.xml", "tags": ["topic:religion", "type:podcast"]}
 {"key": "https://askdba.net/feed/atom", "tags": ["topic:software-engineering", "type:personal-blog"]}
 {"key": "https://askdeb.substack.com/feed", "tags": ["topic:books", "type:newsletter"]}
@@ -13475,7 +13475,7 @@
 {"key": "https://anbariloche.com.ar/rss/noticias", "tags": ["language:spanish", "region:latin-america", "topic:news", "type:publication"]}
 {"key": "https://anbariloche.com.ar/rss/opinion", "tags": ["language:spanish", "region:latin-america", "topic:politics", "type:publication"]}
 {"key": "asleepace.com", "tags": ["topic:programming", "topic:web-development", "type:personal-blog"]}
-{"key": "https://asloversdo.substack.com/feed", "tags": ["topic:personal", "type:personal-blog"]}
+{"key": "https://asloversdo.substack.com/feed", "tags": ["topic:adult", "topic:personal", "type:personal-blog"]}
 {"key": "https://aslteachingresources.com/feed/podcast/", "tags": ["topic:education", "type:podcast"]}
 {"key": "asm-supporters.fr", "tags": ["language:french", "region:france", "topic:sport", "type:publication"]}
 {"key": "https://asmalllife.substack.com/feed", "tags": ["topic:environment", "topic:lifestyle", "type:newsletter"]}
@@ -13869,7 +13869,7 @@
 {"key": "https://atoniolo76.github.io/rss.xml", "tags": ["topic:networking", "topic:systems", "type:personal-blog"]}
 {"key": "https://atono.substack.com/feed", "tags": ["topic:business", "type:newsletter"]}
 {"key": "https://atop.tg/feed/", "tags": ["language:french", "region:africa", "topic:news", "type:publication"]}
-{"key": "https://atozofsex.libsyn.com/rss", "tags": ["topic:health", "type:podcast"]}
+{"key": "https://atozofsex.libsyn.com/rss", "tags": ["topic:adult", "topic:health", "type:podcast"]}
 {"key": "https://atpdiary.com/feed/", "tags": ["language:italian", "topic:art", "type:publication"]}
 {"key": "https://atpe.td/feed/", "tags": ["language:french", "region:africa", "topic:news", "type:publication"]}
 {"key": "https://atpinsights.substack.com/feed", "tags": ["region:asia", "topic:tech-industry", "type:podcast"]}
@@ -23260,7 +23260,7 @@
 {"key": "https://britishtechnetwork.com/feed/big-video", "tags": ["region:uk", "topic:tech-industry", "type:podcast"]}
 {"key": "https://britishvoiceover.co.uk/feed/", "tags": ["region:uk", "topic:media", "type:community"]}
 {"key": "https://britiskpolitikk.no/feed/podcast/", "tags": ["topic:politics", "type:publication"]}
-{"key": "https://britnipepper.substack.com/feed", "tags": ["topic:books", "type:newsletter"]}
+{"key": "https://britnipepper.substack.com/feed", "tags": ["topic:adult", "topic:books", "type:newsletter"]}
 {"key": "https://britpod.podigee.io/feed/mp3", "tags": ["language:german", "topic:travel", "type:podcast"]}
 {"key": "https://brittaneyelise.substack.com/feed", "tags": ["topic:design", "type:newsletter"]}
 {"key": "https://brittany-ellich.offprint.app/feed", "tags": ["topic:software-engineering", "type:personal-blog"]}
@@ -24220,3 +24220,10 @@
 {"key": "http://feeds.libsyn.com/132861/rss", "tags": ["topic:media", "topic:real-estate", "type:podcast"]}
 {"key": "http://feeds.libsyn.com/277052/rss", "tags": ["topic:business", "topic:finance", "topic:media", "topic:real-estate", "topic:science", "type:podcast"]}
 {"key": "http://feeds.libsyn.com/277529/rss", "tags": ["topic:business", "topic:real-estate", "type:podcast"]}
+{"key": "https://afsnetwork.libsyn.com/rss", "tags": ["topic:adult", "topic:business", "topic:entertainment", "type:podcast"]}
+{"key": "https://ardentomas.substack.com/feed", "tags": ["topic:adult", "topic:books", "type:personal-blog"]}
+{"key": "https://coffinofconfections.substack.com/feed", "tags": ["topic:adult", "topic:gaming", "topic:science", "type:newsletter"]}
+{"key": "https://amberleitz.libsyn.com/rss", "tags": ["topic:adult", "topic:lifestyle", "type:podcast"]}
+{"key": "http://feeds.libsyn.com/302975/rss", "tags": ["topic:adult", "topic:lifestyle", "type:podcast"]}
+{"key": "https://miketaylr.com/posts/rss.xml", "tags": ["topic:adult", "topic:web-development", "type:personal-blog"]}
+{"key": "https://blog.itsnero.com/feed", "tags": ["topic:adult", "topic:art", "topic:entertainment", "type:personal-blog"]}
