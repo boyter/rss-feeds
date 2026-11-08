@@ -57,7 +57,7 @@ Non-technology:
 `topic:transport`,
 `topic:music`, `topic:art`, `topic:books`, `topic:comics` (comics, webcomics, manga, graphic novels - a real recurring cluster that `topic:art` and `topic:books` both stretched), `topic:travel`, `topic:food`,
 `topic:astrology` (horoscopes, natal charts, astrological practice - a real recurring cluster; esoteric but categorizable),
-`topic:adult` (sexually explicit content and the adult industry: erotica and R18 art, the adult-film business, kink practice and sex education for adults - 14 feeds had nowhere to go and a policy call had to be made rather than deferred), `topic:health`, `topic:education`, `topic:religion`, `topic:lifestyle`, `topic:animals` (animal welfare and rescue, zoos, keeping and studying animals - a recurring cluster that `topic:science` and `topic:lifestyle` both stretched), `topic:personal`
+`topic:adult` (sexually explicit content and the adult industry: erotica and R18 art, the adult-film business, kink practice and sex education for adults - 14 feeds had nowhere to go and a policy call had to be made rather than deferred), `topic:health`, `topic:education`, `topic:religion`, `topic:lifestyle`, `topic:animals` (animal welfare and rescue, zoos, keeping and studying animals - a recurring cluster that `topic:science` and `topic:lifestyle` both stretched), `topic:agriculture` (farming, machinery, food production - agroinfo.rs and its ilk were filed under `news` with no better home), `topic:personal`
 
 `topic:adult` is **hand-applied only - do not write a classify rule for it.** The words are
 a noise magnet of the worst kind: `kink.nl` is a Dutch radio station, "KINK FAST" is a
@@ -106,12 +106,13 @@ used as a type instead.
 
 ## region: (editorial focus, not the publisher's postcode)
 
-`region:world`, `region:africa`, `region:asia`, `region:australia`,
+`region:world`, `region:africa`, `region:azerbaijan`, `region:asia`, `region:australia`,
+`region:belgium`,
 `region:canada`, `region:caribbean`, `region:china`, `region:europe`,
-`region:france`, `region:germany`, `region:india`, `region:ireland`,
+`region:france`, `region:germany`, `region:india`, `region:iran`, `region:ireland`,
 `region:italy`, `region:japan`, `region:latin-america`, `region:middle-east`,
 `region:mexico`, `region:new-zealand`, `region:nigeria`, `region:pakistan`,
-`region:philippines`, `region:poland`, `region:russia`, `region:south-korea`,
+`region:philippines`, `region:poland`, `region:russia`, `region:serbia`, `region:south-korea`,
 `region:spain`, `region:uk`, `region:ukraine`, `region:usa`
 
 Sub-national, only for feeds that are actually local:
@@ -124,18 +125,21 @@ Sub-national, only for feeds that are actually local:
 
 ## language: (only when not English, or for a translated feed)
 
-`language:arabic`, `language:bulgarian`, `language:chinese`, `language:croatian`,
+`language:arabic`, `language:azerbaijani`, `language:bulgarian`, `language:chinese`, `language:croatian`,
 `language:czech`, `language:danish`, `language:dutch`, `language:english`,
 `language:estonian`, `language:finnish`, `language:french`, `language:german`,
 `language:greek`, `language:hindi`, `language:hungarian`, `language:indonesian`,
 `language:italian`, `language:japanese`, `language:korean`, `language:latvian`,
-`language:lithuanian`, `language:norwegian`, `language:polish`, `language:portuguese`,
+`language:lithuanian`, `language:norwegian`, `language:persian`, `language:polish`, `language`,`language:portuguese`,
 `language:romanian`, `language:russian`, `language:serbian`, `language:slovenian`,
 `language:spanish`, `language:swedish`, `language:turkish`, `language:ukrainian`,
 `language:urdu`, `language:vietnamese`
 
 The keyword rules can see a language only through its script (Hangul, kana, Han,
-Arabic, Cyrillic), so every Latin-script language is invisible to them. The ccTLD
+Arabic, Cyrillic), so every Latin-script language is invisible to them. The Arabic-script
+rule emits `language:arabic` and cannot tell Persian apart - Persian is written in the same
+script - so a `language:persian` tag can only ever come from a hand rule, as with the
+ana.ir news agency (27 feeds) that shipped as `language:arabic` for months. The ccTLD
 rule in `classify.CC_LANG` fills that gap, and it can only emit a tag listed here:
 croatian, danish, estonian, greek, hungarian, indonesian, latvian, lithuanian,
 romanian, serbian, slovenian, swedish, turkish and vietnamese arrived with that

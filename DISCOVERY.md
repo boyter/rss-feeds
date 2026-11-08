@@ -2179,3 +2179,45 @@ Two passes together: **42 media-only rows correctly tagged, 10 declined with rea
 a measured answer to the question I posed last pass — the remaining ~1,490 media-only feeds
 are not a pile of mis-tags. The shipped rules see 10 of them, names see ~60, and for the
 rest `topic:media` is what the evidence supports. Grinding them would be guessing.
+
+## Tranche 30, step 1: the recovered pool's multi-feed hosts (2026-11-06)
+
+Product 36,067 → **36,179** (+112), zero removals, **184 tests**, `--strict` 0.
+
+The recovery sweep (5,365 probed, 3,218 answering as feeds at 75% among real feed
+URLs, 3,032 hosts, 0 already banned) started with its multi-feed hosts: 22 host rules,
+19 URL rules, one decision per content unit.
+
+Endpoint aliases folded to one URL each: six security vendors each offered
+`/feed`, `/feed/` and `/rss` of the same blog; cradleofprayer.org offered its podcast
+eight ways (the seven per-liturgical-season feeds are subsets of the main stream);
+`1310kfka.com/feed/podcast` is an alias of `/feed`; `abwe.org/feed/podcast/default-podcast/`
+is the platform's slug for the default stream. And **`brusselnieuws.be` is `bruzz.be`
+under a second domain** — the same five BRUZZ uit topic feeds under two names, kept once
+under the brand domain. That is the libsyn lesson in the wild: the duplicate had to be
+*seen*, `norm_key` cannot fold a second domain.
+
+The 11 rows on hosts that already shipped: 3 new 360magazine.nl sections (politiek →
+`topic:politics`, not news), the 25 blog.mozilla.org section feeds (host rule
+`topic:tech-industry` — the two shipped rows keep their open-source/web-development
+topics, which a host rule may not erase), and 9 ayna.az categories.
+
+**The ana.ir fix.** The news agency's six shipped rows read `language:arabic`
+and `topic:education`. The language is the script rule's structural limit: Persian is
+written in the Arabic script, and the rule that sees script cannot tell them apart.
+The topic misfired on **دانشگاه** — "university" — in the agency's own name
+(خبرگزاری دانشگاه = Ana; University News Agency; the path is `/fa/`). A host rule
+cannot displace a *shipped* language (the keep-side wins), so the six rows needed URL
+rules. All 27 new rows are correct from the host rule. TAGS.md now states the limit,
+because the next Persian feed will hit it.
+
+Seven vocabulary additions, all demanded by feeds in front of me, none speculative:
+`topic:agriculture`, `language:azerbaijani`, `language:persian`, `region:serbia`,
+`region:azerbaijan`, `region:belgium`, `region:iran`.
+
+**Declined and why** (recorded in `decisions-t30-hostrules.txt`): the 14 endpoints of
+three blogs already shipped (schneier, fox-it, seths), 1075 homepages from
+`candidates.pages.jsonl` that `discover.py tag` deliberately excludes, and the subset
+feeds listed per host above. The pool's 527k candidates are mostly homepages and dead
+URLs; this is why the pool had to be filtered to *real feed URLs* before the 75% figure
+is believable.

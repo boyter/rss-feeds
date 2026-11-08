@@ -1,0 +1,76 @@
+# Tranche 30, step 1: host rules for the multi-feed hosts of the recovered pool.
+# The recovered pool: 3,218 real-feed URLs that answered only after the User-Agent
+# fix. One decision per content unit: endpoint aliases fold to one URL, and
+# brusselnieuws.be is bruzz.be under a second domain.
+#
+# The six ana.ir rows already shipped (rss/38,39,40,42,43,44) read language:arabic
+# from the script rule (Persian is written in the Arabic script) and topic:education
+# from a rule misfiring on دانشگاه - "university", part of the news agency's own
+# name (خبرگزاری دانشگاه = Ana; University News Agency; the path is /fa/). A host rule
+# cannot displace a shipped language, so those six are URL rules; the 27 new rows
+# get the fix from the host rule.
+1310kfka.com	topic:news region:usa type:podcast
+abwe.org	topic:religion type:podcast
+agroinfo.rs	topic:agriculture language:serbian region:serbia type:publication
+ana.ir	topic:news type:publication language:persian region:iran
+aquasec.com	topic:security type:vendor-blog
+arshabodha.org	topic:religion type:podcast
+avrant.com	topic:hardware type:publication
+ayna.az	topic:news type:publication language:azerbaijani region:asia
+azertag.az	topic:news language:azerbaijani region:azerbaijan type:publication
+bfore.ai	topic:security type:vendor-blog
+blog.mozilla.org	topic:tech-industry type:vendor-blog
+bruzz.be	topic:entertainment language:dutch region:belgium type:publication
+canarytrap.com	topic:security type:vendor-blog
+cantholib.org.vn	topic:books language:vietnamese type:publication
+censys.com	topic:security type:vendor-blog
+childdiscipleship.com	topic:religion type:podcast
+courierheraldtoday.com	topic:news type:publication
+cradleofprayer.org	topic:religion type:podcast
+cspn.us	topic:sport type:podcast
+dailytechnewsshow.com	topic:tech-industry type:podcast
+fidelissecurity.com	topic:security type:vendor-blog
+zynap.com	topic:security type:vendor-blog
+https://360magazine.nl/magazines/magazine-256/feed/	topic:news language:dutch region:europe type:publication
+https://360magazine.nl/politiek/feed/	topic:politics language:dutch region:europe type:publication
+https://360magazine.nl/redactioneel/feed/	topic:news language:dutch region:europe type:publication
+https://avrant.com/feed/podcast/	topic:hardware type:podcast
+https://ayna.az/rss/category/idman	topic:sport language:azerbaijani region:asia type:publication
+https://ayna.az/rss/category/iqtisadiyyat	topic:economics language:azerbaijani region:asia type:publication
+https://balado.ckrl.qc.ca/radioshows/287/feed_itunes.xml	topic:media language:french region:canada type:podcast
+https://balado.ckrl.qc.ca/radioshows/290/feed_itunes.xml	topic:media language:french region:canada type:podcast
+https://balado.ckrl.qc.ca/radioshows/298/feed_itunes.xml	topic:media language:french region:canada type:podcast
+https://balado.ckrl.qc.ca/radioshows/309/feed_itunes.xml	topic:media language:french region:canada type:podcast
+https://balado.ckrl.qc.ca/radioshows/724/feed_itunes.xml	topic:music language:french region:canada type:podcast
+https://balado.ckrl.qc.ca/radioshows/751/feed_itunes.xml	topic:media language:french region:canada type:podcast
+https://balado.ckrl.qc.ca/radioshows/757/feed_itunes.xml	topic:media language:french region:canada type:podcast
+https://balado.ckrl.qc.ca/radioshows/794/feed_itunes.xml	topic:agriculture language:french region:canada type:podcast
+https://balado.ckrl.qc.ca/radioshows/797/feed_itunes.xml	topic:music language:french region:canada type:podcast
+https://balado.ckrl.qc.ca/radioshows/826/feed_itunes.xml	topic:books language:french region:canada type:podcast
+https://bruzz.be/uit/topic/muziek/rss.xml	topic:music language:dutch region:belgium type:publication
+https://courierheraldtoday.com/podcasts/rss	topic:news type:podcast
+https://cspn.us/category/podcast-episodes/cspns-comic-book-chronicles/feed/	topic:comics type:podcast
+https://ana.ir/fa/rss/38	topic:news language:persian region:iran type:publication
+https://ana.ir/fa/rss/39	topic:news language:persian region:iran type:publication
+https://ana.ir/fa/rss/40	topic:news language:persian region:iran type:publication
+https://ana.ir/fa/rss/42	topic:news language:persian region:iran type:publication
+https://ana.ir/fa/rss/43	topic:news language:persian region:iran type:publication
+https://ana.ir/fa/rss/44	topic:news language:persian region:iran type:publication
+
+# Declined from the recovered pool, host by host:
+# DECLINED host:1310kfka.com - /feed/podcast is an endpoint alias of /feed
+# DECLINED host:abwe.org - /default-podcast/ is the platform's slug for the default stream
+# DECLINED host:aquasec.com - /rss and /feed/ are endpoints of the same blog
+# DECLINED host:avrant.com - /category/podcast/feed/ is the podcast's in-blog archive, the same stream as /feed/podcast/
+# DECLINED host:bfore.ai - /rss and /feed/ are endpoints of the same blog
+# DECLINED host:blog.fox-it.com - endpoints of a blog already shipped as blog.fox-it.com/feed/
+# DECLINED host:brusselnieuws.be - alias domain of bruzz.be - the same five BRUZZ uit topic feeds under two names; keeping the brand domain
+# DECLINED host:canarytrap.com - /rss and /feed/ are endpoints of the same blog
+# DECLINED host:censys.com - /rss and /feed/ are endpoints of the same blog
+# DECLINED host:courierheraldtoday.com - /news/feed is a subset of the main feed
+# DECLINED host:cradleofprayer.org - per-liturgical-season feeds are subsets of the main podcast stream
+# DECLINED host:dailytechnewsshow.com - author and category feeds are subsets of the main feed
+# DECLINED host:fidelissecurity.com - /rss and /feed/ are endpoints of the same blog
+# DECLINED host:schneier.com - endpoints of a blog already shipped as www.schneier.com/blog/atom.xml
+# DECLINED host:seths.blog - endpoints of a blog already shipped as seths.blog/feed
+# DECLINED host:zynap.com - /rss and /feed/ are endpoints of the same blog
