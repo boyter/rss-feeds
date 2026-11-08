@@ -36,3 +36,9 @@ data/DISCOVERY_UNTAGGED.jsonl
 # hand decision; the batch file that produced it, and the reasons written in its
 # comments, stay in git history (see the commits that applied each batch).
 discovery-decisions*.txt
+# Tranche-30 recovery-sweep intermediates: the pool and its keep-list are derived
+# views of probe_results.jsonl (committed evidence); the rule decisions live in
+# decisions-t30-hostrules.txt.
+recovered-candidates.jsonl
+reprobe-blocked.jsonl
+t30-keep.jsonl
