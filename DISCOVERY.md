@@ -2221,3 +2221,42 @@ three blogs already shipped (schneier, fox-it, seths), 1075 homepages from
 feeds listed per host above. The pool's 527k candidates are mostly homepages and dead
 URLs; this is why the pool had to be filtered to *real feed URLs* before the 75% figure
 is believable.
+
+## Tranche 30, batch 2: 507 rule-tagged recovered feeds (2026-11-06)
+
+Product 36,181 → **36,688** (+507, plus 2 = 509 over the step-1 commit), zero removals,
+**184 tests**, `--strict` 0.
+
+The 546 rule-tagged rows of the pool were read in three strata, because the read depth
+has to match the risk:
+
+1. **57 heading-derived tags** (the layer that put `topic:web-development` on BDSM
+   erotica): read one by one, with the body where the title was not enough. Most of the
+   headings were *right* (the security vendor blogs are correctly `security
+   vendor-blog`; the wrong ones were CodePen Radio → `web-development podcast`, a
+   WordPress consultant's blog tagged `ai,mathematics`, an astrologer tagged
+   `tech-industry`, a board-game magazine tagged `books`).
+2. **105 rows carrying a noise-magnet topic** (`ai`/`science`/`history`/`tech-industry`):
+   every body read from the probe records. **32 retagged** — ~30%, the same rate as AMP's
+   tail. The errors had a shape: `science` fired on a prayer blog ("Sparks in the Dark"),
+   `tech-industry` on a fashion column, `ai` on a WordPress-editor newsletter, `food` on a
+   neuroscience-and-psychotherapy blog, and `history` on a poetry blog. Where the body
+   settled it the retag used the body's subject (a "Shamanic Astrology" feed got
+   `topic:astrology`, a "Vintage Erotica, Bdsm, Fetish" feed got the new `topic:adult`).
+3. **~390 rows with non-magnet tags**: titles read against the tags; 18 retagged, most of
+   them **churches tagged `media` because "sermon" was not in their own title** (six
+   Calvary churches) — the same class the faith pass handled, now arriving as candidates.
+
+**The count guard had to be reinforced, because the merge file itself can lie.** The
+step-1 keep-list used bare-domain URLs (`aquasec.com/feed`) but the pool held only
+`www.aquasec.com/…` — the exact-match silently dropped both aquasec and zynap, and the
+merge's "added 112" looked complete. Same shape, second occurrence this pass: my
+keep-list wrote `https://` where the pool had `http://` (the Independent's UK feed), so
+five planned keeps landed in the declined list. Both were caught by checking *which rows
+made it in*, not the count. Rule: a keep-list is verified by membership of its URLs in
+the pool, and the merge is verified by membership of its URLs in the product.
+
+**47 rows declined** with reasons in `decisions-t30-batch2.txt`: 28 endpoint aliases or
+supersets of feeds already in the product (the OPML lists carried 2014's `/rss/` next to
+the feed we already hold at `/feed/`), 9 unreadable (no title or description to read the
+subject from), and the rest per-host duplicates.

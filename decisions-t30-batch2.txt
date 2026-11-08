@@ -1,0 +1,45 @@
+# Tranche 30, batch 2: 507 recovered feeds merged. The 57 heading-derived rows were read
+# one by one, the 105 noise-magnet rows had their bodies read (32 retagged), and the
+# ~390 remaining had their titles read against the rule tags (18 retagged). Retags were
+# applied by editing the tags of the merged rows; the reasons are in DISCOVERY.md.
+#
+# Declined, with reasons:
+# http://blog.cryptographyengineering.com/feeds/posts/default	endpoint alias or superset of a feed already in the product
+# http://th3j35t3r.wordpress.com/feed/	no title or description
+# http://www.joelonsoftware.com/rss.xml	endpoint alias or superset of a feed already in the product
+# http://www.schneier.com/blog/index.rdf	endpoint alias or superset of a feed already in the product
+# https://anglicanconnection.com/feed/podcast/	endpoint alias or superset of a feed already in the product
+# https://blog.fox-it.com/atom.xml	endpoint alias or superset of a feed already in the product
+# https://blog.fox-it.com/feed.xml	endpoint alias or superset of a feed already in the product
+# https://blog.fox-it.com/feeds/posts/default	endpoint alias or superset of a feed already in the product
+# https://blog.fox-it.com/rss.xml	endpoint alias or superset of a feed already in the product
+# https://blog.fox-it.com/rss/	endpoint alias or superset of a feed already in the product
+# https://blog.qualys.com/rss/	endpoint alias or superset of a feed already in the product
+# https://canarytrap.com/feed/	endpoint alias or superset of a feed already in the product
+# https://canarytrap.com/rss/	endpoint alias or superset of a feed already in the product
+# https://caolan.uk/atom.xml	endpoint alias or superset of a feed already in the product
+# https://cwilso.com/atom	endpoint alias or superset of a feed already in the product
+# https://fidelissecurity.com/feed/	endpoint alias or superset of a feed already in the product
+# https://fidelissecurity.com/rss/	endpoint alias or superset of a feed already in the product
+# https://furoner.wordpress.com/feed/	no description; the malware tag is unverifiable
+# https://grumpywizard.home.blog/feed/	no description
+# https://homicidallyinclinedpersonsofnofixedaddress.com/feed/	no title or description
+# https://jackyf.livejournal.com/data/rss	endpoint alias or superset of a feed already in the product
+# https://machinelearningmastery.com/rss/	endpoint alias or superset of a feed already in the product
+# https://neilpatel.com/rss/	endpoint alias or superset of a feed already in the product
+# https://news.xbox.com/en-us/feed/	endpoint alias or superset of a feed already in the product
+# https://riad.blog/tag/wordpress/feed/	endpoint alias or superset of a feed already in the product
+# https://seths.blog/atom.xml	endpoint alias or superset of a feed already in the product
+# https://seths.blog/rss.xml	endpoint alias or superset of a feed already in the product
+# https://seths.blog/rss/	endpoint alias or superset of a feed already in the product
+# https://talaraska.com/feed/	no description; the gaming tag is unverifiable
+# https://teejeejee.livejournal.com/data/atom	endpoint alias or superset of a feed already in the product
+# https://teejeejee.livejournal.com/data/rss	endpoint alias or superset of a feed already in the product
+# https://thecyberexpress.com/feed/	endpoint alias or superset of a feed already in the product
+# https://thecyberexpress.com/rss/	endpoint alias or superset of a feed already in the product
+# https://theravenfile.com/rss/	endpoint alias or superset of a feed already in the product
+# https://www.aquasec.com/feed/	endpoint alias or superset of a feed already in the product
+# https://www.aquasec.com/rss/	endpoint alias or superset of a feed already in the product
+# https://www.independent.co.uk/rss	endpoint alias or superset of a feed already in the product
+# https://www.joelonsoftware.com/rss/	endpoint alias or superset of a feed already in the product
+# https://www.schneier.com/rss/	endpoint alias or superset of a feed already in the product
