@@ -1782,7 +1782,7 @@
 {"key": "nordicapis.com", "tags": ["topic:design", "topic:web-development", "type:publication"]}
 {"key": "www.w3.org", "tags": ["topic:web-development", "type:institution"]}
 {"key": "blogs.windows.com", "tags": ["topic:web-development", "type:vendor-blog"]}
-{"key": "blog.mozilla.org", "tags": ["topic:open-source", "topic:web-development", "type:vendor-blog"]}
+{"key": "blog.mozilla.org", "tags": ["topic:tech-industry", "type:vendor-blog"]}
 {"key": "hacks.mozilla.org", "tags": ["topic:open-source", "topic:web-development", "type:vendor-blog"]}
 {"key": "blog.nightly.mozilla.org", "tags": ["topic:open-source", "topic:web-development", "type:vendor-blog"]}
 {"key": "facebook.design", "tags": ["topic:design", "type:vendor-blog"]}
@@ -19287,7 +19287,7 @@
 {"key": "https://avdio.ognjisce.si/komentar_domovina_je/rss.xml", "tags": ["region:europe", "topic:news", "topic:politics", "type:podcast"]}
 {"key": "https://avdio.ognjisce.si/komentar_druzina/rss.xml", "tags": ["region:europe", "topic:politics", "topic:religion", "type:podcast"]}
 {"key": "https://avdio.ognjisce.si/komentar_tedna/rss.xml", "tags": ["region:europe", "topic:news", "topic:politics", "type:podcast"]}
-{"key": "ayna.az", "tags": ["region:asia", "topic:news", "type:publication"]}
+{"key": "ayna.az", "tags": ["language:azerbaijani", "region:asia", "topic:news", "type:publication"]}
 {"key": "https://backr24.ilsole24ore.com/podcast/come-stai.xml", "tags": ["language:italian", "region:italy", "topic:health", "type:podcast"]}
 {"key": "https://backr24.ilsole24ore.com/podcast/container.xml", "tags": ["language:italian", "region:italy", "topic:transport", "type:podcast"]}
 {"key": "https://backr24.ilsole24ore.com/podcast/cuoredenari-investire.xml", "tags": ["language:italian", "region:italy", "topic:finance", "type:podcast"]}
@@ -20665,8 +20665,8 @@
 {"key": "https://alsumaria.tv/Rss/Horoscopes/ar/36/3/%D8%A7%D9%84%D8%B3%D8%B1%D8%B7%D8%A7%D9%86", "tags": ["language:arabic", "region:middle-east", "topic:astrology", "type:publication"]}
 {"key": "https://ams.postimees.ee/rss/shows/otse-postimehest", "tags": ["region:europe", "topic:politics", "type:podcast"]}
 {"key": "https://ams.postimees.ee/rss/shows/poliitikaguru", "tags": ["region:europe", "topic:politics", "type:podcast"]}
-{"key": "https://ana.ir/fa/rss/38", "tags": ["region:middle-east", "topic:education", "type:publication"]}
-{"key": "https://ana.ir/fa/rss/39", "tags": ["region:middle-east", "topic:education", "type:publication"]}
+{"key": "https://ana.ir/fa/rss/38", "tags": ["language:persian", "region:iran", "topic:news", "type:publication"]}
+{"key": "https://ana.ir/fa/rss/39", "tags": ["language:persian", "region:iran", "topic:news", "type:publication"]}
 {"key": "https://andaluciagame.andaluciainformacion.es/rss/album/sanlucar/", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
 {"key": "https://andaluciagame.andaluciainformacion.es/rss/album/sevilla-cultura/", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
 {"key": "https://andaluciainformacion.es/rss/album/la-pasion/", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
@@ -21851,8 +21851,8 @@
 {"key": "https://alsumaria.tv/Rss/Horoscopes/ar/36/4/%D8%A7%D9%84%D9%85%D9%8A%D8%B2%D8%A7%D9%86", "tags": ["language:arabic", "region:middle-east", "topic:astrology", "type:publication"]}
 {"key": "https://alsumaria.tv/Rss/Horoscopes/ar/36/5/%D8%A7%D9%84%D8%AD%D9%85%D9%84", "tags": ["language:arabic", "region:middle-east", "topic:astrology", "type:publication"]}
 {"key": "https://ams.postimees.ee/rss/shows/powerstage", "tags": ["region:europe", "topic:sport", "type:podcast"]}
-{"key": "https://ana.ir/fa/rss/40", "tags": ["region:middle-east", "topic:education", "type:publication"]}
-{"key": "https://ana.ir/fa/rss/42", "tags": ["region:middle-east", "topic:education", "type:publication"]}
+{"key": "https://ana.ir/fa/rss/40", "tags": ["language:persian", "region:iran", "topic:news", "type:publication"]}
+{"key": "https://ana.ir/fa/rss/42", "tags": ["language:persian", "region:iran", "topic:news", "type:publication"]}
 {"key": "https://anchor.fm/s/1000ac2b4/podcast/rss", "tags": ["topic:religion", "type:podcast"]}
 {"key": "https://andaluciagame.andaluciainformacion.es/rss/album/sevilla/", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
 {"key": "https://andaluciagame.andaluciainformacion.es/rss/alcala-la-real/", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
@@ -22579,8 +22579,8 @@
 {"key": "https://alsumaria.tv/Rss/Horoscopes/ar/36/7/%D8%A7%D9%84%D9%82%D9%88%D8%B3", "tags": ["language:arabic", "region:middle-east", "topic:astrology", "type:publication"]}
 {"key": "https://ams.postimees.ee/rss/shows/sonu-ei-soo", "tags": ["region:europe", "topic:news", "type:podcast"]}
 {"key": "https://ams.postimees.ee/rss/shows/spordireporter", "tags": ["region:europe", "topic:sport", "type:podcast"]}
-{"key": "https://ana.ir/fa/rss/43", "tags": ["region:middle-east", "topic:education", "type:publication"]}
-{"key": "https://ana.ir/fa/rss/44", "tags": ["region:middle-east", "topic:education", "type:publication"]}
+{"key": "https://ana.ir/fa/rss/43", "tags": ["language:persian", "region:iran", "topic:news", "type:publication"]}
+{"key": "https://ana.ir/fa/rss/44", "tags": ["language:persian", "region:iran", "topic:news", "type:publication"]}
 {"key": "https://anchor.fm/s/1000be6e4/podcast/rss", "tags": ["language:dutch", "topic:health", "type:podcast"]}
 {"key": "https://andaluciagame.andaluciainformacion.es/rss/aljarafe-deportes/", "tags": ["language:spanish", "region:spain", "topic:sport", "type:publication"]}
 {"key": "https://andaluciagame.andaluciainformacion.es/rss/aljarafe/", "tags": ["language:spanish", "region:spain", "topic:news", "type:publication"]}
@@ -24390,3 +24390,42 @@
 {"key": "https://cobe.podigee.io/feed/mp3", "tags": ["language:german", "topic:tech-industry", "type:podcast"]}
 {"key": "https://code-of-c-der-true-compliance-podcast-von-loupe.podigee.io/feed/mp3", "tags": ["language:german", "topic:legal", "type:podcast"]}
 {"key": "https://cynicaldeveloper.com/feed/podcast", "tags": ["topic:software-engineering", "type:podcast"]}
+{"key": "1310kfka.com", "tags": ["region:usa", "topic:news", "type:podcast"]}
+{"key": "abwe.org", "tags": ["topic:religion", "type:podcast"]}
+{"key": "agroinfo.rs", "tags": ["language:serbian", "region:serbia", "topic:agriculture", "type:publication"]}
+{"key": "ana.ir", "tags": ["language:persian", "region:iran", "topic:news", "type:publication"]}
+{"key": "aquasec.com", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "arshabodha.org", "tags": ["topic:religion", "type:podcast"]}
+{"key": "avrant.com", "tags": ["topic:hardware", "type:publication"]}
+{"key": "azertag.az", "tags": ["language:azerbaijani", "region:azerbaijan", "topic:news", "type:publication"]}
+{"key": "bfore.ai", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "bruzz.be", "tags": ["language:dutch", "region:belgium", "topic:entertainment", "type:publication"]}
+{"key": "canarytrap.com", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "cantholib.org.vn", "tags": ["language:vietnamese", "topic:books", "type:publication"]}
+{"key": "censys.com", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "childdiscipleship.com", "tags": ["topic:religion", "type:podcast"]}
+{"key": "courierheraldtoday.com", "tags": ["topic:news", "type:publication"]}
+{"key": "cradleofprayer.org", "tags": ["topic:religion", "type:podcast"]}
+{"key": "cspn.us", "tags": ["topic:sport", "type:podcast"]}
+{"key": "dailytechnewsshow.com", "tags": ["topic:tech-industry", "type:podcast"]}
+{"key": "fidelissecurity.com", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "zynap.com", "tags": ["topic:security", "type:vendor-blog"]}
+{"key": "https://360magazine.nl/magazines/magazine-256/feed/", "tags": ["language:dutch", "region:europe", "topic:news", "type:publication"]}
+{"key": "https://360magazine.nl/politiek/feed/", "tags": ["language:dutch", "region:europe", "topic:politics", "type:publication"]}
+{"key": "https://360magazine.nl/redactioneel/feed/", "tags": ["language:dutch", "region:europe", "topic:news", "type:publication"]}
+{"key": "https://avrant.com/feed/podcast/", "tags": ["topic:hardware", "type:podcast"]}
+{"key": "https://ayna.az/rss/category/idman", "tags": ["language:azerbaijani", "region:asia", "topic:sport", "type:publication"]}
+{"key": "https://ayna.az/rss/category/iqtisadiyyat", "tags": ["language:azerbaijani", "region:asia", "topic:economics", "type:publication"]}
+{"key": "https://balado.ckrl.qc.ca/radioshows/287/feed_itunes.xml", "tags": ["language:french", "region:canada", "topic:media", "type:podcast"]}
+{"key": "https://balado.ckrl.qc.ca/radioshows/290/feed_itunes.xml", "tags": ["language:french", "region:canada", "topic:media", "type:podcast"]}
+{"key": "https://balado.ckrl.qc.ca/radioshows/298/feed_itunes.xml", "tags": ["language:french", "region:canada", "topic:media", "type:podcast"]}
+{"key": "https://balado.ckrl.qc.ca/radioshows/309/feed_itunes.xml", "tags": ["language:french", "region:canada", "topic:media", "type:podcast"]}
+{"key": "https://balado.ckrl.qc.ca/radioshows/724/feed_itunes.xml", "tags": ["language:french", "region:canada", "topic:music", "type:podcast"]}
+{"key": "https://balado.ckrl.qc.ca/radioshows/751/feed_itunes.xml", "tags": ["language:french", "region:canada", "topic:media", "type:podcast"]}
+{"key": "https://balado.ckrl.qc.ca/radioshows/757/feed_itunes.xml", "tags": ["language:french", "region:canada", "topic:media", "type:podcast"]}
+{"key": "https://balado.ckrl.qc.ca/radioshows/794/feed_itunes.xml", "tags": ["language:french", "region:canada", "topic:agriculture", "type:podcast"]}
+{"key": "https://balado.ckrl.qc.ca/radioshows/797/feed_itunes.xml", "tags": ["language:french", "region:canada", "topic:music", "type:podcast"]}
+{"key": "https://balado.ckrl.qc.ca/radioshows/826/feed_itunes.xml", "tags": ["language:french", "region:canada", "topic:books", "type:podcast"]}
+{"key": "https://bruzz.be/uit/topic/muziek/rss.xml", "tags": ["language:dutch", "region:belgium", "topic:music", "type:publication"]}
+{"key": "https://courierheraldtoday.com/podcasts/rss", "tags": ["topic:news", "type:podcast"]}
+{"key": "https://cspn.us/category/podcast-episodes/cspns-comic-book-chronicles/feed/", "tags": ["topic:comics", "type:podcast"]}
